@@ -1,5 +1,5 @@
 export type ClientOptions = {
-    baseUrl: 'https://gate.hyperapify.com' | (string & {});
+    baseUrl: `${string}://${string}` | (string & {});
 };
 /**
  * ABogusModel
@@ -36073,15 +36073,36 @@ export type WechatArticleExtractApiV1DemoWechatArticleExtractGetResponses = {
     200: ResponseModel;
 };
 export type WechatArticleExtractApiV1DemoWechatArticleExtractGetResponse = WechatArticleExtractApiV1DemoWechatArticleExtractGetResponses[keyof WechatArticleExtractApiV1DemoWechatArticleExtractGetResponses];
-export type GetFdbHubGetFacebookPageIdData = {
+export type GetFacebookPageIdData = {
     body?: never;
     path?: never;
-    query?: {
-        link?: string;
+    query: {
+        /**
+         * Facebook Page URL
+         */
+        link: string;
     };
-    url: '/fdb-hub/get_facebook_page_id';
+    url: '/get_facebook_page_id';
 };
-export type GetFdbHubGetFacebookPageIdResponses = {
+export type GetFacebookPageIdErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookPageIdResponses = {
     /**
      * Successful response
      */
@@ -36089,21 +36110,57 @@ export type GetFdbHubGetFacebookPageIdResponses = {
         [key: string]: unknown;
     };
 };
-export type GetFdbHubGetFacebookPageIdResponse = GetFdbHubGetFacebookPageIdResponses[keyof GetFdbHubGetFacebookPageIdResponses];
-export type GetFdbHubGetFacebookPagesDetailsFromLinkData = {
+export type GetFacebookPageIdResponse = GetFacebookPageIdResponses[keyof GetFacebookPageIdResponses];
+export type GetFacebookPageDetailsData = {
     body?: never;
     path?: never;
     query?: {
+        /**
+         * Facebook Page URL
+         */
         link?: string;
+        /**
+         * Facebook profile ID. Used only if link is not provided.
+         */
         profile_id?: string;
-        exact_followers_count?: string;
-        show_verified_badge?: string;
-        proxy_country?: string;
-        page_section?: string;
+        /**
+         * Retrieve exact follower count (costs 5 credits). Works only with public pages.
+         */
+        exact_followers_count?: boolean;
+        /**
+         * Show verified badge status
+         */
+        show_verified_badge?: boolean;
+        /**
+         * Proxy country code
+         */
+        proxy_country?: 'us' | 'gb' | 'de' | 'fr' | 'ca' | 'nl' | 'se' | 'ch' | 'au' | 'sg' | 'jp' | 'fi' | 'no' | 'ie' | 'at';
+        /**
+         * Page section to scrape: default (main page) or about (About section)
+         */
+        page_section?: 'default' | 'about';
     };
-    url: '/fdb-hub/get_facebook_pages_details_from_link';
+    url: '/get_facebook_pages_details_from_link';
 };
-export type GetFdbHubGetFacebookPagesDetailsFromLinkResponses = {
+export type GetFacebookPageDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookPageDetailsResponses = {
     /**
      * Successful response
      */
@@ -36111,21 +36168,1214 @@ export type GetFdbHubGetFacebookPagesDetailsFromLinkResponses = {
         [key: string]: unknown;
     };
 };
-export type GetFdbHubGetFacebookPagesDetailsFromLinkResponse = GetFdbHubGetFacebookPagesDetailsFromLinkResponses[keyof GetFdbHubGetFacebookPagesDetailsFromLinkResponses];
-export type GetFdbHubGetFacebookPagePostsDetailsFromIdData = {
+export type GetFacebookPageDetailsResponse = GetFacebookPageDetailsResponses[keyof GetFacebookPageDetailsResponses];
+export type GetFacebookPagesPostsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Facebook Page profile ID
+         */
+        profile_id: string;
+        /**
+         * Pagination cursor from previous response
+         */
+        end_cursor?: string;
+        /**
+         * Filter posts after this date (YYYY-MM-DD)
+         */
+        after_time?: string;
+        /**
+         * Filter posts before this date (YYYY-MM-DD)
+         */
+        before_time?: string;
+        /**
+         * Timezone for date filtering
+         */
+        timezone?: string;
+        /**
+         * Comma-separated keys to filter the response. Supports dot notation.
+         */
+        fields?: string;
+    };
+    url: '/get_facebook_page_posts_details_from_id';
+};
+export type GetFacebookPagesPostsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookPagesPostsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookPagesPostsResponse = GetFacebookPagesPostsResponses[keyof GetFacebookPagesPostsResponses];
+export type GetPageVideosData = {
     body?: never;
     path?: never;
     query?: {
+        /**
+         * Facebook Page URL
+         */
+        link?: string;
+        /**
+         * Facebook profile ID. Used only if link is not provided.
+         */
         profile_id?: string;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/get_facebook_page_videos_details';
+};
+export type GetPageVideosErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetPageVideosResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetPageVideosResponse = GetPageVideosResponses[keyof GetPageVideosResponses];
+export type GetPageReelsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Facebook Page URL
+         */
+        link?: string;
+        /**
+         * Facebook profile ID. Used only if link is not provided.
+         */
+        profile_id?: string;
+        /**
+         * Pagination cursor for subsequent reels
+         */
+        end_cursor?: string;
+    };
+    url: '/get_facebook_reels_details';
+};
+export type GetPageReelsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetPageReelsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetPageReelsResponse = GetPageReelsResponses[keyof GetPageReelsResponses];
+export type GetFacebookGroupIdData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Facebook Group URL
+         */
+        link: string;
+    };
+    url: '/get_facebook_group_id';
+};
+export type GetFacebookGroupIdErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookGroupIdResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookGroupIdResponse = GetFacebookGroupIdResponses[keyof GetFacebookGroupIdResponses];
+export type GetFacebookGroupMetadataDetailsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Facebook Group URL
+         */
+        link?: string;
+        /**
+         * Facebook Group ID
+         */
+        group_id?: string;
+    };
+    url: '/get_facebook_group_metadata_details';
+};
+export type GetFacebookGroupMetadataDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookGroupMetadataDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookGroupMetadataDetailsResponse = GetFacebookGroupMetadataDetailsResponses[keyof GetFacebookGroupMetadataDetailsResponses];
+export type GetFacebookGroupDetailsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Facebook Group ID
+         */
+        group_id: string;
+    };
+    url: '/get_facebook_group_details_from_id';
+};
+export type GetFacebookGroupDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookGroupDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookGroupDetailsResponse = GetFacebookGroupDetailsResponses[keyof GetFacebookGroupDetailsResponses];
+export type GetFacebookGroupsPostsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Facebook Group ID
+         */
+        group_id: string;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/get_facebook_group_posts_details_from_id';
+};
+export type GetFacebookGroupsPostsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookGroupsPostsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookGroupsPostsResponse = GetFacebookGroupsPostsResponses[keyof GetFacebookGroupsPostsResponses];
+export type GetGroupVideosData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Facebook Group ID
+         */
+        group_id?: string;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/get_facebook_group_videos_details_from_id';
+};
+export type GetGroupVideosErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetGroupVideosResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetGroupVideosResponse = GetGroupVideosResponses[keyof GetGroupVideosResponses];
+export type GetFacebookPostIdData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Facebook Post URL
+         */
+        link: string;
+    };
+    url: '/get_facebook_post_id';
+};
+export type GetFacebookPostIdErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookPostIdResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookPostIdResponse = GetFacebookPostIdResponses[keyof GetFacebookPostIdResponses];
+export type GetFacebookPostDetailsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Facebook Post URL
+         */
+        link?: string;
+    };
+    url: '/get_facebook_post_details';
+};
+export type GetFacebookPostDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookPostDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookPostDetailsResponse = GetFacebookPostDetailsResponses[keyof GetFacebookPostDetailsResponses];
+export type GetFacebookPostsCommentsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Facebook Post/Reel URL
+         */
+        link?: string;
+        /**
+         * Facebook Post ID. Used only if link is not provided.
+         */
+        post_id?: string;
+        /**
+         * When true, includes comment_feedback_id and expansion_token for fetching replies.
+         */
+        include_reply_info?: boolean;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/get_facebook_post_comments_details';
+};
+export type GetFacebookPostsCommentsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookPostsCommentsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookPostsCommentsResponse = GetFacebookPostsCommentsResponses[keyof GetFacebookPostsCommentsResponses];
+export type GetFacebookPostsCommentRepliesData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Feedback ID of the parent comment.
+         */
+        comment_feedback_id: string;
+        /**
+         * Pagination token for loading replies.
+         */
+        expansion_token: string;
+    };
+    url: '/get_facebook_post_comment_replies';
+};
+export type GetFacebookPostsCommentRepliesErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookPostsCommentRepliesResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookPostsCommentRepliesResponse = GetFacebookPostsCommentRepliesResponses[keyof GetFacebookPostsCommentRepliesResponses];
+export type GetFacebookPostAttachmentDetailsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Facebook Post ID. Costs 5 credits. Works only with public pages.
+         */
+        post_id?: string;
+    };
+    url: '/get_facebook_post_attachement_details';
+};
+export type GetFacebookPostAttachmentDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookPostAttachmentDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookPostAttachmentDetailsResponse = GetFacebookPostAttachmentDetailsResponses[keyof GetFacebookPostAttachmentDetailsResponses];
+export type GetFacebookVideoPostDetailsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Facebook Video ID
+         */
+        video_id?: number;
+    };
+    url: '/get_facebook_video_post_details';
+};
+export type GetFacebookVideoPostDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetFacebookVideoPostDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetFacebookVideoPostDetailsResponse = GetFacebookVideoPostDetailsResponses[keyof GetFacebookVideoPostDetailsResponses];
+export type FetchSearchPagesData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Search query
+         */
+        query: string;
+        /**
+         * Location UID for filtering
+         */
+        location_uid?: string;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/fetch_search_pages';
+};
+export type FetchSearchPagesErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchSearchPagesResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchSearchPagesResponse = FetchSearchPagesResponses[keyof FetchSearchPagesResponses];
+export type FetchSearchPeopleData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Search query
+         */
+        query: string;
+        /**
+         * Location UID for filtering
+         */
+        location_uid?: string;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/fetch_search_people';
+};
+export type FetchSearchPeopleErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchSearchPeopleResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchSearchPeopleResponse = FetchSearchPeopleResponses[keyof FetchSearchPeopleResponses];
+export type FetchSearchLocationsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Search query
+         */
+        query: string;
+    };
+    url: '/fetch_search_locations';
+};
+export type FetchSearchLocationsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchSearchLocationsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchSearchLocationsResponse = FetchSearchLocationsResponses[keyof FetchSearchLocationsResponses];
+export type FetchSearchPostsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Search query
+         */
+        query: string;
+        /**
+         * Location UID for filtering
+         */
+        location_uid?: number;
+        /**
+         * Filter posts after this date (YYYY-MM-DD)
+         */
+        start_time?: string;
+        /**
+         * Filter posts before this date (YYYY-MM-DD)
+         */
+        end_time?: string;
+        /**
+         * Show only recent posts
+         */
+        recent_posts?: boolean;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/fetch_search_posts';
+};
+export type FetchSearchPostsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchSearchPostsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchSearchPostsResponse = FetchSearchPostsResponses[keyof FetchSearchPostsResponses];
+export type FetchSearchVideosData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Search query
+         */
+        query: string;
+        /**
+         * Show most recent videos first
+         */
+        most_recent?: boolean;
+        /**
+         * Filter for live videos only
+         */
+        videos_live?: boolean;
+        /**
+         * Comma-separated list of keys to include. Supports dot notation.
+         */
+        fields?: string;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/search_facebook_watch_videos';
+};
+export type FetchSearchVideosErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchSearchVideosResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchSearchVideosResponse = FetchSearchVideosResponses[keyof FetchSearchVideosResponses];
+export type GetSupportedCountriesData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/get_supported_countries';
+};
+export type GetSupportedCountriesErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetSupportedCountriesResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetSupportedCountriesResponse = GetSupportedCountriesResponses[keyof GetSupportedCountriesResponses];
+export type FetchSearchAdsPagesGetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Search keyword for ads
+         */
+        query?: string;
+        /**
+         * Facebook AD Page ID. Used only if query is not provided.
+         */
+        ad_page_id?: string;
+        /**
+         * ISO country code or ALL
+         */
+        country?: string;
+        /**
+         * Filter by ad status
+         */
+        activeStatus?: 'ALL' | 'Active' | 'Inactive';
+        /**
+         * Filter ads after this date (YYYY-MM-DD)
+         */
+        after_time?: string;
+        /**
+         * Filter ads before this date (YYYY-MM-DD)
+         */
+        before_time?: string;
+        /**
+         * Sort: impressions (high to low) or recent (most recent)
+         */
+        sort_data?: string;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+    };
+    url: '/fetch_search_ads_pages';
+};
+export type FetchSearchAdsPagesGetErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchSearchAdsPagesGetResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchSearchAdsPagesGetResponse = FetchSearchAdsPagesGetResponses[keyof FetchSearchAdsPagesGetResponses];
+export type FetchSearchAdsPagesPostData = {
+    body?: {
+        query?: string;
+        ad_page_id?: string;
+        country?: string;
+        activeStatus?: string;
         end_cursor?: string;
         after_time?: string;
         before_time?: string;
+        sort_data?: string;
+    };
+    path?: never;
+    query?: never;
+    url: '/fetch_search_ads_pages';
+};
+export type FetchSearchAdsPagesPostErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchSearchAdsPagesPostResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchSearchAdsPagesPostResponse = FetchSearchAdsPagesPostResponses[keyof FetchSearchAdsPagesPostResponses];
+export type FetchPageAdDetailsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Facebook Page ID
+         */
+        page_id: string;
+    };
+    url: '/fetch_page_ad_details';
+};
+export type FetchPageAdDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchPageAdDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchPageAdDetailsResponse = FetchPageAdDetailsResponses[keyof FetchPageAdDetailsResponses];
+export type FetchArchiveAdDetailsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Ad Archive ID
+         */
+        ad_archive_id: string;
+        /**
+         * Facebook Page ID
+         */
+        page_id?: string;
+        /**
+         * ISO country code or ALL
+         */
+        country?: string;
+        /**
+         * Filter non-political ads
+         */
+        is_ad_non_political?: boolean;
+        /**
+         * Filter AAA eligibility
+         */
+        is_ad_not_aaa_eligible?: boolean;
+    };
+    url: '/fetch_archive_ad_details';
+};
+export type FetchArchiveAdDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchArchiveAdDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchArchiveAdDetailsResponse = FetchArchiveAdDetailsResponses[keyof FetchArchiveAdDetailsResponses];
+export type FetchSearchAdsKeywordsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Search keyword
+         */
+        query: string;
+        /**
+         * ISO country code or ALL
+         */
+        country?: string;
+    };
+    url: '/fetch_search_ads_keywords';
+};
+export type FetchSearchAdsKeywordsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type FetchSearchAdsKeywordsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type FetchSearchAdsKeywordsResponse = FetchSearchAdsKeywordsResponses[keyof FetchSearchAdsKeywordsResponses];
+export type GetMarketplaceSearchResultsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Search term
+         */
+        query?: string;
+        /**
+         * Category URL (https://www.facebook.com/marketplace/category/slug)
+         */
+        category_url?: string;
+        /**
+         * Sort order
+         */
+        commerce_search_sort_by?: 'BEST_MATCH' | 'CREATION_TIME_DESCEND' | 'CREATION_TIME_ASCEND' | 'PRICE_DESCEND' | 'PRICE_ASCEND' | 'DISTANCE_DESCEND' | 'DISTANCE_ASCEND';
+        /**
+         * Item condition. Comma-separated: new, used_like_new, used_good, used_fair
+         */
+        commerce_search_and_rp_condition?: string;
+        /**
+         * Latitude
+         */
+        filter_location_latitude?: string;
+        /**
+         * Longitude
+         */
+        filter_location_longitude?: string;
+        /**
+         * Min price
+         */
+        filter_price_lower_bound?: number;
+        /**
+         * Max price
+         */
+        filter_price_upper_bound?: number;
+        /**
+         * Radius in km
+         */
+        filter_radius_km?: number;
+        /**
+         * Proxy country
+         */
+        proxy_country?: 'us' | 'gb' | 'de' | 'fr' | 'ca' | 'nl' | 'se' | 'ch' | 'au' | 'sg' | 'jp' | 'fi' | 'no' | 'ie' | 'at';
+        /**
+         * If true, limits to items posted today
+         */
+        posted_today?: boolean;
+        /**
+         * Timezone
+         */
         timezone?: string;
+        /**
+         * Filter after date (YYYY-MM-DD)
+         */
+        after_time?: string;
+        /**
+         * Filter before date (YYYY-MM-DD)
+         */
+        before_time?: string;
+        /**
+         * Exact match search
+         */
+        exact_match?: boolean;
+        /**
+         * Pagination cursor
+         */
+        end_cursor?: string;
+        /**
+         * Comma-separated keys to filter response
+         */
         fields?: string;
     };
-    url: '/fdb-hub/get_facebook_page_posts_details_from_id';
+    url: '/get_facebook_marketplace_items_listing';
 };
-export type GetFdbHubGetFacebookPagePostsDetailsFromIdResponses = {
+export type GetMarketplaceSearchResultsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetMarketplaceSearchResultsResponses = {
     /**
      * Successful response
      */
@@ -36133,18 +37383,236 @@ export type GetFdbHubGetFacebookPagePostsDetailsFromIdResponses = {
         [key: string]: unknown;
     };
 };
-export type GetFdbHubGetFacebookPagePostsDetailsFromIdResponse = GetFdbHubGetFacebookPagePostsDetailsFromIdResponses[keyof GetFdbHubGetFacebookPagePostsDetailsFromIdResponses];
-export type GetFdbHubGetFacebookPageVideosDetailsData = {
+export type GetMarketplaceSearchResultsResponse = GetMarketplaceSearchResultsResponses[keyof GetMarketplaceSearchResultsResponses];
+export type GetMarketplaceListingItemDetailsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Marketplace Listing ID
+         */
+        listing_id: string;
+    };
+    url: '/get_listing_item_details';
+};
+export type GetMarketplaceListingItemDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetMarketplaceListingItemDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetMarketplaceListingItemDetailsResponse = GetMarketplaceListingItemDetailsResponses[keyof GetMarketplaceListingItemDetailsResponses];
+export type GetSellerDetailsData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Seller ID
+         */
+        seller_id: string;
+    };
+    url: '/get_seller_details';
+};
+export type GetSellerDetailsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetSellerDetailsResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetSellerDetailsResponse = GetSellerDetailsResponses[keyof GetSellerDetailsResponses];
+export type GetMarketplaceCategoriesData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/get_marketplace_categories';
+};
+export type GetMarketplaceCategoriesErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetMarketplaceCategoriesResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetMarketplaceCategoriesResponse = GetMarketplaceCategoriesResponses[keyof GetMarketplaceCategoriesResponses];
+export type GetMarketplaceCityCoordinatesData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * City name
+         */
+        city: string;
+        /**
+         * Country name or code
+         */
+        country?: string;
+        /**
+         * Return exactly one result
+         */
+        exactly_one?: boolean;
+    };
+    url: '/find_city_coordinates';
+};
+export type GetMarketplaceCityCoordinatesErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetMarketplaceCityCoordinatesResponses = {
+    /**
+     * Successful response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+export type GetMarketplaceCityCoordinatesResponse = GetMarketplaceCityCoordinatesResponses[keyof GetMarketplaceCityCoordinatesResponses];
+export type GetMarketplaceVehiclesSearchResultsData = {
     body?: never;
     path?: never;
     query?: {
-        link?: string;
-        profile_id?: string;
+        /**
+         * Sort order
+         */
+        sort_by?: 'CREATION_TIME_DESCEND' | 'CREATION_TIME_ASCEND' | 'PRICE_DESCEND' | 'PRICE_ASCEND' | 'DISTANCE_DESCEND' | 'DISTANCE_ASCEND' | 'VEHICLE_MILEAGE_DESCEND' | 'VEHICLE_MILEAGE_ASCEND' | 'VEHICLE_YEAR_ASCEND';
+        /**
+         * Filter after date (YYYY-MM-DD)
+         */
+        after_time?: string;
+        /**
+         * Filter before date (YYYY-MM-DD)
+         */
+        before_time?: string;
+        /**
+         * Latitude
+         */
+        filter_location_latitude?: string;
+        /**
+         * Longitude
+         */
+        filter_location_longitude?: string;
+        /**
+         * Min price
+         */
+        filter_price_lower_bound?: number;
+        /**
+         * Max price
+         */
+        filter_price_upper_bound?: number;
+        /**
+         * Radius in km
+         */
+        filter_radius_km?: number;
+        /**
+         * Individual sellers only
+         */
+        is_c2c_listing_only?: boolean;
+        /**
+         * Proxy country
+         */
+        proxy_country?: 'us' | 'gb' | 'de' | 'fr' | 'ca' | 'nl' | 'se' | 'ch' | 'au' | 'sg' | 'jp' | 'fi' | 'no' | 'ie' | 'at';
+        /**
+         * Exact match search
+         */
+        exact_match?: boolean;
+        /**
+         * Pagination cursor
+         */
         end_cursor?: string;
     };
-    url: '/fdb-hub/get_facebook_page_videos_details';
+    url: '/facebook_marketplace_vehicles_listings';
 };
-export type GetFdbHubGetFacebookPageVideosDetailsResponses = {
+export type GetMarketplaceVehiclesSearchResultsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetMarketplaceVehiclesSearchResultsResponses = {
     /**
      * Successful response
      */
@@ -36152,18 +37620,81 @@ export type GetFdbHubGetFacebookPageVideosDetailsResponses = {
         [key: string]: unknown;
     };
 };
-export type GetFdbHubGetFacebookPageVideosDetailsResponse = GetFdbHubGetFacebookPageVideosDetailsResponses[keyof GetFdbHubGetFacebookPageVideosDetailsResponses];
-export type GetFdbHubGetFacebookReelsDetailsData = {
+export type GetMarketplaceVehiclesSearchResultsResponse = GetMarketplaceVehiclesSearchResultsResponses[keyof GetMarketplaceVehiclesSearchResultsResponses];
+export type GetMarketplaceRentalPropertySearchResultsData = {
     body?: never;
     path?: never;
     query?: {
-        link?: string;
-        profile_id?: string;
+        /**
+         * Sort order
+         */
+        sort_by?: 'CREATION_TIME_DESCEND' | 'CREATION_TIME_ASCEND' | 'PRICE_DESCEND' | 'PRICE_ASCEND' | 'DISTANCE_DESCEND' | 'DISTANCE_ASCEND' | 'BEST_MATCH';
+        /**
+         * Latitude
+         */
+        filter_location_latitude?: string;
+        /**
+         * Longitude
+         */
+        filter_location_longitude?: string;
+        /**
+         * Min price
+         */
+        filter_price_lower_bound?: number;
+        /**
+         * Max price
+         */
+        filter_price_upper_bound?: number;
+        /**
+         * Radius in km
+         */
+        filter_radius_km?: number;
+        /**
+         * Min bedrooms
+         */
+        filter_bedrooms_min?: number;
+        /**
+         * Max bedrooms
+         */
+        filter_bedrooms_max?: number;
+        /**
+         * Min bathrooms
+         */
+        filter_bathrooms_min?: number;
+        /**
+         * Max bathrooms
+         */
+        filter_bathrooms_max?: number;
+        /**
+         * Individual sellers only
+         */
+        is_c2c_listing_only?: boolean;
+        /**
+         * Pagination cursor
+         */
         end_cursor?: string;
     };
-    url: '/fdb-hub/get_facebook_reels_details';
+    url: '/facebook_marketplace_rentals_listings';
 };
-export type GetFdbHubGetFacebookReelsDetailsResponses = {
+export type GetMarketplaceRentalPropertySearchResultsErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type GetMarketplaceRentalPropertySearchResultsResponses = {
     /**
      * Successful response
      */
@@ -36171,16 +37702,37 @@ export type GetFdbHubGetFacebookReelsDetailsResponses = {
         [key: string]: unknown;
     };
 };
-export type GetFdbHubGetFacebookReelsDetailsResponse = GetFdbHubGetFacebookReelsDetailsResponses[keyof GetFdbHubGetFacebookReelsDetailsResponses];
-export type GetFdbHubGetFacebookGroupIdData = {
+export type GetMarketplaceRentalPropertySearchResultsResponse = GetMarketplaceRentalPropertySearchResultsResponses[keyof GetMarketplaceRentalPropertySearchResultsResponses];
+export type DownloadMediaData = {
     body?: never;
     path?: never;
-    query?: {
-        link?: string;
+    query: {
+        /**
+         * Facebook media URL
+         */
+        url: string;
     };
-    url: '/fdb-hub/get_facebook_group_id';
+    url: '/download_media';
 };
-export type GetFdbHubGetFacebookGroupIdResponses = {
+export type DownloadMediaErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Unauthorized
+     */
+    401: unknown;
+    /**
+     * Rate limit exceeded
+     */
+    429: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+export type DownloadMediaResponses = {
     /**
      * Successful response
      */
@@ -36188,243 +37740,5 @@ export type GetFdbHubGetFacebookGroupIdResponses = {
         [key: string]: unknown;
     };
 };
-export type GetFdbHubGetFacebookGroupIdResponse = GetFdbHubGetFacebookGroupIdResponses[keyof GetFdbHubGetFacebookGroupIdResponses];
-export type GetFdbHubGetFacebookGroupMetadataDetailsData = {
-    body?: never;
-    path?: never;
-    query?: {
-        link?: string;
-        group_id?: string;
-    };
-    url: '/fdb-hub/get_facebook_group_metadata_details';
-};
-export type GetFdbHubGetFacebookGroupMetadataDetailsResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookGroupMetadataDetailsResponse = GetFdbHubGetFacebookGroupMetadataDetailsResponses[keyof GetFdbHubGetFacebookGroupMetadataDetailsResponses];
-export type GetFdbHubGetFacebookGroupDetailsFromIdData = {
-    body?: never;
-    path?: never;
-    query?: {
-        group_id?: string;
-    };
-    url: '/fdb-hub/get_facebook_group_details_from_id';
-};
-export type GetFdbHubGetFacebookGroupDetailsFromIdResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookGroupDetailsFromIdResponse = GetFdbHubGetFacebookGroupDetailsFromIdResponses[keyof GetFdbHubGetFacebookGroupDetailsFromIdResponses];
-export type GetFdbHubGetFacebookGroupPostsDetailsFromIdData = {
-    body?: never;
-    path?: never;
-    query?: {
-        group_id?: string;
-        end_cursor?: string;
-    };
-    url: '/fdb-hub/get_facebook_group_posts_details_from_id';
-};
-export type GetFdbHubGetFacebookGroupPostsDetailsFromIdResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookGroupPostsDetailsFromIdResponse = GetFdbHubGetFacebookGroupPostsDetailsFromIdResponses[keyof GetFdbHubGetFacebookGroupPostsDetailsFromIdResponses];
-export type GetFdbHubGetFacebookGroupVideosDetailsFromIdData = {
-    body?: never;
-    path?: never;
-    query?: {
-        group_id?: string;
-        end_cursor?: string;
-    };
-    url: '/fdb-hub/get_facebook_group_videos_details_from_id';
-};
-export type GetFdbHubGetFacebookGroupVideosDetailsFromIdResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookGroupVideosDetailsFromIdResponse = GetFdbHubGetFacebookGroupVideosDetailsFromIdResponses[keyof GetFdbHubGetFacebookGroupVideosDetailsFromIdResponses];
-export type GetFdbHubGetFacebookPostIdData = {
-    body?: never;
-    path?: never;
-    query?: {
-        link?: string;
-    };
-    url: '/fdb-hub/get_facebook_post_id';
-};
-export type GetFdbHubGetFacebookPostIdResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookPostIdResponse = GetFdbHubGetFacebookPostIdResponses[keyof GetFdbHubGetFacebookPostIdResponses];
-export type GetFdbHubGetFacebookPostDetailsData = {
-    body?: never;
-    path?: never;
-    query?: {
-        link?: string;
-    };
-    url: '/fdb-hub/get_facebook_post_details';
-};
-export type GetFdbHubGetFacebookPostDetailsResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookPostDetailsResponse = GetFdbHubGetFacebookPostDetailsResponses[keyof GetFdbHubGetFacebookPostDetailsResponses];
-export type GetFdbHubGetFacebookPostCommentsDetailsData = {
-    body?: never;
-    path?: never;
-    query?: {
-        link?: string;
-        post_id?: string;
-        end_cursor?: string;
-    };
-    url: '/fdb-hub/get_facebook_post_comments_details';
-};
-export type GetFdbHubGetFacebookPostCommentsDetailsResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookPostCommentsDetailsResponse = GetFdbHubGetFacebookPostCommentsDetailsResponses[keyof GetFdbHubGetFacebookPostCommentsDetailsResponses];
-export type GetFdbHubGetFacebookPostAttachementDetailsData = {
-    body?: never;
-    path?: never;
-    query?: {
-        post_id?: string;
-    };
-    url: '/fdb-hub/get_facebook_post_attachement_details';
-};
-export type GetFdbHubGetFacebookPostAttachementDetailsResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookPostAttachementDetailsResponse = GetFdbHubGetFacebookPostAttachementDetailsResponses[keyof GetFdbHubGetFacebookPostAttachementDetailsResponses];
-export type GetFdbHubGetFacebookVideoPostDetailsData = {
-    body?: never;
-    path?: never;
-    query?: {
-        video_id?: string;
-    };
-    url: '/fdb-hub/get_facebook_video_post_details';
-};
-export type GetFdbHubGetFacebookVideoPostDetailsResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubGetFacebookVideoPostDetailsResponse = GetFdbHubGetFacebookVideoPostDetailsResponses[keyof GetFdbHubGetFacebookVideoPostDetailsResponses];
-export type GetFdbHubSearchFacebookWatchVideosData = {
-    body?: never;
-    path?: never;
-    query?: {
-        query?: string;
-        most_recent?: string;
-        videos_live?: string;
-        fields?: string;
-        end_cursor?: string;
-    };
-    url: '/fdb-hub/search_facebook_watch_videos';
-};
-export type GetFdbHubSearchFacebookWatchVideosResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubSearchFacebookWatchVideosResponse = GetFdbHubSearchFacebookWatchVideosResponses[keyof GetFdbHubSearchFacebookWatchVideosResponses];
-export type GetFdbHubFetchSearchPostsData = {
-    body?: never;
-    path?: never;
-    query?: {
-        query?: string;
-        start_time?: string;
-        end_time?: string;
-        recent_posts?: string;
-        end_cursor?: string;
-    };
-    url: '/fdb-hub/fetch_search_posts';
-};
-export type GetFdbHubFetchSearchPostsResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubFetchSearchPostsResponse = GetFdbHubFetchSearchPostsResponses[keyof GetFdbHubFetchSearchPostsResponses];
-export type GetFdbHubFetchSearchPeopleData = {
-    body?: never;
-    path?: never;
-    query?: {
-        query?: string;
-        location_uid?: string;
-        end_cursor?: string;
-    };
-    url: '/fdb-hub/fetch_search_people';
-};
-export type GetFdbHubFetchSearchPeopleResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubFetchSearchPeopleResponse = GetFdbHubFetchSearchPeopleResponses[keyof GetFdbHubFetchSearchPeopleResponses];
-export type GetFdbHubFetchSearchPagesData = {
-    body?: never;
-    path?: never;
-    query?: {
-        query?: string;
-        location_uid?: string;
-        end_cursor?: string;
-    };
-    url: '/fdb-hub/fetch_search_pages';
-};
-export type GetFdbHubFetchSearchPagesResponses = {
-    /**
-     * Successful response
-     */
-    200: {
-        [key: string]: unknown;
-    };
-};
-export type GetFdbHubFetchSearchPagesResponse = GetFdbHubFetchSearchPagesResponses[keyof GetFdbHubFetchSearchPagesResponses];
+export type DownloadMediaResponse = DownloadMediaResponses[keyof DownloadMediaResponses];
 //# sourceMappingURL=types.gen.d.ts.map

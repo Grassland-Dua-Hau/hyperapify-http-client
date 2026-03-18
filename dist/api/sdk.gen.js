@@ -52300,79 +52300,220 @@ export const instagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGet = (o
  */
 export const wechatArticleExtractApiV1DemoWechatArticleExtractGet = (options) => (options?.client ?? client).get({ url: '/video-hub/api/v1/demo/wechat/article_extract', ...options });
 /**
- * GET /fdb-hub/get_facebook_page_id
+ * Get Facebook Page ID
+ *
+ * Get the unique ID of any Facebook Page
  */
-export const getFdbHubGetFacebookPageId = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_page_id', ...options });
+export const getFacebookPageId = (options) => (options.client ?? client).get({ url: '/get_facebook_page_id', ...options });
 /**
- * GET /fdb-hub/get_facebook_pages_details_from_link
+ * Get Facebook Page Details
+ *
+ * Extract essential data from Facebook pages including Ad Page ID, Address, Bio, Business Hours, Category, Email, Followers, Likes, Phone, Rating, and more.
  */
-export const getFdbHubGetFacebookPagesDetailsFromLink = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_pages_details_from_link', ...options });
+export const getFacebookPageDetails = (options) => (options?.client ?? client).get({ url: '/get_facebook_pages_details_from_link', ...options });
 /**
- * GET /fdb-hub/get_facebook_page_posts_details_from_id
+ * Get Facebook Pages Posts
+ *
+ * Get the latest Facebook Page posts (up to 3 posts per request). Use end_cursor to retrieve more posts.
  */
-export const getFdbHubGetFacebookPagePostsDetailsFromId = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_page_posts_details_from_id', ...options });
+export const getFacebookPagesPosts = (options) => (options.client ?? client).get({ url: '/get_facebook_page_posts_details_from_id', ...options });
 /**
- * GET /fdb-hub/get_facebook_page_videos_details
+ * Get Page Videos
+ *
+ * Get the Facebook Page Videos (up to 6 videos per request). Use end_cursor to retrieve more videos.
  */
-export const getFdbHubGetFacebookPageVideosDetails = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_page_videos_details', ...options });
+export const getPageVideos = (options) => (options?.client ?? client).get({ url: '/get_facebook_page_videos_details', ...options });
 /**
- * GET /fdb-hub/get_facebook_reels_details
+ * Get Page Reels
+ *
+ * Get the latest Facebook Page Reels (up to 10 reels per request). Use end_cursor to retrieve more reels.
  */
-export const getFdbHubGetFacebookReelsDetails = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_reels_details', ...options });
+export const getPageReels = (options) => (options?.client ?? client).get({ url: '/get_facebook_reels_details', ...options });
 /**
- * GET /fdb-hub/get_facebook_group_id
+ * Get Facebook Group ID
+ *
+ * Get the unique ID of any Facebook Group
  */
-export const getFdbHubGetFacebookGroupId = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_group_id', ...options });
+export const getFacebookGroupId = (options) => (options.client ?? client).get({ url: '/get_facebook_group_id', ...options });
 /**
- * GET /fdb-hub/get_facebook_group_metadata_details
+ * Get Facebook Group Metadata Details
+ *
+ * Get group metadata details (name, id, url, image).
  */
-export const getFdbHubGetFacebookGroupMetadataDetails = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_group_metadata_details', ...options });
+export const getFacebookGroupMetadataDetails = (options) => (options?.client ?? client).get({ url: '/get_facebook_group_metadata_details', ...options });
 /**
- * GET /fdb-hub/get_facebook_group_details_from_id
+ * Get Facebook Group Details
+ *
+ * Extract key data from Facebook groups including Total Members, New Members, Creation Date, Description, Group ID, Rules, Member Activity, and more.
  */
-export const getFdbHubGetFacebookGroupDetailsFromId = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_group_details_from_id', ...options });
+export const getFacebookGroupDetails = (options) => (options.client ?? client).get({ url: '/get_facebook_group_details_from_id', ...options });
 /**
- * GET /fdb-hub/get_facebook_group_posts_details_from_id
+ * Get Facebook Groups Posts
+ *
+ * Get the latest Facebook Groups posts (up to 3 posts per request). Use end_cursor to retrieve more posts.
  */
-export const getFdbHubGetFacebookGroupPostsDetailsFromId = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_group_posts_details_from_id', ...options });
+export const getFacebookGroupsPosts = (options) => (options.client ?? client).get({ url: '/get_facebook_group_posts_details_from_id', ...options });
 /**
- * GET /fdb-hub/get_facebook_group_videos_details_from_id
+ * Get Group Videos
+ *
+ * Get the Facebook Group Videos (up to 6 videos per request). Use end_cursor to retrieve more videos.
  */
-export const getFdbHubGetFacebookGroupVideosDetailsFromId = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_group_videos_details_from_id', ...options });
+export const getGroupVideos = (options) => (options?.client ?? client).get({ url: '/get_facebook_group_videos_details_from_id', ...options });
 /**
- * GET /fdb-hub/get_facebook_post_id
+ * Get Facebook Post ID
+ *
+ * Extract the post ID from the Facebook URL
  */
-export const getFdbHubGetFacebookPostId = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_post_id', ...options });
+export const getFacebookPostId = (options) => (options.client ?? client).get({ url: '/get_facebook_post_id', ...options });
 /**
- * GET /fdb-hub/get_facebook_post_details
+ * Get Facebook Post Details
+ *
+ * Retrieves details of a Facebook post based on the provided link.
  */
-export const getFdbHubGetFacebookPostDetails = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_post_details', ...options });
+export const getFacebookPostDetails = (options) => (options?.client ?? client).get({ url: '/get_facebook_post_details', ...options });
 /**
- * GET /fdb-hub/get_facebook_post_comments_details
+ * Get Facebook Posts Comments
+ *
+ * Get the details of comments on Facebook posts (up to 10 comments per post). Use end_cursor to retrieve additional comments.
  */
-export const getFdbHubGetFacebookPostCommentsDetails = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_post_comments_details', ...options });
+export const getFacebookPostsComments = (options) => (options?.client ?? client).get({ url: '/get_facebook_post_comments_details', ...options });
 /**
- * GET /fdb-hub/get_facebook_post_attachement_details
+ * Get Facebook Posts Comment Replies
+ *
+ * Fetches replies to a specific comment. Requires comment_feedback_id and expansion_token from the comments endpoint with include_reply_info=true.
  */
-export const getFdbHubGetFacebookPostAttachementDetails = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_post_attachement_details', ...options });
+export const getFacebookPostsCommentReplies = (options) => (options.client ?? client).get({ url: '/get_facebook_post_comment_replies', ...options });
 /**
- * GET /fdb-hub/get_facebook_video_post_details
+ * Get Facebook Post Attachment Details
+ *
+ * Retrieves details about attachments (images, videos, links) and all reactions associated with a Facebook post.
  */
-export const getFdbHubGetFacebookVideoPostDetails = (options) => (options?.client ?? client).get({ url: '/fdb-hub/get_facebook_video_post_details', ...options });
+export const getFacebookPostAttachmentDetails = (options) => (options?.client ?? client).get({ url: '/get_facebook_post_attachement_details', ...options });
 /**
- * GET /fdb-hub/search_facebook_watch_videos
+ * Get Facebook Video Post Details
+ *
+ * Retrieves details of a Facebook video post including title, description, duration, view count, and more.
  */
-export const getFdbHubSearchFacebookWatchVideos = (options) => (options?.client ?? client).get({ url: '/fdb-hub/search_facebook_watch_videos', ...options });
+export const getFacebookVideoPostDetails = (options) => (options?.client ?? client).get({ url: '/get_facebook_video_post_details', ...options });
 /**
- * GET /fdb-hub/fetch_search_posts
+ * Fetch Search Pages
+ *
+ * Retrieves information about Facebook pages based on a search query and optional location.
  */
-export const getFdbHubFetchSearchPosts = (options) => (options?.client ?? client).get({ url: '/fdb-hub/fetch_search_posts', ...options });
+export const fetchSearchPages = (options) => (options.client ?? client).get({ url: '/fetch_search_pages', ...options });
 /**
- * GET /fdb-hub/fetch_search_people
+ * Fetch Search People
+ *
+ * Retrieves information about Facebook People based on a search query and optional location.
  */
-export const getFdbHubFetchSearchPeople = (options) => (options?.client ?? client).get({ url: '/fdb-hub/fetch_search_people', ...options });
+export const fetchSearchPeople = (options) => (options.client ?? client).get({ url: '/fetch_search_people', ...options });
 /**
- * GET /fdb-hub/fetch_search_pages
+ * Fetch Search Locations
+ *
+ * Retrieves information about Facebook locations based on a search query.
  */
-export const getFdbHubFetchSearchPages = (options) => (options?.client ?? client).get({ url: '/fdb-hub/fetch_search_pages', ...options });
+export const fetchSearchLocations = (options) => (options.client ?? client).get({ url: '/fetch_search_locations', ...options });
+/**
+ * Fetch Search Posts
+ *
+ * Retrieves information about Facebook Posts based on a search query with optional location and time filters.
+ */
+export const fetchSearchPosts = (options) => (options.client ?? client).get({ url: '/fetch_search_posts', ...options });
+/**
+ * Fetch Search Videos
+ *
+ * Retrieves Facebook Videos based on a search query. Use end_cursor for pagination.
+ */
+export const fetchSearchVideos = (options) => (options.client ?? client).get({ url: '/search_facebook_watch_videos', ...options });
+/**
+ * Get Supported Countries
+ *
+ * Retrieves a list of all available country codes for filtering ads by country.
+ */
+export const getSupportedCountries = (options) => (options?.client ?? client).get({ url: '/get_supported_countries', ...options });
+/**
+ * Fetch Search Ads Pages (GET)
+ *
+ * Retrieves ad pages based on a search query, returning up to 26 ads per request.
+ */
+export const fetchSearchAdsPagesGet = (options) => (options?.client ?? client).get({ url: '/fetch_search_ads_pages', ...options });
+/**
+ * Fetch Search Ads Pages (POST)
+ *
+ * Same as GET but uses POST body to avoid 414 URI Too Long errors with long pagination cursors.
+ */
+export const fetchSearchAdsPagesPost = (options) => (options?.client ?? client).post({
+    url: '/fetch_search_ads_pages',
+    ...options,
+    headers: {
+        'Content-Type': 'application/json',
+        ...options?.headers
+    }
+});
+/**
+ * Fetch Page Ad Details
+ *
+ * Retrieves detailed information about a specific Facebook page based on page ID.
+ */
+export const fetchPageAdDetails = (options) => (options.client ?? client).get({ url: '/fetch_page_ad_details', ...options });
+/**
+ * Fetch Archive Ad Details
+ *
+ * Retrieve detailed information about a specific archived ad based on its archive ID.
+ */
+export const fetchArchiveAdDetails = (options) => (options.client ?? client).get({ url: '/fetch_archive_ad_details', ...options });
+/**
+ * Fetch Search Ads Keywords
+ *
+ * Search for ads based on a keyword. Filter by country, status, and ad type.
+ */
+export const fetchSearchAdsKeywords = (options) => (options.client ?? client).get({ url: '/fetch_search_ads_keywords', ...options });
+/**
+ * Get Marketplace Search Results
+ *
+ * Retrieves Facebook Marketplace items with filters for Location, Price, Date, Radius, Category, Sort Order, and more.
+ */
+export const getMarketplaceSearchResults = (options) => (options?.client ?? client).get({ url: '/get_facebook_marketplace_items_listing', ...options });
+/**
+ * Get Marketplace Listing Item Details
+ *
+ * Fetches detailed listing info: URL, photo, price, location, status, seller, delivery, title, comparable pricing.
+ */
+export const getMarketplaceListingItemDetails = (options) => (options.client ?? client).get({ url: '/get_listing_item_details', ...options });
+/**
+ * Get Seller Details
+ *
+ * Retrieve seller profile, ratings, reviews, and badges.
+ */
+export const getSellerDetails = (options) => (options.client ?? client).get({ url: '/get_seller_details', ...options });
+/**
+ * Get Marketplace Categories
+ *
+ * Retrieves marketplace category details with seo_url and category id values.
+ */
+export const getMarketplaceCategories = (options) => (options?.client ?? client).get({ url: '/get_marketplace_categories', ...options });
+/**
+ * Get Marketplace City Coordinates
+ *
+ * Retrieve city coordinates (name, latitude, longitude) for use as location filters.
+ */
+export const getMarketplaceCityCoordinates = (options) => (options.client ?? client).get({ url: '/find_city_coordinates', ...options });
+/**
+ * Get Marketplace Vehicles Search Results
+ *
+ * Fetch vehicle listings with filters for location, price, sorting, mileage, year, and more.
+ */
+export const getMarketplaceVehiclesSearchResults = (options) => (options?.client ?? client).get({ url: '/facebook_marketplace_vehicles_listings', ...options });
+/**
+ * Get Marketplace Rental Property Search Results
+ *
+ * Fetch rental property listings with filters for location, price, bedrooms, bathrooms, and more.
+ */
+export const getMarketplaceRentalPropertySearchResults = (options) => (options?.client ?? client).get({ url: '/facebook_marketplace_rentals_listings', ...options });
+/**
+ * Download Media
+ *
+ * Download media (images, videos, audio) from Facebook URLs.
+ */
+export const downloadMedia = (options) => (options.client ?? client).get({ url: '/download_media', ...options });
 //# sourceMappingURL=sdk.gen.js.map
