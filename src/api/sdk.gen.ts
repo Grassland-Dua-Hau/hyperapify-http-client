@@ -53301,161 +53301,161 @@ export const wechatArticleExtractApiV1DemoWechatArticleExtractGet = <ThrowOnErro
  *
  * Get the unique ID of any Facebook Page
  */
-export const getFacebookPageId = <ThrowOnError extends boolean = false>(options: Options<GetFacebookPageIdData, ThrowOnError>) => (options.client ?? client).get<GetFacebookPageIdResponses, GetFacebookPageIdErrors, ThrowOnError>({ url: '/get_facebook_page_id', ...options });
+export const getFacebookPageId = <ThrowOnError extends boolean = false>(options: Options<GetFacebookPageIdData, ThrowOnError>) => (options.client ?? client).get<GetFacebookPageIdResponses, GetFacebookPageIdErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_page_id', ...options });
 
 /**
  * Get Facebook Page Details
  *
  * Extract essential data from Facebook pages including Ad Page ID, Address, Bio, Business Hours, Category, Email, Followers, Likes, Phone, Rating, and more.
  */
-export const getFacebookPageDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookPageDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookPageDetailsResponses, GetFacebookPageDetailsErrors, ThrowOnError>({ url: '/get_facebook_pages_details_from_link', ...options });
+export const getFacebookPageDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookPageDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookPageDetailsResponses, GetFacebookPageDetailsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_pages_details_from_link', ...options });
 
 /**
  * Get Facebook Pages Posts
  *
  * Get the latest Facebook Page posts (up to 3 posts per request). Use end_cursor to retrieve more posts.
  */
-export const getFacebookPagesPosts = <ThrowOnError extends boolean = false>(options: Options<GetFacebookPagesPostsData, ThrowOnError>) => (options.client ?? client).get<GetFacebookPagesPostsResponses, GetFacebookPagesPostsErrors, ThrowOnError>({ url: '/get_facebook_page_posts_details_from_id', ...options });
+export const getFacebookPagesPosts = <ThrowOnError extends boolean = false>(options: Options<GetFacebookPagesPostsData, ThrowOnError>) => (options.client ?? client).get<GetFacebookPagesPostsResponses, GetFacebookPagesPostsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_page_posts_details_from_id', ...options });
 
 /**
  * Get Page Videos
  *
  * Get the Facebook Page Videos (up to 6 videos per request). Use end_cursor to retrieve more videos.
  */
-export const getPageVideos = <ThrowOnError extends boolean = false>(options?: Options<GetPageVideosData, ThrowOnError>) => (options?.client ?? client).get<GetPageVideosResponses, GetPageVideosErrors, ThrowOnError>({ url: '/get_facebook_page_videos_details', ...options });
+export const getPageVideos = <ThrowOnError extends boolean = false>(options?: Options<GetPageVideosData, ThrowOnError>) => (options?.client ?? client).get<GetPageVideosResponses, GetPageVideosErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_page_videos_details', ...options });
 
 /**
  * Get Page Reels
  *
  * Get the latest Facebook Page Reels (up to 10 reels per request). Use end_cursor to retrieve more reels.
  */
-export const getPageReels = <ThrowOnError extends boolean = false>(options?: Options<GetPageReelsData, ThrowOnError>) => (options?.client ?? client).get<GetPageReelsResponses, GetPageReelsErrors, ThrowOnError>({ url: '/get_facebook_reels_details', ...options });
+export const getPageReels = <ThrowOnError extends boolean = false>(options?: Options<GetPageReelsData, ThrowOnError>) => (options?.client ?? client).get<GetPageReelsResponses, GetPageReelsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_reels_details', ...options });
 
 /**
  * Get Facebook Group ID
  *
  * Get the unique ID of any Facebook Group
  */
-export const getFacebookGroupId = <ThrowOnError extends boolean = false>(options: Options<GetFacebookGroupIdData, ThrowOnError>) => (options.client ?? client).get<GetFacebookGroupIdResponses, GetFacebookGroupIdErrors, ThrowOnError>({ url: '/get_facebook_group_id', ...options });
+export const getFacebookGroupId = <ThrowOnError extends boolean = false>(options: Options<GetFacebookGroupIdData, ThrowOnError>) => (options.client ?? client).get<GetFacebookGroupIdResponses, GetFacebookGroupIdErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_group_id', ...options });
 
 /**
  * Get Facebook Group Metadata Details
  *
  * Get group metadata details (name, id, url, image).
  */
-export const getFacebookGroupMetadataDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookGroupMetadataDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookGroupMetadataDetailsResponses, GetFacebookGroupMetadataDetailsErrors, ThrowOnError>({ url: '/get_facebook_group_metadata_details', ...options });
+export const getFacebookGroupMetadataDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookGroupMetadataDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookGroupMetadataDetailsResponses, GetFacebookGroupMetadataDetailsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_group_metadata_details', ...options });
 
 /**
  * Get Facebook Group Details
  *
  * Extract key data from Facebook groups including Total Members, New Members, Creation Date, Description, Group ID, Rules, Member Activity, and more.
  */
-export const getFacebookGroupDetails = <ThrowOnError extends boolean = false>(options: Options<GetFacebookGroupDetailsData, ThrowOnError>) => (options.client ?? client).get<GetFacebookGroupDetailsResponses, GetFacebookGroupDetailsErrors, ThrowOnError>({ url: '/get_facebook_group_details_from_id', ...options });
+export const getFacebookGroupDetails = <ThrowOnError extends boolean = false>(options: Options<GetFacebookGroupDetailsData, ThrowOnError>) => (options.client ?? client).get<GetFacebookGroupDetailsResponses, GetFacebookGroupDetailsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_group_details_from_id', ...options });
 
 /**
  * Get Facebook Groups Posts
  *
  * Get the latest Facebook Groups posts (up to 3 posts per request). Use end_cursor to retrieve more posts.
  */
-export const getFacebookGroupsPosts = <ThrowOnError extends boolean = false>(options: Options<GetFacebookGroupsPostsData, ThrowOnError>) => (options.client ?? client).get<GetFacebookGroupsPostsResponses, GetFacebookGroupsPostsErrors, ThrowOnError>({ url: '/get_facebook_group_posts_details_from_id', ...options });
+export const getFacebookGroupsPosts = <ThrowOnError extends boolean = false>(options: Options<GetFacebookGroupsPostsData, ThrowOnError>) => (options.client ?? client).get<GetFacebookGroupsPostsResponses, GetFacebookGroupsPostsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_group_posts_details_from_id', ...options });
 
 /**
  * Get Group Videos
  *
  * Get the Facebook Group Videos (up to 6 videos per request). Use end_cursor to retrieve more videos.
  */
-export const getGroupVideos = <ThrowOnError extends boolean = false>(options?: Options<GetGroupVideosData, ThrowOnError>) => (options?.client ?? client).get<GetGroupVideosResponses, GetGroupVideosErrors, ThrowOnError>({ url: '/get_facebook_group_videos_details_from_id', ...options });
+export const getGroupVideos = <ThrowOnError extends boolean = false>(options?: Options<GetGroupVideosData, ThrowOnError>) => (options?.client ?? client).get<GetGroupVideosResponses, GetGroupVideosErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_group_videos_details_from_id', ...options });
 
 /**
  * Get Facebook Post ID
  *
  * Extract the post ID from the Facebook URL
  */
-export const getFacebookPostId = <ThrowOnError extends boolean = false>(options: Options<GetFacebookPostIdData, ThrowOnError>) => (options.client ?? client).get<GetFacebookPostIdResponses, GetFacebookPostIdErrors, ThrowOnError>({ url: '/get_facebook_post_id', ...options });
+export const getFacebookPostId = <ThrowOnError extends boolean = false>(options: Options<GetFacebookPostIdData, ThrowOnError>) => (options.client ?? client).get<GetFacebookPostIdResponses, GetFacebookPostIdErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_post_id', ...options });
 
 /**
  * Get Facebook Post Details
  *
  * Retrieves details of a Facebook post based on the provided link.
  */
-export const getFacebookPostDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookPostDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookPostDetailsResponses, GetFacebookPostDetailsErrors, ThrowOnError>({ url: '/get_facebook_post_details', ...options });
+export const getFacebookPostDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookPostDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookPostDetailsResponses, GetFacebookPostDetailsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_post_details', ...options });
 
 /**
  * Get Facebook Posts Comments
  *
  * Get the details of comments on Facebook posts (up to 10 comments per post). Use end_cursor to retrieve additional comments.
  */
-export const getFacebookPostsComments = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookPostsCommentsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookPostsCommentsResponses, GetFacebookPostsCommentsErrors, ThrowOnError>({ url: '/get_facebook_post_comments_details', ...options });
+export const getFacebookPostsComments = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookPostsCommentsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookPostsCommentsResponses, GetFacebookPostsCommentsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_post_comments_details', ...options });
 
 /**
  * Get Facebook Posts Comment Replies
  *
  * Fetches replies to a specific comment. Requires comment_feedback_id and expansion_token from the comments endpoint with include_reply_info=true.
  */
-export const getFacebookPostsCommentReplies = <ThrowOnError extends boolean = false>(options: Options<GetFacebookPostsCommentRepliesData, ThrowOnError>) => (options.client ?? client).get<GetFacebookPostsCommentRepliesResponses, GetFacebookPostsCommentRepliesErrors, ThrowOnError>({ url: '/get_facebook_post_comment_replies', ...options });
+export const getFacebookPostsCommentReplies = <ThrowOnError extends boolean = false>(options: Options<GetFacebookPostsCommentRepliesData, ThrowOnError>) => (options.client ?? client).get<GetFacebookPostsCommentRepliesResponses, GetFacebookPostsCommentRepliesErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_post_comment_replies', ...options });
 
 /**
  * Get Facebook Post Attachment Details
  *
  * Retrieves details about attachments (images, videos, links) and all reactions associated with a Facebook post.
  */
-export const getFacebookPostAttachmentDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookPostAttachmentDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookPostAttachmentDetailsResponses, GetFacebookPostAttachmentDetailsErrors, ThrowOnError>({ url: '/get_facebook_post_attachement_details', ...options });
+export const getFacebookPostAttachmentDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookPostAttachmentDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookPostAttachmentDetailsResponses, GetFacebookPostAttachmentDetailsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_post_attachement_details', ...options });
 
 /**
  * Get Facebook Video Post Details
  *
  * Retrieves details of a Facebook video post including title, description, duration, view count, and more.
  */
-export const getFacebookVideoPostDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookVideoPostDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookVideoPostDetailsResponses, GetFacebookVideoPostDetailsErrors, ThrowOnError>({ url: '/get_facebook_video_post_details', ...options });
+export const getFacebookVideoPostDetails = <ThrowOnError extends boolean = false>(options?: Options<GetFacebookVideoPostDetailsData, ThrowOnError>) => (options?.client ?? client).get<GetFacebookVideoPostDetailsResponses, GetFacebookVideoPostDetailsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_video_post_details', ...options });
 
 /**
  * Fetch Search Pages
  *
  * Retrieves information about Facebook pages based on a search query and optional location.
  */
-export const fetchSearchPages = <ThrowOnError extends boolean = false>(options: Options<FetchSearchPagesData, ThrowOnError>) => (options.client ?? client).get<FetchSearchPagesResponses, FetchSearchPagesErrors, ThrowOnError>({ url: '/fetch_search_pages', ...options });
+export const fetchSearchPages = <ThrowOnError extends boolean = false>(options: Options<FetchSearchPagesData, ThrowOnError>) => (options.client ?? client).get<FetchSearchPagesResponses, FetchSearchPagesErrors, ThrowOnError>({ url: '/fdb-hub/fetch_search_pages', ...options });
 
 /**
  * Fetch Search People
  *
  * Retrieves information about Facebook People based on a search query and optional location.
  */
-export const fetchSearchPeople = <ThrowOnError extends boolean = false>(options: Options<FetchSearchPeopleData, ThrowOnError>) => (options.client ?? client).get<FetchSearchPeopleResponses, FetchSearchPeopleErrors, ThrowOnError>({ url: '/fetch_search_people', ...options });
+export const fetchSearchPeople = <ThrowOnError extends boolean = false>(options: Options<FetchSearchPeopleData, ThrowOnError>) => (options.client ?? client).get<FetchSearchPeopleResponses, FetchSearchPeopleErrors, ThrowOnError>({ url: '/fdb-hub/fetch_search_people', ...options });
 
 /**
  * Fetch Search Locations
  *
  * Retrieves information about Facebook locations based on a search query.
  */
-export const fetchSearchLocations = <ThrowOnError extends boolean = false>(options: Options<FetchSearchLocationsData, ThrowOnError>) => (options.client ?? client).get<FetchSearchLocationsResponses, FetchSearchLocationsErrors, ThrowOnError>({ url: '/fetch_search_locations', ...options });
+export const fetchSearchLocations = <ThrowOnError extends boolean = false>(options: Options<FetchSearchLocationsData, ThrowOnError>) => (options.client ?? client).get<FetchSearchLocationsResponses, FetchSearchLocationsErrors, ThrowOnError>({ url: '/fdb-hub/fetch_search_locations', ...options });
 
 /**
  * Fetch Search Posts
  *
  * Retrieves information about Facebook Posts based on a search query with optional location and time filters.
  */
-export const fetchSearchPosts = <ThrowOnError extends boolean = false>(options: Options<FetchSearchPostsData, ThrowOnError>) => (options.client ?? client).get<FetchSearchPostsResponses, FetchSearchPostsErrors, ThrowOnError>({ url: '/fetch_search_posts', ...options });
+export const fetchSearchPosts = <ThrowOnError extends boolean = false>(options: Options<FetchSearchPostsData, ThrowOnError>) => (options.client ?? client).get<FetchSearchPostsResponses, FetchSearchPostsErrors, ThrowOnError>({ url: '/fdb-hub/fetch_search_posts', ...options });
 
 /**
  * Fetch Search Videos
  *
  * Retrieves Facebook Videos based on a search query. Use end_cursor for pagination.
  */
-export const fetchSearchVideos = <ThrowOnError extends boolean = false>(options: Options<FetchSearchVideosData, ThrowOnError>) => (options.client ?? client).get<FetchSearchVideosResponses, FetchSearchVideosErrors, ThrowOnError>({ url: '/search_facebook_watch_videos', ...options });
+export const fetchSearchVideos = <ThrowOnError extends boolean = false>(options: Options<FetchSearchVideosData, ThrowOnError>) => (options.client ?? client).get<FetchSearchVideosResponses, FetchSearchVideosErrors, ThrowOnError>({ url: '/fdb-hub/search_facebook_watch_videos', ...options });
 
 /**
  * Get Supported Countries
  *
  * Retrieves a list of all available country codes for filtering ads by country.
  */
-export const getSupportedCountries = <ThrowOnError extends boolean = false>(options?: Options<GetSupportedCountriesData, ThrowOnError>) => (options?.client ?? client).get<GetSupportedCountriesResponses, GetSupportedCountriesErrors, ThrowOnError>({ url: '/get_supported_countries', ...options });
+export const getSupportedCountries = <ThrowOnError extends boolean = false>(options?: Options<GetSupportedCountriesData, ThrowOnError>) => (options?.client ?? client).get<GetSupportedCountriesResponses, GetSupportedCountriesErrors, ThrowOnError>({ url: '/fdb-hub/get_supported_countries', ...options });
 
 /**
  * Fetch Search Ads Pages (GET)
  *
  * Retrieves ad pages based on a search query, returning up to 26 ads per request.
  */
-export const fetchSearchAdsPagesGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSearchAdsPagesGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSearchAdsPagesGetResponses, FetchSearchAdsPagesGetErrors, ThrowOnError>({ url: '/fetch_search_ads_pages', ...options });
+export const fetchSearchAdsPagesGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSearchAdsPagesGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSearchAdsPagesGetResponses, FetchSearchAdsPagesGetErrors, ThrowOnError>({ url: '/fdb-hub/fetch_search_ads_pages', ...options });
 
 /**
  * Fetch Search Ads Pages (POST)
@@ -53463,7 +53463,7 @@ export const fetchSearchAdsPagesGet = <ThrowOnError extends boolean = false>(opt
  * Same as GET but uses POST body to avoid 414 URI Too Long errors with long pagination cursors.
  */
 export const fetchSearchAdsPagesPost = <ThrowOnError extends boolean = false>(options?: Options<FetchSearchAdsPagesPostData, ThrowOnError>) => (options?.client ?? client).post<FetchSearchAdsPagesPostResponses, FetchSearchAdsPagesPostErrors, ThrowOnError>({
-    url: '/fetch_search_ads_pages',
+    url: '/fdb-hub/fetch_search_ads_pages',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -53476,74 +53476,74 @@ export const fetchSearchAdsPagesPost = <ThrowOnError extends boolean = false>(op
  *
  * Retrieves detailed information about a specific Facebook page based on page ID.
  */
-export const fetchPageAdDetails = <ThrowOnError extends boolean = false>(options: Options<FetchPageAdDetailsData, ThrowOnError>) => (options.client ?? client).get<FetchPageAdDetailsResponses, FetchPageAdDetailsErrors, ThrowOnError>({ url: '/fetch_page_ad_details', ...options });
+export const fetchPageAdDetails = <ThrowOnError extends boolean = false>(options: Options<FetchPageAdDetailsData, ThrowOnError>) => (options.client ?? client).get<FetchPageAdDetailsResponses, FetchPageAdDetailsErrors, ThrowOnError>({ url: '/fdb-hub/fetch_page_ad_details', ...options });
 
 /**
  * Fetch Archive Ad Details
  *
  * Retrieve detailed information about a specific archived ad based on its archive ID.
  */
-export const fetchArchiveAdDetails = <ThrowOnError extends boolean = false>(options: Options<FetchArchiveAdDetailsData, ThrowOnError>) => (options.client ?? client).get<FetchArchiveAdDetailsResponses, FetchArchiveAdDetailsErrors, ThrowOnError>({ url: '/fetch_archive_ad_details', ...options });
+export const fetchArchiveAdDetails = <ThrowOnError extends boolean = false>(options: Options<FetchArchiveAdDetailsData, ThrowOnError>) => (options.client ?? client).get<FetchArchiveAdDetailsResponses, FetchArchiveAdDetailsErrors, ThrowOnError>({ url: '/fdb-hub/fetch_archive_ad_details', ...options });
 
 /**
  * Fetch Search Ads Keywords
  *
  * Search for ads based on a keyword. Filter by country, status, and ad type.
  */
-export const fetchSearchAdsKeywords = <ThrowOnError extends boolean = false>(options: Options<FetchSearchAdsKeywordsData, ThrowOnError>) => (options.client ?? client).get<FetchSearchAdsKeywordsResponses, FetchSearchAdsKeywordsErrors, ThrowOnError>({ url: '/fetch_search_ads_keywords', ...options });
+export const fetchSearchAdsKeywords = <ThrowOnError extends boolean = false>(options: Options<FetchSearchAdsKeywordsData, ThrowOnError>) => (options.client ?? client).get<FetchSearchAdsKeywordsResponses, FetchSearchAdsKeywordsErrors, ThrowOnError>({ url: '/fdb-hub/fetch_search_ads_keywords', ...options });
 
 /**
  * Get Marketplace Search Results
  *
  * Retrieves Facebook Marketplace items with filters for Location, Price, Date, Radius, Category, Sort Order, and more.
  */
-export const getMarketplaceSearchResults = <ThrowOnError extends boolean = false>(options?: Options<GetMarketplaceSearchResultsData, ThrowOnError>) => (options?.client ?? client).get<GetMarketplaceSearchResultsResponses, GetMarketplaceSearchResultsErrors, ThrowOnError>({ url: '/get_facebook_marketplace_items_listing', ...options });
+export const getMarketplaceSearchResults = <ThrowOnError extends boolean = false>(options?: Options<GetMarketplaceSearchResultsData, ThrowOnError>) => (options?.client ?? client).get<GetMarketplaceSearchResultsResponses, GetMarketplaceSearchResultsErrors, ThrowOnError>({ url: '/fdb-hub/get_facebook_marketplace_items_listing', ...options });
 
 /**
  * Get Marketplace Listing Item Details
  *
  * Fetches detailed listing info: URL, photo, price, location, status, seller, delivery, title, comparable pricing.
  */
-export const getMarketplaceListingItemDetails = <ThrowOnError extends boolean = false>(options: Options<GetMarketplaceListingItemDetailsData, ThrowOnError>) => (options.client ?? client).get<GetMarketplaceListingItemDetailsResponses, GetMarketplaceListingItemDetailsErrors, ThrowOnError>({ url: '/get_listing_item_details', ...options });
+export const getMarketplaceListingItemDetails = <ThrowOnError extends boolean = false>(options: Options<GetMarketplaceListingItemDetailsData, ThrowOnError>) => (options.client ?? client).get<GetMarketplaceListingItemDetailsResponses, GetMarketplaceListingItemDetailsErrors, ThrowOnError>({ url: '/fdb-hub/get_listing_item_details', ...options });
 
 /**
  * Get Seller Details
  *
  * Retrieve seller profile, ratings, reviews, and badges.
  */
-export const getSellerDetails = <ThrowOnError extends boolean = false>(options: Options<GetSellerDetailsData, ThrowOnError>) => (options.client ?? client).get<GetSellerDetailsResponses, GetSellerDetailsErrors, ThrowOnError>({ url: '/get_seller_details', ...options });
+export const getSellerDetails = <ThrowOnError extends boolean = false>(options: Options<GetSellerDetailsData, ThrowOnError>) => (options.client ?? client).get<GetSellerDetailsResponses, GetSellerDetailsErrors, ThrowOnError>({ url: '/fdb-hub/get_seller_details', ...options });
 
 /**
  * Get Marketplace Categories
  *
  * Retrieves marketplace category details with seo_url and category id values.
  */
-export const getMarketplaceCategories = <ThrowOnError extends boolean = false>(options?: Options<GetMarketplaceCategoriesData, ThrowOnError>) => (options?.client ?? client).get<GetMarketplaceCategoriesResponses, GetMarketplaceCategoriesErrors, ThrowOnError>({ url: '/get_marketplace_categories', ...options });
+export const getMarketplaceCategories = <ThrowOnError extends boolean = false>(options?: Options<GetMarketplaceCategoriesData, ThrowOnError>) => (options?.client ?? client).get<GetMarketplaceCategoriesResponses, GetMarketplaceCategoriesErrors, ThrowOnError>({ url: '/fdb-hub/get_marketplace_categories', ...options });
 
 /**
  * Get Marketplace City Coordinates
  *
  * Retrieve city coordinates (name, latitude, longitude) for use as location filters.
  */
-export const getMarketplaceCityCoordinates = <ThrowOnError extends boolean = false>(options: Options<GetMarketplaceCityCoordinatesData, ThrowOnError>) => (options.client ?? client).get<GetMarketplaceCityCoordinatesResponses, GetMarketplaceCityCoordinatesErrors, ThrowOnError>({ url: '/find_city_coordinates', ...options });
+export const getMarketplaceCityCoordinates = <ThrowOnError extends boolean = false>(options: Options<GetMarketplaceCityCoordinatesData, ThrowOnError>) => (options.client ?? client).get<GetMarketplaceCityCoordinatesResponses, GetMarketplaceCityCoordinatesErrors, ThrowOnError>({ url: '/fdb-hub/find_city_coordinates', ...options });
 
 /**
  * Get Marketplace Vehicles Search Results
  *
  * Fetch vehicle listings with filters for location, price, sorting, mileage, year, and more.
  */
-export const getMarketplaceVehiclesSearchResults = <ThrowOnError extends boolean = false>(options?: Options<GetMarketplaceVehiclesSearchResultsData, ThrowOnError>) => (options?.client ?? client).get<GetMarketplaceVehiclesSearchResultsResponses, GetMarketplaceVehiclesSearchResultsErrors, ThrowOnError>({ url: '/facebook_marketplace_vehicles_listings', ...options });
+export const getMarketplaceVehiclesSearchResults = <ThrowOnError extends boolean = false>(options?: Options<GetMarketplaceVehiclesSearchResultsData, ThrowOnError>) => (options?.client ?? client).get<GetMarketplaceVehiclesSearchResultsResponses, GetMarketplaceVehiclesSearchResultsErrors, ThrowOnError>({ url: '/fdb-hub/facebook_marketplace_vehicles_listings', ...options });
 
 /**
  * Get Marketplace Rental Property Search Results
  *
  * Fetch rental property listings with filters for location, price, bedrooms, bathrooms, and more.
  */
-export const getMarketplaceRentalPropertySearchResults = <ThrowOnError extends boolean = false>(options?: Options<GetMarketplaceRentalPropertySearchResultsData, ThrowOnError>) => (options?.client ?? client).get<GetMarketplaceRentalPropertySearchResultsResponses, GetMarketplaceRentalPropertySearchResultsErrors, ThrowOnError>({ url: '/facebook_marketplace_rentals_listings', ...options });
+export const getMarketplaceRentalPropertySearchResults = <ThrowOnError extends boolean = false>(options?: Options<GetMarketplaceRentalPropertySearchResultsData, ThrowOnError>) => (options?.client ?? client).get<GetMarketplaceRentalPropertySearchResultsResponses, GetMarketplaceRentalPropertySearchResultsErrors, ThrowOnError>({ url: '/fdb-hub/facebook_marketplace_rentals_listings', ...options });
 
 /**
  * Download Media
  *
  * Download media (images, videos, audio) from Facebook URLs.
  */
-export const downloadMedia = <ThrowOnError extends boolean = false>(options: Options<DownloadMediaData, ThrowOnError>) => (options.client ?? client).get<DownloadMediaResponses, DownloadMediaErrors, ThrowOnError>({ url: '/download_media', ...options });
+export const downloadMedia = <ThrowOnError extends boolean = false>(options: Options<DownloadMediaData, ThrowOnError>) => (options.client ?? client).get<DownloadMediaResponses, DownloadMediaErrors, ThrowOnError>({ url: '/fdb-hub/download_media', ...options });
