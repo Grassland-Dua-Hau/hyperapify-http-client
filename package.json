@@ -28,7 +28,7 @@
     "url": "https://github.com/shinpr/ai-coding-project-boilerplate.git"
   },
   "scripts": {
-    "openapi-ts": "openapi-ts",
+    "openapi-ts": "openapi-ts && cp tsconfig.api.json src/api/tsconfig.json && node scripts/generate-url-map.js && biome format --write src/services/url-map.ts",
     "build": "tsc && tsc-alias",
     "build:backend": "tsc && tsc-alias",
     "dev": "tsx src/index.ts",

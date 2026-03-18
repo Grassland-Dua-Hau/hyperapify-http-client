@@ -3339,7 +3339,7 @@ export type HealthCheckApiV1HealthCheckGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/health/check';
+    url: '/video-hub/api/v1/health/check';
 };
 
 export type HealthCheckApiV1HealthCheckGetResponses = {
@@ -3362,7 +3362,7 @@ export type FetchPostDetailApiV1TiktokWebFetchPostDetailGetData = {
          */
         itemId: string;
     };
-    url: '/api/v1/tiktok/web/fetch_post_detail';
+    url: '/video-hub/api/v1/tiktok/web/fetch_post_detail';
 };
 
 export type FetchPostDetailApiV1TiktokWebFetchPostDetailGetErrors = {
@@ -3394,7 +3394,7 @@ export type FetchPostDetailV2ApiV1TiktokWebFetchPostDetailV2GetData = {
          */
         itemId: string;
     };
-    url: '/api/v1/tiktok/web/fetch_post_detail_v2';
+    url: '/video-hub/api/v1/tiktok/web/fetch_post_detail_v2';
 };
 
 export type FetchPostDetailV2ApiV1TiktokWebFetchPostDetailV2GetErrors = {
@@ -3432,7 +3432,7 @@ export type FetchExplorePostApiV1TiktokWebFetchExplorePostGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_explore_post';
+    url: '/video-hub/api/v1/tiktok/web/fetch_explore_post';
 };
 
 export type FetchExplorePostApiV1TiktokWebFetchExplorePostGetErrors = {
@@ -3457,7 +3457,7 @@ export type FetchTrendingPostApiV1TiktokWebFetchTrendingPostGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/fetch_trending_post';
+    url: '/video-hub/api/v1/tiktok/web/fetch_trending_post';
 };
 
 export type FetchTrendingPostApiV1TiktokWebFetchTrendingPostGetResponses = {
@@ -3473,7 +3473,7 @@ export type FetchTrendingSearchwordsApiV1TiktokWebFetchTrendingSearchwordsGetDat
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/fetch_trending_searchwords';
+    url: '/video-hub/api/v1/tiktok/web/fetch_trending_searchwords';
 };
 
 export type FetchTrendingSearchwordsApiV1TiktokWebFetchTrendingSearchwordsGetResponses = {
@@ -3502,7 +3502,7 @@ export type FetchUserProfileApiV1TiktokWebFetchUserProfileGetData = {
          */
         secUid?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_user_profile';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_profile';
 };
 
 export type FetchUserProfileApiV1TiktokWebFetchUserProfileGetErrors = {
@@ -3558,7 +3558,7 @@ export type FetchUserPostApiV1TiktokWebFetchUserPostGetData = {
          */
         post_item_list_request_type?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_user_post';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_post';
 };
 
 export type FetchUserPostApiV1TiktokWebFetchUserPostGetErrors = {
@@ -3608,7 +3608,7 @@ export type FetchUserRepostApiV1TiktokWebFetchUserRepostGetData = {
          */
         coverFormat?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_user_repost';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_repost';
 };
 
 export type FetchUserRepostApiV1TiktokWebFetchUserRepostGetErrors = {
@@ -3664,7 +3664,7 @@ export type FetchUserLikeApiV1TiktokWebFetchUserLikeGetData = {
          */
         post_item_list_request_type?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_user_like';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_like';
 };
 
 export type FetchUserLikeApiV1TiktokWebFetchUserLikeGetErrors = {
@@ -3720,7 +3720,7 @@ export type FetchUserCollectApiV1TiktokWebFetchUserCollectGetData = {
          */
         coverFormat?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_user_collect';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_collect';
 };
 
 export type FetchUserCollectApiV1TiktokWebFetchUserCollectGetErrors = {
@@ -3764,7 +3764,7 @@ export type FetchUserPlayListApiV1TiktokWebFetchUserPlayListGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_user_play_list';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_play_list';
 };
 
 export type FetchUserPlayListApiV1TiktokWebFetchUserPlayListGetErrors = {
@@ -3808,7 +3808,7 @@ export type FetchUserMixApiV1TiktokWebFetchUserMixGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_user_mix';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_mix';
 };
 
 export type FetchUserMixApiV1TiktokWebFetchUserMixGetErrors = {
@@ -3858,7 +3858,7 @@ export type FetchPostCommentApiV1TiktokWebFetchPostCommentGetData = {
          */
         current_region?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_post_comment';
+    url: '/video-hub/api/v1/tiktok/web/fetch_post_comment';
 };
 
 export type FetchPostCommentApiV1TiktokWebFetchPostCommentGetErrors = {
@@ -3914,7 +3914,7 @@ export type FetchPostCommentReplyApiV1TiktokWebFetchPostCommentReplyGetData = {
          */
         current_region?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_post_comment_reply';
+    url: '/video-hub/api/v1/tiktok/web/fetch_post_comment_reply';
 };
 
 export type FetchPostCommentReplyApiV1TiktokWebFetchPostCommentReplyGetErrors = {
@@ -3964,7 +3964,7 @@ export type FetchUserFansApiV1TiktokWebFetchUserFansGetData = {
          */
         minCursor?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_user_fans';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_fans';
 };
 
 export type FetchUserFansApiV1TiktokWebFetchUserFansGetErrors = {
@@ -4014,7 +4014,7 @@ export type FetchUserFollowApiV1TiktokWebFetchUserFollowGetData = {
          */
         minCursor?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_user_follow';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_follow';
 };
 
 export type FetchUserFollowApiV1TiktokWebFetchUserFollowGetErrors = {
@@ -4046,7 +4046,7 @@ export type FetchUserLiveDetailApiV1TiktokWebFetchUserLiveDetailGetData = {
          */
         uniqueId: string;
     };
-    url: '/api/v1/tiktok/web/fetch_user_live_detail';
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_live_detail';
 };
 
 export type FetchUserLiveDetailApiV1TiktokWebFetchUserLiveDetailGetErrors = {
@@ -4096,7 +4096,7 @@ export type FetchGeneralSearchApiV1TiktokWebFetchGeneralSearchGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_general_search';
+    url: '/video-hub/api/v1/tiktok/web/fetch_general_search';
 };
 
 export type FetchGeneralSearchApiV1TiktokWebFetchGeneralSearchGetErrors = {
@@ -4128,7 +4128,7 @@ export type FetchSearchKeywordSuggestApiV1TiktokWebFetchSearchKeywordSuggestGetD
          */
         keyword: string;
     };
-    url: '/api/v1/tiktok/web/fetch_search_keyword_suggest';
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_keyword_suggest';
 };
 
 export type FetchSearchKeywordSuggestApiV1TiktokWebFetchSearchKeywordSuggestGetErrors = {
@@ -4178,7 +4178,7 @@ export type FetchSearchUserApiV1TiktokWebFetchSearchUserGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_search_user';
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_user';
 };
 
 export type FetchSearchUserApiV1TiktokWebFetchSearchUserGetErrors = {
@@ -4234,7 +4234,7 @@ export type FetchSearchVideoApiV1TiktokWebFetchSearchVideoGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_search_video';
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_video';
 };
 
 export type FetchSearchVideoApiV1TiktokWebFetchSearchVideoGetErrors = {
@@ -4290,7 +4290,7 @@ export type FetchSearchLiveApiV1TiktokWebFetchSearchLiveGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_search_live';
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_live';
 };
 
 export type FetchSearchLiveApiV1TiktokWebFetchSearchLiveGetErrors = {
@@ -4346,7 +4346,7 @@ export type FetchSearchPhotoApiV1TiktokWebFetchSearchPhotoGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_search_photo';
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_photo';
 };
 
 export type FetchSearchPhotoApiV1TiktokWebFetchSearchPhotoGetErrors = {
@@ -4378,7 +4378,7 @@ export type FetchTagDetailApiV1TiktokWebFetchTagDetailGetData = {
          */
         tag_name: string;
     };
-    url: '/api/v1/tiktok/web/fetch_tag_detail';
+    url: '/video-hub/api/v1/tiktok/web/fetch_tag_detail';
 };
 
 export type FetchTagDetailApiV1TiktokWebFetchTagDetailGetErrors = {
@@ -4422,7 +4422,7 @@ export type FetchTagPostApiV1TiktokWebFetchTagPostGetData = {
          */
         cursor?: number;
     };
-    url: '/api/v1/tiktok/web/fetch_tag_post';
+    url: '/video-hub/api/v1/tiktok/web/fetch_tag_post';
 };
 
 export type FetchTagPostApiV1TiktokWebFetchTagPostGetErrors = {
@@ -4447,7 +4447,7 @@ export type FetchHomeFeedApiV1TiktokWebFetchHomeFeedPostData = {
     body?: BodyFetchHomeFeedApiV1TiktokWebFetchHomeFeedPost;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/fetch_home_feed';
+    url: '/video-hub/api/v1/tiktok/web/fetch_home_feed';
 };
 
 export type FetchHomeFeedApiV1TiktokWebFetchHomeFeedPostErrors = {
@@ -4481,7 +4481,7 @@ export type GenerateRealMsTokenApiV1TiktokWebGenerateRealMsTokenGetData = {
          */
         browser_type?: string;
     };
-    url: '/api/v1/tiktok/web/generate_real_msToken';
+    url: '/video-hub/api/v1/tiktok/web/generate_real_msToken';
 };
 
 export type GenerateRealMsTokenApiV1TiktokWebGenerateRealMsTokenGetErrors = {
@@ -4513,7 +4513,7 @@ export type EncryptStrDataApiV1TiktokWebEncryptStrDataGetData = {
          */
         data: string;
     };
-    url: '/api/v1/tiktok/web/encrypt_strData';
+    url: '/video-hub/api/v1/tiktok/web/encrypt_strData';
 };
 
 export type EncryptStrDataApiV1TiktokWebEncryptStrDataGetErrors = {
@@ -4545,7 +4545,7 @@ export type DecryptStrDataApiV1TiktokWebDecryptStrDataGetData = {
          */
         encrypted_data: string;
     };
-    url: '/api/v1/tiktok/web/decrypt_strData';
+    url: '/video-hub/api/v1/tiktok/web/decrypt_strData';
 };
 
 export type DecryptStrDataApiV1TiktokWebDecryptStrDataGetErrors = {
@@ -4575,7 +4575,7 @@ export type GenerateFingerprintApiV1TiktokWebGenerateFingerprintGetData = {
          */
         browser_type?: string;
     };
-    url: '/api/v1/tiktok/web/generate_fingerprint';
+    url: '/video-hub/api/v1/tiktok/web/generate_fingerprint';
 };
 
 export type GenerateFingerprintApiV1TiktokWebGenerateFingerprintGetErrors = {
@@ -4625,7 +4625,7 @@ export type GenerateWebidApiV1TiktokWebGenerateWebidGetData = {
          */
         app_id?: number;
     };
-    url: '/api/v1/tiktok/web/generate_webid';
+    url: '/video-hub/api/v1/tiktok/web/generate_webid';
 };
 
 export type GenerateWebidApiV1TiktokWebGenerateWebidGetErrors = {
@@ -4655,7 +4655,7 @@ export type GenerateTtwidApiV1TiktokWebGenerateTtwidGetData = {
          */
         user_agent?: string;
     };
-    url: '/api/v1/tiktok/web/generate_ttwid';
+    url: '/video-hub/api/v1/tiktok/web/generate_ttwid';
 };
 
 export type GenerateTtwidApiV1TiktokWebGenerateTtwidGetErrors = {
@@ -4680,7 +4680,7 @@ export type GenerateXbogusApiV1TiktokWebGenerateXbogusPostData = {
     body: XBogusModel;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/generate_xbogus';
+    url: '/video-hub/api/v1/tiktok/web/generate_xbogus';
 };
 
 export type GenerateXbogusApiV1TiktokWebGenerateXbogusPostErrors = {
@@ -4705,7 +4705,7 @@ export type GenerateXgnarlyApiV1TiktokWebGenerateXgnarlyPostData = {
     body: XGnarlyModel;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/generate_xgnarly';
+    url: '/video-hub/api/v1/tiktok/web/generate_xgnarly';
 };
 
 export type GenerateXgnarlyApiV1TiktokWebGenerateXgnarlyPostErrors = {
@@ -4730,7 +4730,7 @@ export type GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostDa
     body: XGnarlyAndXBogusModel;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/generate_xgnarly_and_xbogus';
+    url: '/video-hub/api/v1/tiktok/web/generate_xgnarly_and_xbogus';
 };
 
 export type GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostErrors = {
@@ -4762,7 +4762,7 @@ export type GetUserIdApiV1TiktokWebGetUserIdGetData = {
          */
         url: string;
     };
-    url: '/api/v1/tiktok/web/get_user_id';
+    url: '/video-hub/api/v1/tiktok/web/get_user_id';
 };
 
 export type GetUserIdApiV1TiktokWebGetUserIdGetErrors = {
@@ -4794,7 +4794,7 @@ export type GetSecUserIdApiV1TiktokWebGetSecUserIdGetData = {
          */
         url: string;
     };
-    url: '/api/v1/tiktok/web/get_sec_user_id';
+    url: '/video-hub/api/v1/tiktok/web/get_sec_user_id';
 };
 
 export type GetSecUserIdApiV1TiktokWebGetSecUserIdGetErrors = {
@@ -4824,7 +4824,7 @@ export type GetAllSecUserIdApiV1TiktokWebGetAllSecUserIdPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/get_all_sec_user_id';
+    url: '/video-hub/api/v1/tiktok/web/get_all_sec_user_id';
 };
 
 export type GetAllSecUserIdApiV1TiktokWebGetAllSecUserIdPostErrors = {
@@ -4856,7 +4856,7 @@ export type GetAwemeIdApiV1TiktokWebGetAwemeIdGetData = {
          */
         url: string;
     };
-    url: '/api/v1/tiktok/web/get_aweme_id';
+    url: '/video-hub/api/v1/tiktok/web/get_aweme_id';
 };
 
 export type GetAwemeIdApiV1TiktokWebGetAwemeIdGetErrors = {
@@ -4886,7 +4886,7 @@ export type GetAllAwemeIdApiV1TiktokWebGetAllAwemeIdPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/get_all_aweme_id';
+    url: '/video-hub/api/v1/tiktok/web/get_all_aweme_id';
 };
 
 export type GetAllAwemeIdApiV1TiktokWebGetAllAwemeIdPostErrors = {
@@ -4918,7 +4918,7 @@ export type GetUniqueIdApiV1TiktokWebGetUniqueIdGetData = {
          */
         url: string;
     };
-    url: '/api/v1/tiktok/web/get_unique_id';
+    url: '/video-hub/api/v1/tiktok/web/get_unique_id';
 };
 
 export type GetUniqueIdApiV1TiktokWebGetUniqueIdGetErrors = {
@@ -4948,7 +4948,7 @@ export type GetAllUniqueIdApiV1TiktokWebGetAllUniqueIdPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/get_all_unique_id';
+    url: '/video-hub/api/v1/tiktok/web/get_all_unique_id';
 };
 
 export type GetAllUniqueIdApiV1TiktokWebGetAllUniqueIdPostErrors = {
@@ -4986,7 +4986,7 @@ export type TiktokLiveRoomApiV1TiktokWebTiktokLiveRoomGetData = {
          */
         danmaku_type: string;
     };
-    url: '/api/v1/tiktok/web/tiktok_live_room';
+    url: '/video-hub/api/v1/tiktok/web/tiktok_live_room';
 };
 
 export type TiktokLiveRoomApiV1TiktokWebTiktokLiveRoomGetErrors = {
@@ -5024,7 +5024,7 @@ export type FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetData = {
          */
         user_unique_id: string;
     };
-    url: '/api/v1/tiktok/web/fetch_live_im_fetch';
+    url: '/video-hub/api/v1/tiktok/web/fetch_live_im_fetch';
 };
 
 export type FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetErrors = {
@@ -5056,7 +5056,7 @@ export type GetLiveRoomIdApiV1TiktokWebGetLiveRoomIdGetData = {
          */
         live_room_url: string;
     };
-    url: '/api/v1/tiktok/web/get_live_room_id';
+    url: '/video-hub/api/v1/tiktok/web/get_live_room_id';
 };
 
 export type GetLiveRoomIdApiV1TiktokWebGetLiveRoomIdGetErrors = {
@@ -5088,7 +5088,7 @@ export type FetchCheckLiveAliveApiV1TiktokWebFetchCheckLiveAliveGetData = {
          */
         room_id: string;
     };
-    url: '/api/v1/tiktok/web/fetch_check_live_alive';
+    url: '/video-hub/api/v1/tiktok/web/fetch_check_live_alive';
 };
 
 export type FetchCheckLiveAliveApiV1TiktokWebFetchCheckLiveAliveGetErrors = {
@@ -5120,7 +5120,7 @@ export type FetchBatchCheckLiveAliveApiV1TiktokWebFetchBatchCheckLiveAliveGetDat
          */
         room_ids: string;
     };
-    url: '/api/v1/tiktok/web/fetch_batch_check_live_alive';
+    url: '/video-hub/api/v1/tiktok/web/fetch_batch_check_live_alive';
 };
 
 export type FetchBatchCheckLiveAliveApiV1TiktokWebFetchBatchCheckLiveAliveGetErrors = {
@@ -5152,7 +5152,7 @@ export type FetchTiktokLiveDataApiV1TiktokWebFetchTiktokLiveDataGetData = {
          */
         live_room_url: string;
     };
-    url: '/api/v1/tiktok/web/fetch_tiktok_live_data';
+    url: '/video-hub/api/v1/tiktok/web/fetch_tiktok_live_data';
 };
 
 export type FetchTiktokLiveDataApiV1TiktokWebFetchTiktokLiveDataGetErrors = {
@@ -5184,7 +5184,7 @@ export type FetchLiveRecommendApiV1TiktokWebFetchLiveRecommendGetData = {
          */
         related_live_tag: string;
     };
-    url: '/api/v1/tiktok/web/fetch_live_recommend';
+    url: '/video-hub/api/v1/tiktok/web/fetch_live_recommend';
 };
 
 export type FetchLiveRecommendApiV1TiktokWebFetchLiveRecommendGetErrors = {
@@ -5216,7 +5216,7 @@ export type FetchLiveGiftListApiV1TiktokWebFetchLiveGiftListGetData = {
          */
         room_id?: string;
     };
-    url: '/api/v1/tiktok/web/fetch_live_gift_list';
+    url: '/video-hub/api/v1/tiktok/web/fetch_live_gift_list';
 };
 
 export type FetchLiveGiftListApiV1TiktokWebFetchLiveGiftListGetErrors = {
@@ -5260,7 +5260,7 @@ export type FetchSsoLoginQrcodeApiV1TiktokWebFetchSsoLoginQrcodeGetData = {
          */
         proxy: string;
     };
-    url: '/api/v1/tiktok/web/fetch_sso_login_qrcode';
+    url: '/video-hub/api/v1/tiktok/web/fetch_sso_login_qrcode';
 };
 
 export type FetchSsoLoginQrcodeApiV1TiktokWebFetchSsoLoginQrcodeGetErrors = {
@@ -5316,7 +5316,7 @@ export type FetchSsoLoginStatusApiV1TiktokWebFetchSsoLoginStatusGetData = {
          */
         proxy: string;
     };
-    url: '/api/v1/tiktok/web/fetch_sso_login_status';
+    url: '/video-hub/api/v1/tiktok/web/fetch_sso_login_status';
 };
 
 export type FetchSsoLoginStatusApiV1TiktokWebFetchSsoLoginStatusGetErrors = {
@@ -5366,7 +5366,7 @@ export type FetchSsoLoginAuthApiV1TiktokWebFetchSsoLoginAuthGetData = {
          */
         proxy: string;
     };
-    url: '/api/v1/tiktok/web/fetch_sso_login_auth';
+    url: '/video-hub/api/v1/tiktok/web/fetch_sso_login_auth';
 };
 
 export type FetchSsoLoginAuthApiV1TiktokWebFetchSsoLoginAuthGetErrors = {
@@ -5398,7 +5398,7 @@ export type GenerateHashedIdApiV1TiktokWebGenerateHashedIdGetData = {
          */
         email: string;
     };
-    url: '/api/v1/tiktok/web/generate_hashed_id';
+    url: '/video-hub/api/v1/tiktok/web/generate_hashed_id';
 };
 
 export type GenerateHashedIdApiV1TiktokWebGenerateHashedIdGetErrors = {
@@ -5426,7 +5426,7 @@ export type FetchGiftNameByIdApiV1TiktokWebFetchGiftNameByIdPostData = {
     body: GiftQuery;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/fetch_gift_name_by_id';
+    url: '/video-hub/api/v1/tiktok/web/fetch_gift_name_by_id';
 };
 
 export type FetchGiftNameByIdApiV1TiktokWebFetchGiftNameByIdPostErrors = {
@@ -5454,7 +5454,7 @@ export type FetchGiftNamesByIdsApiV1TiktokWebFetchGiftNamesByIdsPostData = {
     body: BatchGiftQuery;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/fetch_gift_names_by_ids';
+    url: '/video-hub/api/v1/tiktok/web/fetch_gift_names_by_ids';
 };
 
 export type FetchGiftNamesByIdsApiV1TiktokWebFetchGiftNamesByIdsPostErrors = {
@@ -5486,7 +5486,7 @@ export type FetchTiktokWebGuestCookieApiV1TiktokWebFetchTiktokWebGuestCookieGetD
          */
         user_agent: string;
     };
-    url: '/api/v1/tiktok/web/fetch_tiktok_web_guest_cookie';
+    url: '/video-hub/api/v1/tiktok/web/fetch_tiktok_web_guest_cookie';
 };
 
 export type FetchTiktokWebGuestCookieApiV1TiktokWebFetchTiktokWebGuestCookieGetErrors = {
@@ -5511,7 +5511,7 @@ export type DeviceRegisterApiV1TiktokWebDeviceRegisterGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/web/device_register';
+    url: '/video-hub/api/v1/tiktok/web/device_register';
 };
 
 export type DeviceRegisterApiV1TiktokWebDeviceRegisterGetResponses = {
@@ -5534,7 +5534,7 @@ export type FetchOneVideoApiV1TiktokAppV3FetchOneVideoGetData = {
          */
         aweme_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_one_video';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video';
 };
 
 export type FetchOneVideoApiV1TiktokAppV3FetchOneVideoGetErrors = {
@@ -5566,7 +5566,7 @@ export type FetchOneVideoV2ApiV1TiktokAppV3FetchOneVideoV2GetData = {
          */
         aweme_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_one_video_v2';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video_v2';
 };
 
 export type FetchOneVideoV2ApiV1TiktokAppV3FetchOneVideoV2GetErrors = {
@@ -5604,7 +5604,7 @@ export type FetchOneVideoV3ApiV1TiktokAppV3FetchOneVideoV3GetData = {
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_one_video_v3';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video_v3';
 };
 
 export type FetchOneVideoV3ApiV1TiktokAppV3FetchOneVideoV3GetErrors = {
@@ -5634,7 +5634,7 @@ export type FetchMultiVideoApiV1TiktokAppV3FetchMultiVideoPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/app/v3/fetch_multi_video';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_multi_video';
 };
 
 export type FetchMultiVideoApiV1TiktokAppV3FetchMultiVideoPostErrors = {
@@ -5664,7 +5664,7 @@ export type FetchMultiVideoV2ApiV1TiktokAppV3FetchMultiVideoV2PostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/app/v3/fetch_multi_video_v2';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_multi_video_v2';
 };
 
 export type FetchMultiVideoV2ApiV1TiktokAppV3FetchMultiVideoV2PostErrors = {
@@ -5696,7 +5696,7 @@ export type FetchOneVideoByShareUrlV2ApiV1TiktokAppV3FetchOneVideoByShareUrlV2Ge
          */
         share_url: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_one_video_by_share_url_v2';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video_by_share_url_v2';
 };
 
 export type FetchOneVideoByShareUrlV2ApiV1TiktokAppV3FetchOneVideoByShareUrlV2GetErrors = {
@@ -5728,7 +5728,7 @@ export type FetchOneVideoByShareUrlApiV1TiktokAppV3FetchOneVideoByShareUrlGetDat
          */
         share_url: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_one_video_by_share_url';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video_by_share_url';
 };
 
 export type FetchOneVideoByShareUrlApiV1TiktokAppV3FetchOneVideoByShareUrlGetErrors = {
@@ -5760,7 +5760,7 @@ export type GetUserIdAndSecUserIdByUsernameApiV1TiktokAppV3GetUserIdAndSecUserId
          */
         username: string;
     };
-    url: '/api/v1/tiktok/app/v3/get_user_id_and_sec_user_id_by_username';
+    url: '/video-hub/api/v1/tiktok/app/v3/get_user_id_and_sec_user_id_by_username';
 };
 
 export type GetUserIdAndSecUserIdByUsernameApiV1TiktokAppV3GetUserIdAndSecUserIdByUsernameGetErrors = {
@@ -5804,7 +5804,7 @@ export type HandlerUserProfileApiV1TiktokAppV3HandlerUserProfileGetData = {
          */
         unique_id?: string;
     };
-    url: '/api/v1/tiktok/app/v3/handler_user_profile';
+    url: '/video-hub/api/v1/tiktok/app/v3/handler_user_profile';
 };
 
 export type HandlerUserProfileApiV1TiktokAppV3HandlerUserProfileGetErrors = {
@@ -5842,7 +5842,7 @@ export type FetchWebcastUserInfoApiV1TiktokAppV3FetchWebcastUserInfoGetData = {
          */
         sec_user_id?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_webcast_user_info';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_webcast_user_info';
 };
 
 export type FetchWebcastUserInfoApiV1TiktokAppV3FetchWebcastUserInfoGetErrors = {
@@ -5874,7 +5874,7 @@ export type FetchUserCountryByUsernameApiV1TiktokAppV3FetchUserCountryByUsername
          */
         username: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_country_by_username';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_country_by_username';
 };
 
 export type FetchUserCountryByUsernameApiV1TiktokAppV3FetchUserCountryByUsernameGetErrors = {
@@ -5912,7 +5912,7 @@ export type FetchSimilarUserRecommendationsApiV1TiktokAppV3FetchSimilarUserRecom
          */
         page_token?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_similar_user_recommendations';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_similar_user_recommendations';
 };
 
 export type FetchSimilarUserRecommendationsApiV1TiktokAppV3FetchSimilarUserRecommendationsGetErrors = {
@@ -5956,7 +5956,7 @@ export type FetchUserRepostVideosApiV1TiktokAppV3FetchUserRepostVideosGetData = 
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_repost_videos';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_repost_videos';
 };
 
 export type FetchUserRepostVideosApiV1TiktokAppV3FetchUserRepostVideosGetErrors = {
@@ -6012,7 +6012,7 @@ export type FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosGetData = {
          */
         sort_type?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_post_videos';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_post_videos';
 };
 
 export type FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosGetErrors = {
@@ -6068,7 +6068,7 @@ export type FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosV2GetData = {
          */
         sort_type?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_post_videos_v2';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_post_videos_v2';
 };
 
 export type FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosV2GetErrors = {
@@ -6124,7 +6124,7 @@ export type FetchUserPostVideosV3ApiV1TiktokAppV3FetchUserPostVideosV3GetData = 
          */
         sort_type?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_post_videos_v3';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_post_videos_v3';
 };
 
 export type FetchUserPostVideosV3ApiV1TiktokAppV3FetchUserPostVideosV3GetErrors = {
@@ -6168,7 +6168,7 @@ export type FetchUserLikeVideosApiV1TiktokAppV3FetchUserLikeVideosGetData = {
          */
         counts?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_like_videos';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_like_videos';
 };
 
 export type FetchUserLikeVideosApiV1TiktokAppV3FetchUserLikeVideosGetErrors = {
@@ -6212,7 +6212,7 @@ export type FetchVideoCommentsApiV1TiktokAppV3FetchVideoCommentsGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_video_comments';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_video_comments';
 };
 
 export type FetchVideoCommentsApiV1TiktokAppV3FetchVideoCommentsGetErrors = {
@@ -6262,7 +6262,7 @@ export type FetchVideoCommentsReplyApiV1TiktokAppV3FetchVideoCommentRepliesGetDa
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_video_comment_replies';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_video_comment_replies';
 };
 
 export type FetchVideoCommentsReplyApiV1TiktokAppV3FetchVideoCommentRepliesGetErrors = {
@@ -6318,7 +6318,7 @@ export type FetchGeneralSearchResultApiV1TiktokAppV3FetchGeneralSearchResultGetD
          */
         publish_time?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_general_search_result';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_general_search_result';
 };
 
 export type FetchGeneralSearchResultApiV1TiktokAppV3FetchGeneralSearchResultGetErrors = {
@@ -6380,7 +6380,7 @@ export type FetchVideoSearchResultApiV1TiktokAppV3FetchVideoSearchResultGetData 
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_video_search_result';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_video_search_result';
 };
 
 export type FetchVideoSearchResultApiV1TiktokAppV3FetchVideoSearchResultGetErrors = {
@@ -6442,7 +6442,7 @@ export type FetchUserSearchResultApiV1TiktokAppV3FetchUserSearchResultGetData = 
          */
         user_search_other_pref?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_search_result';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_search_result';
 };
 
 export type FetchUserSearchResultApiV1TiktokAppV3FetchUserSearchResultGetErrors = {
@@ -6504,7 +6504,7 @@ export type FetchMusicSearchResultApiV1TiktokAppV3FetchMusicSearchResultGetData 
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_music_search_result';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_music_search_result';
 };
 
 export type FetchMusicSearchResultApiV1TiktokAppV3FetchMusicSearchResultGetErrors = {
@@ -6548,7 +6548,7 @@ export type FetchHashtagSearchResultApiV1TiktokAppV3FetchHashtagSearchResultGetD
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_hashtag_search_result';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_hashtag_search_result';
 };
 
 export type FetchHashtagSearchResultApiV1TiktokAppV3FetchHashtagSearchResultGetErrors = {
@@ -6598,7 +6598,7 @@ export type FetchLiveSearchResultApiV1TiktokAppV3FetchLiveSearchResultGetData = 
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_live_search_result';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_search_result';
 };
 
 export type FetchLiveSearchResultApiV1TiktokAppV3FetchLiveSearchResultGetErrors = {
@@ -6642,7 +6642,7 @@ export type FetchLocationSearchApiV1TiktokAppV3FetchLocationSearchGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_location_search';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_location_search';
 };
 
 export type FetchLocationSearchApiV1TiktokAppV3FetchLocationSearchGetErrors = {
@@ -6674,7 +6674,7 @@ export type FetchMusicDetailApiV1TiktokAppV3FetchMusicDetailGetData = {
          */
         music_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_music_detail';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_music_detail';
 };
 
 export type FetchMusicDetailApiV1TiktokAppV3FetchMusicDetailGetErrors = {
@@ -6718,7 +6718,7 @@ export type FetchMusicVideoListApiV1TiktokAppV3FetchMusicVideoListGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_music_video_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_music_video_list';
 };
 
 export type FetchMusicVideoListApiV1TiktokAppV3FetchMusicVideoListGetErrors = {
@@ -6750,7 +6750,7 @@ export type FetchHashtagDetailApiV1TiktokAppV3FetchHashtagDetailGetData = {
          */
         ch_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_hashtag_detail';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_hashtag_detail';
 };
 
 export type FetchHashtagDetailApiV1TiktokAppV3FetchHashtagDetailGetErrors = {
@@ -6794,7 +6794,7 @@ export type FetchHashtagVideoListApiV1TiktokAppV3FetchHashtagVideoListGetData = 
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_hashtag_video_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_hashtag_video_list';
 };
 
 export type FetchHashtagVideoListApiV1TiktokAppV3FetchHashtagVideoListGetErrors = {
@@ -6850,7 +6850,7 @@ export type FetchUserFollowerListApiV1TiktokAppV3FetchUserFollowerListGetData = 
          */
         page_token?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_follower_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_follower_list';
 };
 
 export type FetchUserFollowerListApiV1TiktokAppV3FetchUserFollowerListGetErrors = {
@@ -6906,7 +6906,7 @@ export type FetchUserFollowingListApiV1TiktokAppV3FetchUserFollowingListGetData 
          */
         page_token?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_following_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_following_list';
 };
 
 export type FetchUserFollowingListApiV1TiktokAppV3FetchUserFollowingListGetErrors = {
@@ -6974,7 +6974,7 @@ export type FetchCreatorSearchInsightsApiV1TiktokAppV3FetchCreatorSearchInsights
          */
         force_refresh?: boolean;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_creator_search_insights';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_search_insights';
 };
 
 export type FetchCreatorSearchInsightsApiV1TiktokAppV3FetchCreatorSearchInsightsGetErrors = {
@@ -7030,7 +7030,7 @@ export type FetchCreatorSearchInsightsDetailApiV1TiktokAppV3FetchCreatorSearchIn
          */
         dimension_list?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_creator_search_insights_detail';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_search_insights_detail';
 };
 
 export type FetchCreatorSearchInsightsDetailApiV1TiktokAppV3FetchCreatorSearchInsightsDetailGetErrors = {
@@ -7074,7 +7074,7 @@ export type FetchCreatorSearchInsightsTrendApiV1TiktokAppV3FetchCreatorSearchIns
          */
         query_analysis_required?: boolean;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_creator_search_insights_trend';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_search_insights_trend';
 };
 
 export type FetchCreatorSearchInsightsTrendApiV1TiktokAppV3FetchCreatorSearchInsightsTrendGetErrors = {
@@ -7118,7 +7118,7 @@ export type FetchCreatorSearchInsightsVideosApiV1TiktokAppV3FetchCreatorSearchIn
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_creator_search_insights_videos';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_search_insights_videos';
 };
 
 export type FetchCreatorSearchInsightsVideosApiV1TiktokAppV3FetchCreatorSearchInsightsVideosGetErrors = {
@@ -7162,7 +7162,7 @@ export type FetchMusicChartListApiV1TiktokAppV3FetchMusicChartListGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_music_chart_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_music_chart_list';
 };
 
 export type FetchMusicChartListApiV1TiktokAppV3FetchMusicChartListGetErrors = {
@@ -7200,7 +7200,7 @@ export type SearchFollowerListApiV1TiktokAppV3SearchFollowerListGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/tiktok/app/v3/search_follower_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/search_follower_list';
 };
 
 export type SearchFollowerListApiV1TiktokAppV3SearchFollowerListGetErrors = {
@@ -7238,7 +7238,7 @@ export type SearchFollowingListApiV1TiktokAppV3SearchFollowingListGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/tiktok/app/v3/search_following_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/search_following_list';
 };
 
 export type SearchFollowingListApiV1TiktokAppV3SearchFollowingListGetErrors = {
@@ -7270,7 +7270,7 @@ export type FetchLiveRoomInfoApiV1TiktokAppV3FetchLiveRoomInfoGetData = {
          */
         room_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_live_room_info';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_room_info';
 };
 
 export type FetchLiveRoomInfoApiV1TiktokAppV3FetchLiveRoomInfoGetErrors = {
@@ -7308,7 +7308,7 @@ export type FetchLiveRankingListApiV1TiktokAppV3FetchLiveRankingListGetData = {
          */
         anchor_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_live_ranking_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_ranking_list';
 };
 
 export type FetchLiveRankingListApiV1TiktokAppV3FetchLiveRankingListGetErrors = {
@@ -7340,7 +7340,7 @@ export type CheckLiveRoomOnlineApiV1TiktokAppV3CheckLiveRoomOnlineGetData = {
          */
         room_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/check_live_room_online';
+    url: '/video-hub/api/v1/tiktok/app/v3/check_live_room_online';
 };
 
 export type CheckLiveRoomOnlineApiV1TiktokAppV3CheckLiveRoomOnlineGetErrors = {
@@ -7365,7 +7365,7 @@ export type CheckLiveRoomOnlineBatchApiV1TiktokAppV3CheckLiveRoomOnlineBatchPost
     body: LiveRoomBatchCheckRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/app/v3/check_live_room_online_batch';
+    url: '/video-hub/api/v1/tiktok/app/v3/check_live_room_online_batch';
 };
 
 export type CheckLiveRoomOnlineBatchApiV1TiktokAppV3CheckLiveRoomOnlineBatchPostErrors = {
@@ -7397,7 +7397,7 @@ export type FetchShareShortLinkApiV1TiktokAppV3FetchShareShortLinkGetData = {
          */
         url: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_share_short_link';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_share_short_link';
 };
 
 export type FetchShareShortLinkApiV1TiktokAppV3FetchShareShortLinkGetErrors = {
@@ -7435,7 +7435,7 @@ export type FetchShareQrCodeApiV1TiktokAppV3FetchShareQrCodeGetData = {
          */
         schema_type?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_share_qr_code';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_share_qr_code';
 };
 
 export type FetchShareQrCodeApiV1TiktokAppV3FetchShareQrCodeGetErrors = {
@@ -7509,7 +7509,7 @@ export type FetchProductSearchApiV1TiktokAppV3FetchProductSearchGetData = {
          */
         max_price?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_product_search';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_search';
 };
 
 export type FetchProductSearchApiV1TiktokAppV3FetchProductSearchGetErrors = {
@@ -7541,7 +7541,7 @@ export type FetchCreatorInfoApiV1TiktokAppV3FetchCreatorInfoGetData = {
          */
         creator_uid: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_creator_info';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_info';
 };
 
 export type FetchCreatorInfoApiV1TiktokAppV3FetchCreatorInfoGetErrors = {
@@ -7585,7 +7585,7 @@ export type FetchCreatorShowcaseProductListApiV1TiktokAppV3FetchCreatorShowcaseP
          */
         next_scroll_param?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_creator_showcase_product_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_showcase_product_list';
 };
 
 export type FetchCreatorShowcaseProductListApiV1TiktokAppV3FetchCreatorShowcaseProductListGetErrors = {
@@ -7617,7 +7617,7 @@ export type FetchShopIdByShareLinkApiV1TiktokAppV3FetchShopIdByShareLinkGetData 
          */
         share_link: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_shop_id_by_share_link';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_id_by_share_link';
 };
 
 export type FetchShopIdByShareLinkApiV1TiktokAppV3FetchShopIdByShareLinkGetErrors = {
@@ -7649,7 +7649,7 @@ export type FetchProductIdByShareLinkApiV1TiktokAppV3FetchProductIdByShareLinkGe
          */
         share_link: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_product_id_by_share_link';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_id_by_share_link';
 };
 
 export type FetchProductIdByShareLinkApiV1TiktokAppV3FetchProductIdByShareLinkGetErrors = {
@@ -7681,7 +7681,7 @@ export type FetchProductDetailApiV1TiktokAppV3FetchProductDetailGetData = {
          */
         product_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_product_detail';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_detail';
 };
 
 export type FetchProductDetailApiV1TiktokAppV3FetchProductDetailGetErrors = {
@@ -7713,7 +7713,7 @@ export type FetchProductDetailV2ApiV1TiktokAppV3FetchProductDetailV2GetData = {
          */
         product_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_product_detail_v2';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_detail_v2';
 };
 
 export type FetchProductDetailV2ApiV1TiktokAppV3FetchProductDetailV2GetErrors = {
@@ -7751,7 +7751,7 @@ export type FetchProductDetailV3ApiV1TiktokAppV3FetchProductDetailV3GetData = {
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_product_detail_v3';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_detail_v3';
 };
 
 export type FetchProductDetailV3ApiV1TiktokAppV3FetchProductDetailV3GetErrors = {
@@ -7789,7 +7789,7 @@ export type FetchProductDetailV4ApiV1TiktokAppV3FetchProductDetailV4GetData = {
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_product_detail_v4';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_detail_v4';
 };
 
 export type FetchProductDetailV4ApiV1TiktokAppV3FetchProductDetailV4GetErrors = {
@@ -7845,7 +7845,7 @@ export type FetchProductReviewApiV1TiktokAppV3FetchProductReviewGetData = {
          */
         sort_type?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_product_review';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_review';
 };
 
 export type FetchProductReviewApiV1TiktokAppV3FetchProductReviewGetErrors = {
@@ -7877,7 +7877,7 @@ export type FetchShopHomePageListApiV1TiktokAppV3FetchShopHomePageListGetData = 
          */
         seller_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_shop_home_page_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_home_page_list';
 };
 
 export type FetchShopHomePageListApiV1TiktokAppV3FetchShopHomePageListGetErrors = {
@@ -7915,7 +7915,7 @@ export type FetchShopHomeApiV1TiktokAppV3FetchShopHomeGetData = {
          */
         seller_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_shop_home';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_home';
 };
 
 export type FetchShopHomeApiV1TiktokAppV3FetchShopHomeGetErrors = {
@@ -7959,7 +7959,7 @@ export type FetchShopProductRecommendApiV1TiktokAppV3FetchShopProductRecommendGe
          */
         page_size?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_shop_product_recommend';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_product_recommend';
 };
 
 export type FetchShopProductRecommendApiV1TiktokAppV3FetchShopProductRecommendGetErrors = {
@@ -8015,7 +8015,7 @@ export type FetchShopProductListApiV1TiktokAppV3FetchShopProductListGetData = {
          */
         sort_order?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_shop_product_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_product_list';
 };
 
 export type FetchShopProductListApiV1TiktokAppV3FetchShopProductListGetErrors = {
@@ -8071,7 +8071,7 @@ export type FetchShopProductListV2ApiV1TiktokAppV3FetchShopProductListV2GetData 
          */
         sort_order?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_shop_product_list_v2';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_product_list_v2';
 };
 
 export type FetchShopProductListV2ApiV1TiktokAppV3FetchShopProductListV2GetErrors = {
@@ -8103,7 +8103,7 @@ export type FetchShopInfoApiV1TiktokAppV3FetchShopInfoGetData = {
          */
         shop_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_shop_info';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_info';
 };
 
 export type FetchShopInfoApiV1TiktokAppV3FetchShopInfoGetErrors = {
@@ -8135,7 +8135,7 @@ export type FetchShopProductCategoryApiV1TiktokAppV3FetchShopProductCategoryGetD
          */
         seller_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_shop_product_category';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_product_category';
 };
 
 export type FetchShopProductCategoryApiV1TiktokAppV3FetchShopProductCategoryGetErrors = {
@@ -8197,7 +8197,7 @@ export type FetchLiveDailyRankApiV1TiktokAppV3FetchLiveDailyRankGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_live_daily_rank';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_daily_rank';
 };
 
 export type FetchLiveDailyRankApiV1TiktokAppV3FetchLiveDailyRankGetErrors = {
@@ -8241,7 +8241,7 @@ export type FetchUserMusicListApiV1TiktokAppV3FetchUserMusicListGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_user_music_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_music_list';
 };
 
 export type FetchUserMusicListApiV1TiktokAppV3FetchUserMusicListGetErrors = {
@@ -8266,7 +8266,7 @@ export type FetchContentTranslateApiV1TiktokAppV3FetchContentTranslatePostData =
     body: TikTokAppV3ContentTranslate;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/app/v3/fetch_content_translate';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_content_translate';
 };
 
 export type FetchContentTranslateApiV1TiktokAppV3FetchContentTranslatePostErrors = {
@@ -8291,7 +8291,7 @@ export type FetchHomeFeedApiV1TiktokAppV3FetchHomeFeedPostData = {
     body: TikTokAppV3HomeFeed;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/app/v3/fetch_home_feed';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_home_feed';
 };
 
 export type FetchHomeFeedApiV1TiktokAppV3FetchHomeFeedPostErrors = {
@@ -8316,7 +8316,7 @@ export type TTencryptAlgorithmApiV1TiktokAppV3tTencryptAlgorithmPostData = {
     body: TikTokAppEncryptRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/app/v3/TTencrypt_algorithm';
+    url: '/video-hub/api/v1/tiktok/app/v3/TTencrypt_algorithm';
 };
 
 export type TTencryptAlgorithmApiV1TiktokAppV3tTencryptAlgorithmPostErrors = {
@@ -8378,7 +8378,7 @@ export type FetchLiveRoomProductListApiV1TiktokAppV3FetchLiveRoomProductListGetD
          */
         cookie?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_live_room_product_list';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_room_product_list';
 };
 
 export type FetchLiveRoomProductListApiV1TiktokAppV3FetchLiveRoomProductListGetErrors = {
@@ -8440,7 +8440,7 @@ export type FetchLiveRoomProductListV2ApiV1TiktokAppV3FetchLiveRoomProductListV2
          */
         cookie?: string;
     };
-    url: '/api/v1/tiktok/app/v3/fetch_live_room_product_list_v2';
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_room_product_list_v2';
 };
 
 export type FetchLiveRoomProductListV2ApiV1TiktokAppV3FetchLiveRoomProductListV2GetErrors = {
@@ -8478,7 +8478,7 @@ export type AddVideoPlayCountApiV1TiktokAppV3AddVideoPlayCountGetData = {
          */
         item_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/add_video_play_count';
+    url: '/video-hub/api/v1/tiktok/app/v3/add_video_play_count';
 };
 
 export type AddVideoPlayCountApiV1TiktokAppV3AddVideoPlayCountGetErrors = {
@@ -8503,7 +8503,7 @@ export type EncryptDecryptLoginRequestApiV1TiktokAppV3EncryptDecryptLoginRequest
     body: TikTokAppLoginEncryptDecryptRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/app/v3/encrypt_decrypt_login_request';
+    url: '/video-hub/api/v1/tiktok/app/v3/encrypt_decrypt_login_request';
 };
 
 export type EncryptDecryptLoginRequestApiV1TiktokAppV3EncryptDecryptLoginRequestPostErrors = {
@@ -8535,7 +8535,7 @@ export type OpenTiktokAppToVideoDetailApiV1TiktokAppV3OpenTiktokAppToVideoDetail
          */
         aweme_id: string;
     };
-    url: '/api/v1/tiktok/app/v3/open_tiktok_app_to_video_detail';
+    url: '/video-hub/api/v1/tiktok/app/v3/open_tiktok_app_to_video_detail';
 };
 
 export type OpenTiktokAppToVideoDetailApiV1TiktokAppV3OpenTiktokAppToVideoDetailGetErrors = {
@@ -8567,7 +8567,7 @@ export type OpenTiktokAppToUserProfileApiV1TiktokAppV3OpenTiktokAppToUserProfile
          */
         uid: string;
     };
-    url: '/api/v1/tiktok/app/v3/open_tiktok_app_to_user_profile';
+    url: '/video-hub/api/v1/tiktok/app/v3/open_tiktok_app_to_user_profile';
 };
 
 export type OpenTiktokAppToUserProfileApiV1TiktokAppV3OpenTiktokAppToUserProfileGetErrors = {
@@ -8599,7 +8599,7 @@ export type OpenTiktokAppToKeywordSearchApiV1TiktokAppV3OpenTiktokAppToKeywordSe
          */
         keyword: string;
     };
-    url: '/api/v1/tiktok/app/v3/open_tiktok_app_to_keyword_search';
+    url: '/video-hub/api/v1/tiktok/app/v3/open_tiktok_app_to_keyword_search';
 };
 
 export type OpenTiktokAppToKeywordSearchApiV1TiktokAppV3OpenTiktokAppToKeywordSearchGetErrors = {
@@ -8631,7 +8631,7 @@ export type OpenTiktokAppToSendPrivateMessageApiV1TiktokAppV3OpenTiktokAppToSend
          */
         uid: string;
     };
-    url: '/api/v1/tiktok/app/v3/open_tiktok_app_to_send_private_message';
+    url: '/video-hub/api/v1/tiktok/app/v3/open_tiktok_app_to_send_private_message';
 };
 
 export type OpenTiktokAppToSendPrivateMessageApiV1TiktokAppV3OpenTiktokAppToSendPrivateMessageGetErrors = {
@@ -8656,7 +8656,7 @@ export type GetAccountHealthStatusApiV1TiktokCreatorGetAccountHealthStatusPostDa
     body: GetAccountHealthRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_account_health_status';
+    url: '/video-hub/api/v1/tiktok/creator/get_account_health_status';
 };
 
 export type GetAccountHealthStatusApiV1TiktokCreatorGetAccountHealthStatusPostErrors = {
@@ -8681,7 +8681,7 @@ export type GetAccountViolationListApiV1TiktokCreatorGetAccountViolationListPost
     body: GetViolationRecordRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_account_violation_list';
+    url: '/video-hub/api/v1/tiktok/creator/get_account_violation_list';
 };
 
 export type GetAccountViolationListApiV1TiktokCreatorGetAccountViolationListPostErrors = {
@@ -8706,7 +8706,7 @@ export type GetAccountInsightsOverviewApiV1TiktokCreatorGetAccountInsightsOvervi
     body: GetAccountOverviewRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_account_insights_overview';
+    url: '/video-hub/api/v1/tiktok/creator/get_account_insights_overview';
 };
 
 export type GetAccountInsightsOverviewApiV1TiktokCreatorGetAccountInsightsOverviewPostErrors = {
@@ -8731,7 +8731,7 @@ export type GetLiveOverviewApiV1TiktokCreatorGetLiveAnalyticsSummaryPostData = {
     body: GetLiveOverviewRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_live_analytics_summary';
+    url: '/video-hub/api/v1/tiktok/creator/get_live_analytics_summary';
 };
 
 export type GetLiveOverviewApiV1TiktokCreatorGetLiveAnalyticsSummaryPostErrors = {
@@ -8756,7 +8756,7 @@ export type GetVideoAnalyticsSummaryApiV1TiktokCreatorGetVideoAnalyticsSummaryPo
     body: GetVideoOverviewRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_video_analytics_summary';
+    url: '/video-hub/api/v1/tiktok/creator/get_video_analytics_summary';
 };
 
 export type GetVideoAnalyticsSummaryApiV1TiktokCreatorGetVideoAnalyticsSummaryPostErrors = {
@@ -8781,7 +8781,7 @@ export type GetVideoListApiV1TiktokCreatorGetVideoListAnalyticsPostData = {
     body: GetVideoListRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_video_list_analytics';
+    url: '/video-hub/api/v1/tiktok/creator/get_video_list_analytics';
 };
 
 export type GetVideoListApiV1TiktokCreatorGetVideoListAnalyticsPostErrors = {
@@ -8806,7 +8806,7 @@ export type GetProductAnalyticsListApiV1TiktokCreatorGetProductAnalyticsListPost
     body: GetProductListRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_product_analytics_list';
+    url: '/video-hub/api/v1/tiktok/creator/get_product_analytics_list';
 };
 
 export type GetProductAnalyticsListApiV1TiktokCreatorGetProductAnalyticsListPostErrors = {
@@ -8831,7 +8831,7 @@ export type GetCreatorAccountInfoApiV1TiktokCreatorGetCreatorAccountInfoPostData
     body: GetCreatorAccountInfoRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_creator_account_info';
+    url: '/video-hub/api/v1/tiktok/creator/get_creator_account_info';
 };
 
 export type GetCreatorAccountInfoApiV1TiktokCreatorGetCreatorAccountInfoPostErrors = {
@@ -8856,7 +8856,7 @@ export type GetShowcaseProductListApiV1TiktokCreatorGetShowcaseProductListPostDa
     body: GetShowcaseProductListRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_showcase_product_list';
+    url: '/video-hub/api/v1/tiktok/creator/get_showcase_product_list';
 };
 
 export type GetShowcaseProductListApiV1TiktokCreatorGetShowcaseProductListPostErrors = {
@@ -8881,7 +8881,7 @@ export type GetVideoAssociatedProductListApiV1TiktokCreatorGetVideoAssociatedPro
     body: GetVideoAssociatedProductListRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_video_associated_product_list';
+    url: '/video-hub/api/v1/tiktok/creator/get_video_associated_product_list';
 };
 
 export type GetVideoAssociatedProductListApiV1TiktokCreatorGetVideoAssociatedProductListPostErrors = {
@@ -8906,7 +8906,7 @@ export type GetVideoDetailedStatsApiV1TiktokCreatorGetVideoDetailedStatsPostData
     body: GetVideoDetailedStatsRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_video_detailed_stats';
+    url: '/video-hub/api/v1/tiktok/creator/get_video_detailed_stats';
 };
 
 export type GetVideoDetailedStatsApiV1TiktokCreatorGetVideoDetailedStatsPostErrors = {
@@ -8931,7 +8931,7 @@ export type GetVideoToProductStatsApiV1TiktokCreatorGetVideoToProductStatsPostDa
     body: GetVideoToProductStatsRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_video_to_product_stats';
+    url: '/video-hub/api/v1/tiktok/creator/get_video_to_product_stats';
 };
 
 export type GetVideoToProductStatsApiV1TiktokCreatorGetVideoToProductStatsPostErrors = {
@@ -8956,7 +8956,7 @@ export type GetProductRelatedVideosApiV1TiktokCreatorGetProductRelatedVideosPost
     body: GetProductRelatedVideosRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_product_related_videos';
+    url: '/video-hub/api/v1/tiktok/creator/get_product_related_videos';
 };
 
 export type GetProductRelatedVideosApiV1TiktokCreatorGetProductRelatedVideosPostErrors = {
@@ -8981,7 +8981,7 @@ export type GetVideoAudienceStatsApiV1TiktokCreatorGetVideoAudienceStatsPostData
     body: GetVideoAudienceStatsRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/creator/get_video_audience_stats';
+    url: '/video-hub/api/v1/tiktok/creator/get_video_audience_stats';
 };
 
 export type GetVideoAudienceStatsApiV1TiktokCreatorGetVideoAudienceStatsPostErrors = {
@@ -9013,7 +9013,7 @@ export type FetchVideoMetricsApiV1TiktokAnalyticsFetchVideoMetricsGetData = {
          */
         item_id: string;
     };
-    url: '/api/v1/tiktok/analytics/fetch_video_metrics';
+    url: '/video-hub/api/v1/tiktok/analytics/fetch_video_metrics';
 };
 
 export type FetchVideoMetricsApiV1TiktokAnalyticsFetchVideoMetricsGetErrors = {
@@ -9051,7 +9051,7 @@ export type DetectFakeViewsApiV1TiktokAnalyticsDetectFakeViewsGetData = {
          */
         content_category?: string;
     };
-    url: '/api/v1/tiktok/analytics/detect_fake_views';
+    url: '/video-hub/api/v1/tiktok/analytics/detect_fake_views';
 };
 
 export type DetectFakeViewsApiV1TiktokAnalyticsDetectFakeViewsGetErrors = {
@@ -9083,7 +9083,7 @@ export type FetchCommentKeywordsApiV1TiktokAnalyticsFetchCommentKeywordsGetData 
          */
         item_id: string;
     };
-    url: '/api/v1/tiktok/analytics/fetch_comment_keywords';
+    url: '/video-hub/api/v1/tiktok/analytics/fetch_comment_keywords';
 };
 
 export type FetchCommentKeywordsApiV1TiktokAnalyticsFetchCommentKeywordsGetErrors = {
@@ -9115,7 +9115,7 @@ export type FetchCreatorInfoAndMilestonesApiV1TiktokAnalyticsFetchCreatorInfoAnd
          */
         user_id: string;
     };
-    url: '/api/v1/tiktok/analytics/fetch_creator_info_and_milestones';
+    url: '/video-hub/api/v1/tiktok/analytics/fetch_creator_info_and_milestones';
 };
 
 export type FetchCreatorInfoAndMilestonesApiV1TiktokAnalyticsFetchCreatorInfoAndMilestonesGetErrors = {
@@ -9147,7 +9147,7 @@ export type GetAdsDetailApiV1TiktokAdsGetAdsDetailGetData = {
          */
         ads_id: string;
     };
-    url: '/api/v1/tiktok/ads/get_ads_detail';
+    url: '/video-hub/api/v1/tiktok/ads/get_ads_detail';
 };
 
 export type GetAdsDetailApiV1TiktokAdsGetAdsDetailGetErrors = {
@@ -9245,7 +9245,7 @@ export type SearchAdsApiV1TiktokAdsSearchAdsGetData = {
          */
         search_id?: string;
     };
-    url: '/api/v1/tiktok/ads/search_ads';
+    url: '/video-hub/api/v1/tiktok/ads/search_ads';
 };
 
 export type SearchAdsApiV1TiktokAdsSearchAdsGetErrors = {
@@ -9331,7 +9331,7 @@ export type GetKeywordInsightsApiV1TiktokAdsGetKeywordInsightsGetData = {
          */
         keyword?: string;
     };
-    url: '/api/v1/tiktok/ads/get_keyword_insights';
+    url: '/video-hub/api/v1/tiktok/ads/get_keyword_insights';
 };
 
 export type GetKeywordInsightsApiV1TiktokAdsGetKeywordInsightsGetErrors = {
@@ -9411,7 +9411,7 @@ export type GetTopProductsApiV1TiktokAdsGetTopProductsGetData = {
          */
         order_type?: string;
     };
-    url: '/api/v1/tiktok/ads/get_top_products';
+    url: '/video-hub/api/v1/tiktok/ads/get_top_products';
 };
 
 export type GetTopProductsApiV1TiktokAdsGetTopProductsGetErrors = {
@@ -9479,7 +9479,7 @@ export type GetHashtagListApiV1TiktokAdsGetHashtagListGetData = {
          */
         filter_by?: string;
     };
-    url: '/api/v1/tiktok/ads/get_hashtag_list';
+    url: '/video-hub/api/v1/tiktok/ads/get_hashtag_list';
 };
 
 export type GetHashtagListApiV1TiktokAdsGetHashtagListGetErrors = {
@@ -9547,7 +9547,7 @@ export type GetSoundRankListApiV1TiktokAdsGetSoundRankListGetData = {
          */
         country_code?: string;
     };
-    url: '/api/v1/tiktok/ads/get_sound_rank_list';
+    url: '/video-hub/api/v1/tiktok/ads/get_sound_rank_list';
 };
 
 export type GetSoundRankListApiV1TiktokAdsGetSoundRankListGetErrors = {
@@ -9609,7 +9609,7 @@ export type GetKeywordListApiV1TiktokAdsGetKeywordListGetData = {
          */
         industry?: string;
     };
-    url: '/api/v1/tiktok/ads/get_keyword_list';
+    url: '/video-hub/api/v1/tiktok/ads/get_keyword_list';
 };
 
 export type GetKeywordListApiV1TiktokAdsGetKeywordListGetErrors = {
@@ -9653,7 +9653,7 @@ export type GetTopAdsSpotlightApiV1TiktokAdsGetTopAdsSpotlightGetData = {
          */
         limit?: number;
     };
-    url: '/api/v1/tiktok/ads/get_top_ads_spotlight';
+    url: '/video-hub/api/v1/tiktok/ads/get_top_ads_spotlight';
 };
 
 export type GetTopAdsSpotlightApiV1TiktokAdsGetTopAdsSpotlightGetErrors = {
@@ -9691,7 +9691,7 @@ export type GetAdKeyframeAnalysisApiV1TiktokAdsGetAdKeyframeAnalysisGetData = {
          */
         metric?: string;
     };
-    url: '/api/v1/tiktok/ads/get_ad_keyframe_analysis';
+    url: '/video-hub/api/v1/tiktok/ads/get_ad_keyframe_analysis';
 };
 
 export type GetAdKeyframeAnalysisApiV1TiktokAdsGetAdKeyframeAnalysisGetErrors = {
@@ -9735,7 +9735,7 @@ export type GetAdPercentileApiV1TiktokAdsGetAdPercentileGetData = {
          */
         period_type?: number;
     };
-    url: '/api/v1/tiktok/ads/get_ad_percentile';
+    url: '/video-hub/api/v1/tiktok/ads/get_ad_percentile';
 };
 
 export type GetAdPercentileApiV1TiktokAdsGetAdPercentileGetErrors = {
@@ -9779,7 +9779,7 @@ export type GetAdInteractiveAnalysisApiV1TiktokAdsGetAdInteractiveAnalysisGetDat
          */
         period_type?: number;
     };
-    url: '/api/v1/tiktok/ads/get_ad_interactive_analysis';
+    url: '/video-hub/api/v1/tiktok/ads/get_ad_interactive_analysis';
 };
 
 export type GetAdInteractiveAnalysisApiV1TiktokAdsGetAdInteractiveAnalysisGetErrors = {
@@ -9823,7 +9823,7 @@ export type GetRecommendedAdsApiV1TiktokAdsGetRecommendedAdsGetData = {
          */
         country_code?: string;
     };
-    url: '/api/v1/tiktok/ads/get_recommended_ads';
+    url: '/video-hub/api/v1/tiktok/ads/get_recommended_ads';
 };
 
 export type GetRecommendedAdsApiV1TiktokAdsGetRecommendedAdsGetErrors = {
@@ -9861,7 +9861,7 @@ export type GetQuerySuggestionsApiV1TiktokAdsGetQuerySuggestionsGetData = {
          */
         scenario?: number;
     };
-    url: '/api/v1/tiktok/ads/get_query_suggestions';
+    url: '/video-hub/api/v1/tiktok/ads/get_query_suggestions';
 };
 
 export type GetQuerySuggestionsApiV1TiktokAdsGetQuerySuggestionsGetErrors = {
@@ -9886,7 +9886,7 @@ export type GetKeywordFiltersApiV1TiktokAdsGetKeywordFiltersGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/ads/get_keyword_filters';
+    url: '/video-hub/api/v1/tiktok/ads/get_keyword_filters';
 };
 
 export type GetKeywordFiltersApiV1TiktokAdsGetKeywordFiltersGetResponses = {
@@ -9945,7 +9945,7 @@ export type GetRelatedKeywordsApiV1TiktokAdsGetRelatedKeywordsGetData = {
          */
         limit?: number;
     };
-    url: '/api/v1/tiktok/ads/get_related_keywords';
+    url: '/video-hub/api/v1/tiktok/ads/get_related_keywords';
 };
 
 export type GetRelatedKeywordsApiV1TiktokAdsGetRelatedKeywordsGetErrors = {
@@ -10031,7 +10031,7 @@ export type GetKeywordDetailsApiV1TiktokAdsGetKeywordDetailsGetData = {
          */
         keyword_type?: string;
     };
-    url: '/api/v1/tiktok/ads/get_keyword_details';
+    url: '/video-hub/api/v1/tiktok/ads/get_keyword_details';
 };
 
 export type GetKeywordDetailsApiV1TiktokAdsGetKeywordDetailsGetErrors = {
@@ -10099,7 +10099,7 @@ export type GetCreativePatternsApiV1TiktokAdsGetCreativePatternsGetData = {
          */
         limit?: number;
     };
-    url: '/api/v1/tiktok/ads/get_creative_patterns';
+    url: '/video-hub/api/v1/tiktok/ads/get_creative_patterns';
 };
 
 export type GetCreativePatternsApiV1TiktokAdsGetCreativePatternsGetErrors = {
@@ -10124,7 +10124,7 @@ export type GetProductFiltersApiV1TiktokAdsGetProductFiltersGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/ads/get_product_filters';
+    url: '/video-hub/api/v1/tiktok/ads/get_product_filters';
 };
 
 export type GetProductFiltersApiV1TiktokAdsGetProductFiltersGetResponses = {
@@ -10177,7 +10177,7 @@ export type GetProductMetricsApiV1TiktokAdsGetProductMetricsGetData = {
          */
         country_code?: string;
     };
-    url: '/api/v1/tiktok/ads/get_product_metrics';
+    url: '/video-hub/api/v1/tiktok/ads/get_product_metrics';
 };
 
 export type GetProductMetricsApiV1TiktokAdsGetProductMetricsGetErrors = {
@@ -10233,7 +10233,7 @@ export type GetProductDetailApiV1TiktokAdsGetProductDetailGetData = {
          */
         country_code?: string;
     };
-    url: '/api/v1/tiktok/ads/get_product_detail';
+    url: '/video-hub/api/v1/tiktok/ads/get_product_detail';
 };
 
 export type GetProductDetailApiV1TiktokAdsGetProductDetailGetErrors = {
@@ -10258,7 +10258,7 @@ export type GetHashtagFiltersApiV1TiktokAdsGetHashtagFiltersGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/ads/get_hashtag_filters';
+    url: '/video-hub/api/v1/tiktok/ads/get_hashtag_filters';
 };
 
 export type GetHashtagFiltersApiV1TiktokAdsGetHashtagFiltersGetResponses = {
@@ -10281,7 +10281,7 @@ export type GetHashtagCreatorApiV1TiktokAdsGetHashtagCreatorGetData = {
          */
         hashtag: string;
     };
-    url: '/api/v1/tiktok/ads/get_hashtag_creator';
+    url: '/video-hub/api/v1/tiktok/ads/get_hashtag_creator';
 };
 
 export type GetHashtagCreatorApiV1TiktokAdsGetHashtagCreatorGetErrors = {
@@ -10313,7 +10313,7 @@ export type GetSoundFiltersApiV1TiktokAdsGetSoundFiltersGetData = {
          */
         rank_type?: string;
     };
-    url: '/api/v1/tiktok/ads/get_sound_filters';
+    url: '/video-hub/api/v1/tiktok/ads/get_sound_filters';
 };
 
 export type GetSoundFiltersApiV1TiktokAdsGetSoundFiltersGetErrors = {
@@ -10357,7 +10357,7 @@ export type GetSoundDetailApiV1TiktokAdsGetSoundDetailGetData = {
          */
         country_code?: string;
     };
-    url: '/api/v1/tiktok/ads/get_sound_detail';
+    url: '/video-hub/api/v1/tiktok/ads/get_sound_detail';
 };
 
 export type GetSoundDetailApiV1TiktokAdsGetSoundDetailGetErrors = {
@@ -10431,7 +10431,7 @@ export type SearchSoundHintApiV1TiktokAdsSearchSoundHintGetData = {
          */
         commercial_music?: boolean;
     };
-    url: '/api/v1/tiktok/ads/search_sound_hint';
+    url: '/video-hub/api/v1/tiktok/ads/search_sound_hint';
 };
 
 export type SearchSoundHintApiV1TiktokAdsSearchSoundHintGetErrors = {
@@ -10505,7 +10505,7 @@ export type SearchSoundApiV1TiktokAdsSearchSoundGetData = {
          */
         country_code?: string;
     };
-    url: '/api/v1/tiktok/ads/search_sound';
+    url: '/video-hub/api/v1/tiktok/ads/search_sound';
 };
 
 export type SearchSoundApiV1TiktokAdsSearchSoundGetErrors = {
@@ -10543,7 +10543,7 @@ export type GetSoundRecommendationsApiV1TiktokAdsGetSoundRecommendationsGetData 
          */
         limit?: number;
     };
-    url: '/api/v1/tiktok/ads/get_sound_recommendations';
+    url: '/video-hub/api/v1/tiktok/ads/get_sound_recommendations';
 };
 
 export type GetSoundRecommendationsApiV1TiktokAdsGetSoundRecommendationsGetErrors = {
@@ -10568,7 +10568,7 @@ export type GetCreatorFiltersApiV1TiktokAdsGetCreatorFiltersGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/ads/get_creator_filters';
+    url: '/video-hub/api/v1/tiktok/ads/get_creator_filters';
 };
 
 export type GetCreatorFiltersApiV1TiktokAdsGetCreatorFiltersGetResponses = {
@@ -10627,7 +10627,7 @@ export type GetCreatorListApiV1TiktokAdsGetCreatorListGetData = {
          */
         keyword?: string;
     };
-    url: '/api/v1/tiktok/ads/get_creator_list';
+    url: '/video-hub/api/v1/tiktok/ads/get_creator_list';
 };
 
 export type GetCreatorListApiV1TiktokAdsGetCreatorListGetErrors = {
@@ -10683,7 +10683,7 @@ export type SearchCreatorsApiV1TiktokAdsSearchCreatorsGetData = {
          */
         creator_country?: string;
     };
-    url: '/api/v1/tiktok/ads/search_creators';
+    url: '/video-hub/api/v1/tiktok/ads/search_creators';
 };
 
 export type SearchCreatorsApiV1TiktokAdsSearchCreatorsGetErrors = {
@@ -10739,7 +10739,7 @@ export type GetPopularTrendsApiV1TiktokAdsGetPopularTrendsGetData = {
          */
         country_code?: string;
     };
-    url: '/api/v1/tiktok/ads/get_popular_trends';
+    url: '/video-hub/api/v1/tiktok/ads/get_popular_trends';
 };
 
 export type GetPopularTrendsApiV1TiktokAdsGetPopularTrendsGetErrors = {
@@ -10783,7 +10783,7 @@ export type FetchProductDetailApiV1TiktokShopWebFetchProductDetailGetData = {
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_product_detail';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_detail';
 };
 
 export type FetchProductDetailApiV1TiktokShopWebFetchProductDetailGetErrors = {
@@ -10827,7 +10827,7 @@ export type FetchProductDetailV2ApiV1TiktokShopWebFetchProductDetailV2GetData = 
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_product_detail_v2';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_detail_v2';
 };
 
 export type FetchProductDetailV2ApiV1TiktokShopWebFetchProductDetailV2GetErrors = {
@@ -10865,7 +10865,7 @@ export type FetchProductDetailV3ApiV1TiktokShopWebFetchProductDetailV3GetData = 
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_product_detail_v3';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_detail_v3';
 };
 
 export type FetchProductDetailV3ApiV1TiktokShopWebFetchProductDetailV3GetErrors = {
@@ -10915,7 +10915,7 @@ export type FetchProductReviewsV1ApiV1TiktokShopWebFetchProductReviewsV1GetData 
          */
         offset?: number;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_product_reviews_v1';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_reviews_v1';
 };
 
 export type FetchProductReviewsV1ApiV1TiktokShopWebFetchProductReviewsV1GetErrors = {
@@ -10977,7 +10977,7 @@ export type FetchProductReviewsV2ApiV1TiktokShopWebFetchProductReviewsV2GetData 
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_product_reviews_v2';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_reviews_v2';
 };
 
 export type FetchProductReviewsV2ApiV1TiktokShopWebFetchProductReviewsV2GetErrors = {
@@ -11021,7 +11021,7 @@ export type FetchSellerProductsListApiV1TiktokShopWebFetchSellerProductsListGetD
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_seller_products_list';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_seller_products_list';
 };
 
 export type FetchSellerProductsListApiV1TiktokShopWebFetchSellerProductsListGetErrors = {
@@ -11065,7 +11065,7 @@ export type FetchSellerProductsListV2ApiV1TiktokShopWebFetchSellerProductsListV2
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_seller_products_list_v2';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_seller_products_list_v2';
 };
 
 export type FetchSellerProductsListV2ApiV1TiktokShopWebFetchSellerProductsListV2GetErrors = {
@@ -11109,7 +11109,7 @@ export type FetchSearchWordSuggestionApiV1TiktokShopWebFetchSearchWordSuggestion
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_search_word_suggestion';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_word_suggestion';
 };
 
 export type FetchSearchWordSuggestionApiV1TiktokShopWebFetchSearchWordSuggestionGetErrors = {
@@ -11153,7 +11153,7 @@ export type FetchSearchWordSuggestionV2ApiV1TiktokShopWebFetchSearchWordSuggesti
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_search_word_suggestion_v2';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_word_suggestion_v2';
 };
 
 export type FetchSearchWordSuggestionV2ApiV1TiktokShopWebFetchSearchWordSuggestionV2GetErrors = {
@@ -11203,7 +11203,7 @@ export type FetchSearchProductsListApiV1TiktokShopWebFetchSearchProductsListGetD
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_search_products_list';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_products_list';
 };
 
 export type FetchSearchProductsListApiV1TiktokShopWebFetchSearchProductsListGetErrors = {
@@ -11253,7 +11253,7 @@ export type FetchSearchProductsListV2ApiV1TiktokShopWebFetchSearchProductsListV2
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_search_products_list_v2';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_products_list_v2';
 };
 
 export type FetchSearchProductsListV2ApiV1TiktokShopWebFetchSearchProductsListV2GetErrors = {
@@ -11309,7 +11309,7 @@ export type FetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV3
          */
         filters_data?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_search_products_list_v3';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_products_list_v3';
 };
 
 export type FetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV3GetErrors = {
@@ -11341,7 +11341,7 @@ export type FetchProductsCategoryListApiV1TiktokShopWebFetchProductsCategoryList
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_products_category_list';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_products_category_list';
 };
 
 export type FetchProductsCategoryListApiV1TiktokShopWebFetchProductsCategoryListGetErrors = {
@@ -11385,7 +11385,7 @@ export type FetchProductsByCategoryIdApiV1TiktokShopWebFetchProductsByCategoryId
          */
         region?: string;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_products_by_category_id';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_products_by_category_id';
 };
 
 export type FetchProductsByCategoryIdApiV1TiktokShopWebFetchProductsByCategoryIdGetErrors = {
@@ -11423,7 +11423,7 @@ export type FetchHotSellingProductsListApiV1TiktokShopWebFetchHotSellingProducts
          */
         count?: number;
     };
-    url: '/api/v1/tiktok/shop/web/fetch_hot_selling_products_list';
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_hot_selling_products_list';
 };
 
 export type FetchHotSellingProductsListApiV1TiktokShopWebFetchHotSellingProductsListGetErrors = {
@@ -11457,7 +11457,7 @@ export type ApplyForScopeApiV1TiktokInteractionApplyGetData = {
          */
         invite_code: string;
     };
-    url: '/api/v1/tiktok/interaction/apply';
+    url: '/video-hub/api/v1/tiktok/interaction/apply';
 };
 
 export type ApplyForScopeApiV1TiktokInteractionApplyGetErrors = {
@@ -11482,7 +11482,7 @@ export type PostCommentApiV1TiktokInteractionPostCommentPostData = {
     body: PostCommentRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/interaction/post_comment';
+    url: '/video-hub/api/v1/tiktok/interaction/post_comment';
 };
 
 export type PostCommentApiV1TiktokInteractionPostCommentPostErrors = {
@@ -11507,7 +11507,7 @@ export type ReplyCommentApiV1TiktokInteractionReplyCommentPostData = {
     body: ReplyCommentRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/interaction/reply_comment';
+    url: '/video-hub/api/v1/tiktok/interaction/reply_comment';
 };
 
 export type ReplyCommentApiV1TiktokInteractionReplyCommentPostErrors = {
@@ -11532,7 +11532,7 @@ export type LikeApiV1TiktokInteractionLikePostData = {
     body: LikeRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/interaction/like';
+    url: '/video-hub/api/v1/tiktok/interaction/like';
 };
 
 export type LikeApiV1TiktokInteractionLikePostErrors = {
@@ -11557,7 +11557,7 @@ export type FollowApiV1TiktokInteractionFollowPostData = {
     body: FollowRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/interaction/follow';
+    url: '/video-hub/api/v1/tiktok/interaction/follow';
 };
 
 export type FollowApiV1TiktokInteractionFollowPostErrors = {
@@ -11582,7 +11582,7 @@ export type CollectApiV1TiktokInteractionCollectPostData = {
     body: CollectRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/interaction/collect';
+    url: '/video-hub/api/v1/tiktok/interaction/collect';
 };
 
 export type CollectApiV1TiktokInteractionCollectPostErrors = {
@@ -11607,7 +11607,7 @@ export type ForwardApiV1TiktokInteractionForwardPostData = {
     body: ForwardRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/tiktok/interaction/forward';
+    url: '/video-hub/api/v1/tiktok/interaction/forward';
 };
 
 export type ForwardApiV1TiktokInteractionForwardPostErrors = {
@@ -11645,7 +11645,7 @@ export type FetchOneVideoApiV1DouyinWebFetchOneVideoGetData = {
          */
         need_anchor_info?: boolean;
     };
-    url: '/api/v1/douyin/web/fetch_one_video';
+    url: '/video-hub/api/v1/douyin/web/fetch_one_video';
 };
 
 export type FetchOneVideoApiV1DouyinWebFetchOneVideoGetErrors = {
@@ -11677,7 +11677,7 @@ export type FetchOneVideoApiV1DouyinWebFetchOneVideoV2GetData = {
          */
         aweme_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_one_video_v2';
+    url: '/video-hub/api/v1/douyin/web/fetch_one_video_v2';
 };
 
 export type FetchOneVideoApiV1DouyinWebFetchOneVideoV2GetErrors = {
@@ -11709,7 +11709,7 @@ export type FetchOneVideoByShareUrlApiV1DouyinWebFetchOneVideoByShareUrlGetData 
          */
         share_url: string;
     };
-    url: '/api/v1/douyin/web/fetch_one_video_by_share_url';
+    url: '/video-hub/api/v1/douyin/web/fetch_one_video_by_share_url';
 };
 
 export type FetchOneVideoByShareUrlApiV1DouyinWebFetchOneVideoByShareUrlGetErrors = {
@@ -11747,7 +11747,7 @@ export type FetchVideoHighQualityPlayUrlApiV1DouyinWebFetchVideoHighQualityPlayU
          */
         share_url?: string;
     };
-    url: '/api/v1/douyin/web/fetch_video_high_quality_play_url';
+    url: '/video-hub/api/v1/douyin/web/fetch_video_high_quality_play_url';
 };
 
 export type FetchVideoHighQualityPlayUrlApiV1DouyinWebFetchVideoHighQualityPlayUrlGetErrors = {
@@ -11772,7 +11772,7 @@ export type FetchMultiVideoHighQualityPlayUrlApiV1DouyinWebFetchMultiVideoHighQu
     body: FetchMultiVideoHighQualityPlayUrlRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_multi_video_high_quality_play_url';
+    url: '/video-hub/api/v1/douyin/web/fetch_multi_video_high_quality_play_url';
 };
 
 export type FetchMultiVideoHighQualityPlayUrlApiV1DouyinWebFetchMultiVideoHighQualityPlayUrlPostErrors = {
@@ -11800,7 +11800,7 @@ export type FetchMultiVideoApiV1DouyinWebFetchMultiVideoPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_multi_video';
+    url: '/video-hub/api/v1/douyin/web/fetch_multi_video';
 };
 
 export type FetchMultiVideoApiV1DouyinWebFetchMultiVideoPostErrors = {
@@ -11850,7 +11850,7 @@ export type FetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGetData = {
          */
         start_time: number;
     };
-    url: '/api/v1/douyin/web/fetch_one_video_danmaku';
+    url: '/video-hub/api/v1/douyin/web/fetch_one_video_danmaku';
 };
 
 export type FetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGetErrors = {
@@ -11888,7 +11888,7 @@ export type FetchHomeFeedApiV1DouyinWebFetchHomeFeedGetData = {
          */
         refresh_index?: number;
     };
-    url: '/api/v1/douyin/web/fetch_home_feed';
+    url: '/video-hub/api/v1/douyin/web/fetch_home_feed';
 };
 
 export type FetchHomeFeedApiV1DouyinWebFetchHomeFeedGetErrors = {
@@ -11932,7 +11932,7 @@ export type FetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/douyin/web/fetch_related_posts';
+    url: '/video-hub/api/v1/douyin/web/fetch_related_posts';
 };
 
 export type FetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGetErrors = {
@@ -11988,7 +11988,7 @@ export type FetchUserPostVideosApiV1DouyinWebFetchUserPostVideosGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_post_videos';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_post_videos';
 };
 
 export type FetchUserPostVideosApiV1DouyinWebFetchUserPostVideosGetErrors = {
@@ -12013,7 +12013,7 @@ export type FetchUserLikeVideosApiV1DouyinWebFetchUserLikeVideosPostData = {
     body: BodyFetchUserLikeVideosApiV1DouyinWebFetchUserLikeVideosPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_user_like_videos';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_like_videos';
 };
 
 export type FetchUserLikeVideosApiV1DouyinWebFetchUserLikeVideosPostErrors = {
@@ -12038,7 +12038,7 @@ export type FetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPost
     body: BodyFetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_user_collection_videos';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_collection_videos';
 };
 
 export type FetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPostErrors = {
@@ -12063,7 +12063,7 @@ export type FetchUserCollectsApiV1DouyinWebFetchUserCollectsPostData = {
     body: BodyFetchUserCollectsApiV1DouyinWebFetchUserCollectsPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_user_collects';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_collects';
 };
 
 export type FetchUserCollectsApiV1DouyinWebFetchUserCollectsPostErrors = {
@@ -12107,7 +12107,7 @@ export type FetchUserCollectsVideosApiV1DouyinWebFetchUserCollectsVideosGetData 
          */
         counts?: number;
     };
-    url: '/api/v1/douyin/web/fetch_user_collects_videos';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_collects_videos';
 };
 
 export type FetchUserCollectsVideosApiV1DouyinWebFetchUserCollectsVideosGetErrors = {
@@ -12151,7 +12151,7 @@ export type FetchUserMixVideosApiV1DouyinWebFetchUserMixVideosGetData = {
          */
         counts?: number;
     };
-    url: '/api/v1/douyin/web/fetch_user_mix_videos';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_mix_videos';
 };
 
 export type FetchUserMixVideosApiV1DouyinWebFetchUserMixVideosGetErrors = {
@@ -12183,7 +12183,7 @@ export type FetchUserLiveVideosApiV1DouyinWebFetchUserLiveVideosGetData = {
          */
         webcast_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_live_videos';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_videos';
 };
 
 export type FetchUserLiveVideosApiV1DouyinWebFetchUserLiveVideosGetErrors = {
@@ -12215,7 +12215,7 @@ export type FetchUserLiveVideosBySecUidApiV1DouyinWebFetchUserLiveVideosBySecUid
          */
         sec_uid: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_live_videos_by_sec_uid';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_videos_by_sec_uid';
 };
 
 export type FetchUserLiveVideosBySecUidApiV1DouyinWebFetchUserLiveVideosBySecUidGetErrors = {
@@ -12247,7 +12247,7 @@ export type FetchUserLiveVideosByRoomIdApiV1DouyinWebFetchUserLiveVideosByRoomId
          */
         room_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_live_videos_by_room_id';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_videos_by_room_id';
 };
 
 export type FetchUserLiveVideosByRoomIdApiV1DouyinWebFetchUserLiveVideosByRoomIdGetErrors = {
@@ -12279,7 +12279,7 @@ export type FetchUserLiveVideosByRoomIdV2ApiV1DouyinWebFetchUserLiveVideosByRoom
          */
         room_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_live_videos_by_room_id_v2';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_videos_by_room_id_v2';
 };
 
 export type FetchUserLiveVideosByRoomIdV2ApiV1DouyinWebFetchUserLiveVideosByRoomIdV2GetErrors = {
@@ -12317,7 +12317,7 @@ export type FetchLiveGiftRankingApiV1DouyinWebFetchLiveGiftRankingGetData = {
          */
         rank_type?: number;
     };
-    url: '/api/v1/douyin/web/fetch_live_gift_ranking';
+    url: '/video-hub/api/v1/douyin/web/fetch_live_gift_ranking';
 };
 
 export type FetchLiveGiftRankingApiV1DouyinWebFetchLiveGiftRankingGetErrors = {
@@ -12367,7 +12367,7 @@ export type FetchLiveRoomProductResultApiV1DouyinWebFetchLiveRoomProductResultGe
          */
         limit?: number;
     };
-    url: '/api/v1/douyin/web/fetch_live_room_product_result';
+    url: '/video-hub/api/v1/douyin/web/fetch_live_room_product_result';
 };
 
 export type FetchLiveRoomProductResultApiV1DouyinWebFetchLiveRoomProductResultGetErrors = {
@@ -12417,7 +12417,7 @@ export type FetchProductDetailApiV1DouyinWebFetchProductDetailGetData = {
          */
         sec_user_id?: string;
     };
-    url: '/api/v1/douyin/web/fetch_product_detail';
+    url: '/video-hub/api/v1/douyin/web/fetch_product_detail';
 };
 
 export type FetchProductDetailApiV1DouyinWebFetchProductDetailGetErrors = {
@@ -12455,7 +12455,7 @@ export type FetchProductSkuListApiV1DouyinWebFetchProductSkuListGetData = {
          */
         author_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_product_sku_list';
+    url: '/video-hub/api/v1/douyin/web/fetch_product_sku_list';
 };
 
 export type FetchProductSkuListApiV1DouyinWebFetchProductSkuListGetErrors = {
@@ -12511,7 +12511,7 @@ export type FetchProductCouponApiV1DouyinWebFetchProductCouponGetData = {
          */
         sec_user_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_product_coupon';
+    url: '/video-hub/api/v1/douyin/web/fetch_product_coupon';
 };
 
 export type FetchProductCouponApiV1DouyinWebFetchProductCouponGetErrors = {
@@ -12549,7 +12549,7 @@ export type FetchProductReviewScoreApiV1DouyinWebFetchProductReviewScoreGetData 
          */
         shop_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_product_review_score';
+    url: '/video-hub/api/v1/douyin/web/fetch_product_review_score';
 };
 
 export type FetchProductReviewScoreApiV1DouyinWebFetchProductReviewScoreGetErrors = {
@@ -12605,7 +12605,7 @@ export type FetchProductReviewListApiV1DouyinWebFetchProductReviewListGetData = 
          */
         sort_type?: number;
     };
-    url: '/api/v1/douyin/web/fetch_product_review_list';
+    url: '/video-hub/api/v1/douyin/web/fetch_product_review_list';
 };
 
 export type FetchProductReviewListApiV1DouyinWebFetchProductReviewListGetErrors = {
@@ -12637,7 +12637,7 @@ export type FetchUserProfileByUidApiV1DouyinWebFetchUserProfileByUidGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_profile_by_uid';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_profile_by_uid';
 };
 
 export type FetchUserProfileByUidApiV1DouyinWebFetchUserProfileByUidGetErrors = {
@@ -12669,7 +12669,7 @@ export type FetchBatchUserProfileV1ApiV1DouyinWebFetchBatchUserProfileV1GetData 
          */
         sec_user_ids: string;
     };
-    url: '/api/v1/douyin/web/fetch_batch_user_profile_v1';
+    url: '/video-hub/api/v1/douyin/web/fetch_batch_user_profile_v1';
 };
 
 export type FetchBatchUserProfileV1ApiV1DouyinWebFetchBatchUserProfileV1GetErrors = {
@@ -12701,7 +12701,7 @@ export type FetchBatchUserProfileV2ApiV1DouyinWebFetchBatchUserProfileV2GetData 
          */
         sec_user_ids: string;
     };
-    url: '/api/v1/douyin/web/fetch_batch_user_profile_v2';
+    url: '/video-hub/api/v1/douyin/web/fetch_batch_user_profile_v2';
 };
 
 export type FetchBatchUserProfileV2ApiV1DouyinWebFetchBatchUserProfileV2GetErrors = {
@@ -12733,7 +12733,7 @@ export type FetchUserLiveInfoByUidApiV1DouyinWebFetchUserLiveInfoByUidGetData = 
          */
         uid: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_live_info_by_uid';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_info_by_uid';
 };
 
 export type FetchUserLiveInfoByUidApiV1DouyinWebFetchUserLiveInfoByUidGetErrors = {
@@ -12765,7 +12765,7 @@ export type FetchUserProfileByShortIdApiV1DouyinWebFetchUserProfileByShortIdGetD
          */
         short_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_profile_by_short_id';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_profile_by_short_id';
 };
 
 export type FetchUserProfileByShortIdApiV1DouyinWebFetchUserProfileByShortIdGetErrors = {
@@ -12797,7 +12797,7 @@ export type HandlerShortenUrlApiV1DouyinWebHandlerShortenUrlGetData = {
          */
         target_url: string;
     };
-    url: '/api/v1/douyin/web/handler_shorten_url';
+    url: '/video-hub/api/v1/douyin/web/handler_shorten_url';
 };
 
 export type HandlerShortenUrlApiV1DouyinWebHandlerShortenUrlGetErrors = {
@@ -12829,7 +12829,7 @@ export type HandlerUserProfileApiV1DouyinWebHandlerUserProfileGetData = {
          */
         sec_user_id: string;
     };
-    url: '/api/v1/douyin/web/handler_user_profile';
+    url: '/video-hub/api/v1/douyin/web/handler_user_profile';
 };
 
 export type HandlerUserProfileApiV1DouyinWebHandlerUserProfileGetErrors = {
@@ -12861,7 +12861,7 @@ export type HandlerUserProfileV2ApiV1DouyinWebHandlerUserProfileV2GetData = {
          */
         unique_id: string;
     };
-    url: '/api/v1/douyin/web/handler_user_profile_v2';
+    url: '/video-hub/api/v1/douyin/web/handler_user_profile_v2';
 };
 
 export type HandlerUserProfileV2ApiV1DouyinWebHandlerUserProfileV2GetErrors = {
@@ -12893,7 +12893,7 @@ export type EncryptUidToSecUserIdApiV1DouyinWebEncryptUidToSecUserIdGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/douyin/web/encrypt_uid_to_sec_user_id';
+    url: '/video-hub/api/v1/douyin/web/encrypt_uid_to_sec_user_id';
 };
 
 export type EncryptUidToSecUserIdApiV1DouyinWebEncryptUidToSecUserIdGetErrors = {
@@ -12925,7 +12925,7 @@ export type HandlerUserProfileV3ApiV1DouyinWebHandlerUserProfileV3GetData = {
          */
         uid: string;
     };
-    url: '/api/v1/douyin/web/handler_user_profile_v3';
+    url: '/video-hub/api/v1/douyin/web/handler_user_profile_v3';
 };
 
 export type HandlerUserProfileV3ApiV1DouyinWebHandlerUserProfileV3GetErrors = {
@@ -12957,7 +12957,7 @@ export type HandlerUserProfileV4ApiV1DouyinWebHandlerUserProfileV4GetData = {
          */
         sec_user_id: string;
     };
-    url: '/api/v1/douyin/web/handler_user_profile_v4';
+    url: '/video-hub/api/v1/douyin/web/handler_user_profile_v4';
 };
 
 export type HandlerUserProfileV4ApiV1DouyinWebHandlerUserProfileV4GetErrors = {
@@ -13007,7 +13007,7 @@ export type FetchUserFansListApiV1DouyinWebFetchUserFansListGetData = {
          */
         source_type?: number;
     };
-    url: '/api/v1/douyin/web/fetch_user_fans_list';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_fans_list';
 };
 
 export type FetchUserFansListApiV1DouyinWebFetchUserFansListGetErrors = {
@@ -13057,7 +13057,7 @@ export type FetchUserFollowingListApiV1DouyinWebFetchUserFollowingListGetData = 
          */
         source_type?: number;
     };
-    url: '/api/v1/douyin/web/fetch_user_following_list';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_following_list';
 };
 
 export type FetchUserFollowingListApiV1DouyinWebFetchUserFollowingListGetErrors = {
@@ -13101,7 +13101,7 @@ export type FetchVideoCommentsApiV1DouyinWebFetchVideoCommentsGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/douyin/web/fetch_video_comments';
+    url: '/video-hub/api/v1/douyin/web/fetch_video_comments';
 };
 
 export type FetchVideoCommentsApiV1DouyinWebFetchVideoCommentsGetErrors = {
@@ -13151,7 +13151,7 @@ export type FetchVideoCommentsReplyApiV1DouyinWebFetchVideoCommentRepliesGetData
          */
         count?: number;
     };
-    url: '/api/v1/douyin/web/fetch_video_comment_replies';
+    url: '/video-hub/api/v1/douyin/web/fetch_video_comment_replies';
 };
 
 export type FetchVideoCommentsReplyApiV1DouyinWebFetchVideoCommentRepliesGetErrors = {
@@ -13231,7 +13231,7 @@ export type FetchGeneralSearchResultApiV1DouyinWebFetchGeneralSearchResultGetDat
          */
         search_id?: string;
     };
-    url: '/api/v1/douyin/web/fetch_general_search_result';
+    url: '/video-hub/api/v1/douyin/web/fetch_general_search_result';
 };
 
 export type FetchGeneralSearchResultApiV1DouyinWebFetchGeneralSearchResultGetErrors = {
@@ -13299,7 +13299,7 @@ export type FetchVideoSearchResultApiV1DouyinWebFetchVideoSearchResultGetData = 
          */
         search_id?: string;
     };
-    url: '/api/v1/douyin/web/fetch_video_search_result';
+    url: '/video-hub/api/v1/douyin/web/fetch_video_search_result';
 };
 
 export type FetchVideoSearchResultApiV1DouyinWebFetchVideoSearchResultGetErrors = {
@@ -13361,7 +13361,7 @@ export type FetchVideoSearchResultV2ApiV1DouyinWebFetchVideoSearchResultV2GetDat
          */
         search_id?: string;
     };
-    url: '/api/v1/douyin/web/fetch_video_search_result_v2';
+    url: '/video-hub/api/v1/douyin/web/fetch_video_search_result_v2';
 };
 
 export type FetchVideoSearchResultV2ApiV1DouyinWebFetchVideoSearchResultV2GetErrors = {
@@ -13423,7 +13423,7 @@ export type FetchUserSearchResultApiV1DouyinWebFetchUserSearchResultGetData = {
          */
         search_id?: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_search_result';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_search_result';
 };
 
 export type FetchUserSearchResultApiV1DouyinWebFetchUserSearchResultGetErrors = {
@@ -13461,7 +13461,7 @@ export type FetchUserSearchResultV2ApiV1DouyinWebFetchUserSearchResultV2GetData 
          */
         cursor?: number;
     };
-    url: '/api/v1/douyin/web/fetch_user_search_result_v2';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_search_result_v2';
 };
 
 export type FetchUserSearchResultV2ApiV1DouyinWebFetchUserSearchResultV2GetErrors = {
@@ -13511,7 +13511,7 @@ export type FetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3GetData 
          */
         douyin_user_fans?: string;
     };
-    url: '/api/v1/douyin/web/fetch_user_search_result_v3';
+    url: '/video-hub/api/v1/douyin/web/fetch_user_search_result_v3';
 };
 
 export type FetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3GetErrors = {
@@ -13561,7 +13561,7 @@ export type FetchLiveSearchResultApiV1DouyinWebFetchLiveSearchResultGetData = {
          */
         search_id?: string;
     };
-    url: '/api/v1/douyin/web/fetch_live_search_result';
+    url: '/video-hub/api/v1/douyin/web/fetch_live_search_result';
 };
 
 export type FetchLiveSearchResultApiV1DouyinWebFetchLiveSearchResultGetErrors = {
@@ -13586,7 +13586,7 @@ export type FetchSearchChallengeApiV1DouyinWebFetchSearchChallengePostData = {
     body: SearchChallengeRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_search_challenge';
+    url: '/video-hub/api/v1/douyin/web/fetch_search_challenge';
 };
 
 export type FetchSearchChallengeApiV1DouyinWebFetchSearchChallengePostErrors = {
@@ -13611,7 +13611,7 @@ export type FetchChallengePostsApiV1DouyinWebFetchChallengePostsPostData = {
     body: ChallengePostRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_challenge_posts';
+    url: '/video-hub/api/v1/douyin/web/fetch_challenge_posts';
 };
 
 export type FetchChallengePostsApiV1DouyinWebFetchChallengePostsPostErrors = {
@@ -13636,7 +13636,7 @@ export type FetchHotSearchResultApiV1DouyinWebFetchHotSearchResultGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_hot_search_result';
+    url: '/video-hub/api/v1/douyin/web/fetch_hot_search_result';
 };
 
 export type FetchHotSearchResultApiV1DouyinWebFetchHotSearchResultGetResponses = {
@@ -13671,7 +13671,7 @@ export type FetchVideoChannelResultApiV1DouyinWebFetchVideoChannelResultGetData 
          */
         refresh_index?: number;
     };
-    url: '/api/v1/douyin/web/fetch_video_channel_result';
+    url: '/video-hub/api/v1/douyin/web/fetch_video_channel_result';
 };
 
 export type FetchVideoChannelResultApiV1DouyinWebFetchVideoChannelResultGetErrors = {
@@ -13703,7 +13703,7 @@ export type FetchDouyinWebGuestCookieApiV1DouyinWebFetchDouyinWebGuestCookieGetD
          */
         user_agent: string;
     };
-    url: '/api/v1/douyin/web/fetch_douyin_web_guest_cookie';
+    url: '/video-hub/api/v1/douyin/web/fetch_douyin_web_guest_cookie';
 };
 
 export type FetchDouyinWebGuestCookieApiV1DouyinWebFetchDouyinWebGuestCookieGetErrors = {
@@ -13728,7 +13728,7 @@ export type GenerateRealMsTokenApiV1DouyinWebGenerateRealMsTokenGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/generate_real_msToken';
+    url: '/video-hub/api/v1/douyin/web/generate_real_msToken';
 };
 
 export type GenerateRealMsTokenApiV1DouyinWebGenerateRealMsTokenGetResponses = {
@@ -13749,7 +13749,7 @@ export type GenerateTtwidApiV1DouyinWebGenerateTtwidGetData = {
          */
         user_agent?: string;
     };
-    url: '/api/v1/douyin/web/generate_ttwid';
+    url: '/video-hub/api/v1/douyin/web/generate_ttwid';
 };
 
 export type GenerateTtwidApiV1DouyinWebGenerateTtwidGetErrors = {
@@ -13779,7 +13779,7 @@ export type FetchQueryUserApiV1DouyinWebFetchQueryUserPostData = {
     body?: string;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/fetch_query_user';
+    url: '/video-hub/api/v1/douyin/web/fetch_query_user';
 };
 
 export type FetchQueryUserApiV1DouyinWebFetchQueryUserPostErrors = {
@@ -13804,7 +13804,7 @@ export type GenerateVerifyFpApiV1DouyinWebGenerateVerifyFpGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/generate_verify_fp';
+    url: '/video-hub/api/v1/douyin/web/generate_verify_fp';
 };
 
 export type GenerateVerifyFpApiV1DouyinWebGenerateVerifyFpGetResponses = {
@@ -13820,7 +13820,7 @@ export type GenerateSvWebIdApiV1DouyinWebGenerateSvWebIdGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/generate_s_v_web_id';
+    url: '/video-hub/api/v1/douyin/web/generate_s_v_web_id';
 };
 
 export type GenerateSvWebIdApiV1DouyinWebGenerateSvWebIdGetResponses = {
@@ -13855,7 +13855,7 @@ export type GenerateWssXbSignatureApiV1DouyinWebGenerateWssXbSignatureGetData = 
          */
         user_unique_id: string;
     };
-    url: '/api/v1/douyin/web/generate_wss_xb_signature';
+    url: '/video-hub/api/v1/douyin/web/generate_wss_xb_signature';
 };
 
 export type GenerateWssXbSignatureApiV1DouyinWebGenerateWssXbSignatureGetErrors = {
@@ -13880,7 +13880,7 @@ export type GenerateXBogusApiV1DouyinWebGenerateXBogusPostData = {
     body: XBogusModel;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/generate_x_bogus';
+    url: '/video-hub/api/v1/douyin/web/generate_x_bogus';
 };
 
 export type GenerateXBogusApiV1DouyinWebGenerateXBogusPostErrors = {
@@ -13905,7 +13905,7 @@ export type GenerateABogusApiV1DouyinWebGenerateABogusPostData = {
     body: ABogusModel;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/generate_a_bogus';
+    url: '/video-hub/api/v1/douyin/web/generate_a_bogus';
 };
 
 export type GenerateABogusApiV1DouyinWebGenerateABogusPostErrors = {
@@ -13935,7 +13935,7 @@ export type GetSecUserIdApiV1DouyinWebGetSecUserIdGetData = {
          */
         url: string;
     };
-    url: '/api/v1/douyin/web/get_sec_user_id';
+    url: '/video-hub/api/v1/douyin/web/get_sec_user_id';
 };
 
 export type GetSecUserIdApiV1DouyinWebGetSecUserIdGetErrors = {
@@ -13965,7 +13965,7 @@ export type GetAllSecUserIdApiV1DouyinWebGetAllSecUserIdPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/get_all_sec_user_id';
+    url: '/video-hub/api/v1/douyin/web/get_all_sec_user_id';
 };
 
 export type GetAllSecUserIdApiV1DouyinWebGetAllSecUserIdPostErrors = {
@@ -13995,7 +13995,7 @@ export type GetAwemeIdApiV1DouyinWebGetAwemeIdGetData = {
          */
         url: string;
     };
-    url: '/api/v1/douyin/web/get_aweme_id';
+    url: '/video-hub/api/v1/douyin/web/get_aweme_id';
 };
 
 export type GetAwemeIdApiV1DouyinWebGetAwemeIdGetErrors = {
@@ -14025,7 +14025,7 @@ export type GetAllAwemeIdApiV1DouyinWebGetAllAwemeIdPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/get_all_aweme_id';
+    url: '/video-hub/api/v1/douyin/web/get_all_aweme_id';
 };
 
 export type GetAllAwemeIdApiV1DouyinWebGetAllAwemeIdPostErrors = {
@@ -14055,7 +14055,7 @@ export type GetWebcastIdApiV1DouyinWebGetWebcastIdGetData = {
          */
         url: string;
     };
-    url: '/api/v1/douyin/web/get_webcast_id';
+    url: '/video-hub/api/v1/douyin/web/get_webcast_id';
 };
 
 export type GetWebcastIdApiV1DouyinWebGetWebcastIdGetErrors = {
@@ -14085,7 +14085,7 @@ export type GetAllWebcastIdApiV1DouyinWebGetAllWebcastIdPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/web/get_all_webcast_id';
+    url: '/video-hub/api/v1/douyin/web/get_all_webcast_id';
 };
 
 export type GetAllWebcastIdApiV1DouyinWebGetAllWebcastIdPostErrors = {
@@ -14117,7 +14117,7 @@ export type WebcastId2RoomIdApiV1DouyinWebWebcastId2RoomIdGetData = {
          */
         webcast_id: string;
     };
-    url: '/api/v1/douyin/web/webcast_id_2_room_id';
+    url: '/video-hub/api/v1/douyin/web/webcast_id_2_room_id';
 };
 
 export type WebcastId2RoomIdApiV1DouyinWebWebcastId2RoomIdGetErrors = {
@@ -14155,7 +14155,7 @@ export type DouyinLiveRoomApiV1DouyinWebDouyinLiveRoomGetData = {
          */
         danmaku_type: string;
     };
-    url: '/api/v1/douyin/web/douyin_live_room';
+    url: '/video-hub/api/v1/douyin/web/douyin_live_room';
 };
 
 export type DouyinLiveRoomApiV1DouyinWebDouyinLiveRoomGetErrors = {
@@ -14193,7 +14193,7 @@ export type FetchLiveImFetchApiV1DouyinWebFetchLiveImFetchGetData = {
          */
         user_unique_id: string;
     };
-    url: '/api/v1/douyin/web/fetch_live_im_fetch';
+    url: '/video-hub/api/v1/douyin/web/fetch_live_im_fetch';
 };
 
 export type FetchLiveImFetchApiV1DouyinWebFetchLiveImFetchGetErrors = {
@@ -14243,7 +14243,7 @@ export type FetchSeriesAwemeApiV1DouyinWebFetchSeriesAwemeGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/douyin/web/fetch_series_aweme';
+    url: '/video-hub/api/v1/douyin/web/fetch_series_aweme';
 };
 
 export type FetchSeriesAwemeApiV1DouyinWebFetchSeriesAwemeGetErrors = {
@@ -14287,7 +14287,7 @@ export type FetchKnowledgeAwemeApiV1DouyinWebFetchKnowledgeAwemeGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/douyin/web/fetch_knowledge_aweme';
+    url: '/video-hub/api/v1/douyin/web/fetch_knowledge_aweme';
 };
 
 export type FetchKnowledgeAwemeApiV1DouyinWebFetchKnowledgeAwemeGetErrors = {
@@ -14331,7 +14331,7 @@ export type FetchGameAwemeApiV1DouyinWebFetchGameAwemeGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/douyin/web/fetch_game_aweme';
+    url: '/video-hub/api/v1/douyin/web/fetch_game_aweme';
 };
 
 export type FetchGameAwemeApiV1DouyinWebFetchGameAwemeGetErrors = {
@@ -14375,7 +14375,7 @@ export type FetchCartoonAwemeApiV1DouyinWebFetchCartoonAwemeGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/douyin/web/fetch_cartoon_aweme';
+    url: '/video-hub/api/v1/douyin/web/fetch_cartoon_aweme';
 };
 
 export type FetchCartoonAwemeApiV1DouyinWebFetchCartoonAwemeGetErrors = {
@@ -14419,7 +14419,7 @@ export type FetchCartoonAwemeApiV1DouyinWebFetchMusicAwemeGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/douyin/web/fetch_music_aweme';
+    url: '/video-hub/api/v1/douyin/web/fetch_music_aweme';
 };
 
 export type FetchCartoonAwemeApiV1DouyinWebFetchMusicAwemeGetErrors = {
@@ -14463,7 +14463,7 @@ export type FetchCartoonAwemeApiV1DouyinWebFetchFoodAwemeGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/douyin/web/fetch_food_aweme';
+    url: '/video-hub/api/v1/douyin/web/fetch_food_aweme';
 };
 
 export type FetchCartoonAwemeApiV1DouyinWebFetchFoodAwemeGetErrors = {
@@ -14495,7 +14495,7 @@ export type FetchOneVideoApiV1DouyinAppV3FetchOneVideoGetData = {
          */
         aweme_id: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_one_video';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_one_video';
 };
 
 export type FetchOneVideoApiV1DouyinAppV3FetchOneVideoGetErrors = {
@@ -14527,7 +14527,7 @@ export type FetchOneVideoV2ApiV1DouyinAppV3FetchOneVideoV2GetData = {
          */
         aweme_id: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_one_video_v2';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_one_video_v2';
 };
 
 export type FetchOneVideoV2ApiV1DouyinAppV3FetchOneVideoV2GetErrors = {
@@ -14559,7 +14559,7 @@ export type FetchOneVideoV3ApiV1DouyinAppV3FetchOneVideoV3GetData = {
          */
         aweme_id: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_one_video_v3';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_one_video_v3';
 };
 
 export type FetchOneVideoV3ApiV1DouyinAppV3FetchOneVideoV3GetErrors = {
@@ -14591,7 +14591,7 @@ export type FetchOneVideoByShareUrlApiV1DouyinAppV3FetchShareInfoByShareCodeGetD
          */
         share_code: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_share_info_by_share_code';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_share_info_by_share_code';
 };
 
 export type FetchOneVideoByShareUrlApiV1DouyinAppV3FetchShareInfoByShareCodeGetErrors = {
@@ -14619,7 +14619,7 @@ export type FetchMultiVideoApiV1DouyinAppV3FetchMultiVideoPostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/app/v3/fetch_multi_video';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_multi_video';
 };
 
 export type FetchMultiVideoApiV1DouyinAppV3FetchMultiVideoPostErrors = {
@@ -14647,7 +14647,7 @@ export type FetchMultiVideoV2ApiV1DouyinAppV3FetchMultiVideoV2PostData = {
     body: Array<string>;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/app/v3/fetch_multi_video_v2';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_multi_video_v2';
 };
 
 export type FetchMultiVideoV2ApiV1DouyinAppV3FetchMultiVideoV2PostErrors = {
@@ -14679,7 +14679,7 @@ export type FetchOneVideoByShareUrlApiV1DouyinAppV3FetchOneVideoByShareUrlGetDat
          */
         share_url: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_one_video_by_share_url';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_one_video_by_share_url';
 };
 
 export type FetchOneVideoByShareUrlApiV1DouyinAppV3FetchOneVideoByShareUrlGetErrors = {
@@ -14717,7 +14717,7 @@ export type FetchVideoHighQualityPlayUrlApiV1DouyinAppV3FetchVideoHighQualityPla
          */
         share_url?: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_video_high_quality_play_url';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_high_quality_play_url';
 };
 
 export type FetchVideoHighQualityPlayUrlApiV1DouyinAppV3FetchVideoHighQualityPlayUrlGetErrors = {
@@ -14742,7 +14742,7 @@ export type FetchMultiVideoHighQualityPlayUrlApiV1DouyinAppV3FetchMultiVideoHigh
     body: FetchMultiVideoHighQualityPlayUrlRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/app/v3/fetch_multi_video_high_quality_play_url';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_multi_video_high_quality_play_url';
 };
 
 export type FetchMultiVideoHighQualityPlayUrlApiV1DouyinAppV3FetchMultiVideoHighQualityPlayUrlPostErrors = {
@@ -14774,7 +14774,7 @@ export type FetchVideoStatisticsApiV1DouyinAppV3FetchVideoStatisticsGetData = {
          */
         aweme_ids: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_video_statistics';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_statistics';
 };
 
 export type FetchVideoStatisticsApiV1DouyinAppV3FetchVideoStatisticsGetErrors = {
@@ -14806,7 +14806,7 @@ export type FetchMultiVideoStatisticsApiV1DouyinAppV3FetchMultiVideoStatisticsGe
          */
         aweme_ids: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_multi_video_statistics';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_multi_video_statistics';
 };
 
 export type FetchMultiVideoStatisticsApiV1DouyinAppV3FetchMultiVideoStatisticsGetErrors = {
@@ -14850,7 +14850,7 @@ export type AddVideoPlayCountApiV1DouyinAppV3AddVideoPlayCountGetData = {
          */
         cookie?: string;
     };
-    url: '/api/v1/douyin/app/v3/add_video_play_count';
+    url: '/video-hub/api/v1/douyin/app/v3/add_video_play_count';
 };
 
 export type AddVideoPlayCountApiV1DouyinAppV3AddVideoPlayCountGetErrors = {
@@ -14882,7 +14882,7 @@ export type HandlerUserProfileApiV1DouyinAppV3HandlerUserProfileGetData = {
          */
         sec_user_id: string;
     };
-    url: '/api/v1/douyin/app/v3/handler_user_profile';
+    url: '/video-hub/api/v1/douyin/app/v3/handler_user_profile';
 };
 
 export type HandlerUserProfileApiV1DouyinAppV3HandlerUserProfileGetErrors = {
@@ -14926,7 +14926,7 @@ export type FetchUserFansListApiV1DouyinAppV3FetchUserFansListGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_user_fans_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_fans_list';
 };
 
 export type FetchUserFansListApiV1DouyinAppV3FetchUserFansListGetErrors = {
@@ -14970,7 +14970,7 @@ export type FetchUserFollowingListApiV1DouyinAppV3FetchUserFollowingListGetData 
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_user_following_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_following_list';
 };
 
 export type FetchUserFollowingListApiV1DouyinAppV3FetchUserFollowingListGetErrors = {
@@ -15020,7 +15020,7 @@ export type FetchUserPostVideosApiV1DouyinAppV3FetchUserPostVideosGetData = {
          */
         sort_type?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_user_post_videos';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_post_videos';
 };
 
 export type FetchUserPostVideosApiV1DouyinAppV3FetchUserPostVideosGetErrors = {
@@ -15064,7 +15064,7 @@ export type FetchUserLikeVideosApiV1DouyinAppV3FetchUserLikeVideosGetData = {
          */
         counts?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_user_like_videos';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_like_videos';
 };
 
 export type FetchUserLikeVideosApiV1DouyinAppV3FetchUserLikeVideosGetErrors = {
@@ -15108,7 +15108,7 @@ export type FetchVideoCommentsApiV1DouyinAppV3FetchVideoCommentsGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_video_comments';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_comments';
 };
 
 export type FetchVideoCommentsApiV1DouyinAppV3FetchVideoCommentsGetErrors = {
@@ -15158,7 +15158,7 @@ export type FetchVideoCommentsReplyApiV1DouyinAppV3FetchVideoCommentRepliesGetDa
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_video_comment_replies';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_comment_replies';
 };
 
 export type FetchVideoCommentsReplyApiV1DouyinAppV3FetchVideoCommentRepliesGetErrors = {
@@ -15190,7 +15190,7 @@ export type FetchVideoMixDetailApiV1DouyinAppV3FetchVideoMixDetailGetData = {
          */
         mix_id: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_video_mix_detail';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_mix_detail';
 };
 
 export type FetchVideoMixDetailApiV1DouyinAppV3FetchVideoMixDetailGetErrors = {
@@ -15234,7 +15234,7 @@ export type FetchVideoMixPostListApiV1DouyinAppV3FetchVideoMixPostListGetData = 
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_video_mix_post_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_mix_post_list';
 };
 
 export type FetchVideoMixPostListApiV1DouyinAppV3FetchVideoMixPostListGetErrors = {
@@ -15278,7 +15278,7 @@ export type FetchUserSeriesListApiV1DouyinAppV3FetchUserSeriesListGetData = {
          */
         cursor?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_user_series_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_series_list';
 };
 
 export type FetchUserSeriesListApiV1DouyinAppV3FetchUserSeriesListGetErrors = {
@@ -15316,7 +15316,7 @@ export type FetchSeriesVideoListApiV1DouyinAppV3FetchSeriesVideoListGetData = {
          */
         cursor?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_series_video_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_series_video_list';
 };
 
 export type FetchSeriesVideoListApiV1DouyinAppV3FetchSeriesVideoListGetErrors = {
@@ -15348,7 +15348,7 @@ export type FetchSeriesDetailApiV1DouyinAppV3FetchSeriesDetailGetData = {
          */
         series_id: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_series_detail';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_series_detail';
 };
 
 export type FetchSeriesDetailApiV1DouyinAppV3FetchSeriesDetailGetErrors = {
@@ -15416,7 +15416,7 @@ export type FetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGetD
          */
         content_type?: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_general_search_result';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_general_search_result';
 };
 
 export type FetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGetErrors = {
@@ -15478,7 +15478,7 @@ export type FetchVideoSearchResultApiV1DouyinAppV3FetchVideoSearchResultGetData 
          */
         filter_duration?: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_video_search_result';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_search_result';
 };
 
 export type FetchVideoSearchResultApiV1DouyinAppV3FetchVideoSearchResultGetErrors = {
@@ -15540,7 +15540,7 @@ export type FetchVideoSearchResultV2ApiV1DouyinAppV3FetchVideoSearchResultV2GetD
          */
         search_id?: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_video_search_result_v2';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_search_result_v2';
 };
 
 export type FetchVideoSearchResultV2ApiV1DouyinAppV3FetchVideoSearchResultV2GetErrors = {
@@ -15596,7 +15596,7 @@ export type FetchUserSearchResultApiV1DouyinAppV3FetchUserSearchResultGetData = 
          */
         douyin_user_type?: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_user_search_result';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_search_result';
 };
 
 export type FetchUserSearchResultApiV1DouyinAppV3FetchUserSearchResultGetErrors = {
@@ -15640,7 +15640,7 @@ export type FetchLiveSearchResultApiV1DouyinAppV3FetchLiveSearchResultGetData = 
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_live_search_result';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_live_search_result';
 };
 
 export type FetchLiveSearchResultApiV1DouyinAppV3FetchLiveSearchResultGetErrors = {
@@ -15684,7 +15684,7 @@ export type FetchMusicSearchResultApiV1DouyinAppV3FetchMusicSearchResultGetData 
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_music_search_result';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_music_search_result';
 };
 
 export type FetchMusicSearchResultApiV1DouyinAppV3FetchMusicSearchResultGetErrors = {
@@ -15728,7 +15728,7 @@ export type FetchHashtagSearchResultApiV1DouyinAppV3FetchHashtagSearchResultGetD
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_hashtag_search_result';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_hashtag_search_result';
 };
 
 export type FetchHashtagSearchResultApiV1DouyinAppV3FetchHashtagSearchResultGetErrors = {
@@ -15760,7 +15760,7 @@ export type FetchMusicDetailApiV1DouyinAppV3FetchMusicDetailGetData = {
          */
         music_id: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_music_detail';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_music_detail';
 };
 
 export type FetchMusicDetailApiV1DouyinAppV3FetchMusicDetailGetErrors = {
@@ -15804,7 +15804,7 @@ export type FetchMusicVideoListApiV1DouyinAppV3FetchMusicVideoListGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_music_video_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_music_video_list';
 };
 
 export type FetchMusicVideoListApiV1DouyinAppV3FetchMusicVideoListGetErrors = {
@@ -15836,7 +15836,7 @@ export type FetchHashtagDetailApiV1DouyinAppV3FetchHashtagDetailGetData = {
          */
         ch_id: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_hashtag_detail';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_hashtag_detail';
 };
 
 export type FetchHashtagDetailApiV1DouyinAppV3FetchHashtagDetailGetErrors = {
@@ -15886,7 +15886,7 @@ export type FetchHashtagVideoListApiV1DouyinAppV3FetchHashtagVideoListGetData = 
          */
         count?: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_hashtag_video_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_hashtag_video_list';
 };
 
 export type FetchHashtagVideoListApiV1DouyinAppV3FetchHashtagVideoListGetErrors = {
@@ -15924,7 +15924,7 @@ export type FetchHotSearchListApiV1DouyinAppV3FetchHotSearchListGetData = {
          */
         board_sub_type?: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_hot_search_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_hot_search_list';
 };
 
 export type FetchHotSearchListApiV1DouyinAppV3FetchHotSearchListGetErrors = {
@@ -15949,7 +15949,7 @@ export type FetchLiveHotSearchListApiV1DouyinAppV3FetchLiveHotSearchListGetData 
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/app/v3/fetch_live_hot_search_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_live_hot_search_list';
 };
 
 export type FetchLiveHotSearchListApiV1DouyinAppV3FetchLiveHotSearchListGetResponses = {
@@ -15978,7 +15978,7 @@ export type FetchMusicHotSearchListApiV1DouyinAppV3FetchMusicHotSearchListGetDat
          */
         cursor?: string;
     };
-    url: '/api/v1/douyin/app/v3/fetch_music_hot_search_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_music_hot_search_list';
 };
 
 export type FetchMusicHotSearchListApiV1DouyinAppV3FetchMusicHotSearchListGetErrors = {
@@ -16003,7 +16003,7 @@ export type FetchHotBrandSearchCategoryApiV1DouyinAppV3FetchBrandHotSearchListGe
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/app/v3/fetch_brand_hot_search_list';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_brand_hot_search_list';
 };
 
 export type FetchHotBrandSearchCategoryApiV1DouyinAppV3FetchBrandHotSearchListGetResponses = {
@@ -16026,7 +16026,7 @@ export type FetchHotBrandSearchApiV1DouyinAppV3FetchBrandHotSearchListDetailGetD
          */
         category_id: number;
     };
-    url: '/api/v1/douyin/app/v3/fetch_brand_hot_search_list_detail';
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_brand_hot_search_list_detail';
 };
 
 export type FetchHotBrandSearchApiV1DouyinAppV3FetchBrandHotSearchListDetailGetErrors = {
@@ -16058,7 +16058,7 @@ export type GenerateDouyinShortUrlApiV1DouyinAppV3GenerateDouyinShortUrlGetData 
          */
         url: string;
     };
-    url: '/api/v1/douyin/app/v3/generate_douyin_short_url';
+    url: '/video-hub/api/v1/douyin/app/v3/generate_douyin_short_url';
 };
 
 export type GenerateDouyinShortUrlApiV1DouyinAppV3GenerateDouyinShortUrlGetErrors = {
@@ -16090,7 +16090,7 @@ export type GenerateDouyinVideoShareQrcodeApiV1DouyinAppV3GenerateDouyinVideoSha
          */
         object_id: string;
     };
-    url: '/api/v1/douyin/app/v3/generate_douyin_video_share_qrcode';
+    url: '/video-hub/api/v1/douyin/app/v3/generate_douyin_video_share_qrcode';
 };
 
 export type GenerateDouyinVideoShareQrcodeApiV1DouyinAppV3GenerateDouyinVideoShareQrcodeGetErrors = {
@@ -16122,7 +16122,7 @@ export type RegisterDeviceApiV1DouyinAppV3RegisterDeviceGetData = {
          */
         proxy?: string;
     };
-    url: '/api/v1/douyin/app/v3/register_device';
+    url: '/video-hub/api/v1/douyin/app/v3/register_device';
 };
 
 export type RegisterDeviceApiV1DouyinAppV3RegisterDeviceGetErrors = {
@@ -16154,7 +16154,7 @@ export type OpenDouyinAppToVideoDetailApiV1DouyinAppV3OpenDouyinAppToVideoDetail
          */
         aweme_id: string;
     };
-    url: '/api/v1/douyin/app/v3/open_douyin_app_to_video_detail';
+    url: '/video-hub/api/v1/douyin/app/v3/open_douyin_app_to_video_detail';
 };
 
 export type OpenDouyinAppToVideoDetailApiV1DouyinAppV3OpenDouyinAppToVideoDetailGetErrors = {
@@ -16192,7 +16192,7 @@ export type OpenDouyinAppToUserProfileApiV1DouyinAppV3OpenDouyinAppToUserProfile
          */
         sec_uid: string;
     };
-    url: '/api/v1/douyin/app/v3/open_douyin_app_to_user_profile';
+    url: '/video-hub/api/v1/douyin/app/v3/open_douyin_app_to_user_profile';
 };
 
 export type OpenDouyinAppToUserProfileApiV1DouyinAppV3OpenDouyinAppToUserProfileGetErrors = {
@@ -16224,7 +16224,7 @@ export type OpenDouyinAppToKeywordSearchApiV1DouyinAppV3OpenDouyinAppToKeywordSe
          */
         keyword: string;
     };
-    url: '/api/v1/douyin/app/v3/open_douyin_app_to_keyword_search';
+    url: '/video-hub/api/v1/douyin/app/v3/open_douyin_app_to_keyword_search';
 };
 
 export type OpenDouyinAppToKeywordSearchApiV1DouyinAppV3OpenDouyinAppToKeywordSearchGetErrors = {
@@ -16262,7 +16262,7 @@ export type OpenDouyinAppToSendPrivateMessageApiV1DouyinAppV3OpenDouyinAppToSend
          */
         sec_uid: string;
     };
-    url: '/api/v1/douyin/app/v3/open_douyin_app_to_send_private_message';
+    url: '/video-hub/api/v1/douyin/app/v3/open_douyin_app_to_send_private_message';
 };
 
 export type OpenDouyinAppToSendPrivateMessageApiV1DouyinAppV3OpenDouyinAppToSendPrivateMessageGetErrors = {
@@ -16300,7 +16300,7 @@ export type FetchCreatorActivityListApiV1DouyinCreatorFetchCreatorActivityListGe
          */
         end_time: number;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_activity_list';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_activity_list';
 };
 
 export type FetchCreatorActivityListApiV1DouyinCreatorFetchCreatorActivityListGetErrors = {
@@ -16332,7 +16332,7 @@ export type FetchCreatorActivityDetailApiV1DouyinCreatorFetchCreatorActivityDeta
          */
         activity_id: string;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_activity_detail';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_activity_detail';
 };
 
 export type FetchCreatorActivityDetailApiV1DouyinCreatorFetchCreatorActivityDetailGetErrors = {
@@ -16357,7 +16357,7 @@ export type FetchCreatorMaterialCenterConfigApiV1DouyinCreatorFetchCreatorMateri
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator/fetch_creator_material_center_config';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_material_center_config';
 };
 
 export type FetchCreatorMaterialCenterConfigApiV1DouyinCreatorFetchCreatorMaterialCenterConfigGetResponses = {
@@ -16392,7 +16392,7 @@ export type FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMat
          */
         time_filter?: number;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_material_center_billboard';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_material_center_billboard';
 };
 
 export type FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGetErrors = {
@@ -16436,7 +16436,7 @@ export type FetchCreatorHotSpotBillboardApiV1DouyinCreatorFetchCreatorHotSpotBil
          */
         city_code?: string | null;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_hot_spot_billboard';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_spot_billboard';
 };
 
 export type FetchCreatorHotSpotBillboardApiV1DouyinCreatorFetchCreatorHotSpotBillboardGetErrors = {
@@ -16480,7 +16480,7 @@ export type FetchCreatorHotTopicBillboardApiV1DouyinCreatorFetchCreatorHotTopicB
          */
         time_filter?: number;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_hot_topic_billboard';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_topic_billboard';
 };
 
 export type FetchCreatorHotTopicBillboardApiV1DouyinCreatorFetchCreatorHotTopicBillboardGetErrors = {
@@ -16524,7 +16524,7 @@ export type FetchCreatorHotPropsBillboardApiV1DouyinCreatorFetchCreatorHotPropsB
          */
         time_filter?: number;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_hot_props_billboard';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_props_billboard';
 };
 
 export type FetchCreatorHotPropsBillboardApiV1DouyinCreatorFetchCreatorHotPropsBillboardGetErrors = {
@@ -16549,7 +16549,7 @@ export type FetchCreatorHotChallengeBillboardApiV1DouyinCreatorFetchCreatorHotCh
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator/fetch_creator_hot_challenge_billboard';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_challenge_billboard';
 };
 
 export type FetchCreatorHotChallengeBillboardApiV1DouyinCreatorFetchCreatorHotChallengeBillboardGetResponses = {
@@ -16584,7 +16584,7 @@ export type FetchCreatorHotMusicBillboardApiV1DouyinCreatorFetchCreatorHotMusicB
          */
         time_filter?: number;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_hot_music_billboard';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_music_billboard';
 };
 
 export type FetchCreatorHotMusicBillboardApiV1DouyinCreatorFetchCreatorHotMusicBillboardGetErrors = {
@@ -16638,7 +16638,7 @@ export type FetchCreatorHotCourseApiV1DouyinCreatorFetchCreatorHotCourseGetData 
          */
         category_id?: string | null;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_hot_course';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_course';
 };
 
 export type FetchCreatorHotCourseApiV1DouyinCreatorFetchCreatorHotCourseGetErrors = {
@@ -16663,7 +16663,7 @@ export type FetchCreatorContentCategoryApiV1DouyinCreatorFetchCreatorContentCate
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator/fetch_creator_content_category';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_content_category';
 };
 
 export type FetchCreatorContentCategoryApiV1DouyinCreatorFetchCreatorContentCategoryGetResponses = {
@@ -16704,7 +16704,7 @@ export type FetchCreatorContentCourseApiV1DouyinCreatorFetchCreatorContentCourse
          */
         offset?: number;
     };
-    url: '/api/v1/douyin/creator/fetch_creator_content_course';
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_content_course';
 };
 
 export type FetchCreatorContentCourseApiV1DouyinCreatorFetchCreatorContentCourseGetErrors = {
@@ -16760,7 +16760,7 @@ export type FetchVideoDanmakuListApiV1DouyinCreatorFetchVideoDanmakuListGetData 
          */
         is_blocked?: boolean;
     };
-    url: '/api/v1/douyin/creator/fetch_video_danmaku_list';
+    url: '/video-hub/api/v1/douyin/creator/fetch_video_danmaku_list';
 };
 
 export type FetchVideoDanmakuListApiV1DouyinCreatorFetchVideoDanmakuListGetErrors = {
@@ -16792,7 +16792,7 @@ export type FetchUserSearchApiV1DouyinCreatorFetchUserSearchGetData = {
          */
         user_name: string;
     };
-    url: '/api/v1/douyin/creator/fetch_user_search';
+    url: '/video-hub/api/v1/douyin/creator/fetch_user_search';
 };
 
 export type FetchUserSearchApiV1DouyinCreatorFetchUserSearchGetErrors = {
@@ -16890,7 +16890,7 @@ export type FetchMissionTaskListApiV1DouyinCreatorFetchMissionTaskListGetData = 
          */
         keyword?: string | null;
     };
-    url: '/api/v1/douyin/creator/fetch_mission_task_list';
+    url: '/video-hub/api/v1/douyin/creator/fetch_mission_task_list';
 };
 
 export type FetchMissionTaskListApiV1DouyinCreatorFetchMissionTaskListGetErrors = {
@@ -16915,7 +16915,7 @@ export type FetchIndustryCategoryConfigApiV1DouyinCreatorFetchIndustryCategoryCo
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator/fetch_industry_category_config';
+    url: '/video-hub/api/v1/douyin/creator/fetch_industry_category_config';
 };
 
 export type FetchIndustryCategoryConfigApiV1DouyinCreatorFetchIndustryCategoryConfigGetResponses = {
@@ -16934,7 +16934,7 @@ export type FetchItemOverviewDataApiV1DouyinCreatorV2FetchItemOverviewDataPostDa
     body: ItemMgetRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_overview_data';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_overview_data';
 };
 
 export type FetchItemOverviewDataApiV1DouyinCreatorV2FetchItemOverviewDataPostErrors = {
@@ -16962,7 +16962,7 @@ export type FetchItemPlaySourceApiV1DouyinCreatorV2FetchItemPlaySourcePostData =
     body: ItemPlaySourceRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_play_source';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_play_source';
 };
 
 export type FetchItemPlaySourceApiV1DouyinCreatorV2FetchItemPlaySourcePostErrors = {
@@ -16990,7 +16990,7 @@ export type FetchItemSearchKeywordApiV1DouyinCreatorV2FetchItemSearchKeywordPost
     body: ItemSearchKeywordRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_search_keyword';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_search_keyword';
 };
 
 export type FetchItemSearchKeywordApiV1DouyinCreatorV2FetchItemSearchKeywordPostErrors = {
@@ -17018,7 +17018,7 @@ export type FetchItemWatchTrendApiV1DouyinCreatorV2FetchItemWatchTrendPostData =
     body: ItemWatchTrendRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_watch_trend';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_watch_trend';
 };
 
 export type FetchItemWatchTrendApiV1DouyinCreatorV2FetchItemWatchTrendPostErrors = {
@@ -17046,7 +17046,7 @@ export type FetchItemDanmakuAnalysisApiV1DouyinCreatorV2FetchItemDanmakuAnalysis
     body: ItemBulletAnalysisRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_danmaku_analysis';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_danmaku_analysis';
 };
 
 export type FetchItemDanmakuAnalysisApiV1DouyinCreatorV2FetchItemDanmakuAnalysisPostErrors = {
@@ -17074,7 +17074,7 @@ export type FetchItemAudiencePortraitApiV1DouyinCreatorV2FetchItemAudiencePortra
     body: ItemAudiencePortraitRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_audience_portrait';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_audience_portrait';
 };
 
 export type FetchItemAudiencePortraitApiV1DouyinCreatorV2FetchItemAudiencePortraitPostErrors = {
@@ -17102,7 +17102,7 @@ export type FetchItemAudienceOthersApiV1DouyinCreatorV2FetchItemAudienceOthersPo
     body: ItemAudienceOthersRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_audience_others';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_audience_others';
 };
 
 export type FetchItemAudienceOthersApiV1DouyinCreatorV2FetchItemAudienceOthersPostErrors = {
@@ -17130,7 +17130,7 @@ export type FetchItemAnalysisInvolvedVerticalApiV1DouyinCreatorV2FetchItemAnalys
     body: ItemAnalysisInvolvedVerticalRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_analysis_involved_vertical';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_analysis_involved_vertical';
 };
 
 export type FetchItemAnalysisInvolvedVerticalApiV1DouyinCreatorV2FetchItemAnalysisInvolvedVerticalPostErrors = {
@@ -17158,7 +17158,7 @@ export type FetchItemAnalysisOverviewApiV1DouyinCreatorV2FetchItemAnalysisOvervi
     body: ItemAnalysisOverviewRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_analysis_overview';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_analysis_overview';
 };
 
 export type FetchItemAnalysisOverviewApiV1DouyinCreatorV2FetchItemAnalysisOverviewPostErrors = {
@@ -17186,7 +17186,7 @@ export type FetchItemAnalysisItemPerformanceApiV1DouyinCreatorV2FetchItemAnalysi
     body: ItemAnalysisItemPerformanceRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_analysis_item_performance';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_analysis_item_performance';
 };
 
 export type FetchItemAnalysisItemPerformanceApiV1DouyinCreatorV2FetchItemAnalysisItemPerformancePostErrors = {
@@ -17214,7 +17214,7 @@ export type FetchItemListApiV1DouyinCreatorV2FetchItemListPostData = {
     body: ItemListRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_list';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_list';
 };
 
 export type FetchItemListApiV1DouyinCreatorV2FetchItemListPostErrors = {
@@ -17242,7 +17242,7 @@ export type FetchItemListDownloadApiV1DouyinCreatorV2FetchItemListDownloadPostDa
     body: ItemListDownloadRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_item_list_download';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_list_download';
 };
 
 export type FetchItemListDownloadApiV1DouyinCreatorV2FetchItemListDownloadPostErrors = {
@@ -17268,7 +17268,7 @@ export type FetchLiveRoomHistoryListApiV1DouyinCreatorV2FetchLiveRoomHistoryList
     body: LiveRoomHistoryListRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_live_room_history_list';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_live_room_history_list';
 };
 
 export type FetchLiveRoomHistoryListApiV1DouyinCreatorV2FetchLiveRoomHistoryListPostErrors = {
@@ -17296,7 +17296,7 @@ export type FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostData
     body: AuthorDiagnosisRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/creator_v2/fetch_author_diagnosis';
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_author_diagnosis';
 };
 
 export type FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostErrors = {
@@ -17321,7 +17321,7 @@ export type FetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1PostData = 
     body: GeneralSearchV1Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_general_search_v1';
+    url: '/video-hub/api/v1/douyin/search/fetch_general_search_v1';
 };
 
 export type FetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1PostErrors = {
@@ -17346,7 +17346,7 @@ export type FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostData = 
     body: GeneralSearchV2Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_general_search_v2';
+    url: '/video-hub/api/v1/douyin/search/fetch_general_search_v2';
 };
 
 export type FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostErrors = {
@@ -17371,7 +17371,7 @@ export type FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostData = 
     body: GeneralSearchV3Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_general_search_v3';
+    url: '/video-hub/api/v1/douyin/search/fetch_general_search_v3';
 };
 
 export type FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostErrors = {
@@ -17396,7 +17396,7 @@ export type FetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPostData = {
     body: SearchSuggestRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_search_suggest';
+    url: '/video-hub/api/v1/douyin/search/fetch_search_suggest';
 };
 
 export type FetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPostErrors = {
@@ -17421,7 +17421,7 @@ export type FetchVideoSearchV1ApiV1DouyinSearchFetchVideoSearchV1PostData = {
     body: VideoSearchV1Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_video_search_v1';
+    url: '/video-hub/api/v1/douyin/search/fetch_video_search_v1';
 };
 
 export type FetchVideoSearchV1ApiV1DouyinSearchFetchVideoSearchV1PostErrors = {
@@ -17446,7 +17446,7 @@ export type FetchVideoSearchV2ApiV1DouyinSearchFetchVideoSearchV2PostData = {
     body: VideoSearchV2Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_video_search_v2';
+    url: '/video-hub/api/v1/douyin/search/fetch_video_search_v2';
 };
 
 export type FetchVideoSearchV2ApiV1DouyinSearchFetchVideoSearchV2PostErrors = {
@@ -17471,7 +17471,7 @@ export type FetchMultiSearchApiV1DouyinSearchFetchMultiSearchPostData = {
     body: MultiSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_multi_search';
+    url: '/video-hub/api/v1/douyin/search/fetch_multi_search';
 };
 
 export type FetchMultiSearchApiV1DouyinSearchFetchMultiSearchPostErrors = {
@@ -17496,7 +17496,7 @@ export type FetchUserSearchApiV1DouyinSearchFetchUserSearchPostData = {
     body: UserSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_user_search';
+    url: '/video-hub/api/v1/douyin/search/fetch_user_search';
 };
 
 export type FetchUserSearchApiV1DouyinSearchFetchUserSearchPostErrors = {
@@ -17521,7 +17521,7 @@ export type FetchUserSearchV2ApiV1DouyinSearchFetchUserSearchV2PostData = {
     body: UserSearchRequestV2;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_user_search_v2';
+    url: '/video-hub/api/v1/douyin/search/fetch_user_search_v2';
 };
 
 export type FetchUserSearchV2ApiV1DouyinSearchFetchUserSearchV2PostErrors = {
@@ -17546,7 +17546,7 @@ export type FetchImageSearchApiV1DouyinSearchFetchImageSearchPostData = {
     body: ImageSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_image_search';
+    url: '/video-hub/api/v1/douyin/search/fetch_image_search';
 };
 
 export type FetchImageSearchApiV1DouyinSearchFetchImageSearchPostErrors = {
@@ -17571,7 +17571,7 @@ export type FetchImageSearchV3ApiV1DouyinSearchFetchImageSearchV3PostData = {
     body: ImageSearchV3Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_image_search_v3';
+    url: '/video-hub/api/v1/douyin/search/fetch_image_search_v3';
 };
 
 export type FetchImageSearchV3ApiV1DouyinSearchFetchImageSearchV3PostErrors = {
@@ -17596,7 +17596,7 @@ export type FetchLiveSearchV1ApiV1DouyinSearchFetchLiveSearchV1PostData = {
     body: LiveSearchV1Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_live_search_v1';
+    url: '/video-hub/api/v1/douyin/search/fetch_live_search_v1';
 };
 
 export type FetchLiveSearchV1ApiV1DouyinSearchFetchLiveSearchV1PostErrors = {
@@ -17621,7 +17621,7 @@ export type FetchChallengeSearchV1ApiV1DouyinSearchFetchChallengeSearchV1PostDat
     body: ChallengeSearchV1Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_challenge_search_v1';
+    url: '/video-hub/api/v1/douyin/search/fetch_challenge_search_v1';
 };
 
 export type FetchChallengeSearchV1ApiV1DouyinSearchFetchChallengeSearchV1PostErrors = {
@@ -17646,7 +17646,7 @@ export type FetchChallengeSearchV2ApiV1DouyinSearchFetchChallengeSearchV2PostDat
     body: ChallengeSearchV2Request;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_challenge_search_v2';
+    url: '/video-hub/api/v1/douyin/search/fetch_challenge_search_v2';
 };
 
 export type FetchChallengeSearchV2ApiV1DouyinSearchFetchChallengeSearchV2PostErrors = {
@@ -17671,7 +17671,7 @@ export type FetchChallengeSuggestApiV1DouyinSearchFetchChallengeSuggestPostData 
     body: ChallengeSuggestRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_challenge_suggest';
+    url: '/video-hub/api/v1/douyin/search/fetch_challenge_suggest';
 };
 
 export type FetchChallengeSuggestApiV1DouyinSearchFetchChallengeSuggestPostErrors = {
@@ -17696,7 +17696,7 @@ export type FetchExperienceSearchApiV1DouyinSearchFetchExperienceSearchPostData 
     body: ExperienceSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_experience_search';
+    url: '/video-hub/api/v1/douyin/search/fetch_experience_search';
 };
 
 export type FetchExperienceSearchApiV1DouyinSearchFetchExperienceSearchPostErrors = {
@@ -17721,7 +17721,7 @@ export type FetchMusicSearchApiV1DouyinSearchFetchMusicSearchPostData = {
     body: MusicSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_music_search';
+    url: '/video-hub/api/v1/douyin/search/fetch_music_search';
 };
 
 export type FetchMusicSearchApiV1DouyinSearchFetchMusicSearchPostErrors = {
@@ -17746,7 +17746,7 @@ export type FetchDiscussSearchApiV1DouyinSearchFetchDiscussSearchPostData = {
     body: DiscussSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_discuss_search';
+    url: '/video-hub/api/v1/douyin/search/fetch_discuss_search';
 };
 
 export type FetchDiscussSearchApiV1DouyinSearchFetchDiscussSearchPostErrors = {
@@ -17771,7 +17771,7 @@ export type FetchSchoolSearchApiV1DouyinSearchFetchSchoolSearchPostData = {
     body: SchoolSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_school_search';
+    url: '/video-hub/api/v1/douyin/search/fetch_school_search';
 };
 
 export type FetchSchoolSearchApiV1DouyinSearchFetchSchoolSearchPostErrors = {
@@ -17796,7 +17796,7 @@ export type FetchVisionSearchApiV1DouyinSearchFetchVisionSearchPostData = {
     body: VisionSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/search/fetch_vision_search';
+    url: '/video-hub/api/v1/douyin/search/fetch_vision_search';
 };
 
 export type FetchVisionSearchApiV1DouyinSearchFetchVisionSearchPostErrors = {
@@ -17821,7 +17821,7 @@ export type FetchCityListApiV1DouyinBillboardFetchCityListGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_city_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_city_list';
 };
 
 export type FetchCityListApiV1DouyinBillboardFetchCityListGetResponses = {
@@ -17837,7 +17837,7 @@ export type FetchContentTagApiV1DouyinBillboardFetchContentTagGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_content_tag';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_content_tag';
 };
 
 export type FetchContentTagApiV1DouyinBillboardFetchContentTagGetResponses = {
@@ -17884,7 +17884,7 @@ export type FetchHotCategoryListApiV1DouyinBillboardFetchHotCategoryListGetData 
          */
         keyword?: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_category_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_category_list';
 };
 
 export type FetchHotCategoryListApiV1DouyinBillboardFetchHotCategoryListGetErrors = {
@@ -17940,7 +17940,7 @@ export type FetchHotRiseListApiV1DouyinBillboardFetchHotRiseListGetData = {
          */
         keyword?: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_rise_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_rise_list';
 };
 
 export type FetchHotRiseListApiV1DouyinBillboardFetchHotRiseListGetErrors = {
@@ -18002,7 +18002,7 @@ export type FetchHotCityListApiV1DouyinBillboardFetchHotCityListGetData = {
          */
         keyword?: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_city_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_city_list';
 };
 
 export type FetchHotCityListApiV1DouyinBillboardFetchHotCityListGetErrors = {
@@ -18046,7 +18046,7 @@ export type FetchHotChallengeListApiV1DouyinBillboardFetchHotChallengeListGetDat
          */
         keyword?: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_challenge_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_challenge_list';
 };
 
 export type FetchHotChallengeListApiV1DouyinBillboardFetchHotChallengeListGetErrors = {
@@ -18120,7 +18120,7 @@ export type FetchHotTotalListApiV1DouyinBillboardFetchHotTotalListGetData = {
          */
         keyword?: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_total_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_list';
 };
 
 export type FetchHotTotalListApiV1DouyinBillboardFetchHotTotalListGetErrors = {
@@ -18145,7 +18145,7 @@ export type FetchHotCalendarListApiV1DouyinBillboardFetchHotCalendarListPostData
     body?: BodyFetchHotCalendarListApiV1DouyinBillboardFetchHotCalendarListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_calendar_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_calendar_list';
 };
 
 export type FetchHotCalendarListApiV1DouyinBillboardFetchHotCalendarListPostErrors = {
@@ -18177,7 +18177,7 @@ export type FetchHotCalendarDetailApiV1DouyinBillboardFetchHotCalendarDetailGetD
          */
         calendar_id: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_calendar_detail';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_calendar_detail';
 };
 
 export type FetchHotCalendarDetailApiV1DouyinBillboardFetchHotCalendarDetailGetErrors = {
@@ -18215,7 +18215,7 @@ export type FetchHotUserPortraitListApiV1DouyinBillboardFetchHotUserPortraitList
          */
         option?: number;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_user_portrait_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_user_portrait_list';
 };
 
 export type FetchHotUserPortraitListApiV1DouyinBillboardFetchHotUserPortraitListGetErrors = {
@@ -18247,7 +18247,7 @@ export type FetchHotCommentWordListApiV1DouyinBillboardFetchHotCommentWordListGe
          */
         aweme_id: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_comment_word_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_comment_word_list';
 };
 
 export type FetchHotCommentWordListApiV1DouyinBillboardFetchHotCommentWordListGetErrors = {
@@ -18291,7 +18291,7 @@ export type FetchHotItemTrendsListApiV1DouyinBillboardFetchHotItemTrendsListGetD
          */
         date_window?: number;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_item_trends_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_item_trends_list';
 };
 
 export type FetchHotItemTrendsListApiV1DouyinBillboardFetchHotItemTrendsListGetErrors = {
@@ -18316,7 +18316,7 @@ export type FetchHotAccountListApiV1DouyinBillboardFetchHotAccountListPostData =
     body?: BodyFetchHotAccountListApiV1DouyinBillboardFetchHotAccountListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_account_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_list';
 };
 
 export type FetchHotAccountListApiV1DouyinBillboardFetchHotAccountListPostErrors = {
@@ -18354,7 +18354,7 @@ export type FetchHotAccountSearchListApiV1DouyinBillboardFetchHotAccountSearchLi
          */
         cursor: number;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_account_search_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_search_list';
 };
 
 export type FetchHotAccountSearchListApiV1DouyinBillboardFetchHotAccountSearchListGetErrors = {
@@ -18398,7 +18398,7 @@ export type FetchHotAccountTrendsListApiV1DouyinBillboardFetchHotAccountTrendsLi
          */
         date_window?: number;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_account_trends_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_trends_list';
 };
 
 export type FetchHotAccountTrendsListApiV1DouyinBillboardFetchHotAccountTrendsListGetErrors = {
@@ -18430,7 +18430,7 @@ export type FetchHotAccountItemAnalysisListApiV1DouyinBillboardFetchHotAccountIt
          */
         sec_uid: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_account_item_analysis_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_item_analysis_list';
 };
 
 export type FetchHotAccountItemAnalysisListApiV1DouyinBillboardFetchHotAccountItemAnalysisListGetErrors = {
@@ -18468,7 +18468,7 @@ export type FetchHotAccountFansPortraitListApiV1DouyinBillboardFetchHotAccountFa
          */
         option?: number;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_account_fans_portrait_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_fans_portrait_list';
 };
 
 export type FetchHotAccountFansPortraitListApiV1DouyinBillboardFetchHotAccountFansPortraitListGetErrors = {
@@ -18500,7 +18500,7 @@ export type FetchHotAccountFansInterestAccountListApiV1DouyinBillboardFetchHotAc
          */
         sec_uid: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_account_fans_interest_account_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_fans_interest_account_list';
 };
 
 export type FetchHotAccountFansInterestAccountListApiV1DouyinBillboardFetchHotAccountFansInterestAccountListGetErrors = {
@@ -18532,7 +18532,7 @@ export type FetchHotAccountFansInterestTopicListApiV1DouyinBillboardFetchHotAcco
          */
         sec_uid: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_account_fans_interest_topic_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_fans_interest_topic_list';
 };
 
 export type FetchHotAccountFansInterestTopicListApiV1DouyinBillboardFetchHotAccountFansInterestTopicListGetErrors = {
@@ -18564,7 +18564,7 @@ export type FetchHotAccountFansInterestSearchListApiV1DouyinBillboardFetchHotAcc
          */
         sec_uid: string;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_account_fans_interest_search_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_fans_interest_search_list';
 };
 
 export type FetchHotAccountFansInterestSearchListApiV1DouyinBillboardFetchHotAccountFansInterestSearchListGetErrors = {
@@ -18589,7 +18589,7 @@ export type FetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPost
     body?: BodyFetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_video_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_video_list';
 };
 
 export type FetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPostErrors = {
@@ -18614,7 +18614,7 @@ export type FetchHotTotalLowFanListApiV1DouyinBillboardFetchHotTotalLowFanListPo
     body?: BodyFetchHotTotalLowFanListApiV1DouyinBillboardFetchHotTotalLowFanListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_low_fan_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_low_fan_list';
 };
 
 export type FetchHotTotalLowFanListApiV1DouyinBillboardFetchHotTotalLowFanListPostErrors = {
@@ -18639,7 +18639,7 @@ export type FetchHotTotalHighPlayListApiV1DouyinBillboardFetchHotTotalHighPlayLi
     body?: BodyFetchHotTotalHighPlayListApiV1DouyinBillboardFetchHotTotalHighPlayListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_play_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_play_list';
 };
 
 export type FetchHotTotalHighPlayListApiV1DouyinBillboardFetchHotTotalHighPlayListPostErrors = {
@@ -18664,7 +18664,7 @@ export type FetchHotTotalHighLikeListApiV1DouyinBillboardFetchHotTotalHighLikeLi
     body?: BodyFetchHotTotalHighLikeListApiV1DouyinBillboardFetchHotTotalHighLikeListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_like_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_like_list';
 };
 
 export type FetchHotTotalHighLikeListApiV1DouyinBillboardFetchHotTotalHighLikeListPostErrors = {
@@ -18689,7 +18689,7 @@ export type FetchHotTotalHighFanListApiV1DouyinBillboardFetchHotTotalHighFanList
     body?: BodyFetchHotTotalHighFanListApiV1DouyinBillboardFetchHotTotalHighFanListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_fan_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_fan_list';
 };
 
 export type FetchHotTotalHighFanListApiV1DouyinBillboardFetchHotTotalHighFanListPostErrors = {
@@ -18714,7 +18714,7 @@ export type FetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPost
     body?: BodyFetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_topic_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_topic_list';
 };
 
 export type FetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPostErrors = {
@@ -18739,7 +18739,7 @@ export type FetchHotTotalHighTopicListApiV1DouyinBillboardFetchHotTotalHighTopic
     body?: BodyFetchHotTotalHighTopicListApiV1DouyinBillboardFetchHotTotalHighTopicListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_topic_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_topic_list';
 };
 
 export type FetchHotTotalHighTopicListApiV1DouyinBillboardFetchHotTotalHighTopicListPostErrors = {
@@ -18764,7 +18764,7 @@ export type FetchHotTotalSearchListApiV1DouyinBillboardFetchHotTotalSearchListPo
     body?: BodyFetchHotTotalSearchListApiV1DouyinBillboardFetchHotTotalSearchListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_search_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_search_list';
 };
 
 export type FetchHotTotalSearchListApiV1DouyinBillboardFetchHotTotalSearchListPostErrors = {
@@ -18789,7 +18789,7 @@ export type FetchHotTotalHighSearchListApiV1DouyinBillboardFetchHotTotalHighSear
     body?: BodyFetchHotTotalHighSearchListApiV1DouyinBillboardFetchHotTotalHighSearchListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_search_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_search_list';
 };
 
 export type FetchHotTotalHighSearchListApiV1DouyinBillboardFetchHotTotalHighSearchListPostErrors = {
@@ -18814,7 +18814,7 @@ export type FetchHotTotalHotWordListApiV1DouyinBillboardFetchHotTotalHotWordList
     body?: BodyFetchHotTotalHotWordListApiV1DouyinBillboardFetchHotTotalHotWordListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/billboard/fetch_hot_total_hot_word_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_hot_word_list';
 };
 
 export type FetchHotTotalHotWordListApiV1DouyinBillboardFetchHotTotalHotWordListPostErrors = {
@@ -18858,7 +18858,7 @@ export type FetchHotTotalHotWordDetailListApiV1DouyinBillboardFetchHotTotalHotWo
          */
         query_day: number;
     };
-    url: '/api/v1/douyin/billboard/fetch_hot_total_hot_word_detail_list';
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_hot_word_detail_list';
 };
 
 export type FetchHotTotalHotWordDetailListApiV1DouyinBillboardFetchHotTotalHotWordDetailListGetErrors = {
@@ -18902,7 +18902,7 @@ export type GetSignImageApiV1DouyinXingtuGetSignImageGetData = {
          */
         format?: string;
     };
-    url: '/api/v1/douyin/xingtu/get_sign_image';
+    url: '/video-hub/api/v1/douyin/xingtu/get_sign_image';
 };
 
 export type GetSignImageApiV1DouyinXingtuGetSignImageGetErrors = {
@@ -18934,7 +18934,7 @@ export type GetXingtuKolidByUidApiV1DouyinXingtuGetXingtuKolidByUidGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/douyin/xingtu/get_xingtu_kolid_by_uid';
+    url: '/video-hub/api/v1/douyin/xingtu/get_xingtu_kolid_by_uid';
 };
 
 export type GetXingtuKolidByUidApiV1DouyinXingtuGetXingtuKolidByUidGetErrors = {
@@ -18966,7 +18966,7 @@ export type GetXingtuKolidBySecUserIdApiV1DouyinXingtuGetXingtuKolidBySecUserIdG
          */
         sec_user_id: string;
     };
-    url: '/api/v1/douyin/xingtu/get_xingtu_kolid_by_sec_user_id';
+    url: '/video-hub/api/v1/douyin/xingtu/get_xingtu_kolid_by_sec_user_id';
 };
 
 export type GetXingtuKolidBySecUserIdApiV1DouyinXingtuGetXingtuKolidBySecUserIdGetErrors = {
@@ -18998,7 +18998,7 @@ export type GetXingtuKolidByUniqueIdApiV1DouyinXingtuGetXingtuKolidByUniqueIdGet
          */
         unique_id: string;
     };
-    url: '/api/v1/douyin/xingtu/get_xingtu_kolid_by_unique_id';
+    url: '/video-hub/api/v1/douyin/xingtu/get_xingtu_kolid_by_unique_id';
 };
 
 export type GetXingtuKolidByUniqueIdApiV1DouyinXingtuGetXingtuKolidByUniqueIdGetErrors = {
@@ -19036,7 +19036,7 @@ export type KolBaseInfoV1ApiV1DouyinXingtuKolBaseInfoV1GetData = {
          */
         platformChannel: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_base_info_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_base_info_v1';
 };
 
 export type KolBaseInfoV1ApiV1DouyinXingtuKolBaseInfoV1GetErrors = {
@@ -19068,7 +19068,7 @@ export type KolAudiencePortraitV1ApiV1DouyinXingtuKolAudiencePortraitV1GetData =
          */
         kolId: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_audience_portrait_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_audience_portrait_v1';
 };
 
 export type KolAudiencePortraitV1ApiV1DouyinXingtuKolAudiencePortraitV1GetErrors = {
@@ -19106,7 +19106,7 @@ export type KolFansPortraitV1ApiV1DouyinXingtuKolFansPortraitV1GetData = {
          */
         fansType?: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_fans_portrait_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_fans_portrait_v1';
 };
 
 export type KolFansPortraitV1ApiV1DouyinXingtuKolFansPortraitV1GetErrors = {
@@ -19144,7 +19144,7 @@ export type KolServicePriceV1ApiV1DouyinXingtuKolServicePriceV1GetData = {
          */
         platformChannel: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_service_price_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_service_price_v1';
 };
 
 export type KolServicePriceV1ApiV1DouyinXingtuKolServicePriceV1GetErrors = {
@@ -19200,7 +19200,7 @@ export type KolDataOverviewV1ApiV1DouyinXingtuKolDataOverviewV1GetData = {
          */
         onlyAssign?: boolean;
     };
-    url: '/api/v1/douyin/xingtu/kol_data_overview_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_data_overview_v1';
 };
 
 export type KolDataOverviewV1ApiV1DouyinXingtuKolDataOverviewV1GetErrors = {
@@ -19244,7 +19244,7 @@ export type SearchKolV1ApiV1DouyinXingtuSearchKolV1GetData = {
          */
         page: number;
     };
-    url: '/api/v1/douyin/xingtu/search_kol_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/search_kol_v1';
 };
 
 export type SearchKolV1ApiV1DouyinXingtuSearchKolV1GetErrors = {
@@ -19288,7 +19288,7 @@ export type SearchKolV2ApiV1DouyinXingtuSearchKolV2GetData = {
          */
         contentTag?: string;
     };
-    url: '/api/v1/douyin/xingtu/search_kol_v2';
+    url: '/video-hub/api/v1/douyin/xingtu/search_kol_v2';
 };
 
 export type SearchKolV2ApiV1DouyinXingtuSearchKolV2GetErrors = {
@@ -19326,7 +19326,7 @@ export type KolConversionAbilityAnalysisV1ApiV1DouyinXingtuKolConversionAbilityA
          */
         _range: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_conversion_ability_analysis_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_conversion_ability_analysis_v1';
 };
 
 export type KolConversionAbilityAnalysisV1ApiV1DouyinXingtuKolConversionAbilityAnalysisV1GetErrors = {
@@ -19364,7 +19364,7 @@ export type KolVideoPerformanceV1ApiV1DouyinXingtuKolVideoPerformanceV1GetData =
          */
         onlyAssign: boolean;
     };
-    url: '/api/v1/douyin/xingtu/kol_video_performance_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_video_performance_v1';
 };
 
 export type KolVideoPerformanceV1ApiV1DouyinXingtuKolVideoPerformanceV1GetErrors = {
@@ -19396,7 +19396,7 @@ export type KolXingtuIndexV1ApiV1DouyinXingtuKolXingtuIndexV1GetData = {
          */
         kolId: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_xingtu_index_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_xingtu_index_v1';
 };
 
 export type KolXingtuIndexV1ApiV1DouyinXingtuKolXingtuIndexV1GetErrors = {
@@ -19440,7 +19440,7 @@ export type KolConvertVideoDisplayV1ApiV1DouyinXingtuKolConvertVideoDisplayV1Get
          */
         page: number;
     };
-    url: '/api/v1/douyin/xingtu/kol_convert_video_display_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_convert_video_display_v1';
 };
 
 export type KolConvertVideoDisplayV1ApiV1DouyinXingtuKolConvertVideoDisplayV1GetErrors = {
@@ -19472,7 +19472,7 @@ export type KolLinkStructV1ApiV1DouyinXingtuKolLinkStructV1GetData = {
          */
         kolId: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_link_struct_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_link_struct_v1';
 };
 
 export type KolLinkStructV1ApiV1DouyinXingtuKolLinkStructV1GetErrors = {
@@ -19504,7 +19504,7 @@ export type KolTouchDistributionV1ApiV1DouyinXingtuKolTouchDistributionV1GetData
          */
         kolId: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_touch_distribution_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_touch_distribution_v1';
 };
 
 export type KolTouchDistributionV1ApiV1DouyinXingtuKolTouchDistributionV1GetErrors = {
@@ -19536,7 +19536,7 @@ export type KolCpInfoV1ApiV1DouyinXingtuKolCpInfoV1GetData = {
          */
         kolId: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_cp_info_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_cp_info_v1';
 };
 
 export type KolCpInfoV1ApiV1DouyinXingtuKolCpInfoV1GetErrors = {
@@ -19568,7 +19568,7 @@ export type KolRecVideosV1ApiV1DouyinXingtuKolRecVideosV1GetData = {
          */
         kolId: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_rec_videos_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_rec_videos_v1';
 };
 
 export type KolRecVideosV1ApiV1DouyinXingtuKolRecVideosV1GetErrors = {
@@ -19612,7 +19612,7 @@ export type KolDailyFansV1ApiV1DouyinXingtuKolDailyFansV1GetData = {
          */
         endDate: string;
     };
-    url: '/api/v1/douyin/xingtu/kol_daily_fans_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/kol_daily_fans_v1';
 };
 
 export type KolDailyFansV1ApiV1DouyinXingtuKolDailyFansV1GetErrors = {
@@ -19644,7 +19644,7 @@ export type AuthorHotCommentTokensV1ApiV1DouyinXingtuAuthorHotCommentTokensV1Get
          */
         kolId: string;
     };
-    url: '/api/v1/douyin/xingtu/author_hot_comment_tokens_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/author_hot_comment_tokens_v1';
 };
 
 export type AuthorHotCommentTokensV1ApiV1DouyinXingtuAuthorHotCommentTokensV1GetErrors = {
@@ -19676,7 +19676,7 @@ export type AuthorContentHotCommentKeywordsV1ApiV1DouyinXingtuAuthorContentHotCo
          */
         kolId: string;
     };
-    url: '/api/v1/douyin/xingtu/author_content_hot_comment_keywords_v1';
+    url: '/video-hub/api/v1/douyin/xingtu/author_content_hot_comment_keywords_v1';
 };
 
 export type AuthorContentHotCommentKeywordsV1ApiV1DouyinXingtuAuthorContentHotCommentKeywordsV1GetErrors = {
@@ -19714,7 +19714,7 @@ export type GetRankingListCatalogApiV1DouyinXingtuV2GetRankingListCatalogGetData
          */
         biz_scene?: string;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_ranking_list_catalog';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ranking_list_catalog';
 };
 
 export type GetRankingListCatalogApiV1DouyinXingtuV2GetRankingListCatalogGetErrors = {
@@ -19776,7 +19776,7 @@ export type GetRankingListDataApiV1DouyinXingtuV2GetRankingListDataGetData = {
          */
         limit?: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_ranking_list_data';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ranking_list_data';
 };
 
 export type GetRankingListDataApiV1DouyinXingtuV2GetRankingListDataGetErrors = {
@@ -19801,7 +19801,7 @@ export type GetPlayletActorRankCatalogApiV1DouyinXingtuV2GetPlayletActorRankCata
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/xingtu_v2/get_playlet_actor_rank_catalog';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_playlet_actor_rank_catalog';
 };
 
 export type GetPlayletActorRankCatalogApiV1DouyinXingtuV2GetPlayletActorRankCatalogPostResponses = {
@@ -19854,7 +19854,7 @@ export type GetPlayletActorRankListApiV1DouyinXingtuV2GetPlayletActorRankListGet
          */
         limit?: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_playlet_actor_rank_list';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_playlet_actor_rank_list';
 };
 
 export type GetPlayletActorRankListApiV1DouyinXingtuV2GetPlayletActorRankListGetErrors = {
@@ -19886,7 +19886,7 @@ export type GetAuthorMarketFieldsApiV1DouyinXingtuV2GetAuthorMarketFieldsGetData
          */
         market_scene?: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_author_market_fields';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_market_fields';
 };
 
 export type GetAuthorMarketFieldsApiV1DouyinXingtuV2GetAuthorMarketFieldsGetErrors = {
@@ -19948,7 +19948,7 @@ export type GetAuthorBaseInfoApiV1DouyinXingtuV2GetAuthorBaseInfoGetData = {
          */
         need_linkage_info?: boolean;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_author_base_info';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_base_info';
 };
 
 export type GetAuthorBaseInfoApiV1DouyinXingtuV2GetAuthorBaseInfoGetErrors = {
@@ -19980,7 +19980,7 @@ export type GetAuthorBusinessCardInfoApiV1DouyinXingtuV2GetAuthorBusinessCardInf
          */
         o_author_id: string;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_author_business_card_info';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_business_card_info';
 };
 
 export type GetAuthorBusinessCardInfoApiV1DouyinXingtuV2GetAuthorBusinessCardInfoGetErrors = {
@@ -20030,7 +20030,7 @@ export type GetAuthorLocalInfoApiV1DouyinXingtuV2GetAuthorLocalInfoGetData = {
          */
         time_range?: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_author_local_info';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_local_info';
 };
 
 export type GetAuthorLocalInfoApiV1DouyinXingtuV2GetAuthorLocalInfoGetErrors = {
@@ -20092,7 +20092,7 @@ export type GetAuthorShowItemsApiV1DouyinXingtuV2GetAuthorShowItemsGetData = {
          */
         flow_type?: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_author_show_items';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_show_items';
 };
 
 export type GetAuthorShowItemsApiV1DouyinXingtuV2GetAuthorShowItemsGetErrors = {
@@ -20136,7 +20136,7 @@ export type GetAuthorHotCommentTokensApiV1DouyinXingtuV2GetAuthorHotCommentToken
          */
         without_emoji?: boolean;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_author_hot_comment_tokens';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_hot_comment_tokens';
 };
 
 export type GetAuthorHotCommentTokensApiV1DouyinXingtuV2GetAuthorHotCommentTokensGetErrors = {
@@ -20174,7 +20174,7 @@ export type GetAuthorContentHotKeywordsApiV1DouyinXingtuV2GetAuthorContentHotKey
          */
         keyword_type?: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_author_content_hot_keywords';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_content_hot_keywords';
 };
 
 export type GetAuthorContentHotKeywordsApiV1DouyinXingtuV2GetAuthorContentHotKeywordsGetErrors = {
@@ -20199,7 +20199,7 @@ export type GetRecommendForStarAuthorsApiV1DouyinXingtuV2GetRecommendForStarAuth
     body: BodyGetRecommendForStarAuthorsApiV1DouyinXingtuV2GetRecommendForStarAuthorsPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/xingtu_v2/get_recommend_for_star_authors';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_recommend_for_star_authors';
 };
 
 export type GetRecommendForStarAuthorsApiV1DouyinXingtuV2GetRecommendForStarAuthorsPostErrors = {
@@ -20231,7 +20231,7 @@ export type GetExcellentCaseCategoryListApiV1DouyinXingtuV2GetExcellentCaseCateg
          */
         platform_source?: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_excellent_case_category_list';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_excellent_case_category_list';
 };
 
 export type GetExcellentCaseCategoryListApiV1DouyinXingtuV2GetExcellentCaseCategoryListGetErrors = {
@@ -20299,7 +20299,7 @@ export type GetAuthorSpreadInfoApiV1DouyinXingtuV2GetAuthorSpreadInfoGetData = {
          */
         range?: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_author_spread_info';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_spread_info';
 };
 
 export type GetAuthorSpreadInfoApiV1DouyinXingtuV2GetAuthorSpreadInfoGetErrors = {
@@ -20337,7 +20337,7 @@ export type GetUserProfileQrcodeApiV1DouyinXingtuV2GetUserProfileQrcodeGetData =
          */
         sec_uid?: string | null;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_user_profile_qrcode';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_user_profile_qrcode';
 };
 
 export type GetUserProfileQrcodeApiV1DouyinXingtuV2GetUserProfileQrcodeGetErrors = {
@@ -20362,7 +20362,7 @@ export type GetContentTrendGuideApiV1DouyinXingtuV2GetContentTrendGuideGetData =
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/xingtu_v2/get_content_trend_guide';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_content_trend_guide';
 };
 
 export type GetContentTrendGuideApiV1DouyinXingtuV2GetContentTrendGuideGetResponses = {
@@ -20378,7 +20378,7 @@ export type GetIpActivityIndustryListApiV1DouyinXingtuV2GetIpActivityIndustryLis
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/xingtu_v2/get_ip_activity_industry_list';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ip_activity_industry_list';
 };
 
 export type GetIpActivityIndustryListApiV1DouyinXingtuV2GetIpActivityIndustryListGetResponses = {
@@ -20394,7 +20394,7 @@ export type GetIpActivityListApiV1DouyinXingtuV2GetIpActivityListPostData = {
     body: BodyGetIpActivityListApiV1DouyinXingtuV2GetIpActivityListPost;
     path?: never;
     query?: never;
-    url: '/api/v1/douyin/xingtu_v2/get_ip_activity_list';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ip_activity_list';
 };
 
 export type GetIpActivityListApiV1DouyinXingtuV2GetIpActivityListPostErrors = {
@@ -20426,7 +20426,7 @@ export type GetIpActivityDetailApiV1DouyinXingtuV2GetIpActivityDetailGetData = {
          */
         id: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_ip_activity_detail';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ip_activity_detail';
 };
 
 export type GetIpActivityDetailApiV1DouyinXingtuV2GetIpActivityDetailGetErrors = {
@@ -20458,7 +20458,7 @@ export type GetResourceListApiV1DouyinXingtuV2GetResourceListGetData = {
          */
         resource_id: number;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_resource_list';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_resource_list';
 };
 
 export type GetResourceListApiV1DouyinXingtuV2GetResourceListGetErrors = {
@@ -20508,7 +20508,7 @@ export type GetDemanderMcnListApiV1DouyinXingtuV2GetDemanderMcnListGetData = {
          */
         order_by?: string;
     };
-    url: '/api/v1/douyin/xingtu_v2/get_demander_mcn_list';
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_demander_mcn_list';
 };
 
 export type GetDemanderMcnListApiV1DouyinXingtuV2GetDemanderMcnListGetErrors = {
@@ -20540,7 +20540,7 @@ export type FetchOneVideoApiV1XiguaAppV2FetchOneVideoGetData = {
          */
         item_id: string;
     };
-    url: '/api/v1/xigua/app/v2/fetch_one_video';
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_one_video';
 };
 
 export type FetchOneVideoApiV1XiguaAppV2FetchOneVideoGetErrors = {
@@ -20572,7 +20572,7 @@ export type FetchOneVideoV2ApiV1XiguaAppV2FetchOneVideoV2GetData = {
          */
         item_id: string;
     };
-    url: '/api/v1/xigua/app/v2/fetch_one_video_v2';
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_one_video_v2';
 };
 
 export type FetchOneVideoV2ApiV1XiguaAppV2FetchOneVideoV2GetErrors = {
@@ -20604,7 +20604,7 @@ export type FetchOneVideoPlayUrlApiV1XiguaAppV2FetchOneVideoPlayUrlGetData = {
          */
         item_id: string;
     };
-    url: '/api/v1/xigua/app/v2/fetch_one_video_play_url';
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_one_video_play_url';
 };
 
 export type FetchOneVideoPlayUrlApiV1XiguaAppV2FetchOneVideoPlayUrlGetErrors = {
@@ -20648,7 +20648,7 @@ export type FetchVideoCommentListApiV1XiguaAppV2FetchVideoCommentListGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/xigua/app/v2/fetch_video_comment_list';
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_video_comment_list';
 };
 
 export type FetchVideoCommentListApiV1XiguaAppV2FetchVideoCommentListGetErrors = {
@@ -20704,7 +20704,7 @@ export type SearchVideoApiV1XiguaAppV2SearchVideoGetData = {
          */
         max_duration?: number;
     };
-    url: '/api/v1/xigua/app/v2/search_video';
+    url: '/video-hub/api/v1/xigua/app/v2/search_video';
 };
 
 export type SearchVideoApiV1XiguaAppV2SearchVideoGetErrors = {
@@ -20736,7 +20736,7 @@ export type FetchUserInfoApiV1XiguaAppV2FetchUserInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/xigua/app/v2/fetch_user_info';
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1XiguaAppV2FetchUserInfoGetErrors = {
@@ -20774,7 +20774,7 @@ export type FetchUserPostListApiV1XiguaAppV2FetchUserPostListGetData = {
          */
         max_behot_time?: string;
     };
-    url: '/api/v1/xigua/app/v2/fetch_user_post_list';
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_user_post_list';
 };
 
 export type FetchUserPostListApiV1XiguaAppV2FetchUserPostListGetErrors = {
@@ -20806,7 +20806,7 @@ export type GetArticleInfoApiV1ToutiaoWebGetArticleInfoGetData = {
          */
         aweme_id: string;
     };
-    url: '/api/v1/toutiao/web/get_article_info';
+    url: '/video-hub/api/v1/toutiao/web/get_article_info';
 };
 
 export type GetArticleInfoApiV1ToutiaoWebGetArticleInfoGetErrors = {
@@ -20838,7 +20838,7 @@ export type GetVideoInfoApiV1ToutiaoWebGetVideoInfoGetData = {
          */
         aweme_id: string;
     };
-    url: '/api/v1/toutiao/web/get_video_info';
+    url: '/video-hub/api/v1/toutiao/web/get_video_info';
 };
 
 export type GetVideoInfoApiV1ToutiaoWebGetVideoInfoGetErrors = {
@@ -20870,7 +20870,7 @@ export type GetArticleInfoApiV1ToutiaoAppGetArticleInfoGetData = {
          */
         group_id: string;
     };
-    url: '/api/v1/toutiao/app/get_article_info';
+    url: '/video-hub/api/v1/toutiao/app/get_article_info';
 };
 
 export type GetArticleInfoApiV1ToutiaoAppGetArticleInfoGetErrors = {
@@ -20902,7 +20902,7 @@ export type GetVideoInfoApiV1ToutiaoAppGetVideoInfoGetData = {
          */
         group_id: string;
     };
-    url: '/api/v1/toutiao/app/get_video_info';
+    url: '/video-hub/api/v1/toutiao/app/get_video_info';
 };
 
 export type GetVideoInfoApiV1ToutiaoAppGetVideoInfoGetErrors = {
@@ -20940,7 +20940,7 @@ export type GetCommentsApiV1ToutiaoAppGetCommentsGetData = {
          */
         offset: string;
     };
-    url: '/api/v1/toutiao/app/get_comments';
+    url: '/video-hub/api/v1/toutiao/app/get_comments';
 };
 
 export type GetCommentsApiV1ToutiaoAppGetCommentsGetErrors = {
@@ -20972,7 +20972,7 @@ export type GetUserInfoApiV1ToutiaoAppGetUserInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/toutiao/app/get_user_info';
+    url: '/video-hub/api/v1/toutiao/app/get_user_info';
 };
 
 export type GetUserInfoApiV1ToutiaoAppGetUserInfoGetErrors = {
@@ -21004,7 +21004,7 @@ export type GetUserIdApiV1ToutiaoAppGetUserIdGetData = {
          */
         user_profile_url: string;
     };
-    url: '/api/v1/toutiao/app/get_user_id';
+    url: '/video-hub/api/v1/toutiao/app/get_user_id';
 };
 
 export type GetUserIdApiV1ToutiaoAppGetUserIdGetErrors = {
@@ -21042,7 +21042,7 @@ export type GetImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_image_note_detail';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_image_note_detail';
 };
 
 export type GetImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGetErrors = {
@@ -21080,7 +21080,7 @@ export type GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_video_note_detail';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_video_note_detail';
 };
 
 export type GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetErrors = {
@@ -21118,7 +21118,7 @@ export type GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_mixed_note_detail';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_mixed_note_detail';
 };
 
 export type GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetErrors = {
@@ -21174,7 +21174,7 @@ export type GetNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGetData = {
          */
         sort_strategy?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_note_comments';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_note_comments';
 };
 
 export type GetNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGetErrors = {
@@ -21230,7 +21230,7 @@ export type GetNoteSubCommentsApiV1XiaohongshuAppV2GetNoteSubCommentsGetData = {
          */
         index?: number;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_note_sub_comments';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_note_sub_comments';
 };
 
 export type GetNoteSubCommentsApiV1XiaohongshuAppV2GetNoteSubCommentsGetErrors = {
@@ -21268,7 +21268,7 @@ export type GetUserInfoApiV1XiaohongshuAppV2GetUserInfoGetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_user_info';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_user_info';
 };
 
 export type GetUserInfoApiV1XiaohongshuAppV2GetUserInfoGetErrors = {
@@ -21312,7 +21312,7 @@ export type GetUserPostedNotesApiV1XiaohongshuAppV2GetUserPostedNotesGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_user_posted_notes';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_user_posted_notes';
 };
 
 export type GetUserPostedNotesApiV1XiaohongshuAppV2GetUserPostedNotesGetErrors = {
@@ -21356,7 +21356,7 @@ export type GetUserFavedNotesApiV1XiaohongshuAppV2GetUserFavedNotesGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_user_faved_notes';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_user_faved_notes';
 };
 
 export type GetUserFavedNotesApiV1XiaohongshuAppV2GetUserFavedNotesGetErrors = {
@@ -21436,7 +21436,7 @@ export type SearchNotesApiV1XiaohongshuAppV2SearchNotesGetData = {
          */
         ai_mode?: number;
     };
-    url: '/api/v1/xiaohongshu/app_v2/search_notes';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_notes';
 };
 
 export type SearchNotesApiV1XiaohongshuAppV2SearchNotesGetErrors = {
@@ -21486,7 +21486,7 @@ export type SearchUsersApiV1XiaohongshuAppV2SearchUsersGetData = {
          */
         source?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/search_users';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_users';
 };
 
 export type SearchUsersApiV1XiaohongshuAppV2SearchUsersGetErrors = {
@@ -21548,7 +21548,7 @@ export type SearchImagesApiV1XiaohongshuAppV2SearchImagesGetData = {
          */
         source?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/search_images';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_images';
 };
 
 export type SearchImagesApiV1XiaohongshuAppV2SearchImagesGetErrors = {
@@ -21598,7 +21598,7 @@ export type SearchProductsApiV1XiaohongshuAppV2SearchProductsGetData = {
          */
         source?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/search_products';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_products';
 };
 
 export type SearchProductsApiV1XiaohongshuAppV2SearchProductsGetErrors = {
@@ -21654,7 +21654,7 @@ export type SearchGroupsApiV1XiaohongshuAppV2SearchGroupsGetData = {
          */
         is_recommend?: number;
     };
-    url: '/api/v1/xiaohongshu/app_v2/search_groups';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_groups';
 };
 
 export type SearchGroupsApiV1XiaohongshuAppV2SearchGroupsGetErrors = {
@@ -21698,7 +21698,7 @@ export type GetProductDetailApiV1XiaohongshuAppV2GetProductDetailGetData = {
          */
         pre_page?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_product_detail';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_product_detail';
 };
 
 export type GetProductDetailApiV1XiaohongshuAppV2GetProductDetailGetErrors = {
@@ -21736,7 +21736,7 @@ export type GetProductReviewOverviewApiV1XiaohongshuAppV2GetProductReviewOvervie
          */
         tab?: number;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_product_review_overview';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_product_review_overview';
 };
 
 export type GetProductReviewOverviewApiV1XiaohongshuAppV2GetProductReviewOverviewGetErrors = {
@@ -21792,7 +21792,7 @@ export type GetProductReviewsApiV1XiaohongshuAppV2GetProductReviewsGetData = {
          */
         from_page?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_product_reviews';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_product_reviews';
 };
 
 export type GetProductReviewsApiV1XiaohongshuAppV2GetProductReviewsGetErrors = {
@@ -21836,7 +21836,7 @@ export type GetProductRecommendationsApiV1XiaohongshuAppV2GetProductRecommendati
          */
         region?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_product_recommendations';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_product_recommendations';
 };
 
 export type GetProductRecommendationsApiV1XiaohongshuAppV2GetProductRecommendationsGetErrors = {
@@ -21880,7 +21880,7 @@ export type GetTopicInfoApiV1XiaohongshuAppV2GetTopicInfoGetData = {
          */
         note_id?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_topic_info';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_topic_info';
 };
 
 export type GetTopicInfoApiV1XiaohongshuAppV2GetTopicInfoGetErrors = {
@@ -21954,7 +21954,7 @@ export type GetTopicFeedApiV1XiaohongshuAppV2GetTopicFeedGetData = {
          */
         source?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_topic_feed';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_topic_feed';
 };
 
 export type GetTopicFeedApiV1XiaohongshuAppV2GetTopicFeedGetErrors = {
@@ -21998,7 +21998,7 @@ export type GetCreatorInspirationFeedApiV1XiaohongshuAppV2GetCreatorInspirationF
          */
         source?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_creator_inspiration_feed';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_creator_inspiration_feed';
 };
 
 export type GetCreatorInspirationFeedApiV1XiaohongshuAppV2GetCreatorInspirationFeedGetErrors = {
@@ -22030,7 +22030,7 @@ export type GetCreatorHotInspirationFeedApiV1XiaohongshuAppV2GetCreatorHotInspir
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/app_v2/get_creator_hot_inspiration_feed';
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_creator_hot_inspiration_feed';
 };
 
 export type GetCreatorHotInspirationFeedApiV1XiaohongshuAppV2GetCreatorHotInspirationFeedGetErrors = {
@@ -22068,7 +22068,7 @@ export type GetNoteInfoV1ApiV1XiaohongshuAppGetNoteInfoGetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/app/get_note_info';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_note_info';
 };
 
 export type GetNoteInfoV1ApiV1XiaohongshuAppGetNoteInfoGetErrors = {
@@ -22106,7 +22106,7 @@ export type GetNoteInfoV2ApiV1XiaohongshuAppGetNoteInfoV2GetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/app/get_note_info_v2';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_note_info_v2';
 };
 
 export type GetNoteInfoV2ApiV1XiaohongshuAppGetNoteInfoV2GetErrors = {
@@ -22150,7 +22150,7 @@ export type GetNoteCommentsApiV1XiaohongshuAppGetNoteCommentsGetData = {
          */
         sort_strategy?: number;
     };
-    url: '/api/v1/xiaohongshu/app/get_note_comments';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_note_comments';
 };
 
 export type GetNoteCommentsApiV1XiaohongshuAppGetNoteCommentsGetErrors = {
@@ -22194,7 +22194,7 @@ export type GetSubCommentsApiV1XiaohongshuAppGetSubCommentsGetData = {
          */
         start?: string;
     };
-    url: '/api/v1/xiaohongshu/app/get_sub_comments';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_sub_comments';
 };
 
 export type GetSubCommentsApiV1XiaohongshuAppGetSubCommentsGetErrors = {
@@ -22262,7 +22262,7 @@ export type GetNotesByTopicApiV1XiaohongshuAppGetNotesByTopicGetData = {
          */
         cursor_score?: string;
     };
-    url: '/api/v1/xiaohongshu/app/get_notes_by_topic';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_notes_by_topic';
 };
 
 export type GetNotesByTopicApiV1XiaohongshuAppGetNotesByTopicGetErrors = {
@@ -22330,7 +22330,7 @@ export type SearchNotesApiV1XiaohongshuAppSearchNotesGetData = {
          */
         filter_note_time?: string;
     };
-    url: '/api/v1/xiaohongshu/app/search_notes';
+    url: '/video-hub/api/v1/xiaohongshu/app/search_notes';
 };
 
 export type SearchNotesApiV1XiaohongshuAppSearchNotesGetErrors = {
@@ -22362,7 +22362,7 @@ export type GetUserInfoApiV1XiaohongshuAppGetUserInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/xiaohongshu/app/get_user_info';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_user_info';
 };
 
 export type GetUserInfoApiV1XiaohongshuAppGetUserInfoGetErrors = {
@@ -22400,7 +22400,7 @@ export type GetUserNotesApiV1XiaohongshuAppGetUserNotesGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/app/get_user_notes';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_user_notes';
 };
 
 export type GetUserNotesApiV1XiaohongshuAppGetUserNotesGetErrors = {
@@ -22432,7 +22432,7 @@ export type ExtractShareInfoApiV1XiaohongshuAppExtractShareInfoGetData = {
          */
         share_link: string;
     };
-    url: '/api/v1/xiaohongshu/app/extract_share_info';
+    url: '/video-hub/api/v1/xiaohongshu/app/extract_share_info';
 };
 
 export type ExtractShareInfoApiV1XiaohongshuAppExtractShareInfoGetErrors = {
@@ -22464,7 +22464,7 @@ export type GetUserIdAndXsecTokenApiV1XiaohongshuAppGetUserIdAndXsecTokenGetData
          */
         share_link: string;
     };
-    url: '/api/v1/xiaohongshu/app/get_user_id_and_xsec_token';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_user_id_and_xsec_token';
 };
 
 export type GetUserIdAndXsecTokenApiV1XiaohongshuAppGetUserIdAndXsecTokenGetErrors = {
@@ -22496,7 +22496,7 @@ export type GetProductDetailApiV1XiaohongshuAppGetProductDetailGetData = {
          */
         sku_id: string;
     };
-    url: '/api/v1/xiaohongshu/app/get_product_detail';
+    url: '/video-hub/api/v1/xiaohongshu/app/get_product_detail';
 };
 
 export type GetProductDetailApiV1XiaohongshuAppGetProductDetailGetErrors = {
@@ -22582,7 +22582,7 @@ export type SearchProductsApiV1XiaohongshuAppSearchProductsGetData = {
          */
         super_promotion?: string;
     };
-    url: '/api/v1/xiaohongshu/app/search_products';
+    url: '/video-hub/api/v1/xiaohongshu/app/search_products';
 };
 
 export type SearchProductsApiV1XiaohongshuAppSearchProductsGetErrors = {
@@ -22614,7 +22614,7 @@ export type FetchFeedNotesApiV1XiaohongshuWebV2FetchFeedNotesGetData = {
          */
         note_id: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes';
 };
 
 export type FetchFeedNotesApiV1XiaohongshuWebV2FetchFeedNotesGetErrors = {
@@ -22646,7 +22646,7 @@ export type FetchFeedNotesV2ApiV1XiaohongshuWebV2FetchFeedNotesV2GetData = {
          */
         note_id: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v2';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v2';
 };
 
 export type FetchFeedNotesV2ApiV1XiaohongshuWebV2FetchFeedNotesV2GetErrors = {
@@ -22678,7 +22678,7 @@ export type FetchFeedNotesV3ApiV1XiaohongshuWebV2FetchFeedNotesV3GetData = {
          */
         short_url: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v3';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v3';
 };
 
 export type FetchFeedNotesV3ApiV1XiaohongshuWebV2FetchFeedNotesV3GetErrors = {
@@ -22710,7 +22710,7 @@ export type FetchFeedNotesV4ApiV1XiaohongshuWebV2FetchFeedNotesV4GetData = {
          */
         note_id: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v4';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v4';
 };
 
 export type FetchFeedNotesV4ApiV1XiaohongshuWebV2FetchFeedNotesV4GetErrors = {
@@ -22742,7 +22742,7 @@ export type FetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5GetData = {
          */
         note_id: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v5';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v5';
 };
 
 export type FetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5GetErrors = {
@@ -22774,7 +22774,7 @@ export type FetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGetData = {
          */
         note_id: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_note_image';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_note_image';
 };
 
 export type FetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGetErrors = {
@@ -22824,7 +22824,7 @@ export type FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchNotesGetData = {
          */
         note_type?: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_search_notes';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_search_notes';
 };
 
 export type FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchNotesGetErrors = {
@@ -22862,7 +22862,7 @@ export type FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_search_users';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_search_users';
 };
 
 export type FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGetErrors = {
@@ -22900,7 +22900,7 @@ export type FetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_home_notes';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_home_notes';
 };
 
 export type FetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGetErrors = {
@@ -22938,7 +22938,7 @@ export type FetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_home_notes_app';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_home_notes_app';
 };
 
 export type FetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGetErrors = {
@@ -22976,7 +22976,7 @@ export type FetchNoteCommentsApiV1XiaohongshuWebV2FetchNoteCommentsGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_note_comments';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_note_comments';
 };
 
 export type FetchNoteCommentsApiV1XiaohongshuWebV2FetchNoteCommentsGetErrors = {
@@ -23020,7 +23020,7 @@ export type FetchSubCommentsApiV1XiaohongshuWebV2FetchSubCommentsGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_sub_comments';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_sub_comments';
 };
 
 export type FetchSubCommentsApiV1XiaohongshuWebV2FetchSubCommentsGetErrors = {
@@ -23052,7 +23052,7 @@ export type FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_user_info';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoGetErrors = {
@@ -23084,7 +23084,7 @@ export type FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_user_info_app';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_user_info_app';
 };
 
 export type FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGetErrors = {
@@ -23122,7 +23122,7 @@ export type FetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_follower_list';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_follower_list';
 };
 
 export type FetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGetErrors = {
@@ -23160,7 +23160,7 @@ export type FetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_following_list';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_following_list';
 };
 
 export type FetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGetErrors = {
@@ -23198,7 +23198,7 @@ export type FetchProductListApiV1XiaohongshuWebV2FetchProductListGetData = {
          */
         page?: string;
     };
-    url: '/api/v1/xiaohongshu/web_v2/fetch_product_list';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_product_list';
 };
 
 export type FetchProductListApiV1XiaohongshuWebV2FetchProductListGetErrors = {
@@ -23223,7 +23223,7 @@ export type FetchHotListApiV1XiaohongshuWebV2FetchHotListGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/xiaohongshu/web_v2/fetch_hot_list';
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_hot_list';
 };
 
 export type FetchHotListApiV1XiaohongshuWebV2FetchHotListGetResponses = {
@@ -23239,7 +23239,7 @@ export type GetHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPostData = {
     body: GetHomeFeedRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/xiaohongshu/web/get_home_recommend';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_home_recommend';
 };
 
 export type GetHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPostErrors = {
@@ -23277,7 +23277,7 @@ export type GetNoteInfoV2ApiV1XiaohongshuWebGetNoteInfoV2GetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_note_info_v2';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_info_v2';
 };
 
 export type GetNoteInfoV2ApiV1XiaohongshuWebGetNoteInfoV2GetErrors = {
@@ -23315,7 +23315,7 @@ export type GetNoteInfoV4ApiV1XiaohongshuWebGetNoteInfoV4GetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_note_info_v4';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_info_v4';
 };
 
 export type GetNoteInfoV4ApiV1XiaohongshuWebGetNoteInfoV4GetErrors = {
@@ -23340,7 +23340,7 @@ export type GetNoteInfoV5ApiV1XiaohongshuWebGetNoteInfoV5PostData = {
     body: GetNoteInfoV5Request;
     path?: never;
     query?: never;
-    url: '/api/v1/xiaohongshu/web/get_note_info_v5';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_info_v5';
 };
 
 export type GetNoteInfoV5ApiV1XiaohongshuWebGetNoteInfoV5PostErrors = {
@@ -23378,7 +23378,7 @@ export type GetNoteInfoV7ApiV1XiaohongshuWebGetNoteInfoV7GetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_note_info_v7';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_info_v7';
 };
 
 export type GetNoteInfoV7ApiV1XiaohongshuWebGetNoteInfoV7GetErrors = {
@@ -23416,7 +23416,7 @@ export type GetNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGetData = {
          */
         lastCursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_note_comments';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_comments';
 };
 
 export type GetNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGetErrors = {
@@ -23460,7 +23460,7 @@ export type GetNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGetData
          */
         lastCursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_note_comment_replies';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_comment_replies';
 };
 
 export type GetNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGetErrors = {
@@ -23492,7 +23492,7 @@ export type GetUserInfoApiV1XiaohongshuWebGetUserInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_user_info';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_user_info';
 };
 
 export type GetUserInfoApiV1XiaohongshuWebGetUserInfoGetErrors = {
@@ -23530,7 +23530,7 @@ export type GetUserInfoV2ApiV1XiaohongshuWebGetUserInfoV2GetData = {
          */
         share_text?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_user_info_v2';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_user_info_v2';
 };
 
 export type GetUserInfoV2ApiV1XiaohongshuWebGetUserInfoV2GetErrors = {
@@ -23586,7 +23586,7 @@ export type SearchNotesApiV1XiaohongshuWebSearchNotesGetData = {
          */
         noteTime?: string;
     };
-    url: '/api/v1/xiaohongshu/web/search_notes';
+    url: '/video-hub/api/v1/xiaohongshu/web/search_notes';
 };
 
 export type SearchNotesApiV1XiaohongshuWebSearchNotesGetErrors = {
@@ -23642,7 +23642,7 @@ export type SearchNotesV3ApiV1XiaohongshuWebSearchNotesV3GetData = {
          */
         noteTime?: string;
     };
-    url: '/api/v1/xiaohongshu/web/search_notes_v3';
+    url: '/video-hub/api/v1/xiaohongshu/web/search_notes_v3';
 };
 
 export type SearchNotesV3ApiV1XiaohongshuWebSearchNotesV3GetErrors = {
@@ -23680,7 +23680,7 @@ export type SearchUsersApiV1XiaohongshuWebSearchUsersGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/xiaohongshu/web/search_users';
+    url: '/video-hub/api/v1/xiaohongshu/web/search_users';
 };
 
 export type SearchUsersApiV1XiaohongshuWebSearchUsersGetErrors = {
@@ -23718,7 +23718,7 @@ export type GetUserNotesApiV1XiaohongshuWebGetUserNotesV2GetData = {
          */
         lastCursor?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_user_notes_v2';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_user_notes_v2';
 };
 
 export type GetUserNotesApiV1XiaohongshuWebGetUserNotesV2GetErrors = {
@@ -23750,7 +23750,7 @@ export type GetVisitorCookieApiV1XiaohongshuWebGetVisitorCookieGetData = {
          */
         proxy?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_visitor_cookie';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_visitor_cookie';
 };
 
 export type GetVisitorCookieApiV1XiaohongshuWebGetVisitorCookieGetErrors = {
@@ -23775,7 +23775,7 @@ export type SignApiV1XiaohongshuWebSignPostData = {
     body: XhsWebSignRequestModel;
     path?: never;
     query?: never;
-    url: '/api/v1/xiaohongshu/web/sign';
+    url: '/video-hub/api/v1/xiaohongshu/web/sign';
 };
 
 export type SignApiV1XiaohongshuWebSignPostErrors = {
@@ -23807,7 +23807,7 @@ export type GetNoteIdAndXsecTokenApiV1XiaohongshuWebGetNoteIdAndXsecTokenGetData
          */
         share_text: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_note_id_and_xsec_token';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_id_and_xsec_token';
 };
 
 export type GetNoteIdAndXsecTokenApiV1XiaohongshuWebGetNoteIdAndXsecTokenGetErrors = {
@@ -23851,7 +23851,7 @@ export type GetProductInfoApiV1XiaohongshuWebGetProductInfoGetData = {
          */
         xsec_token?: string;
     };
-    url: '/api/v1/xiaohongshu/web/get_product_info';
+    url: '/video-hub/api/v1/xiaohongshu/web/get_product_info';
 };
 
 export type GetProductInfoApiV1XiaohongshuWebGetProductInfoGetErrors = {
@@ -23883,7 +23883,7 @@ export type HandlerUserProfileApiV1Lemon8AppFetchUserProfileGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/lemon8/app/fetch_user_profile';
+    url: '/video-hub/api/v1/lemon8/app/fetch_user_profile';
 };
 
 export type HandlerUserProfileApiV1Lemon8AppFetchUserProfileGetErrors = {
@@ -23915,7 +23915,7 @@ export type FetchPostDetailApiV1Lemon8AppFetchPostDetailGetData = {
          */
         item_id: string;
     };
-    url: '/api/v1/lemon8/app/fetch_post_detail';
+    url: '/video-hub/api/v1/lemon8/app/fetch_post_detail';
 };
 
 export type FetchPostDetailApiV1Lemon8AppFetchPostDetailGetErrors = {
@@ -23953,7 +23953,7 @@ export type FetchUserFollowerListApiV1Lemon8AppFetchUserFollowerListGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/lemon8/app/fetch_user_follower_list';
+    url: '/video-hub/api/v1/lemon8/app/fetch_user_follower_list';
 };
 
 export type FetchUserFollowerListApiV1Lemon8AppFetchUserFollowerListGetErrors = {
@@ -23991,7 +23991,7 @@ export type FetchUserFollowingListApiV1Lemon8AppFetchUserFollowingListGetData = 
          */
         cursor?: string;
     };
-    url: '/api/v1/lemon8/app/fetch_user_following_list';
+    url: '/video-hub/api/v1/lemon8/app/fetch_user_following_list';
 };
 
 export type FetchUserFollowingListApiV1Lemon8AppFetchUserFollowingListGetErrors = {
@@ -24041,7 +24041,7 @@ export type FetchPostCommentListApiV1Lemon8AppFetchPostCommentListGetData = {
          */
         offset?: string;
     };
-    url: '/api/v1/lemon8/app/fetch_post_comment_list';
+    url: '/video-hub/api/v1/lemon8/app/fetch_post_comment_list';
 };
 
 export type FetchPostCommentListApiV1Lemon8AppFetchPostCommentListGetErrors = {
@@ -24066,7 +24066,7 @@ export type FetchDiscoverBannersApiV1Lemon8AppFetchDiscoverBannersGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/lemon8/app/fetch_discover_banners';
+    url: '/video-hub/api/v1/lemon8/app/fetch_discover_banners';
 };
 
 export type FetchDiscoverBannersApiV1Lemon8AppFetchDiscoverBannersGetResponses = {
@@ -24082,7 +24082,7 @@ export type FetchDiscoverTabApiV1Lemon8AppFetchDiscoverTabGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/lemon8/app/fetch_discover_tab';
+    url: '/video-hub/api/v1/lemon8/app/fetch_discover_tab';
 };
 
 export type FetchDiscoverTabApiV1Lemon8AppFetchDiscoverTabGetResponses = {
@@ -24098,7 +24098,7 @@ export type FetchDiscoverTabInformationTabsApiV1Lemon8AppFetchDiscoverTabInforma
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/lemon8/app/fetch_discover_tab_information_tabs';
+    url: '/video-hub/api/v1/lemon8/app/fetch_discover_tab_information_tabs';
 };
 
 export type FetchDiscoverTabInformationTabsApiV1Lemon8AppFetchDiscoverTabInformationTabsGetResponses = {
@@ -24114,7 +24114,7 @@ export type FetchHotSearchKeywordsApiV1Lemon8AppFetchHotSearchKeywordsGetData = 
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/lemon8/app/fetch_hot_search_keywords';
+    url: '/video-hub/api/v1/lemon8/app/fetch_hot_search_keywords';
 };
 
 export type FetchHotSearchKeywordsApiV1Lemon8AppFetchHotSearchKeywordsGetResponses = {
@@ -24137,7 +24137,7 @@ export type FetchTopicInfoApiV1Lemon8AppFetchTopicInfoGetData = {
          */
         forum_id: string;
     };
-    url: '/api/v1/lemon8/app/fetch_topic_info';
+    url: '/video-hub/api/v1/lemon8/app/fetch_topic_info';
 };
 
 export type FetchTopicInfoApiV1Lemon8AppFetchTopicInfoGetErrors = {
@@ -24193,7 +24193,7 @@ export type FetchTopicPostListApiV1Lemon8AppFetchTopicPostListGetData = {
          */
         sort_type?: string;
     };
-    url: '/api/v1/lemon8/app/fetch_topic_post_list';
+    url: '/video-hub/api/v1/lemon8/app/fetch_topic_post_list';
 };
 
 export type FetchTopicPostListApiV1Lemon8AppFetchTopicPostListGetErrors = {
@@ -24249,7 +24249,7 @@ export type FetchSearchApiV1Lemon8AppFetchSearchGetData = {
          */
         search_tab?: string;
     };
-    url: '/api/v1/lemon8/app/fetch_search';
+    url: '/video-hub/api/v1/lemon8/app/fetch_search';
 };
 
 export type FetchSearchApiV1Lemon8AppFetchSearchGetErrors = {
@@ -24281,7 +24281,7 @@ export type GetItemIdApiV1Lemon8AppGetItemIdGetData = {
          */
         share_text: string;
     };
-    url: '/api/v1/lemon8/app/get_item_id';
+    url: '/video-hub/api/v1/lemon8/app/get_item_id';
 };
 
 export type GetItemIdApiV1Lemon8AppGetItemIdGetErrors = {
@@ -24313,7 +24313,7 @@ export type GetUserIdApiV1Lemon8AppGetUserIdGetData = {
          */
         share_text: string;
     };
-    url: '/api/v1/lemon8/app/get_user_id';
+    url: '/video-hub/api/v1/lemon8/app/get_user_id';
 };
 
 export type GetUserIdApiV1Lemon8AppGetUserIdGetErrors = {
@@ -24343,7 +24343,7 @@ export type GetItemIdsApiV1Lemon8AppGetItemIdsPostData = {
     body: Array<unknown>;
     path?: never;
     query?: never;
-    url: '/api/v1/lemon8/app/get_item_ids';
+    url: '/video-hub/api/v1/lemon8/app/get_item_ids';
 };
 
 export type GetItemIdsApiV1Lemon8AppGetItemIdsPostErrors = {
@@ -24373,7 +24373,7 @@ export type GetUserIdsApiV1Lemon8AppGetUserIdsPostData = {
     body: Array<unknown>;
     path?: never;
     query?: never;
-    url: '/api/v1/lemon8/app/get_user_ids';
+    url: '/video-hub/api/v1/lemon8/app/get_user_ids';
 };
 
 export type GetUserIdsApiV1Lemon8AppGetUserIdsPostErrors = {
@@ -24403,7 +24403,7 @@ export type FetchOneVideoApiV1KuaishouWebFetchOneVideoGetData = {
          */
         share_text: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_one_video';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video';
 };
 
 export type FetchOneVideoApiV1KuaishouWebFetchOneVideoGetErrors = {
@@ -24433,7 +24433,7 @@ export type FetchOneVideoV2ApiV1KuaishouWebFetchOneVideoV2GetData = {
          */
         photo_id: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_one_video_v2';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video_v2';
 };
 
 export type FetchOneVideoV2ApiV1KuaishouWebFetchOneVideoV2GetErrors = {
@@ -24463,7 +24463,7 @@ export type FetchOneVideoByUrlApiV1KuaishouWebFetchOneVideoByUrlGetData = {
          */
         url: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_one_video_by_url';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video_by_url';
 };
 
 export type FetchOneVideoByUrlApiV1KuaishouWebFetchOneVideoByUrlGetErrors = {
@@ -24497,7 +24497,7 @@ export type FetchOneVideoCommentApiV1KuaishouWebFetchOneVideoCommentGetData = {
          */
         pcursor?: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_one_video_comment';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video_comment';
 };
 
 export type FetchOneVideoCommentApiV1KuaishouWebFetchOneVideoCommentGetErrors = {
@@ -24535,7 +24535,7 @@ export type FetchOneVideoSubCommentApiV1KuaishouWebFetchOneVideoSubCommentGetDat
          */
         root_comment_id: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_one_video_sub_comment';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video_sub_comment';
 };
 
 export type FetchOneVideoSubCommentApiV1KuaishouWebFetchOneVideoSubCommentGetErrors = {
@@ -24565,7 +24565,7 @@ export type GenerateShareShortUrlApiV1KuaishouWebGenerateShareShortUrlGetData = 
          */
         photo_id: string;
     };
-    url: '/api/v1/kuaishou/web/generate_share_short_url';
+    url: '/video-hub/api/v1/kuaishou/web/generate_share_short_url';
 };
 
 export type GenerateShareShortUrlApiV1KuaishouWebGenerateShareShortUrlGetErrors = {
@@ -24595,7 +24595,7 @@ export type FetchUserInfoApiV1KuaishouWebFetchUserInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_user_info';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1KuaishouWebFetchUserInfoGetErrors = {
@@ -24629,7 +24629,7 @@ export type FetchUserPostApiV1KuaishouWebFetchUserPostGetData = {
          */
         pcursor?: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_user_post';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_user_post';
 };
 
 export type FetchUserPostApiV1KuaishouWebFetchUserPostGetErrors = {
@@ -24663,7 +24663,7 @@ export type FetchUserLiveReplayApiV1KuaishouWebFetchUserLiveReplayGetData = {
          */
         pcursor?: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_user_live_replay';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_user_live_replay';
 };
 
 export type FetchUserLiveReplayApiV1KuaishouWebFetchUserLiveReplayGetErrors = {
@@ -24697,7 +24697,7 @@ export type FetchUserCollectApiV1KuaishouWebFetchUserCollectGetData = {
          */
         pcursor?: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_user_collect';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_user_collect';
 };
 
 export type FetchUserCollectApiV1KuaishouWebFetchUserCollectGetErrors = {
@@ -24722,7 +24722,7 @@ export type FetchKuaishouHotListV1ApiV1KuaishouWebFetchKuaishouHotListV1GetData 
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/kuaishou/web/fetch_kuaishou_hot_list_v1';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_kuaishou_hot_list_v1';
 };
 
 export type FetchKuaishouHotListV1ApiV1KuaishouWebFetchKuaishouHotListV1GetResponses = {
@@ -24743,7 +24743,7 @@ export type FetchKuaishouHotListV2ApiV1KuaishouWebFetchKuaishouHotListV2GetData 
          */
         board_type?: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_kuaishou_hot_list_v2';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_kuaishou_hot_list_v2';
 };
 
 export type FetchKuaishouHotListV2ApiV1KuaishouWebFetchKuaishouHotListV2GetErrors = {
@@ -24773,7 +24773,7 @@ export type FetchGetUserIdApiV1KuaishouWebFetchGetUserIdGetData = {
          */
         share_link: string;
     };
-    url: '/api/v1/kuaishou/web/fetch_get_user_id';
+    url: '/video-hub/api/v1/kuaishou/web/fetch_get_user_id';
 };
 
 export type FetchGetUserIdApiV1KuaishouWebFetchGetUserIdGetErrors = {
@@ -24803,7 +24803,7 @@ export type FetchOneVideoV1ApiV1KuaishouAppFetchOneVideoGetData = {
          */
         photo_id: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_one_video';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_one_video';
 };
 
 export type FetchOneVideoV1ApiV1KuaishouAppFetchOneVideoGetErrors = {
@@ -24835,7 +24835,7 @@ export type FetchVideosBatchApiV1KuaishouAppFetchVideosBatchGetData = {
          */
         photo_ids: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_videos_batch';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_videos_batch';
 };
 
 export type FetchVideosBatchApiV1KuaishouAppFetchVideosBatchGetErrors = {
@@ -24865,7 +24865,7 @@ export type FetchOneVideoByShareTextApiV1KuaishouAppFetchOneVideoByUrlGetData = 
          */
         share_text: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_one_video_by_url';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_one_video_by_url';
 };
 
 export type FetchOneVideoByShareTextApiV1KuaishouAppFetchOneVideoByUrlGetErrors = {
@@ -24899,7 +24899,7 @@ export type FetchVideoCommentApiV1KuaishouAppFetchOneVideoCommentGetData = {
          */
         pcursor?: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_one_video_comment';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_one_video_comment';
 };
 
 export type FetchVideoCommentApiV1KuaishouAppFetchOneVideoCommentGetErrors = {
@@ -24929,7 +24929,7 @@ export type FetchOneUserV2ApiV1KuaishouAppFetchOneUserV2GetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_one_user_v2';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_one_user_v2';
 };
 
 export type FetchOneUserV2ApiV1KuaishouAppFetchOneUserV2GetErrors = {
@@ -24959,7 +24959,7 @@ export type FetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_user_live_info';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_user_live_info';
 };
 
 export type FetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGetErrors = {
@@ -24993,7 +24993,7 @@ export type FetchUserHotPostApiV1KuaishouAppFetchUserHotPostGetData = {
          */
         pcursor?: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_user_hot_post';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_user_hot_post';
 };
 
 export type FetchUserHotPostApiV1KuaishouAppFetchUserHotPostGetErrors = {
@@ -25027,7 +25027,7 @@ export type FetchUserPostV2ApiV1KuaishouAppFetchUserPostV2GetData = {
          */
         pcursor?: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_user_post_v2';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_user_post_v2';
 };
 
 export type FetchUserPostV2ApiV1KuaishouAppFetchUserPostV2GetErrors = {
@@ -25085,7 +25085,7 @@ export type SearchComprehensiveApiV1KuaishouAppSearchComprehensiveGetData = {
          */
         search_scope?: string;
     };
-    url: '/api/v1/kuaishou/app/search_comprehensive';
+    url: '/video-hub/api/v1/kuaishou/app/search_comprehensive';
 };
 
 export type SearchComprehensiveApiV1KuaishouAppSearchComprehensiveGetErrors = {
@@ -25119,7 +25119,7 @@ export type SearchVideoV2ApiV1KuaishouAppSearchVideoV2GetData = {
          */
         page?: string;
     };
-    url: '/api/v1/kuaishou/app/search_video_v2';
+    url: '/video-hub/api/v1/kuaishou/app/search_video_v2';
 };
 
 export type SearchVideoV2ApiV1KuaishouAppSearchVideoV2GetErrors = {
@@ -25153,7 +25153,7 @@ export type SearchUserV2ApiV1KuaishouAppSearchUserV2GetData = {
          */
         page?: string;
     };
-    url: '/api/v1/kuaishou/app/search_user_v2';
+    url: '/video-hub/api/v1/kuaishou/app/search_user_v2';
 };
 
 export type SearchUserV2ApiV1KuaishouAppSearchUserV2GetErrors = {
@@ -25178,7 +25178,7 @@ export type FetchHotBoardCategoriesApiV1KuaishouAppFetchHotBoardCategoriesGetDat
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/kuaishou/app/fetch_hot_board_categories';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_hot_board_categories';
 };
 
 export type FetchHotBoardCategoriesApiV1KuaishouAppFetchHotBoardCategoriesGetResponses = {
@@ -25203,7 +25203,7 @@ export type FetchHotBoardDetailApiV1KuaishouAppFetchHotBoardDetailGetData = {
          */
         boardId?: number;
     };
-    url: '/api/v1/kuaishou/app/fetch_hot_board_detail';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_hot_board_detail';
 };
 
 export type FetchHotBoardDetailApiV1KuaishouAppFetchHotBoardDetailGetErrors = {
@@ -25228,7 +25228,7 @@ export type FetchHotSearchPersonApiV1KuaishouAppFetchHotSearchPersonGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/kuaishou/app/fetch_hot_search_person';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_hot_search_person';
 };
 
 export type FetchHotSearchPersonApiV1KuaishouAppFetchHotSearchPersonGetResponses = {
@@ -25253,7 +25253,7 @@ export type FetchLiveTopListApiV1KuaishouAppFetchLiveTopListGetData = {
          */
         subTabName?: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_live_top_list';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_live_top_list';
 };
 
 export type FetchLiveTopListApiV1KuaishouAppFetchLiveTopListGetErrors = {
@@ -25287,7 +25287,7 @@ export type FetchShoppingTopListApiV1KuaishouAppFetchShoppingTopListGetData = {
          */
         subTabName?: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_shopping_top_list';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_shopping_top_list';
 };
 
 export type FetchShoppingTopListApiV1KuaishouAppFetchShoppingTopListGetErrors = {
@@ -25321,7 +25321,7 @@ export type FetchBrandTopListApiV1KuaishouAppFetchBrandTopListGetData = {
          */
         subTabName?: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_brand_top_list';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_brand_top_list';
 };
 
 export type FetchBrandTopListApiV1KuaishouAppFetchBrandTopListGetErrors = {
@@ -25351,7 +25351,7 @@ export type GenerateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkGe
          */
         shareObjectId: string;
     };
-    url: '/api/v1/kuaishou/app/generate_kuaishou_share_link';
+    url: '/video-hub/api/v1/kuaishou/app/generate_kuaishou_share_link';
 };
 
 export type GenerateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkGetErrors = {
@@ -25381,7 +25381,7 @@ export type FetchMagicFaceUsageApiV1KuaishouAppFetchMagicFaceUsageGetData = {
          */
         magic_face_id: string;
     };
-    url: '/api/v1/kuaishou/app/fetch_magic_face_usage';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_magic_face_usage';
 };
 
 export type FetchMagicFaceUsageApiV1KuaishouAppFetchMagicFaceUsageGetErrors = {
@@ -25419,7 +25419,7 @@ export type FetchMagicFaceHotApiV1KuaishouAppFetchMagicFaceHotGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/kuaishou/app/fetch_magic_face_hot';
+    url: '/video-hub/api/v1/kuaishou/app/fetch_magic_face_hot';
 };
 
 export type FetchMagicFaceHotApiV1KuaishouAppFetchMagicFaceHotGetErrors = {
@@ -25463,7 +25463,7 @@ export type FetchColumnArticlesApiV1ZhihuWebFetchColumnArticlesGetData = {
          */
         offset?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_column_articles';
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_articles';
 };
 
 export type FetchColumnArticlesApiV1ZhihuWebFetchColumnArticlesGetErrors = {
@@ -25495,7 +25495,7 @@ export type FetchColumnArticleDetailApiV1ZhihuWebFetchColumnArticleDetailGetData
          */
         article_id: string;
     };
-    url: '/api/v1/zhihu/web/fetch_column_article_detail';
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_article_detail';
 };
 
 export type FetchColumnArticleDetailApiV1ZhihuWebFetchColumnArticleDetailGetErrors = {
@@ -25539,7 +25539,7 @@ export type FetchColumnRecommendApiV1ZhihuWebFetchColumnRecommendGetData = {
          */
         offset?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_column_recommend';
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_recommend';
 };
 
 export type FetchColumnRecommendApiV1ZhihuWebFetchColumnRecommendGetErrors = {
@@ -25571,7 +25571,7 @@ export type FetchColumnRelationshipApiV1ZhihuWebFetchColumnRelationshipGetData =
          */
         article_id: string;
     };
-    url: '/api/v1/zhihu/web/fetch_column_relationship';
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_relationship';
 };
 
 export type FetchColumnRelationshipApiV1ZhihuWebFetchColumnRelationshipGetErrors = {
@@ -25603,7 +25603,7 @@ export type FetchColumnCommentConfigApiV1ZhihuWebFetchColumnCommentConfigGetData
          */
         article_id: string;
     };
-    url: '/api/v1/zhihu/web/fetch_column_comment_config';
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_comment_config';
 };
 
 export type FetchColumnCommentConfigApiV1ZhihuWebFetchColumnCommentConfigGetErrors = {
@@ -25647,7 +25647,7 @@ export type FetchHotRecommendApiV1ZhihuWebFetchHotRecommendGetData = {
          */
         session_token?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_hot_recommend';
+    url: '/video-hub/api/v1/zhihu/web/fetch_hot_recommend';
 };
 
 export type FetchHotRecommendApiV1ZhihuWebFetchHotRecommendGetErrors = {
@@ -25685,7 +25685,7 @@ export type FetchHotListApiV1ZhihuWebFetchHotListGetData = {
          */
         desktop?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_hot_list';
+    url: '/video-hub/api/v1/zhihu/web/fetch_hot_list';
 };
 
 export type FetchHotListApiV1ZhihuWebFetchHotListGetErrors = {
@@ -25723,7 +25723,7 @@ export type FetchVideoListApiV1ZhihuWebFetchVideoListGetData = {
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_video_list';
+    url: '/video-hub/api/v1/zhihu/web/fetch_video_list';
 };
 
 export type FetchVideoListApiV1ZhihuWebFetchVideoListGetErrors = {
@@ -25809,7 +25809,7 @@ export type FetchArticleSearchV3ApiV1ZhihuWebFetchArticleSearchV3GetData = {
          */
         vertical_info?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_article_search_v3';
+    url: '/video-hub/api/v1/zhihu/web/fetch_article_search_v3';
 };
 
 export type FetchArticleSearchV3ApiV1ZhihuWebFetchArticleSearchV3GetErrors = {
@@ -25853,7 +25853,7 @@ export type FetchUserSearchV3ApiV1ZhihuWebFetchUserSearchV3GetData = {
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_user_search_v3';
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_search_v3';
 };
 
 export type FetchUserSearchV3ApiV1ZhihuWebFetchUserSearchV3GetErrors = {
@@ -25897,7 +25897,7 @@ export type FetchTopicSearchV3ApiV1ZhihuWebFetchTopicSearchV3GetData = {
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_topic_search_v3';
+    url: '/video-hub/api/v1/zhihu/web/fetch_topic_search_v3';
 };
 
 export type FetchTopicSearchV3ApiV1ZhihuWebFetchTopicSearchV3GetErrors = {
@@ -25948,7 +25948,7 @@ export type FetchScholarSearchV3ApiV1ZhihuWebFetchScholarSearchV3PostData = {
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_scholar_search_v3';
+    url: '/video-hub/api/v1/zhihu/web/fetch_scholar_search_v3';
 };
 
 export type FetchScholarSearchV3ApiV1ZhihuWebFetchScholarSearchV3PostErrors = {
@@ -25980,7 +25980,7 @@ export type FetchAiSearchApiV1ZhihuWebFetchAiSearchGetData = {
          */
         message_content: string;
     };
-    url: '/api/v1/zhihu/web/fetch_ai_search';
+    url: '/video-hub/api/v1/zhihu/web/fetch_ai_search';
 };
 
 export type FetchAiSearchApiV1ZhihuWebFetchAiSearchGetErrors = {
@@ -26012,7 +26012,7 @@ export type FetchAiSearchResultApiV1ZhihuWebFetchAiSearchResultGetData = {
          */
         message_id: string;
     };
-    url: '/api/v1/zhihu/web/fetch_ai_search_result';
+    url: '/video-hub/api/v1/zhihu/web/fetch_ai_search_result';
 };
 
 export type FetchAiSearchResultApiV1ZhihuWebFetchAiSearchResultGetErrors = {
@@ -26062,7 +26062,7 @@ export type FetchVideoSearchV3ApiV1ZhihuWebFetchVideoSearchV3GetData = {
          */
         search_hash_id?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_video_search_v3';
+    url: '/video-hub/api/v1/zhihu/web/fetch_video_search_v3';
 };
 
 export type FetchVideoSearchV3ApiV1ZhihuWebFetchVideoSearchV3GetErrors = {
@@ -26112,7 +26112,7 @@ export type FetchColumnSearchV3ApiV1ZhihuWebFetchColumnSearchV3GetData = {
          */
         search_hash_id?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_column_search_v3';
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_search_v3';
 };
 
 export type FetchColumnSearchV3ApiV1ZhihuWebFetchColumnSearchV3GetErrors = {
@@ -26162,7 +26162,7 @@ export type FetchSaltSearchV3ApiV1ZhihuWebFetchSaltSearchV3GetData = {
          */
         search_hash_id?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_salt_search_v3';
+    url: '/video-hub/api/v1/zhihu/web/fetch_salt_search_v3';
 };
 
 export type FetchSaltSearchV3ApiV1ZhihuWebFetchSaltSearchV3GetErrors = {
@@ -26212,7 +26212,7 @@ export type FetchEbookSearchV3ApiV1ZhihuWebFetchEbookSearchV3GetData = {
          */
         search_hash_id?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_ebook_search_v3';
+    url: '/video-hub/api/v1/zhihu/web/fetch_ebook_search_v3';
 };
 
 export type FetchEbookSearchV3ApiV1ZhihuWebFetchEbookSearchV3GetErrors = {
@@ -26237,7 +26237,7 @@ export type FetchPresetSearchApiV1ZhihuWebFetchPresetSearchGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/zhihu/web/fetch_preset_search';
+    url: '/video-hub/api/v1/zhihu/web/fetch_preset_search';
 };
 
 export type FetchPresetSearchApiV1ZhihuWebFetchPresetSearchGetResponses = {
@@ -26253,7 +26253,7 @@ export type FetchSearchRecommendApiV1ZhihuWebFetchSearchRecommendGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/zhihu/web/fetch_search_recommend';
+    url: '/video-hub/api/v1/zhihu/web/fetch_search_recommend';
 };
 
 export type FetchSearchRecommendApiV1ZhihuWebFetchSearchRecommendGetResponses = {
@@ -26276,7 +26276,7 @@ export type FetchSearchSuggestApiV1ZhihuWebFetchSearchSuggestGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/zhihu/web/fetch_search_suggest';
+    url: '/video-hub/api/v1/zhihu/web/fetch_search_suggest';
 };
 
 export type FetchSearchSuggestApiV1ZhihuWebFetchSearchSuggestGetErrors = {
@@ -26326,7 +26326,7 @@ export type FetchCommentV5ApiV1ZhihuWebFetchCommentV5GetData = {
          */
         offset?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_comment_v5';
+    url: '/video-hub/api/v1/zhihu/web/fetch_comment_v5';
 };
 
 export type FetchCommentV5ApiV1ZhihuWebFetchCommentV5GetErrors = {
@@ -26376,7 +26376,7 @@ export type FetchSubCommentV5ApiV1ZhihuWebFetchSubCommentV5GetData = {
          */
         offset?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_sub_comment_v5';
+    url: '/video-hub/api/v1/zhihu/web/fetch_sub_comment_v5';
 };
 
 export type FetchSubCommentV5ApiV1ZhihuWebFetchSubCommentV5GetErrors = {
@@ -26408,7 +26408,7 @@ export type FetchUserInfoApiV1ZhihuWebFetchUserInfoGetData = {
          */
         user_url_token: string;
     };
-    url: '/api/v1/zhihu/web/fetch_user_info';
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1ZhihuWebFetchUserInfoGetErrors = {
@@ -26452,7 +26452,7 @@ export type FetchUserFolloweesApiV1ZhihuWebFetchUserFolloweesGetData = {
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_user_followees';
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_followees';
 };
 
 export type FetchUserFolloweesApiV1ZhihuWebFetchUserFolloweesGetErrors = {
@@ -26496,7 +26496,7 @@ export type FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetData = {
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_user_followers';
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_followers';
 };
 
 export type FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetErrors = {
@@ -26540,7 +26540,7 @@ export type FetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGetData = {
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_user_follow_columns';
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_follow_columns';
 };
 
 export type FetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGetErrors = {
@@ -26584,7 +26584,7 @@ export type FetchUserFollowQuestionsApiV1ZhihuWebFetchUserFollowQuestionsGetData
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_user_follow_questions';
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_follow_questions';
 };
 
 export type FetchUserFollowQuestionsApiV1ZhihuWebFetchUserFollowQuestionsGetErrors = {
@@ -26628,7 +26628,7 @@ export type FetchUserFollowCollectionsApiV1ZhihuWebFetchUserFollowCollectionsGet
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_user_follow_collections';
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_follow_collections';
 };
 
 export type FetchUserFollowCollectionsApiV1ZhihuWebFetchUserFollowCollectionsGetErrors = {
@@ -26672,7 +26672,7 @@ export type FetchUserFollowTopicsApiV1ZhihuWebFetchUserFollowTopicsGetData = {
          */
         limit?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_user_follow_topics';
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_follow_topics';
 };
 
 export type FetchUserFollowTopicsApiV1ZhihuWebFetchUserFollowTopicsGetErrors = {
@@ -26697,7 +26697,7 @@ export type FetchRecommendFolloweesApiV1ZhihuWebFetchRecommendFolloweesGetData =
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/zhihu/web/fetch_recommend_followees';
+    url: '/video-hub/api/v1/zhihu/web/fetch_recommend_followees';
 };
 
 export type FetchRecommendFolloweesApiV1ZhihuWebFetchRecommendFolloweesGetResponses = {
@@ -26750,7 +26750,7 @@ export type FetchQuestionAnswersApiV1ZhihuWebFetchQuestionAnswersGetData = {
          */
         session_id?: string;
     };
-    url: '/api/v1/zhihu/web/fetch_question_answers';
+    url: '/video-hub/api/v1/zhihu/web/fetch_question_answers';
 };
 
 export type FetchQuestionAnswersApiV1ZhihuWebFetchQuestionAnswersGetErrors = {
@@ -26788,7 +26788,7 @@ export type FetchPostDetailApiV1PipixiaAppFetchPostDetailGetData = {
          */
         cell_type?: number;
     };
-    url: '/api/v1/pipixia/app/fetch_post_detail';
+    url: '/video-hub/api/v1/pipixia/app/fetch_post_detail';
 };
 
 export type FetchPostDetailApiV1PipixiaAppFetchPostDetailGetErrors = {
@@ -26826,7 +26826,7 @@ export type FetchIncreasePostViewCountApiV1PipixiaAppFetchIncreasePostViewCountG
          */
         cell_type?: number;
     };
-    url: '/api/v1/pipixia/app/fetch_increase_post_view_count';
+    url: '/video-hub/api/v1/pipixia/app/fetch_increase_post_view_count';
 };
 
 export type FetchIncreasePostViewCountApiV1PipixiaAppFetchIncreasePostViewCountGetErrors = {
@@ -26858,7 +26858,7 @@ export type FetchPostStatisticsApiV1PipixiaAppFetchPostStatisticsGetData = {
          */
         cell_id: string;
     };
-    url: '/api/v1/pipixia/app/fetch_post_statistics';
+    url: '/video-hub/api/v1/pipixia/app/fetch_post_statistics';
 };
 
 export type FetchPostStatisticsApiV1PipixiaAppFetchPostStatisticsGetErrors = {
@@ -26890,7 +26890,7 @@ export type FetchUserInfoApiV1PipixiaAppFetchUserInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/pipixia/app/fetch_user_info';
+    url: '/video-hub/api/v1/pipixia/app/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1PipixiaAppFetchUserInfoGetErrors = {
@@ -26934,7 +26934,7 @@ export type FetchUserPostListApiV1PipixiaAppFetchUserPostListGetData = {
          */
         feed_count?: string;
     };
-    url: '/api/v1/pipixia/app/fetch_user_post_list';
+    url: '/video-hub/api/v1/pipixia/app/fetch_user_post_list';
 };
 
 export type FetchUserPostListApiV1PipixiaAppFetchUserPostListGetErrors = {
@@ -26972,7 +26972,7 @@ export type FetchUserFollowerListApiV1PipixiaAppFetchUserFollowerListGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/pipixia/app/fetch_user_follower_list';
+    url: '/video-hub/api/v1/pipixia/app/fetch_user_follower_list';
 };
 
 export type FetchUserFollowerListApiV1PipixiaAppFetchUserFollowerListGetErrors = {
@@ -27010,7 +27010,7 @@ export type FetchUserFollowingListApiV1PipixiaAppFetchUserFollowingListGetData =
          */
         cursor?: string;
     };
-    url: '/api/v1/pipixia/app/fetch_user_following_list';
+    url: '/video-hub/api/v1/pipixia/app/fetch_user_following_list';
 };
 
 export type FetchUserFollowingListApiV1PipixiaAppFetchUserFollowingListGetErrors = {
@@ -27054,7 +27054,7 @@ export type FetchPostCommentListApiV1PipixiaAppFetchPostCommentListGetData = {
          */
         offset?: string;
     };
-    url: '/api/v1/pipixia/app/fetch_post_comment_list';
+    url: '/video-hub/api/v1/pipixia/app/fetch_post_comment_list';
 };
 
 export type FetchPostCommentListApiV1PipixiaAppFetchPostCommentListGetErrors = {
@@ -27086,7 +27086,7 @@ export type FetchShortUrlApiV1PipixiaAppFetchShortUrlGetData = {
          */
         original_url: string;
     };
-    url: '/api/v1/pipixia/app/fetch_short_url';
+    url: '/video-hub/api/v1/pipixia/app/fetch_short_url';
 };
 
 export type FetchShortUrlApiV1PipixiaAppFetchShortUrlGetErrors = {
@@ -27118,7 +27118,7 @@ export type FetchHomeFeedApiV1PipixiaAppFetchHomeFeedGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/pipixia/app/fetch_home_feed';
+    url: '/video-hub/api/v1/pipixia/app/fetch_home_feed';
 };
 
 export type FetchHomeFeedApiV1PipixiaAppFetchHomeFeedGetErrors = {
@@ -27143,7 +27143,7 @@ export type FetchHotSearchWordsApiV1PipixiaAppFetchHotSearchWordsGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/pipixia/app/fetch_hot_search_words';
+    url: '/video-hub/api/v1/pipixia/app/fetch_hot_search_words';
 };
 
 export type FetchHotSearchWordsApiV1PipixiaAppFetchHotSearchWordsGetResponses = {
@@ -27159,7 +27159,7 @@ export type FetchHotSearchBoardListApiV1PipixiaAppFetchHotSearchBoardListGetData
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/pipixia/app/fetch_hot_search_board_list';
+    url: '/video-hub/api/v1/pipixia/app/fetch_hot_search_board_list';
 };
 
 export type FetchHotSearchBoardListApiV1PipixiaAppFetchHotSearchBoardListGetResponses = {
@@ -27182,7 +27182,7 @@ export type FetchHotSearchBoardDetailApiV1PipixiaAppFetchHotSearchBoardDetailGet
          */
         block_type: number;
     };
-    url: '/api/v1/pipixia/app/fetch_hot_search_board_detail';
+    url: '/video-hub/api/v1/pipixia/app/fetch_hot_search_board_detail';
 };
 
 export type FetchHotSearchBoardDetailApiV1PipixiaAppFetchHotSearchBoardDetailGetErrors = {
@@ -27226,7 +27226,7 @@ export type FetchSearchApiV1PipixiaAppFetchSearchGetData = {
          */
         search_type?: string;
     };
-    url: '/api/v1/pipixia/app/fetch_search';
+    url: '/video-hub/api/v1/pipixia/app/fetch_search';
 };
 
 export type FetchSearchApiV1PipixiaAppFetchSearchGetErrors = {
@@ -27258,7 +27258,7 @@ export type FetchHashtagDetailApiV1PipixiaAppFetchHashtagDetailGetData = {
          */
         hashtag_id: string;
     };
-    url: '/api/v1/pipixia/app/fetch_hashtag_detail';
+    url: '/video-hub/api/v1/pipixia/app/fetch_hashtag_detail';
 };
 
 export type FetchHashtagDetailApiV1PipixiaAppFetchHashtagDetailGetErrors = {
@@ -27314,7 +27314,7 @@ export type FetchHashtagPostListApiV1PipixiaAppFetchHashtagPostListGetData = {
          */
         hashtag_sort_type?: string;
     };
-    url: '/api/v1/pipixia/app/fetch_hashtag_post_list';
+    url: '/video-hub/api/v1/pipixia/app/fetch_hashtag_post_list';
 };
 
 export type FetchHashtagPostListApiV1PipixiaAppFetchHashtagPostListGetErrors = {
@@ -27346,7 +27346,7 @@ export type FetchHomeShortDramaFeedApiV1PipixiaAppFetchHomeShortDramaFeedGetData
          */
         page?: number;
     };
-    url: '/api/v1/pipixia/app/fetch_home_short_drama_feed';
+    url: '/video-hub/api/v1/pipixia/app/fetch_home_short_drama_feed';
 };
 
 export type FetchHomeShortDramaFeedApiV1PipixiaAppFetchHomeShortDramaFeedGetErrors = {
@@ -27371,7 +27371,7 @@ export type FetchConfigListApiV1WeiboWebFetchConfigListGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web/fetch_config_list';
+    url: '/video-hub/api/v1/weibo/web/fetch_config_list';
 };
 
 export type FetchConfigListApiV1WeiboWebFetchConfigListGetResponses = {
@@ -27400,7 +27400,7 @@ export type FetchTrendTopApiV1WeiboWebFetchTrendTopGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web/fetch_trend_top';
+    url: '/video-hub/api/v1/weibo/web/fetch_trend_top';
 };
 
 export type FetchTrendTopApiV1WeiboWebFetchTrendTopGetErrors = {
@@ -27438,7 +27438,7 @@ export type FetchChannelFeedApiV1WeiboWebFetchChannelFeedGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web/fetch_channel_feed';
+    url: '/video-hub/api/v1/weibo/web/fetch_channel_feed';
 };
 
 export type FetchChannelFeedApiV1WeiboWebFetchChannelFeedGetErrors = {
@@ -27470,7 +27470,7 @@ export type FetchUserInfoApiV1WeiboWebFetchUserInfoGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/weibo/web/fetch_user_info';
+    url: '/video-hub/api/v1/weibo/web/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1WeiboWebFetchUserInfoGetErrors = {
@@ -27514,7 +27514,7 @@ export type FetchUserPostsApiV1WeiboWebFetchUserPostsGetData = {
          */
         since_id?: string;
     };
-    url: '/api/v1/weibo/web/fetch_user_posts';
+    url: '/video-hub/api/v1/weibo/web/fetch_user_posts';
 };
 
 export type FetchUserPostsApiV1WeiboWebFetchUserPostsGetErrors = {
@@ -27546,7 +27546,7 @@ export type FetchPostDetailApiV1WeiboWebFetchPostDetailGetData = {
          */
         post_id: string;
     };
-    url: '/api/v1/weibo/web/fetch_post_detail';
+    url: '/video-hub/api/v1/weibo/web/fetch_post_detail';
 };
 
 export type FetchPostDetailApiV1WeiboWebFetchPostDetailGetErrors = {
@@ -27596,7 +27596,7 @@ export type FetchPostCommentsApiV1WeiboWebFetchPostCommentsGetData = {
          */
         max_id_type?: number;
     };
-    url: '/api/v1/weibo/web/fetch_post_comments';
+    url: '/video-hub/api/v1/weibo/web/fetch_post_comments';
 };
 
 export type FetchPostCommentsApiV1WeiboWebFetchPostCommentsGetErrors = {
@@ -27634,7 +27634,7 @@ export type FetchCommentRepliesApiV1WeiboWebFetchCommentRepliesGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/weibo/web/fetch_comment_replies';
+    url: '/video-hub/api/v1/weibo/web/fetch_comment_replies';
 };
 
 export type FetchCommentRepliesApiV1WeiboWebFetchCommentRepliesGetErrors = {
@@ -27684,7 +27684,7 @@ export type FetchSearchApiV1WeiboWebFetchSearchGetData = {
          */
         time_scope?: string;
     };
-    url: '/api/v1/weibo/web/fetch_search';
+    url: '/video-hub/api/v1/weibo/web/fetch_search';
 };
 
 export type FetchSearchApiV1WeiboWebFetchSearchGetErrors = {
@@ -27709,7 +27709,7 @@ export type FetchHotSearchApiV1WeiboWebFetchHotSearchGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web/fetch_hot_search';
+    url: '/video-hub/api/v1/weibo/web/fetch_hot_search';
 };
 
 export type FetchHotSearchApiV1WeiboWebFetchHotSearchGetResponses = {
@@ -27725,7 +27725,7 @@ export type FetchSearchTopicsApiV1WeiboWebFetchSearchTopicsGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web/fetch_search_topics';
+    url: '/video-hub/api/v1/weibo/web/fetch_search_topics';
 };
 
 export type FetchSearchTopicsApiV1WeiboWebFetchSearchTopicsGetResponses = {
@@ -27748,7 +27748,7 @@ export type CheckAllowCommentWithPicApiV1WeiboWebV2CheckAllowCommentWithPicGetDa
          */
         id: string;
     };
-    url: '/api/v1/weibo/web_v2/check_allow_comment_with_pic';
+    url: '/video-hub/api/v1/weibo/web_v2/check_allow_comment_with_pic';
 };
 
 export type CheckAllowCommentWithPicApiV1WeiboWebV2CheckAllowCommentWithPicGetErrors = {
@@ -27786,7 +27786,7 @@ export type FetchPostDetailApiV1WeiboWebV2FetchPostDetailGetData = {
          */
         is_get_long_text?: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_post_detail';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_post_detail';
 };
 
 export type FetchPostDetailApiV1WeiboWebV2FetchPostDetailGetErrors = {
@@ -27824,7 +27824,7 @@ export type FetchUserInfoApiV1WeiboWebV2FetchUserInfoGetData = {
          */
         custom?: string | null;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_info';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1WeiboWebV2FetchUserInfoGetErrors = {
@@ -27856,7 +27856,7 @@ export type FetchUserBasicInfoApiV1WeiboWebV2FetchUserBasicInfoGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_basic_info';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_basic_info';
 };
 
 export type FetchUserBasicInfoApiV1WeiboWebV2FetchUserBasicInfoGetErrors = {
@@ -27906,7 +27906,7 @@ export type FetchUserPostsApiV1WeiboWebV2FetchUserPostsGetData = {
          */
         since_id?: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_posts';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_posts';
 };
 
 export type FetchUserPostsApiV1WeiboWebV2FetchUserPostsGetErrors = {
@@ -27950,7 +27950,7 @@ export type FetchUserOriginalPostsApiV1WeiboWebV2FetchUserOriginalPostsGetData =
          */
         since_id?: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_original_posts';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_original_posts';
 };
 
 export type FetchUserOriginalPostsApiV1WeiboWebV2FetchUserOriginalPostsGetErrors = {
@@ -27994,7 +27994,7 @@ export type FetchPostCommentsApiV1WeiboWebV2FetchPostCommentsGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_post_comments';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_post_comments';
 };
 
 export type FetchPostCommentsApiV1WeiboWebV2FetchPostCommentsGetErrors = {
@@ -28038,7 +28038,7 @@ export type FetchPostSubCommentsApiV1WeiboWebV2FetchPostSubCommentsGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_post_sub_comments';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_post_sub_comments';
 };
 
 export type FetchPostSubCommentsApiV1WeiboWebV2FetchPostSubCommentsGetErrors = {
@@ -28130,7 +28130,7 @@ export type SearchUserPostsApiV1WeiboWebV2SearchUserPostsGetData = {
          */
         hasmusic?: number;
     };
-    url: '/api/v1/weibo/web_v2/search_user_posts';
+    url: '/video-hub/api/v1/weibo/web_v2/search_user_posts';
 };
 
 export type SearchUserPostsApiV1WeiboWebV2SearchUserPostsGetErrors = {
@@ -28162,7 +28162,7 @@ export type FetchUserVideoCollectionListApiV1WeiboWebV2FetchUserVideoCollectionL
          */
         uid: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_video_collection_list';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_video_collection_list';
 };
 
 export type FetchUserVideoCollectionListApiV1WeiboWebV2FetchUserVideoCollectionListGetErrors = {
@@ -28206,7 +28206,7 @@ export type FetchUserVideoCollectionDetailApiV1WeiboWebV2FetchUserVideoCollectio
          */
         tab_code?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_video_collection_detail';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_video_collection_detail';
 };
 
 export type FetchUserVideoCollectionDetailApiV1WeiboWebV2FetchUserVideoCollectionDetailGetErrors = {
@@ -28244,7 +28244,7 @@ export type FetchUserVideoListApiV1WeiboWebV2FetchUserVideoListGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_video_list';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_video_list';
 };
 
 export type FetchUserVideoListApiV1WeiboWebV2FetchUserVideoListGetErrors = {
@@ -28282,7 +28282,7 @@ export type FetchUserFollowingApiV1WeiboWebV2FetchUserFollowingGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_following';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_following';
 };
 
 export type FetchUserFollowingApiV1WeiboWebV2FetchUserFollowingGetErrors = {
@@ -28320,7 +28320,7 @@ export type FetchUserFansApiV1WeiboWebV2FetchUserFansGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_fans';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_fans';
 };
 
 export type FetchUserFansApiV1WeiboWebV2FetchUserFansGetErrors = {
@@ -28345,7 +28345,7 @@ export type FetchAllGroupsApiV1WeiboWebV2FetchAllGroupsGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web_v2/fetch_all_groups';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_all_groups';
 };
 
 export type FetchAllGroupsApiV1WeiboWebV2FetchAllGroupsGetResponses = {
@@ -28398,7 +28398,7 @@ export type FetchUserRecommendTimelineApiV1WeiboWebV2FetchUserRecommendTimelineG
          */
         count?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_recommend_timeline';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_recommend_timeline';
 };
 
 export type FetchUserRecommendTimelineApiV1WeiboWebV2FetchUserRecommendTimelineGetErrors = {
@@ -28448,7 +28448,7 @@ export type FetchHotRankingTimelineApiV1WeiboWebV2FetchHotRankingTimelineGetData
          */
         count?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_hot_ranking_timeline';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_hot_ranking_timeline';
 };
 
 export type FetchHotRankingTimelineApiV1WeiboWebV2FetchHotRankingTimelineGetErrors = {
@@ -28473,7 +28473,7 @@ export type FetchHotSearchIndexApiV1WeiboWebV2FetchHotSearchIndexGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web_v2/fetch_hot_search_index';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_hot_search_index';
 };
 
 export type FetchHotSearchIndexApiV1WeiboWebV2FetchHotSearchIndexGetResponses = {
@@ -28489,7 +28489,7 @@ export type FetchHotSearchSummaryApiV1WeiboWebV2FetchHotSearchSummaryGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web_v2/fetch_hot_search_summary';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_hot_search_summary';
 };
 
 export type FetchHotSearchSummaryApiV1WeiboWebV2FetchHotSearchSummaryGetResponses = {
@@ -28505,7 +28505,7 @@ export type FetchHotSearchApiV1WeiboWebV2FetchHotSearchGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web_v2/fetch_hot_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_hot_search';
 };
 
 export type FetchHotSearchApiV1WeiboWebV2FetchHotSearchGetResponses = {
@@ -28521,7 +28521,7 @@ export type FetchEntertainmentRankingApiV1WeiboWebV2FetchEntertainmentRankingGet
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web_v2/fetch_entertainment_ranking';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_entertainment_ranking';
 };
 
 export type FetchEntertainmentRankingApiV1WeiboWebV2FetchEntertainmentRankingGetResponses = {
@@ -28537,7 +28537,7 @@ export type FetchLifeRankingApiV1WeiboWebV2FetchLifeRankingGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web_v2/fetch_life_ranking';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_life_ranking';
 };
 
 export type FetchLifeRankingApiV1WeiboWebV2FetchLifeRankingGetResponses = {
@@ -28553,7 +28553,7 @@ export type FetchSocialRankingApiV1WeiboWebV2FetchSocialRankingGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/web_v2/fetch_social_ranking';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_social_ranking';
 };
 
 export type FetchSocialRankingApiV1WeiboWebV2FetchSocialRankingGetResponses = {
@@ -28576,7 +28576,7 @@ export type FetchSimilarSearchApiV1WeiboWebV2FetchSimilarSearchGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_similar_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_similar_search';
 };
 
 export type FetchSimilarSearchApiV1WeiboWebV2FetchSimilarSearchGetErrors = {
@@ -28608,7 +28608,7 @@ export type FetchAiSearchApiV1WeiboWebV2FetchAiSearchGetData = {
          */
         query: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_ai_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_ai_search';
 };
 
 export type FetchAiSearchApiV1WeiboWebV2FetchAiSearchGetErrors = {
@@ -28640,7 +28640,7 @@ export type FetchAiRelatedSearchApiV1WeiboWebV2FetchAiRelatedSearchGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/weibo/web_v2/fetch_ai_related_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_ai_related_search';
 };
 
 export type FetchAiRelatedSearchApiV1WeiboWebV2FetchAiRelatedSearchGetErrors = {
@@ -28696,7 +28696,7 @@ export type FetchAdvancedSearchApiV1WeiboWebV2FetchAdvancedSearchGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_advanced_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_advanced_search';
 };
 
 export type FetchAdvancedSearchApiV1WeiboWebV2FetchAdvancedSearchGetErrors = {
@@ -28728,7 +28728,7 @@ export type FetchCityListApiV1WeiboWebV2FetchCityListGetData = {
          */
         normalized?: boolean;
     };
-    url: '/api/v1/weibo/web_v2/fetch_city_list';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_city_list';
 };
 
 export type FetchCityListApiV1WeiboWebV2FetchCityListGetErrors = {
@@ -28766,7 +28766,7 @@ export type FetchRealtimeSearchApiV1WeiboWebV2FetchRealtimeSearchGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_realtime_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_realtime_search';
 };
 
 export type FetchRealtimeSearchApiV1WeiboWebV2FetchRealtimeSearchGetErrors = {
@@ -28852,7 +28852,7 @@ export type FetchUserSearchApiV1WeiboWebV2FetchUserSearchGetData = {
          */
         work?: string | null;
     };
-    url: '/api/v1/weibo/web_v2/fetch_user_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_search';
 };
 
 export type FetchUserSearchApiV1WeiboWebV2FetchUserSearchGetErrors = {
@@ -28896,7 +28896,7 @@ export type FetchVideoSearchApiV1WeiboWebV2FetchVideoSearchGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_video_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_video_search';
 };
 
 export type FetchVideoSearchApiV1WeiboWebV2FetchVideoSearchGetErrors = {
@@ -28934,7 +28934,7 @@ export type FetchPicSearchApiV1WeiboWebV2FetchPicSearchGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_pic_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_pic_search';
 };
 
 export type FetchPicSearchApiV1WeiboWebV2FetchPicSearchGetErrors = {
@@ -28972,7 +28972,7 @@ export type FetchTopicSearchApiV1WeiboWebV2FetchTopicSearchGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/web_v2/fetch_topic_search';
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_topic_search';
 };
 
 export type FetchTopicSearchApiV1WeiboWebV2FetchTopicSearchGetErrors = {
@@ -29004,7 +29004,7 @@ export type FetchUserInfoApiV1WeiboAppFetchUserInfoGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/weibo/app/fetch_user_info';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1WeiboAppFetchUserInfoGetErrors = {
@@ -29036,7 +29036,7 @@ export type FetchUserInfoDetailApiV1WeiboAppFetchUserInfoDetailGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/weibo/app/fetch_user_info_detail';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_info_detail';
 };
 
 export type FetchUserInfoDetailApiV1WeiboAppFetchUserInfoDetailGetErrors = {
@@ -29086,7 +29086,7 @@ export type FetchUserTimelineApiV1WeiboAppFetchUserTimelineGetData = {
          */
         month?: string | null;
     };
-    url: '/api/v1/weibo/app/fetch_user_timeline';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_timeline';
 };
 
 export type FetchUserTimelineApiV1WeiboAppFetchUserTimelineGetErrors = {
@@ -29124,7 +29124,7 @@ export type FetchUserVideosApiV1WeiboAppFetchUserVideosGetData = {
          */
         since_id?: string | null;
     };
-    url: '/api/v1/weibo/app/fetch_user_videos';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_videos';
 };
 
 export type FetchUserVideosApiV1WeiboAppFetchUserVideosGetErrors = {
@@ -29162,7 +29162,7 @@ export type FetchUserSuperTopicsApiV1WeiboAppFetchUserSuperTopicsGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/app/fetch_user_super_topics';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_super_topics';
 };
 
 export type FetchUserSuperTopicsApiV1WeiboAppFetchUserSuperTopicsGetErrors = {
@@ -29200,7 +29200,7 @@ export type FetchUserAlbumApiV1WeiboAppFetchUserAlbumGetData = {
          */
         since_id?: string | null;
     };
-    url: '/api/v1/weibo/app/fetch_user_album';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_album';
 };
 
 export type FetchUserAlbumApiV1WeiboAppFetchUserAlbumGetErrors = {
@@ -29238,7 +29238,7 @@ export type FetchUserArticlesApiV1WeiboAppFetchUserArticlesGetData = {
          */
         since_id?: string | null;
     };
-    url: '/api/v1/weibo/app/fetch_user_articles';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_articles';
 };
 
 export type FetchUserArticlesApiV1WeiboAppFetchUserArticlesGetErrors = {
@@ -29276,7 +29276,7 @@ export type FetchUserAudiosApiV1WeiboAppFetchUserAudiosGetData = {
          */
         since_id?: string | null;
     };
-    url: '/api/v1/weibo/app/fetch_user_audios';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_audios';
 };
 
 export type FetchUserAudiosApiV1WeiboAppFetchUserAudiosGetErrors = {
@@ -29314,7 +29314,7 @@ export type FetchUserProfileFeedApiV1WeiboAppFetchUserProfileFeedGetData = {
          */
         since_id?: string | null;
     };
-    url: '/api/v1/weibo/app/fetch_user_profile_feed';
+    url: '/video-hub/api/v1/weibo/app/fetch_user_profile_feed';
 };
 
 export type FetchUserProfileFeedApiV1WeiboAppFetchUserProfileFeedGetErrors = {
@@ -29346,7 +29346,7 @@ export type FetchStatusDetailApiV1WeiboAppFetchStatusDetailGetData = {
          */
         status_id: string;
     };
-    url: '/api/v1/weibo/app/fetch_status_detail';
+    url: '/video-hub/api/v1/weibo/app/fetch_status_detail';
 };
 
 export type FetchStatusDetailApiV1WeiboAppFetchStatusDetailGetErrors = {
@@ -29390,7 +29390,7 @@ export type FetchStatusCommentsApiV1WeiboAppFetchStatusCommentsGetData = {
          */
         sort_type?: string;
     };
-    url: '/api/v1/weibo/app/fetch_status_comments';
+    url: '/video-hub/api/v1/weibo/app/fetch_status_comments';
 };
 
 export type FetchStatusCommentsApiV1WeiboAppFetchStatusCommentsGetErrors = {
@@ -29428,7 +29428,7 @@ export type FetchStatusRepostsApiV1WeiboAppFetchStatusRepostsGetData = {
          */
         max_id?: string | null;
     };
-    url: '/api/v1/weibo/app/fetch_status_reposts';
+    url: '/video-hub/api/v1/weibo/app/fetch_status_reposts';
 };
 
 export type FetchStatusRepostsApiV1WeiboAppFetchStatusRepostsGetErrors = {
@@ -29466,7 +29466,7 @@ export type FetchStatusLikesApiV1WeiboAppFetchStatusLikesGetData = {
          */
         attitude_type?: string;
     };
-    url: '/api/v1/weibo/app/fetch_status_likes';
+    url: '/video-hub/api/v1/weibo/app/fetch_status_likes';
 };
 
 export type FetchStatusLikesApiV1WeiboAppFetchStatusLikesGetErrors = {
@@ -29498,7 +29498,7 @@ export type FetchVideoDetailApiV1WeiboAppFetchVideoDetailGetData = {
          */
         mid: string;
     };
-    url: '/api/v1/weibo/app/fetch_video_detail';
+    url: '/video-hub/api/v1/weibo/app/fetch_video_detail';
 };
 
 export type FetchVideoDetailApiV1WeiboAppFetchVideoDetailGetErrors = {
@@ -29530,7 +29530,7 @@ export type FetchVideoFeaturedFeedApiV1WeiboAppFetchVideoFeaturedFeedGetData = {
          */
         page?: string | null;
     };
-    url: '/api/v1/weibo/app/fetch_video_featured_feed';
+    url: '/video-hub/api/v1/weibo/app/fetch_video_featured_feed';
 };
 
 export type FetchVideoFeaturedFeedApiV1WeiboAppFetchVideoFeaturedFeedGetErrors = {
@@ -29574,7 +29574,7 @@ export type FetchSearchAllApiV1WeiboAppFetchSearchAllGetData = {
          */
         search_type?: number;
     };
-    url: '/api/v1/weibo/app/fetch_search_all';
+    url: '/video-hub/api/v1/weibo/app/fetch_search_all';
 };
 
 export type FetchSearchAllApiV1WeiboAppFetchSearchAllGetErrors = {
@@ -29612,7 +29612,7 @@ export type FetchAiSmartSearchApiV1WeiboAppFetchAiSmartSearchGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/weibo/app/fetch_ai_smart_search';
+    url: '/video-hub/api/v1/weibo/app/fetch_ai_smart_search';
 };
 
 export type FetchAiSmartSearchApiV1WeiboAppFetchAiSmartSearchGetErrors = {
@@ -29650,7 +29650,7 @@ export type FetchHomeRecommendFeedApiV1WeiboAppFetchHomeRecommendFeedGetData = {
          */
         count?: number;
     };
-    url: '/api/v1/weibo/app/fetch_home_recommend_feed';
+    url: '/video-hub/api/v1/weibo/app/fetch_home_recommend_feed';
 };
 
 export type FetchHomeRecommendFeedApiV1WeiboAppFetchHomeRecommendFeedGetErrors = {
@@ -29700,7 +29700,7 @@ export type FetchHotSearchApiV1WeiboAppFetchHotSearchGetData = {
          */
         region_name?: string;
     };
-    url: '/api/v1/weibo/app/fetch_hot_search';
+    url: '/video-hub/api/v1/weibo/app/fetch_hot_search';
 };
 
 export type FetchHotSearchApiV1WeiboAppFetchHotSearchGetErrors = {
@@ -29725,7 +29725,7 @@ export type FetchHotSearchCategoriesApiV1WeiboAppFetchHotSearchCategoriesGetData
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/weibo/app/fetch_hot_search_categories';
+    url: '/video-hub/api/v1/weibo/app/fetch_hot_search_categories';
 };
 
 export type FetchHotSearchCategoriesApiV1WeiboAppFetchHotSearchCategoriesGetResponses = {
@@ -29748,7 +29748,7 @@ export type FetchMpArticleDetailJsonApiV1WechatMpWebFetchMpArticleDetailJsonGetD
          */
         url: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_detail_json';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_detail_json';
 };
 
 export type FetchMpArticleDetailJsonApiV1WechatMpWebFetchMpArticleDetailJsonGetErrors = {
@@ -29780,7 +29780,7 @@ export type FetchMpArticleDetailHtmlApiV1WechatMpWebFetchMpArticleDetailHtmlGetD
          */
         url: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_detail_html';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_detail_html';
 };
 
 export type FetchMpArticleDetailHtmlApiV1WechatMpWebFetchMpArticleDetailHtmlGetErrors = {
@@ -29818,7 +29818,7 @@ export type FetchMpArticleListApiV1WechatMpWebFetchMpArticleListGetData = {
          */
         offset?: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_list';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_list';
 };
 
 export type FetchMpArticleListApiV1WechatMpWebFetchMpArticleListGetErrors = {
@@ -29856,7 +29856,7 @@ export type FetchMpArticleReadCountApiV1WechatMpWebFetchMpArticleReadCountGetDat
          */
         comment_id: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_read_count';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_read_count';
 };
 
 export type FetchMpArticleReadCountApiV1WechatMpWebFetchMpArticleReadCountGetErrors = {
@@ -29888,7 +29888,7 @@ export type FetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGetData = {
          */
         sogou_url: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_url';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_url';
 };
 
 export type FetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGetErrors = {
@@ -29932,7 +29932,7 @@ export type FetchMpArticleCommentListApiV1WechatMpWebFetchMpArticleCommentListGe
          */
         buffer?: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_comment_list';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_comment_list';
 };
 
 export type FetchMpArticleCommentListApiV1WechatMpWebFetchMpArticleCommentListGetErrors = {
@@ -29982,7 +29982,7 @@ export type FetchMpArticleCommentReplyListApiV1WechatMpWebFetchMpArticleCommentR
          */
         offset?: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_comment_reply_list';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_comment_reply_list';
 };
 
 export type FetchMpArticleCommentReplyListApiV1WechatMpWebFetchMpArticleCommentReplyListGetErrors = {
@@ -30014,7 +30014,7 @@ export type FetchMpArticleAdApiV1WechatMpWebFetchMpArticleAdGetData = {
          */
         url: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_ad';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_ad';
 };
 
 export type FetchMpArticleAdApiV1WechatMpWebFetchMpArticleAdGetErrors = {
@@ -30046,7 +30046,7 @@ export type FetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConversi
          */
         url: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_url_conversion';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_url_conversion';
 };
 
 export type FetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConversionGetErrors = {
@@ -30078,7 +30078,7 @@ export type FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetData 
          */
         url: string;
     };
-    url: '/api/v1/wechat_mp/web/fetch_mp_related_articles';
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_related_articles';
 };
 
 export type FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetErrors = {
@@ -30103,7 +30103,7 @@ export type FetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPostData = {
     body: FetchDefaultSearchRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/wechat_channels/fetch_default_search';
+    url: '/video-hub/api/v1/wechat_channels/fetch_default_search';
 };
 
 export type FetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPostErrors = {
@@ -30135,7 +30135,7 @@ export type FetchSearchLatestApiV1WechatChannelsFetchSearchLatestGetData = {
          */
         keywords: string;
     };
-    url: '/api/v1/wechat_channels/fetch_search_latest';
+    url: '/video-hub/api/v1/wechat_channels/fetch_search_latest';
 };
 
 export type FetchSearchLatestApiV1WechatChannelsFetchSearchLatestGetErrors = {
@@ -30167,7 +30167,7 @@ export type FetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGetData = {
          */
         keywords: string;
     };
-    url: '/api/v1/wechat_channels/fetch_search_ordinary';
+    url: '/video-hub/api/v1/wechat_channels/fetch_search_ordinary';
 };
 
 export type FetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGetErrors = {
@@ -30205,7 +30205,7 @@ export type FetchUserSearchApiV1WechatChannelsFetchUserSearchGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/wechat_channels/fetch_user_search';
+    url: '/video-hub/api/v1/wechat_channels/fetch_user_search';
 };
 
 export type FetchUserSearchApiV1WechatChannelsFetchUserSearchGetErrors = {
@@ -30243,7 +30243,7 @@ export type FetchVideoDetailApiV1WechatChannelsFetchVideoDetailGetData = {
          */
         exportId?: string;
     };
-    url: '/api/v1/wechat_channels/fetch_video_detail';
+    url: '/video-hub/api/v1/wechat_channels/fetch_video_detail';
 };
 
 export type FetchVideoDetailApiV1WechatChannelsFetchVideoDetailGetErrors = {
@@ -30268,7 +30268,7 @@ export type FetchHomePageApiV1WechatChannelsFetchHomePagePostData = {
     body: FetchHomePageRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/wechat_channels/fetch_home_page';
+    url: '/video-hub/api/v1/wechat_channels/fetch_home_page';
 };
 
 export type FetchHomePageApiV1WechatChannelsFetchHomePagePostErrors = {
@@ -30293,7 +30293,7 @@ export type FetchCommentsApiV1WechatChannelsFetchCommentsPostData = {
     body: FetchCommentsRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/wechat_channels/fetch_comments';
+    url: '/video-hub/api/v1/wechat_channels/fetch_comments';
 };
 
 export type FetchCommentsApiV1WechatChannelsFetchCommentsPostErrors = {
@@ -30325,7 +30325,7 @@ export type FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetData = {
          */
         username: string;
     };
-    url: '/api/v1/wechat_channels/fetch_live_history';
+    url: '/video-hub/api/v1/wechat_channels/fetch_live_history';
 };
 
 export type FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetErrors = {
@@ -30350,7 +30350,7 @@ export type FetchHotWordsApiV1WechatChannelsFetchHotWordsGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/wechat_channels/fetch_hot_words';
+    url: '/video-hub/api/v1/wechat_channels/fetch_hot_words';
 };
 
 export type FetchHotWordsApiV1WechatChannelsFetchHotWordsGetResponses = {
@@ -30373,7 +30373,7 @@ export type ShortcodeToMediaIdApiV1InstagramV1ShortcodeToMediaIdGetData = {
          */
         shortcode: string;
     };
-    url: '/api/v1/instagram/v1/shortcode_to_media_id';
+    url: '/video-hub/api/v1/instagram/v1/shortcode_to_media_id';
 };
 
 export type ShortcodeToMediaIdApiV1InstagramV1ShortcodeToMediaIdGetErrors = {
@@ -30405,7 +30405,7 @@ export type MediaIdToShortcodeApiV1InstagramV1MediaIdToShortcodeGetData = {
          */
         media_id: string;
     };
-    url: '/api/v1/instagram/v1/media_id_to_shortcode';
+    url: '/video-hub/api/v1/instagram/v1/media_id_to_shortcode';
 };
 
 export type MediaIdToShortcodeApiV1InstagramV1MediaIdToShortcodeGetErrors = {
@@ -30437,7 +30437,7 @@ export type UserIdToUsernameApiV1InstagramV1UserIdToUsernameGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/instagram/v1/user_id_to_username';
+    url: '/video-hub/api/v1/instagram/v1/user_id_to_username';
 };
 
 export type UserIdToUsernameApiV1InstagramV1UserIdToUsernameGetErrors = {
@@ -30469,7 +30469,7 @@ export type FetchUserInfoByUsernameApiV1InstagramV1FetchUserInfoByUsernameGetDat
          */
         username: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_info_by_username';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_username';
 };
 
 export type FetchUserInfoByUsernameApiV1InstagramV1FetchUserInfoByUsernameGetErrors = {
@@ -30501,7 +30501,7 @@ export type FetchUserInfoByUsernameV2ApiV1InstagramV1FetchUserInfoByUsernameV2Ge
          */
         username: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_info_by_username_v2';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_username_v2';
 };
 
 export type FetchUserInfoByUsernameV2ApiV1InstagramV1FetchUserInfoByUsernameV2GetErrors = {
@@ -30533,7 +30533,7 @@ export type FetchUserInfoByUsernameV3ApiV1InstagramV1FetchUserInfoByUsernameV3Ge
          */
         username: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_info_by_username_v3';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_username_v3';
 };
 
 export type FetchUserInfoByUsernameV3ApiV1InstagramV1FetchUserInfoByUsernameV3GetErrors = {
@@ -30565,7 +30565,7 @@ export type FetchUserInfoByIdApiV1InstagramV1FetchUserInfoByIdGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_info_by_id';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_id';
 };
 
 export type FetchUserInfoByIdApiV1InstagramV1FetchUserInfoByIdGetErrors = {
@@ -30597,7 +30597,7 @@ export type FetchUserInfoByIdV2ApiV1InstagramV1FetchUserInfoByIdV2GetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_info_by_id_v2';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_id_v2';
 };
 
 export type FetchUserInfoByIdV2ApiV1InstagramV1FetchUserInfoByIdV2GetErrors = {
@@ -30629,7 +30629,7 @@ export type FetchUserAboutInfoApiV1InstagramV1FetchUserAboutInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_about_info';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_about_info';
 };
 
 export type FetchUserAboutInfoApiV1InstagramV1FetchUserAboutInfoGetErrors = {
@@ -30673,7 +30673,7 @@ export type FetchUserPostsApiV1InstagramV1FetchUserPostsGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_posts';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_posts';
 };
 
 export type FetchUserPostsApiV1InstagramV1FetchUserPostsGetErrors = {
@@ -30717,7 +30717,7 @@ export type FetchUserPostsV2ApiV1InstagramV1FetchUserPostsV2GetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_posts_v2';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_posts_v2';
 };
 
 export type FetchUserPostsV2ApiV1InstagramV1FetchUserPostsV2GetErrors = {
@@ -30761,7 +30761,7 @@ export type FetchUserReelsApiV1InstagramV1FetchUserReelsGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_reels';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_reels';
 };
 
 export type FetchUserReelsApiV1InstagramV1FetchUserReelsGetErrors = {
@@ -30799,7 +30799,7 @@ export type FetchUserRepostsApiV1InstagramV1FetchUserRepostsGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_reposts';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_reposts';
 };
 
 export type FetchUserRepostsApiV1InstagramV1FetchUserRepostsGetErrors = {
@@ -30843,7 +30843,7 @@ export type FetchUserTaggedPostsApiV1InstagramV1FetchUserTaggedPostsGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_user_tagged_posts';
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_tagged_posts';
 };
 
 export type FetchUserTaggedPostsApiV1InstagramV1FetchUserTaggedPostsGetErrors = {
@@ -30875,7 +30875,7 @@ export type FetchRelatedProfilesApiV1InstagramV1FetchRelatedProfilesGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/instagram/v1/fetch_related_profiles';
+    url: '/video-hub/api/v1/instagram/v1/fetch_related_profiles';
 };
 
 export type FetchRelatedProfilesApiV1InstagramV1FetchRelatedProfilesGetErrors = {
@@ -30913,7 +30913,7 @@ export type FetchSearchApiV1InstagramV1FetchSearchGetData = {
          */
         select?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_search';
+    url: '/video-hub/api/v1/instagram/v1/fetch_search';
 };
 
 export type FetchSearchApiV1InstagramV1FetchSearchGetErrors = {
@@ -30945,7 +30945,7 @@ export type FetchPostByUrlApiV1InstagramV1FetchPostByUrlGetData = {
          */
         post_url: string;
     };
-    url: '/api/v1/instagram/v1/fetch_post_by_url';
+    url: '/video-hub/api/v1/instagram/v1/fetch_post_by_url';
 };
 
 export type FetchPostByUrlApiV1InstagramV1FetchPostByUrlGetErrors = {
@@ -30977,7 +30977,7 @@ export type FetchPostByUrlV2ApiV1InstagramV1FetchPostByUrlV2GetData = {
          */
         post_url: string;
     };
-    url: '/api/v1/instagram/v1/fetch_post_by_url_v2';
+    url: '/video-hub/api/v1/instagram/v1/fetch_post_by_url_v2';
 };
 
 export type FetchPostByUrlV2ApiV1InstagramV1FetchPostByUrlV2GetErrors = {
@@ -31009,7 +31009,7 @@ export type FetchPostByIdApiV1InstagramV1FetchPostByIdGetData = {
          */
         post_id: string;
     };
-    url: '/api/v1/instagram/v1/fetch_post_by_id';
+    url: '/video-hub/api/v1/instagram/v1/fetch_post_by_id';
 };
 
 export type FetchPostByIdApiV1InstagramV1FetchPostByIdGetErrors = {
@@ -31053,7 +31053,7 @@ export type FetchPostCommentsV2ApiV1InstagramV1FetchPostCommentsV2GetData = {
          */
         min_id?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_post_comments_v2';
+    url: '/video-hub/api/v1/instagram/v1/fetch_post_comments_v2';
 };
 
 export type FetchPostCommentsV2ApiV1InstagramV1FetchPostCommentsV2GetErrors = {
@@ -31097,7 +31097,7 @@ export type FetchCommentRepliesApiV1InstagramV1FetchCommentRepliesGetData = {
          */
         min_id?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_comment_replies';
+    url: '/video-hub/api/v1/instagram/v1/fetch_comment_replies';
 };
 
 export type FetchCommentRepliesApiV1InstagramV1FetchCommentRepliesGetErrors = {
@@ -31141,7 +31141,7 @@ export type FetchMusicPostsApiV1InstagramV1FetchMusicPostsGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_music_posts';
+    url: '/video-hub/api/v1/instagram/v1/fetch_music_posts';
 };
 
 export type FetchMusicPostsApiV1InstagramV1FetchMusicPostsGetErrors = {
@@ -31179,7 +31179,7 @@ export type FetchHashtagPostsApiV1InstagramV1FetchHashtagPostsGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_hashtag_posts';
+    url: '/video-hub/api/v1/instagram/v1/fetch_hashtag_posts';
 };
 
 export type FetchHashtagPostsApiV1InstagramV1FetchHashtagPostsGetErrors = {
@@ -31211,7 +31211,7 @@ export type FetchLocationInfoApiV1InstagramV1FetchLocationInfoGetData = {
          */
         location_id: string;
     };
-    url: '/api/v1/instagram/v1/fetch_location_info';
+    url: '/video-hub/api/v1/instagram/v1/fetch_location_info';
 };
 
 export type FetchLocationInfoApiV1InstagramV1FetchLocationInfoGetErrors = {
@@ -31255,7 +31255,7 @@ export type FetchLocationPostsApiV1InstagramV1FetchLocationPostsGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_location_posts';
+    url: '/video-hub/api/v1/instagram/v1/fetch_location_posts';
 };
 
 export type FetchLocationPostsApiV1InstagramV1FetchLocationPostsGetErrors = {
@@ -31293,7 +31293,7 @@ export type FetchCitiesApiV1InstagramV1FetchCitiesGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/instagram/v1/fetch_cities';
+    url: '/video-hub/api/v1/instagram/v1/fetch_cities';
 };
 
 export type FetchCitiesApiV1InstagramV1FetchCitiesGetErrors = {
@@ -31331,7 +31331,7 @@ export type FetchLocationsApiV1InstagramV1FetchLocationsGetData = {
          */
         page?: number;
     };
-    url: '/api/v1/instagram/v1/fetch_locations';
+    url: '/video-hub/api/v1/instagram/v1/fetch_locations';
 };
 
 export type FetchLocationsApiV1InstagramV1FetchLocationsGetErrors = {
@@ -31356,7 +31356,7 @@ export type FetchExploreSectionsApiV1InstagramV1FetchExploreSectionsGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/instagram/v1/fetch_explore_sections';
+    url: '/video-hub/api/v1/instagram/v1/fetch_explore_sections';
 };
 
 export type FetchExploreSectionsApiV1InstagramV1FetchExploreSectionsGetResponses = {
@@ -31391,7 +31391,7 @@ export type FetchSectionPostsApiV1InstagramV1FetchSectionPostsGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/instagram/v1/fetch_section_posts';
+    url: '/video-hub/api/v1/instagram/v1/fetch_section_posts';
 };
 
 export type FetchSectionPostsApiV1InstagramV1FetchSectionPostsGetErrors = {
@@ -31423,7 +31423,7 @@ export type ShortcodeToMediaIdApiV1InstagramV2ShortcodeToMediaIdGetData = {
          */
         shortcode: string;
     };
-    url: '/api/v1/instagram/v2/shortcode_to_media_id';
+    url: '/video-hub/api/v1/instagram/v2/shortcode_to_media_id';
 };
 
 export type ShortcodeToMediaIdApiV1InstagramV2ShortcodeToMediaIdGetErrors = {
@@ -31455,7 +31455,7 @@ export type MediaIdToShortcodeApiV1InstagramV2MediaIdToShortcodeGetData = {
          */
         media_id: string;
     };
-    url: '/api/v1/instagram/v2/media_id_to_shortcode';
+    url: '/video-hub/api/v1/instagram/v2/media_id_to_shortcode';
 };
 
 export type MediaIdToShortcodeApiV1InstagramV2MediaIdToShortcodeGetErrors = {
@@ -31487,7 +31487,7 @@ export type UserIdToUsernameApiV1InstagramV2UserIdToUsernameGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/instagram/v2/user_id_to_username';
+    url: '/video-hub/api/v1/instagram/v2/user_id_to_username';
 };
 
 export type UserIdToUsernameApiV1InstagramV2UserIdToUsernameGetErrors = {
@@ -31525,7 +31525,7 @@ export type FetchUserInfoApiV1InstagramV2FetchUserInfoGetData = {
          */
         user_id?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_user_info';
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1InstagramV2FetchUserInfoGetErrors = {
@@ -31569,7 +31569,7 @@ export type FetchUserPostsApiV1InstagramV2FetchUserPostsGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_user_posts';
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_posts';
 };
 
 export type FetchUserPostsApiV1InstagramV2FetchUserPostsGetErrors = {
@@ -31613,7 +31613,7 @@ export type FetchUserReelsApiV1InstagramV2FetchUserReelsGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_user_reels';
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_reels';
 };
 
 export type FetchUserReelsApiV1InstagramV2FetchUserReelsGetErrors = {
@@ -31657,7 +31657,7 @@ export type FetchUserFollowersApiV1InstagramV2FetchUserFollowersGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_user_followers';
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_followers';
 };
 
 export type FetchUserFollowersApiV1InstagramV2FetchUserFollowersGetErrors = {
@@ -31701,7 +31701,7 @@ export type FetchUserFollowingApiV1InstagramV2FetchUserFollowingGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_user_following';
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_following';
 };
 
 export type FetchUserFollowingApiV1InstagramV2FetchUserFollowingGetErrors = {
@@ -31739,7 +31739,7 @@ export type FetchUserStoriesApiV1InstagramV2FetchUserStoriesGetData = {
          */
         user_id?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_user_stories';
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_stories';
 };
 
 export type FetchUserStoriesApiV1InstagramV2FetchUserStoriesGetErrors = {
@@ -31777,7 +31777,7 @@ export type FetchUserHighlightsApiV1InstagramV2FetchUserHighlightsGetData = {
          */
         user_id?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_user_highlights';
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_highlights';
 };
 
 export type FetchUserHighlightsApiV1InstagramV2FetchUserHighlightsGetErrors = {
@@ -31809,7 +31809,7 @@ export type FetchHighlightStoriesApiV1InstagramV2FetchHighlightStoriesGetData = 
          */
         highlight_id: string;
     };
-    url: '/api/v1/instagram/v2/fetch_highlight_stories';
+    url: '/video-hub/api/v1/instagram/v2/fetch_highlight_stories';
 };
 
 export type FetchHighlightStoriesApiV1InstagramV2FetchHighlightStoriesGetErrors = {
@@ -31853,7 +31853,7 @@ export type FetchUserTaggedPostsApiV1InstagramV2FetchUserTaggedPostsGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_user_tagged_posts';
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_tagged_posts';
 };
 
 export type FetchUserTaggedPostsApiV1InstagramV2FetchUserTaggedPostsGetErrors = {
@@ -31891,7 +31891,7 @@ export type FetchSimilarUsersApiV1InstagramV2FetchSimilarUsersGetData = {
          */
         user_id?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_similar_users';
+    url: '/video-hub/api/v1/instagram/v2/fetch_similar_users';
 };
 
 export type FetchSimilarUsersApiV1InstagramV2FetchSimilarUsersGetErrors = {
@@ -31923,7 +31923,7 @@ export type SearchUsersApiV1InstagramV2SearchUsersGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/instagram/v2/search_users';
+    url: '/video-hub/api/v1/instagram/v2/search_users';
 };
 
 export type SearchUsersApiV1InstagramV2SearchUsersGetErrors = {
@@ -31961,7 +31961,7 @@ export type GeneralSearchApiV1InstagramV2GeneralSearchGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/general_search';
+    url: '/video-hub/api/v1/instagram/v2/general_search';
 };
 
 export type GeneralSearchApiV1InstagramV2GeneralSearchGetErrors = {
@@ -31999,7 +31999,7 @@ export type SearchReelsApiV1InstagramV2SearchReelsGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/search_reels';
+    url: '/video-hub/api/v1/instagram/v2/search_reels';
 };
 
 export type SearchReelsApiV1InstagramV2SearchReelsGetErrors = {
@@ -32031,7 +32031,7 @@ export type SearchMusicApiV1InstagramV2SearchMusicGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/instagram/v2/search_music';
+    url: '/video-hub/api/v1/instagram/v2/search_music';
 };
 
 export type SearchMusicApiV1InstagramV2SearchMusicGetErrors = {
@@ -32063,7 +32063,7 @@ export type SearchHashtagsApiV1InstagramV2SearchHashtagsGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/instagram/v2/search_hashtags';
+    url: '/video-hub/api/v1/instagram/v2/search_hashtags';
 };
 
 export type SearchHashtagsApiV1InstagramV2SearchHashtagsGetErrors = {
@@ -32095,7 +32095,7 @@ export type SearchLocationsApiV1InstagramV2SearchLocationsGetData = {
          */
         keyword: string;
     };
-    url: '/api/v1/instagram/v2/search_locations';
+    url: '/video-hub/api/v1/instagram/v2/search_locations';
 };
 
 export type SearchLocationsApiV1InstagramV2SearchLocationsGetErrors = {
@@ -32133,7 +32133,7 @@ export type SearchByCoordinatesApiV1InstagramV2SearchByCoordinatesGetData = {
          */
         longitude: number;
     };
-    url: '/api/v1/instagram/v2/search_by_coordinates';
+    url: '/video-hub/api/v1/instagram/v2/search_by_coordinates';
 };
 
 export type SearchByCoordinatesApiV1InstagramV2SearchByCoordinatesGetErrors = {
@@ -32165,7 +32165,7 @@ export type FetchPostInfoApiV1InstagramV2FetchPostInfoGetData = {
          */
         code_or_url: string;
     };
-    url: '/api/v1/instagram/v2/fetch_post_info';
+    url: '/video-hub/api/v1/instagram/v2/fetch_post_info';
 };
 
 export type FetchPostInfoApiV1InstagramV2FetchPostInfoGetErrors = {
@@ -32203,7 +32203,7 @@ export type FetchPostLikesApiV1InstagramV2FetchPostLikesGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_post_likes';
+    url: '/video-hub/api/v1/instagram/v2/fetch_post_likes';
 };
 
 export type FetchPostLikesApiV1InstagramV2FetchPostLikesGetErrors = {
@@ -32247,7 +32247,7 @@ export type FetchPostCommentsApiV1InstagramV2FetchPostCommentsGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_post_comments';
+    url: '/video-hub/api/v1/instagram/v2/fetch_post_comments';
 };
 
 export type FetchPostCommentsApiV1InstagramV2FetchPostCommentsGetErrors = {
@@ -32291,7 +32291,7 @@ export type FetchCommentRepliesApiV1InstagramV2FetchCommentRepliesGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_comment_replies';
+    url: '/video-hub/api/v1/instagram/v2/fetch_comment_replies';
 };
 
 export type FetchCommentRepliesApiV1InstagramV2FetchCommentRepliesGetErrors = {
@@ -32329,7 +32329,7 @@ export type FetchMusicPostsApiV1InstagramV2FetchMusicPostsGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_music_posts';
+    url: '/video-hub/api/v1/instagram/v2/fetch_music_posts';
 };
 
 export type FetchMusicPostsApiV1InstagramV2FetchMusicPostsGetErrors = {
@@ -32367,7 +32367,7 @@ export type FetchLocationPostsApiV1InstagramV2FetchLocationPostsGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_location_posts';
+    url: '/video-hub/api/v1/instagram/v2/fetch_location_posts';
 };
 
 export type FetchLocationPostsApiV1InstagramV2FetchLocationPostsGetErrors = {
@@ -32411,7 +32411,7 @@ export type FetchHashtagPostsApiV1InstagramV2FetchHashtagPostsGetData = {
          */
         pagination_token?: string;
     };
-    url: '/api/v1/instagram/v2/fetch_hashtag_posts';
+    url: '/video-hub/api/v1/instagram/v2/fetch_hashtag_posts';
 };
 
 export type FetchHashtagPostsApiV1InstagramV2FetchHashtagPostsGetErrors = {
@@ -32443,7 +32443,7 @@ export type SearchUsersApiV1InstagramV3SearchUsersGetData = {
          */
         query: string;
     };
-    url: '/api/v1/instagram/v3/search_users';
+    url: '/video-hub/api/v1/instagram/v3/search_users';
 };
 
 export type SearchUsersApiV1InstagramV3SearchUsersGetErrors = {
@@ -32475,7 +32475,7 @@ export type SearchHashtagsApiV1InstagramV3SearchHashtagsGetData = {
          */
         query: string;
     };
-    url: '/api/v1/instagram/v3/search_hashtags';
+    url: '/video-hub/api/v1/instagram/v3/search_hashtags';
 };
 
 export type SearchHashtagsApiV1InstagramV3SearchHashtagsGetErrors = {
@@ -32507,7 +32507,7 @@ export type SearchPlacesApiV1InstagramV3SearchPlacesGetData = {
          */
         query: string;
     };
-    url: '/api/v1/instagram/v3/search_places';
+    url: '/video-hub/api/v1/instagram/v3/search_places';
 };
 
 export type SearchPlacesApiV1InstagramV3SearchPlacesGetErrors = {
@@ -32557,7 +32557,7 @@ export type GeneralSearchApiV1InstagramV3GeneralSearchGetData = {
          */
         enable_metadata?: boolean;
     };
-    url: '/api/v1/instagram/v3/general_search';
+    url: '/video-hub/api/v1/instagram/v3/general_search';
 };
 
 export type GeneralSearchApiV1InstagramV3GeneralSearchGetErrors = {
@@ -32595,7 +32595,7 @@ export type GetUserProfileApiV1InstagramV3GetUserProfileGetData = {
          */
         username?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_profile';
+    url: '/video-hub/api/v1/instagram/v3/get_user_profile';
 };
 
 export type GetUserProfileApiV1InstagramV3GetUserProfileGetErrors = {
@@ -32633,7 +32633,7 @@ export type GetUserBriefApiV1InstagramV3GetUserBriefGetData = {
          */
         username: string;
     };
-    url: '/api/v1/instagram/v3/get_user_brief';
+    url: '/video-hub/api/v1/instagram/v3/get_user_brief';
 };
 
 export type GetUserBriefApiV1InstagramV3GetUserBriefGetErrors = {
@@ -32683,7 +32683,7 @@ export type GetUserPostsApiV1InstagramV3GetUserPostsGetData = {
          */
         after?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_posts';
+    url: '/video-hub/api/v1/instagram/v3/get_user_posts';
 };
 
 export type GetUserPostsApiV1InstagramV3GetUserPostsGetErrors = {
@@ -32733,7 +32733,7 @@ export type GetUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGetData = {
          */
         after?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_tagged_posts';
+    url: '/video-hub/api/v1/instagram/v3/get_user_tagged_posts';
 };
 
 export type GetUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGetErrors = {
@@ -32783,7 +32783,7 @@ export type GetUserReelsApiV1InstagramV3GetUserReelsGetData = {
          */
         after?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_reels';
+    url: '/video-hub/api/v1/instagram/v3/get_user_reels';
 };
 
 export type GetUserReelsApiV1InstagramV3GetUserReelsGetErrors = {
@@ -32833,7 +32833,7 @@ export type GetUserHighlightsApiV1InstagramV3GetUserHighlightsGetData = {
          */
         after?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_highlights';
+    url: '/video-hub/api/v1/instagram/v3/get_user_highlights';
 };
 
 export type GetUserHighlightsApiV1InstagramV3GetUserHighlightsGetErrors = {
@@ -32871,7 +32871,7 @@ export type GetHighlightStoriesApiV1InstagramV3GetHighlightStoriesGetData = {
          */
         reel_ids?: string;
     };
-    url: '/api/v1/instagram/v3/get_highlight_stories';
+    url: '/video-hub/api/v1/instagram/v3/get_highlight_stories';
 };
 
 export type GetHighlightStoriesApiV1InstagramV3GetHighlightStoriesGetErrors = {
@@ -32909,7 +32909,7 @@ export type GetUserAboutApiV1InstagramV3GetUserAboutGetData = {
          */
         username?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_about';
+    url: '/video-hub/api/v1/instagram/v3/get_user_about';
 };
 
 export type GetUserAboutApiV1InstagramV3GetUserAboutGetErrors = {
@@ -32947,7 +32947,7 @@ export type GetUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGetData 
          */
         username?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_former_usernames';
+    url: '/video-hub/api/v1/instagram/v3/get_user_former_usernames';
 };
 
 export type GetUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGetErrors = {
@@ -32991,7 +32991,7 @@ export type GetUserStoriesApiV1InstagramV3GetUserStoriesGetData = {
          */
         reel_ids?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_stories';
+    url: '/video-hub/api/v1/instagram/v3/get_user_stories';
 };
 
 export type GetUserStoriesApiV1InstagramV3GetUserStoriesGetErrors = {
@@ -33029,7 +33029,7 @@ export type GetRecommendedReelsApiV1InstagramV3GetRecommendedReelsGetData = {
          */
         after?: string;
     };
-    url: '/api/v1/instagram/v3/get_recommended_reels';
+    url: '/video-hub/api/v1/instagram/v3/get_recommended_reels';
 };
 
 export type GetRecommendedReelsApiV1InstagramV3GetRecommendedReelsGetErrors = {
@@ -33067,7 +33067,7 @@ export type GetPostInfoApiV1InstagramV3GetPostInfoGetData = {
          */
         url?: string;
     };
-    url: '/api/v1/instagram/v3/get_post_info';
+    url: '/video-hub/api/v1/instagram/v3/get_post_info';
 };
 
 export type GetPostInfoApiV1InstagramV3GetPostInfoGetErrors = {
@@ -33105,7 +33105,7 @@ export type GetPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGetData = {
          */
         url?: string;
     };
-    url: '/api/v1/instagram/v3/get_post_info_by_code';
+    url: '/video-hub/api/v1/instagram/v3/get_post_info_by_code';
 };
 
 export type GetPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGetErrors = {
@@ -33161,7 +33161,7 @@ export type GetPostCommentsApiV1InstagramV3GetPostCommentsGetData = {
          */
         sort_order?: string;
     };
-    url: '/api/v1/instagram/v3/get_post_comments';
+    url: '/video-hub/api/v1/instagram/v3/get_post_comments';
 };
 
 export type GetPostCommentsApiV1InstagramV3GetPostCommentsGetErrors = {
@@ -33217,7 +33217,7 @@ export type GetCommentRepliesApiV1InstagramV3GetCommentRepliesGetData = {
          */
         min_id?: string;
     };
-    url: '/api/v1/instagram/v3/get_comment_replies';
+    url: '/video-hub/api/v1/instagram/v3/get_comment_replies';
 };
 
 export type GetCommentRepliesApiV1InstagramV3GetCommentRepliesGetErrors = {
@@ -33261,7 +33261,7 @@ export type GetPostOembedApiV1InstagramV3GetPostOembedGetData = {
          */
         maxwidth?: number;
     };
-    url: '/api/v1/instagram/v3/get_post_oembed';
+    url: '/video-hub/api/v1/instagram/v3/get_post_oembed';
 };
 
 export type GetPostOembedApiV1InstagramV3GetPostOembedGetErrors = {
@@ -33293,7 +33293,7 @@ export type TranslateCommentApiV1InstagramV3TranslateCommentGetData = {
          */
         comment_id: string;
     };
-    url: '/api/v1/instagram/v3/translate_comment';
+    url: '/video-hub/api/v1/instagram/v3/translate_comment';
 };
 
 export type TranslateCommentApiV1InstagramV3TranslateCommentGetErrors = {
@@ -33325,7 +33325,7 @@ export type BulkTranslateCommentsApiV1InstagramV3BulkTranslateCommentsGetData = 
          */
         comment_ids: string;
     };
-    url: '/api/v1/instagram/v3/bulk_translate_comments';
+    url: '/video-hub/api/v1/instagram/v3/bulk_translate_comments';
 };
 
 export type BulkTranslateCommentsApiV1InstagramV3BulkTranslateCommentsGetErrors = {
@@ -33357,7 +33357,7 @@ export type GetExploreApiV1InstagramV3GetExploreGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/instagram/v3/get_explore';
+    url: '/video-hub/api/v1/instagram/v3/get_explore';
 };
 
 export type GetExploreApiV1InstagramV3GetExploreGetErrors = {
@@ -33407,7 +33407,7 @@ export type GetUserFollowingApiV1InstagramV3GetUserFollowingGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_following';
+    url: '/video-hub/api/v1/instagram/v3/get_user_following';
 };
 
 export type GetUserFollowingApiV1InstagramV3GetUserFollowingGetErrors = {
@@ -33457,7 +33457,7 @@ export type GetUserFollowersApiV1InstagramV3GetUserFollowersGetData = {
          */
         max_id?: string;
     };
-    url: '/api/v1/instagram/v3/get_user_followers';
+    url: '/video-hub/api/v1/instagram/v3/get_user_followers';
 };
 
 export type GetUserFollowersApiV1InstagramV3GetUserFollowersGetErrors = {
@@ -33495,7 +33495,7 @@ export type GetLocationInfoApiV1InstagramV3GetLocationInfoGetData = {
          */
         show_nearby?: boolean;
     };
-    url: '/api/v1/instagram/v3/get_location_info';
+    url: '/video-hub/api/v1/instagram/v3/get_location_info';
 };
 
 export type GetLocationInfoApiV1InstagramV3GetLocationInfoGetErrors = {
@@ -33539,7 +33539,7 @@ export type GetLocationPostsApiV1InstagramV3GetLocationPostsGetData = {
          */
         page_size_override?: number;
     };
-    url: '/api/v1/instagram/v3/get_location_posts';
+    url: '/video-hub/api/v1/instagram/v3/get_location_posts';
 };
 
 export type GetLocationPostsApiV1InstagramV3GetLocationPostsGetErrors = {
@@ -33601,7 +33601,7 @@ export type GetVideoInfoApiV1YoutubeWebGetVideoInfoGetData = {
          */
         related?: boolean;
     };
-    url: '/api/v1/youtube/web/get_video_info';
+    url: '/video-hub/api/v1/youtube/web/get_video_info';
 };
 
 export type GetVideoInfoApiV1YoutubeWebGetVideoInfoGetErrors = {
@@ -33633,7 +33633,7 @@ export type GetVideoInfoV2ApiV1YoutubeWebGetVideoInfoV2GetData = {
          */
         video_id: string;
     };
-    url: '/api/v1/youtube/web/get_video_info_v2';
+    url: '/video-hub/api/v1/youtube/web/get_video_info_v2';
 };
 
 export type GetVideoInfoV2ApiV1YoutubeWebGetVideoInfoV2GetErrors = {
@@ -33671,7 +33671,7 @@ export type GetVideoInfoV3ApiV1YoutubeWebGetVideoInfoV3GetData = {
          */
         language_code?: string;
     };
-    url: '/api/v1/youtube/web/get_video_info_v3';
+    url: '/video-hub/api/v1/youtube/web/get_video_info_v3';
 };
 
 export type GetVideoInfoV3ApiV1YoutubeWebGetVideoInfoV3GetErrors = {
@@ -33719,7 +33719,7 @@ export type ApiGetVideoSubtitlesApiV1YoutubeWebGetVideoSubtitlesGetData = {
          */
         target_lang?: string | null;
     };
-    url: '/api/v1/youtube/web/get_video_subtitles';
+    url: '/video-hub/api/v1/youtube/web/get_video_subtitles';
 };
 
 export type ApiGetVideoSubtitlesApiV1YoutubeWebGetVideoSubtitlesGetErrors = {
@@ -33779,7 +33779,7 @@ export type GetVideoCommentsApiV1YoutubeWebGetVideoCommentsGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web/get_video_comments';
+    url: '/video-hub/api/v1/youtube/web/get_video_comments';
 };
 
 export type GetVideoCommentsApiV1YoutubeWebGetVideoCommentsGetErrors = {
@@ -33829,7 +33829,7 @@ export type GetVideoCommentRepliesApiV1YoutubeWebGetVideoCommentRepliesGetData =
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web/get_video_comment_replies';
+    url: '/video-hub/api/v1/youtube/web/get_video_comment_replies';
 };
 
 export type GetVideoCommentRepliesApiV1YoutubeWebGetVideoCommentRepliesGetErrors = {
@@ -33885,7 +33885,7 @@ export type GetChannelDescriptionApiV1YoutubeWebGetChannelDescriptionGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web/get_channel_description';
+    url: '/video-hub/api/v1/youtube/web/get_channel_description';
 };
 
 export type GetChannelDescriptionApiV1YoutubeWebGetChannelDescriptionGetErrors = {
@@ -33923,7 +33923,7 @@ export type GetRelateVideoApiV1YoutubeWebGetRelateVideoGetData = {
          */
         continuation_token?: string;
     };
-    url: '/api/v1/youtube/web/get_relate_video';
+    url: '/video-hub/api/v1/youtube/web/get_relate_video';
 };
 
 export type GetRelateVideoApiV1YoutubeWebGetRelateVideoGetErrors = {
@@ -33979,7 +33979,7 @@ export type SearchVideoApiV1YoutubeWebSearchVideoGetData = {
          */
         continuation_token?: string;
     };
-    url: '/api/v1/youtube/web/search_video';
+    url: '/video-hub/api/v1/youtube/web/search_video';
 };
 
 export type SearchVideoApiV1YoutubeWebSearchVideoGetErrors = {
@@ -34065,7 +34065,7 @@ export type GetGeneralSearchApiV1YoutubeWebGetGeneralSearchGetData = {
          */
         continuation_token?: string | null;
     };
-    url: '/api/v1/youtube/web/get_general_search';
+    url: '/video-hub/api/v1/youtube/web/get_general_search';
 };
 
 export type GetGeneralSearchApiV1YoutubeWebGetGeneralSearchGetErrors = {
@@ -34139,7 +34139,7 @@ export type GetShortsSearchApiV1YoutubeWebGetShortsSearchGetData = {
          */
         filter_mixed_content?: boolean;
     };
-    url: '/api/v1/youtube/web/get_shorts_search';
+    url: '/video-hub/api/v1/youtube/web/get_shorts_search';
 };
 
 export type GetShortsSearchApiV1YoutubeWebGetShortsSearchGetErrors = {
@@ -34171,7 +34171,7 @@ export type GetChannelIdApiV1YoutubeWebGetChannelIdGetData = {
          */
         channel_name: string;
     };
-    url: '/api/v1/youtube/web/get_channel_id';
+    url: '/video-hub/api/v1/youtube/web/get_channel_id';
 };
 
 export type GetChannelIdApiV1YoutubeWebGetChannelIdGetErrors = {
@@ -34203,7 +34203,7 @@ export type GetChannelIdV2ApiV1YoutubeWebGetChannelIdV2GetData = {
          */
         channel_url: string;
     };
-    url: '/api/v1/youtube/web/get_channel_id_v2';
+    url: '/video-hub/api/v1/youtube/web/get_channel_id_v2';
 };
 
 export type GetChannelIdV2ApiV1YoutubeWebGetChannelIdV2GetErrors = {
@@ -34235,7 +34235,7 @@ export type GetChannelUrlApiV1YoutubeWebGetChannelUrlGetData = {
          */
         channel_id: string;
     };
-    url: '/api/v1/youtube/web/get_channel_url';
+    url: '/video-hub/api/v1/youtube/web/get_channel_url';
 };
 
 export type GetChannelUrlApiV1YoutubeWebGetChannelUrlGetErrors = {
@@ -34267,7 +34267,7 @@ export type GetChannelInfoApiV1YoutubeWebGetChannelInfoGetData = {
          */
         channel_id: string;
     };
-    url: '/api/v1/youtube/web/get_channel_info';
+    url: '/video-hub/api/v1/youtube/web/get_channel_info';
 };
 
 export type GetChannelInfoApiV1YoutubeWebGetChannelInfoGetErrors = {
@@ -34305,7 +34305,7 @@ export type GetChannelVideosApiV1YoutubeWebGetChannelVideosGetData = {
          */
         continuation_token?: string;
     };
-    url: '/api/v1/youtube/web/get_channel_videos';
+    url: '/video-hub/api/v1/youtube/web/get_channel_videos';
 };
 
 export type GetChannelVideosApiV1YoutubeWebGetChannelVideosGetErrors = {
@@ -34361,7 +34361,7 @@ export type GetChannelVideosV2ApiV1YoutubeWebGetChannelVideosV2GetData = {
          */
         nextToken?: string;
     };
-    url: '/api/v1/youtube/web/get_channel_videos_v2';
+    url: '/video-hub/api/v1/youtube/web/get_channel_videos_v2';
 };
 
 export type GetChannelVideosV2ApiV1YoutubeWebGetChannelVideosV2GetErrors = {
@@ -34417,7 +34417,7 @@ export type GetChannelVideosV3ApiV1YoutubeWebGetChannelVideosV3GetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web/get_channel_videos_v3';
+    url: '/video-hub/api/v1/youtube/web/get_channel_videos_v3';
 };
 
 export type GetChannelVideosV3ApiV1YoutubeWebGetChannelVideosV3GetErrors = {
@@ -34455,7 +34455,7 @@ export type GetChannelShortVideosApiV1YoutubeWebGetChannelShortVideosGetData = {
          */
         continuation_token?: string;
     };
-    url: '/api/v1/youtube/web/get_channel_short_videos';
+    url: '/video-hub/api/v1/youtube/web/get_channel_short_videos';
 };
 
 export type GetChannelShortVideosApiV1YoutubeWebGetChannelShortVideosGetErrors = {
@@ -34511,7 +34511,7 @@ export type SearchChannelApiV1YoutubeWebSearchChannelGetData = {
          */
         continuation_token?: string;
     };
-    url: '/api/v1/youtube/web/search_channel';
+    url: '/video-hub/api/v1/youtube/web/search_channel';
 };
 
 export type SearchChannelApiV1YoutubeWebSearchChannelGetErrors = {
@@ -34555,7 +34555,7 @@ export type GetTrendingVideosApiV1YoutubeWebGetTrendingVideosGetData = {
          */
         section?: string;
     };
-    url: '/api/v1/youtube/web/get_trending_videos';
+    url: '/video-hub/api/v1/youtube/web/get_trending_videos';
 };
 
 export type GetTrendingVideosApiV1YoutubeWebGetTrendingVideosGetErrors = {
@@ -34599,7 +34599,7 @@ export type GetVideoInfoApiV1YoutubeWebV2GetVideoInfoGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/get_video_info';
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_info';
 };
 
 export type GetVideoInfoApiV1YoutubeWebV2GetVideoInfoGetErrors = {
@@ -34659,7 +34659,7 @@ export type GetVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/get_video_comments';
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_comments';
 };
 
 export type GetVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGetErrors = {
@@ -34709,7 +34709,7 @@ export type GetVideoCommentRepliesApiV1YoutubeWebV2GetVideoCommentRepliesGetData
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/get_video_comment_replies';
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_comment_replies';
 };
 
 export type GetVideoCommentRepliesApiV1YoutubeWebV2GetVideoCommentRepliesGetErrors = {
@@ -34765,7 +34765,7 @@ export type GetChannelDescriptionApiV1YoutubeWebV2GetChannelDescriptionGetData =
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/get_channel_description';
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_description';
 };
 
 export type GetChannelDescriptionApiV1YoutubeWebV2GetChannelDescriptionGetErrors = {
@@ -34851,7 +34851,7 @@ export type GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetData = {
          */
         continuation_token?: string | null;
     };
-    url: '/api/v1/youtube/web_v2/get_general_search';
+    url: '/video-hub/api/v1/youtube/web_v2/get_general_search';
 };
 
 export type GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetErrors = {
@@ -34925,7 +34925,7 @@ export type GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetData = {
          */
         filter_mixed_content?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/get_shorts_search';
+    url: '/video-hub/api/v1/youtube/web_v2/get_shorts_search';
 };
 
 export type GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetErrors = {
@@ -34957,7 +34957,7 @@ export type GetChannelIdApiV1YoutubeWebV2GetChannelIdGetData = {
          */
         channel_url: string;
     };
-    url: '/api/v1/youtube/web_v2/get_channel_id';
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_id';
 };
 
 export type GetChannelIdApiV1YoutubeWebV2GetChannelIdGetErrors = {
@@ -34989,7 +34989,7 @@ export type GetChannelUrlApiV1YoutubeWebV2GetChannelUrlGetData = {
          */
         channel_id: string;
     };
-    url: '/api/v1/youtube/web_v2/get_channel_url';
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_url';
 };
 
 export type GetChannelUrlApiV1YoutubeWebV2GetChannelUrlGetErrors = {
@@ -35045,7 +35045,7 @@ export type GetChannelVideosApiV1YoutubeWebV2GetChannelVideosGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/get_channel_videos';
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_videos';
 };
 
 export type GetChannelVideosApiV1YoutubeWebV2GetChannelVideosGetErrors = {
@@ -35083,7 +35083,7 @@ export type GetVideoStreamsApiV1YoutubeWebV2GetVideoStreamsGetData = {
          */
         video_url?: string;
     };
-    url: '/api/v1/youtube/web_v2/get_video_streams';
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_streams';
 };
 
 export type GetVideoStreamsApiV1YoutubeWebV2GetVideoStreamsGetErrors = {
@@ -35121,7 +35121,7 @@ export type GetVideoStreamsV2ApiV1YoutubeWebV2GetVideoStreamsV2GetData = {
          */
         video_url?: string;
     };
-    url: '/api/v1/youtube/web_v2/get_video_streams_v2';
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_streams_v2';
 };
 
 export type GetVideoStreamsV2ApiV1YoutubeWebV2GetVideoStreamsV2GetErrors = {
@@ -35165,7 +35165,7 @@ export type GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetData = {
          */
         itag: number;
     };
-    url: '/api/v1/youtube/web_v2/get_signed_stream_url';
+    url: '/video-hub/api/v1/youtube/web_v2/get_signed_stream_url';
 };
 
 export type GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetErrors = {
@@ -35209,7 +35209,7 @@ export type GetRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/get_related_videos';
+    url: '/video-hub/api/v1/youtube/web_v2/get_related_videos';
 };
 
 export type GetRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGetErrors = {
@@ -35259,7 +35259,7 @@ export type GetChannelShortsApiV1YoutubeWebV2GetChannelShortsGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/get_channel_shorts';
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_shorts';
 };
 
 export type GetChannelShortsApiV1YoutubeWebV2GetChannelShortsGetErrors = {
@@ -35303,7 +35303,7 @@ export type GetSearchSuggestionsApiV1YoutubeWebV2GetSearchSuggestionsGetData = {
          */
         region?: string;
     };
-    url: '/api/v1/youtube/web_v2/get_search_suggestions';
+    url: '/video-hub/api/v1/youtube/web_v2/get_search_suggestions';
 };
 
 export type GetSearchSuggestionsApiV1YoutubeWebV2GetSearchSuggestionsGetErrors = {
@@ -35347,7 +35347,7 @@ export type SearchChannelsApiV1YoutubeWebV2SearchChannelsGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/youtube/web_v2/search_channels';
+    url: '/video-hub/api/v1/youtube/web_v2/search_channels';
 };
 
 export type SearchChannelsApiV1YoutubeWebV2SearchChannelsGetErrors = {
@@ -35439,7 +35439,7 @@ export type GetUserProfileApiV1LinkedinWebGetUserProfileGetData = {
          */
         include_bio?: boolean | null;
     };
-    url: '/api/v1/linkedin/web/get_user_profile';
+    url: '/video-hub/api/v1/linkedin/web/get_user_profile';
 };
 
 export type GetUserProfileApiV1LinkedinWebGetUserProfileGetErrors = {
@@ -35483,7 +35483,7 @@ export type GetUserPostsApiV1LinkedinWebGetUserPostsGetData = {
          */
         pagination_token?: string | null;
     };
-    url: '/api/v1/linkedin/web/get_user_posts';
+    url: '/video-hub/api/v1/linkedin/web/get_user_posts';
 };
 
 export type GetUserPostsApiV1LinkedinWebGetUserPostsGetErrors = {
@@ -35527,7 +35527,7 @@ export type GetUserCommentsApiV1LinkedinWebGetUserCommentsGetData = {
          */
         pagination_token?: string | null;
     };
-    url: '/api/v1/linkedin/web/get_user_comments';
+    url: '/video-hub/api/v1/linkedin/web/get_user_comments';
 };
 
 export type GetUserCommentsApiV1LinkedinWebGetUserCommentsGetErrors = {
@@ -35559,7 +35559,7 @@ export type GetUserContactApiV1LinkedinWebGetUserContactGetData = {
          */
         username: string;
     };
-    url: '/api/v1/linkedin/web/get_user_contact';
+    url: '/video-hub/api/v1/linkedin/web/get_user_contact';
 };
 
 export type GetUserContactApiV1LinkedinWebGetUserContactGetErrors = {
@@ -35609,7 +35609,7 @@ export type GetUserRecommendationsApiV1LinkedinWebGetUserRecommendationsGetData 
          */
         pagination_token?: string | null;
     };
-    url: '/api/v1/linkedin/web/get_user_recommendations';
+    url: '/video-hub/api/v1/linkedin/web/get_user_recommendations';
 };
 
 export type GetUserRecommendationsApiV1LinkedinWebGetUserRecommendationsGetErrors = {
@@ -35653,7 +35653,7 @@ export type GetUserVideosApiV1LinkedinWebGetUserVideosGetData = {
          */
         pagination_token?: string | null;
     };
-    url: '/api/v1/linkedin/web/get_user_videos';
+    url: '/video-hub/api/v1/linkedin/web/get_user_videos';
 };
 
 export type GetUserVideosApiV1LinkedinWebGetUserVideosGetErrors = {
@@ -35697,7 +35697,7 @@ export type GetUserImagesApiV1LinkedinWebGetUserImagesGetData = {
          */
         pagination_token?: string | null;
     };
-    url: '/api/v1/linkedin/web/get_user_images';
+    url: '/video-hub/api/v1/linkedin/web/get_user_images';
 };
 
 export type GetUserImagesApiV1LinkedinWebGetUserImagesGetErrors = {
@@ -35735,7 +35735,7 @@ export type GetCompanyProfileApiV1LinkedinWebGetCompanyProfileGetData = {
          */
         company_id?: string | null;
     };
-    url: '/api/v1/linkedin/web/get_company_profile';
+    url: '/video-hub/api/v1/linkedin/web/get_company_profile';
 };
 
 export type GetCompanyProfileApiV1LinkedinWebGetCompanyProfileGetErrors = {
@@ -35773,7 +35773,7 @@ export type GetCompanyPeopleApiV1LinkedinWebGetCompanyPeopleGetData = {
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_company_people';
+    url: '/video-hub/api/v1/linkedin/web/get_company_people';
 };
 
 export type GetCompanyPeopleApiV1LinkedinWebGetCompanyPeopleGetErrors = {
@@ -35817,7 +35817,7 @@ export type GetCompanyPostsApiV1LinkedinWebGetCompanyPostsGetData = {
          */
         sort_by?: string | null;
     };
-    url: '/api/v1/linkedin/web/get_company_posts';
+    url: '/video-hub/api/v1/linkedin/web/get_company_posts';
 };
 
 export type GetCompanyPostsApiV1LinkedinWebGetCompanyPostsGetErrors = {
@@ -35903,7 +35903,7 @@ export type GetCompanyJobsApiV1LinkedinWebGetCompanyJobsGetData = {
          */
         fair_chance_employer?: boolean | null;
     };
-    url: '/api/v1/linkedin/web/get_company_jobs';
+    url: '/video-hub/api/v1/linkedin/web/get_company_jobs';
 };
 
 export type GetCompanyJobsApiV1LinkedinWebGetCompanyJobsGetErrors = {
@@ -35935,7 +35935,7 @@ export type GetCompanyJobCountApiV1LinkedinWebGetCompanyJobCountGetData = {
          */
         company_id: string;
     };
-    url: '/api/v1/linkedin/web/get_company_job_count';
+    url: '/video-hub/api/v1/linkedin/web/get_company_job_count';
 };
 
 export type GetCompanyJobCountApiV1LinkedinWebGetCompanyJobCountGetErrors = {
@@ -35967,7 +35967,7 @@ export type GetUserAboutApiV1LinkedinWebGetUserAboutGetData = {
          */
         urn: string;
     };
-    url: '/api/v1/linkedin/web/get_user_about';
+    url: '/video-hub/api/v1/linkedin/web/get_user_about';
 };
 
 export type GetUserAboutApiV1LinkedinWebGetUserAboutGetErrors = {
@@ -35999,7 +35999,7 @@ export type GetUserFollowerAndConnectionApiV1LinkedinWebGetUserFollowerAndConnec
          */
         username: string;
     };
-    url: '/api/v1/linkedin/web/get_user_follower_and_connection';
+    url: '/video-hub/api/v1/linkedin/web/get_user_follower_and_connection';
 };
 
 export type GetUserFollowerAndConnectionApiV1LinkedinWebGetUserFollowerAndConnectionGetErrors = {
@@ -36037,7 +36037,7 @@ export type GetUserExperienceApiV1LinkedinWebGetUserExperienceGetData = {
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_user_experience';
+    url: '/video-hub/api/v1/linkedin/web/get_user_experience';
 };
 
 export type GetUserExperienceApiV1LinkedinWebGetUserExperienceGetErrors = {
@@ -36075,7 +36075,7 @@ export type GetUserSkillsApiV1LinkedinWebGetUserSkillsGetData = {
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_user_skills';
+    url: '/video-hub/api/v1/linkedin/web/get_user_skills';
 };
 
 export type GetUserSkillsApiV1LinkedinWebGetUserSkillsGetErrors = {
@@ -36113,7 +36113,7 @@ export type GetUserEducationsApiV1LinkedinWebGetUserEducationsGetData = {
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_user_educations';
+    url: '/video-hub/api/v1/linkedin/web/get_user_educations';
 };
 
 export type GetUserEducationsApiV1LinkedinWebGetUserEducationsGetErrors = {
@@ -36151,7 +36151,7 @@ export type GetUserPublicationsApiV1LinkedinWebGetUserPublicationsGetData = {
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_user_publications';
+    url: '/video-hub/api/v1/linkedin/web/get_user_publications';
 };
 
 export type GetUserPublicationsApiV1LinkedinWebGetUserPublicationsGetErrors = {
@@ -36189,7 +36189,7 @@ export type GetUserCertificationsApiV1LinkedinWebGetUserCertificationsGetData = 
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_user_certifications';
+    url: '/video-hub/api/v1/linkedin/web/get_user_certifications';
 };
 
 export type GetUserCertificationsApiV1LinkedinWebGetUserCertificationsGetErrors = {
@@ -36227,7 +36227,7 @@ export type GetUserHonorsApiV1LinkedinWebGetUserHonorsGetData = {
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_user_honors';
+    url: '/video-hub/api/v1/linkedin/web/get_user_honors';
 };
 
 export type GetUserHonorsApiV1LinkedinWebGetUserHonorsGetErrors = {
@@ -36265,7 +36265,7 @@ export type GetUserInterestsGroupsApiV1LinkedinWebGetUserInterestsGroupsGetData 
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_user_interests_groups';
+    url: '/video-hub/api/v1/linkedin/web/get_user_interests_groups';
 };
 
 export type GetUserInterestsGroupsApiV1LinkedinWebGetUserInterestsGroupsGetErrors = {
@@ -36303,7 +36303,7 @@ export type GetUserInterestsCompaniesApiV1LinkedinWebGetUserInterestsCompaniesGe
          */
         page?: number | null;
     };
-    url: '/api/v1/linkedin/web/get_user_interests_companies';
+    url: '/video-hub/api/v1/linkedin/web/get_user_interests_companies';
 };
 
 export type GetUserInterestsCompaniesApiV1LinkedinWebGetUserInterestsCompaniesGetErrors = {
@@ -36341,7 +36341,7 @@ export type GetJobDetailApiV1LinkedinWebGetJobDetailGetData = {
          */
         include_skills?: boolean | null;
     };
-    url: '/api/v1/linkedin/web/get_job_detail';
+    url: '/video-hub/api/v1/linkedin/web/get_job_detail';
 };
 
 export type GetJobDetailApiV1LinkedinWebGetJobDetailGetErrors = {
@@ -36445,7 +36445,7 @@ export type SearchJobsApiV1LinkedinWebSearchJobsGetData = {
          */
         fair_chance_employer?: boolean | null;
     };
-    url: '/api/v1/linkedin/web/search_jobs';
+    url: '/video-hub/api/v1/linkedin/web/search_jobs';
 };
 
 export type SearchJobsApiV1LinkedinWebSearchJobsGetErrors = {
@@ -36543,7 +36543,7 @@ export type SearchPeopleApiV1LinkedinWebSearchPeopleGetData = {
          */
         service_category?: string | null;
     };
-    url: '/api/v1/linkedin/web/search_people';
+    url: '/video-hub/api/v1/linkedin/web/search_people';
 };
 
 export type SearchPeopleApiV1LinkedinWebSearchPeopleGetErrors = {
@@ -36575,7 +36575,7 @@ export type FetchOneVideoApiV1BilibiliWebFetchOneVideoGetData = {
          */
         bv_id: string;
     };
-    url: '/api/v1/bilibili/web/fetch_one_video';
+    url: '/video-hub/api/v1/bilibili/web/fetch_one_video';
 };
 
 export type FetchOneVideoApiV1BilibiliWebFetchOneVideoGetErrors = {
@@ -36613,7 +36613,7 @@ export type FetchOneVideoV2ApiV1BilibiliWebFetchOneVideoV2GetData = {
          */
         c_id: string;
     };
-    url: '/api/v1/bilibili/web/fetch_one_video_v2';
+    url: '/video-hub/api/v1/bilibili/web/fetch_one_video_v2';
 };
 
 export type FetchOneVideoV2ApiV1BilibiliWebFetchOneVideoV2GetErrors = {
@@ -36645,7 +36645,7 @@ export type FetchOneVideoV3ApiV1BilibiliWebFetchOneVideoV3GetData = {
          */
         url: string;
     };
-    url: '/api/v1/bilibili/web/fetch_one_video_v3';
+    url: '/video-hub/api/v1/bilibili/web/fetch_one_video_v3';
 };
 
 export type FetchOneVideoV3ApiV1BilibiliWebFetchOneVideoV3GetErrors = {
@@ -36677,7 +36677,7 @@ export type FetchVideoDetailApiV1BilibiliWebFetchVideoDetailGetData = {
          */
         aid: string;
     };
-    url: '/api/v1/bilibili/web/fetch_video_detail';
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_detail';
 };
 
 export type FetchVideoDetailApiV1BilibiliWebFetchVideoDetailGetErrors = {
@@ -36709,7 +36709,7 @@ export type FetchVideoPlayInfoApiV1BilibiliWebFetchVideoPlayInfoGetData = {
          */
         url: string;
     };
-    url: '/api/v1/bilibili/web/fetch_video_play_info';
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_play_info';
 };
 
 export type FetchVideoPlayInfoApiV1BilibiliWebFetchVideoPlayInfoGetErrors = {
@@ -36747,7 +36747,7 @@ export type FetchVideoSubtitleApiV1BilibiliWebFetchVideoSubtitleGetData = {
          */
         c_id: string;
     };
-    url: '/api/v1/bilibili/web/fetch_video_subtitle';
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_subtitle';
 };
 
 export type FetchVideoSubtitleApiV1BilibiliWebFetchVideoSubtitleGetErrors = {
@@ -36779,7 +36779,7 @@ export type FetchHotSearchApiV1BilibiliWebFetchHotSearchGetData = {
          */
         limit: unknown;
     };
-    url: '/api/v1/bilibili/web/fetch_hot_search';
+    url: '/video-hub/api/v1/bilibili/web/fetch_hot_search';
 };
 
 export type FetchHotSearchApiV1BilibiliWebFetchHotSearchGetErrors = {
@@ -36847,7 +36847,7 @@ export type FetchGeneralSearchApiV1BilibiliWebFetchGeneralSearchGetData = {
          */
         pubtime_end_s?: number;
     };
-    url: '/api/v1/bilibili/web/fetch_general_search';
+    url: '/video-hub/api/v1/bilibili/web/fetch_general_search';
 };
 
 export type FetchGeneralSearchApiV1BilibiliWebFetchGeneralSearchGetErrors = {
@@ -36885,7 +36885,7 @@ export type FetchOneVideoApiV1BilibiliWebFetchVideoPlayurlGetData = {
          */
         cid: string;
     };
-    url: '/api/v1/bilibili/web/fetch_video_playurl';
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_playurl';
 };
 
 export type FetchOneVideoApiV1BilibiliWebFetchVideoPlayurlGetErrors = {
@@ -36910,7 +36910,7 @@ export type FetchVipVideoPlayurlApiV1BilibiliWebFetchVipVideoPlayurlPostData = {
     body: VipVideoModel;
     path?: never;
     query?: never;
-    url: '/api/v1/bilibili/web/fetch_vip_video_playurl';
+    url: '/video-hub/api/v1/bilibili/web/fetch_vip_video_playurl';
 };
 
 export type FetchVipVideoPlayurlApiV1BilibiliWebFetchVipVideoPlayurlPostErrors = {
@@ -36954,7 +36954,7 @@ export type FetchUserPostVideosApiV1BilibiliWebFetchUserPostVideosGetData = {
          */
         order?: string;
     };
-    url: '/api/v1/bilibili/web/fetch_user_post_videos';
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_post_videos';
 };
 
 export type FetchUserPostVideosApiV1BilibiliWebFetchUserPostVideosGetErrors = {
@@ -36986,7 +36986,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchCollectFoldersGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/bilibili/web/fetch_collect_folders';
+    url: '/video-hub/api/v1/bilibili/web/fetch_collect_folders';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchCollectFoldersGetErrors = {
@@ -37024,7 +37024,7 @@ export type FetchUserCollectionVideosApiV1BilibiliWebFetchUserCollectionVideosGe
          */
         pn?: number;
     };
-    url: '/api/v1/bilibili/web/fetch_user_collection_videos';
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_collection_videos';
 };
 
 export type FetchUserCollectionVideosApiV1BilibiliWebFetchUserCollectionVideosGetErrors = {
@@ -37056,7 +37056,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchUserProfileGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/bilibili/web/fetch_user_profile';
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_profile';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchUserProfileGetErrors = {
@@ -37088,7 +37088,7 @@ export type FetchUserUpStatApiV1BilibiliWebFetchUserUpStatGetData = {
          */
         uid: string;
     };
-    url: '/api/v1/bilibili/web/fetch_user_up_stat';
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_up_stat';
 };
 
 export type FetchUserUpStatApiV1BilibiliWebFetchUserUpStatGetErrors = {
@@ -37120,7 +37120,7 @@ export type FetchUserRelationStatApiV1BilibiliWebFetchUserRelationStatGetData = 
          */
         uid: string;
     };
-    url: '/api/v1/bilibili/web/fetch_user_relation_stat';
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_relation_stat';
 };
 
 export type FetchUserRelationStatApiV1BilibiliWebFetchUserRelationStatGetErrors = {
@@ -37152,7 +37152,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchComPopularGetData = {
          */
         pn?: number;
     };
-    url: '/api/v1/bilibili/web/fetch_com_popular';
+    url: '/video-hub/api/v1/bilibili/web/fetch_com_popular';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchComPopularGetErrors = {
@@ -37190,7 +37190,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchVideoCommentsGetData = {
          */
         pn?: number;
     };
-    url: '/api/v1/bilibili/web/fetch_video_comments';
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_comments';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchVideoCommentsGetErrors = {
@@ -37234,7 +37234,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchCommentReplyGetData = {
          */
         rpid: string;
     };
-    url: '/api/v1/bilibili/web/fetch_comment_reply';
+    url: '/video-hub/api/v1/bilibili/web/fetch_comment_reply';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchCommentReplyGetErrors = {
@@ -37272,7 +37272,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchUserDynamicGetData = {
          */
         offset?: string;
     };
-    url: '/api/v1/bilibili/web/fetch_user_dynamic';
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_dynamic';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchUserDynamicGetErrors = {
@@ -37304,7 +37304,7 @@ export type FetchDynamicDetailApiV1BilibiliWebFetchDynamicDetailGetData = {
          */
         dynamic_id: string;
     };
-    url: '/api/v1/bilibili/web/fetch_dynamic_detail';
+    url: '/video-hub/api/v1/bilibili/web/fetch_dynamic_detail';
 };
 
 export type FetchDynamicDetailApiV1BilibiliWebFetchDynamicDetailGetErrors = {
@@ -37336,7 +37336,7 @@ export type FetchDynamicDetailV2ApiV1BilibiliWebFetchDynamicDetailV2GetData = {
          */
         dynamic_id: string;
     };
-    url: '/api/v1/bilibili/web/fetch_dynamic_detail_v2';
+    url: '/video-hub/api/v1/bilibili/web/fetch_dynamic_detail_v2';
 };
 
 export type FetchDynamicDetailV2ApiV1BilibiliWebFetchDynamicDetailV2GetErrors = {
@@ -37368,7 +37368,7 @@ export type FetchOneVideoApiV1BilibiliWebFetchVideoDanmakuGetData = {
          */
         cid: string;
     };
-    url: '/api/v1/bilibili/web/fetch_video_danmaku';
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_danmaku';
 };
 
 export type FetchOneVideoApiV1BilibiliWebFetchVideoDanmakuGetErrors = {
@@ -37400,7 +37400,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchLiveRoomDetailGetData = {
          */
         room_id: string;
     };
-    url: '/api/v1/bilibili/web/fetch_live_room_detail';
+    url: '/video-hub/api/v1/bilibili/web/fetch_live_room_detail';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchLiveRoomDetailGetErrors = {
@@ -37432,7 +37432,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchLiveVideosGetData = {
          */
         room_id: string;
     };
-    url: '/api/v1/bilibili/web/fetch_live_videos';
+    url: '/video-hub/api/v1/bilibili/web/fetch_live_videos';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchLiveVideosGetErrors = {
@@ -37470,7 +37470,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchLiveStreamersGetData = {
          */
         pn?: number;
     };
-    url: '/api/v1/bilibili/web/fetch_live_streamers';
+    url: '/video-hub/api/v1/bilibili/web/fetch_live_streamers';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchLiveStreamersGetErrors = {
@@ -37495,7 +37495,7 @@ export type FetchCollectFoldersApiV1BilibiliWebFetchAllLiveAreasGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/bilibili/web/fetch_all_live_areas';
+    url: '/video-hub/api/v1/bilibili/web/fetch_all_live_areas';
 };
 
 export type FetchCollectFoldersApiV1BilibiliWebFetchAllLiveAreasGetResponses = {
@@ -37518,7 +37518,7 @@ export type FetchOneVideoApiV1BilibiliWebBvToAidGetData = {
          */
         bv_id: string;
     };
-    url: '/api/v1/bilibili/web/bv_to_aid';
+    url: '/video-hub/api/v1/bilibili/web/bv_to_aid';
 };
 
 export type FetchOneVideoApiV1BilibiliWebBvToAidGetErrors = {
@@ -37550,7 +37550,7 @@ export type FetchOneVideoApiV1BilibiliWebFetchVideoPartsGetData = {
          */
         bv_id: string;
     };
-    url: '/api/v1/bilibili/web/fetch_video_parts';
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_parts';
 };
 
 export type FetchOneVideoApiV1BilibiliWebFetchVideoPartsGetErrors = {
@@ -37582,7 +37582,7 @@ export type FetchGetUserIdApiV1BilibiliWebFetchGetUserIdGetData = {
          */
         share_link: string;
     };
-    url: '/api/v1/bilibili/web/fetch_get_user_id';
+    url: '/video-hub/api/v1/bilibili/web/fetch_get_user_id';
 };
 
 export type FetchGetUserIdApiV1BilibiliWebFetchGetUserIdGetErrors = {
@@ -37620,7 +37620,7 @@ export type FetchOneVideoApiV1BilibiliAppFetchOneVideoGetData = {
          */
         bv_id?: string;
     };
-    url: '/api/v1/bilibili/app/fetch_one_video';
+    url: '/video-hub/api/v1/bilibili/app/fetch_one_video';
 };
 
 export type FetchOneVideoApiV1BilibiliAppFetchOneVideoGetErrors = {
@@ -37670,7 +37670,7 @@ export type FetchVideoCommentsApiV1BilibiliAppFetchVideoCommentsGetData = {
          */
         next_offset?: number;
     };
-    url: '/api/v1/bilibili/app/fetch_video_comments';
+    url: '/video-hub/api/v1/bilibili/app/fetch_video_comments';
 };
 
 export type FetchVideoCommentsApiV1BilibiliAppFetchVideoCommentsGetErrors = {
@@ -37726,7 +37726,7 @@ export type FetchReplyDetailApiV1BilibiliAppFetchReplyDetailGetData = {
          */
         ps?: number;
     };
-    url: '/api/v1/bilibili/app/fetch_reply_detail';
+    url: '/video-hub/api/v1/bilibili/app/fetch_reply_detail';
 };
 
 export type FetchReplyDetailApiV1BilibiliAppFetchReplyDetailGetErrors = {
@@ -37776,7 +37776,7 @@ export type FetchUserVideosApiV1BilibiliAppFetchUserVideosGetData = {
          */
         ps?: number;
     };
-    url: '/api/v1/bilibili/app/fetch_user_videos';
+    url: '/video-hub/api/v1/bilibili/app/fetch_user_videos';
 };
 
 export type FetchUserVideosApiV1BilibiliAppFetchUserVideosGetErrors = {
@@ -37808,7 +37808,7 @@ export type FetchUserInfoApiV1BilibiliAppFetchUserInfoGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/bilibili/app/fetch_user_info';
+    url: '/video-hub/api/v1/bilibili/app/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1BilibiliAppFetchUserInfoGetErrors = {
@@ -37852,7 +37852,7 @@ export type FetchHomeFeedApiV1BilibiliAppFetchHomeFeedGetData = {
          */
         pull?: boolean;
     };
-    url: '/api/v1/bilibili/app/fetch_home_feed';
+    url: '/video-hub/api/v1/bilibili/app/fetch_home_feed';
 };
 
 export type FetchHomeFeedApiV1BilibiliAppFetchHomeFeedGetErrors = {
@@ -37890,7 +37890,7 @@ export type FetchPopularFeedApiV1BilibiliAppFetchPopularFeedGetData = {
          */
         last_param?: string;
     };
-    url: '/api/v1/bilibili/app/fetch_popular_feed';
+    url: '/video-hub/api/v1/bilibili/app/fetch_popular_feed';
 };
 
 export type FetchPopularFeedApiV1BilibiliAppFetchPopularFeedGetErrors = {
@@ -37940,7 +37940,7 @@ export type FetchSearchAllApiV1BilibiliAppFetchSearchAllGetData = {
          */
         order?: number;
     };
-    url: '/api/v1/bilibili/app/fetch_search_all';
+    url: '/video-hub/api/v1/bilibili/app/fetch_search_all';
 };
 
 export type FetchSearchAllApiV1BilibiliAppFetchSearchAllGetErrors = {
@@ -37996,7 +37996,7 @@ export type FetchSearchByTypeApiV1BilibiliAppFetchSearchByTypeGetData = {
          */
         order?: number;
     };
-    url: '/api/v1/bilibili/app/fetch_search_by_type';
+    url: '/video-hub/api/v1/bilibili/app/fetch_search_by_type';
 };
 
 export type FetchSearchByTypeApiV1BilibiliAppFetchSearchByTypeGetErrors = {
@@ -38021,7 +38021,7 @@ export type FetchCinemaTabApiV1BilibiliAppFetchCinemaTabGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/bilibili/app/fetch_cinema_tab';
+    url: '/video-hub/api/v1/bilibili/app/fetch_cinema_tab';
 };
 
 export type FetchCinemaTabApiV1BilibiliAppFetchCinemaTabGetResponses = {
@@ -38037,7 +38037,7 @@ export type FetchBangumiTabApiV1BilibiliAppFetchBangumiTabGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/bilibili/app/fetch_bangumi_tab';
+    url: '/video-hub/api/v1/bilibili/app/fetch_bangumi_tab';
 };
 
 export type FetchBangumiTabApiV1BilibiliAppFetchBangumiTabGetResponses = {
@@ -38066,7 +38066,7 @@ export type GetPostDetailApiV1Sora2GetPostDetailGetData = {
          */
         post_url?: string;
     };
-    url: '/api/v1/sora2/get_post_detail';
+    url: '/video-hub/api/v1/sora2/get_post_detail';
 };
 
 export type GetPostDetailApiV1Sora2GetPostDetailGetErrors = {
@@ -38110,7 +38110,7 @@ export type GetPostRemixListApiV1Sora2GetPostRemixListGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/sora2/get_post_remix_list';
+    url: '/video-hub/api/v1/sora2/get_post_remix_list';
 };
 
 export type GetPostRemixListApiV1Sora2GetPostRemixListGetErrors = {
@@ -38148,7 +38148,7 @@ export type GetVideoDownloadInfoApiV1Sora2GetVideoDownloadInfoGetData = {
          */
         post_url?: string;
     };
-    url: '/api/v1/sora2/get_video_download_info';
+    url: '/video-hub/api/v1/sora2/get_video_download_info';
 };
 
 export type GetVideoDownloadInfoApiV1Sora2GetVideoDownloadInfoGetErrors = {
@@ -38186,7 +38186,7 @@ export type GetPostCommentsApiV1Sora2GetPostCommentsGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/sora2/get_post_comments';
+    url: '/video-hub/api/v1/sora2/get_post_comments';
 };
 
 export type GetPostCommentsApiV1Sora2GetPostCommentsGetErrors = {
@@ -38224,7 +38224,7 @@ export type GetCommentRepliesApiV1Sora2GetCommentRepliesGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/sora2/get_comment_replies';
+    url: '/video-hub/api/v1/sora2/get_comment_replies';
 };
 
 export type GetCommentRepliesApiV1Sora2GetCommentRepliesGetErrors = {
@@ -38256,7 +38256,7 @@ export type GetUserProfileApiV1Sora2GetUserProfileGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/sora2/get_user_profile';
+    url: '/video-hub/api/v1/sora2/get_user_profile';
 };
 
 export type GetUserProfileApiV1Sora2GetUserProfileGetErrors = {
@@ -38294,7 +38294,7 @@ export type GetUserPostsApiV1Sora2GetUserPostsGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/sora2/get_user_posts';
+    url: '/video-hub/api/v1/sora2/get_user_posts';
 };
 
 export type GetUserPostsApiV1Sora2GetUserPostsGetErrors = {
@@ -38326,7 +38326,7 @@ export type GetCameoLeaderboardApiV1Sora2GetCameoLeaderboardGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/sora2/get_cameo_leaderboard';
+    url: '/video-hub/api/v1/sora2/get_cameo_leaderboard';
 };
 
 export type GetCameoLeaderboardApiV1Sora2GetCameoLeaderboardGetErrors = {
@@ -38364,7 +38364,7 @@ export type GetUserCameoAppearancesApiV1Sora2GetUserCameoAppearancesGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/sora2/get_user_cameo_appearances';
+    url: '/video-hub/api/v1/sora2/get_user_cameo_appearances';
 };
 
 export type GetUserCameoAppearancesApiV1Sora2GetUserCameoAppearancesGetErrors = {
@@ -38402,7 +38402,7 @@ export type GetUserFollowersApiV1Sora2GetUserFollowersGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/sora2/get_user_followers';
+    url: '/video-hub/api/v1/sora2/get_user_followers';
 };
 
 export type GetUserFollowersApiV1Sora2GetUserFollowersGetErrors = {
@@ -38440,7 +38440,7 @@ export type GetUserFollowingApiV1Sora2GetUserFollowingGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/sora2/get_user_following';
+    url: '/video-hub/api/v1/sora2/get_user_following';
 };
 
 export type GetUserFollowingApiV1Sora2GetUserFollowingGetErrors = {
@@ -38478,7 +38478,7 @@ export type GetFeedApiV1Sora2GetFeedGetData = {
          */
         eager_views?: string;
     };
-    url: '/api/v1/sora2/get_feed';
+    url: '/video-hub/api/v1/sora2/get_feed';
 };
 
 export type GetFeedApiV1Sora2GetFeedGetErrors = {
@@ -38510,7 +38510,7 @@ export type SearchUsersApiV1Sora2SearchUsersGetData = {
          */
         username: string;
     };
-    url: '/api/v1/sora2/search_users';
+    url: '/video-hub/api/v1/sora2/search_users';
 };
 
 export type SearchUsersApiV1Sora2SearchUsersGetErrors = {
@@ -38535,7 +38535,7 @@ export type UploadImageApiV1Sora2UploadImagePostData = {
     body: BodyUploadImageApiV1Sora2UploadImagePost;
     path?: never;
     query?: never;
-    url: '/api/v1/sora2/upload_image';
+    url: '/video-hub/api/v1/sora2/upload_image';
 };
 
 export type UploadImageApiV1Sora2UploadImagePostErrors = {
@@ -38563,7 +38563,7 @@ export type CreateVideoApiV1Sora2CreateVideoPostData = {
     body: CreateVideoRequest;
     path?: never;
     query?: never;
-    url: '/api/v1/sora2/create_video';
+    url: '/video-hub/api/v1/sora2/create_video';
 };
 
 export type CreateVideoApiV1Sora2CreateVideoPostErrors = {
@@ -38595,7 +38595,7 @@ export type GetTaskStatusApiV1Sora2GetTaskStatusGetData = {
          */
         task_id: string;
     };
-    url: '/api/v1/sora2/get_task_status';
+    url: '/video-hub/api/v1/sora2/get_task_status';
 };
 
 export type GetTaskStatusApiV1Sora2GetTaskStatusGetErrors = {
@@ -38633,7 +38633,7 @@ export type GetTaskDetailApiV1Sora2GetTaskDetailGetData = {
          */
         generation_id?: string;
     };
-    url: '/api/v1/sora2/get_task_detail';
+    url: '/video-hub/api/v1/sora2/get_task_detail';
 };
 
 export type GetTaskDetailApiV1Sora2GetTaskDetailGetErrors = {
@@ -38658,7 +38658,7 @@ export type GetTempEmailApiV1TempMailV1GetTempEmailAddressGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/temp_mail/v1/get_temp_email_address';
+    url: '/video-hub/api/v1/temp_mail/v1/get_temp_email_address';
 };
 
 export type GetTempEmailApiV1TempMailV1GetTempEmailAddressGetResponses = {
@@ -38681,7 +38681,7 @@ export type GetEmailsApiV1TempMailV1GetEmailsInboxGetData = {
          */
         token: string;
     };
-    url: '/api/v1/temp_mail/v1/get_emails_inbox';
+    url: '/video-hub/api/v1/temp_mail/v1/get_emails_inbox';
 };
 
 export type GetEmailsApiV1TempMailV1GetEmailsInboxGetErrors = {
@@ -38719,7 +38719,7 @@ export type GetEmailByIdApiV1TempMailV1GetEmailByIdGetData = {
          */
         message_id: string;
     };
-    url: '/api/v1/temp_mail/v1/get_email_by_id';
+    url: '/video-hub/api/v1/temp_mail/v1/get_email_by_id';
 };
 
 export type GetEmailByIdApiV1TempMailV1GetEmailByIdGetErrors = {
@@ -38751,7 +38751,7 @@ export type FetchTweetDetailApiV1TwitterWebFetchTweetDetailGetData = {
          */
         tweet_id: string;
     };
-    url: '/api/v1/twitter/web/fetch_tweet_detail';
+    url: '/video-hub/api/v1/twitter/web/fetch_tweet_detail';
 };
 
 export type FetchTweetDetailApiV1TwitterWebFetchTweetDetailGetErrors = {
@@ -38789,7 +38789,7 @@ export type FetchUserProfileApiV1TwitterWebFetchUserProfileGetData = {
          */
         rest_id?: number;
     };
-    url: '/api/v1/twitter/web/fetch_user_profile';
+    url: '/video-hub/api/v1/twitter/web/fetch_user_profile';
 };
 
 export type FetchUserProfileApiV1TwitterWebFetchUserProfileGetErrors = {
@@ -38833,7 +38833,7 @@ export type FetchUserPostTweetApiV1TwitterWebFetchUserPostTweetGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_user_post_tweet';
+    url: '/video-hub/api/v1/twitter/web/fetch_user_post_tweet';
 };
 
 export type FetchUserPostTweetApiV1TwitterWebFetchUserPostTweetGetErrors = {
@@ -38877,7 +38877,7 @@ export type FetchSearchTimelineApiV1TwitterWebFetchSearchTimelineGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_search_timeline';
+    url: '/video-hub/api/v1/twitter/web/fetch_search_timeline';
 };
 
 export type FetchSearchTimelineApiV1TwitterWebFetchSearchTimelineGetErrors = {
@@ -38915,7 +38915,7 @@ export type FetchPostCommentsApiV1TwitterWebFetchPostCommentsGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_post_comments';
+    url: '/video-hub/api/v1/twitter/web/fetch_post_comments';
 };
 
 export type FetchPostCommentsApiV1TwitterWebFetchPostCommentsGetErrors = {
@@ -38953,7 +38953,7 @@ export type FetchLatestPostCommentsApiV1TwitterWebFetchLatestPostCommentsGetData
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_latest_post_comments';
+    url: '/video-hub/api/v1/twitter/web/fetch_latest_post_comments';
 };
 
 export type FetchLatestPostCommentsApiV1TwitterWebFetchLatestPostCommentsGetErrors = {
@@ -38991,7 +38991,7 @@ export type FetchUserTweetRepliesApiV1TwitterWebFetchUserTweetRepliesGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_user_tweet_replies';
+    url: '/video-hub/api/v1/twitter/web/fetch_user_tweet_replies';
 };
 
 export type FetchUserTweetRepliesApiV1TwitterWebFetchUserTweetRepliesGetErrors = {
@@ -39035,7 +39035,7 @@ export type FetchUserHighlightsTweetsApiV1TwitterWebFetchUserHighlightsTweetsGet
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_user_highlights_tweets';
+    url: '/video-hub/api/v1/twitter/web/fetch_user_highlights_tweets';
 };
 
 export type FetchUserHighlightsTweetsApiV1TwitterWebFetchUserHighlightsTweetsGetErrors = {
@@ -39079,7 +39079,7 @@ export type FetchUserMediaApiV1TwitterWebFetchUserMediaGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_user_media';
+    url: '/video-hub/api/v1/twitter/web/fetch_user_media';
 };
 
 export type FetchUserMediaApiV1TwitterWebFetchUserMediaGetErrors = {
@@ -39117,7 +39117,7 @@ export type FetchRetweetUserListApiV1TwitterWebFetchRetweetUserListGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_retweet_user_list';
+    url: '/video-hub/api/v1/twitter/web/fetch_retweet_user_list';
 };
 
 export type FetchRetweetUserListApiV1TwitterWebFetchRetweetUserListGetErrors = {
@@ -39149,7 +39149,7 @@ export type FetchTrendingApiV1TwitterWebFetchTrendingGetData = {
          */
         country?: string;
     };
-    url: '/api/v1/twitter/web/fetch_trending';
+    url: '/video-hub/api/v1/twitter/web/fetch_trending';
 };
 
 export type FetchTrendingApiV1TwitterWebFetchTrendingGetErrors = {
@@ -39187,7 +39187,7 @@ export type FetchUserFollowingsApiV1TwitterWebFetchUserFollowingsGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_user_followings';
+    url: '/video-hub/api/v1/twitter/web/fetch_user_followings';
 };
 
 export type FetchUserFollowingsApiV1TwitterWebFetchUserFollowingsGetErrors = {
@@ -39225,7 +39225,7 @@ export type FetchUserFollowersApiV1TwitterWebFetchUserFollowersGetData = {
          */
         cursor?: string;
     };
-    url: '/api/v1/twitter/web/fetch_user_followers';
+    url: '/video-hub/api/v1/twitter/web/fetch_user_followers';
 };
 
 export type FetchUserFollowersApiV1TwitterWebFetchUserFollowersGetErrors = {
@@ -39257,7 +39257,7 @@ export type FetchUserInfoApiV1ThreadsWebFetchUserInfoGetData = {
          */
         username: string;
     };
-    url: '/api/v1/threads/web/fetch_user_info';
+    url: '/video-hub/api/v1/threads/web/fetch_user_info';
 };
 
 export type FetchUserInfoApiV1ThreadsWebFetchUserInfoGetErrors = {
@@ -39289,7 +39289,7 @@ export type FetchUserInfoByIdApiV1ThreadsWebFetchUserInfoByIdGetData = {
          */
         user_id: string;
     };
-    url: '/api/v1/threads/web/fetch_user_info_by_id';
+    url: '/video-hub/api/v1/threads/web/fetch_user_info_by_id';
 };
 
 export type FetchUserInfoByIdApiV1ThreadsWebFetchUserInfoByIdGetErrors = {
@@ -39327,7 +39327,7 @@ export type FetchUserPostsApiV1ThreadsWebFetchUserPostsGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/threads/web/fetch_user_posts';
+    url: '/video-hub/api/v1/threads/web/fetch_user_posts';
 };
 
 export type FetchUserPostsApiV1ThreadsWebFetchUserPostsGetErrors = {
@@ -39365,7 +39365,7 @@ export type FetchUserRepostsApiV1ThreadsWebFetchUserRepostsGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/threads/web/fetch_user_reposts';
+    url: '/video-hub/api/v1/threads/web/fetch_user_reposts';
 };
 
 export type FetchUserRepostsApiV1ThreadsWebFetchUserRepostsGetErrors = {
@@ -39403,7 +39403,7 @@ export type FetchUserRepliesApiV1ThreadsWebFetchUserRepliesGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/threads/web/fetch_user_replies';
+    url: '/video-hub/api/v1/threads/web/fetch_user_replies';
 };
 
 export type FetchUserRepliesApiV1ThreadsWebFetchUserRepliesGetErrors = {
@@ -39435,7 +39435,7 @@ export type FetchPostDetailApiV1ThreadsWebFetchPostDetailGetData = {
          */
         post_id: string;
     };
-    url: '/api/v1/threads/web/fetch_post_detail';
+    url: '/video-hub/api/v1/threads/web/fetch_post_detail';
 };
 
 export type FetchPostDetailApiV1ThreadsWebFetchPostDetailGetErrors = {
@@ -39473,7 +39473,7 @@ export type FetchPostDetailV2ApiV1ThreadsWebFetchPostDetailV2GetData = {
          */
         url?: string;
     };
-    url: '/api/v1/threads/web/fetch_post_detail_v2';
+    url: '/video-hub/api/v1/threads/web/fetch_post_detail_v2';
 };
 
 export type FetchPostDetailV2ApiV1ThreadsWebFetchPostDetailV2GetErrors = {
@@ -39511,7 +39511,7 @@ export type FetchPostCommentsApiV1ThreadsWebFetchPostCommentsGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/threads/web/fetch_post_comments';
+    url: '/video-hub/api/v1/threads/web/fetch_post_comments';
 };
 
 export type FetchPostCommentsApiV1ThreadsWebFetchPostCommentsGetErrors = {
@@ -39549,7 +39549,7 @@ export type SearchTopApiV1ThreadsWebSearchTopGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/threads/web/search_top';
+    url: '/video-hub/api/v1/threads/web/search_top';
 };
 
 export type SearchTopApiV1ThreadsWebSearchTopGetErrors = {
@@ -39587,7 +39587,7 @@ export type SearchRecentApiV1ThreadsWebSearchRecentGetData = {
          */
         end_cursor?: string;
     };
-    url: '/api/v1/threads/web/search_recent';
+    url: '/video-hub/api/v1/threads/web/search_recent';
 };
 
 export type SearchRecentApiV1ThreadsWebSearchRecentGetErrors = {
@@ -39619,7 +39619,7 @@ export type SearchProfilesApiV1ThreadsWebSearchProfilesGetData = {
          */
         query: string;
     };
-    url: '/api/v1/threads/web/search_profiles';
+    url: '/video-hub/api/v1/threads/web/search_profiles';
 };
 
 export type SearchProfilesApiV1ThreadsWebSearchProfilesGetErrors = {
@@ -39669,7 +39669,7 @@ export type FetchHomeFeedApiV1RedditAppFetchHomeFeedGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_home_feed';
+    url: '/video-hub/api/v1/reddit/app/fetch_home_feed';
 };
 
 export type FetchHomeFeedApiV1RedditAppFetchHomeFeedGetErrors = {
@@ -39725,7 +39725,7 @@ export type FetchPopularFeedApiV1RedditAppFetchPopularFeedGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_popular_feed';
+    url: '/video-hub/api/v1/reddit/app/fetch_popular_feed';
 };
 
 export type FetchPopularFeedApiV1RedditAppFetchPopularFeedGetErrors = {
@@ -39775,7 +39775,7 @@ export type FetchGamesFeedApiV1RedditAppFetchGamesFeedGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_games_feed';
+    url: '/video-hub/api/v1/reddit/app/fetch_games_feed';
 };
 
 export type FetchGamesFeedApiV1RedditAppFetchGamesFeedGetErrors = {
@@ -39819,7 +39819,7 @@ export type FetchNewsFeedApiV1RedditAppFetchNewsFeedGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_news_feed';
+    url: '/video-hub/api/v1/reddit/app/fetch_news_feed';
 };
 
 export type FetchNewsFeedApiV1RedditAppFetchNewsFeedGetErrors = {
@@ -39869,7 +39869,7 @@ export type FetchPostDetailsApiV1RedditAppFetchPostDetailsGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_post_details';
+    url: '/video-hub/api/v1/reddit/app/fetch_post_details';
 };
 
 export type FetchPostDetailsApiV1RedditAppFetchPostDetailsGetErrors = {
@@ -39919,7 +39919,7 @@ export type FetchPostDetailsBatchApiV1RedditAppFetchPostDetailsBatchGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_post_details_batch';
+    url: '/video-hub/api/v1/reddit/app/fetch_post_details_batch';
 };
 
 export type FetchPostDetailsBatchApiV1RedditAppFetchPostDetailsBatchGetErrors = {
@@ -39969,7 +39969,7 @@ export type FetchPostDetailsBatchLargeApiV1RedditAppFetchPostDetailsBatchLargeGe
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_post_details_batch_large';
+    url: '/video-hub/api/v1/reddit/app/fetch_post_details_batch_large';
 };
 
 export type FetchPostDetailsBatchLargeApiV1RedditAppFetchPostDetailsBatchLargeGetErrors = {
@@ -40019,7 +40019,7 @@ export type FetchPostCommentsApiV1RedditAppFetchPostCommentsGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_post_comments';
+    url: '/video-hub/api/v1/reddit/app/fetch_post_comments';
 };
 
 export type FetchPostCommentsApiV1RedditAppFetchPostCommentsGetErrors = {
@@ -40069,7 +40069,7 @@ export type FetchCommentRepliesApiV1RedditAppFetchCommentRepliesGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_comment_replies';
+    url: '/video-hub/api/v1/reddit/app/fetch_comment_replies';
 };
 
 export type FetchCommentRepliesApiV1RedditAppFetchCommentRepliesGetErrors = {
@@ -40107,7 +40107,7 @@ export type FetchSubredditStyleApiV1RedditAppFetchSubredditStyleGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_subreddit_style';
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_style';
 };
 
 export type FetchSubredditStyleApiV1RedditAppFetchSubredditStyleGetErrors = {
@@ -40157,7 +40157,7 @@ export type FetchSubredditPostChannelsApiV1RedditAppFetchSubredditPostChannelsGe
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_subreddit_post_channels';
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_post_channels';
 };
 
 export type FetchSubredditPostChannelsApiV1RedditAppFetchSubredditPostChannelsGetErrors = {
@@ -40195,7 +40195,7 @@ export type FetchSubredditInfoApiV1RedditAppFetchSubredditInfoGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_subreddit_info';
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_info';
 };
 
 export type FetchSubredditInfoApiV1RedditAppFetchSubredditInfoGetErrors = {
@@ -40233,7 +40233,7 @@ export type FetchSubredditSettingsApiV1RedditAppFetchSubredditSettingsGetData = 
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_subreddit_settings';
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_settings';
 };
 
 export type FetchSubredditSettingsApiV1RedditAppFetchSubredditSettingsGetErrors = {
@@ -40283,7 +40283,7 @@ export type FetchSearchTypeaheadApiV1RedditAppFetchSearchTypeaheadGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_search_typeahead';
+    url: '/video-hub/api/v1/reddit/app/fetch_search_typeahead';
 };
 
 export type FetchSearchTypeaheadApiV1RedditAppFetchSearchTypeaheadGetErrors = {
@@ -40357,7 +40357,7 @@ export type FetchDynamicSearchApiV1RedditAppFetchDynamicSearchGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_dynamic_search';
+    url: '/video-hub/api/v1/reddit/app/fetch_dynamic_search';
 };
 
 export type FetchDynamicSearchApiV1RedditAppFetchDynamicSearchGetErrors = {
@@ -40395,7 +40395,7 @@ export type FetchCommunityHighlightsApiV1RedditAppFetchCommunityHighlightsGetDat
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_community_highlights';
+    url: '/video-hub/api/v1/reddit/app/fetch_community_highlights';
 };
 
 export type FetchCommunityHighlightsApiV1RedditAppFetchCommunityHighlightsGetErrors = {
@@ -40427,7 +40427,7 @@ export type FetchTrendingSearchesApiV1RedditAppFetchTrendingSearchesGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_trending_searches';
+    url: '/video-hub/api/v1/reddit/app/fetch_trending_searches';
 };
 
 export type FetchTrendingSearchesApiV1RedditAppFetchTrendingSearchesGetErrors = {
@@ -40465,7 +40465,7 @@ export type FetchUserProfileApiV1RedditAppFetchUserProfileGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_user_profile';
+    url: '/video-hub/api/v1/reddit/app/fetch_user_profile';
 };
 
 export type FetchUserProfileApiV1RedditAppFetchUserProfileGetErrors = {
@@ -40503,7 +40503,7 @@ export type FetchUserActiveSubredditsApiV1RedditAppFetchUserActiveSubredditsGetD
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_user_active_subreddits';
+    url: '/video-hub/api/v1/reddit/app/fetch_user_active_subreddits';
 };
 
 export type FetchUserActiveSubredditsApiV1RedditAppFetchUserActiveSubredditsGetErrors = {
@@ -40559,7 +40559,7 @@ export type FetchUserCommentsApiV1RedditAppFetchUserCommentsGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_user_comments';
+    url: '/video-hub/api/v1/reddit/app/fetch_user_comments';
 };
 
 export type FetchUserCommentsApiV1RedditAppFetchUserCommentsGetErrors = {
@@ -40609,7 +40609,7 @@ export type FetchUserPostsApiV1RedditAppFetchUserPostsGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_user_posts';
+    url: '/video-hub/api/v1/reddit/app/fetch_user_posts';
 };
 
 export type FetchUserPostsApiV1RedditAppFetchUserPostsGetErrors = {
@@ -40665,7 +40665,7 @@ export type FetchSubredditFeedApiV1RedditAppFetchSubredditFeedGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_subreddit_feed';
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_feed';
 };
 
 export type FetchSubredditFeedApiV1RedditAppFetchSubredditFeedGetErrors = {
@@ -40703,7 +40703,7 @@ export type CheckSubredditMutedApiV1RedditAppCheckSubredditMutedGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/check_subreddit_muted';
+    url: '/video-hub/api/v1/reddit/app/check_subreddit_muted';
 };
 
 export type CheckSubredditMutedApiV1RedditAppCheckSubredditMutedGetErrors = {
@@ -40741,7 +40741,7 @@ export type FetchUserTrophiesApiV1RedditAppFetchUserTrophiesGetData = {
          */
         need_format?: boolean;
     };
-    url: '/api/v1/reddit/app/fetch_user_trophies';
+    url: '/video-hub/api/v1/reddit/app/fetch_user_trophies';
 };
 
 export type FetchUserTrophiesApiV1RedditAppFetchUserTrophiesGetErrors = {
@@ -40783,7 +40783,7 @@ export type HybridParsingSingleVideoApiV1HybridVideoDataGetData = {
          */
         base64_url?: boolean;
     };
-    url: '/api/v1/hybrid/video_data';
+    url: '/video-hub/api/v1/hybrid/video_data';
 };
 
 export type HybridParsingSingleVideoApiV1HybridVideoDataGetErrors = {
@@ -40808,7 +40808,7 @@ export type GetShortcutApiV1IosShortcutShortcutGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/ios_shortcut/shortcut';
+    url: '/video-hub/api/v1/ios_shortcut/shortcut';
 };
 
 export type GetShortcutApiV1IosShortcutShortcutGetResponses = {
@@ -40824,7 +40824,7 @@ export type ViewCacheStatusApiV1DemoDemoCacheStatusGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/demo/cache_status';
+    url: '/video-hub/api/v1/demo/demo/cache_status';
 };
 
 export type ViewCacheStatusApiV1DemoDemoCacheStatusGetResponses = {
@@ -40840,7 +40840,7 @@ export type DouyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/douyin/web/fetch_one_video';
+    url: '/video-hub/api/v1/demo/douyin/web/fetch_one_video';
 };
 
 export type DouyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGetResponses = {
@@ -40856,7 +40856,7 @@ export type DouyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/douyin/app/fetch_one_video';
+    url: '/video-hub/api/v1/demo/douyin/app/fetch_one_video';
 };
 
 export type DouyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGetResponses = {
@@ -40872,7 +40872,7 @@ export type DouyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGetData 
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/douyin_search/app/general_search';
+    url: '/video-hub/api/v1/demo/douyin_search/app/general_search';
 };
 
 export type DouyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGetResponses = {
@@ -40888,7 +40888,7 @@ export type KuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/kuaishou/web/fetch_one_video';
+    url: '/video-hub/api/v1/demo/kuaishou/web/fetch_one_video';
 };
 
 export type KuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGetResponses = {
@@ -40904,7 +40904,7 @@ export type TiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGetData =
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/tiktok/web/fetch_user_profile';
+    url: '/video-hub/api/v1/demo/tiktok/web/fetch_user_profile';
 };
 
 export type TiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGetResponses = {
@@ -40920,7 +40920,7 @@ export type TiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/tiktok/app/fetch_one_video';
+    url: '/video-hub/api/v1/demo/tiktok/app/fetch_one_video';
 };
 
 export type TiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGetResponses = {
@@ -40936,7 +40936,7 @@ export type InstagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGetData =
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/instagram/web/fetch_user_info';
+    url: '/video-hub/api/v1/demo/instagram/web/fetch_user_info';
 };
 
 export type InstagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGetResponses = {
@@ -40952,7 +40952,7 @@ export type WechatArticleExtractApiV1DemoWechatArticleExtractGetData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/api/v1/demo/wechat/article_extract';
+    url: '/video-hub/api/v1/demo/wechat/article_extract';
 };
 
 export type WechatArticleExtractApiV1DemoWechatArticleExtractGetResponses = {

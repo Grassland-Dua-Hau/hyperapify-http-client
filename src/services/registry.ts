@@ -5,12 +5,13 @@ type ApiFunction = (...args: never[]) => unknown
 interface ServiceCallOptions {
   readonly serviceName: string
   readonly methodName: string
+  readonly path: string
   readonly logger: Logger
   readonly fn: ApiFunction
 }
 
 async function callWithLogging(
-  { serviceName, methodName, logger, fn }: ServiceCallOptions,
+  { serviceName, methodName, path, logger, fn }: ServiceCallOptions,
   args: unknown[]
 ) {
   const start = Date.now()
@@ -18,6 +19,7 @@ async function callWithLogging(
   logger.info({
     service: serviceName,
     method: methodName,
+    path,
     message: 'request start',
   })
 
@@ -28,6 +30,7 @@ async function callWithLogging(
     logger.info({
       service: serviceName,
       method: methodName,
+      path,
       message: 'request success',
       duration,
     })
@@ -39,6 +42,7 @@ async function callWithLogging(
     logger.error({
       service: serviceName,
       method: methodName,
+      path,
       message: 'request error',
       duration,
       error,
@@ -106,7 +110,7 @@ export function buildServiceMap(
 
     services[domain] ??= {}
     services[domain][methodName] = ((...args: never[]) =>
-      callWithLogging({ serviceName: domain, methodName, logger, fn }, args)) as (
+      callWithLogging({ serviceName: domain, methodName, path: url, logger, fn }, args)) as (
       ...args: never[]
     ) => unknown
   }

@@ -1,14 +1,27 @@
 import { defineConfig, defaultPlugins } from "@hey-api/openapi-ts";
 
 const swaggerUrl = [
-  "https://gate.hyperapify.com/docs/video-hub/json",
-  "https://gate.hyperapify.com/docs/fdb-hub/json",
+  { url: "https://gate.hyperapify.com/docs/video-hub/json", pathPrefix: "/video-hub" },
+  { url: "https://gate.hyperapify.com/docs/fdb-hub/json" },
 ];
 
+function prefixPaths(
+  paths: Record<string, unknown>,
+  prefix: string,
+): Record<string, unknown> {
+  return Object.fromEntries(
+    Object.entries(paths).map(([path, value]) => [`${prefix}${path}`, value]),
+  );
+}
+
 const schemas = await Promise.all(
-  swaggerUrl.map(async (url) => {
+  swaggerUrl.map(async ({ url, pathPrefix }) => {
     const res = await fetch(url, { signal: AbortSignal.timeout(30_000) });
-    return res.json();
+    const schema = await res.json();
+    if (pathPrefix && schema.paths) {
+      schema.paths = prefixPaths(schema.paths, pathPrefix);
+    }
+    return schema;
   }),
 );
 

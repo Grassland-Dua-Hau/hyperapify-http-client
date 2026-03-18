@@ -49,7 +49,7 @@ export type Options<TData extends TDataShape = TDataShape, ThrowOnError extends 
  *
  * - `status`: Server status, normal is `ok`.
  */
-export const healthCheckApiV1HealthCheckGet = <ThrowOnError extends boolean = false>(options?: Options<HealthCheckApiV1HealthCheckGetData, ThrowOnError>) => (options?.client ?? client).get<HealthCheckApiV1HealthCheckGetResponses, unknown, ThrowOnError>({ url: '/api/v1/health/check', ...options });
+export const healthCheckApiV1HealthCheckGet = <ThrowOnError extends boolean = false>(options?: Options<HealthCheckApiV1HealthCheckGetData, ThrowOnError>) => (options?.client ?? client).get<HealthCheckApiV1HealthCheckGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/health/check', ...options });
 
 /**
  * 获取单个作品数据/Get single video data
@@ -91,7 +91,7 @@ export const healthCheckApiV1HealthCheckGet = <ThrowOnError extends boolean = fa
  */
 export const fetchPostDetailApiV1TiktokWebFetchPostDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailApiV1TiktokWebFetchPostDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailApiV1TiktokWebFetchPostDetailGetResponses, FetchPostDetailApiV1TiktokWebFetchPostDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_post_detail',
+    url: '/video-hub/api/v1/tiktok/web/fetch_post_detail',
     ...options
 });
 
@@ -135,7 +135,7 @@ export const fetchPostDetailApiV1TiktokWebFetchPostDetailGet = <ThrowOnError ext
  */
 export const fetchPostDetailV2ApiV1TiktokWebFetchPostDetailV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailV2ApiV1TiktokWebFetchPostDetailV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailV2ApiV1TiktokWebFetchPostDetailV2GetResponses, FetchPostDetailV2ApiV1TiktokWebFetchPostDetailV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_post_detail_v2',
+    url: '/video-hub/api/v1/tiktok/web/fetch_post_detail_v2',
     ...options
 });
 
@@ -224,7 +224,7 @@ export const fetchPostDetailV2ApiV1TiktokWebFetchPostDetailV2Get = <ThrowOnError
  */
 export const fetchExplorePostApiV1TiktokWebFetchExplorePostGet = <ThrowOnError extends boolean = false>(options?: Options<FetchExplorePostApiV1TiktokWebFetchExplorePostGetData, ThrowOnError>) => (options?.client ?? client).get<FetchExplorePostApiV1TiktokWebFetchExplorePostGetResponses, FetchExplorePostApiV1TiktokWebFetchExplorePostGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_explore_post',
+    url: '/video-hub/api/v1/tiktok/web/fetch_explore_post',
     ...options
 });
 
@@ -249,7 +249,7 @@ export const fetchExplorePostApiV1TiktokWebFetchExplorePostGet = <ThrowOnError e
  */
 export const fetchTrendingPostApiV1TiktokWebFetchTrendingPostGet = <ThrowOnError extends boolean = false>(options?: Options<FetchTrendingPostApiV1TiktokWebFetchTrendingPostGetData, ThrowOnError>) => (options?.client ?? client).get<FetchTrendingPostApiV1TiktokWebFetchTrendingPostGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_trending_post',
+    url: '/video-hub/api/v1/tiktok/web/fetch_trending_post',
     ...options
 });
 
@@ -272,7 +272,7 @@ export const fetchTrendingPostApiV1TiktokWebFetchTrendingPostGet = <ThrowOnError
  */
 export const fetchTrendingSearchwordsApiV1TiktokWebFetchTrendingSearchwordsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchTrendingSearchwordsApiV1TiktokWebFetchTrendingSearchwordsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchTrendingSearchwordsApiV1TiktokWebFetchTrendingSearchwordsGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_trending_searchwords',
+    url: '/video-hub/api/v1/tiktok/web/fetch_trending_searchwords',
     ...options
 });
 
@@ -305,7 +305,7 @@ export const fetchTrendingSearchwordsApiV1TiktokWebFetchTrendingSearchwordsGet =
  */
 export const fetchUserProfileApiV1TiktokWebFetchUserProfileGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserProfileApiV1TiktokWebFetchUserProfileGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserProfileApiV1TiktokWebFetchUserProfileGetResponses, FetchUserProfileApiV1TiktokWebFetchUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_profile',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_profile',
     ...options
 });
 
@@ -367,7 +367,7 @@ export const fetchUserProfileApiV1TiktokWebFetchUserProfileGet = <ThrowOnError e
  */
 export const fetchUserPostApiV1TiktokWebFetchUserPostGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostApiV1TiktokWebFetchUserPostGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostApiV1TiktokWebFetchUserPostGetResponses, FetchUserPostApiV1TiktokWebFetchUserPostGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_post',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_post',
     ...options
 });
 
@@ -420,7 +420,7 @@ export const fetchUserPostApiV1TiktokWebFetchUserPostGet = <ThrowOnError extends
  */
 export const fetchUserRepostApiV1TiktokWebFetchUserRepostGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserRepostApiV1TiktokWebFetchUserRepostGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserRepostApiV1TiktokWebFetchUserRepostGetResponses, FetchUserRepostApiV1TiktokWebFetchUserRepostGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_repost',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_repost',
     ...options
 });
 
@@ -483,7 +483,7 @@ export const fetchUserRepostApiV1TiktokWebFetchUserRepostGet = <ThrowOnError ext
  */
 export const fetchUserLikeApiV1TiktokWebFetchUserLikeGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLikeApiV1TiktokWebFetchUserLikeGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLikeApiV1TiktokWebFetchUserLikeGetResponses, FetchUserLikeApiV1TiktokWebFetchUserLikeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_like',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_like',
     ...options
 });
 
@@ -541,7 +541,7 @@ export const fetchUserLikeApiV1TiktokWebFetchUserLikeGet = <ThrowOnError extends
  */
 export const fetchUserCollectApiV1TiktokWebFetchUserCollectGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserCollectApiV1TiktokWebFetchUserCollectGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserCollectApiV1TiktokWebFetchUserCollectGetResponses, FetchUserCollectApiV1TiktokWebFetchUserCollectGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_collect',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_collect',
     ...options
 });
 
@@ -591,7 +591,7 @@ export const fetchUserCollectApiV1TiktokWebFetchUserCollectGet = <ThrowOnError e
  */
 export const fetchUserPlayListApiV1TiktokWebFetchUserPlayListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPlayListApiV1TiktokWebFetchUserPlayListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPlayListApiV1TiktokWebFetchUserPlayListGetResponses, FetchUserPlayListApiV1TiktokWebFetchUserPlayListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_play_list',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_play_list',
     ...options
 });
 
@@ -641,7 +641,7 @@ export const fetchUserPlayListApiV1TiktokWebFetchUserPlayListGet = <ThrowOnError
  */
 export const fetchUserMixApiV1TiktokWebFetchUserMixGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserMixApiV1TiktokWebFetchUserMixGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserMixApiV1TiktokWebFetchUserMixGetResponses, FetchUserMixApiV1TiktokWebFetchUserMixGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_mix',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_mix',
     ...options
 });
 
@@ -678,7 +678,7 @@ export const fetchUserMixApiV1TiktokWebFetchUserMixGet = <ThrowOnError extends b
  */
 export const fetchPostCommentApiV1TiktokWebFetchPostCommentGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentApiV1TiktokWebFetchPostCommentGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentApiV1TiktokWebFetchPostCommentGetResponses, FetchPostCommentApiV1TiktokWebFetchPostCommentGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_post_comment',
+    url: '/video-hub/api/v1/tiktok/web/fetch_post_comment',
     ...options
 });
 
@@ -718,7 +718,7 @@ export const fetchPostCommentApiV1TiktokWebFetchPostCommentGet = <ThrowOnError e
  */
 export const fetchPostCommentReplyApiV1TiktokWebFetchPostCommentReplyGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentReplyApiV1TiktokWebFetchPostCommentReplyGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentReplyApiV1TiktokWebFetchPostCommentReplyGetResponses, FetchPostCommentReplyApiV1TiktokWebFetchPostCommentReplyGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_post_comment_reply',
+    url: '/video-hub/api/v1/tiktok/web/fetch_post_comment_reply',
     ...options
 });
 
@@ -771,7 +771,7 @@ export const fetchPostCommentReplyApiV1TiktokWebFetchPostCommentReplyGet = <Thro
  */
 export const fetchUserFansApiV1TiktokWebFetchUserFansGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFansApiV1TiktokWebFetchUserFansGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFansApiV1TiktokWebFetchUserFansGetResponses, FetchUserFansApiV1TiktokWebFetchUserFansGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_fans',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_fans',
     ...options
 });
 
@@ -824,7 +824,7 @@ export const fetchUserFansApiV1TiktokWebFetchUserFansGet = <ThrowOnError extends
  */
 export const fetchUserFollowApiV1TiktokWebFetchUserFollowGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowApiV1TiktokWebFetchUserFollowGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowApiV1TiktokWebFetchUserFollowGetResponses, FetchUserFollowApiV1TiktokWebFetchUserFollowGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_follow',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_follow',
     ...options
 });
 
@@ -868,7 +868,7 @@ export const fetchUserFollowApiV1TiktokWebFetchUserFollowGet = <ThrowOnError ext
  */
 export const fetchUserLiveDetailApiV1TiktokWebFetchUserLiveDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLiveDetailApiV1TiktokWebFetchUserLiveDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLiveDetailApiV1TiktokWebFetchUserLiveDetailGetResponses, FetchUserLiveDetailApiV1TiktokWebFetchUserLiveDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_user_live_detail',
+    url: '/video-hub/api/v1/tiktok/web/fetch_user_live_detail',
     ...options
 });
 
@@ -926,7 +926,7 @@ export const fetchUserLiveDetailApiV1TiktokWebFetchUserLiveDetailGet = <ThrowOnE
  */
 export const fetchGeneralSearchApiV1TiktokWebFetchGeneralSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchGeneralSearchApiV1TiktokWebFetchGeneralSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchGeneralSearchApiV1TiktokWebFetchGeneralSearchGetResponses, FetchGeneralSearchApiV1TiktokWebFetchGeneralSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_general_search',
+    url: '/video-hub/api/v1/tiktok/web/fetch_general_search',
     ...options
 });
 
@@ -954,7 +954,7 @@ export const fetchGeneralSearchApiV1TiktokWebFetchGeneralSearchGet = <ThrowOnErr
  */
 export const fetchSearchKeywordSuggestApiV1TiktokWebFetchSearchKeywordSuggestGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchKeywordSuggestApiV1TiktokWebFetchSearchKeywordSuggestGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchKeywordSuggestApiV1TiktokWebFetchSearchKeywordSuggestGetResponses, FetchSearchKeywordSuggestApiV1TiktokWebFetchSearchKeywordSuggestGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_search_keyword_suggest',
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_keyword_suggest',
     ...options
 });
 
@@ -1000,7 +1000,7 @@ export const fetchSearchKeywordSuggestApiV1TiktokWebFetchSearchKeywordSuggestGet
  */
 export const fetchSearchUserApiV1TiktokWebFetchSearchUserGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchUserApiV1TiktokWebFetchSearchUserGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchUserApiV1TiktokWebFetchSearchUserGetResponses, FetchSearchUserApiV1TiktokWebFetchSearchUserGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_search_user',
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_user',
     ...options
 });
 
@@ -1045,7 +1045,7 @@ export const fetchSearchUserApiV1TiktokWebFetchSearchUserGet = <ThrowOnError ext
  */
 export const fetchSearchVideoApiV1TiktokWebFetchSearchVideoGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchVideoApiV1TiktokWebFetchSearchVideoGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchVideoApiV1TiktokWebFetchSearchVideoGetResponses, FetchSearchVideoApiV1TiktokWebFetchSearchVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_search_video',
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_video',
     ...options
 });
 
@@ -1090,7 +1090,7 @@ export const fetchSearchVideoApiV1TiktokWebFetchSearchVideoGet = <ThrowOnError e
  */
 export const fetchSearchLiveApiV1TiktokWebFetchSearchLiveGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchLiveApiV1TiktokWebFetchSearchLiveGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchLiveApiV1TiktokWebFetchSearchLiveGetResponses, FetchSearchLiveApiV1TiktokWebFetchSearchLiveGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_search_live',
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_live',
     ...options
 });
 
@@ -1136,7 +1136,7 @@ export const fetchSearchLiveApiV1TiktokWebFetchSearchLiveGet = <ThrowOnError ext
  */
 export const fetchSearchPhotoApiV1TiktokWebFetchSearchPhotoGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchPhotoApiV1TiktokWebFetchSearchPhotoGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchPhotoApiV1TiktokWebFetchSearchPhotoGetResponses, FetchSearchPhotoApiV1TiktokWebFetchSearchPhotoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_search_photo',
+    url: '/video-hub/api/v1/tiktok/web/fetch_search_photo',
     ...options
 });
 
@@ -1164,7 +1164,7 @@ export const fetchSearchPhotoApiV1TiktokWebFetchSearchPhotoGet = <ThrowOnError e
  */
 export const fetchTagDetailApiV1TiktokWebFetchTagDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchTagDetailApiV1TiktokWebFetchTagDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchTagDetailApiV1TiktokWebFetchTagDetailGetResponses, FetchTagDetailApiV1TiktokWebFetchTagDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_tag_detail',
+    url: '/video-hub/api/v1/tiktok/web/fetch_tag_detail',
     ...options
 });
 
@@ -1214,7 +1214,7 @@ export const fetchTagDetailApiV1TiktokWebFetchTagDetailGet = <ThrowOnError exten
  */
 export const fetchTagPostApiV1TiktokWebFetchTagPostGet = <ThrowOnError extends boolean = false>(options: Options<FetchTagPostApiV1TiktokWebFetchTagPostGetData, ThrowOnError>) => (options.client ?? client).get<FetchTagPostApiV1TiktokWebFetchTagPostGetResponses, FetchTagPostApiV1TiktokWebFetchTagPostGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_tag_post',
+    url: '/video-hub/api/v1/tiktok/web/fetch_tag_post',
     ...options
 });
 
@@ -1261,7 +1261,7 @@ export const fetchTagPostApiV1TiktokWebFetchTagPostGet = <ThrowOnError extends b
  */
 export const fetchHomeFeedApiV1TiktokWebFetchHomeFeedPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHomeFeedApiV1TiktokWebFetchHomeFeedPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHomeFeedApiV1TiktokWebFetchHomeFeedPostResponses, FetchHomeFeedApiV1TiktokWebFetchHomeFeedPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_home_feed',
+    url: '/video-hub/api/v1/tiktok/web/fetch_home_feed',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -1302,7 +1302,7 @@ export const fetchHomeFeedApiV1TiktokWebFetchHomeFeedPost = <ThrowOnError extend
  */
 export const generateRealMsTokenApiV1TiktokWebGenerateRealMsTokenGet = <ThrowOnError extends boolean = false>(options?: Options<GenerateRealMsTokenApiV1TiktokWebGenerateRealMsTokenGetData, ThrowOnError>) => (options?.client ?? client).get<GenerateRealMsTokenApiV1TiktokWebGenerateRealMsTokenGetResponses, GenerateRealMsTokenApiV1TiktokWebGenerateRealMsTokenGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/generate_real_msToken',
+    url: '/video-hub/api/v1/tiktok/web/generate_real_msToken',
     ...options
 });
 
@@ -1327,7 +1327,7 @@ export const generateRealMsTokenApiV1TiktokWebGenerateRealMsTokenGet = <ThrowOnE
  */
 export const encryptStrDataApiV1TiktokWebEncryptStrDataGet = <ThrowOnError extends boolean = false>(options: Options<EncryptStrDataApiV1TiktokWebEncryptStrDataGetData, ThrowOnError>) => (options.client ?? client).get<EncryptStrDataApiV1TiktokWebEncryptStrDataGetResponses, EncryptStrDataApiV1TiktokWebEncryptStrDataGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/encrypt_strData',
+    url: '/video-hub/api/v1/tiktok/web/encrypt_strData',
     ...options
 });
 
@@ -1352,7 +1352,7 @@ export const encryptStrDataApiV1TiktokWebEncryptStrDataGet = <ThrowOnError exten
  */
 export const decryptStrDataApiV1TiktokWebDecryptStrDataGet = <ThrowOnError extends boolean = false>(options: Options<DecryptStrDataApiV1TiktokWebDecryptStrDataGetData, ThrowOnError>) => (options.client ?? client).get<DecryptStrDataApiV1TiktokWebDecryptStrDataGetResponses, DecryptStrDataApiV1TiktokWebDecryptStrDataGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/decrypt_strData',
+    url: '/video-hub/api/v1/tiktok/web/decrypt_strData',
     ...options
 });
 
@@ -1387,7 +1387,7 @@ export const decryptStrDataApiV1TiktokWebDecryptStrDataGet = <ThrowOnError exten
  */
 export const generateFingerprintApiV1TiktokWebGenerateFingerprintGet = <ThrowOnError extends boolean = false>(options?: Options<GenerateFingerprintApiV1TiktokWebGenerateFingerprintGetData, ThrowOnError>) => (options?.client ?? client).get<GenerateFingerprintApiV1TiktokWebGenerateFingerprintGetResponses, GenerateFingerprintApiV1TiktokWebGenerateFingerprintGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/generate_fingerprint',
+    url: '/video-hub/api/v1/tiktok/web/generate_fingerprint',
     ...options
 });
 
@@ -1426,7 +1426,7 @@ export const generateFingerprintApiV1TiktokWebGenerateFingerprintGet = <ThrowOnE
  */
 export const generateWebidApiV1TiktokWebGenerateWebidGet = <ThrowOnError extends boolean = false>(options?: Options<GenerateWebidApiV1TiktokWebGenerateWebidGetData, ThrowOnError>) => (options?.client ?? client).get<GenerateWebidApiV1TiktokWebGenerateWebidGetResponses, GenerateWebidApiV1TiktokWebGenerateWebidGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/generate_webid',
+    url: '/video-hub/api/v1/tiktok/web/generate_webid',
     ...options
 });
 
@@ -1451,7 +1451,7 @@ export const generateWebidApiV1TiktokWebGenerateWebidGet = <ThrowOnError extends
  */
 export const generateTtwidApiV1TiktokWebGenerateTtwidGet = <ThrowOnError extends boolean = false>(options?: Options<GenerateTtwidApiV1TiktokWebGenerateTtwidGetData, ThrowOnError>) => (options?.client ?? client).get<GenerateTtwidApiV1TiktokWebGenerateTtwidGetResponses, GenerateTtwidApiV1TiktokWebGenerateTtwidGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/generate_ttwid',
+    url: '/video-hub/api/v1/tiktok/web/generate_ttwid',
     ...options
 });
 
@@ -1486,7 +1486,7 @@ export const generateTtwidApiV1TiktokWebGenerateTtwidGet = <ThrowOnError extends
  */
 export const generateXbogusApiV1TiktokWebGenerateXbogusPost = <ThrowOnError extends boolean = false>(options: Options<GenerateXbogusApiV1TiktokWebGenerateXbogusPostData, ThrowOnError>) => (options.client ?? client).post<GenerateXbogusApiV1TiktokWebGenerateXbogusPostResponses, GenerateXbogusApiV1TiktokWebGenerateXbogusPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/generate_xbogus',
+    url: '/video-hub/api/v1/tiktok/web/generate_xbogus',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -1528,7 +1528,7 @@ export const generateXbogusApiV1TiktokWebGenerateXbogusPost = <ThrowOnError exte
  */
 export const generateXgnarlyApiV1TiktokWebGenerateXgnarlyPost = <ThrowOnError extends boolean = false>(options: Options<GenerateXgnarlyApiV1TiktokWebGenerateXgnarlyPostData, ThrowOnError>) => (options.client ?? client).post<GenerateXgnarlyApiV1TiktokWebGenerateXgnarlyPostResponses, GenerateXgnarlyApiV1TiktokWebGenerateXgnarlyPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/generate_xgnarly',
+    url: '/video-hub/api/v1/tiktok/web/generate_xgnarly',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -1573,7 +1573,7 @@ export const generateXgnarlyApiV1TiktokWebGenerateXgnarlyPost = <ThrowOnError ex
  */
 export const generateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPost = <ThrowOnError extends boolean = false>(options: Options<GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostData, ThrowOnError>) => (options.client ?? client).post<GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostResponses, GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/generate_xgnarly_and_xbogus',
+    url: '/video-hub/api/v1/tiktok/web/generate_xgnarly_and_xbogus',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -1605,7 +1605,7 @@ export const generateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPost 
  */
 export const getUserIdApiV1TiktokWebGetUserIdGet = <ThrowOnError extends boolean = false>(options: Options<GetUserIdApiV1TiktokWebGetUserIdGetData, ThrowOnError>) => (options.client ?? client).get<GetUserIdApiV1TiktokWebGetUserIdGetResponses, GetUserIdApiV1TiktokWebGetUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/get_user_id',
+    url: '/video-hub/api/v1/tiktok/web/get_user_id',
     ...options
 });
 
@@ -1633,7 +1633,7 @@ export const getUserIdApiV1TiktokWebGetUserIdGet = <ThrowOnError extends boolean
  */
 export const getSecUserIdApiV1TiktokWebGetSecUserIdGet = <ThrowOnError extends boolean = false>(options: Options<GetSecUserIdApiV1TiktokWebGetSecUserIdGetData, ThrowOnError>) => (options.client ?? client).get<GetSecUserIdApiV1TiktokWebGetSecUserIdGetResponses, GetSecUserIdApiV1TiktokWebGetSecUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/get_sec_user_id',
+    url: '/video-hub/api/v1/tiktok/web/get_sec_user_id',
     ...options
 });
 
@@ -1661,7 +1661,7 @@ export const getSecUserIdApiV1TiktokWebGetSecUserIdGet = <ThrowOnError extends b
  */
 export const getAllSecUserIdApiV1TiktokWebGetAllSecUserIdPost = <ThrowOnError extends boolean = false>(options: Options<GetAllSecUserIdApiV1TiktokWebGetAllSecUserIdPostData, ThrowOnError>) => (options.client ?? client).post<GetAllSecUserIdApiV1TiktokWebGetAllSecUserIdPostResponses, GetAllSecUserIdApiV1TiktokWebGetAllSecUserIdPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/get_all_sec_user_id',
+    url: '/video-hub/api/v1/tiktok/web/get_all_sec_user_id',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -1693,7 +1693,7 @@ export const getAllSecUserIdApiV1TiktokWebGetAllSecUserIdPost = <ThrowOnError ex
  */
 export const getAwemeIdApiV1TiktokWebGetAwemeIdGet = <ThrowOnError extends boolean = false>(options: Options<GetAwemeIdApiV1TiktokWebGetAwemeIdGetData, ThrowOnError>) => (options.client ?? client).get<GetAwemeIdApiV1TiktokWebGetAwemeIdGetResponses, GetAwemeIdApiV1TiktokWebGetAwemeIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/get_aweme_id',
+    url: '/video-hub/api/v1/tiktok/web/get_aweme_id',
     ...options
 });
 
@@ -1721,7 +1721,7 @@ export const getAwemeIdApiV1TiktokWebGetAwemeIdGet = <ThrowOnError extends boole
  */
 export const getAllAwemeIdApiV1TiktokWebGetAllAwemeIdPost = <ThrowOnError extends boolean = false>(options: Options<GetAllAwemeIdApiV1TiktokWebGetAllAwemeIdPostData, ThrowOnError>) => (options.client ?? client).post<GetAllAwemeIdApiV1TiktokWebGetAllAwemeIdPostResponses, GetAllAwemeIdApiV1TiktokWebGetAllAwemeIdPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/get_all_aweme_id',
+    url: '/video-hub/api/v1/tiktok/web/get_all_aweme_id',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -1753,7 +1753,7 @@ export const getAllAwemeIdApiV1TiktokWebGetAllAwemeIdPost = <ThrowOnError extend
  */
 export const getUniqueIdApiV1TiktokWebGetUniqueIdGet = <ThrowOnError extends boolean = false>(options: Options<GetUniqueIdApiV1TiktokWebGetUniqueIdGetData, ThrowOnError>) => (options.client ?? client).get<GetUniqueIdApiV1TiktokWebGetUniqueIdGetResponses, GetUniqueIdApiV1TiktokWebGetUniqueIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/get_unique_id',
+    url: '/video-hub/api/v1/tiktok/web/get_unique_id',
     ...options
 });
 
@@ -1781,7 +1781,7 @@ export const getUniqueIdApiV1TiktokWebGetUniqueIdGet = <ThrowOnError extends boo
  */
 export const getAllUniqueIdApiV1TiktokWebGetAllUniqueIdPost = <ThrowOnError extends boolean = false>(options: Options<GetAllUniqueIdApiV1TiktokWebGetAllUniqueIdPostData, ThrowOnError>) => (options.client ?? client).post<GetAllUniqueIdApiV1TiktokWebGetAllUniqueIdPostResponses, GetAllUniqueIdApiV1TiktokWebGetAllUniqueIdPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/get_all_unique_id',
+    url: '/video-hub/api/v1/tiktok/web/get_all_unique_id',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -1834,7 +1834,7 @@ export const getAllUniqueIdApiV1TiktokWebGetAllUniqueIdPost = <ThrowOnError exte
  */
 export const tiktokLiveRoomApiV1TiktokWebTiktokLiveRoomGet = <ThrowOnError extends boolean = false>(options: Options<TiktokLiveRoomApiV1TiktokWebTiktokLiveRoomGetData, ThrowOnError>) => (options.client ?? client).get<TiktokLiveRoomApiV1TiktokWebTiktokLiveRoomGetResponses, TiktokLiveRoomApiV1TiktokWebTiktokLiveRoomGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/tiktok_live_room',
+    url: '/video-hub/api/v1/tiktok/web/tiktok_live_room',
     ...options
 });
 
@@ -1863,7 +1863,7 @@ export const tiktokLiveRoomApiV1TiktokWebTiktokLiveRoomGet = <ThrowOnError exten
  */
 export const fetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetResponses, FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_live_im_fetch',
+    url: '/video-hub/api/v1/tiktok/web/fetch_live_im_fetch',
     ...options
 });
 
@@ -1895,7 +1895,7 @@ export const fetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGet = <ThrowOnError e
  */
 export const getLiveRoomIdApiV1TiktokWebGetLiveRoomIdGet = <ThrowOnError extends boolean = false>(options: Options<GetLiveRoomIdApiV1TiktokWebGetLiveRoomIdGetData, ThrowOnError>) => (options.client ?? client).get<GetLiveRoomIdApiV1TiktokWebGetLiveRoomIdGetResponses, GetLiveRoomIdApiV1TiktokWebGetLiveRoomIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/get_live_room_id',
+    url: '/video-hub/api/v1/tiktok/web/get_live_room_id',
     ...options
 });
 
@@ -1925,7 +1925,7 @@ export const getLiveRoomIdApiV1TiktokWebGetLiveRoomIdGet = <ThrowOnError extends
  */
 export const fetchCheckLiveAliveApiV1TiktokWebFetchCheckLiveAliveGet = <ThrowOnError extends boolean = false>(options: Options<FetchCheckLiveAliveApiV1TiktokWebFetchCheckLiveAliveGetData, ThrowOnError>) => (options.client ?? client).get<FetchCheckLiveAliveApiV1TiktokWebFetchCheckLiveAliveGetResponses, FetchCheckLiveAliveApiV1TiktokWebFetchCheckLiveAliveGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_check_live_alive',
+    url: '/video-hub/api/v1/tiktok/web/fetch_check_live_alive',
     ...options
 });
 
@@ -1965,7 +1965,7 @@ export const fetchCheckLiveAliveApiV1TiktokWebFetchCheckLiveAliveGet = <ThrowOnE
  */
 export const fetchBatchCheckLiveAliveApiV1TiktokWebFetchBatchCheckLiveAliveGet = <ThrowOnError extends boolean = false>(options: Options<FetchBatchCheckLiveAliveApiV1TiktokWebFetchBatchCheckLiveAliveGetData, ThrowOnError>) => (options.client ?? client).get<FetchBatchCheckLiveAliveApiV1TiktokWebFetchBatchCheckLiveAliveGetResponses, FetchBatchCheckLiveAliveApiV1TiktokWebFetchBatchCheckLiveAliveGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_batch_check_live_alive',
+    url: '/video-hub/api/v1/tiktok/web/fetch_batch_check_live_alive',
     ...options
 });
 
@@ -1995,7 +1995,7 @@ export const fetchBatchCheckLiveAliveApiV1TiktokWebFetchBatchCheckLiveAliveGet =
  */
 export const fetchTiktokLiveDataApiV1TiktokWebFetchTiktokLiveDataGet = <ThrowOnError extends boolean = false>(options: Options<FetchTiktokLiveDataApiV1TiktokWebFetchTiktokLiveDataGetData, ThrowOnError>) => (options.client ?? client).get<FetchTiktokLiveDataApiV1TiktokWebFetchTiktokLiveDataGetResponses, FetchTiktokLiveDataApiV1TiktokWebFetchTiktokLiveDataGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_tiktok_live_data',
+    url: '/video-hub/api/v1/tiktok/web/fetch_tiktok_live_data',
     ...options
 });
 
@@ -2039,7 +2039,7 @@ export const fetchTiktokLiveDataApiV1TiktokWebFetchTiktokLiveDataGet = <ThrowOnE
  */
 export const fetchLiveRecommendApiV1TiktokWebFetchLiveRecommendGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveRecommendApiV1TiktokWebFetchLiveRecommendGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveRecommendApiV1TiktokWebFetchLiveRecommendGetResponses, FetchLiveRecommendApiV1TiktokWebFetchLiveRecommendGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_live_recommend',
+    url: '/video-hub/api/v1/tiktok/web/fetch_live_recommend',
     ...options
 });
 
@@ -2085,7 +2085,7 @@ export const fetchLiveRecommendApiV1TiktokWebFetchLiveRecommendGet = <ThrowOnErr
  */
 export const fetchLiveGiftListApiV1TiktokWebFetchLiveGiftListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchLiveGiftListApiV1TiktokWebFetchLiveGiftListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchLiveGiftListApiV1TiktokWebFetchLiveGiftListGetResponses, FetchLiveGiftListApiV1TiktokWebFetchLiveGiftListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_live_gift_list',
+    url: '/video-hub/api/v1/tiktok/web/fetch_live_gift_list',
     ...options
 });
 
@@ -2131,7 +2131,7 @@ export const fetchLiveGiftListApiV1TiktokWebFetchLiveGiftListGet = <ThrowOnError
  */
 export const fetchSsoLoginQrcodeApiV1TiktokWebFetchSsoLoginQrcodeGet = <ThrowOnError extends boolean = false>(options: Options<FetchSsoLoginQrcodeApiV1TiktokWebFetchSsoLoginQrcodeGetData, ThrowOnError>) => (options.client ?? client).get<FetchSsoLoginQrcodeApiV1TiktokWebFetchSsoLoginQrcodeGetResponses, FetchSsoLoginQrcodeApiV1TiktokWebFetchSsoLoginQrcodeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_sso_login_qrcode',
+    url: '/video-hub/api/v1/tiktok/web/fetch_sso_login_qrcode',
     ...options
 });
 
@@ -2191,7 +2191,7 @@ export const fetchSsoLoginQrcodeApiV1TiktokWebFetchSsoLoginQrcodeGet = <ThrowOnE
  */
 export const fetchSsoLoginStatusApiV1TiktokWebFetchSsoLoginStatusGet = <ThrowOnError extends boolean = false>(options: Options<FetchSsoLoginStatusApiV1TiktokWebFetchSsoLoginStatusGetData, ThrowOnError>) => (options.client ?? client).get<FetchSsoLoginStatusApiV1TiktokWebFetchSsoLoginStatusGetResponses, FetchSsoLoginStatusApiV1TiktokWebFetchSsoLoginStatusGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_sso_login_status',
+    url: '/video-hub/api/v1/tiktok/web/fetch_sso_login_status',
     ...options
 });
 
@@ -2236,7 +2236,7 @@ export const fetchSsoLoginStatusApiV1TiktokWebFetchSsoLoginStatusGet = <ThrowOnE
  */
 export const fetchSsoLoginAuthApiV1TiktokWebFetchSsoLoginAuthGet = <ThrowOnError extends boolean = false>(options: Options<FetchSsoLoginAuthApiV1TiktokWebFetchSsoLoginAuthGetData, ThrowOnError>) => (options.client ?? client).get<FetchSsoLoginAuthApiV1TiktokWebFetchSsoLoginAuthGetResponses, FetchSsoLoginAuthApiV1TiktokWebFetchSsoLoginAuthGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_sso_login_auth',
+    url: '/video-hub/api/v1/tiktok/web/fetch_sso_login_auth',
     ...options
 });
 
@@ -2264,7 +2264,7 @@ export const fetchSsoLoginAuthApiV1TiktokWebFetchSsoLoginAuthGet = <ThrowOnError
  */
 export const generateHashedIdApiV1TiktokWebGenerateHashedIdGet = <ThrowOnError extends boolean = false>(options: Options<GenerateHashedIdApiV1TiktokWebGenerateHashedIdGetData, ThrowOnError>) => (options.client ?? client).get<GenerateHashedIdApiV1TiktokWebGenerateHashedIdGetResponses, GenerateHashedIdApiV1TiktokWebGenerateHashedIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/generate_hashed_id',
+    url: '/video-hub/api/v1/tiktok/web/generate_hashed_id',
     ...options
 });
 
@@ -2275,7 +2275,7 @@ export const generateHashedIdApiV1TiktokWebGenerateHashedIdGet = <ThrowOnError e
  */
 export const fetchGiftNameByIdApiV1TiktokWebFetchGiftNameByIdPost = <ThrowOnError extends boolean = false>(options: Options<FetchGiftNameByIdApiV1TiktokWebFetchGiftNameByIdPostData, ThrowOnError>) => (options.client ?? client).post<FetchGiftNameByIdApiV1TiktokWebFetchGiftNameByIdPostResponses, FetchGiftNameByIdApiV1TiktokWebFetchGiftNameByIdPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_gift_name_by_id',
+    url: '/video-hub/api/v1/tiktok/web/fetch_gift_name_by_id',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -2290,7 +2290,7 @@ export const fetchGiftNameByIdApiV1TiktokWebFetchGiftNameByIdPost = <ThrowOnErro
  */
 export const fetchGiftNamesByIdsApiV1TiktokWebFetchGiftNamesByIdsPost = <ThrowOnError extends boolean = false>(options: Options<FetchGiftNamesByIdsApiV1TiktokWebFetchGiftNamesByIdsPostData, ThrowOnError>) => (options.client ?? client).post<FetchGiftNamesByIdsApiV1TiktokWebFetchGiftNamesByIdsPostResponses, FetchGiftNamesByIdsApiV1TiktokWebFetchGiftNamesByIdsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_gift_names_by_ids',
+    url: '/video-hub/api/v1/tiktok/web/fetch_gift_names_by_ids',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -2339,7 +2339,7 @@ export const fetchGiftNamesByIdsApiV1TiktokWebFetchGiftNamesByIdsPost = <ThrowOn
  */
 export const fetchTiktokWebGuestCookieApiV1TiktokWebFetchTiktokWebGuestCookieGet = <ThrowOnError extends boolean = false>(options: Options<FetchTiktokWebGuestCookieApiV1TiktokWebFetchTiktokWebGuestCookieGetData, ThrowOnError>) => (options.client ?? client).get<FetchTiktokWebGuestCookieApiV1TiktokWebFetchTiktokWebGuestCookieGetResponses, FetchTiktokWebGuestCookieApiV1TiktokWebFetchTiktokWebGuestCookieGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/fetch_tiktok_web_guest_cookie',
+    url: '/video-hub/api/v1/tiktok/web/fetch_tiktok_web_guest_cookie',
     ...options
 });
 
@@ -2372,7 +2372,7 @@ export const fetchTiktokWebGuestCookieApiV1TiktokWebFetchTiktokWebGuestCookieGet
  */
 export const deviceRegisterApiV1TiktokWebDeviceRegisterGet = <ThrowOnError extends boolean = false>(options?: Options<DeviceRegisterApiV1TiktokWebDeviceRegisterGetData, ThrowOnError>) => (options?.client ?? client).get<DeviceRegisterApiV1TiktokWebDeviceRegisterGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/web/device_register',
+    url: '/video-hub/api/v1/tiktok/web/device_register',
     ...options
 });
 
@@ -2400,7 +2400,7 @@ export const deviceRegisterApiV1TiktokWebDeviceRegisterGet = <ThrowOnError exten
  */
 export const fetchOneVideoApiV1TiktokAppV3FetchOneVideoGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1TiktokAppV3FetchOneVideoGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1TiktokAppV3FetchOneVideoGetResponses, FetchOneVideoApiV1TiktokAppV3FetchOneVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_one_video',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video',
     ...options
 });
 
@@ -2428,7 +2428,7 @@ export const fetchOneVideoApiV1TiktokAppV3FetchOneVideoGet = <ThrowOnError exten
  */
 export const fetchOneVideoV2ApiV1TiktokAppV3FetchOneVideoV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV2ApiV1TiktokAppV3FetchOneVideoV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV2ApiV1TiktokAppV3FetchOneVideoV2GetResponses, FetchOneVideoV2ApiV1TiktokAppV3FetchOneVideoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_one_video_v2',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video_v2',
     ...options
 });
 
@@ -2461,7 +2461,7 @@ export const fetchOneVideoV2ApiV1TiktokAppV3FetchOneVideoV2Get = <ThrowOnError e
  */
 export const fetchOneVideoV3ApiV1TiktokAppV3FetchOneVideoV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV3ApiV1TiktokAppV3FetchOneVideoV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV3ApiV1TiktokAppV3FetchOneVideoV3GetResponses, FetchOneVideoV3ApiV1TiktokAppV3FetchOneVideoV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_one_video_v3',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video_v3',
     ...options
 });
 
@@ -2494,7 +2494,7 @@ export const fetchOneVideoV3ApiV1TiktokAppV3FetchOneVideoV3Get = <ThrowOnError e
  */
 export const fetchMultiVideoApiV1TiktokAppV3FetchMultiVideoPost = <ThrowOnError extends boolean = false>(options: Options<FetchMultiVideoApiV1TiktokAppV3FetchMultiVideoPostData, ThrowOnError>) => (options.client ?? client).post<FetchMultiVideoApiV1TiktokAppV3FetchMultiVideoPostResponses, FetchMultiVideoApiV1TiktokAppV3FetchMultiVideoPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_multi_video',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_multi_video',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -2533,7 +2533,7 @@ export const fetchMultiVideoApiV1TiktokAppV3FetchMultiVideoPost = <ThrowOnError 
  */
 export const fetchMultiVideoV2ApiV1TiktokAppV3FetchMultiVideoV2Post = <ThrowOnError extends boolean = false>(options: Options<FetchMultiVideoV2ApiV1TiktokAppV3FetchMultiVideoV2PostData, ThrowOnError>) => (options.client ?? client).post<FetchMultiVideoV2ApiV1TiktokAppV3FetchMultiVideoV2PostResponses, FetchMultiVideoV2ApiV1TiktokAppV3FetchMultiVideoV2PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_multi_video_v2',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_multi_video_v2',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -2565,7 +2565,7 @@ export const fetchMultiVideoV2ApiV1TiktokAppV3FetchMultiVideoV2Post = <ThrowOnEr
  */
 export const fetchOneVideoByShareUrlV2ApiV1TiktokAppV3FetchOneVideoByShareUrlV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoByShareUrlV2ApiV1TiktokAppV3FetchOneVideoByShareUrlV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoByShareUrlV2ApiV1TiktokAppV3FetchOneVideoByShareUrlV2GetResponses, FetchOneVideoByShareUrlV2ApiV1TiktokAppV3FetchOneVideoByShareUrlV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_one_video_by_share_url_v2',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video_by_share_url_v2',
     ...options
 });
 
@@ -2593,7 +2593,7 @@ export const fetchOneVideoByShareUrlV2ApiV1TiktokAppV3FetchOneVideoByShareUrlV2G
  */
 export const fetchOneVideoByShareUrlApiV1TiktokAppV3FetchOneVideoByShareUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoByShareUrlApiV1TiktokAppV3FetchOneVideoByShareUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoByShareUrlApiV1TiktokAppV3FetchOneVideoByShareUrlGetResponses, FetchOneVideoByShareUrlApiV1TiktokAppV3FetchOneVideoByShareUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_one_video_by_share_url',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_one_video_by_share_url',
     ...options
 });
 
@@ -2621,7 +2621,7 @@ export const fetchOneVideoByShareUrlApiV1TiktokAppV3FetchOneVideoByShareUrlGet =
  */
 export const getUserIdAndSecUserIdByUsernameApiV1TiktokAppV3GetUserIdAndSecUserIdByUsernameGet = <ThrowOnError extends boolean = false>(options: Options<GetUserIdAndSecUserIdByUsernameApiV1TiktokAppV3GetUserIdAndSecUserIdByUsernameGetData, ThrowOnError>) => (options.client ?? client).get<GetUserIdAndSecUserIdByUsernameApiV1TiktokAppV3GetUserIdAndSecUserIdByUsernameGetResponses, GetUserIdAndSecUserIdByUsernameApiV1TiktokAppV3GetUserIdAndSecUserIdByUsernameGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/get_user_id_and_sec_user_id_by_username',
+    url: '/video-hub/api/v1/tiktok/app/v3/get_user_id_and_sec_user_id_by_username',
     ...options
 });
 
@@ -2657,7 +2657,7 @@ export const getUserIdAndSecUserIdByUsernameApiV1TiktokAppV3GetUserIdAndSecUserI
  */
 export const handlerUserProfileApiV1TiktokAppV3HandlerUserProfileGet = <ThrowOnError extends boolean = false>(options?: Options<HandlerUserProfileApiV1TiktokAppV3HandlerUserProfileGetData, ThrowOnError>) => (options?.client ?? client).get<HandlerUserProfileApiV1TiktokAppV3HandlerUserProfileGetResponses, HandlerUserProfileApiV1TiktokAppV3HandlerUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/handler_user_profile',
+    url: '/video-hub/api/v1/tiktok/app/v3/handler_user_profile',
     ...options
 });
 
@@ -2690,7 +2690,7 @@ export const handlerUserProfileApiV1TiktokAppV3HandlerUserProfileGet = <ThrowOnE
  */
 export const fetchWebcastUserInfoApiV1TiktokAppV3FetchWebcastUserInfoGet = <ThrowOnError extends boolean = false>(options?: Options<FetchWebcastUserInfoApiV1TiktokAppV3FetchWebcastUserInfoGetData, ThrowOnError>) => (options?.client ?? client).get<FetchWebcastUserInfoApiV1TiktokAppV3FetchWebcastUserInfoGetResponses, FetchWebcastUserInfoApiV1TiktokAppV3FetchWebcastUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_webcast_user_info',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_webcast_user_info',
     ...options
 });
 
@@ -2723,7 +2723,7 @@ export const fetchWebcastUserInfoApiV1TiktokAppV3FetchWebcastUserInfoGet = <Thro
  */
 export const fetchUserCountryByUsernameApiV1TiktokAppV3FetchUserCountryByUsernameGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserCountryByUsernameApiV1TiktokAppV3FetchUserCountryByUsernameGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserCountryByUsernameApiV1TiktokAppV3FetchUserCountryByUsernameGetResponses, FetchUserCountryByUsernameApiV1TiktokAppV3FetchUserCountryByUsernameGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_country_by_username',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_country_by_username',
     ...options
 });
 
@@ -2754,7 +2754,7 @@ export const fetchUserCountryByUsernameApiV1TiktokAppV3FetchUserCountryByUsernam
  */
 export const fetchSimilarUserRecommendationsApiV1TiktokAppV3FetchSimilarUserRecommendationsGet = <ThrowOnError extends boolean = false>(options: Options<FetchSimilarUserRecommendationsApiV1TiktokAppV3FetchSimilarUserRecommendationsGetData, ThrowOnError>) => (options.client ?? client).get<FetchSimilarUserRecommendationsApiV1TiktokAppV3FetchSimilarUserRecommendationsGetResponses, FetchSimilarUserRecommendationsApiV1TiktokAppV3FetchSimilarUserRecommendationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_similar_user_recommendations',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_similar_user_recommendations',
     ...options
 });
 
@@ -2788,7 +2788,7 @@ export const fetchSimilarUserRecommendationsApiV1TiktokAppV3FetchSimilarUserReco
  */
 export const fetchUserRepostVideosApiV1TiktokAppV3FetchUserRepostVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserRepostVideosApiV1TiktokAppV3FetchUserRepostVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserRepostVideosApiV1TiktokAppV3FetchUserRepostVideosGetResponses, FetchUserRepostVideosApiV1TiktokAppV3FetchUserRepostVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_repost_videos',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_repost_videos',
     ...options
 });
 
@@ -2830,7 +2830,7 @@ export const fetchUserRepostVideosApiV1TiktokAppV3FetchUserRepostVideosGet = <Th
  */
 export const fetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosGetResponses, FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_post_videos',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_post_videos',
     ...options
 });
 
@@ -2872,7 +2872,7 @@ export const fetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosGet = <ThrowO
  */
 export const fetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosV2Get = <ThrowOnError extends boolean = false>(options?: Options<FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosV2GetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosV2GetResponses, FetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_post_videos_v2',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_post_videos_v2',
     ...options
 });
 
@@ -2914,7 +2914,7 @@ export const fetchUserPostVideosApiV1TiktokAppV3FetchUserPostVideosV2Get = <Thro
  */
 export const fetchUserPostVideosV3ApiV1TiktokAppV3FetchUserPostVideosV3Get = <ThrowOnError extends boolean = false>(options?: Options<FetchUserPostVideosV3ApiV1TiktokAppV3FetchUserPostVideosV3GetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserPostVideosV3ApiV1TiktokAppV3FetchUserPostVideosV3GetResponses, FetchUserPostVideosV3ApiV1TiktokAppV3FetchUserPostVideosV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_post_videos_v3',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_post_videos_v3',
     ...options
 });
 
@@ -2948,7 +2948,7 @@ export const fetchUserPostVideosV3ApiV1TiktokAppV3FetchUserPostVideosV3Get = <Th
  */
 export const fetchUserLikeVideosApiV1TiktokAppV3FetchUserLikeVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLikeVideosApiV1TiktokAppV3FetchUserLikeVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLikeVideosApiV1TiktokAppV3FetchUserLikeVideosGetResponses, FetchUserLikeVideosApiV1TiktokAppV3FetchUserLikeVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_like_videos',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_like_videos',
     ...options
 });
 
@@ -2982,7 +2982,7 @@ export const fetchUserLikeVideosApiV1TiktokAppV3FetchUserLikeVideosGet = <ThrowO
  */
 export const fetchVideoCommentsApiV1TiktokAppV3FetchVideoCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoCommentsApiV1TiktokAppV3FetchVideoCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoCommentsApiV1TiktokAppV3FetchVideoCommentsGetResponses, FetchVideoCommentsApiV1TiktokAppV3FetchVideoCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_video_comments',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_video_comments',
     ...options
 });
 
@@ -3019,7 +3019,7 @@ export const fetchVideoCommentsApiV1TiktokAppV3FetchVideoCommentsGet = <ThrowOnE
  */
 export const fetchVideoCommentsReplyApiV1TiktokAppV3FetchVideoCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoCommentsReplyApiV1TiktokAppV3FetchVideoCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoCommentsReplyApiV1TiktokAppV3FetchVideoCommentRepliesGetResponses, FetchVideoCommentsReplyApiV1TiktokAppV3FetchVideoCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_video_comment_replies',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_video_comment_replies',
     ...options
 });
 
@@ -3059,7 +3059,7 @@ export const fetchVideoCommentsReplyApiV1TiktokAppV3FetchVideoCommentRepliesGet 
  */
 export const fetchGeneralSearchResultApiV1TiktokAppV3FetchGeneralSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchGeneralSearchResultApiV1TiktokAppV3FetchGeneralSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchGeneralSearchResultApiV1TiktokAppV3FetchGeneralSearchResultGetResponses, FetchGeneralSearchResultApiV1TiktokAppV3FetchGeneralSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_general_search_result',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_general_search_result',
     ...options
 });
 
@@ -3102,7 +3102,7 @@ export const fetchGeneralSearchResultApiV1TiktokAppV3FetchGeneralSearchResultGet
  */
 export const fetchVideoSearchResultApiV1TiktokAppV3FetchVideoSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchResultApiV1TiktokAppV3FetchVideoSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoSearchResultApiV1TiktokAppV3FetchVideoSearchResultGetResponses, FetchVideoSearchResultApiV1TiktokAppV3FetchVideoSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_video_search_result',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_video_search_result',
     ...options
 });
 
@@ -3161,7 +3161,7 @@ export const fetchVideoSearchResultApiV1TiktokAppV3FetchVideoSearchResultGet = <
  */
 export const fetchUserSearchResultApiV1TiktokAppV3FetchUserSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchResultApiV1TiktokAppV3FetchUserSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSearchResultApiV1TiktokAppV3FetchUserSearchResultGetResponses, FetchUserSearchResultApiV1TiktokAppV3FetchUserSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_search_result',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_search_result',
     ...options
 });
 
@@ -3204,7 +3204,7 @@ export const fetchUserSearchResultApiV1TiktokAppV3FetchUserSearchResultGet = <Th
  */
 export const fetchMusicSearchResultApiV1TiktokAppV3FetchMusicSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchMusicSearchResultApiV1TiktokAppV3FetchMusicSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchMusicSearchResultApiV1TiktokAppV3FetchMusicSearchResultGetResponses, FetchMusicSearchResultApiV1TiktokAppV3FetchMusicSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_music_search_result',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_music_search_result',
     ...options
 });
 
@@ -3238,7 +3238,7 @@ export const fetchMusicSearchResultApiV1TiktokAppV3FetchMusicSearchResultGet = <
  */
 export const fetchHashtagSearchResultApiV1TiktokAppV3FetchHashtagSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagSearchResultApiV1TiktokAppV3FetchHashtagSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagSearchResultApiV1TiktokAppV3FetchHashtagSearchResultGetResponses, FetchHashtagSearchResultApiV1TiktokAppV3FetchHashtagSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_hashtag_search_result',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_hashtag_search_result',
     ...options
 });
 
@@ -3275,7 +3275,7 @@ export const fetchHashtagSearchResultApiV1TiktokAppV3FetchHashtagSearchResultGet
  */
 export const fetchLiveSearchResultApiV1TiktokAppV3FetchLiveSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveSearchResultApiV1TiktokAppV3FetchLiveSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveSearchResultApiV1TiktokAppV3FetchLiveSearchResultGetResponses, FetchLiveSearchResultApiV1TiktokAppV3FetchLiveSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_live_search_result',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_search_result',
     ...options
 });
 
@@ -3309,7 +3309,7 @@ export const fetchLiveSearchResultApiV1TiktokAppV3FetchLiveSearchResultGet = <Th
  */
 export const fetchLocationSearchApiV1TiktokAppV3FetchLocationSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchLocationSearchApiV1TiktokAppV3FetchLocationSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchLocationSearchApiV1TiktokAppV3FetchLocationSearchGetResponses, FetchLocationSearchApiV1TiktokAppV3FetchLocationSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_location_search',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_location_search',
     ...options
 });
 
@@ -3337,7 +3337,7 @@ export const fetchLocationSearchApiV1TiktokAppV3FetchLocationSearchGet = <ThrowO
  */
 export const fetchMusicDetailApiV1TiktokAppV3FetchMusicDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchMusicDetailApiV1TiktokAppV3FetchMusicDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchMusicDetailApiV1TiktokAppV3FetchMusicDetailGetResponses, FetchMusicDetailApiV1TiktokAppV3FetchMusicDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_music_detail',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_music_detail',
     ...options
 });
 
@@ -3371,7 +3371,7 @@ export const fetchMusicDetailApiV1TiktokAppV3FetchMusicDetailGet = <ThrowOnError
  */
 export const fetchMusicVideoListApiV1TiktokAppV3FetchMusicVideoListGet = <ThrowOnError extends boolean = false>(options: Options<FetchMusicVideoListApiV1TiktokAppV3FetchMusicVideoListGetData, ThrowOnError>) => (options.client ?? client).get<FetchMusicVideoListApiV1TiktokAppV3FetchMusicVideoListGetResponses, FetchMusicVideoListApiV1TiktokAppV3FetchMusicVideoListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_music_video_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_music_video_list',
     ...options
 });
 
@@ -3399,7 +3399,7 @@ export const fetchMusicVideoListApiV1TiktokAppV3FetchMusicVideoListGet = <ThrowO
  */
 export const fetchHashtagDetailApiV1TiktokAppV3FetchHashtagDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagDetailApiV1TiktokAppV3FetchHashtagDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagDetailApiV1TiktokAppV3FetchHashtagDetailGetResponses, FetchHashtagDetailApiV1TiktokAppV3FetchHashtagDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_hashtag_detail',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_hashtag_detail',
     ...options
 });
 
@@ -3434,7 +3434,7 @@ export const fetchHashtagDetailApiV1TiktokAppV3FetchHashtagDetailGet = <ThrowOnE
  */
 export const fetchHashtagVideoListApiV1TiktokAppV3FetchHashtagVideoListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagVideoListApiV1TiktokAppV3FetchHashtagVideoListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagVideoListApiV1TiktokAppV3FetchHashtagVideoListGetResponses, FetchHashtagVideoListApiV1TiktokAppV3FetchHashtagVideoListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_hashtag_video_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_hashtag_video_list',
     ...options
 });
 
@@ -3474,7 +3474,7 @@ export const fetchHashtagVideoListApiV1TiktokAppV3FetchHashtagVideoListGet = <Th
  */
 export const fetchUserFollowerListApiV1TiktokAppV3FetchUserFollowerListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserFollowerListApiV1TiktokAppV3FetchUserFollowerListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserFollowerListApiV1TiktokAppV3FetchUserFollowerListGetResponses, FetchUserFollowerListApiV1TiktokAppV3FetchUserFollowerListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_follower_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_follower_list',
     ...options
 });
 
@@ -3514,7 +3514,7 @@ export const fetchUserFollowerListApiV1TiktokAppV3FetchUserFollowerListGet = <Th
  */
 export const fetchUserFollowingListApiV1TiktokAppV3FetchUserFollowingListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserFollowingListApiV1TiktokAppV3FetchUserFollowingListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserFollowingListApiV1TiktokAppV3FetchUserFollowingListGetResponses, FetchUserFollowingListApiV1TiktokAppV3FetchUserFollowingListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_following_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_following_list',
     ...options
 });
 
@@ -3574,7 +3574,7 @@ export const fetchUserFollowingListApiV1TiktokAppV3FetchUserFollowingListGet = <
  */
 export const fetchCreatorSearchInsightsApiV1TiktokAppV3FetchCreatorSearchInsightsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorSearchInsightsApiV1TiktokAppV3FetchCreatorSearchInsightsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorSearchInsightsApiV1TiktokAppV3FetchCreatorSearchInsightsGetResponses, FetchCreatorSearchInsightsApiV1TiktokAppV3FetchCreatorSearchInsightsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_creator_search_insights',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_search_insights',
     ...options
 });
 
@@ -3622,7 +3622,7 @@ export const fetchCreatorSearchInsightsApiV1TiktokAppV3FetchCreatorSearchInsight
  */
 export const fetchCreatorSearchInsightsDetailApiV1TiktokAppV3FetchCreatorSearchInsightsDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorSearchInsightsDetailApiV1TiktokAppV3FetchCreatorSearchInsightsDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorSearchInsightsDetailApiV1TiktokAppV3FetchCreatorSearchInsightsDetailGetResponses, FetchCreatorSearchInsightsDetailApiV1TiktokAppV3FetchCreatorSearchInsightsDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_creator_search_insights_detail',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_search_insights_detail',
     ...options
 });
 
@@ -3655,7 +3655,7 @@ export const fetchCreatorSearchInsightsDetailApiV1TiktokAppV3FetchCreatorSearchI
  */
 export const fetchCreatorSearchInsightsTrendApiV1TiktokAppV3FetchCreatorSearchInsightsTrendGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorSearchInsightsTrendApiV1TiktokAppV3FetchCreatorSearchInsightsTrendGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorSearchInsightsTrendApiV1TiktokAppV3FetchCreatorSearchInsightsTrendGetResponses, FetchCreatorSearchInsightsTrendApiV1TiktokAppV3FetchCreatorSearchInsightsTrendGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_creator_search_insights_trend',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_search_insights_trend',
     ...options
 });
 
@@ -3689,7 +3689,7 @@ export const fetchCreatorSearchInsightsTrendApiV1TiktokAppV3FetchCreatorSearchIn
  */
 export const fetchCreatorSearchInsightsVideosApiV1TiktokAppV3FetchCreatorSearchInsightsVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorSearchInsightsVideosApiV1TiktokAppV3FetchCreatorSearchInsightsVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorSearchInsightsVideosApiV1TiktokAppV3FetchCreatorSearchInsightsVideosGetResponses, FetchCreatorSearchInsightsVideosApiV1TiktokAppV3FetchCreatorSearchInsightsVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_creator_search_insights_videos',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_search_insights_videos',
     ...options
 });
 
@@ -3727,7 +3727,7 @@ export const fetchCreatorSearchInsightsVideosApiV1TiktokAppV3FetchCreatorSearchI
  */
 export const fetchMusicChartListApiV1TiktokAppV3FetchMusicChartListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchMusicChartListApiV1TiktokAppV3FetchMusicChartListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchMusicChartListApiV1TiktokAppV3FetchMusicChartListGetResponses, FetchMusicChartListApiV1TiktokAppV3FetchMusicChartListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_music_chart_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_music_chart_list',
     ...options
 });
 
@@ -3758,7 +3758,7 @@ export const fetchMusicChartListApiV1TiktokAppV3FetchMusicChartListGet = <ThrowO
  */
 export const searchFollowerListApiV1TiktokAppV3SearchFollowerListGet = <ThrowOnError extends boolean = false>(options: Options<SearchFollowerListApiV1TiktokAppV3SearchFollowerListGetData, ThrowOnError>) => (options.client ?? client).get<SearchFollowerListApiV1TiktokAppV3SearchFollowerListGetResponses, SearchFollowerListApiV1TiktokAppV3SearchFollowerListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/search_follower_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/search_follower_list',
     ...options
 });
 
@@ -3789,7 +3789,7 @@ export const searchFollowerListApiV1TiktokAppV3SearchFollowerListGet = <ThrowOnE
  */
 export const searchFollowingListApiV1TiktokAppV3SearchFollowingListGet = <ThrowOnError extends boolean = false>(options: Options<SearchFollowingListApiV1TiktokAppV3SearchFollowingListGetData, ThrowOnError>) => (options.client ?? client).get<SearchFollowingListApiV1TiktokAppV3SearchFollowingListGetResponses, SearchFollowingListApiV1TiktokAppV3SearchFollowingListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/search_following_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/search_following_list',
     ...options
 });
 
@@ -3817,7 +3817,7 @@ export const searchFollowingListApiV1TiktokAppV3SearchFollowingListGet = <ThrowO
  */
 export const fetchLiveRoomInfoApiV1TiktokAppV3FetchLiveRoomInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveRoomInfoApiV1TiktokAppV3FetchLiveRoomInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveRoomInfoApiV1TiktokAppV3FetchLiveRoomInfoGetResponses, FetchLiveRoomInfoApiV1TiktokAppV3FetchLiveRoomInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_live_room_info',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_room_info',
     ...options
 });
 
@@ -3848,7 +3848,7 @@ export const fetchLiveRoomInfoApiV1TiktokAppV3FetchLiveRoomInfoGet = <ThrowOnErr
  */
 export const fetchLiveRankingListApiV1TiktokAppV3FetchLiveRankingListGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveRankingListApiV1TiktokAppV3FetchLiveRankingListGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveRankingListApiV1TiktokAppV3FetchLiveRankingListGetResponses, FetchLiveRankingListApiV1TiktokAppV3FetchLiveRankingListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_live_ranking_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_ranking_list',
     ...options
 });
 
@@ -3878,7 +3878,7 @@ export const fetchLiveRankingListApiV1TiktokAppV3FetchLiveRankingListGet = <Thro
  */
 export const checkLiveRoomOnlineApiV1TiktokAppV3CheckLiveRoomOnlineGet = <ThrowOnError extends boolean = false>(options: Options<CheckLiveRoomOnlineApiV1TiktokAppV3CheckLiveRoomOnlineGetData, ThrowOnError>) => (options.client ?? client).get<CheckLiveRoomOnlineApiV1TiktokAppV3CheckLiveRoomOnlineGetResponses, CheckLiveRoomOnlineApiV1TiktokAppV3CheckLiveRoomOnlineGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/check_live_room_online',
+    url: '/video-hub/api/v1/tiktok/app/v3/check_live_room_online',
     ...options
 });
 
@@ -3915,7 +3915,7 @@ export const checkLiveRoomOnlineApiV1TiktokAppV3CheckLiveRoomOnlineGet = <ThrowO
  */
 export const checkLiveRoomOnlineBatchApiV1TiktokAppV3CheckLiveRoomOnlineBatchPost = <ThrowOnError extends boolean = false>(options: Options<CheckLiveRoomOnlineBatchApiV1TiktokAppV3CheckLiveRoomOnlineBatchPostData, ThrowOnError>) => (options.client ?? client).post<CheckLiveRoomOnlineBatchApiV1TiktokAppV3CheckLiveRoomOnlineBatchPostResponses, CheckLiveRoomOnlineBatchApiV1TiktokAppV3CheckLiveRoomOnlineBatchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/check_live_room_online_batch',
+    url: '/video-hub/api/v1/tiktok/app/v3/check_live_room_online_batch',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -3947,7 +3947,7 @@ export const checkLiveRoomOnlineBatchApiV1TiktokAppV3CheckLiveRoomOnlineBatchPos
  */
 export const fetchShareShortLinkApiV1TiktokAppV3FetchShareShortLinkGet = <ThrowOnError extends boolean = false>(options: Options<FetchShareShortLinkApiV1TiktokAppV3FetchShareShortLinkGetData, ThrowOnError>) => (options.client ?? client).get<FetchShareShortLinkApiV1TiktokAppV3FetchShareShortLinkGetResponses, FetchShareShortLinkApiV1TiktokAppV3FetchShareShortLinkGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_share_short_link',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_share_short_link',
     ...options
 });
 
@@ -3975,7 +3975,7 @@ export const fetchShareShortLinkApiV1TiktokAppV3FetchShareShortLinkGet = <ThrowO
  */
 export const fetchShareQrCodeApiV1TiktokAppV3FetchShareQrCodeGet = <ThrowOnError extends boolean = false>(options: Options<FetchShareQrCodeApiV1TiktokAppV3FetchShareQrCodeGetData, ThrowOnError>) => (options.client ?? client).get<FetchShareQrCodeApiV1TiktokAppV3FetchShareQrCodeGetResponses, FetchShareQrCodeApiV1TiktokAppV3FetchShareQrCodeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_share_qr_code',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_share_qr_code',
     ...options
 });
 
@@ -4034,7 +4034,7 @@ export const fetchShareQrCodeApiV1TiktokAppV3FetchShareQrCodeGet = <ThrowOnError
  */
 export const fetchProductSearchApiV1TiktokAppV3FetchProductSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductSearchApiV1TiktokAppV3FetchProductSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductSearchApiV1TiktokAppV3FetchProductSearchGetResponses, FetchProductSearchApiV1TiktokAppV3FetchProductSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_product_search',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_search',
     ...options
 });
 
@@ -4147,7 +4147,7 @@ export const fetchProductSearchApiV1TiktokAppV3FetchProductSearchGet = <ThrowOnE
  */
 export const fetchCreatorInfoApiV1TiktokAppV3FetchCreatorInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorInfoApiV1TiktokAppV3FetchCreatorInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorInfoApiV1TiktokAppV3FetchCreatorInfoGetResponses, FetchCreatorInfoApiV1TiktokAppV3FetchCreatorInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_creator_info',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_info',
     ...options
 });
 
@@ -4181,7 +4181,7 @@ export const fetchCreatorInfoApiV1TiktokAppV3FetchCreatorInfoGet = <ThrowOnError
  */
 export const fetchCreatorShowcaseProductListApiV1TiktokAppV3FetchCreatorShowcaseProductListGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorShowcaseProductListApiV1TiktokAppV3FetchCreatorShowcaseProductListGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorShowcaseProductListApiV1TiktokAppV3FetchCreatorShowcaseProductListGetResponses, FetchCreatorShowcaseProductListApiV1TiktokAppV3FetchCreatorShowcaseProductListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_creator_showcase_product_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_creator_showcase_product_list',
     ...options
 });
 
@@ -4209,7 +4209,7 @@ export const fetchCreatorShowcaseProductListApiV1TiktokAppV3FetchCreatorShowcase
  */
 export const fetchShopIdByShareLinkApiV1TiktokAppV3FetchShopIdByShareLinkGet = <ThrowOnError extends boolean = false>(options: Options<FetchShopIdByShareLinkApiV1TiktokAppV3FetchShopIdByShareLinkGetData, ThrowOnError>) => (options.client ?? client).get<FetchShopIdByShareLinkApiV1TiktokAppV3FetchShopIdByShareLinkGetResponses, FetchShopIdByShareLinkApiV1TiktokAppV3FetchShopIdByShareLinkGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_shop_id_by_share_link',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_id_by_share_link',
     ...options
 });
 
@@ -4238,7 +4238,7 @@ export const fetchShopIdByShareLinkApiV1TiktokAppV3FetchShopIdByShareLinkGet = <
  */
 export const fetchProductIdByShareLinkApiV1TiktokAppV3FetchProductIdByShareLinkGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductIdByShareLinkApiV1TiktokAppV3FetchProductIdByShareLinkGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductIdByShareLinkApiV1TiktokAppV3FetchProductIdByShareLinkGetResponses, FetchProductIdByShareLinkApiV1TiktokAppV3FetchProductIdByShareLinkGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_product_id_by_share_link',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_id_by_share_link',
     ...options
 });
 
@@ -4268,7 +4268,7 @@ export const fetchProductIdByShareLinkApiV1TiktokAppV3FetchProductIdByShareLinkG
  */
 export const fetchProductDetailApiV1TiktokAppV3FetchProductDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductDetailApiV1TiktokAppV3FetchProductDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductDetailApiV1TiktokAppV3FetchProductDetailGetResponses, FetchProductDetailApiV1TiktokAppV3FetchProductDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_product_detail',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_detail',
     ...options
 });
 
@@ -4296,7 +4296,7 @@ export const fetchProductDetailApiV1TiktokAppV3FetchProductDetailGet = <ThrowOnE
  */
 export const fetchProductDetailV2ApiV1TiktokAppV3FetchProductDetailV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchProductDetailV2ApiV1TiktokAppV3FetchProductDetailV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchProductDetailV2ApiV1TiktokAppV3FetchProductDetailV2GetResponses, FetchProductDetailV2ApiV1TiktokAppV3FetchProductDetailV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_product_detail_v2',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_detail_v2',
     ...options
 });
 
@@ -4351,7 +4351,7 @@ export const fetchProductDetailV2ApiV1TiktokAppV3FetchProductDetailV2Get = <Thro
  */
 export const fetchProductDetailV3ApiV1TiktokAppV3FetchProductDetailV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchProductDetailV3ApiV1TiktokAppV3FetchProductDetailV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchProductDetailV3ApiV1TiktokAppV3FetchProductDetailV3GetResponses, FetchProductDetailV3ApiV1TiktokAppV3FetchProductDetailV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_product_detail_v3',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_detail_v3',
     ...options
 });
 
@@ -4407,7 +4407,7 @@ export const fetchProductDetailV3ApiV1TiktokAppV3FetchProductDetailV3Get = <Thro
  */
 export const fetchProductDetailV4ApiV1TiktokAppV3FetchProductDetailV4Get = <ThrowOnError extends boolean = false>(options: Options<FetchProductDetailV4ApiV1TiktokAppV3FetchProductDetailV4GetData, ThrowOnError>) => (options.client ?? client).get<FetchProductDetailV4ApiV1TiktokAppV3FetchProductDetailV4GetResponses, FetchProductDetailV4ApiV1TiktokAppV3FetchProductDetailV4GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_product_detail_v4',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_detail_v4',
     ...options
 });
 
@@ -4467,7 +4467,7 @@ export const fetchProductDetailV4ApiV1TiktokAppV3FetchProductDetailV4Get = <Thro
  */
 export const fetchProductReviewApiV1TiktokAppV3FetchProductReviewGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductReviewApiV1TiktokAppV3FetchProductReviewGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductReviewApiV1TiktokAppV3FetchProductReviewGetResponses, FetchProductReviewApiV1TiktokAppV3FetchProductReviewGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_product_review',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_product_review',
     ...options
 });
 
@@ -4495,7 +4495,7 @@ export const fetchProductReviewApiV1TiktokAppV3FetchProductReviewGet = <ThrowOnE
  */
 export const fetchShopHomePageListApiV1TiktokAppV3FetchShopHomePageListGet = <ThrowOnError extends boolean = false>(options: Options<FetchShopHomePageListApiV1TiktokAppV3FetchShopHomePageListGetData, ThrowOnError>) => (options.client ?? client).get<FetchShopHomePageListApiV1TiktokAppV3FetchShopHomePageListGetResponses, FetchShopHomePageListApiV1TiktokAppV3FetchShopHomePageListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_shop_home_page_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_home_page_list',
     ...options
 });
 
@@ -4526,7 +4526,7 @@ export const fetchShopHomePageListApiV1TiktokAppV3FetchShopHomePageListGet = <Th
  */
 export const fetchShopHomeApiV1TiktokAppV3FetchShopHomeGet = <ThrowOnError extends boolean = false>(options: Options<FetchShopHomeApiV1TiktokAppV3FetchShopHomeGetData, ThrowOnError>) => (options.client ?? client).get<FetchShopHomeApiV1TiktokAppV3FetchShopHomeGetResponses, FetchShopHomeApiV1TiktokAppV3FetchShopHomeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_shop_home',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_home',
     ...options
 });
 
@@ -4560,7 +4560,7 @@ export const fetchShopHomeApiV1TiktokAppV3FetchShopHomeGet = <ThrowOnError exten
  */
 export const fetchShopProductRecommendApiV1TiktokAppV3FetchShopProductRecommendGet = <ThrowOnError extends boolean = false>(options: Options<FetchShopProductRecommendApiV1TiktokAppV3FetchShopProductRecommendGetData, ThrowOnError>) => (options.client ?? client).get<FetchShopProductRecommendApiV1TiktokAppV3FetchShopProductRecommendGetResponses, FetchShopProductRecommendApiV1TiktokAppV3FetchShopProductRecommendGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_shop_product_recommend',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_product_recommend',
     ...options
 });
 
@@ -4614,7 +4614,7 @@ export const fetchShopProductRecommendApiV1TiktokAppV3FetchShopProductRecommendG
  */
 export const fetchShopProductListApiV1TiktokAppV3FetchShopProductListGet = <ThrowOnError extends boolean = false>(options: Options<FetchShopProductListApiV1TiktokAppV3FetchShopProductListGetData, ThrowOnError>) => (options.client ?? client).get<FetchShopProductListApiV1TiktokAppV3FetchShopProductListGetResponses, FetchShopProductListApiV1TiktokAppV3FetchShopProductListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_shop_product_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_product_list',
     ...options
 });
 
@@ -4668,7 +4668,7 @@ export const fetchShopProductListApiV1TiktokAppV3FetchShopProductListGet = <Thro
  */
 export const fetchShopProductListV2ApiV1TiktokAppV3FetchShopProductListV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchShopProductListV2ApiV1TiktokAppV3FetchShopProductListV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchShopProductListV2ApiV1TiktokAppV3FetchShopProductListV2GetResponses, FetchShopProductListV2ApiV1TiktokAppV3FetchShopProductListV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_shop_product_list_v2',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_product_list_v2',
     ...options
 });
 
@@ -4696,7 +4696,7 @@ export const fetchShopProductListV2ApiV1TiktokAppV3FetchShopProductListV2Get = <
  */
 export const fetchShopInfoApiV1TiktokAppV3FetchShopInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchShopInfoApiV1TiktokAppV3FetchShopInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchShopInfoApiV1TiktokAppV3FetchShopInfoGetResponses, FetchShopInfoApiV1TiktokAppV3FetchShopInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_shop_info',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_info',
     ...options
 });
 
@@ -4724,7 +4724,7 @@ export const fetchShopInfoApiV1TiktokAppV3FetchShopInfoGet = <ThrowOnError exten
  */
 export const fetchShopProductCategoryApiV1TiktokAppV3FetchShopProductCategoryGet = <ThrowOnError extends boolean = false>(options: Options<FetchShopProductCategoryApiV1TiktokAppV3FetchShopProductCategoryGetData, ThrowOnError>) => (options.client ?? client).get<FetchShopProductCategoryApiV1TiktokAppV3FetchShopProductCategoryGetResponses, FetchShopProductCategoryApiV1TiktokAppV3FetchShopProductCategoryGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_shop_product_category',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_shop_product_category',
     ...options
 });
 
@@ -4815,7 +4815,7 @@ export const fetchShopProductCategoryApiV1TiktokAppV3FetchShopProductCategoryGet
  */
 export const fetchLiveDailyRankApiV1TiktokAppV3FetchLiveDailyRankGet = <ThrowOnError extends boolean = false>(options?: Options<FetchLiveDailyRankApiV1TiktokAppV3FetchLiveDailyRankGetData, ThrowOnError>) => (options?.client ?? client).get<FetchLiveDailyRankApiV1TiktokAppV3FetchLiveDailyRankGetResponses, FetchLiveDailyRankApiV1TiktokAppV3FetchLiveDailyRankGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_live_daily_rank',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_daily_rank',
     ...options
 });
 
@@ -4847,7 +4847,7 @@ export const fetchLiveDailyRankApiV1TiktokAppV3FetchLiveDailyRankGet = <ThrowOnE
  */
 export const fetchUserMusicListApiV1TiktokAppV3FetchUserMusicListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserMusicListApiV1TiktokAppV3FetchUserMusicListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserMusicListApiV1TiktokAppV3FetchUserMusicListGetResponses, FetchUserMusicListApiV1TiktokAppV3FetchUserMusicListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_user_music_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_user_music_list',
     ...options
 });
 
@@ -4928,7 +4928,7 @@ export const fetchUserMusicListApiV1TiktokAppV3FetchUserMusicListGet = <ThrowOnE
  */
 export const fetchContentTranslateApiV1TiktokAppV3FetchContentTranslatePost = <ThrowOnError extends boolean = false>(options: Options<FetchContentTranslateApiV1TiktokAppV3FetchContentTranslatePostData, ThrowOnError>) => (options.client ?? client).post<FetchContentTranslateApiV1TiktokAppV3FetchContentTranslatePostResponses, FetchContentTranslateApiV1TiktokAppV3FetchContentTranslatePostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_content_translate',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_content_translate',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -4957,7 +4957,7 @@ export const fetchContentTranslateApiV1TiktokAppV3FetchContentTranslatePost = <T
  */
 export const fetchHomeFeedApiV1TiktokAppV3FetchHomeFeedPost = <ThrowOnError extends boolean = false>(options: Options<FetchHomeFeedApiV1TiktokAppV3FetchHomeFeedPostData, ThrowOnError>) => (options.client ?? client).post<FetchHomeFeedApiV1TiktokAppV3FetchHomeFeedPostResponses, FetchHomeFeedApiV1TiktokAppV3FetchHomeFeedPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_home_feed',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_home_feed',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5004,7 +5004,7 @@ export const fetchHomeFeedApiV1TiktokAppV3FetchHomeFeedPost = <ThrowOnError exte
  */
 export const tTencryptAlgorithmApiV1TiktokAppV3TTencryptAlgorithmPost = <ThrowOnError extends boolean = false>(options: Options<TTencryptAlgorithmApiV1TiktokAppV3tTencryptAlgorithmPostData, ThrowOnError>) => (options.client ?? client).post<TTencryptAlgorithmApiV1TiktokAppV3tTencryptAlgorithmPostResponses, TTencryptAlgorithmApiV1TiktokAppV3tTencryptAlgorithmPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/TTencrypt_algorithm',
+    url: '/video-hub/api/v1/tiktok/app/v3/TTencrypt_algorithm',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5057,7 +5057,7 @@ export const tTencryptAlgorithmApiV1TiktokAppV3TTencryptAlgorithmPost = <ThrowOn
  */
 export const fetchLiveRoomProductListApiV1TiktokAppV3FetchLiveRoomProductListGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveRoomProductListApiV1TiktokAppV3FetchLiveRoomProductListGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveRoomProductListApiV1TiktokAppV3FetchLiveRoomProductListGetResponses, FetchLiveRoomProductListApiV1TiktokAppV3FetchLiveRoomProductListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_live_room_product_list',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_room_product_list',
     ...options
 });
 
@@ -5106,7 +5106,7 @@ export const fetchLiveRoomProductListApiV1TiktokAppV3FetchLiveRoomProductListGet
  */
 export const fetchLiveRoomProductListV2ApiV1TiktokAppV3FetchLiveRoomProductListV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchLiveRoomProductListV2ApiV1TiktokAppV3FetchLiveRoomProductListV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveRoomProductListV2ApiV1TiktokAppV3FetchLiveRoomProductListV2GetResponses, FetchLiveRoomProductListV2ApiV1TiktokAppV3FetchLiveRoomProductListV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/fetch_live_room_product_list_v2',
+    url: '/video-hub/api/v1/tiktok/app/v3/fetch_live_room_product_list_v2',
     ...options
 });
 
@@ -5140,7 +5140,7 @@ export const fetchLiveRoomProductListV2ApiV1TiktokAppV3FetchLiveRoomProductListV
  */
 export const addVideoPlayCountApiV1TiktokAppV3AddVideoPlayCountGet = <ThrowOnError extends boolean = false>(options: Options<AddVideoPlayCountApiV1TiktokAppV3AddVideoPlayCountGetData, ThrowOnError>) => (options.client ?? client).get<AddVideoPlayCountApiV1TiktokAppV3AddVideoPlayCountGetResponses, AddVideoPlayCountApiV1TiktokAppV3AddVideoPlayCountGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/add_video_play_count',
+    url: '/video-hub/api/v1/tiktok/app/v3/add_video_play_count',
     ...options
 });
 
@@ -5182,7 +5182,7 @@ export const addVideoPlayCountApiV1TiktokAppV3AddVideoPlayCountGet = <ThrowOnErr
  */
 export const encryptDecryptLoginRequestApiV1TiktokAppV3EncryptDecryptLoginRequestPost = <ThrowOnError extends boolean = false>(options: Options<EncryptDecryptLoginRequestApiV1TiktokAppV3EncryptDecryptLoginRequestPostData, ThrowOnError>) => (options.client ?? client).post<EncryptDecryptLoginRequestApiV1TiktokAppV3EncryptDecryptLoginRequestPostResponses, EncryptDecryptLoginRequestApiV1TiktokAppV3EncryptDecryptLoginRequestPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/encrypt_decrypt_login_request',
+    url: '/video-hub/api/v1/tiktok/app/v3/encrypt_decrypt_login_request',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5220,7 +5220,7 @@ export const encryptDecryptLoginRequestApiV1TiktokAppV3EncryptDecryptLoginReques
  */
 export const openTiktokAppToVideoDetailApiV1TiktokAppV3OpenTiktokAppToVideoDetailGet = <ThrowOnError extends boolean = false>(options: Options<OpenTiktokAppToVideoDetailApiV1TiktokAppV3OpenTiktokAppToVideoDetailGetData, ThrowOnError>) => (options.client ?? client).get<OpenTiktokAppToVideoDetailApiV1TiktokAppV3OpenTiktokAppToVideoDetailGetResponses, OpenTiktokAppToVideoDetailApiV1TiktokAppV3OpenTiktokAppToVideoDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/open_tiktok_app_to_video_detail',
+    url: '/video-hub/api/v1/tiktok/app/v3/open_tiktok_app_to_video_detail',
     ...options
 });
 
@@ -5254,7 +5254,7 @@ export const openTiktokAppToVideoDetailApiV1TiktokAppV3OpenTiktokAppToVideoDetai
  */
 export const openTiktokAppToUserProfileApiV1TiktokAppV3OpenTiktokAppToUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<OpenTiktokAppToUserProfileApiV1TiktokAppV3OpenTiktokAppToUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<OpenTiktokAppToUserProfileApiV1TiktokAppV3OpenTiktokAppToUserProfileGetResponses, OpenTiktokAppToUserProfileApiV1TiktokAppV3OpenTiktokAppToUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/open_tiktok_app_to_user_profile',
+    url: '/video-hub/api/v1/tiktok/app/v3/open_tiktok_app_to_user_profile',
     ...options
 });
 
@@ -5288,7 +5288,7 @@ export const openTiktokAppToUserProfileApiV1TiktokAppV3OpenTiktokAppToUserProfil
  */
 export const openTiktokAppToKeywordSearchApiV1TiktokAppV3OpenTiktokAppToKeywordSearchGet = <ThrowOnError extends boolean = false>(options: Options<OpenTiktokAppToKeywordSearchApiV1TiktokAppV3OpenTiktokAppToKeywordSearchGetData, ThrowOnError>) => (options.client ?? client).get<OpenTiktokAppToKeywordSearchApiV1TiktokAppV3OpenTiktokAppToKeywordSearchGetResponses, OpenTiktokAppToKeywordSearchApiV1TiktokAppV3OpenTiktokAppToKeywordSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/open_tiktok_app_to_keyword_search',
+    url: '/video-hub/api/v1/tiktok/app/v3/open_tiktok_app_to_keyword_search',
     ...options
 });
 
@@ -5322,7 +5322,7 @@ export const openTiktokAppToKeywordSearchApiV1TiktokAppV3OpenTiktokAppToKeywordS
  */
 export const openTiktokAppToSendPrivateMessageApiV1TiktokAppV3OpenTiktokAppToSendPrivateMessageGet = <ThrowOnError extends boolean = false>(options: Options<OpenTiktokAppToSendPrivateMessageApiV1TiktokAppV3OpenTiktokAppToSendPrivateMessageGetData, ThrowOnError>) => (options.client ?? client).get<OpenTiktokAppToSendPrivateMessageApiV1TiktokAppV3OpenTiktokAppToSendPrivateMessageGetResponses, OpenTiktokAppToSendPrivateMessageApiV1TiktokAppV3OpenTiktokAppToSendPrivateMessageGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/app/v3/open_tiktok_app_to_send_private_message',
+    url: '/video-hub/api/v1/tiktok/app/v3/open_tiktok_app_to_send_private_message',
     ...options
 });
 
@@ -5409,7 +5409,7 @@ export const openTiktokAppToSendPrivateMessageApiV1TiktokAppV3OpenTiktokAppToSen
  */
 export const getAccountHealthStatusApiV1TiktokCreatorGetAccountHealthStatusPost = <ThrowOnError extends boolean = false>(options: Options<GetAccountHealthStatusApiV1TiktokCreatorGetAccountHealthStatusPostData, ThrowOnError>) => (options.client ?? client).post<GetAccountHealthStatusApiV1TiktokCreatorGetAccountHealthStatusPostResponses, GetAccountHealthStatusApiV1TiktokCreatorGetAccountHealthStatusPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_account_health_status',
+    url: '/video-hub/api/v1/tiktok/creator/get_account_health_status',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5506,7 +5506,7 @@ export const getAccountHealthStatusApiV1TiktokCreatorGetAccountHealthStatusPost 
  */
 export const getAccountViolationListApiV1TiktokCreatorGetAccountViolationListPost = <ThrowOnError extends boolean = false>(options: Options<GetAccountViolationListApiV1TiktokCreatorGetAccountViolationListPostData, ThrowOnError>) => (options.client ?? client).post<GetAccountViolationListApiV1TiktokCreatorGetAccountViolationListPostResponses, GetAccountViolationListApiV1TiktokCreatorGetAccountViolationListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_account_violation_list',
+    url: '/video-hub/api/v1/tiktok/creator/get_account_violation_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5581,7 +5581,7 @@ export const getAccountViolationListApiV1TiktokCreatorGetAccountViolationListPos
  */
 export const getAccountInsightsOverviewApiV1TiktokCreatorGetAccountInsightsOverviewPost = <ThrowOnError extends boolean = false>(options: Options<GetAccountInsightsOverviewApiV1TiktokCreatorGetAccountInsightsOverviewPostData, ThrowOnError>) => (options.client ?? client).post<GetAccountInsightsOverviewApiV1TiktokCreatorGetAccountInsightsOverviewPostResponses, GetAccountInsightsOverviewApiV1TiktokCreatorGetAccountInsightsOverviewPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_account_insights_overview',
+    url: '/video-hub/api/v1/tiktok/creator/get_account_insights_overview',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5678,7 +5678,7 @@ export const getAccountInsightsOverviewApiV1TiktokCreatorGetAccountInsightsOverv
  */
 export const getLiveOverviewApiV1TiktokCreatorGetLiveAnalyticsSummaryPost = <ThrowOnError extends boolean = false>(options: Options<GetLiveOverviewApiV1TiktokCreatorGetLiveAnalyticsSummaryPostData, ThrowOnError>) => (options.client ?? client).post<GetLiveOverviewApiV1TiktokCreatorGetLiveAnalyticsSummaryPostResponses, GetLiveOverviewApiV1TiktokCreatorGetLiveAnalyticsSummaryPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_live_analytics_summary',
+    url: '/video-hub/api/v1/tiktok/creator/get_live_analytics_summary',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5756,7 +5756,7 @@ export const getLiveOverviewApiV1TiktokCreatorGetLiveAnalyticsSummaryPost = <Thr
  */
 export const getVideoAnalyticsSummaryApiV1TiktokCreatorGetVideoAnalyticsSummaryPost = <ThrowOnError extends boolean = false>(options: Options<GetVideoAnalyticsSummaryApiV1TiktokCreatorGetVideoAnalyticsSummaryPostData, ThrowOnError>) => (options.client ?? client).post<GetVideoAnalyticsSummaryApiV1TiktokCreatorGetVideoAnalyticsSummaryPostResponses, GetVideoAnalyticsSummaryApiV1TiktokCreatorGetVideoAnalyticsSummaryPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_video_analytics_summary',
+    url: '/video-hub/api/v1/tiktok/creator/get_video_analytics_summary',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5880,7 +5880,7 @@ export const getVideoAnalyticsSummaryApiV1TiktokCreatorGetVideoAnalyticsSummaryP
  */
 export const getVideoListApiV1TiktokCreatorGetVideoListAnalyticsPost = <ThrowOnError extends boolean = false>(options: Options<GetVideoListApiV1TiktokCreatorGetVideoListAnalyticsPostData, ThrowOnError>) => (options.client ?? client).post<GetVideoListApiV1TiktokCreatorGetVideoListAnalyticsPostResponses, GetVideoListApiV1TiktokCreatorGetVideoListAnalyticsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_video_list_analytics',
+    url: '/video-hub/api/v1/tiktok/creator/get_video_list_analytics',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -5975,7 +5975,7 @@ export const getVideoListApiV1TiktokCreatorGetVideoListAnalyticsPost = <ThrowOnE
  */
 export const getProductAnalyticsListApiV1TiktokCreatorGetProductAnalyticsListPost = <ThrowOnError extends boolean = false>(options: Options<GetProductAnalyticsListApiV1TiktokCreatorGetProductAnalyticsListPostData, ThrowOnError>) => (options.client ?? client).post<GetProductAnalyticsListApiV1TiktokCreatorGetProductAnalyticsListPostResponses, GetProductAnalyticsListApiV1TiktokCreatorGetProductAnalyticsListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_product_analytics_list',
+    url: '/video-hub/api/v1/tiktok/creator/get_product_analytics_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -6057,7 +6057,7 @@ export const getProductAnalyticsListApiV1TiktokCreatorGetProductAnalyticsListPos
  */
 export const getCreatorAccountInfoApiV1TiktokCreatorGetCreatorAccountInfoPost = <ThrowOnError extends boolean = false>(options: Options<GetCreatorAccountInfoApiV1TiktokCreatorGetCreatorAccountInfoPostData, ThrowOnError>) => (options.client ?? client).post<GetCreatorAccountInfoApiV1TiktokCreatorGetCreatorAccountInfoPostResponses, GetCreatorAccountInfoApiV1TiktokCreatorGetCreatorAccountInfoPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_creator_account_info',
+    url: '/video-hub/api/v1/tiktok/creator/get_creator_account_info',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -6217,7 +6217,7 @@ export const getCreatorAccountInfoApiV1TiktokCreatorGetCreatorAccountInfoPost = 
  */
 export const getShowcaseProductListApiV1TiktokCreatorGetShowcaseProductListPost = <ThrowOnError extends boolean = false>(options: Options<GetShowcaseProductListApiV1TiktokCreatorGetShowcaseProductListPostData, ThrowOnError>) => (options.client ?? client).post<GetShowcaseProductListApiV1TiktokCreatorGetShowcaseProductListPostResponses, GetShowcaseProductListApiV1TiktokCreatorGetShowcaseProductListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_showcase_product_list',
+    url: '/video-hub/api/v1/tiktok/creator/get_showcase_product_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -6309,7 +6309,7 @@ export const getShowcaseProductListApiV1TiktokCreatorGetShowcaseProductListPost 
  */
 export const getVideoAssociatedProductListApiV1TiktokCreatorGetVideoAssociatedProductListPost = <ThrowOnError extends boolean = false>(options: Options<GetVideoAssociatedProductListApiV1TiktokCreatorGetVideoAssociatedProductListPostData, ThrowOnError>) => (options.client ?? client).post<GetVideoAssociatedProductListApiV1TiktokCreatorGetVideoAssociatedProductListPostResponses, GetVideoAssociatedProductListApiV1TiktokCreatorGetVideoAssociatedProductListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_video_associated_product_list',
+    url: '/video-hub/api/v1/tiktok/creator/get_video_associated_product_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -6403,7 +6403,7 @@ export const getVideoAssociatedProductListApiV1TiktokCreatorGetVideoAssociatedPr
  */
 export const getVideoDetailedStatsApiV1TiktokCreatorGetVideoDetailedStatsPost = <ThrowOnError extends boolean = false>(options: Options<GetVideoDetailedStatsApiV1TiktokCreatorGetVideoDetailedStatsPostData, ThrowOnError>) => (options.client ?? client).post<GetVideoDetailedStatsApiV1TiktokCreatorGetVideoDetailedStatsPostResponses, GetVideoDetailedStatsApiV1TiktokCreatorGetVideoDetailedStatsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_video_detailed_stats',
+    url: '/video-hub/api/v1/tiktok/creator/get_video_detailed_stats',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -6500,7 +6500,7 @@ export const getVideoDetailedStatsApiV1TiktokCreatorGetVideoDetailedStatsPost = 
  */
 export const getVideoToProductStatsApiV1TiktokCreatorGetVideoToProductStatsPost = <ThrowOnError extends boolean = false>(options: Options<GetVideoToProductStatsApiV1TiktokCreatorGetVideoToProductStatsPostData, ThrowOnError>) => (options.client ?? client).post<GetVideoToProductStatsApiV1TiktokCreatorGetVideoToProductStatsPostResponses, GetVideoToProductStatsApiV1TiktokCreatorGetVideoToProductStatsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_video_to_product_stats',
+    url: '/video-hub/api/v1/tiktok/creator/get_video_to_product_stats',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -6605,7 +6605,7 @@ export const getVideoToProductStatsApiV1TiktokCreatorGetVideoToProductStatsPost 
  */
 export const getProductRelatedVideosApiV1TiktokCreatorGetProductRelatedVideosPost = <ThrowOnError extends boolean = false>(options: Options<GetProductRelatedVideosApiV1TiktokCreatorGetProductRelatedVideosPostData, ThrowOnError>) => (options.client ?? client).post<GetProductRelatedVideosApiV1TiktokCreatorGetProductRelatedVideosPostResponses, GetProductRelatedVideosApiV1TiktokCreatorGetProductRelatedVideosPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_product_related_videos',
+    url: '/video-hub/api/v1/tiktok/creator/get_product_related_videos',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -6701,7 +6701,7 @@ export const getProductRelatedVideosApiV1TiktokCreatorGetProductRelatedVideosPos
  */
 export const getVideoAudienceStatsApiV1TiktokCreatorGetVideoAudienceStatsPost = <ThrowOnError extends boolean = false>(options: Options<GetVideoAudienceStatsApiV1TiktokCreatorGetVideoAudienceStatsPostData, ThrowOnError>) => (options.client ?? client).post<GetVideoAudienceStatsApiV1TiktokCreatorGetVideoAudienceStatsPostResponses, GetVideoAudienceStatsApiV1TiktokCreatorGetVideoAudienceStatsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/creator/get_video_audience_stats',
+    url: '/video-hub/api/v1/tiktok/creator/get_video_audience_stats',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -6834,7 +6834,7 @@ export const getVideoAudienceStatsApiV1TiktokCreatorGetVideoAudienceStatsPost = 
  */
 export const fetchVideoMetricsApiV1TiktokAnalyticsFetchVideoMetricsGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoMetricsApiV1TiktokAnalyticsFetchVideoMetricsGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoMetricsApiV1TiktokAnalyticsFetchVideoMetricsGetResponses, FetchVideoMetricsApiV1TiktokAnalyticsFetchVideoMetricsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/analytics/fetch_video_metrics',
+    url: '/video-hub/api/v1/tiktok/analytics/fetch_video_metrics',
     ...options
 });
 
@@ -7237,7 +7237,7 @@ export const fetchVideoMetricsApiV1TiktokAnalyticsFetchVideoMetricsGet = <ThrowO
  */
 export const detectFakeViewsApiV1TiktokAnalyticsDetectFakeViewsGet = <ThrowOnError extends boolean = false>(options: Options<DetectFakeViewsApiV1TiktokAnalyticsDetectFakeViewsGetData, ThrowOnError>) => (options.client ?? client).get<DetectFakeViewsApiV1TiktokAnalyticsDetectFakeViewsGetResponses, DetectFakeViewsApiV1TiktokAnalyticsDetectFakeViewsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/analytics/detect_fake_views',
+    url: '/video-hub/api/v1/tiktok/analytics/detect_fake_views',
     ...options
 });
 
@@ -7388,7 +7388,7 @@ export const detectFakeViewsApiV1TiktokAnalyticsDetectFakeViewsGet = <ThrowOnErr
  */
 export const fetchCommentKeywordsApiV1TiktokAnalyticsFetchCommentKeywordsGet = <ThrowOnError extends boolean = false>(options: Options<FetchCommentKeywordsApiV1TiktokAnalyticsFetchCommentKeywordsGetData, ThrowOnError>) => (options.client ?? client).get<FetchCommentKeywordsApiV1TiktokAnalyticsFetchCommentKeywordsGetResponses, FetchCommentKeywordsApiV1TiktokAnalyticsFetchCommentKeywordsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/analytics/fetch_comment_keywords',
+    url: '/video-hub/api/v1/tiktok/analytics/fetch_comment_keywords',
     ...options
 });
 
@@ -7519,7 +7519,7 @@ export const fetchCommentKeywordsApiV1TiktokAnalyticsFetchCommentKeywordsGet = <
  */
 export const fetchCreatorInfoAndMilestonesApiV1TiktokAnalyticsFetchCreatorInfoAndMilestonesGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorInfoAndMilestonesApiV1TiktokAnalyticsFetchCreatorInfoAndMilestonesGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorInfoAndMilestonesApiV1TiktokAnalyticsFetchCreatorInfoAndMilestonesGetResponses, FetchCreatorInfoAndMilestonesApiV1TiktokAnalyticsFetchCreatorInfoAndMilestonesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/analytics/fetch_creator_info_and_milestones',
+    url: '/video-hub/api/v1/tiktok/analytics/fetch_creator_info_and_milestones',
     ...options
 });
 
@@ -7742,7 +7742,7 @@ export const fetchCreatorInfoAndMilestonesApiV1TiktokAnalyticsFetchCreatorInfoAn
  */
 export const getAdsDetailApiV1TiktokAdsGetAdsDetailGet = <ThrowOnError extends boolean = false>(options: Options<GetAdsDetailApiV1TiktokAdsGetAdsDetailGetData, ThrowOnError>) => (options.client ?? client).get<GetAdsDetailApiV1TiktokAdsGetAdsDetailGetResponses, GetAdsDetailApiV1TiktokAdsGetAdsDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_ads_detail',
+    url: '/video-hub/api/v1/tiktok/ads/get_ads_detail',
     ...options
 });
 
@@ -7937,7 +7937,7 @@ export const getAdsDetailApiV1TiktokAdsGetAdsDetailGet = <ThrowOnError extends b
  */
 export const searchAdsApiV1TiktokAdsSearchAdsGet = <ThrowOnError extends boolean = false>(options?: Options<SearchAdsApiV1TiktokAdsSearchAdsGetData, ThrowOnError>) => (options?.client ?? client).get<SearchAdsApiV1TiktokAdsSearchAdsGetResponses, SearchAdsApiV1TiktokAdsSearchAdsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/search_ads',
+    url: '/video-hub/api/v1/tiktok/ads/search_ads',
     ...options
 });
 
@@ -8166,7 +8166,7 @@ export const searchAdsApiV1TiktokAdsSearchAdsGet = <ThrowOnError extends boolean
  */
 export const getKeywordInsightsApiV1TiktokAdsGetKeywordInsightsGet = <ThrowOnError extends boolean = false>(options?: Options<GetKeywordInsightsApiV1TiktokAdsGetKeywordInsightsGetData, ThrowOnError>) => (options?.client ?? client).get<GetKeywordInsightsApiV1TiktokAdsGetKeywordInsightsGetResponses, GetKeywordInsightsApiV1TiktokAdsGetKeywordInsightsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_keyword_insights',
+    url: '/video-hub/api/v1/tiktok/ads/get_keyword_insights',
     ...options
 });
 
@@ -8433,7 +8433,7 @@ export const getKeywordInsightsApiV1TiktokAdsGetKeywordInsightsGet = <ThrowOnErr
  */
 export const getTopProductsApiV1TiktokAdsGetTopProductsGet = <ThrowOnError extends boolean = false>(options?: Options<GetTopProductsApiV1TiktokAdsGetTopProductsGetData, ThrowOnError>) => (options?.client ?? client).get<GetTopProductsApiV1TiktokAdsGetTopProductsGetResponses, GetTopProductsApiV1TiktokAdsGetTopProductsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_top_products',
+    url: '/video-hub/api/v1/tiktok/ads/get_top_products',
     ...options
 });
 
@@ -8678,7 +8678,7 @@ export const getTopProductsApiV1TiktokAdsGetTopProductsGet = <ThrowOnError exten
  */
 export const getHashtagListApiV1TiktokAdsGetHashtagListGet = <ThrowOnError extends boolean = false>(options?: Options<GetHashtagListApiV1TiktokAdsGetHashtagListGetData, ThrowOnError>) => (options?.client ?? client).get<GetHashtagListApiV1TiktokAdsGetHashtagListGetResponses, GetHashtagListApiV1TiktokAdsGetHashtagListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_hashtag_list',
+    url: '/video-hub/api/v1/tiktok/ads/get_hashtag_list',
     ...options
 });
 
@@ -8907,7 +8907,7 @@ export const getHashtagListApiV1TiktokAdsGetHashtagListGet = <ThrowOnError exten
  */
 export const getSoundRankListApiV1TiktokAdsGetSoundRankListGet = <ThrowOnError extends boolean = false>(options?: Options<GetSoundRankListApiV1TiktokAdsGetSoundRankListGetData, ThrowOnError>) => (options?.client ?? client).get<GetSoundRankListApiV1TiktokAdsGetSoundRankListGetResponses, GetSoundRankListApiV1TiktokAdsGetSoundRankListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_sound_rank_list',
+    url: '/video-hub/api/v1/tiktok/ads/get_sound_rank_list',
     ...options
 });
 
@@ -9016,7 +9016,7 @@ export const getSoundRankListApiV1TiktokAdsGetSoundRankListGet = <ThrowOnError e
  */
 export const getKeywordListApiV1TiktokAdsGetKeywordListGet = <ThrowOnError extends boolean = false>(options?: Options<GetKeywordListApiV1TiktokAdsGetKeywordListGetData, ThrowOnError>) => (options?.client ?? client).get<GetKeywordListApiV1TiktokAdsGetKeywordListGetResponses, GetKeywordListApiV1TiktokAdsGetKeywordListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_keyword_list',
+    url: '/video-hub/api/v1/tiktok/ads/get_keyword_list',
     ...options
 });
 
@@ -9188,7 +9188,7 @@ export const getKeywordListApiV1TiktokAdsGetKeywordListGet = <ThrowOnError exten
  */
 export const getTopAdsSpotlightApiV1TiktokAdsGetTopAdsSpotlightGet = <ThrowOnError extends boolean = false>(options?: Options<GetTopAdsSpotlightApiV1TiktokAdsGetTopAdsSpotlightGetData, ThrowOnError>) => (options?.client ?? client).get<GetTopAdsSpotlightApiV1TiktokAdsGetTopAdsSpotlightGetResponses, GetTopAdsSpotlightApiV1TiktokAdsGetTopAdsSpotlightGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_top_ads_spotlight',
+    url: '/video-hub/api/v1/tiktok/ads/get_top_ads_spotlight',
     ...options
 });
 
@@ -9279,7 +9279,7 @@ export const getTopAdsSpotlightApiV1TiktokAdsGetTopAdsSpotlightGet = <ThrowOnErr
  */
 export const getAdKeyframeAnalysisApiV1TiktokAdsGetAdKeyframeAnalysisGet = <ThrowOnError extends boolean = false>(options: Options<GetAdKeyframeAnalysisApiV1TiktokAdsGetAdKeyframeAnalysisGetData, ThrowOnError>) => (options.client ?? client).get<GetAdKeyframeAnalysisApiV1TiktokAdsGetAdKeyframeAnalysisGetResponses, GetAdKeyframeAnalysisApiV1TiktokAdsGetAdKeyframeAnalysisGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_ad_keyframe_analysis',
+    url: '/video-hub/api/v1/tiktok/ads/get_ad_keyframe_analysis',
     ...options
 });
 
@@ -9384,7 +9384,7 @@ export const getAdKeyframeAnalysisApiV1TiktokAdsGetAdKeyframeAnalysisGet = <Thro
  */
 export const getAdPercentileApiV1TiktokAdsGetAdPercentileGet = <ThrowOnError extends boolean = false>(options: Options<GetAdPercentileApiV1TiktokAdsGetAdPercentileGetData, ThrowOnError>) => (options.client ?? client).get<GetAdPercentileApiV1TiktokAdsGetAdPercentileGetResponses, GetAdPercentileApiV1TiktokAdsGetAdPercentileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_ad_percentile',
+    url: '/video-hub/api/v1/tiktok/ads/get_ad_percentile',
     ...options
 });
 
@@ -9493,7 +9493,7 @@ export const getAdPercentileApiV1TiktokAdsGetAdPercentileGet = <ThrowOnError ext
  */
 export const getAdInteractiveAnalysisApiV1TiktokAdsGetAdInteractiveAnalysisGet = <ThrowOnError extends boolean = false>(options: Options<GetAdInteractiveAnalysisApiV1TiktokAdsGetAdInteractiveAnalysisGetData, ThrowOnError>) => (options.client ?? client).get<GetAdInteractiveAnalysisApiV1TiktokAdsGetAdInteractiveAnalysisGetResponses, GetAdInteractiveAnalysisApiV1TiktokAdsGetAdInteractiveAnalysisGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_ad_interactive_analysis',
+    url: '/video-hub/api/v1/tiktok/ads/get_ad_interactive_analysis',
     ...options
 });
 
@@ -9668,7 +9668,7 @@ export const getAdInteractiveAnalysisApiV1TiktokAdsGetAdInteractiveAnalysisGet =
  */
 export const getRecommendedAdsApiV1TiktokAdsGetRecommendedAdsGet = <ThrowOnError extends boolean = false>(options: Options<GetRecommendedAdsApiV1TiktokAdsGetRecommendedAdsGetData, ThrowOnError>) => (options.client ?? client).get<GetRecommendedAdsApiV1TiktokAdsGetRecommendedAdsGetResponses, GetRecommendedAdsApiV1TiktokAdsGetRecommendedAdsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_recommended_ads',
+    url: '/video-hub/api/v1/tiktok/ads/get_recommended_ads',
     ...options
 });
 
@@ -9747,7 +9747,7 @@ export const getRecommendedAdsApiV1TiktokAdsGetRecommendedAdsGet = <ThrowOnError
  */
 export const getQuerySuggestionsApiV1TiktokAdsGetQuerySuggestionsGet = <ThrowOnError extends boolean = false>(options?: Options<GetQuerySuggestionsApiV1TiktokAdsGetQuerySuggestionsGetData, ThrowOnError>) => (options?.client ?? client).get<GetQuerySuggestionsApiV1TiktokAdsGetQuerySuggestionsGetResponses, GetQuerySuggestionsApiV1TiktokAdsGetQuerySuggestionsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_query_suggestions',
+    url: '/video-hub/api/v1/tiktok/ads/get_query_suggestions',
     ...options
 });
 
@@ -9836,7 +9836,7 @@ export const getQuerySuggestionsApiV1TiktokAdsGetQuerySuggestionsGet = <ThrowOnE
  */
 export const getKeywordFiltersApiV1TiktokAdsGetKeywordFiltersGet = <ThrowOnError extends boolean = false>(options?: Options<GetKeywordFiltersApiV1TiktokAdsGetKeywordFiltersGetData, ThrowOnError>) => (options?.client ?? client).get<GetKeywordFiltersApiV1TiktokAdsGetKeywordFiltersGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_keyword_filters',
+    url: '/video-hub/api/v1/tiktok/ads/get_keyword_filters',
     ...options
 });
 
@@ -9945,7 +9945,7 @@ export const getKeywordFiltersApiV1TiktokAdsGetKeywordFiltersGet = <ThrowOnError
  */
 export const getRelatedKeywordsApiV1TiktokAdsGetRelatedKeywordsGet = <ThrowOnError extends boolean = false>(options?: Options<GetRelatedKeywordsApiV1TiktokAdsGetRelatedKeywordsGetData, ThrowOnError>) => (options?.client ?? client).get<GetRelatedKeywordsApiV1TiktokAdsGetRelatedKeywordsGetResponses, GetRelatedKeywordsApiV1TiktokAdsGetRelatedKeywordsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_related_keywords',
+    url: '/video-hub/api/v1/tiktok/ads/get_related_keywords',
     ...options
 });
 
@@ -10124,7 +10124,7 @@ export const getRelatedKeywordsApiV1TiktokAdsGetRelatedKeywordsGet = <ThrowOnErr
  */
 export const getKeywordDetailsApiV1TiktokAdsGetKeywordDetailsGet = <ThrowOnError extends boolean = false>(options?: Options<GetKeywordDetailsApiV1TiktokAdsGetKeywordDetailsGetData, ThrowOnError>) => (options?.client ?? client).get<GetKeywordDetailsApiV1TiktokAdsGetKeywordDetailsGetResponses, GetKeywordDetailsApiV1TiktokAdsGetKeywordDetailsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_keyword_details',
+    url: '/video-hub/api/v1/tiktok/ads/get_keyword_details',
     ...options
 });
 
@@ -10233,7 +10233,7 @@ export const getKeywordDetailsApiV1TiktokAdsGetKeywordDetailsGet = <ThrowOnError
  */
 export const getCreativePatternsApiV1TiktokAdsGetCreativePatternsGet = <ThrowOnError extends boolean = false>(options?: Options<GetCreativePatternsApiV1TiktokAdsGetCreativePatternsGetData, ThrowOnError>) => (options?.client ?? client).get<GetCreativePatternsApiV1TiktokAdsGetCreativePatternsGetResponses, GetCreativePatternsApiV1TiktokAdsGetCreativePatternsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_creative_patterns',
+    url: '/video-hub/api/v1/tiktok/ads/get_creative_patterns',
     ...options
 });
 
@@ -10360,7 +10360,7 @@ export const getCreativePatternsApiV1TiktokAdsGetCreativePatternsGet = <ThrowOnE
  */
 export const getProductFiltersApiV1TiktokAdsGetProductFiltersGet = <ThrowOnError extends boolean = false>(options?: Options<GetProductFiltersApiV1TiktokAdsGetProductFiltersGetData, ThrowOnError>) => (options?.client ?? client).get<GetProductFiltersApiV1TiktokAdsGetProductFiltersGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_product_filters',
+    url: '/video-hub/api/v1/tiktok/ads/get_product_filters',
     ...options
 });
 
@@ -10543,7 +10543,7 @@ export const getProductFiltersApiV1TiktokAdsGetProductFiltersGet = <ThrowOnError
  */
 export const getProductMetricsApiV1TiktokAdsGetProductMetricsGet = <ThrowOnError extends boolean = false>(options: Options<GetProductMetricsApiV1TiktokAdsGetProductMetricsGetData, ThrowOnError>) => (options.client ?? client).get<GetProductMetricsApiV1TiktokAdsGetProductMetricsGetResponses, GetProductMetricsApiV1TiktokAdsGetProductMetricsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_product_metrics',
+    url: '/video-hub/api/v1/tiktok/ads/get_product_metrics',
     ...options
 });
 
@@ -10786,7 +10786,7 @@ export const getProductMetricsApiV1TiktokAdsGetProductMetricsGet = <ThrowOnError
  */
 export const getProductDetailApiV1TiktokAdsGetProductDetailGet = <ThrowOnError extends boolean = false>(options: Options<GetProductDetailApiV1TiktokAdsGetProductDetailGetData, ThrowOnError>) => (options.client ?? client).get<GetProductDetailApiV1TiktokAdsGetProductDetailGetResponses, GetProductDetailApiV1TiktokAdsGetProductDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_product_detail',
+    url: '/video-hub/api/v1/tiktok/ads/get_product_detail',
     ...options
 });
 
@@ -10865,7 +10865,7 @@ export const getProductDetailApiV1TiktokAdsGetProductDetailGet = <ThrowOnError e
  */
 export const getHashtagFiltersApiV1TiktokAdsGetHashtagFiltersGet = <ThrowOnError extends boolean = false>(options?: Options<GetHashtagFiltersApiV1TiktokAdsGetHashtagFiltersGetData, ThrowOnError>) => (options?.client ?? client).get<GetHashtagFiltersApiV1TiktokAdsGetHashtagFiltersGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_hashtag_filters',
+    url: '/video-hub/api/v1/tiktok/ads/get_hashtag_filters',
     ...options
 });
 
@@ -11014,7 +11014,7 @@ export const getHashtagFiltersApiV1TiktokAdsGetHashtagFiltersGet = <ThrowOnError
  */
 export const getHashtagCreatorApiV1TiktokAdsGetHashtagCreatorGet = <ThrowOnError extends boolean = false>(options: Options<GetHashtagCreatorApiV1TiktokAdsGetHashtagCreatorGetData, ThrowOnError>) => (options.client ?? client).get<GetHashtagCreatorApiV1TiktokAdsGetHashtagCreatorGetResponses, GetHashtagCreatorApiV1TiktokAdsGetHashtagCreatorGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_hashtag_creator',
+    url: '/video-hub/api/v1/tiktok/ads/get_hashtag_creator',
     ...options
 });
 
@@ -11111,7 +11111,7 @@ export const getHashtagCreatorApiV1TiktokAdsGetHashtagCreatorGet = <ThrowOnError
  */
 export const getSoundFiltersApiV1TiktokAdsGetSoundFiltersGet = <ThrowOnError extends boolean = false>(options?: Options<GetSoundFiltersApiV1TiktokAdsGetSoundFiltersGetData, ThrowOnError>) => (options?.client ?? client).get<GetSoundFiltersApiV1TiktokAdsGetSoundFiltersGetResponses, GetSoundFiltersApiV1TiktokAdsGetSoundFiltersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_sound_filters',
+    url: '/video-hub/api/v1/tiktok/ads/get_sound_filters',
     ...options
 });
 
@@ -11271,7 +11271,7 @@ export const getSoundFiltersApiV1TiktokAdsGetSoundFiltersGet = <ThrowOnError ext
  */
 export const getSoundDetailApiV1TiktokAdsGetSoundDetailGet = <ThrowOnError extends boolean = false>(options: Options<GetSoundDetailApiV1TiktokAdsGetSoundDetailGetData, ThrowOnError>) => (options.client ?? client).get<GetSoundDetailApiV1TiktokAdsGetSoundDetailGetResponses, GetSoundDetailApiV1TiktokAdsGetSoundDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_sound_detail',
+    url: '/video-hub/api/v1/tiktok/ads/get_sound_detail',
     ...options
 });
 
@@ -11382,7 +11382,7 @@ export const getSoundDetailApiV1TiktokAdsGetSoundDetailGet = <ThrowOnError exten
  */
 export const searchSoundHintApiV1TiktokAdsSearchSoundHintGet = <ThrowOnError extends boolean = false>(options: Options<SearchSoundHintApiV1TiktokAdsSearchSoundHintGetData, ThrowOnError>) => (options.client ?? client).get<SearchSoundHintApiV1TiktokAdsSearchSoundHintGetResponses, SearchSoundHintApiV1TiktokAdsSearchSoundHintGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/search_sound_hint',
+    url: '/video-hub/api/v1/tiktok/ads/search_sound_hint',
     ...options
 });
 
@@ -11513,7 +11513,7 @@ export const searchSoundHintApiV1TiktokAdsSearchSoundHintGet = <ThrowOnError ext
  */
 export const searchSoundApiV1TiktokAdsSearchSoundGet = <ThrowOnError extends boolean = false>(options: Options<SearchSoundApiV1TiktokAdsSearchSoundGetData, ThrowOnError>) => (options.client ?? client).get<SearchSoundApiV1TiktokAdsSearchSoundGetResponses, SearchSoundApiV1TiktokAdsSearchSoundGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/search_sound',
+    url: '/video-hub/api/v1/tiktok/ads/search_sound',
     ...options
 });
 
@@ -11626,7 +11626,7 @@ export const searchSoundApiV1TiktokAdsSearchSoundGet = <ThrowOnError extends boo
  */
 export const getSoundRecommendationsApiV1TiktokAdsGetSoundRecommendationsGet = <ThrowOnError extends boolean = false>(options: Options<GetSoundRecommendationsApiV1TiktokAdsGetSoundRecommendationsGetData, ThrowOnError>) => (options.client ?? client).get<GetSoundRecommendationsApiV1TiktokAdsGetSoundRecommendationsGetResponses, GetSoundRecommendationsApiV1TiktokAdsGetSoundRecommendationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_sound_recommendations',
+    url: '/video-hub/api/v1/tiktok/ads/get_sound_recommendations',
     ...options
 });
 
@@ -11707,7 +11707,7 @@ export const getSoundRecommendationsApiV1TiktokAdsGetSoundRecommendationsGet = <
  */
 export const getCreatorFiltersApiV1TiktokAdsGetCreatorFiltersGet = <ThrowOnError extends boolean = false>(options?: Options<GetCreatorFiltersApiV1TiktokAdsGetCreatorFiltersGetData, ThrowOnError>) => (options?.client ?? client).get<GetCreatorFiltersApiV1TiktokAdsGetCreatorFiltersGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_creator_filters',
+    url: '/video-hub/api/v1/tiktok/ads/get_creator_filters',
     ...options
 });
 
@@ -11900,7 +11900,7 @@ export const getCreatorFiltersApiV1TiktokAdsGetCreatorFiltersGet = <ThrowOnError
  */
 export const getCreatorListApiV1TiktokAdsGetCreatorListGet = <ThrowOnError extends boolean = false>(options?: Options<GetCreatorListApiV1TiktokAdsGetCreatorListGetData, ThrowOnError>) => (options?.client ?? client).get<GetCreatorListApiV1TiktokAdsGetCreatorListGetResponses, GetCreatorListApiV1TiktokAdsGetCreatorListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_creator_list',
+    url: '/video-hub/api/v1/tiktok/ads/get_creator_list',
     ...options
 });
 
@@ -12087,7 +12087,7 @@ export const getCreatorListApiV1TiktokAdsGetCreatorListGet = <ThrowOnError exten
  */
 export const searchCreatorsApiV1TiktokAdsSearchCreatorsGet = <ThrowOnError extends boolean = false>(options: Options<SearchCreatorsApiV1TiktokAdsSearchCreatorsGetData, ThrowOnError>) => (options.client ?? client).get<SearchCreatorsApiV1TiktokAdsSearchCreatorsGetResponses, SearchCreatorsApiV1TiktokAdsSearchCreatorsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/search_creators',
+    url: '/video-hub/api/v1/tiktok/ads/search_creators',
     ...options
 });
 
@@ -12260,7 +12260,7 @@ export const searchCreatorsApiV1TiktokAdsSearchCreatorsGet = <ThrowOnError exten
  */
 export const getPopularTrendsApiV1TiktokAdsGetPopularTrendsGet = <ThrowOnError extends boolean = false>(options?: Options<GetPopularTrendsApiV1TiktokAdsGetPopularTrendsGetData, ThrowOnError>) => (options?.client ?? client).get<GetPopularTrendsApiV1TiktokAdsGetPopularTrendsGetResponses, GetPopularTrendsApiV1TiktokAdsGetPopularTrendsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/ads/get_popular_trends',
+    url: '/video-hub/api/v1/tiktok/ads/get_popular_trends',
     ...options
 });
 
@@ -12334,7 +12334,7 @@ export const getPopularTrendsApiV1TiktokAdsGetPopularTrendsGet = <ThrowOnError e
  */
 export const fetchProductDetailApiV1TiktokShopWebFetchProductDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductDetailApiV1TiktokShopWebFetchProductDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductDetailApiV1TiktokShopWebFetchProductDetailGetResponses, FetchProductDetailApiV1TiktokShopWebFetchProductDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_product_detail',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_detail',
     ...options
 });
 
@@ -12400,7 +12400,7 @@ export const fetchProductDetailApiV1TiktokShopWebFetchProductDetailGet = <ThrowO
  */
 export const fetchProductDetailV2ApiV1TiktokShopWebFetchProductDetailV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchProductDetailV2ApiV1TiktokShopWebFetchProductDetailV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchProductDetailV2ApiV1TiktokShopWebFetchProductDetailV2GetResponses, FetchProductDetailV2ApiV1TiktokShopWebFetchProductDetailV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_product_detail_v2',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_detail_v2',
     ...options
 });
 
@@ -12483,7 +12483,7 @@ export const fetchProductDetailV2ApiV1TiktokShopWebFetchProductDetailV2Get = <Th
  */
 export const fetchProductDetailV3ApiV1TiktokShopWebFetchProductDetailV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchProductDetailV3ApiV1TiktokShopWebFetchProductDetailV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchProductDetailV3ApiV1TiktokShopWebFetchProductDetailV3GetResponses, FetchProductDetailV3ApiV1TiktokShopWebFetchProductDetailV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_product_detail_v3',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_detail_v3',
     ...options
 });
 
@@ -12600,7 +12600,7 @@ export const fetchProductDetailV3ApiV1TiktokShopWebFetchProductDetailV3Get = <Th
  */
 export const fetchProductReviewsV1ApiV1TiktokShopWebFetchProductReviewsV1Get = <ThrowOnError extends boolean = false>(options: Options<FetchProductReviewsV1ApiV1TiktokShopWebFetchProductReviewsV1GetData, ThrowOnError>) => (options.client ?? client).get<FetchProductReviewsV1ApiV1TiktokShopWebFetchProductReviewsV1GetResponses, FetchProductReviewsV1ApiV1TiktokShopWebFetchProductReviewsV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_product_reviews_v1',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_reviews_v1',
     ...options
 });
 
@@ -12759,7 +12759,7 @@ export const fetchProductReviewsV1ApiV1TiktokShopWebFetchProductReviewsV1Get = <
  */
 export const fetchProductReviewsV2ApiV1TiktokShopWebFetchProductReviewsV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchProductReviewsV2ApiV1TiktokShopWebFetchProductReviewsV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchProductReviewsV2ApiV1TiktokShopWebFetchProductReviewsV2GetResponses, FetchProductReviewsV2ApiV1TiktokShopWebFetchProductReviewsV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_product_reviews_v2',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_product_reviews_v2',
     ...options
 });
 
@@ -12843,7 +12843,7 @@ export const fetchProductReviewsV2ApiV1TiktokShopWebFetchProductReviewsV2Get = <
  */
 export const fetchSellerProductsListApiV1TiktokShopWebFetchSellerProductsListGet = <ThrowOnError extends boolean = false>(options: Options<FetchSellerProductsListApiV1TiktokShopWebFetchSellerProductsListGetData, ThrowOnError>) => (options.client ?? client).get<FetchSellerProductsListApiV1TiktokShopWebFetchSellerProductsListGetResponses, FetchSellerProductsListApiV1TiktokShopWebFetchSellerProductsListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_seller_products_list',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_seller_products_list',
     ...options
 });
 
@@ -12905,7 +12905,7 @@ export const fetchSellerProductsListApiV1TiktokShopWebFetchSellerProductsListGet
  */
 export const fetchSellerProductsListV2ApiV1TiktokShopWebFetchSellerProductsListV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchSellerProductsListV2ApiV1TiktokShopWebFetchSellerProductsListV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchSellerProductsListV2ApiV1TiktokShopWebFetchSellerProductsListV2GetResponses, FetchSellerProductsListV2ApiV1TiktokShopWebFetchSellerProductsListV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_seller_products_list_v2',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_seller_products_list_v2',
     ...options
 });
 
@@ -12969,7 +12969,7 @@ export const fetchSellerProductsListV2ApiV1TiktokShopWebFetchSellerProductsListV
  */
 export const fetchSearchWordSuggestionApiV1TiktokShopWebFetchSearchWordSuggestionGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchWordSuggestionApiV1TiktokShopWebFetchSearchWordSuggestionGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchWordSuggestionApiV1TiktokShopWebFetchSearchWordSuggestionGetResponses, FetchSearchWordSuggestionApiV1TiktokShopWebFetchSearchWordSuggestionGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_search_word_suggestion',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_word_suggestion',
     ...options
 });
 
@@ -13031,7 +13031,7 @@ export const fetchSearchWordSuggestionApiV1TiktokShopWebFetchSearchWordSuggestio
  */
 export const fetchSearchWordSuggestionV2ApiV1TiktokShopWebFetchSearchWordSuggestionV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchSearchWordSuggestionV2ApiV1TiktokShopWebFetchSearchWordSuggestionV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchWordSuggestionV2ApiV1TiktokShopWebFetchSearchWordSuggestionV2GetResponses, FetchSearchWordSuggestionV2ApiV1TiktokShopWebFetchSearchWordSuggestionV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_search_word_suggestion_v2',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_word_suggestion_v2',
     ...options
 });
 
@@ -13128,7 +13128,7 @@ export const fetchSearchWordSuggestionV2ApiV1TiktokShopWebFetchSearchWordSuggest
  */
 export const fetchSearchProductsListApiV1TiktokShopWebFetchSearchProductsListGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchProductsListApiV1TiktokShopWebFetchSearchProductsListGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchProductsListApiV1TiktokShopWebFetchSearchProductsListGetResponses, FetchSearchProductsListApiV1TiktokShopWebFetchSearchProductsListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_search_products_list',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_products_list',
     ...options
 });
 
@@ -13187,7 +13187,7 @@ export const fetchSearchProductsListApiV1TiktokShopWebFetchSearchProductsListGet
  */
 export const fetchSearchProductsListV2ApiV1TiktokShopWebFetchSearchProductsListV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchSearchProductsListV2ApiV1TiktokShopWebFetchSearchProductsListV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchProductsListV2ApiV1TiktokShopWebFetchSearchProductsListV2GetResponses, FetchSearchProductsListV2ApiV1TiktokShopWebFetchSearchProductsListV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_search_products_list_v2',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_products_list_v2',
     ...options
 });
 
@@ -13363,7 +13363,7 @@ export const fetchSearchProductsListV2ApiV1TiktokShopWebFetchSearchProductsListV
  */
 export const fetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV3GetResponses, FetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_search_products_list_v3',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_search_products_list_v3',
     ...options
 });
 
@@ -13435,7 +13435,7 @@ export const fetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV
  */
 export const fetchProductsCategoryListApiV1TiktokShopWebFetchProductsCategoryListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchProductsCategoryListApiV1TiktokShopWebFetchProductsCategoryListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchProductsCategoryListApiV1TiktokShopWebFetchProductsCategoryListGetResponses, FetchProductsCategoryListApiV1TiktokShopWebFetchProductsCategoryListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_products_category_list',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_products_category_list',
     ...options
 });
 
@@ -13514,7 +13514,7 @@ export const fetchProductsCategoryListApiV1TiktokShopWebFetchProductsCategoryLis
  */
 export const fetchProductsByCategoryIdApiV1TiktokShopWebFetchProductsByCategoryIdGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductsByCategoryIdApiV1TiktokShopWebFetchProductsByCategoryIdGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductsByCategoryIdApiV1TiktokShopWebFetchProductsByCategoryIdGetResponses, FetchProductsByCategoryIdApiV1TiktokShopWebFetchProductsByCategoryIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_products_by_category_id',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_products_by_category_id',
     ...options
 });
 
@@ -13582,7 +13582,7 @@ export const fetchProductsByCategoryIdApiV1TiktokShopWebFetchProductsByCategoryI
  */
 export const fetchHotSellingProductsListApiV1TiktokShopWebFetchHotSellingProductsListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSellingProductsListApiV1TiktokShopWebFetchHotSellingProductsListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSellingProductsListApiV1TiktokShopWebFetchHotSellingProductsListGetResponses, FetchHotSellingProductsListApiV1TiktokShopWebFetchHotSellingProductsListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/shop/web/fetch_hot_selling_products_list',
+    url: '/video-hub/api/v1/tiktok/shop/web/fetch_hot_selling_products_list',
     ...options
 });
 
@@ -13637,7 +13637,7 @@ export const fetchHotSellingProductsListApiV1TiktokShopWebFetchHotSellingProduct
  *
  * @deprecated
  */
-export const applyForScopeApiV1TiktokInteractionApplyGet = <ThrowOnError extends boolean = false>(options: Options<ApplyForScopeApiV1TiktokInteractionApplyGetData, ThrowOnError>) => (options.client ?? client).get<ApplyForScopeApiV1TiktokInteractionApplyGetResponses, ApplyForScopeApiV1TiktokInteractionApplyGetErrors, ThrowOnError>({ url: '/api/v1/tiktok/interaction/apply', ...options });
+export const applyForScopeApiV1TiktokInteractionApplyGet = <ThrowOnError extends boolean = false>(options: Options<ApplyForScopeApiV1TiktokInteractionApplyGetData, ThrowOnError>) => (options.client ?? client).get<ApplyForScopeApiV1TiktokInteractionApplyGetResponses, ApplyForScopeApiV1TiktokInteractionApplyGetErrors, ThrowOnError>({ url: '/video-hub/api/v1/tiktok/interaction/apply', ...options });
 
 /**
  * 发送评论/Post comment
@@ -13699,7 +13699,7 @@ export const applyForScopeApiV1TiktokInteractionApplyGet = <ThrowOnError extends
  */
 export const postCommentApiV1TiktokInteractionPostCommentPost = <ThrowOnError extends boolean = false>(options: Options<PostCommentApiV1TiktokInteractionPostCommentPostData, ThrowOnError>) => (options.client ?? client).post<PostCommentApiV1TiktokInteractionPostCommentPostResponses, PostCommentApiV1TiktokInteractionPostCommentPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/interaction/post_comment',
+    url: '/video-hub/api/v1/tiktok/interaction/post_comment',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -13770,7 +13770,7 @@ export const postCommentApiV1TiktokInteractionPostCommentPost = <ThrowOnError ex
  */
 export const replyCommentApiV1TiktokInteractionReplyCommentPost = <ThrowOnError extends boolean = false>(options: Options<ReplyCommentApiV1TiktokInteractionReplyCommentPostData, ThrowOnError>) => (options.client ?? client).post<ReplyCommentApiV1TiktokInteractionReplyCommentPostResponses, ReplyCommentApiV1TiktokInteractionReplyCommentPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/interaction/reply_comment',
+    url: '/video-hub/api/v1/tiktok/interaction/reply_comment',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -13834,7 +13834,7 @@ export const replyCommentApiV1TiktokInteractionReplyCommentPost = <ThrowOnError 
  */
 export const likeApiV1TiktokInteractionLikePost = <ThrowOnError extends boolean = false>(options: Options<LikeApiV1TiktokInteractionLikePostData, ThrowOnError>) => (options.client ?? client).post<LikeApiV1TiktokInteractionLikePostResponses, LikeApiV1TiktokInteractionLikePostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/interaction/like',
+    url: '/video-hub/api/v1/tiktok/interaction/like',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -13901,7 +13901,7 @@ export const likeApiV1TiktokInteractionLikePost = <ThrowOnError extends boolean 
  */
 export const followApiV1TiktokInteractionFollowPost = <ThrowOnError extends boolean = false>(options: Options<FollowApiV1TiktokInteractionFollowPostData, ThrowOnError>) => (options.client ?? client).post<FollowApiV1TiktokInteractionFollowPostResponses, FollowApiV1TiktokInteractionFollowPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/interaction/follow',
+    url: '/video-hub/api/v1/tiktok/interaction/follow',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -13965,7 +13965,7 @@ export const followApiV1TiktokInteractionFollowPost = <ThrowOnError extends bool
  */
 export const collectApiV1TiktokInteractionCollectPost = <ThrowOnError extends boolean = false>(options: Options<CollectApiV1TiktokInteractionCollectPostData, ThrowOnError>) => (options.client ?? client).post<CollectApiV1TiktokInteractionCollectPostResponses, CollectApiV1TiktokInteractionCollectPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/interaction/collect',
+    url: '/video-hub/api/v1/tiktok/interaction/collect',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -14031,7 +14031,7 @@ export const collectApiV1TiktokInteractionCollectPost = <ThrowOnError extends bo
  */
 export const forwardApiV1TiktokInteractionForwardPost = <ThrowOnError extends boolean = false>(options: Options<ForwardApiV1TiktokInteractionForwardPostData, ThrowOnError>) => (options.client ?? client).post<ForwardApiV1TiktokInteractionForwardPostResponses, ForwardApiV1TiktokInteractionForwardPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/tiktok/interaction/forward',
+    url: '/video-hub/api/v1/tiktok/interaction/forward',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -14068,7 +14068,7 @@ export const forwardApiV1TiktokInteractionForwardPost = <ThrowOnError extends bo
  */
 export const fetchOneVideoApiV1DouyinWebFetchOneVideoGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1DouyinWebFetchOneVideoGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1DouyinWebFetchOneVideoGetResponses, FetchOneVideoApiV1DouyinWebFetchOneVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_one_video',
+    url: '/video-hub/api/v1/douyin/web/fetch_one_video',
     ...options
 });
 
@@ -14096,7 +14096,7 @@ export const fetchOneVideoApiV1DouyinWebFetchOneVideoGet = <ThrowOnError extends
  */
 export const fetchOneVideoApiV1DouyinWebFetchOneVideoV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1DouyinWebFetchOneVideoV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1DouyinWebFetchOneVideoV2GetResponses, FetchOneVideoApiV1DouyinWebFetchOneVideoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_one_video_v2',
+    url: '/video-hub/api/v1/douyin/web/fetch_one_video_v2',
     ...options
 });
 
@@ -14126,7 +14126,7 @@ export const fetchOneVideoApiV1DouyinWebFetchOneVideoV2Get = <ThrowOnError exten
  */
 export const fetchOneVideoByShareUrlApiV1DouyinWebFetchOneVideoByShareUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoByShareUrlApiV1DouyinWebFetchOneVideoByShareUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoByShareUrlApiV1DouyinWebFetchOneVideoByShareUrlGetResponses, FetchOneVideoByShareUrlApiV1DouyinWebFetchOneVideoByShareUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_one_video_by_share_url',
+    url: '/video-hub/api/v1/douyin/web/fetch_one_video_by_share_url',
     ...options
 });
 
@@ -14170,7 +14170,7 @@ export const fetchOneVideoByShareUrlApiV1DouyinWebFetchOneVideoByShareUrlGet = <
  */
 export const fetchVideoHighQualityPlayUrlApiV1DouyinWebFetchVideoHighQualityPlayUrlGet = <ThrowOnError extends boolean = false>(options?: Options<FetchVideoHighQualityPlayUrlApiV1DouyinWebFetchVideoHighQualityPlayUrlGetData, ThrowOnError>) => (options?.client ?? client).get<FetchVideoHighQualityPlayUrlApiV1DouyinWebFetchVideoHighQualityPlayUrlGetResponses, FetchVideoHighQualityPlayUrlApiV1DouyinWebFetchVideoHighQualityPlayUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_video_high_quality_play_url',
+    url: '/video-hub/api/v1/douyin/web/fetch_video_high_quality_play_url',
     ...options
 });
 
@@ -14233,7 +14233,7 @@ export const fetchVideoHighQualityPlayUrlApiV1DouyinWebFetchVideoHighQualityPlay
  */
 export const fetchMultiVideoHighQualityPlayUrlApiV1DouyinWebFetchMultiVideoHighQualityPlayUrlPost = <ThrowOnError extends boolean = false>(options: Options<FetchMultiVideoHighQualityPlayUrlApiV1DouyinWebFetchMultiVideoHighQualityPlayUrlPostData, ThrowOnError>) => (options.client ?? client).post<FetchMultiVideoHighQualityPlayUrlApiV1DouyinWebFetchMultiVideoHighQualityPlayUrlPostResponses, FetchMultiVideoHighQualityPlayUrlApiV1DouyinWebFetchMultiVideoHighQualityPlayUrlPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_multi_video_high_quality_play_url',
+    url: '/video-hub/api/v1/douyin/web/fetch_multi_video_high_quality_play_url',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -14267,7 +14267,7 @@ export const fetchMultiVideoHighQualityPlayUrlApiV1DouyinWebFetchMultiVideoHighQ
  */
 export const fetchMultiVideoApiV1DouyinWebFetchMultiVideoPost = <ThrowOnError extends boolean = false>(options: Options<FetchMultiVideoApiV1DouyinWebFetchMultiVideoPostData, ThrowOnError>) => (options.client ?? client).post<FetchMultiVideoApiV1DouyinWebFetchMultiVideoPostResponses, FetchMultiVideoApiV1DouyinWebFetchMultiVideoPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_multi_video',
+    url: '/video-hub/api/v1/douyin/web/fetch_multi_video',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -14308,7 +14308,7 @@ export const fetchMultiVideoApiV1DouyinWebFetchMultiVideoPost = <ThrowOnError ex
  */
 export const fetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGetResponses, FetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_one_video_danmaku',
+    url: '/video-hub/api/v1/douyin/web/fetch_one_video_danmaku',
     ...options
 });
 
@@ -14339,7 +14339,7 @@ export const fetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGet = <ThrowO
  */
 export const fetchHomeFeedApiV1DouyinWebFetchHomeFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHomeFeedApiV1DouyinWebFetchHomeFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHomeFeedApiV1DouyinWebFetchHomeFeedGetResponses, FetchHomeFeedApiV1DouyinWebFetchHomeFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_home_feed',
+    url: '/video-hub/api/v1/douyin/web/fetch_home_feed',
     ...options
 });
 
@@ -14373,7 +14373,7 @@ export const fetchHomeFeedApiV1DouyinWebFetchHomeFeedGet = <ThrowOnError extends
  */
 export const fetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGetResponses, FetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_related_posts',
+    url: '/video-hub/api/v1/douyin/web/fetch_related_posts',
     ...options
 });
 
@@ -14418,7 +14418,7 @@ export const fetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGet = <ThrowOnError
  */
 export const fetchUserPostVideosApiV1DouyinWebFetchUserPostVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostVideosApiV1DouyinWebFetchUserPostVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostVideosApiV1DouyinWebFetchUserPostVideosGetResponses, FetchUserPostVideosApiV1DouyinWebFetchUserPostVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_post_videos',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_post_videos',
     ...options
 });
 
@@ -14454,7 +14454,7 @@ export const fetchUserPostVideosApiV1DouyinWebFetchUserPostVideosGet = <ThrowOnE
  */
 export const fetchUserLikeVideosApiV1DouyinWebFetchUserLikeVideosPost = <ThrowOnError extends boolean = false>(options: Options<FetchUserLikeVideosApiV1DouyinWebFetchUserLikeVideosPostData, ThrowOnError>) => (options.client ?? client).post<FetchUserLikeVideosApiV1DouyinWebFetchUserLikeVideosPostResponses, FetchUserLikeVideosApiV1DouyinWebFetchUserLikeVideosPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_like_videos',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_like_videos',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -14492,7 +14492,7 @@ export const fetchUserLikeVideosApiV1DouyinWebFetchUserLikeVideosPost = <ThrowOn
  */
 export const fetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPost = <ThrowOnError extends boolean = false>(options: Options<FetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPostData, ThrowOnError>) => (options.client ?? client).post<FetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPostResponses, FetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_collection_videos',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_collection_videos',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -14530,7 +14530,7 @@ export const fetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPos
  */
 export const fetchUserCollectsApiV1DouyinWebFetchUserCollectsPost = <ThrowOnError extends boolean = false>(options: Options<FetchUserCollectsApiV1DouyinWebFetchUserCollectsPostData, ThrowOnError>) => (options.client ?? client).post<FetchUserCollectsApiV1DouyinWebFetchUserCollectsPostResponses, FetchUserCollectsApiV1DouyinWebFetchUserCollectsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_collects',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_collects',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -14568,7 +14568,7 @@ export const fetchUserCollectsApiV1DouyinWebFetchUserCollectsPost = <ThrowOnErro
  */
 export const fetchUserCollectsVideosApiV1DouyinWebFetchUserCollectsVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserCollectsVideosApiV1DouyinWebFetchUserCollectsVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserCollectsVideosApiV1DouyinWebFetchUserCollectsVideosGetResponses, FetchUserCollectsVideosApiV1DouyinWebFetchUserCollectsVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_collects_videos',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_collects_videos',
     ...options
 });
 
@@ -14603,7 +14603,7 @@ export const fetchUserCollectsVideosApiV1DouyinWebFetchUserCollectsVideosGet = <
  */
 export const fetchUserMixVideosApiV1DouyinWebFetchUserMixVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserMixVideosApiV1DouyinWebFetchUserMixVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserMixVideosApiV1DouyinWebFetchUserMixVideosGetResponses, FetchUserMixVideosApiV1DouyinWebFetchUserMixVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_mix_videos',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_mix_videos',
     ...options
 });
 
@@ -14639,7 +14639,7 @@ export const fetchUserMixVideosApiV1DouyinWebFetchUserMixVideosGet = <ThrowOnErr
  */
 export const fetchUserLiveVideosApiV1DouyinWebFetchUserLiveVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLiveVideosApiV1DouyinWebFetchUserLiveVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLiveVideosApiV1DouyinWebFetchUserLiveVideosGetResponses, FetchUserLiveVideosApiV1DouyinWebFetchUserLiveVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_live_videos',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_videos',
     ...options
 });
 
@@ -14667,7 +14667,7 @@ export const fetchUserLiveVideosApiV1DouyinWebFetchUserLiveVideosGet = <ThrowOnE
  */
 export const fetchUserLiveVideosBySecUidApiV1DouyinWebFetchUserLiveVideosBySecUidGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLiveVideosBySecUidApiV1DouyinWebFetchUserLiveVideosBySecUidGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLiveVideosBySecUidApiV1DouyinWebFetchUserLiveVideosBySecUidGetResponses, FetchUserLiveVideosBySecUidApiV1DouyinWebFetchUserLiveVideosBySecUidGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_live_videos_by_sec_uid',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_videos_by_sec_uid',
     ...options
 });
 
@@ -14697,7 +14697,7 @@ export const fetchUserLiveVideosBySecUidApiV1DouyinWebFetchUserLiveVideosBySecUi
  */
 export const fetchUserLiveVideosByRoomIdApiV1DouyinWebFetchUserLiveVideosByRoomIdGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLiveVideosByRoomIdApiV1DouyinWebFetchUserLiveVideosByRoomIdGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLiveVideosByRoomIdApiV1DouyinWebFetchUserLiveVideosByRoomIdGetResponses, FetchUserLiveVideosByRoomIdApiV1DouyinWebFetchUserLiveVideosByRoomIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_live_videos_by_room_id',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_videos_by_room_id',
     ...options
 });
 
@@ -14729,7 +14729,7 @@ export const fetchUserLiveVideosByRoomIdApiV1DouyinWebFetchUserLiveVideosByRoomI
  */
 export const fetchUserLiveVideosByRoomIdV2ApiV1DouyinWebFetchUserLiveVideosByRoomIdV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserLiveVideosByRoomIdV2ApiV1DouyinWebFetchUserLiveVideosByRoomIdV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLiveVideosByRoomIdV2ApiV1DouyinWebFetchUserLiveVideosByRoomIdV2GetResponses, FetchUserLiveVideosByRoomIdV2ApiV1DouyinWebFetchUserLiveVideosByRoomIdV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_live_videos_by_room_id_v2',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_videos_by_room_id_v2',
     ...options
 });
 
@@ -14760,7 +14760,7 @@ export const fetchUserLiveVideosByRoomIdV2ApiV1DouyinWebFetchUserLiveVideosByRoo
  */
 export const fetchLiveGiftRankingApiV1DouyinWebFetchLiveGiftRankingGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveGiftRankingApiV1DouyinWebFetchLiveGiftRankingGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveGiftRankingApiV1DouyinWebFetchLiveGiftRankingGetResponses, FetchLiveGiftRankingApiV1DouyinWebFetchLiveGiftRankingGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_live_gift_ranking',
+    url: '/video-hub/api/v1/douyin/web/fetch_live_gift_ranking',
     ...options
 });
 
@@ -14810,7 +14810,7 @@ export const fetchLiveGiftRankingApiV1DouyinWebFetchLiveGiftRankingGet = <ThrowO
  */
 export const fetchLiveRoomProductResultApiV1DouyinWebFetchLiveRoomProductResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveRoomProductResultApiV1DouyinWebFetchLiveRoomProductResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveRoomProductResultApiV1DouyinWebFetchLiveRoomProductResultGetResponses, FetchLiveRoomProductResultApiV1DouyinWebFetchLiveRoomProductResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_live_room_product_result',
+    url: '/video-hub/api/v1/douyin/web/fetch_live_room_product_result',
     ...options
 });
 
@@ -14849,7 +14849,7 @@ export const fetchLiveRoomProductResultApiV1DouyinWebFetchLiveRoomProductResultG
  */
 export const fetchProductDetailApiV1DouyinWebFetchProductDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductDetailApiV1DouyinWebFetchProductDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductDetailApiV1DouyinWebFetchProductDetailGetResponses, FetchProductDetailApiV1DouyinWebFetchProductDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_product_detail',
+    url: '/video-hub/api/v1/douyin/web/fetch_product_detail',
     ...options
 });
 
@@ -14871,7 +14871,7 @@ export const fetchProductDetailApiV1DouyinWebFetchProductDetailGet = <ThrowOnErr
  */
 export const fetchProductSkuListApiV1DouyinWebFetchProductSkuListGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductSkuListApiV1DouyinWebFetchProductSkuListGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductSkuListApiV1DouyinWebFetchProductSkuListGetResponses, FetchProductSkuListApiV1DouyinWebFetchProductSkuListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_product_sku_list',
+    url: '/video-hub/api/v1/douyin/web/fetch_product_sku_list',
     ...options
 });
 
@@ -14896,7 +14896,7 @@ export const fetchProductSkuListApiV1DouyinWebFetchProductSkuListGet = <ThrowOnE
  */
 export const fetchProductCouponApiV1DouyinWebFetchProductCouponGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductCouponApiV1DouyinWebFetchProductCouponGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductCouponApiV1DouyinWebFetchProductCouponGetResponses, FetchProductCouponApiV1DouyinWebFetchProductCouponGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_product_coupon',
+    url: '/video-hub/api/v1/douyin/web/fetch_product_coupon',
     ...options
 });
 
@@ -14918,7 +14918,7 @@ export const fetchProductCouponApiV1DouyinWebFetchProductCouponGet = <ThrowOnErr
  */
 export const fetchProductReviewScoreApiV1DouyinWebFetchProductReviewScoreGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductReviewScoreApiV1DouyinWebFetchProductReviewScoreGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductReviewScoreApiV1DouyinWebFetchProductReviewScoreGetResponses, FetchProductReviewScoreApiV1DouyinWebFetchProductReviewScoreGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_product_review_score',
+    url: '/video-hub/api/v1/douyin/web/fetch_product_review_score',
     ...options
 });
 
@@ -14943,7 +14943,7 @@ export const fetchProductReviewScoreApiV1DouyinWebFetchProductReviewScoreGet = <
  */
 export const fetchProductReviewListApiV1DouyinWebFetchProductReviewListGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductReviewListApiV1DouyinWebFetchProductReviewListGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductReviewListApiV1DouyinWebFetchProductReviewListGetResponses, FetchProductReviewListApiV1DouyinWebFetchProductReviewListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_product_review_list',
+    url: '/video-hub/api/v1/douyin/web/fetch_product_review_list',
     ...options
 });
 
@@ -14971,7 +14971,7 @@ export const fetchProductReviewListApiV1DouyinWebFetchProductReviewListGet = <Th
  */
 export const fetchUserProfileByUidApiV1DouyinWebFetchUserProfileByUidGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserProfileByUidApiV1DouyinWebFetchUserProfileByUidGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserProfileByUidApiV1DouyinWebFetchUserProfileByUidGetResponses, FetchUserProfileByUidApiV1DouyinWebFetchUserProfileByUidGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_profile_by_uid',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_profile_by_uid',
     ...options
 });
 
@@ -14999,7 +14999,7 @@ export const fetchUserProfileByUidApiV1DouyinWebFetchUserProfileByUidGet = <Thro
  */
 export const fetchBatchUserProfileV1ApiV1DouyinWebFetchBatchUserProfileV1Get = <ThrowOnError extends boolean = false>(options: Options<FetchBatchUserProfileV1ApiV1DouyinWebFetchBatchUserProfileV1GetData, ThrowOnError>) => (options.client ?? client).get<FetchBatchUserProfileV1ApiV1DouyinWebFetchBatchUserProfileV1GetResponses, FetchBatchUserProfileV1ApiV1DouyinWebFetchBatchUserProfileV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_batch_user_profile_v1',
+    url: '/video-hub/api/v1/douyin/web/fetch_batch_user_profile_v1',
     ...options
 });
 
@@ -15027,7 +15027,7 @@ export const fetchBatchUserProfileV1ApiV1DouyinWebFetchBatchUserProfileV1Get = <
  */
 export const fetchBatchUserProfileV2ApiV1DouyinWebFetchBatchUserProfileV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchBatchUserProfileV2ApiV1DouyinWebFetchBatchUserProfileV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchBatchUserProfileV2ApiV1DouyinWebFetchBatchUserProfileV2GetResponses, FetchBatchUserProfileV2ApiV1DouyinWebFetchBatchUserProfileV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_batch_user_profile_v2',
+    url: '/video-hub/api/v1/douyin/web/fetch_batch_user_profile_v2',
     ...options
 });
 
@@ -15055,7 +15055,7 @@ export const fetchBatchUserProfileV2ApiV1DouyinWebFetchBatchUserProfileV2Get = <
  */
 export const fetchUserLiveInfoByUidApiV1DouyinWebFetchUserLiveInfoByUidGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLiveInfoByUidApiV1DouyinWebFetchUserLiveInfoByUidGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLiveInfoByUidApiV1DouyinWebFetchUserLiveInfoByUidGetResponses, FetchUserLiveInfoByUidApiV1DouyinWebFetchUserLiveInfoByUidGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_live_info_by_uid',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_live_info_by_uid',
     ...options
 });
 
@@ -15083,7 +15083,7 @@ export const fetchUserLiveInfoByUidApiV1DouyinWebFetchUserLiveInfoByUidGet = <Th
  */
 export const fetchUserProfileByShortIdApiV1DouyinWebFetchUserProfileByShortIdGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserProfileByShortIdApiV1DouyinWebFetchUserProfileByShortIdGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserProfileByShortIdApiV1DouyinWebFetchUserProfileByShortIdGetResponses, FetchUserProfileByShortIdApiV1DouyinWebFetchUserProfileByShortIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_profile_by_short_id',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_profile_by_short_id',
     ...options
 });
 
@@ -15092,7 +15092,7 @@ export const fetchUserProfileByShortIdApiV1DouyinWebFetchUserProfileByShortIdGet
  */
 export const handlerShortenUrlApiV1DouyinWebHandlerShortenUrlGet = <ThrowOnError extends boolean = false>(options: Options<HandlerShortenUrlApiV1DouyinWebHandlerShortenUrlGetData, ThrowOnError>) => (options.client ?? client).get<HandlerShortenUrlApiV1DouyinWebHandlerShortenUrlGetResponses, HandlerShortenUrlApiV1DouyinWebHandlerShortenUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/handler_shorten_url',
+    url: '/video-hub/api/v1/douyin/web/handler_shorten_url',
     ...options
 });
 
@@ -15120,7 +15120,7 @@ export const handlerShortenUrlApiV1DouyinWebHandlerShortenUrlGet = <ThrowOnError
  */
 export const handlerUserProfileApiV1DouyinWebHandlerUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<HandlerUserProfileApiV1DouyinWebHandlerUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<HandlerUserProfileApiV1DouyinWebHandlerUserProfileGetResponses, HandlerUserProfileApiV1DouyinWebHandlerUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/handler_user_profile',
+    url: '/video-hub/api/v1/douyin/web/handler_user_profile',
     ...options
 });
 
@@ -15148,7 +15148,7 @@ export const handlerUserProfileApiV1DouyinWebHandlerUserProfileGet = <ThrowOnErr
  */
 export const handlerUserProfileV2ApiV1DouyinWebHandlerUserProfileV2Get = <ThrowOnError extends boolean = false>(options: Options<HandlerUserProfileV2ApiV1DouyinWebHandlerUserProfileV2GetData, ThrowOnError>) => (options.client ?? client).get<HandlerUserProfileV2ApiV1DouyinWebHandlerUserProfileV2GetResponses, HandlerUserProfileV2ApiV1DouyinWebHandlerUserProfileV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/handler_user_profile_v2',
+    url: '/video-hub/api/v1/douyin/web/handler_user_profile_v2',
     ...options
 });
 
@@ -15176,7 +15176,7 @@ export const handlerUserProfileV2ApiV1DouyinWebHandlerUserProfileV2Get = <ThrowO
  */
 export const encryptUidToSecUserIdApiV1DouyinWebEncryptUidToSecUserIdGet = <ThrowOnError extends boolean = false>(options: Options<EncryptUidToSecUserIdApiV1DouyinWebEncryptUidToSecUserIdGetData, ThrowOnError>) => (options.client ?? client).get<EncryptUidToSecUserIdApiV1DouyinWebEncryptUidToSecUserIdGetResponses, EncryptUidToSecUserIdApiV1DouyinWebEncryptUidToSecUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/encrypt_uid_to_sec_user_id',
+    url: '/video-hub/api/v1/douyin/web/encrypt_uid_to_sec_user_id',
     ...options
 });
 
@@ -15204,7 +15204,7 @@ export const encryptUidToSecUserIdApiV1DouyinWebEncryptUidToSecUserIdGet = <Thro
  */
 export const handlerUserProfileV3ApiV1DouyinWebHandlerUserProfileV3Get = <ThrowOnError extends boolean = false>(options: Options<HandlerUserProfileV3ApiV1DouyinWebHandlerUserProfileV3GetData, ThrowOnError>) => (options.client ?? client).get<HandlerUserProfileV3ApiV1DouyinWebHandlerUserProfileV3GetResponses, HandlerUserProfileV3ApiV1DouyinWebHandlerUserProfileV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/handler_user_profile_v3',
+    url: '/video-hub/api/v1/douyin/web/handler_user_profile_v3',
     ...options
 });
 
@@ -15238,7 +15238,7 @@ export const handlerUserProfileV3ApiV1DouyinWebHandlerUserProfileV3Get = <ThrowO
  */
 export const handlerUserProfileV4ApiV1DouyinWebHandlerUserProfileV4Get = <ThrowOnError extends boolean = false>(options: Options<HandlerUserProfileV4ApiV1DouyinWebHandlerUserProfileV4GetData, ThrowOnError>) => (options.client ?? client).get<HandlerUserProfileV4ApiV1DouyinWebHandlerUserProfileV4GetResponses, HandlerUserProfileV4ApiV1DouyinWebHandlerUserProfileV4GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/handler_user_profile_v4',
+    url: '/video-hub/api/v1/douyin/web/handler_user_profile_v4',
     ...options
 });
 
@@ -15281,7 +15281,7 @@ export const handlerUserProfileV4ApiV1DouyinWebHandlerUserProfileV4Get = <ThrowO
  */
 export const fetchUserFansListApiV1DouyinWebFetchUserFansListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserFansListApiV1DouyinWebFetchUserFansListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserFansListApiV1DouyinWebFetchUserFansListGetResponses, FetchUserFansListApiV1DouyinWebFetchUserFansListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_fans_list',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_fans_list',
     ...options
 });
 
@@ -15323,7 +15323,7 @@ export const fetchUserFansListApiV1DouyinWebFetchUserFansListGet = <ThrowOnError
  */
 export const fetchUserFollowingListApiV1DouyinWebFetchUserFollowingListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserFollowingListApiV1DouyinWebFetchUserFollowingListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserFollowingListApiV1DouyinWebFetchUserFollowingListGetResponses, FetchUserFollowingListApiV1DouyinWebFetchUserFollowingListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_following_list',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_following_list',
     ...options
 });
 
@@ -15357,7 +15357,7 @@ export const fetchUserFollowingListApiV1DouyinWebFetchUserFollowingListGet = <Th
  */
 export const fetchVideoCommentsApiV1DouyinWebFetchVideoCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoCommentsApiV1DouyinWebFetchVideoCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoCommentsApiV1DouyinWebFetchVideoCommentsGetResponses, FetchVideoCommentsApiV1DouyinWebFetchVideoCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_video_comments',
+    url: '/video-hub/api/v1/douyin/web/fetch_video_comments',
     ...options
 });
 
@@ -15394,7 +15394,7 @@ export const fetchVideoCommentsApiV1DouyinWebFetchVideoCommentsGet = <ThrowOnErr
  */
 export const fetchVideoCommentsReplyApiV1DouyinWebFetchVideoCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoCommentsReplyApiV1DouyinWebFetchVideoCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoCommentsReplyApiV1DouyinWebFetchVideoCommentRepliesGetResponses, FetchVideoCommentsReplyApiV1DouyinWebFetchVideoCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_video_comment_replies',
+    url: '/video-hub/api/v1/douyin/web/fetch_video_comment_replies',
     ...options
 });
 
@@ -15455,7 +15455,7 @@ export const fetchVideoCommentsReplyApiV1DouyinWebFetchVideoCommentRepliesGet = 
  */
 export const fetchGeneralSearchResultApiV1DouyinWebFetchGeneralSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchGeneralSearchResultApiV1DouyinWebFetchGeneralSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchGeneralSearchResultApiV1DouyinWebFetchGeneralSearchResultGetResponses, FetchGeneralSearchResultApiV1DouyinWebFetchGeneralSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_general_search_result',
+    url: '/video-hub/api/v1/douyin/web/fetch_general_search_result',
     ...options
 });
 
@@ -15542,7 +15542,7 @@ export const fetchGeneralSearchResultApiV1DouyinWebFetchGeneralSearchResultGet =
  */
 export const fetchVideoSearchResultApiV1DouyinWebFetchVideoSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchResultApiV1DouyinWebFetchVideoSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoSearchResultApiV1DouyinWebFetchVideoSearchResultGetResponses, FetchVideoSearchResultApiV1DouyinWebFetchVideoSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_video_search_result',
+    url: '/video-hub/api/v1/douyin/web/fetch_video_search_result',
     ...options
 });
 
@@ -15629,7 +15629,7 @@ export const fetchVideoSearchResultApiV1DouyinWebFetchVideoSearchResultGet = <Th
  */
 export const fetchVideoSearchResultV2ApiV1DouyinWebFetchVideoSearchResultV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchResultV2ApiV1DouyinWebFetchVideoSearchResultV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoSearchResultV2ApiV1DouyinWebFetchVideoSearchResultV2GetResponses, FetchVideoSearchResultV2ApiV1DouyinWebFetchVideoSearchResultV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_video_search_result_v2',
+    url: '/video-hub/api/v1/douyin/web/fetch_video_search_result_v2',
     ...options
 });
 
@@ -15684,7 +15684,7 @@ export const fetchVideoSearchResultV2ApiV1DouyinWebFetchVideoSearchResultV2Get =
  */
 export const fetchUserSearchResultApiV1DouyinWebFetchUserSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchResultApiV1DouyinWebFetchUserSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSearchResultApiV1DouyinWebFetchUserSearchResultGetResponses, FetchUserSearchResultApiV1DouyinWebFetchUserSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_search_result',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_search_result',
     ...options
 });
 
@@ -15721,7 +15721,7 @@ export const fetchUserSearchResultApiV1DouyinWebFetchUserSearchResultGet = <Thro
  */
 export const fetchUserSearchResultV2ApiV1DouyinWebFetchUserSearchResultV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchResultV2ApiV1DouyinWebFetchUserSearchResultV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSearchResultV2ApiV1DouyinWebFetchUserSearchResultV2GetResponses, FetchUserSearchResultV2ApiV1DouyinWebFetchUserSearchResultV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_search_result_v2',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_search_result_v2',
     ...options
 });
 
@@ -15764,7 +15764,7 @@ export const fetchUserSearchResultV2ApiV1DouyinWebFetchUserSearchResultV2Get = <
  */
 export const fetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3GetResponses, FetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_user_search_result_v3',
+    url: '/video-hub/api/v1/douyin/web/fetch_user_search_result_v3',
     ...options
 });
 
@@ -15804,7 +15804,7 @@ export const fetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3Get = <
  */
 export const fetchLiveSearchResultApiV1DouyinWebFetchLiveSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveSearchResultApiV1DouyinWebFetchLiveSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveSearchResultApiV1DouyinWebFetchLiveSearchResultGetResponses, FetchLiveSearchResultApiV1DouyinWebFetchLiveSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_live_search_result',
+    url: '/video-hub/api/v1/douyin/web/fetch_live_search_result',
     ...options
 });
 
@@ -15846,7 +15846,7 @@ export const fetchLiveSearchResultApiV1DouyinWebFetchLiveSearchResultGet = <Thro
  */
 export const fetchSearchChallengeApiV1DouyinWebFetchSearchChallengePost = <ThrowOnError extends boolean = false>(options: Options<FetchSearchChallengeApiV1DouyinWebFetchSearchChallengePostData, ThrowOnError>) => (options.client ?? client).post<FetchSearchChallengeApiV1DouyinWebFetchSearchChallengePostResponses, FetchSearchChallengeApiV1DouyinWebFetchSearchChallengePostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_search_challenge',
+    url: '/video-hub/api/v1/douyin/web/fetch_search_challenge',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -15892,7 +15892,7 @@ export const fetchSearchChallengeApiV1DouyinWebFetchSearchChallengePost = <Throw
  */
 export const fetchChallengePostsApiV1DouyinWebFetchChallengePostsPost = <ThrowOnError extends boolean = false>(options: Options<FetchChallengePostsApiV1DouyinWebFetchChallengePostsPostData, ThrowOnError>) => (options.client ?? client).post<FetchChallengePostsApiV1DouyinWebFetchChallengePostsPostResponses, FetchChallengePostsApiV1DouyinWebFetchChallengePostsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_challenge_posts',
+    url: '/video-hub/api/v1/douyin/web/fetch_challenge_posts',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -15917,7 +15917,7 @@ export const fetchChallengePostsApiV1DouyinWebFetchChallengePostsPost = <ThrowOn
  */
 export const fetchHotSearchResultApiV1DouyinWebFetchHotSearchResultGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchResultApiV1DouyinWebFetchHotSearchResultGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchResultApiV1DouyinWebFetchHotSearchResultGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_hot_search_result',
+    url: '/video-hub/api/v1/douyin/web/fetch_hot_search_result',
     ...options
 });
 
@@ -15953,7 +15953,7 @@ export const fetchHotSearchResultApiV1DouyinWebFetchHotSearchResultGet = <ThrowO
  */
 export const fetchVideoChannelResultApiV1DouyinWebFetchVideoChannelResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoChannelResultApiV1DouyinWebFetchVideoChannelResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoChannelResultApiV1DouyinWebFetchVideoChannelResultGetResponses, FetchVideoChannelResultApiV1DouyinWebFetchVideoChannelResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_video_channel_result',
+    url: '/video-hub/api/v1/douyin/web/fetch_video_channel_result',
     ...options
 });
 
@@ -15989,7 +15989,7 @@ export const fetchVideoChannelResultApiV1DouyinWebFetchVideoChannelResultGet = <
  */
 export const fetchDouyinWebGuestCookieApiV1DouyinWebFetchDouyinWebGuestCookieGet = <ThrowOnError extends boolean = false>(options: Options<FetchDouyinWebGuestCookieApiV1DouyinWebFetchDouyinWebGuestCookieGetData, ThrowOnError>) => (options.client ?? client).get<FetchDouyinWebGuestCookieApiV1DouyinWebFetchDouyinWebGuestCookieGetResponses, FetchDouyinWebGuestCookieApiV1DouyinWebFetchDouyinWebGuestCookieGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_douyin_web_guest_cookie',
+    url: '/video-hub/api/v1/douyin/web/fetch_douyin_web_guest_cookie',
     ...options
 });
 
@@ -16010,7 +16010,7 @@ export const fetchDouyinWebGuestCookieApiV1DouyinWebFetchDouyinWebGuestCookieGet
  */
 export const generateRealMsTokenApiV1DouyinWebGenerateRealMsTokenGet = <ThrowOnError extends boolean = false>(options?: Options<GenerateRealMsTokenApiV1DouyinWebGenerateRealMsTokenGetData, ThrowOnError>) => (options?.client ?? client).get<GenerateRealMsTokenApiV1DouyinWebGenerateRealMsTokenGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/generate_real_msToken',
+    url: '/video-hub/api/v1/douyin/web/generate_real_msToken',
     ...options
 });
 
@@ -16031,7 +16031,7 @@ export const generateRealMsTokenApiV1DouyinWebGenerateRealMsTokenGet = <ThrowOnE
  */
 export const generateTtwidApiV1DouyinWebGenerateTtwidGet = <ThrowOnError extends boolean = false>(options?: Options<GenerateTtwidApiV1DouyinWebGenerateTtwidGetData, ThrowOnError>) => (options?.client ?? client).get<GenerateTtwidApiV1DouyinWebGenerateTtwidGetResponses, GenerateTtwidApiV1DouyinWebGenerateTtwidGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/generate_ttwid',
+    url: '/video-hub/api/v1/douyin/web/generate_ttwid',
     ...options
 });
 
@@ -16059,7 +16059,7 @@ export const generateTtwidApiV1DouyinWebGenerateTtwidGet = <ThrowOnError extends
  */
 export const fetchQueryUserApiV1DouyinWebFetchQueryUserPost = <ThrowOnError extends boolean = false>(options?: Options<FetchQueryUserApiV1DouyinWebFetchQueryUserPostData, ThrowOnError>) => (options?.client ?? client).post<FetchQueryUserApiV1DouyinWebFetchQueryUserPostResponses, FetchQueryUserApiV1DouyinWebFetchQueryUserPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_query_user',
+    url: '/video-hub/api/v1/douyin/web/fetch_query_user',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -16084,7 +16084,7 @@ export const fetchQueryUserApiV1DouyinWebFetchQueryUserPost = <ThrowOnError exte
  */
 export const generateVerifyFpApiV1DouyinWebGenerateVerifyFpGet = <ThrowOnError extends boolean = false>(options?: Options<GenerateVerifyFpApiV1DouyinWebGenerateVerifyFpGetData, ThrowOnError>) => (options?.client ?? client).get<GenerateVerifyFpApiV1DouyinWebGenerateVerifyFpGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/generate_verify_fp',
+    url: '/video-hub/api/v1/douyin/web/generate_verify_fp',
     ...options
 });
 
@@ -16105,7 +16105,7 @@ export const generateVerifyFpApiV1DouyinWebGenerateVerifyFpGet = <ThrowOnError e
  */
 export const generateSVWebIdApiV1DouyinWebGenerateSVWebIdGet = <ThrowOnError extends boolean = false>(options?: Options<GenerateSvWebIdApiV1DouyinWebGenerateSvWebIdGetData, ThrowOnError>) => (options?.client ?? client).get<GenerateSvWebIdApiV1DouyinWebGenerateSvWebIdGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/generate_s_v_web_id',
+    url: '/video-hub/api/v1/douyin/web/generate_s_v_web_id',
     ...options
 });
 
@@ -16139,7 +16139,7 @@ export const generateSVWebIdApiV1DouyinWebGenerateSVWebIdGet = <ThrowOnError ext
  */
 export const generateWssXbSignatureApiV1DouyinWebGenerateWssXbSignatureGet = <ThrowOnError extends boolean = false>(options: Options<GenerateWssXbSignatureApiV1DouyinWebGenerateWssXbSignatureGetData, ThrowOnError>) => (options.client ?? client).get<GenerateWssXbSignatureApiV1DouyinWebGenerateWssXbSignatureGetResponses, GenerateWssXbSignatureApiV1DouyinWebGenerateWssXbSignatureGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/generate_wss_xb_signature',
+    url: '/video-hub/api/v1/douyin/web/generate_wss_xb_signature',
     ...options
 });
 
@@ -16169,7 +16169,7 @@ export const generateWssXbSignatureApiV1DouyinWebGenerateWssXbSignatureGet = <Th
  */
 export const generateXBogusApiV1DouyinWebGenerateXBogusPost = <ThrowOnError extends boolean = false>(options: Options<GenerateXBogusApiV1DouyinWebGenerateXBogusPostData, ThrowOnError>) => (options.client ?? client).post<GenerateXBogusApiV1DouyinWebGenerateXBogusPostResponses, GenerateXBogusApiV1DouyinWebGenerateXBogusPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/generate_x_bogus',
+    url: '/video-hub/api/v1/douyin/web/generate_x_bogus',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -16220,7 +16220,7 @@ export const generateXBogusApiV1DouyinWebGenerateXBogusPost = <ThrowOnError exte
  */
 export const generateABogusApiV1DouyinWebGenerateABogusPost = <ThrowOnError extends boolean = false>(options: Options<GenerateABogusApiV1DouyinWebGenerateABogusPostData, ThrowOnError>) => (options.client ?? client).post<GenerateABogusApiV1DouyinWebGenerateABogusPostResponses, GenerateABogusApiV1DouyinWebGenerateABogusPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/generate_a_bogus',
+    url: '/video-hub/api/v1/douyin/web/generate_a_bogus',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -16252,7 +16252,7 @@ export const generateABogusApiV1DouyinWebGenerateABogusPost = <ThrowOnError exte
  */
 export const getSecUserIdApiV1DouyinWebGetSecUserIdGet = <ThrowOnError extends boolean = false>(options: Options<GetSecUserIdApiV1DouyinWebGetSecUserIdGetData, ThrowOnError>) => (options.client ?? client).get<GetSecUserIdApiV1DouyinWebGetSecUserIdGetResponses, GetSecUserIdApiV1DouyinWebGetSecUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/get_sec_user_id',
+    url: '/video-hub/api/v1/douyin/web/get_sec_user_id',
     ...options
 });
 
@@ -16289,7 +16289,7 @@ export const getSecUserIdApiV1DouyinWebGetSecUserIdGet = <ThrowOnError extends b
  */
 export const getAllSecUserIdApiV1DouyinWebGetAllSecUserIdPost = <ThrowOnError extends boolean = false>(options: Options<GetAllSecUserIdApiV1DouyinWebGetAllSecUserIdPostData, ThrowOnError>) => (options.client ?? client).post<GetAllSecUserIdApiV1DouyinWebGetAllSecUserIdPostResponses, GetAllSecUserIdApiV1DouyinWebGetAllSecUserIdPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/get_all_sec_user_id',
+    url: '/video-hub/api/v1/douyin/web/get_all_sec_user_id',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -16321,7 +16321,7 @@ export const getAllSecUserIdApiV1DouyinWebGetAllSecUserIdPost = <ThrowOnError ex
  */
 export const getAwemeIdApiV1DouyinWebGetAwemeIdGet = <ThrowOnError extends boolean = false>(options: Options<GetAwemeIdApiV1DouyinWebGetAwemeIdGetData, ThrowOnError>) => (options.client ?? client).get<GetAwemeIdApiV1DouyinWebGetAwemeIdGetResponses, GetAwemeIdApiV1DouyinWebGetAwemeIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/get_aweme_id',
+    url: '/video-hub/api/v1/douyin/web/get_aweme_id',
     ...options
 });
 
@@ -16359,7 +16359,7 @@ export const getAwemeIdApiV1DouyinWebGetAwemeIdGet = <ThrowOnError extends boole
  */
 export const getAllAwemeIdApiV1DouyinWebGetAllAwemeIdPost = <ThrowOnError extends boolean = false>(options: Options<GetAllAwemeIdApiV1DouyinWebGetAllAwemeIdPostData, ThrowOnError>) => (options.client ?? client).post<GetAllAwemeIdApiV1DouyinWebGetAllAwemeIdPostResponses, GetAllAwemeIdApiV1DouyinWebGetAllAwemeIdPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/get_all_aweme_id',
+    url: '/video-hub/api/v1/douyin/web/get_all_aweme_id',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -16391,7 +16391,7 @@ export const getAllAwemeIdApiV1DouyinWebGetAllAwemeIdPost = <ThrowOnError extend
  */
 export const getWebcastIdApiV1DouyinWebGetWebcastIdGet = <ThrowOnError extends boolean = false>(options: Options<GetWebcastIdApiV1DouyinWebGetWebcastIdGetData, ThrowOnError>) => (options.client ?? client).get<GetWebcastIdApiV1DouyinWebGetWebcastIdGetResponses, GetWebcastIdApiV1DouyinWebGetWebcastIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/get_webcast_id',
+    url: '/video-hub/api/v1/douyin/web/get_webcast_id',
     ...options
 });
 
@@ -16429,7 +16429,7 @@ export const getWebcastIdApiV1DouyinWebGetWebcastIdGet = <ThrowOnError extends b
  */
 export const getAllWebcastIdApiV1DouyinWebGetAllWebcastIdPost = <ThrowOnError extends boolean = false>(options: Options<GetAllWebcastIdApiV1DouyinWebGetAllWebcastIdPostData, ThrowOnError>) => (options.client ?? client).post<GetAllWebcastIdApiV1DouyinWebGetAllWebcastIdPostResponses, GetAllWebcastIdApiV1DouyinWebGetAllWebcastIdPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/get_all_webcast_id',
+    url: '/video-hub/api/v1/douyin/web/get_all_webcast_id',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -16461,7 +16461,7 @@ export const getAllWebcastIdApiV1DouyinWebGetAllWebcastIdPost = <ThrowOnError ex
  */
 export const webcastId2RoomIdApiV1DouyinWebWebcastId2RoomIdGet = <ThrowOnError extends boolean = false>(options: Options<WebcastId2RoomIdApiV1DouyinWebWebcastId2RoomIdGetData, ThrowOnError>) => (options.client ?? client).get<WebcastId2RoomIdApiV1DouyinWebWebcastId2RoomIdGetResponses, WebcastId2RoomIdApiV1DouyinWebWebcastId2RoomIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/webcast_id_2_room_id',
+    url: '/video-hub/api/v1/douyin/web/webcast_id_2_room_id',
     ...options
 });
 
@@ -16536,7 +16536,7 @@ export const webcastId2RoomIdApiV1DouyinWebWebcastId2RoomIdGet = <ThrowOnError e
  */
 export const douyinLiveRoomApiV1DouyinWebDouyinLiveRoomGet = <ThrowOnError extends boolean = false>(options: Options<DouyinLiveRoomApiV1DouyinWebDouyinLiveRoomGetData, ThrowOnError>) => (options.client ?? client).get<DouyinLiveRoomApiV1DouyinWebDouyinLiveRoomGetResponses, DouyinLiveRoomApiV1DouyinWebDouyinLiveRoomGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/douyin_live_room',
+    url: '/video-hub/api/v1/douyin/web/douyin_live_room',
     ...options
 });
 
@@ -16565,7 +16565,7 @@ export const douyinLiveRoomApiV1DouyinWebDouyinLiveRoomGet = <ThrowOnError exten
  */
 export const fetchLiveImFetchApiV1DouyinWebFetchLiveImFetchGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveImFetchApiV1DouyinWebFetchLiveImFetchGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveImFetchApiV1DouyinWebFetchLiveImFetchGetResponses, FetchLiveImFetchApiV1DouyinWebFetchLiveImFetchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_live_im_fetch',
+    url: '/video-hub/api/v1/douyin/web/fetch_live_im_fetch',
     ...options
 });
 
@@ -16631,7 +16631,7 @@ export const fetchLiveImFetchApiV1DouyinWebFetchLiveImFetchGet = <ThrowOnError e
  */
 export const fetchSeriesAwemeApiV1DouyinWebFetchSeriesAwemeGet = <ThrowOnError extends boolean = false>(options: Options<FetchSeriesAwemeApiV1DouyinWebFetchSeriesAwemeGetData, ThrowOnError>) => (options.client ?? client).get<FetchSeriesAwemeApiV1DouyinWebFetchSeriesAwemeGetResponses, FetchSeriesAwemeApiV1DouyinWebFetchSeriesAwemeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_series_aweme',
+    url: '/video-hub/api/v1/douyin/web/fetch_series_aweme',
     ...options
 });
 
@@ -16664,7 +16664,7 @@ export const fetchSeriesAwemeApiV1DouyinWebFetchSeriesAwemeGet = <ThrowOnError e
  */
 export const fetchKnowledgeAwemeApiV1DouyinWebFetchKnowledgeAwemeGet = <ThrowOnError extends boolean = false>(options: Options<FetchKnowledgeAwemeApiV1DouyinWebFetchKnowledgeAwemeGetData, ThrowOnError>) => (options.client ?? client).get<FetchKnowledgeAwemeApiV1DouyinWebFetchKnowledgeAwemeGetResponses, FetchKnowledgeAwemeApiV1DouyinWebFetchKnowledgeAwemeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_knowledge_aweme',
+    url: '/video-hub/api/v1/douyin/web/fetch_knowledge_aweme',
     ...options
 });
 
@@ -16697,7 +16697,7 @@ export const fetchKnowledgeAwemeApiV1DouyinWebFetchKnowledgeAwemeGet = <ThrowOnE
  */
 export const fetchGameAwemeApiV1DouyinWebFetchGameAwemeGet = <ThrowOnError extends boolean = false>(options: Options<FetchGameAwemeApiV1DouyinWebFetchGameAwemeGetData, ThrowOnError>) => (options.client ?? client).get<FetchGameAwemeApiV1DouyinWebFetchGameAwemeGetResponses, FetchGameAwemeApiV1DouyinWebFetchGameAwemeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_game_aweme',
+    url: '/video-hub/api/v1/douyin/web/fetch_game_aweme',
     ...options
 });
 
@@ -16730,7 +16730,7 @@ export const fetchGameAwemeApiV1DouyinWebFetchGameAwemeGet = <ThrowOnError exten
  */
 export const fetchCartoonAwemeApiV1DouyinWebFetchCartoonAwemeGet = <ThrowOnError extends boolean = false>(options: Options<FetchCartoonAwemeApiV1DouyinWebFetchCartoonAwemeGetData, ThrowOnError>) => (options.client ?? client).get<FetchCartoonAwemeApiV1DouyinWebFetchCartoonAwemeGetResponses, FetchCartoonAwemeApiV1DouyinWebFetchCartoonAwemeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_cartoon_aweme',
+    url: '/video-hub/api/v1/douyin/web/fetch_cartoon_aweme',
     ...options
 });
 
@@ -16763,7 +16763,7 @@ export const fetchCartoonAwemeApiV1DouyinWebFetchCartoonAwemeGet = <ThrowOnError
  */
 export const fetchCartoonAwemeApiV1DouyinWebFetchMusicAwemeGet = <ThrowOnError extends boolean = false>(options: Options<FetchCartoonAwemeApiV1DouyinWebFetchMusicAwemeGetData, ThrowOnError>) => (options.client ?? client).get<FetchCartoonAwemeApiV1DouyinWebFetchMusicAwemeGetResponses, FetchCartoonAwemeApiV1DouyinWebFetchMusicAwemeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_music_aweme',
+    url: '/video-hub/api/v1/douyin/web/fetch_music_aweme',
     ...options
 });
 
@@ -16796,7 +16796,7 @@ export const fetchCartoonAwemeApiV1DouyinWebFetchMusicAwemeGet = <ThrowOnError e
  */
 export const fetchCartoonAwemeApiV1DouyinWebFetchFoodAwemeGet = <ThrowOnError extends boolean = false>(options: Options<FetchCartoonAwemeApiV1DouyinWebFetchFoodAwemeGetData, ThrowOnError>) => (options.client ?? client).get<FetchCartoonAwemeApiV1DouyinWebFetchFoodAwemeGetResponses, FetchCartoonAwemeApiV1DouyinWebFetchFoodAwemeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/web/fetch_food_aweme',
+    url: '/video-hub/api/v1/douyin/web/fetch_food_aweme',
     ...options
 });
 
@@ -16840,7 +16840,7 @@ export const fetchCartoonAwemeApiV1DouyinWebFetchFoodAwemeGet = <ThrowOnError ex
  */
 export const fetchOneVideoApiV1DouyinAppV3FetchOneVideoGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1DouyinAppV3FetchOneVideoGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1DouyinAppV3FetchOneVideoGetResponses, FetchOneVideoApiV1DouyinAppV3FetchOneVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_one_video',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_one_video',
     ...options
 });
 
@@ -16884,7 +16884,7 @@ export const fetchOneVideoApiV1DouyinAppV3FetchOneVideoGet = <ThrowOnError exten
  */
 export const fetchOneVideoV2ApiV1DouyinAppV3FetchOneVideoV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV2ApiV1DouyinAppV3FetchOneVideoV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV2ApiV1DouyinAppV3FetchOneVideoV2GetResponses, FetchOneVideoV2ApiV1DouyinAppV3FetchOneVideoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_one_video_v2',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_one_video_v2',
     ...options
 });
 
@@ -16914,7 +16914,7 @@ export const fetchOneVideoV2ApiV1DouyinAppV3FetchOneVideoV2Get = <ThrowOnError e
  */
 export const fetchOneVideoV3ApiV1DouyinAppV3FetchOneVideoV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV3ApiV1DouyinAppV3FetchOneVideoV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV3ApiV1DouyinAppV3FetchOneVideoV3GetResponses, FetchOneVideoV3ApiV1DouyinAppV3FetchOneVideoV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_one_video_v3',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_one_video_v3',
     ...options
 });
 
@@ -16942,7 +16942,7 @@ export const fetchOneVideoV3ApiV1DouyinAppV3FetchOneVideoV3Get = <ThrowOnError e
  */
 export const fetchOneVideoByShareUrlApiV1DouyinAppV3FetchShareInfoByShareCodeGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoByShareUrlApiV1DouyinAppV3FetchShareInfoByShareCodeGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoByShareUrlApiV1DouyinAppV3FetchShareInfoByShareCodeGetResponses, FetchOneVideoByShareUrlApiV1DouyinAppV3FetchShareInfoByShareCodeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_share_info_by_share_code',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_share_info_by_share_code',
     ...options
 });
 
@@ -16986,7 +16986,7 @@ export const fetchOneVideoByShareUrlApiV1DouyinAppV3FetchShareInfoByShareCodeGet
  */
 export const fetchMultiVideoApiV1DouyinAppV3FetchMultiVideoPost = <ThrowOnError extends boolean = false>(options: Options<FetchMultiVideoApiV1DouyinAppV3FetchMultiVideoPostData, ThrowOnError>) => (options.client ?? client).post<FetchMultiVideoApiV1DouyinAppV3FetchMultiVideoPostResponses, FetchMultiVideoApiV1DouyinAppV3FetchMultiVideoPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_multi_video',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_multi_video',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -17034,7 +17034,7 @@ export const fetchMultiVideoApiV1DouyinAppV3FetchMultiVideoPost = <ThrowOnError 
  */
 export const fetchMultiVideoV2ApiV1DouyinAppV3FetchMultiVideoV2Post = <ThrowOnError extends boolean = false>(options: Options<FetchMultiVideoV2ApiV1DouyinAppV3FetchMultiVideoV2PostData, ThrowOnError>) => (options.client ?? client).post<FetchMultiVideoV2ApiV1DouyinAppV3FetchMultiVideoV2PostResponses, FetchMultiVideoV2ApiV1DouyinAppV3FetchMultiVideoV2PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_multi_video_v2',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_multi_video_v2',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -17082,7 +17082,7 @@ export const fetchMultiVideoV2ApiV1DouyinAppV3FetchMultiVideoV2Post = <ThrowOnEr
  */
 export const fetchOneVideoByShareUrlApiV1DouyinAppV3FetchOneVideoByShareUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoByShareUrlApiV1DouyinAppV3FetchOneVideoByShareUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoByShareUrlApiV1DouyinAppV3FetchOneVideoByShareUrlGetResponses, FetchOneVideoByShareUrlApiV1DouyinAppV3FetchOneVideoByShareUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_one_video_by_share_url',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_one_video_by_share_url',
     ...options
 });
 
@@ -17126,7 +17126,7 @@ export const fetchOneVideoByShareUrlApiV1DouyinAppV3FetchOneVideoByShareUrlGet =
  */
 export const fetchVideoHighQualityPlayUrlApiV1DouyinAppV3FetchVideoHighQualityPlayUrlGet = <ThrowOnError extends boolean = false>(options?: Options<FetchVideoHighQualityPlayUrlApiV1DouyinAppV3FetchVideoHighQualityPlayUrlGetData, ThrowOnError>) => (options?.client ?? client).get<FetchVideoHighQualityPlayUrlApiV1DouyinAppV3FetchVideoHighQualityPlayUrlGetResponses, FetchVideoHighQualityPlayUrlApiV1DouyinAppV3FetchVideoHighQualityPlayUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_video_high_quality_play_url',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_high_quality_play_url',
     ...options
 });
 
@@ -17189,7 +17189,7 @@ export const fetchVideoHighQualityPlayUrlApiV1DouyinAppV3FetchVideoHighQualityPl
  */
 export const fetchMultiVideoHighQualityPlayUrlApiV1DouyinAppV3FetchMultiVideoHighQualityPlayUrlPost = <ThrowOnError extends boolean = false>(options: Options<FetchMultiVideoHighQualityPlayUrlApiV1DouyinAppV3FetchMultiVideoHighQualityPlayUrlPostData, ThrowOnError>) => (options.client ?? client).post<FetchMultiVideoHighQualityPlayUrlApiV1DouyinAppV3FetchMultiVideoHighQualityPlayUrlPostResponses, FetchMultiVideoHighQualityPlayUrlApiV1DouyinAppV3FetchMultiVideoHighQualityPlayUrlPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_multi_video_high_quality_play_url',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_multi_video_high_quality_play_url',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -17233,7 +17233,7 @@ export const fetchMultiVideoHighQualityPlayUrlApiV1DouyinAppV3FetchMultiVideoHig
  */
 export const fetchVideoStatisticsApiV1DouyinAppV3FetchVideoStatisticsGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoStatisticsApiV1DouyinAppV3FetchVideoStatisticsGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoStatisticsApiV1DouyinAppV3FetchVideoStatisticsGetResponses, FetchVideoStatisticsApiV1DouyinAppV3FetchVideoStatisticsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_video_statistics',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_statistics',
     ...options
 });
 
@@ -17275,7 +17275,7 @@ export const fetchVideoStatisticsApiV1DouyinAppV3FetchVideoStatisticsGet = <Thro
  */
 export const fetchMultiVideoStatisticsApiV1DouyinAppV3FetchMultiVideoStatisticsGet = <ThrowOnError extends boolean = false>(options: Options<FetchMultiVideoStatisticsApiV1DouyinAppV3FetchMultiVideoStatisticsGetData, ThrowOnError>) => (options.client ?? client).get<FetchMultiVideoStatisticsApiV1DouyinAppV3FetchMultiVideoStatisticsGetResponses, FetchMultiVideoStatisticsApiV1DouyinAppV3FetchMultiVideoStatisticsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_multi_video_statistics',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_multi_video_statistics',
     ...options
 });
 
@@ -17319,7 +17319,7 @@ export const fetchMultiVideoStatisticsApiV1DouyinAppV3FetchMultiVideoStatisticsG
  */
 export const addVideoPlayCountApiV1DouyinAppV3AddVideoPlayCountGet = <ThrowOnError extends boolean = false>(options: Options<AddVideoPlayCountApiV1DouyinAppV3AddVideoPlayCountGetData, ThrowOnError>) => (options.client ?? client).get<AddVideoPlayCountApiV1DouyinAppV3AddVideoPlayCountGetResponses, AddVideoPlayCountApiV1DouyinAppV3AddVideoPlayCountGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/add_video_play_count',
+    url: '/video-hub/api/v1/douyin/app/v3/add_video_play_count',
     ...options
 });
 
@@ -17347,7 +17347,7 @@ export const addVideoPlayCountApiV1DouyinAppV3AddVideoPlayCountGet = <ThrowOnErr
  */
 export const handlerUserProfileApiV1DouyinAppV3HandlerUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<HandlerUserProfileApiV1DouyinAppV3HandlerUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<HandlerUserProfileApiV1DouyinAppV3HandlerUserProfileGetResponses, HandlerUserProfileApiV1DouyinAppV3HandlerUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/handler_user_profile',
+    url: '/video-hub/api/v1/douyin/app/v3/handler_user_profile',
     ...options
 });
 
@@ -17381,7 +17381,7 @@ export const handlerUserProfileApiV1DouyinAppV3HandlerUserProfileGet = <ThrowOnE
  */
 export const fetchUserFansListApiV1DouyinAppV3FetchUserFansListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserFansListApiV1DouyinAppV3FetchUserFansListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserFansListApiV1DouyinAppV3FetchUserFansListGetResponses, FetchUserFansListApiV1DouyinAppV3FetchUserFansListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_user_fans_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_fans_list',
     ...options
 });
 
@@ -17417,7 +17417,7 @@ export const fetchUserFansListApiV1DouyinAppV3FetchUserFansListGet = <ThrowOnErr
  */
 export const fetchUserFollowingListApiV1DouyinAppV3FetchUserFollowingListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserFollowingListApiV1DouyinAppV3FetchUserFollowingListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserFollowingListApiV1DouyinAppV3FetchUserFollowingListGetResponses, FetchUserFollowingListApiV1DouyinAppV3FetchUserFollowingListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_user_following_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_following_list',
     ...options
 });
 
@@ -17458,7 +17458,7 @@ export const fetchUserFollowingListApiV1DouyinAppV3FetchUserFollowingListGet = <
  */
 export const fetchUserPostVideosApiV1DouyinAppV3FetchUserPostVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostVideosApiV1DouyinAppV3FetchUserPostVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostVideosApiV1DouyinAppV3FetchUserPostVideosGetResponses, FetchUserPostVideosApiV1DouyinAppV3FetchUserPostVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_user_post_videos',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_post_videos',
     ...options
 });
 
@@ -17492,7 +17492,7 @@ export const fetchUserPostVideosApiV1DouyinAppV3FetchUserPostVideosGet = <ThrowO
  */
 export const fetchUserLikeVideosApiV1DouyinAppV3FetchUserLikeVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLikeVideosApiV1DouyinAppV3FetchUserLikeVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLikeVideosApiV1DouyinAppV3FetchUserLikeVideosGetResponses, FetchUserLikeVideosApiV1DouyinAppV3FetchUserLikeVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_user_like_videos',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_like_videos',
     ...options
 });
 
@@ -17526,7 +17526,7 @@ export const fetchUserLikeVideosApiV1DouyinAppV3FetchUserLikeVideosGet = <ThrowO
  */
 export const fetchVideoCommentsApiV1DouyinAppV3FetchVideoCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoCommentsApiV1DouyinAppV3FetchVideoCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoCommentsApiV1DouyinAppV3FetchVideoCommentsGetResponses, FetchVideoCommentsApiV1DouyinAppV3FetchVideoCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_video_comments',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_comments',
     ...options
 });
 
@@ -17563,7 +17563,7 @@ export const fetchVideoCommentsApiV1DouyinAppV3FetchVideoCommentsGet = <ThrowOnE
  */
 export const fetchVideoCommentsReplyApiV1DouyinAppV3FetchVideoCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoCommentsReplyApiV1DouyinAppV3FetchVideoCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoCommentsReplyApiV1DouyinAppV3FetchVideoCommentRepliesGetResponses, FetchVideoCommentsReplyApiV1DouyinAppV3FetchVideoCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_video_comment_replies',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_comment_replies',
     ...options
 });
 
@@ -17591,7 +17591,7 @@ export const fetchVideoCommentsReplyApiV1DouyinAppV3FetchVideoCommentRepliesGet 
  */
 export const fetchVideoMixDetailApiV1DouyinAppV3FetchVideoMixDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoMixDetailApiV1DouyinAppV3FetchVideoMixDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoMixDetailApiV1DouyinAppV3FetchVideoMixDetailGetResponses, FetchVideoMixDetailApiV1DouyinAppV3FetchVideoMixDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_video_mix_detail',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_mix_detail',
     ...options
 });
 
@@ -17625,7 +17625,7 @@ export const fetchVideoMixDetailApiV1DouyinAppV3FetchVideoMixDetailGet = <ThrowO
  */
 export const fetchVideoMixPostListApiV1DouyinAppV3FetchVideoMixPostListGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoMixPostListApiV1DouyinAppV3FetchVideoMixPostListGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoMixPostListApiV1DouyinAppV3FetchVideoMixPostListGetResponses, FetchVideoMixPostListApiV1DouyinAppV3FetchVideoMixPostListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_video_mix_post_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_mix_post_list',
     ...options
 });
 
@@ -17665,7 +17665,7 @@ export const fetchVideoMixPostListApiV1DouyinAppV3FetchVideoMixPostListGet = <Th
  */
 export const fetchUserSeriesListApiV1DouyinAppV3FetchUserSeriesListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserSeriesListApiV1DouyinAppV3FetchUserSeriesListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserSeriesListApiV1DouyinAppV3FetchUserSeriesListGetResponses, FetchUserSeriesListApiV1DouyinAppV3FetchUserSeriesListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_user_series_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_series_list',
     ...options
 });
 
@@ -17704,7 +17704,7 @@ export const fetchUserSeriesListApiV1DouyinAppV3FetchUserSeriesListGet = <ThrowO
  */
 export const fetchSeriesVideoListApiV1DouyinAppV3FetchSeriesVideoListGet = <ThrowOnError extends boolean = false>(options: Options<FetchSeriesVideoListApiV1DouyinAppV3FetchSeriesVideoListGetData, ThrowOnError>) => (options.client ?? client).get<FetchSeriesVideoListApiV1DouyinAppV3FetchSeriesVideoListGetResponses, FetchSeriesVideoListApiV1DouyinAppV3FetchSeriesVideoListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_series_video_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_series_video_list',
     ...options
 });
 
@@ -17746,7 +17746,7 @@ export const fetchSeriesVideoListApiV1DouyinAppV3FetchSeriesVideoListGet = <Thro
  */
 export const fetchSeriesDetailApiV1DouyinAppV3FetchSeriesDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchSeriesDetailApiV1DouyinAppV3FetchSeriesDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchSeriesDetailApiV1DouyinAppV3FetchSeriesDetailGetResponses, FetchSeriesDetailApiV1DouyinAppV3FetchSeriesDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_series_detail',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_series_detail',
     ...options
 });
 
@@ -17796,7 +17796,7 @@ export const fetchSeriesDetailApiV1DouyinAppV3FetchSeriesDetailGet = <ThrowOnErr
  */
 export const fetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGetResponses, FetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_general_search_result',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_general_search_result',
     ...options
 });
 
@@ -17845,7 +17845,7 @@ export const fetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGet
  */
 export const fetchVideoSearchResultApiV1DouyinAppV3FetchVideoSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchResultApiV1DouyinAppV3FetchVideoSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoSearchResultApiV1DouyinAppV3FetchVideoSearchResultGetResponses, FetchVideoSearchResultApiV1DouyinAppV3FetchVideoSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_video_search_result',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_search_result',
     ...options
 });
 
@@ -17930,7 +17930,7 @@ export const fetchVideoSearchResultApiV1DouyinAppV3FetchVideoSearchResultGet = <
  */
 export const fetchVideoSearchResultV2ApiV1DouyinAppV3FetchVideoSearchResultV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchResultV2ApiV1DouyinAppV3FetchVideoSearchResultV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoSearchResultV2ApiV1DouyinAppV3FetchVideoSearchResultV2GetResponses, FetchVideoSearchResultV2ApiV1DouyinAppV3FetchVideoSearchResultV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_video_search_result_v2',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_video_search_result_v2',
     ...options
 });
 
@@ -17992,7 +17992,7 @@ export const fetchVideoSearchResultV2ApiV1DouyinAppV3FetchVideoSearchResultV2Get
  */
 export const fetchUserSearchResultApiV1DouyinAppV3FetchUserSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchResultApiV1DouyinAppV3FetchUserSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSearchResultApiV1DouyinAppV3FetchUserSearchResultGetResponses, FetchUserSearchResultApiV1DouyinAppV3FetchUserSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_user_search_result',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_user_search_result',
     ...options
 });
 
@@ -18030,7 +18030,7 @@ export const fetchUserSearchResultApiV1DouyinAppV3FetchUserSearchResultGet = <Th
  */
 export const fetchLiveSearchResultApiV1DouyinAppV3FetchLiveSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveSearchResultApiV1DouyinAppV3FetchLiveSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveSearchResultApiV1DouyinAppV3FetchLiveSearchResultGetResponses, FetchLiveSearchResultApiV1DouyinAppV3FetchLiveSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_live_search_result',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_live_search_result',
     ...options
 });
 
@@ -18068,7 +18068,7 @@ export const fetchLiveSearchResultApiV1DouyinAppV3FetchLiveSearchResultGet = <Th
  */
 export const fetchMusicSearchResultApiV1DouyinAppV3FetchMusicSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchMusicSearchResultApiV1DouyinAppV3FetchMusicSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchMusicSearchResultApiV1DouyinAppV3FetchMusicSearchResultGetResponses, FetchMusicSearchResultApiV1DouyinAppV3FetchMusicSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_music_search_result',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_music_search_result',
     ...options
 });
 
@@ -18106,7 +18106,7 @@ export const fetchMusicSearchResultApiV1DouyinAppV3FetchMusicSearchResultGet = <
  */
 export const fetchHashtagSearchResultApiV1DouyinAppV3FetchHashtagSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagSearchResultApiV1DouyinAppV3FetchHashtagSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagSearchResultApiV1DouyinAppV3FetchHashtagSearchResultGetResponses, FetchHashtagSearchResultApiV1DouyinAppV3FetchHashtagSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_hashtag_search_result',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_hashtag_search_result',
     ...options
 });
 
@@ -18134,7 +18134,7 @@ export const fetchHashtagSearchResultApiV1DouyinAppV3FetchHashtagSearchResultGet
  */
 export const fetchMusicDetailApiV1DouyinAppV3FetchMusicDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchMusicDetailApiV1DouyinAppV3FetchMusicDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchMusicDetailApiV1DouyinAppV3FetchMusicDetailGetResponses, FetchMusicDetailApiV1DouyinAppV3FetchMusicDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_music_detail',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_music_detail',
     ...options
 });
 
@@ -18168,7 +18168,7 @@ export const fetchMusicDetailApiV1DouyinAppV3FetchMusicDetailGet = <ThrowOnError
  */
 export const fetchMusicVideoListApiV1DouyinAppV3FetchMusicVideoListGet = <ThrowOnError extends boolean = false>(options: Options<FetchMusicVideoListApiV1DouyinAppV3FetchMusicVideoListGetData, ThrowOnError>) => (options.client ?? client).get<FetchMusicVideoListApiV1DouyinAppV3FetchMusicVideoListGetResponses, FetchMusicVideoListApiV1DouyinAppV3FetchMusicVideoListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_music_video_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_music_video_list',
     ...options
 });
 
@@ -18196,7 +18196,7 @@ export const fetchMusicVideoListApiV1DouyinAppV3FetchMusicVideoListGet = <ThrowO
  */
 export const fetchHashtagDetailApiV1DouyinAppV3FetchHashtagDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagDetailApiV1DouyinAppV3FetchHashtagDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagDetailApiV1DouyinAppV3FetchHashtagDetailGetResponses, FetchHashtagDetailApiV1DouyinAppV3FetchHashtagDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_hashtag_detail',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_hashtag_detail',
     ...options
 });
 
@@ -18233,7 +18233,7 @@ export const fetchHashtagDetailApiV1DouyinAppV3FetchHashtagDetailGet = <ThrowOnE
  */
 export const fetchHashtagVideoListApiV1DouyinAppV3FetchHashtagVideoListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagVideoListApiV1DouyinAppV3FetchHashtagVideoListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagVideoListApiV1DouyinAppV3FetchHashtagVideoListGetResponses, FetchHashtagVideoListApiV1DouyinAppV3FetchHashtagVideoListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_hashtag_video_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_hashtag_video_list',
     ...options
 });
 
@@ -18293,7 +18293,7 @@ export const fetchHashtagVideoListApiV1DouyinAppV3FetchHashtagVideoListGet = <Th
  */
 export const fetchHotSearchListApiV1DouyinAppV3FetchHotSearchListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchListApiV1DouyinAppV3FetchHotSearchListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchListApiV1DouyinAppV3FetchHotSearchListGetResponses, FetchHotSearchListApiV1DouyinAppV3FetchHotSearchListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_hot_search_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_hot_search_list',
     ...options
 });
 
@@ -18317,7 +18317,7 @@ export const fetchHotSearchListApiV1DouyinAppV3FetchHotSearchListGet = <ThrowOnE
  */
 export const fetchLiveHotSearchListApiV1DouyinAppV3FetchLiveHotSearchListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchLiveHotSearchListApiV1DouyinAppV3FetchLiveHotSearchListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchLiveHotSearchListApiV1DouyinAppV3FetchLiveHotSearchListGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_live_hot_search_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_live_hot_search_list',
     ...options
 });
 
@@ -18354,7 +18354,7 @@ export const fetchLiveHotSearchListApiV1DouyinAppV3FetchLiveHotSearchListGet = <
  */
 export const fetchMusicHotSearchListApiV1DouyinAppV3FetchMusicHotSearchListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchMusicHotSearchListApiV1DouyinAppV3FetchMusicHotSearchListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchMusicHotSearchListApiV1DouyinAppV3FetchMusicHotSearchListGetResponses, FetchMusicHotSearchListApiV1DouyinAppV3FetchMusicHotSearchListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_music_hot_search_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_music_hot_search_list',
     ...options
 });
 
@@ -18378,7 +18378,7 @@ export const fetchMusicHotSearchListApiV1DouyinAppV3FetchMusicHotSearchListGet =
  */
 export const fetchHotBrandSearchCategoryApiV1DouyinAppV3FetchBrandHotSearchListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotBrandSearchCategoryApiV1DouyinAppV3FetchBrandHotSearchListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotBrandSearchCategoryApiV1DouyinAppV3FetchBrandHotSearchListGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_brand_hot_search_list',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_brand_hot_search_list',
     ...options
 });
 
@@ -18406,7 +18406,7 @@ export const fetchHotBrandSearchCategoryApiV1DouyinAppV3FetchBrandHotSearchListG
  */
 export const fetchHotBrandSearchApiV1DouyinAppV3FetchBrandHotSearchListDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotBrandSearchApiV1DouyinAppV3FetchBrandHotSearchListDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotBrandSearchApiV1DouyinAppV3FetchBrandHotSearchListDetailGetResponses, FetchHotBrandSearchApiV1DouyinAppV3FetchBrandHotSearchListDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/fetch_brand_hot_search_list_detail',
+    url: '/video-hub/api/v1/douyin/app/v3/fetch_brand_hot_search_list_detail',
     ...options
 });
 
@@ -18434,7 +18434,7 @@ export const fetchHotBrandSearchApiV1DouyinAppV3FetchBrandHotSearchListDetailGet
  */
 export const generateDouyinShortUrlApiV1DouyinAppV3GenerateDouyinShortUrlGet = <ThrowOnError extends boolean = false>(options: Options<GenerateDouyinShortUrlApiV1DouyinAppV3GenerateDouyinShortUrlGetData, ThrowOnError>) => (options.client ?? client).get<GenerateDouyinShortUrlApiV1DouyinAppV3GenerateDouyinShortUrlGetResponses, GenerateDouyinShortUrlApiV1DouyinAppV3GenerateDouyinShortUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/generate_douyin_short_url',
+    url: '/video-hub/api/v1/douyin/app/v3/generate_douyin_short_url',
     ...options
 });
 
@@ -18462,7 +18462,7 @@ export const generateDouyinShortUrlApiV1DouyinAppV3GenerateDouyinShortUrlGet = <
  */
 export const generateDouyinVideoShareQrcodeApiV1DouyinAppV3GenerateDouyinVideoShareQrcodeGet = <ThrowOnError extends boolean = false>(options: Options<GenerateDouyinVideoShareQrcodeApiV1DouyinAppV3GenerateDouyinVideoShareQrcodeGetData, ThrowOnError>) => (options.client ?? client).get<GenerateDouyinVideoShareQrcodeApiV1DouyinAppV3GenerateDouyinVideoShareQrcodeGetResponses, GenerateDouyinVideoShareQrcodeApiV1DouyinAppV3GenerateDouyinVideoShareQrcodeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/generate_douyin_video_share_qrcode',
+    url: '/video-hub/api/v1/douyin/app/v3/generate_douyin_video_share_qrcode',
     ...options
 });
 
@@ -18551,7 +18551,7 @@ export const generateDouyinVideoShareQrcodeApiV1DouyinAppV3GenerateDouyinVideoSh
  */
 export const registerDeviceApiV1DouyinAppV3RegisterDeviceGet = <ThrowOnError extends boolean = false>(options?: Options<RegisterDeviceApiV1DouyinAppV3RegisterDeviceGetData, ThrowOnError>) => (options?.client ?? client).get<RegisterDeviceApiV1DouyinAppV3RegisterDeviceGetResponses, RegisterDeviceApiV1DouyinAppV3RegisterDeviceGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/register_device',
+    url: '/video-hub/api/v1/douyin/app/v3/register_device',
     ...options
 });
 
@@ -18583,7 +18583,7 @@ export const registerDeviceApiV1DouyinAppV3RegisterDeviceGet = <ThrowOnError ext
  */
 export const openDouyinAppToVideoDetailApiV1DouyinAppV3OpenDouyinAppToVideoDetailGet = <ThrowOnError extends boolean = false>(options: Options<OpenDouyinAppToVideoDetailApiV1DouyinAppV3OpenDouyinAppToVideoDetailGetData, ThrowOnError>) => (options.client ?? client).get<OpenDouyinAppToVideoDetailApiV1DouyinAppV3OpenDouyinAppToVideoDetailGetResponses, OpenDouyinAppToVideoDetailApiV1DouyinAppV3OpenDouyinAppToVideoDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/open_douyin_app_to_video_detail',
+    url: '/video-hub/api/v1/douyin/app/v3/open_douyin_app_to_video_detail',
     ...options
 });
 
@@ -18620,7 +18620,7 @@ export const openDouyinAppToVideoDetailApiV1DouyinAppV3OpenDouyinAppToVideoDetai
  */
 export const openDouyinAppToUserProfileApiV1DouyinAppV3OpenDouyinAppToUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<OpenDouyinAppToUserProfileApiV1DouyinAppV3OpenDouyinAppToUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<OpenDouyinAppToUserProfileApiV1DouyinAppV3OpenDouyinAppToUserProfileGetResponses, OpenDouyinAppToUserProfileApiV1DouyinAppV3OpenDouyinAppToUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/open_douyin_app_to_user_profile',
+    url: '/video-hub/api/v1/douyin/app/v3/open_douyin_app_to_user_profile',
     ...options
 });
 
@@ -18652,7 +18652,7 @@ export const openDouyinAppToUserProfileApiV1DouyinAppV3OpenDouyinAppToUserProfil
  */
 export const openDouyinAppToKeywordSearchApiV1DouyinAppV3OpenDouyinAppToKeywordSearchGet = <ThrowOnError extends boolean = false>(options: Options<OpenDouyinAppToKeywordSearchApiV1DouyinAppV3OpenDouyinAppToKeywordSearchGetData, ThrowOnError>) => (options.client ?? client).get<OpenDouyinAppToKeywordSearchApiV1DouyinAppV3OpenDouyinAppToKeywordSearchGetResponses, OpenDouyinAppToKeywordSearchApiV1DouyinAppV3OpenDouyinAppToKeywordSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/open_douyin_app_to_keyword_search',
+    url: '/video-hub/api/v1/douyin/app/v3/open_douyin_app_to_keyword_search',
     ...options
 });
 
@@ -18689,7 +18689,7 @@ export const openDouyinAppToKeywordSearchApiV1DouyinAppV3OpenDouyinAppToKeywordS
  */
 export const openDouyinAppToSendPrivateMessageApiV1DouyinAppV3OpenDouyinAppToSendPrivateMessageGet = <ThrowOnError extends boolean = false>(options: Options<OpenDouyinAppToSendPrivateMessageApiV1DouyinAppV3OpenDouyinAppToSendPrivateMessageGetData, ThrowOnError>) => (options.client ?? client).get<OpenDouyinAppToSendPrivateMessageApiV1DouyinAppV3OpenDouyinAppToSendPrivateMessageGetResponses, OpenDouyinAppToSendPrivateMessageApiV1DouyinAppV3OpenDouyinAppToSendPrivateMessageGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/app/v3/open_douyin_app_to_send_private_message',
+    url: '/video-hub/api/v1/douyin/app/v3/open_douyin_app_to_send_private_message',
     ...options
 });
 
@@ -18720,7 +18720,7 @@ export const openDouyinAppToSendPrivateMessageApiV1DouyinAppV3OpenDouyinAppToSen
  */
 export const fetchCreatorActivityListApiV1DouyinCreatorFetchCreatorActivityListGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorActivityListApiV1DouyinCreatorFetchCreatorActivityListGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorActivityListApiV1DouyinCreatorFetchCreatorActivityListGetResponses, FetchCreatorActivityListApiV1DouyinCreatorFetchCreatorActivityListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_activity_list',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_activity_list',
     ...options
 });
 
@@ -18748,7 +18748,7 @@ export const fetchCreatorActivityListApiV1DouyinCreatorFetchCreatorActivityListG
  */
 export const fetchCreatorActivityDetailApiV1DouyinCreatorFetchCreatorActivityDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorActivityDetailApiV1DouyinCreatorFetchCreatorActivityDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorActivityDetailApiV1DouyinCreatorFetchCreatorActivityDetailGetResponses, FetchCreatorActivityDetailApiV1DouyinCreatorFetchCreatorActivityDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_activity_detail',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_activity_detail',
     ...options
 });
 
@@ -18769,7 +18769,7 @@ export const fetchCreatorActivityDetailApiV1DouyinCreatorFetchCreatorActivityDet
  */
 export const fetchCreatorMaterialCenterConfigApiV1DouyinCreatorFetchCreatorMaterialCenterConfigGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorMaterialCenterConfigApiV1DouyinCreatorFetchCreatorMaterialCenterConfigGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorMaterialCenterConfigApiV1DouyinCreatorFetchCreatorMaterialCenterConfigGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_material_center_config',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_material_center_config',
     ...options
 });
 
@@ -18869,7 +18869,7 @@ export const fetchCreatorMaterialCenterConfigApiV1DouyinCreatorFetchCreatorMater
  */
 export const fetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGetResponses, FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_material_center_billboard',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_material_center_billboard',
     ...options
 });
 
@@ -18957,7 +18957,7 @@ export const fetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMa
  */
 export const fetchCreatorHotSpotBillboardApiV1DouyinCreatorFetchCreatorHotSpotBillboardGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorHotSpotBillboardApiV1DouyinCreatorFetchCreatorHotSpotBillboardGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorHotSpotBillboardApiV1DouyinCreatorFetchCreatorHotSpotBillboardGetResponses, FetchCreatorHotSpotBillboardApiV1DouyinCreatorFetchCreatorHotSpotBillboardGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_hot_spot_billboard',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_spot_billboard',
     ...options
 });
 
@@ -19057,7 +19057,7 @@ export const fetchCreatorHotSpotBillboardApiV1DouyinCreatorFetchCreatorHotSpotBi
  */
 export const fetchCreatorHotTopicBillboardApiV1DouyinCreatorFetchCreatorHotTopicBillboardGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorHotTopicBillboardApiV1DouyinCreatorFetchCreatorHotTopicBillboardGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorHotTopicBillboardApiV1DouyinCreatorFetchCreatorHotTopicBillboardGetResponses, FetchCreatorHotTopicBillboardApiV1DouyinCreatorFetchCreatorHotTopicBillboardGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_hot_topic_billboard',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_topic_billboard',
     ...options
 });
 
@@ -19157,7 +19157,7 @@ export const fetchCreatorHotTopicBillboardApiV1DouyinCreatorFetchCreatorHotTopic
  */
 export const fetchCreatorHotPropsBillboardApiV1DouyinCreatorFetchCreatorHotPropsBillboardGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorHotPropsBillboardApiV1DouyinCreatorFetchCreatorHotPropsBillboardGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorHotPropsBillboardApiV1DouyinCreatorFetchCreatorHotPropsBillboardGetResponses, FetchCreatorHotPropsBillboardApiV1DouyinCreatorFetchCreatorHotPropsBillboardGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_hot_props_billboard',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_props_billboard',
     ...options
 });
 
@@ -19182,7 +19182,7 @@ export const fetchCreatorHotPropsBillboardApiV1DouyinCreatorFetchCreatorHotProps
  */
 export const fetchCreatorHotChallengeBillboardApiV1DouyinCreatorFetchCreatorHotChallengeBillboardGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorHotChallengeBillboardApiV1DouyinCreatorFetchCreatorHotChallengeBillboardGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorHotChallengeBillboardApiV1DouyinCreatorFetchCreatorHotChallengeBillboardGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_hot_challenge_billboard',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_challenge_billboard',
     ...options
 });
 
@@ -19216,7 +19216,7 @@ export const fetchCreatorHotChallengeBillboardApiV1DouyinCreatorFetchCreatorHotC
  */
 export const fetchCreatorHotMusicBillboardApiV1DouyinCreatorFetchCreatorHotMusicBillboardGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorHotMusicBillboardApiV1DouyinCreatorFetchCreatorHotMusicBillboardGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorHotMusicBillboardApiV1DouyinCreatorFetchCreatorHotMusicBillboardGetResponses, FetchCreatorHotMusicBillboardApiV1DouyinCreatorFetchCreatorHotMusicBillboardGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_hot_music_billboard',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_music_billboard',
     ...options
 });
 
@@ -19275,7 +19275,7 @@ export const fetchCreatorHotMusicBillboardApiV1DouyinCreatorFetchCreatorHotMusic
  */
 export const fetchCreatorHotCourseApiV1DouyinCreatorFetchCreatorHotCourseGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorHotCourseApiV1DouyinCreatorFetchCreatorHotCourseGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorHotCourseApiV1DouyinCreatorFetchCreatorHotCourseGetResponses, FetchCreatorHotCourseApiV1DouyinCreatorFetchCreatorHotCourseGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_hot_course',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_hot_course',
     ...options
 });
 
@@ -19300,7 +19300,7 @@ export const fetchCreatorHotCourseApiV1DouyinCreatorFetchCreatorHotCourseGet = <
  */
 export const fetchCreatorContentCategoryApiV1DouyinCreatorFetchCreatorContentCategoryGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCreatorContentCategoryApiV1DouyinCreatorFetchCreatorContentCategoryGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCreatorContentCategoryApiV1DouyinCreatorFetchCreatorContentCategoryGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_content_category',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_content_category',
     ...options
 });
 
@@ -19343,7 +19343,7 @@ export const fetchCreatorContentCategoryApiV1DouyinCreatorFetchCreatorContentCat
  */
 export const fetchCreatorContentCourseApiV1DouyinCreatorFetchCreatorContentCourseGet = <ThrowOnError extends boolean = false>(options: Options<FetchCreatorContentCourseApiV1DouyinCreatorFetchCreatorContentCourseGetData, ThrowOnError>) => (options.client ?? client).get<FetchCreatorContentCourseApiV1DouyinCreatorFetchCreatorContentCourseGetResponses, FetchCreatorContentCourseApiV1DouyinCreatorFetchCreatorContentCourseGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_creator_content_course',
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_content_course',
     ...options
 });
 
@@ -19376,7 +19376,7 @@ export const fetchCreatorContentCourseApiV1DouyinCreatorFetchCreatorContentCours
  */
 export const fetchVideoDanmakuListApiV1DouyinCreatorFetchVideoDanmakuListGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoDanmakuListApiV1DouyinCreatorFetchVideoDanmakuListGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoDanmakuListApiV1DouyinCreatorFetchVideoDanmakuListGetResponses, FetchVideoDanmakuListApiV1DouyinCreatorFetchVideoDanmakuListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_video_danmaku_list',
+    url: '/video-hub/api/v1/douyin/creator/fetch_video_danmaku_list',
     ...options
 });
 
@@ -19407,7 +19407,7 @@ export const fetchVideoDanmakuListApiV1DouyinCreatorFetchVideoDanmakuListGet = <
  */
 export const fetchUserSearchApiV1DouyinCreatorFetchUserSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchApiV1DouyinCreatorFetchUserSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSearchApiV1DouyinCreatorFetchUserSearchGetResponses, FetchUserSearchApiV1DouyinCreatorFetchUserSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_user_search',
+    url: '/video-hub/api/v1/douyin/creator/fetch_user_search',
     ...options
 });
 
@@ -19556,7 +19556,7 @@ export const fetchUserSearchApiV1DouyinCreatorFetchUserSearchGet = <ThrowOnError
  */
 export const fetchMissionTaskListApiV1DouyinCreatorFetchMissionTaskListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchMissionTaskListApiV1DouyinCreatorFetchMissionTaskListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchMissionTaskListApiV1DouyinCreatorFetchMissionTaskListGetResponses, FetchMissionTaskListApiV1DouyinCreatorFetchMissionTaskListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_mission_task_list',
+    url: '/video-hub/api/v1/douyin/creator/fetch_mission_task_list',
     ...options
 });
 
@@ -19667,7 +19667,7 @@ export const fetchMissionTaskListApiV1DouyinCreatorFetchMissionTaskListGet = <Th
  */
 export const fetchIndustryCategoryConfigApiV1DouyinCreatorFetchIndustryCategoryConfigGet = <ThrowOnError extends boolean = false>(options?: Options<FetchIndustryCategoryConfigApiV1DouyinCreatorFetchIndustryCategoryConfigGetData, ThrowOnError>) => (options?.client ?? client).get<FetchIndustryCategoryConfigApiV1DouyinCreatorFetchIndustryCategoryConfigGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator/fetch_industry_category_config',
+    url: '/video-hub/api/v1/douyin/creator/fetch_industry_category_config',
     ...options
 });
 
@@ -19748,7 +19748,7 @@ export const fetchIndustryCategoryConfigApiV1DouyinCreatorFetchIndustryCategoryC
  */
 export const fetchItemOverviewDataApiV1DouyinCreatorV2FetchItemOverviewDataPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemOverviewDataApiV1DouyinCreatorV2FetchItemOverviewDataPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemOverviewDataApiV1DouyinCreatorV2FetchItemOverviewDataPostResponses, FetchItemOverviewDataApiV1DouyinCreatorV2FetchItemOverviewDataPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_overview_data',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_overview_data',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -19873,7 +19873,7 @@ export const fetchItemOverviewDataApiV1DouyinCreatorV2FetchItemOverviewDataPost 
  */
 export const fetchItemPlaySourceApiV1DouyinCreatorV2FetchItemPlaySourcePost = <ThrowOnError extends boolean = false>(options: Options<FetchItemPlaySourceApiV1DouyinCreatorV2FetchItemPlaySourcePostData, ThrowOnError>) => (options.client ?? client).post<FetchItemPlaySourceApiV1DouyinCreatorV2FetchItemPlaySourcePostResponses, FetchItemPlaySourceApiV1DouyinCreatorV2FetchItemPlaySourcePostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_play_source',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_play_source',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -20005,7 +20005,7 @@ export const fetchItemPlaySourceApiV1DouyinCreatorV2FetchItemPlaySourcePost = <T
  */
 export const fetchItemSearchKeywordApiV1DouyinCreatorV2FetchItemSearchKeywordPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemSearchKeywordApiV1DouyinCreatorV2FetchItemSearchKeywordPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemSearchKeywordApiV1DouyinCreatorV2FetchItemSearchKeywordPostResponses, FetchItemSearchKeywordApiV1DouyinCreatorV2FetchItemSearchKeywordPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_search_keyword',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_search_keyword',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -20207,7 +20207,7 @@ export const fetchItemSearchKeywordApiV1DouyinCreatorV2FetchItemSearchKeywordPos
  */
 export const fetchItemWatchTrendApiV1DouyinCreatorV2FetchItemWatchTrendPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemWatchTrendApiV1DouyinCreatorV2FetchItemWatchTrendPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemWatchTrendApiV1DouyinCreatorV2FetchItemWatchTrendPostResponses, FetchItemWatchTrendApiV1DouyinCreatorV2FetchItemWatchTrendPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_watch_trend',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_watch_trend',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -20401,7 +20401,7 @@ export const fetchItemWatchTrendApiV1DouyinCreatorV2FetchItemWatchTrendPost = <T
  */
 export const fetchItemDanmakuAnalysisApiV1DouyinCreatorV2FetchItemDanmakuAnalysisPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemDanmakuAnalysisApiV1DouyinCreatorV2FetchItemDanmakuAnalysisPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemDanmakuAnalysisApiV1DouyinCreatorV2FetchItemDanmakuAnalysisPostResponses, FetchItemDanmakuAnalysisApiV1DouyinCreatorV2FetchItemDanmakuAnalysisPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_danmaku_analysis',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_danmaku_analysis',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -20786,7 +20786,7 @@ export const fetchItemDanmakuAnalysisApiV1DouyinCreatorV2FetchItemDanmakuAnalysi
  */
 export const fetchItemAudiencePortraitApiV1DouyinCreatorV2FetchItemAudiencePortraitPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemAudiencePortraitApiV1DouyinCreatorV2FetchItemAudiencePortraitPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemAudiencePortraitApiV1DouyinCreatorV2FetchItemAudiencePortraitPostResponses, FetchItemAudiencePortraitApiV1DouyinCreatorV2FetchItemAudiencePortraitPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_audience_portrait',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_audience_portrait',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -20937,7 +20937,7 @@ export const fetchItemAudiencePortraitApiV1DouyinCreatorV2FetchItemAudiencePortr
  */
 export const fetchItemAudienceOthersApiV1DouyinCreatorV2FetchItemAudienceOthersPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemAudienceOthersApiV1DouyinCreatorV2FetchItemAudienceOthersPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemAudienceOthersApiV1DouyinCreatorV2FetchItemAudienceOthersPostResponses, FetchItemAudienceOthersApiV1DouyinCreatorV2FetchItemAudienceOthersPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_audience_others',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_audience_others',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -21029,7 +21029,7 @@ export const fetchItemAudienceOthersApiV1DouyinCreatorV2FetchItemAudienceOthersP
  */
 export const fetchItemAnalysisInvolvedVerticalApiV1DouyinCreatorV2FetchItemAnalysisInvolvedVerticalPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemAnalysisInvolvedVerticalApiV1DouyinCreatorV2FetchItemAnalysisInvolvedVerticalPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemAnalysisInvolvedVerticalApiV1DouyinCreatorV2FetchItemAnalysisInvolvedVerticalPostResponses, FetchItemAnalysisInvolvedVerticalApiV1DouyinCreatorV2FetchItemAnalysisInvolvedVerticalPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_analysis_involved_vertical',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_analysis_involved_vertical',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -21156,7 +21156,7 @@ export const fetchItemAnalysisInvolvedVerticalApiV1DouyinCreatorV2FetchItemAnaly
  */
 export const fetchItemAnalysisOverviewApiV1DouyinCreatorV2FetchItemAnalysisOverviewPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemAnalysisOverviewApiV1DouyinCreatorV2FetchItemAnalysisOverviewPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemAnalysisOverviewApiV1DouyinCreatorV2FetchItemAnalysisOverviewPostResponses, FetchItemAnalysisOverviewApiV1DouyinCreatorV2FetchItemAnalysisOverviewPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_analysis_overview',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_analysis_overview',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -21328,7 +21328,7 @@ export const fetchItemAnalysisOverviewApiV1DouyinCreatorV2FetchItemAnalysisOverv
  */
 export const fetchItemAnalysisItemPerformanceApiV1DouyinCreatorV2FetchItemAnalysisItemPerformancePost = <ThrowOnError extends boolean = false>(options: Options<FetchItemAnalysisItemPerformanceApiV1DouyinCreatorV2FetchItemAnalysisItemPerformancePostData, ThrowOnError>) => (options.client ?? client).post<FetchItemAnalysisItemPerformanceApiV1DouyinCreatorV2FetchItemAnalysisItemPerformancePostResponses, FetchItemAnalysisItemPerformanceApiV1DouyinCreatorV2FetchItemAnalysisItemPerformancePostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_analysis_item_performance',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_analysis_item_performance',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -21613,7 +21613,7 @@ export const fetchItemAnalysisItemPerformanceApiV1DouyinCreatorV2FetchItemAnalys
  */
 export const fetchItemListApiV1DouyinCreatorV2FetchItemListPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemListApiV1DouyinCreatorV2FetchItemListPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemListApiV1DouyinCreatorV2FetchItemListPostResponses, FetchItemListApiV1DouyinCreatorV2FetchItemListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_list',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -21861,7 +21861,7 @@ export const fetchItemListApiV1DouyinCreatorV2FetchItemListPost = <ThrowOnError 
  */
 export const fetchItemListDownloadApiV1DouyinCreatorV2FetchItemListDownloadPost = <ThrowOnError extends boolean = false>(options: Options<FetchItemListDownloadApiV1DouyinCreatorV2FetchItemListDownloadPostData, ThrowOnError>) => (options.client ?? client).post<FetchItemListDownloadApiV1DouyinCreatorV2FetchItemListDownloadPostResponses, FetchItemListDownloadApiV1DouyinCreatorV2FetchItemListDownloadPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_item_list_download',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_item_list_download',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -22087,7 +22087,7 @@ export const fetchItemListDownloadApiV1DouyinCreatorV2FetchItemListDownloadPost 
  */
 export const fetchLiveRoomHistoryListApiV1DouyinCreatorV2FetchLiveRoomHistoryListPost = <ThrowOnError extends boolean = false>(options: Options<FetchLiveRoomHistoryListApiV1DouyinCreatorV2FetchLiveRoomHistoryListPostData, ThrowOnError>) => (options.client ?? client).post<FetchLiveRoomHistoryListApiV1DouyinCreatorV2FetchLiveRoomHistoryListPostResponses, FetchLiveRoomHistoryListApiV1DouyinCreatorV2FetchLiveRoomHistoryListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_live_room_history_list',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_live_room_history_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -22365,7 +22365,7 @@ export const fetchLiveRoomHistoryListApiV1DouyinCreatorV2FetchLiveRoomHistoryLis
  */
 export const fetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPost = <ThrowOnError extends boolean = false>(options: Options<FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostData, ThrowOnError>) => (options.client ?? client).post<FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostResponses, FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/creator_v2/fetch_author_diagnosis',
+    url: '/video-hub/api/v1/douyin/creator_v2/fetch_author_diagnosis',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -22568,7 +22568,7 @@ export const fetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPost = 
  */
 export const fetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1Post = <ThrowOnError extends boolean = false>(options: Options<FetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1PostData, ThrowOnError>) => (options.client ?? client).post<FetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1PostResponses, FetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_general_search_v1',
+    url: '/video-hub/api/v1/douyin/search/fetch_general_search_v1',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -22773,7 +22773,7 @@ export const fetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1Post = <Th
  */
 export const fetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2Post = <ThrowOnError extends boolean = false>(options: Options<FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostData, ThrowOnError>) => (options.client ?? client).post<FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostResponses, FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_general_search_v2',
+    url: '/video-hub/api/v1/douyin/search/fetch_general_search_v2',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -22994,7 +22994,7 @@ export const fetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2Post = <Th
  */
 export const fetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3Post = <ThrowOnError extends boolean = false>(options: Options<FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostData, ThrowOnError>) => (options.client ?? client).post<FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostResponses, FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_general_search_v3',
+    url: '/video-hub/api/v1/douyin/search/fetch_general_search_v3',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -23117,7 +23117,7 @@ export const fetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3Post = <Th
  */
 export const fetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPost = <ThrowOnError extends boolean = false>(options: Options<FetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPostData, ThrowOnError>) => (options.client ?? client).post<FetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPostResponses, FetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_search_suggest',
+    url: '/video-hub/api/v1/douyin/search/fetch_search_suggest',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -23346,7 +23346,7 @@ export const fetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPost = <ThrowO
  */
 export const fetchVideoSearchV1ApiV1DouyinSearchFetchVideoSearchV1Post = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchV1ApiV1DouyinSearchFetchVideoSearchV1PostData, ThrowOnError>) => (options.client ?? client).post<FetchVideoSearchV1ApiV1DouyinSearchFetchVideoSearchV1PostResponses, FetchVideoSearchV1ApiV1DouyinSearchFetchVideoSearchV1PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_video_search_v1',
+    url: '/video-hub/api/v1/douyin/search/fetch_video_search_v1',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -23577,7 +23577,7 @@ export const fetchVideoSearchV1ApiV1DouyinSearchFetchVideoSearchV1Post = <ThrowO
  */
 export const fetchVideoSearchV2ApiV1DouyinSearchFetchVideoSearchV2Post = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchV2ApiV1DouyinSearchFetchVideoSearchV2PostData, ThrowOnError>) => (options.client ?? client).post<FetchVideoSearchV2ApiV1DouyinSearchFetchVideoSearchV2PostResponses, FetchVideoSearchV2ApiV1DouyinSearchFetchVideoSearchV2PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_video_search_v2',
+    url: '/video-hub/api/v1/douyin/search/fetch_video_search_v2',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -23768,7 +23768,7 @@ export const fetchVideoSearchV2ApiV1DouyinSearchFetchVideoSearchV2Post = <ThrowO
  */
 export const fetchMultiSearchApiV1DouyinSearchFetchMultiSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchMultiSearchApiV1DouyinSearchFetchMultiSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchMultiSearchApiV1DouyinSearchFetchMultiSearchPostResponses, FetchMultiSearchApiV1DouyinSearchFetchMultiSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_multi_search',
+    url: '/video-hub/api/v1/douyin/search/fetch_multi_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -23903,7 +23903,7 @@ export const fetchMultiSearchApiV1DouyinSearchFetchMultiSearchPost = <ThrowOnErr
  */
 export const fetchUserSearchApiV1DouyinSearchFetchUserSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchApiV1DouyinSearchFetchUserSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchUserSearchApiV1DouyinSearchFetchUserSearchPostResponses, FetchUserSearchApiV1DouyinSearchFetchUserSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_user_search',
+    url: '/video-hub/api/v1/douyin/search/fetch_user_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -24006,7 +24006,7 @@ export const fetchUserSearchApiV1DouyinSearchFetchUserSearchPost = <ThrowOnError
  */
 export const fetchUserSearchV2ApiV1DouyinSearchFetchUserSearchV2Post = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchV2ApiV1DouyinSearchFetchUserSearchV2PostData, ThrowOnError>) => (options.client ?? client).post<FetchUserSearchV2ApiV1DouyinSearchFetchUserSearchV2PostResponses, FetchUserSearchV2ApiV1DouyinSearchFetchUserSearchV2PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_user_search_v2',
+    url: '/video-hub/api/v1/douyin/search/fetch_user_search_v2',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -24170,7 +24170,7 @@ export const fetchUserSearchV2ApiV1DouyinSearchFetchUserSearchV2Post = <ThrowOnE
  */
 export const fetchImageSearchApiV1DouyinSearchFetchImageSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchImageSearchApiV1DouyinSearchFetchImageSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchImageSearchApiV1DouyinSearchFetchImageSearchPostResponses, FetchImageSearchApiV1DouyinSearchFetchImageSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_image_search',
+    url: '/video-hub/api/v1/douyin/search/fetch_image_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -24293,7 +24293,7 @@ export const fetchImageSearchApiV1DouyinSearchFetchImageSearchPost = <ThrowOnErr
  */
 export const fetchImageSearchV3ApiV1DouyinSearchFetchImageSearchV3Post = <ThrowOnError extends boolean = false>(options: Options<FetchImageSearchV3ApiV1DouyinSearchFetchImageSearchV3PostData, ThrowOnError>) => (options.client ?? client).post<FetchImageSearchV3ApiV1DouyinSearchFetchImageSearchV3PostResponses, FetchImageSearchV3ApiV1DouyinSearchFetchImageSearchV3PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_image_search_v3',
+    url: '/video-hub/api/v1/douyin/search/fetch_image_search_v3',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -24462,7 +24462,7 @@ export const fetchImageSearchV3ApiV1DouyinSearchFetchImageSearchV3Post = <ThrowO
  */
 export const fetchLiveSearchV1ApiV1DouyinSearchFetchLiveSearchV1Post = <ThrowOnError extends boolean = false>(options: Options<FetchLiveSearchV1ApiV1DouyinSearchFetchLiveSearchV1PostData, ThrowOnError>) => (options.client ?? client).post<FetchLiveSearchV1ApiV1DouyinSearchFetchLiveSearchV1PostResponses, FetchLiveSearchV1ApiV1DouyinSearchFetchLiveSearchV1PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_live_search_v1',
+    url: '/video-hub/api/v1/douyin/search/fetch_live_search_v1',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -24631,7 +24631,7 @@ export const fetchLiveSearchV1ApiV1DouyinSearchFetchLiveSearchV1Post = <ThrowOnE
  */
 export const fetchChallengeSearchV1ApiV1DouyinSearchFetchChallengeSearchV1Post = <ThrowOnError extends boolean = false>(options: Options<FetchChallengeSearchV1ApiV1DouyinSearchFetchChallengeSearchV1PostData, ThrowOnError>) => (options.client ?? client).post<FetchChallengeSearchV1ApiV1DouyinSearchFetchChallengeSearchV1PostResponses, FetchChallengeSearchV1ApiV1DouyinSearchFetchChallengeSearchV1PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_challenge_search_v1',
+    url: '/video-hub/api/v1/douyin/search/fetch_challenge_search_v1',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -24784,7 +24784,7 @@ export const fetchChallengeSearchV1ApiV1DouyinSearchFetchChallengeSearchV1Post =
  */
 export const fetchChallengeSearchV2ApiV1DouyinSearchFetchChallengeSearchV2Post = <ThrowOnError extends boolean = false>(options: Options<FetchChallengeSearchV2ApiV1DouyinSearchFetchChallengeSearchV2PostData, ThrowOnError>) => (options.client ?? client).post<FetchChallengeSearchV2ApiV1DouyinSearchFetchChallengeSearchV2PostResponses, FetchChallengeSearchV2ApiV1DouyinSearchFetchChallengeSearchV2PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_challenge_search_v2',
+    url: '/video-hub/api/v1/douyin/search/fetch_challenge_search_v2',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -24879,7 +24879,7 @@ export const fetchChallengeSearchV2ApiV1DouyinSearchFetchChallengeSearchV2Post =
  */
 export const fetchChallengeSuggestApiV1DouyinSearchFetchChallengeSuggestPost = <ThrowOnError extends boolean = false>(options: Options<FetchChallengeSuggestApiV1DouyinSearchFetchChallengeSuggestPostData, ThrowOnError>) => (options.client ?? client).post<FetchChallengeSuggestApiV1DouyinSearchFetchChallengeSuggestPostResponses, FetchChallengeSuggestApiV1DouyinSearchFetchChallengeSuggestPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_challenge_suggest',
+    url: '/video-hub/api/v1/douyin/search/fetch_challenge_suggest',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -25053,7 +25053,7 @@ export const fetchChallengeSuggestApiV1DouyinSearchFetchChallengeSuggestPost = <
  */
 export const fetchExperienceSearchApiV1DouyinSearchFetchExperienceSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchExperienceSearchApiV1DouyinSearchFetchExperienceSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchExperienceSearchApiV1DouyinSearchFetchExperienceSearchPostResponses, FetchExperienceSearchApiV1DouyinSearchFetchExperienceSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_experience_search',
+    url: '/video-hub/api/v1/douyin/search/fetch_experience_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -25208,7 +25208,7 @@ export const fetchExperienceSearchApiV1DouyinSearchFetchExperienceSearchPost = <
  */
 export const fetchMusicSearchApiV1DouyinSearchFetchMusicSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchMusicSearchApiV1DouyinSearchFetchMusicSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchMusicSearchApiV1DouyinSearchFetchMusicSearchPostResponses, FetchMusicSearchApiV1DouyinSearchFetchMusicSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_music_search',
+    url: '/video-hub/api/v1/douyin/search/fetch_music_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -25405,7 +25405,7 @@ export const fetchMusicSearchApiV1DouyinSearchFetchMusicSearchPost = <ThrowOnErr
  */
 export const fetchDiscussSearchApiV1DouyinSearchFetchDiscussSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchDiscussSearchApiV1DouyinSearchFetchDiscussSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchDiscussSearchApiV1DouyinSearchFetchDiscussSearchPostResponses, FetchDiscussSearchApiV1DouyinSearchFetchDiscussSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_discuss_search',
+    url: '/video-hub/api/v1/douyin/search/fetch_discuss_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -25482,7 +25482,7 @@ export const fetchDiscussSearchApiV1DouyinSearchFetchDiscussSearchPost = <ThrowO
  */
 export const fetchSchoolSearchApiV1DouyinSearchFetchSchoolSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchSchoolSearchApiV1DouyinSearchFetchSchoolSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchSchoolSearchApiV1DouyinSearchFetchSchoolSearchPostResponses, FetchSchoolSearchApiV1DouyinSearchFetchSchoolSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_school_search',
+    url: '/video-hub/api/v1/douyin/search/fetch_school_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -25625,7 +25625,7 @@ export const fetchSchoolSearchApiV1DouyinSearchFetchSchoolSearchPost = <ThrowOnE
  */
 export const fetchVisionSearchApiV1DouyinSearchFetchVisionSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchVisionSearchApiV1DouyinSearchFetchVisionSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchVisionSearchApiV1DouyinSearchFetchVisionSearchPostResponses, FetchVisionSearchApiV1DouyinSearchFetchVisionSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/search/fetch_vision_search',
+    url: '/video-hub/api/v1/douyin/search/fetch_vision_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -25654,7 +25654,7 @@ export const fetchVisionSearchApiV1DouyinSearchFetchVisionSearchPost = <ThrowOnE
  */
 export const fetchCityListApiV1DouyinBillboardFetchCityListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCityListApiV1DouyinBillboardFetchCityListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCityListApiV1DouyinBillboardFetchCityListGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_city_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_city_list',
     ...options
 });
 
@@ -25693,7 +25693,7 @@ export const fetchCityListApiV1DouyinBillboardFetchCityListGet = <ThrowOnError e
  */
 export const fetchContentTagApiV1DouyinBillboardFetchContentTagGet = <ThrowOnError extends boolean = false>(options?: Options<FetchContentTagApiV1DouyinBillboardFetchContentTagGetData, ThrowOnError>) => (options?.client ?? client).get<FetchContentTagApiV1DouyinBillboardFetchContentTagGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_content_tag',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_content_tag',
     ...options
 });
 
@@ -25735,7 +25735,7 @@ export const fetchContentTagApiV1DouyinBillboardFetchContentTagGet = <ThrowOnErr
  */
 export const fetchHotCategoryListApiV1DouyinBillboardFetchHotCategoryListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotCategoryListApiV1DouyinBillboardFetchHotCategoryListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotCategoryListApiV1DouyinBillboardFetchHotCategoryListGetResponses, FetchHotCategoryListApiV1DouyinBillboardFetchHotCategoryListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_category_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_category_list',
     ...options
 });
 
@@ -25772,7 +25772,7 @@ export const fetchHotCategoryListApiV1DouyinBillboardFetchHotCategoryListGet = <
  */
 export const fetchHotRiseListApiV1DouyinBillboardFetchHotRiseListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotRiseListApiV1DouyinBillboardFetchHotRiseListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotRiseListApiV1DouyinBillboardFetchHotRiseListGetResponses, FetchHotRiseListApiV1DouyinBillboardFetchHotRiseListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_rise_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_rise_list',
     ...options
 });
 
@@ -25811,7 +25811,7 @@ export const fetchHotRiseListApiV1DouyinBillboardFetchHotRiseListGet = <ThrowOnE
  */
 export const fetchHotCityListApiV1DouyinBillboardFetchHotCityListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotCityListApiV1DouyinBillboardFetchHotCityListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotCityListApiV1DouyinBillboardFetchHotCityListGetResponses, FetchHotCityListApiV1DouyinBillboardFetchHotCityListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_city_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_city_list',
     ...options
 });
 
@@ -25840,7 +25840,7 @@ export const fetchHotCityListApiV1DouyinBillboardFetchHotCityListGet = <ThrowOnE
  */
 export const fetchHotChallengeListApiV1DouyinBillboardFetchHotChallengeListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotChallengeListApiV1DouyinBillboardFetchHotChallengeListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotChallengeListApiV1DouyinBillboardFetchHotChallengeListGetResponses, FetchHotChallengeListApiV1DouyinBillboardFetchHotChallengeListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_challenge_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_challenge_list',
     ...options
 });
 
@@ -25881,7 +25881,7 @@ export const fetchHotChallengeListApiV1DouyinBillboardFetchHotChallengeListGet =
  */
 export const fetchHotTotalListApiV1DouyinBillboardFetchHotTotalListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotTotalListApiV1DouyinBillboardFetchHotTotalListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotTotalListApiV1DouyinBillboardFetchHotTotalListGetResponses, FetchHotTotalListApiV1DouyinBillboardFetchHotTotalListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_list',
     ...options
 });
 
@@ -25912,7 +25912,7 @@ export const fetchHotTotalListApiV1DouyinBillboardFetchHotTotalListGet = <ThrowO
  */
 export const fetchHotCalendarListApiV1DouyinBillboardFetchHotCalendarListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotCalendarListApiV1DouyinBillboardFetchHotCalendarListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotCalendarListApiV1DouyinBillboardFetchHotCalendarListPostResponses, FetchHotCalendarListApiV1DouyinBillboardFetchHotCalendarListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_calendar_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_calendar_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -25941,7 +25941,7 @@ export const fetchHotCalendarListApiV1DouyinBillboardFetchHotCalendarListPost = 
  */
 export const fetchHotCalendarDetailApiV1DouyinBillboardFetchHotCalendarDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotCalendarDetailApiV1DouyinBillboardFetchHotCalendarDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotCalendarDetailApiV1DouyinBillboardFetchHotCalendarDetailGetResponses, FetchHotCalendarDetailApiV1DouyinBillboardFetchHotCalendarDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_calendar_detail',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_calendar_detail',
     ...options
 });
 
@@ -25975,7 +25975,7 @@ export const fetchHotCalendarDetailApiV1DouyinBillboardFetchHotCalendarDetailGet
  */
 export const fetchHotUserPortraitListApiV1DouyinBillboardFetchHotUserPortraitListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotUserPortraitListApiV1DouyinBillboardFetchHotUserPortraitListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotUserPortraitListApiV1DouyinBillboardFetchHotUserPortraitListGetResponses, FetchHotUserPortraitListApiV1DouyinBillboardFetchHotUserPortraitListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_user_portrait_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_user_portrait_list',
     ...options
 });
 
@@ -26000,7 +26000,7 @@ export const fetchHotUserPortraitListApiV1DouyinBillboardFetchHotUserPortraitLis
  */
 export const fetchHotCommentWordListApiV1DouyinBillboardFetchHotCommentWordListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotCommentWordListApiV1DouyinBillboardFetchHotCommentWordListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotCommentWordListApiV1DouyinBillboardFetchHotCommentWordListGetResponses, FetchHotCommentWordListApiV1DouyinBillboardFetchHotCommentWordListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_comment_word_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_comment_word_list',
     ...options
 });
 
@@ -26029,7 +26029,7 @@ export const fetchHotCommentWordListApiV1DouyinBillboardFetchHotCommentWordListG
  */
 export const fetchHotItemTrendsListApiV1DouyinBillboardFetchHotItemTrendsListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotItemTrendsListApiV1DouyinBillboardFetchHotItemTrendsListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotItemTrendsListApiV1DouyinBillboardFetchHotItemTrendsListGetResponses, FetchHotItemTrendsListApiV1DouyinBillboardFetchHotItemTrendsListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_item_trends_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_item_trends_list',
     ...options
 });
 
@@ -26068,7 +26068,7 @@ export const fetchHotItemTrendsListApiV1DouyinBillboardFetchHotItemTrendsListGet
  */
 export const fetchHotAccountListApiV1DouyinBillboardFetchHotAccountListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotAccountListApiV1DouyinBillboardFetchHotAccountListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotAccountListApiV1DouyinBillboardFetchHotAccountListPostResponses, FetchHotAccountListApiV1DouyinBillboardFetchHotAccountListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_account_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26099,7 +26099,7 @@ export const fetchHotAccountListApiV1DouyinBillboardFetchHotAccountListPost = <T
  */
 export const fetchHotAccountSearchListApiV1DouyinBillboardFetchHotAccountSearchListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotAccountSearchListApiV1DouyinBillboardFetchHotAccountSearchListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotAccountSearchListApiV1DouyinBillboardFetchHotAccountSearchListGetResponses, FetchHotAccountSearchListApiV1DouyinBillboardFetchHotAccountSearchListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_account_search_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_search_list',
     ...options
 });
 
@@ -26128,7 +26128,7 @@ export const fetchHotAccountSearchListApiV1DouyinBillboardFetchHotAccountSearchL
  */
 export const fetchHotAccountTrendsListApiV1DouyinBillboardFetchHotAccountTrendsListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotAccountTrendsListApiV1DouyinBillboardFetchHotAccountTrendsListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotAccountTrendsListApiV1DouyinBillboardFetchHotAccountTrendsListGetResponses, FetchHotAccountTrendsListApiV1DouyinBillboardFetchHotAccountTrendsListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_account_trends_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_trends_list',
     ...options
 });
 
@@ -26155,7 +26155,7 @@ export const fetchHotAccountTrendsListApiV1DouyinBillboardFetchHotAccountTrendsL
  */
 export const fetchHotAccountItemAnalysisListApiV1DouyinBillboardFetchHotAccountItemAnalysisListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotAccountItemAnalysisListApiV1DouyinBillboardFetchHotAccountItemAnalysisListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotAccountItemAnalysisListApiV1DouyinBillboardFetchHotAccountItemAnalysisListGetResponses, FetchHotAccountItemAnalysisListApiV1DouyinBillboardFetchHotAccountItemAnalysisListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_account_item_analysis_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_item_analysis_list',
     ...options
 });
 
@@ -26198,7 +26198,7 @@ export const fetchHotAccountItemAnalysisListApiV1DouyinBillboardFetchHotAccountI
  */
 export const fetchHotAccountFansPortraitListApiV1DouyinBillboardFetchHotAccountFansPortraitListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotAccountFansPortraitListApiV1DouyinBillboardFetchHotAccountFansPortraitListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotAccountFansPortraitListApiV1DouyinBillboardFetchHotAccountFansPortraitListGetResponses, FetchHotAccountFansPortraitListApiV1DouyinBillboardFetchHotAccountFansPortraitListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_account_fans_portrait_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_fans_portrait_list',
     ...options
 });
 
@@ -26223,7 +26223,7 @@ export const fetchHotAccountFansPortraitListApiV1DouyinBillboardFetchHotAccountF
  */
 export const fetchHotAccountFansInterestAccountListApiV1DouyinBillboardFetchHotAccountFansInterestAccountListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotAccountFansInterestAccountListApiV1DouyinBillboardFetchHotAccountFansInterestAccountListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotAccountFansInterestAccountListApiV1DouyinBillboardFetchHotAccountFansInterestAccountListGetResponses, FetchHotAccountFansInterestAccountListApiV1DouyinBillboardFetchHotAccountFansInterestAccountListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_account_fans_interest_account_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_fans_interest_account_list',
     ...options
 });
 
@@ -26248,7 +26248,7 @@ export const fetchHotAccountFansInterestAccountListApiV1DouyinBillboardFetchHotA
  */
 export const fetchHotAccountFansInterestTopicListApiV1DouyinBillboardFetchHotAccountFansInterestTopicListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotAccountFansInterestTopicListApiV1DouyinBillboardFetchHotAccountFansInterestTopicListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotAccountFansInterestTopicListApiV1DouyinBillboardFetchHotAccountFansInterestTopicListGetResponses, FetchHotAccountFansInterestTopicListApiV1DouyinBillboardFetchHotAccountFansInterestTopicListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_account_fans_interest_topic_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_fans_interest_topic_list',
     ...options
 });
 
@@ -26273,7 +26273,7 @@ export const fetchHotAccountFansInterestTopicListApiV1DouyinBillboardFetchHotAcc
  */
 export const fetchHotAccountFansInterestSearchListApiV1DouyinBillboardFetchHotAccountFansInterestSearchListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotAccountFansInterestSearchListApiV1DouyinBillboardFetchHotAccountFansInterestSearchListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotAccountFansInterestSearchListApiV1DouyinBillboardFetchHotAccountFansInterestSearchListGetResponses, FetchHotAccountFansInterestSearchListApiV1DouyinBillboardFetchHotAccountFansInterestSearchListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_account_fans_interest_search_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_account_fans_interest_search_list',
     ...options
 });
 
@@ -26314,7 +26314,7 @@ export const fetchHotAccountFansInterestSearchListApiV1DouyinBillboardFetchHotAc
  */
 export const fetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPostResponses, FetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_video_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_video_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26357,7 +26357,7 @@ export const fetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPos
  */
 export const fetchHotTotalLowFanListApiV1DouyinBillboardFetchHotTotalLowFanListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalLowFanListApiV1DouyinBillboardFetchHotTotalLowFanListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalLowFanListApiV1DouyinBillboardFetchHotTotalLowFanListPostResponses, FetchHotTotalLowFanListApiV1DouyinBillboardFetchHotTotalLowFanListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_low_fan_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_low_fan_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26400,7 +26400,7 @@ export const fetchHotTotalLowFanListApiV1DouyinBillboardFetchHotTotalLowFanListP
  */
 export const fetchHotTotalHighPlayListApiV1DouyinBillboardFetchHotTotalHighPlayListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalHighPlayListApiV1DouyinBillboardFetchHotTotalHighPlayListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalHighPlayListApiV1DouyinBillboardFetchHotTotalHighPlayListPostResponses, FetchHotTotalHighPlayListApiV1DouyinBillboardFetchHotTotalHighPlayListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_play_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_play_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26443,7 +26443,7 @@ export const fetchHotTotalHighPlayListApiV1DouyinBillboardFetchHotTotalHighPlayL
  */
 export const fetchHotTotalHighLikeListApiV1DouyinBillboardFetchHotTotalHighLikeListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalHighLikeListApiV1DouyinBillboardFetchHotTotalHighLikeListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalHighLikeListApiV1DouyinBillboardFetchHotTotalHighLikeListPostResponses, FetchHotTotalHighLikeListApiV1DouyinBillboardFetchHotTotalHighLikeListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_like_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_like_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26486,7 +26486,7 @@ export const fetchHotTotalHighLikeListApiV1DouyinBillboardFetchHotTotalHighLikeL
  */
 export const fetchHotTotalHighFanListApiV1DouyinBillboardFetchHotTotalHighFanListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalHighFanListApiV1DouyinBillboardFetchHotTotalHighFanListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalHighFanListApiV1DouyinBillboardFetchHotTotalHighFanListPostResponses, FetchHotTotalHighFanListApiV1DouyinBillboardFetchHotTotalHighFanListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_fan_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_fan_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26529,7 +26529,7 @@ export const fetchHotTotalHighFanListApiV1DouyinBillboardFetchHotTotalHighFanLis
  */
 export const fetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPostResponses, FetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_topic_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_topic_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26572,7 +26572,7 @@ export const fetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPos
  */
 export const fetchHotTotalHighTopicListApiV1DouyinBillboardFetchHotTotalHighTopicListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalHighTopicListApiV1DouyinBillboardFetchHotTotalHighTopicListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalHighTopicListApiV1DouyinBillboardFetchHotTotalHighTopicListPostResponses, FetchHotTotalHighTopicListApiV1DouyinBillboardFetchHotTotalHighTopicListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_topic_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_topic_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26607,7 +26607,7 @@ export const fetchHotTotalHighTopicListApiV1DouyinBillboardFetchHotTotalHighTopi
  */
 export const fetchHotTotalSearchListApiV1DouyinBillboardFetchHotTotalSearchListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalSearchListApiV1DouyinBillboardFetchHotTotalSearchListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalSearchListApiV1DouyinBillboardFetchHotTotalSearchListPostResponses, FetchHotTotalSearchListApiV1DouyinBillboardFetchHotTotalSearchListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_search_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_search_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26642,7 +26642,7 @@ export const fetchHotTotalSearchListApiV1DouyinBillboardFetchHotTotalSearchListP
  */
 export const fetchHotTotalHighSearchListApiV1DouyinBillboardFetchHotTotalHighSearchListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalHighSearchListApiV1DouyinBillboardFetchHotTotalHighSearchListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalHighSearchListApiV1DouyinBillboardFetchHotTotalHighSearchListPostResponses, FetchHotTotalHighSearchListApiV1DouyinBillboardFetchHotTotalHighSearchListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_high_search_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_high_search_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26677,7 +26677,7 @@ export const fetchHotTotalHighSearchListApiV1DouyinBillboardFetchHotTotalHighSea
  */
 export const fetchHotTotalHotWordListApiV1DouyinBillboardFetchHotTotalHotWordListPost = <ThrowOnError extends boolean = false>(options?: Options<FetchHotTotalHotWordListApiV1DouyinBillboardFetchHotTotalHotWordListPostData, ThrowOnError>) => (options?.client ?? client).post<FetchHotTotalHotWordListApiV1DouyinBillboardFetchHotTotalHotWordListPostResponses, FetchHotTotalHotWordListApiV1DouyinBillboardFetchHotTotalHotWordListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_hot_word_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_hot_word_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -26710,7 +26710,7 @@ export const fetchHotTotalHotWordListApiV1DouyinBillboardFetchHotTotalHotWordLis
  */
 export const fetchHotTotalHotWordDetailListApiV1DouyinBillboardFetchHotTotalHotWordDetailListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotTotalHotWordDetailListApiV1DouyinBillboardFetchHotTotalHotWordDetailListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotTotalHotWordDetailListApiV1DouyinBillboardFetchHotTotalHotWordDetailListGetResponses, FetchHotTotalHotWordDetailListApiV1DouyinBillboardFetchHotTotalHotWordDetailListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/billboard/fetch_hot_total_hot_word_detail_list',
+    url: '/video-hub/api/v1/douyin/billboard/fetch_hot_total_hot_word_detail_list',
     ...options
 });
 
@@ -26748,7 +26748,7 @@ export const fetchHotTotalHotWordDetailListApiV1DouyinBillboardFetchHotTotalHotW
  */
 export const getSignImageApiV1DouyinXingtuGetSignImageGet = <ThrowOnError extends boolean = false>(options: Options<GetSignImageApiV1DouyinXingtuGetSignImageGetData, ThrowOnError>) => (options.client ?? client).get<GetSignImageApiV1DouyinXingtuGetSignImageGetResponses, GetSignImageApiV1DouyinXingtuGetSignImageGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/get_sign_image',
+    url: '/video-hub/api/v1/douyin/xingtu/get_sign_image',
     ...options
 });
 
@@ -26790,7 +26790,7 @@ export const getSignImageApiV1DouyinXingtuGetSignImageGet = <ThrowOnError extend
  */
 export const getXingtuKolidByUidApiV1DouyinXingtuGetXingtuKolidByUidGet = <ThrowOnError extends boolean = false>(options: Options<GetXingtuKolidByUidApiV1DouyinXingtuGetXingtuKolidByUidGetData, ThrowOnError>) => (options.client ?? client).get<GetXingtuKolidByUidApiV1DouyinXingtuGetXingtuKolidByUidGetResponses, GetXingtuKolidByUidApiV1DouyinXingtuGetXingtuKolidByUidGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/get_xingtu_kolid_by_uid',
+    url: '/video-hub/api/v1/douyin/xingtu/get_xingtu_kolid_by_uid',
     ...options
 });
 
@@ -26828,7 +26828,7 @@ export const getXingtuKolidByUidApiV1DouyinXingtuGetXingtuKolidByUidGet = <Throw
  */
 export const getXingtuKolidBySecUserIdApiV1DouyinXingtuGetXingtuKolidBySecUserIdGet = <ThrowOnError extends boolean = false>(options: Options<GetXingtuKolidBySecUserIdApiV1DouyinXingtuGetXingtuKolidBySecUserIdGetData, ThrowOnError>) => (options.client ?? client).get<GetXingtuKolidBySecUserIdApiV1DouyinXingtuGetXingtuKolidBySecUserIdGetResponses, GetXingtuKolidBySecUserIdApiV1DouyinXingtuGetXingtuKolidBySecUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/get_xingtu_kolid_by_sec_user_id',
+    url: '/video-hub/api/v1/douyin/xingtu/get_xingtu_kolid_by_sec_user_id',
     ...options
 });
 
@@ -26866,7 +26866,7 @@ export const getXingtuKolidBySecUserIdApiV1DouyinXingtuGetXingtuKolidBySecUserId
  */
 export const getXingtuKolidByUniqueIdApiV1DouyinXingtuGetXingtuKolidByUniqueIdGet = <ThrowOnError extends boolean = false>(options: Options<GetXingtuKolidByUniqueIdApiV1DouyinXingtuGetXingtuKolidByUniqueIdGetData, ThrowOnError>) => (options.client ?? client).get<GetXingtuKolidByUniqueIdApiV1DouyinXingtuGetXingtuKolidByUniqueIdGetResponses, GetXingtuKolidByUniqueIdApiV1DouyinXingtuGetXingtuKolidByUniqueIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/get_xingtu_kolid_by_unique_id',
+    url: '/video-hub/api/v1/douyin/xingtu/get_xingtu_kolid_by_unique_id',
     ...options
 });
 
@@ -26913,7 +26913,7 @@ export const getXingtuKolidByUniqueIdApiV1DouyinXingtuGetXingtuKolidByUniqueIdGe
  */
 export const kolBaseInfoV1ApiV1DouyinXingtuKolBaseInfoV1Get = <ThrowOnError extends boolean = false>(options: Options<KolBaseInfoV1ApiV1DouyinXingtuKolBaseInfoV1GetData, ThrowOnError>) => (options.client ?? client).get<KolBaseInfoV1ApiV1DouyinXingtuKolBaseInfoV1GetResponses, KolBaseInfoV1ApiV1DouyinXingtuKolBaseInfoV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_base_info_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_base_info_v1',
     ...options
 });
 
@@ -26951,7 +26951,7 @@ export const kolBaseInfoV1ApiV1DouyinXingtuKolBaseInfoV1Get = <ThrowOnError exte
  */
 export const kolAudiencePortraitV1ApiV1DouyinXingtuKolAudiencePortraitV1Get = <ThrowOnError extends boolean = false>(options: Options<KolAudiencePortraitV1ApiV1DouyinXingtuKolAudiencePortraitV1GetData, ThrowOnError>) => (options.client ?? client).get<KolAudiencePortraitV1ApiV1DouyinXingtuKolAudiencePortraitV1GetResponses, KolAudiencePortraitV1ApiV1DouyinXingtuKolAudiencePortraitV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_audience_portrait_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_audience_portrait_v1',
     ...options
 });
 
@@ -26998,7 +26998,7 @@ export const kolAudiencePortraitV1ApiV1DouyinXingtuKolAudiencePortraitV1Get = <T
  */
 export const kolFansPortraitV1ApiV1DouyinXingtuKolFansPortraitV1Get = <ThrowOnError extends boolean = false>(options: Options<KolFansPortraitV1ApiV1DouyinXingtuKolFansPortraitV1GetData, ThrowOnError>) => (options.client ?? client).get<KolFansPortraitV1ApiV1DouyinXingtuKolFansPortraitV1GetResponses, KolFansPortraitV1ApiV1DouyinXingtuKolFansPortraitV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_fans_portrait_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_fans_portrait_v1',
     ...options
 });
 
@@ -27045,7 +27045,7 @@ export const kolFansPortraitV1ApiV1DouyinXingtuKolFansPortraitV1Get = <ThrowOnEr
  */
 export const kolServicePriceV1ApiV1DouyinXingtuKolServicePriceV1Get = <ThrowOnError extends boolean = false>(options: Options<KolServicePriceV1ApiV1DouyinXingtuKolServicePriceV1GetData, ThrowOnError>) => (options.client ?? client).get<KolServicePriceV1ApiV1DouyinXingtuKolServicePriceV1GetResponses, KolServicePriceV1ApiV1DouyinXingtuKolServicePriceV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_service_price_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_service_price_v1',
     ...options
 });
 
@@ -27111,7 +27111,7 @@ export const kolServicePriceV1ApiV1DouyinXingtuKolServicePriceV1Get = <ThrowOnEr
  */
 export const kolDataOverviewV1ApiV1DouyinXingtuKolDataOverviewV1Get = <ThrowOnError extends boolean = false>(options: Options<KolDataOverviewV1ApiV1DouyinXingtuKolDataOverviewV1GetData, ThrowOnError>) => (options.client ?? client).get<KolDataOverviewV1ApiV1DouyinXingtuKolDataOverviewV1GetResponses, KolDataOverviewV1ApiV1DouyinXingtuKolDataOverviewV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_data_overview_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_data_overview_v1',
     ...options
 });
 
@@ -27157,7 +27157,7 @@ export const kolDataOverviewV1ApiV1DouyinXingtuKolDataOverviewV1Get = <ThrowOnEr
  */
 export const searchKolV1ApiV1DouyinXingtuSearchKolV1Get = <ThrowOnError extends boolean = false>(options: Options<SearchKolV1ApiV1DouyinXingtuSearchKolV1GetData, ThrowOnError>) => (options.client ?? client).get<SearchKolV1ApiV1DouyinXingtuSearchKolV1GetResponses, SearchKolV1ApiV1DouyinXingtuSearchKolV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/search_kol_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/search_kol_v1',
     ...options
 });
 
@@ -27375,7 +27375,7 @@ export const searchKolV1ApiV1DouyinXingtuSearchKolV1Get = <ThrowOnError extends 
  */
 export const searchKolV2ApiV1DouyinXingtuSearchKolV2Get = <ThrowOnError extends boolean = false>(options: Options<SearchKolV2ApiV1DouyinXingtuSearchKolV2GetData, ThrowOnError>) => (options.client ?? client).get<SearchKolV2ApiV1DouyinXingtuSearchKolV2GetResponses, SearchKolV2ApiV1DouyinXingtuSearchKolV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/search_kol_v2',
+    url: '/video-hub/api/v1/douyin/xingtu/search_kol_v2',
     ...options
 });
 
@@ -27422,7 +27422,7 @@ export const searchKolV2ApiV1DouyinXingtuSearchKolV2Get = <ThrowOnError extends 
  */
 export const kolConversionAbilityAnalysisV1ApiV1DouyinXingtuKolConversionAbilityAnalysisV1Get = <ThrowOnError extends boolean = false>(options: Options<KolConversionAbilityAnalysisV1ApiV1DouyinXingtuKolConversionAbilityAnalysisV1GetData, ThrowOnError>) => (options.client ?? client).get<KolConversionAbilityAnalysisV1ApiV1DouyinXingtuKolConversionAbilityAnalysisV1GetResponses, KolConversionAbilityAnalysisV1ApiV1DouyinXingtuKolConversionAbilityAnalysisV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_conversion_ability_analysis_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_conversion_ability_analysis_v1',
     ...options
 });
 
@@ -27467,7 +27467,7 @@ export const kolConversionAbilityAnalysisV1ApiV1DouyinXingtuKolConversionAbility
  */
 export const kolVideoPerformanceV1ApiV1DouyinXingtuKolVideoPerformanceV1Get = <ThrowOnError extends boolean = false>(options: Options<KolVideoPerformanceV1ApiV1DouyinXingtuKolVideoPerformanceV1GetData, ThrowOnError>) => (options.client ?? client).get<KolVideoPerformanceV1ApiV1DouyinXingtuKolVideoPerformanceV1GetResponses, KolVideoPerformanceV1ApiV1DouyinXingtuKolVideoPerformanceV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_video_performance_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_video_performance_v1',
     ...options
 });
 
@@ -27505,7 +27505,7 @@ export const kolVideoPerformanceV1ApiV1DouyinXingtuKolVideoPerformanceV1Get = <T
  */
 export const kolXingtuIndexV1ApiV1DouyinXingtuKolXingtuIndexV1Get = <ThrowOnError extends boolean = false>(options: Options<KolXingtuIndexV1ApiV1DouyinXingtuKolXingtuIndexV1GetData, ThrowOnError>) => (options.client ?? client).get<KolXingtuIndexV1ApiV1DouyinXingtuKolXingtuIndexV1GetResponses, KolXingtuIndexV1ApiV1DouyinXingtuKolXingtuIndexV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_xingtu_index_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_xingtu_index_v1',
     ...options
 });
 
@@ -27552,7 +27552,7 @@ export const kolXingtuIndexV1ApiV1DouyinXingtuKolXingtuIndexV1Get = <ThrowOnErro
  */
 export const kolConvertVideoDisplayV1ApiV1DouyinXingtuKolConvertVideoDisplayV1Get = <ThrowOnError extends boolean = false>(options: Options<KolConvertVideoDisplayV1ApiV1DouyinXingtuKolConvertVideoDisplayV1GetData, ThrowOnError>) => (options.client ?? client).get<KolConvertVideoDisplayV1ApiV1DouyinXingtuKolConvertVideoDisplayV1GetResponses, KolConvertVideoDisplayV1ApiV1DouyinXingtuKolConvertVideoDisplayV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_convert_video_display_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_convert_video_display_v1',
     ...options
 });
 
@@ -27590,7 +27590,7 @@ export const kolConvertVideoDisplayV1ApiV1DouyinXingtuKolConvertVideoDisplayV1Ge
  */
 export const kolLinkStructV1ApiV1DouyinXingtuKolLinkStructV1Get = <ThrowOnError extends boolean = false>(options: Options<KolLinkStructV1ApiV1DouyinXingtuKolLinkStructV1GetData, ThrowOnError>) => (options.client ?? client).get<KolLinkStructV1ApiV1DouyinXingtuKolLinkStructV1GetResponses, KolLinkStructV1ApiV1DouyinXingtuKolLinkStructV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_link_struct_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_link_struct_v1',
     ...options
 });
 
@@ -27628,7 +27628,7 @@ export const kolLinkStructV1ApiV1DouyinXingtuKolLinkStructV1Get = <ThrowOnError 
  */
 export const kolTouchDistributionV1ApiV1DouyinXingtuKolTouchDistributionV1Get = <ThrowOnError extends boolean = false>(options: Options<KolTouchDistributionV1ApiV1DouyinXingtuKolTouchDistributionV1GetData, ThrowOnError>) => (options.client ?? client).get<KolTouchDistributionV1ApiV1DouyinXingtuKolTouchDistributionV1GetResponses, KolTouchDistributionV1ApiV1DouyinXingtuKolTouchDistributionV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_touch_distribution_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_touch_distribution_v1',
     ...options
 });
 
@@ -27666,7 +27666,7 @@ export const kolTouchDistributionV1ApiV1DouyinXingtuKolTouchDistributionV1Get = 
  */
 export const kolCpInfoV1ApiV1DouyinXingtuKolCpInfoV1Get = <ThrowOnError extends boolean = false>(options: Options<KolCpInfoV1ApiV1DouyinXingtuKolCpInfoV1GetData, ThrowOnError>) => (options.client ?? client).get<KolCpInfoV1ApiV1DouyinXingtuKolCpInfoV1GetResponses, KolCpInfoV1ApiV1DouyinXingtuKolCpInfoV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_cp_info_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_cp_info_v1',
     ...options
 });
 
@@ -27704,7 +27704,7 @@ export const kolCpInfoV1ApiV1DouyinXingtuKolCpInfoV1Get = <ThrowOnError extends 
  */
 export const kolRecVideosV1ApiV1DouyinXingtuKolRecVideosV1Get = <ThrowOnError extends boolean = false>(options: Options<KolRecVideosV1ApiV1DouyinXingtuKolRecVideosV1GetData, ThrowOnError>) => (options.client ?? client).get<KolRecVideosV1ApiV1DouyinXingtuKolRecVideosV1GetResponses, KolRecVideosV1ApiV1DouyinXingtuKolRecVideosV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_rec_videos_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_rec_videos_v1',
     ...options
 });
 
@@ -27748,7 +27748,7 @@ export const kolRecVideosV1ApiV1DouyinXingtuKolRecVideosV1Get = <ThrowOnError ex
  */
 export const kolDailyFansV1ApiV1DouyinXingtuKolDailyFansV1Get = <ThrowOnError extends boolean = false>(options: Options<KolDailyFansV1ApiV1DouyinXingtuKolDailyFansV1GetData, ThrowOnError>) => (options.client ?? client).get<KolDailyFansV1ApiV1DouyinXingtuKolDailyFansV1GetResponses, KolDailyFansV1ApiV1DouyinXingtuKolDailyFansV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/kol_daily_fans_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/kol_daily_fans_v1',
     ...options
 });
 
@@ -27786,7 +27786,7 @@ export const kolDailyFansV1ApiV1DouyinXingtuKolDailyFansV1Get = <ThrowOnError ex
  */
 export const authorHotCommentTokensV1ApiV1DouyinXingtuAuthorHotCommentTokensV1Get = <ThrowOnError extends boolean = false>(options: Options<AuthorHotCommentTokensV1ApiV1DouyinXingtuAuthorHotCommentTokensV1GetData, ThrowOnError>) => (options.client ?? client).get<AuthorHotCommentTokensV1ApiV1DouyinXingtuAuthorHotCommentTokensV1GetResponses, AuthorHotCommentTokensV1ApiV1DouyinXingtuAuthorHotCommentTokensV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/author_hot_comment_tokens_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/author_hot_comment_tokens_v1',
     ...options
 });
 
@@ -27824,7 +27824,7 @@ export const authorHotCommentTokensV1ApiV1DouyinXingtuAuthorHotCommentTokensV1Ge
  */
 export const authorContentHotCommentKeywordsV1ApiV1DouyinXingtuAuthorContentHotCommentKeywordsV1Get = <ThrowOnError extends boolean = false>(options: Options<AuthorContentHotCommentKeywordsV1ApiV1DouyinXingtuAuthorContentHotCommentKeywordsV1GetData, ThrowOnError>) => (options.client ?? client).get<AuthorContentHotCommentKeywordsV1ApiV1DouyinXingtuAuthorContentHotCommentKeywordsV1GetResponses, AuthorContentHotCommentKeywordsV1ApiV1DouyinXingtuAuthorContentHotCommentKeywordsV1GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu/author_content_hot_comment_keywords_v1',
+    url: '/video-hub/api/v1/douyin/xingtu/author_content_hot_comment_keywords_v1',
     ...options
 });
 
@@ -27861,7 +27861,7 @@ export const authorContentHotCommentKeywordsV1ApiV1DouyinXingtuAuthorContentHotC
  */
 export const getRankingListCatalogApiV1DouyinXingtuV2GetRankingListCatalogGet = <ThrowOnError extends boolean = false>(options?: Options<GetRankingListCatalogApiV1DouyinXingtuV2GetRankingListCatalogGetData, ThrowOnError>) => (options?.client ?? client).get<GetRankingListCatalogApiV1DouyinXingtuV2GetRankingListCatalogGetResponses, GetRankingListCatalogApiV1DouyinXingtuV2GetRankingListCatalogGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_ranking_list_catalog',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ranking_list_catalog',
     ...options
 });
 
@@ -27916,7 +27916,7 @@ export const getRankingListCatalogApiV1DouyinXingtuV2GetRankingListCatalogGet = 
  */
 export const getRankingListDataApiV1DouyinXingtuV2GetRankingListDataGet = <ThrowOnError extends boolean = false>(options?: Options<GetRankingListDataApiV1DouyinXingtuV2GetRankingListDataGetData, ThrowOnError>) => (options?.client ?? client).get<GetRankingListDataApiV1DouyinXingtuV2GetRankingListDataGetResponses, GetRankingListDataApiV1DouyinXingtuV2GetRankingListDataGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_ranking_list_data',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ranking_list_data',
     ...options
 });
 
@@ -27939,7 +27939,7 @@ export const getRankingListDataApiV1DouyinXingtuV2GetRankingListDataGet = <Throw
  */
 export const getPlayletActorRankCatalogApiV1DouyinXingtuV2GetPlayletActorRankCatalogPost = <ThrowOnError extends boolean = false>(options?: Options<GetPlayletActorRankCatalogApiV1DouyinXingtuV2GetPlayletActorRankCatalogPostData, ThrowOnError>) => (options?.client ?? client).post<GetPlayletActorRankCatalogApiV1DouyinXingtuV2GetPlayletActorRankCatalogPostResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_playlet_actor_rank_catalog',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_playlet_actor_rank_catalog',
     ...options
 });
 
@@ -27983,7 +27983,7 @@ export const getPlayletActorRankCatalogApiV1DouyinXingtuV2GetPlayletActorRankCat
  */
 export const getPlayletActorRankListApiV1DouyinXingtuV2GetPlayletActorRankListGet = <ThrowOnError extends boolean = false>(options?: Options<GetPlayletActorRankListApiV1DouyinXingtuV2GetPlayletActorRankListGetData, ThrowOnError>) => (options?.client ?? client).get<GetPlayletActorRankListApiV1DouyinXingtuV2GetPlayletActorRankListGetResponses, GetPlayletActorRankListApiV1DouyinXingtuV2GetPlayletActorRankListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_playlet_actor_rank_list',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_playlet_actor_rank_list',
     ...options
 });
 
@@ -28013,7 +28013,7 @@ export const getPlayletActorRankListApiV1DouyinXingtuV2GetPlayletActorRankListGe
  */
 export const getAuthorMarketFieldsApiV1DouyinXingtuV2GetAuthorMarketFieldsGet = <ThrowOnError extends boolean = false>(options?: Options<GetAuthorMarketFieldsApiV1DouyinXingtuV2GetAuthorMarketFieldsGetData, ThrowOnError>) => (options?.client ?? client).get<GetAuthorMarketFieldsApiV1DouyinXingtuV2GetAuthorMarketFieldsGetResponses, GetAuthorMarketFieldsApiV1DouyinXingtuV2GetAuthorMarketFieldsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_author_market_fields',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_market_fields',
     ...options
 });
 
@@ -28053,7 +28053,7 @@ export const getAuthorMarketFieldsApiV1DouyinXingtuV2GetAuthorMarketFieldsGet = 
  */
 export const getAuthorBaseInfoApiV1DouyinXingtuV2GetAuthorBaseInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetAuthorBaseInfoApiV1DouyinXingtuV2GetAuthorBaseInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetAuthorBaseInfoApiV1DouyinXingtuV2GetAuthorBaseInfoGetResponses, GetAuthorBaseInfoApiV1DouyinXingtuV2GetAuthorBaseInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_author_base_info',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_base_info',
     ...options
 });
 
@@ -28083,7 +28083,7 @@ export const getAuthorBaseInfoApiV1DouyinXingtuV2GetAuthorBaseInfoGet = <ThrowOn
  */
 export const getAuthorBusinessCardInfoApiV1DouyinXingtuV2GetAuthorBusinessCardInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetAuthorBusinessCardInfoApiV1DouyinXingtuV2GetAuthorBusinessCardInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetAuthorBusinessCardInfoApiV1DouyinXingtuV2GetAuthorBusinessCardInfoGetResponses, GetAuthorBusinessCardInfoApiV1DouyinXingtuV2GetAuthorBusinessCardInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_author_business_card_info',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_business_card_info',
     ...options
 });
 
@@ -28119,7 +28119,7 @@ export const getAuthorBusinessCardInfoApiV1DouyinXingtuV2GetAuthorBusinessCardIn
  */
 export const getAuthorLocalInfoApiV1DouyinXingtuV2GetAuthorLocalInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetAuthorLocalInfoApiV1DouyinXingtuV2GetAuthorLocalInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetAuthorLocalInfoApiV1DouyinXingtuV2GetAuthorLocalInfoGetResponses, GetAuthorLocalInfoApiV1DouyinXingtuV2GetAuthorLocalInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_author_local_info',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_local_info',
     ...options
 });
 
@@ -28159,7 +28159,7 @@ export const getAuthorLocalInfoApiV1DouyinXingtuV2GetAuthorLocalInfoGet = <Throw
  */
 export const getAuthorShowItemsApiV1DouyinXingtuV2GetAuthorShowItemsGet = <ThrowOnError extends boolean = false>(options: Options<GetAuthorShowItemsApiV1DouyinXingtuV2GetAuthorShowItemsGetData, ThrowOnError>) => (options.client ?? client).get<GetAuthorShowItemsApiV1DouyinXingtuV2GetAuthorShowItemsGetResponses, GetAuthorShowItemsApiV1DouyinXingtuV2GetAuthorShowItemsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_author_show_items',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_show_items',
     ...options
 });
 
@@ -28193,7 +28193,7 @@ export const getAuthorShowItemsApiV1DouyinXingtuV2GetAuthorShowItemsGet = <Throw
  */
 export const getAuthorHotCommentTokensApiV1DouyinXingtuV2GetAuthorHotCommentTokensGet = <ThrowOnError extends boolean = false>(options: Options<GetAuthorHotCommentTokensApiV1DouyinXingtuV2GetAuthorHotCommentTokensGetData, ThrowOnError>) => (options.client ?? client).get<GetAuthorHotCommentTokensApiV1DouyinXingtuV2GetAuthorHotCommentTokensGetResponses, GetAuthorHotCommentTokensApiV1DouyinXingtuV2GetAuthorHotCommentTokensGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_author_hot_comment_tokens',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_hot_comment_tokens',
     ...options
 });
 
@@ -28225,7 +28225,7 @@ export const getAuthorHotCommentTokensApiV1DouyinXingtuV2GetAuthorHotCommentToke
  */
 export const getAuthorContentHotKeywordsApiV1DouyinXingtuV2GetAuthorContentHotKeywordsGet = <ThrowOnError extends boolean = false>(options: Options<GetAuthorContentHotKeywordsApiV1DouyinXingtuV2GetAuthorContentHotKeywordsGetData, ThrowOnError>) => (options.client ?? client).get<GetAuthorContentHotKeywordsApiV1DouyinXingtuV2GetAuthorContentHotKeywordsGetResponses, GetAuthorContentHotKeywordsApiV1DouyinXingtuV2GetAuthorContentHotKeywordsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_author_content_hot_keywords',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_content_hot_keywords',
     ...options
 });
 
@@ -28270,7 +28270,7 @@ export const getAuthorContentHotKeywordsApiV1DouyinXingtuV2GetAuthorContentHotKe
  */
 export const getRecommendForStarAuthorsApiV1DouyinXingtuV2GetRecommendForStarAuthorsPost = <ThrowOnError extends boolean = false>(options: Options<GetRecommendForStarAuthorsApiV1DouyinXingtuV2GetRecommendForStarAuthorsPostData, ThrowOnError>) => (options.client ?? client).post<GetRecommendForStarAuthorsApiV1DouyinXingtuV2GetRecommendForStarAuthorsPostResponses, GetRecommendForStarAuthorsApiV1DouyinXingtuV2GetRecommendForStarAuthorsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_recommend_for_star_authors',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_recommend_for_star_authors',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -28304,7 +28304,7 @@ export const getRecommendForStarAuthorsApiV1DouyinXingtuV2GetRecommendForStarAut
  */
 export const getExcellentCaseCategoryListApiV1DouyinXingtuV2GetExcellentCaseCategoryListGet = <ThrowOnError extends boolean = false>(options?: Options<GetExcellentCaseCategoryListApiV1DouyinXingtuV2GetExcellentCaseCategoryListGetData, ThrowOnError>) => (options?.client ?? client).get<GetExcellentCaseCategoryListApiV1DouyinXingtuV2GetExcellentCaseCategoryListGetResponses, GetExcellentCaseCategoryListApiV1DouyinXingtuV2GetExcellentCaseCategoryListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_excellent_case_category_list',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_excellent_case_category_list',
     ...options
 });
 
@@ -28347,7 +28347,7 @@ export const getExcellentCaseCategoryListApiV1DouyinXingtuV2GetExcellentCaseCate
  */
 export const getAuthorSpreadInfoApiV1DouyinXingtuV2GetAuthorSpreadInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetAuthorSpreadInfoApiV1DouyinXingtuV2GetAuthorSpreadInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetAuthorSpreadInfoApiV1DouyinXingtuV2GetAuthorSpreadInfoGetResponses, GetAuthorSpreadInfoApiV1DouyinXingtuV2GetAuthorSpreadInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_author_spread_info',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_author_spread_info',
     ...options
 });
 
@@ -28381,7 +28381,7 @@ export const getAuthorSpreadInfoApiV1DouyinXingtuV2GetAuthorSpreadInfoGet = <Thr
  */
 export const getUserProfileQrcodeApiV1DouyinXingtuV2GetUserProfileQrcodeGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserProfileQrcodeApiV1DouyinXingtuV2GetUserProfileQrcodeGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserProfileQrcodeApiV1DouyinXingtuV2GetUserProfileQrcodeGetResponses, GetUserProfileQrcodeApiV1DouyinXingtuV2GetUserProfileQrcodeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_user_profile_qrcode',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_user_profile_qrcode',
     ...options
 });
 
@@ -28404,7 +28404,7 @@ export const getUserProfileQrcodeApiV1DouyinXingtuV2GetUserProfileQrcodeGet = <T
  */
 export const getContentTrendGuideApiV1DouyinXingtuV2GetContentTrendGuideGet = <ThrowOnError extends boolean = false>(options?: Options<GetContentTrendGuideApiV1DouyinXingtuV2GetContentTrendGuideGetData, ThrowOnError>) => (options?.client ?? client).get<GetContentTrendGuideApiV1DouyinXingtuV2GetContentTrendGuideGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_content_trend_guide',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_content_trend_guide',
     ...options
 });
 
@@ -28427,7 +28427,7 @@ export const getContentTrendGuideApiV1DouyinXingtuV2GetContentTrendGuideGet = <T
  */
 export const getIpActivityIndustryListApiV1DouyinXingtuV2GetIpActivityIndustryListGet = <ThrowOnError extends boolean = false>(options?: Options<GetIpActivityIndustryListApiV1DouyinXingtuV2GetIpActivityIndustryListGetData, ThrowOnError>) => (options?.client ?? client).get<GetIpActivityIndustryListApiV1DouyinXingtuV2GetIpActivityIndustryListGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_ip_activity_industry_list',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ip_activity_industry_list',
     ...options
 });
 
@@ -28472,7 +28472,7 @@ export const getIpActivityIndustryListApiV1DouyinXingtuV2GetIpActivityIndustryLi
  */
 export const getIpActivityListApiV1DouyinXingtuV2GetIpActivityListPost = <ThrowOnError extends boolean = false>(options: Options<GetIpActivityListApiV1DouyinXingtuV2GetIpActivityListPostData, ThrowOnError>) => (options.client ?? client).post<GetIpActivityListApiV1DouyinXingtuV2GetIpActivityListPostResponses, GetIpActivityListApiV1DouyinXingtuV2GetIpActivityListPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_ip_activity_list',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ip_activity_list',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -28506,7 +28506,7 @@ export const getIpActivityListApiV1DouyinXingtuV2GetIpActivityListPost = <ThrowO
  */
 export const getIpActivityDetailApiV1DouyinXingtuV2GetIpActivityDetailGet = <ThrowOnError extends boolean = false>(options: Options<GetIpActivityDetailApiV1DouyinXingtuV2GetIpActivityDetailGetData, ThrowOnError>) => (options.client ?? client).get<GetIpActivityDetailApiV1DouyinXingtuV2GetIpActivityDetailGetResponses, GetIpActivityDetailApiV1DouyinXingtuV2GetIpActivityDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_ip_activity_detail',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_ip_activity_detail',
     ...options
 });
 
@@ -28536,7 +28536,7 @@ export const getIpActivityDetailApiV1DouyinXingtuV2GetIpActivityDetailGet = <Thr
  */
 export const getResourceListApiV1DouyinXingtuV2GetResourceListGet = <ThrowOnError extends boolean = false>(options: Options<GetResourceListApiV1DouyinXingtuV2GetResourceListGetData, ThrowOnError>) => (options.client ?? client).get<GetResourceListApiV1DouyinXingtuV2GetResourceListGetResponses, GetResourceListApiV1DouyinXingtuV2GetResourceListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_resource_list',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_resource_list',
     ...options
 });
 
@@ -28574,7 +28574,7 @@ export const getResourceListApiV1DouyinXingtuV2GetResourceListGet = <ThrowOnErro
  */
 export const getDemanderMcnListApiV1DouyinXingtuV2GetDemanderMcnListGet = <ThrowOnError extends boolean = false>(options?: Options<GetDemanderMcnListApiV1DouyinXingtuV2GetDemanderMcnListGetData, ThrowOnError>) => (options?.client ?? client).get<GetDemanderMcnListApiV1DouyinXingtuV2GetDemanderMcnListGetResponses, GetDemanderMcnListApiV1DouyinXingtuV2GetDemanderMcnListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/douyin/xingtu_v2/get_demander_mcn_list',
+    url: '/video-hub/api/v1/douyin/xingtu_v2/get_demander_mcn_list',
     ...options
 });
 
@@ -28602,7 +28602,7 @@ export const getDemanderMcnListApiV1DouyinXingtuV2GetDemanderMcnListGet = <Throw
  */
 export const fetchOneVideoApiV1XiguaAppV2FetchOneVideoGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1XiguaAppV2FetchOneVideoGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1XiguaAppV2FetchOneVideoGetResponses, FetchOneVideoApiV1XiguaAppV2FetchOneVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xigua/app/v2/fetch_one_video',
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_one_video',
     ...options
 });
 
@@ -28630,7 +28630,7 @@ export const fetchOneVideoApiV1XiguaAppV2FetchOneVideoGet = <ThrowOnError extend
  */
 export const fetchOneVideoV2ApiV1XiguaAppV2FetchOneVideoV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV2ApiV1XiguaAppV2FetchOneVideoV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV2ApiV1XiguaAppV2FetchOneVideoV2GetResponses, FetchOneVideoV2ApiV1XiguaAppV2FetchOneVideoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xigua/app/v2/fetch_one_video_v2',
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_one_video_v2',
     ...options
 });
 
@@ -28658,7 +28658,7 @@ export const fetchOneVideoV2ApiV1XiguaAppV2FetchOneVideoV2Get = <ThrowOnError ex
  */
 export const fetchOneVideoPlayUrlApiV1XiguaAppV2FetchOneVideoPlayUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoPlayUrlApiV1XiguaAppV2FetchOneVideoPlayUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoPlayUrlApiV1XiguaAppV2FetchOneVideoPlayUrlGetResponses, FetchOneVideoPlayUrlApiV1XiguaAppV2FetchOneVideoPlayUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xigua/app/v2/fetch_one_video_play_url',
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_one_video_play_url',
     ...options
 });
 
@@ -28690,7 +28690,7 @@ export const fetchOneVideoPlayUrlApiV1XiguaAppV2FetchOneVideoPlayUrlGet = <Throw
  */
 export const fetchVideoCommentListApiV1XiguaAppV2FetchVideoCommentListGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoCommentListApiV1XiguaAppV2FetchVideoCommentListGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoCommentListApiV1XiguaAppV2FetchVideoCommentListGetResponses, FetchVideoCommentListApiV1XiguaAppV2FetchVideoCommentListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xigua/app/v2/fetch_video_comment_list',
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_video_comment_list',
     ...options
 });
 
@@ -28735,7 +28735,7 @@ export const fetchVideoCommentListApiV1XiguaAppV2FetchVideoCommentListGet = <Thr
  */
 export const searchVideoApiV1XiguaAppV2SearchVideoGet = <ThrowOnError extends boolean = false>(options: Options<SearchVideoApiV1XiguaAppV2SearchVideoGetData, ThrowOnError>) => (options.client ?? client).get<SearchVideoApiV1XiguaAppV2SearchVideoGetResponses, SearchVideoApiV1XiguaAppV2SearchVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xigua/app/v2/search_video',
+    url: '/video-hub/api/v1/xigua/app/v2/search_video',
     ...options
 });
 
@@ -28763,7 +28763,7 @@ export const searchVideoApiV1XiguaAppV2SearchVideoGet = <ThrowOnError extends bo
  */
 export const fetchUserInfoApiV1XiguaAppV2FetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1XiguaAppV2FetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1XiguaAppV2FetchUserInfoGetResponses, FetchUserInfoApiV1XiguaAppV2FetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xigua/app/v2/fetch_user_info',
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_user_info',
     ...options
 });
 
@@ -28798,7 +28798,7 @@ export const fetchUserInfoApiV1XiguaAppV2FetchUserInfoGet = <ThrowOnError extend
  */
 export const fetchUserPostListApiV1XiguaAppV2FetchUserPostListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostListApiV1XiguaAppV2FetchUserPostListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostListApiV1XiguaAppV2FetchUserPostListGetResponses, FetchUserPostListApiV1XiguaAppV2FetchUserPostListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xigua/app/v2/fetch_user_post_list',
+    url: '/video-hub/api/v1/xigua/app/v2/fetch_user_post_list',
     ...options
 });
 
@@ -28828,7 +28828,7 @@ export const fetchUserPostListApiV1XiguaAppV2FetchUserPostListGet = <ThrowOnErro
  */
 export const getArticleInfoApiV1ToutiaoWebGetArticleInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetArticleInfoApiV1ToutiaoWebGetArticleInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetArticleInfoApiV1ToutiaoWebGetArticleInfoGetResponses, GetArticleInfoApiV1ToutiaoWebGetArticleInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/toutiao/web/get_article_info',
+    url: '/video-hub/api/v1/toutiao/web/get_article_info',
     ...options
 });
 
@@ -28858,7 +28858,7 @@ export const getArticleInfoApiV1ToutiaoWebGetArticleInfoGet = <ThrowOnError exte
  */
 export const getVideoInfoApiV1ToutiaoWebGetVideoInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetVideoInfoApiV1ToutiaoWebGetVideoInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetVideoInfoApiV1ToutiaoWebGetVideoInfoGetResponses, GetVideoInfoApiV1ToutiaoWebGetVideoInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/toutiao/web/get_video_info',
+    url: '/video-hub/api/v1/toutiao/web/get_video_info',
     ...options
 });
 
@@ -28888,7 +28888,7 @@ export const getVideoInfoApiV1ToutiaoWebGetVideoInfoGet = <ThrowOnError extends 
  */
 export const getArticleInfoApiV1ToutiaoAppGetArticleInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetArticleInfoApiV1ToutiaoAppGetArticleInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetArticleInfoApiV1ToutiaoAppGetArticleInfoGetResponses, GetArticleInfoApiV1ToutiaoAppGetArticleInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/toutiao/app/get_article_info',
+    url: '/video-hub/api/v1/toutiao/app/get_article_info',
     ...options
 });
 
@@ -28918,7 +28918,7 @@ export const getArticleInfoApiV1ToutiaoAppGetArticleInfoGet = <ThrowOnError exte
  */
 export const getVideoInfoApiV1ToutiaoAppGetVideoInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetVideoInfoApiV1ToutiaoAppGetVideoInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetVideoInfoApiV1ToutiaoAppGetVideoInfoGetResponses, GetVideoInfoApiV1ToutiaoAppGetVideoInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/toutiao/app/get_video_info',
+    url: '/video-hub/api/v1/toutiao/app/get_video_info',
     ...options
 });
 
@@ -28951,7 +28951,7 @@ export const getVideoInfoApiV1ToutiaoAppGetVideoInfoGet = <ThrowOnError extends 
  */
 export const getCommentsApiV1ToutiaoAppGetCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetCommentsApiV1ToutiaoAppGetCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetCommentsApiV1ToutiaoAppGetCommentsGetResponses, GetCommentsApiV1ToutiaoAppGetCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/toutiao/app/get_comments',
+    url: '/video-hub/api/v1/toutiao/app/get_comments',
     ...options
 });
 
@@ -28981,7 +28981,7 @@ export const getCommentsApiV1ToutiaoAppGetCommentsGet = <ThrowOnError extends bo
  */
 export const getUserInfoApiV1ToutiaoAppGetUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetUserInfoApiV1ToutiaoAppGetUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetUserInfoApiV1ToutiaoAppGetUserInfoGetResponses, GetUserInfoApiV1ToutiaoAppGetUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/toutiao/app/get_user_info',
+    url: '/video-hub/api/v1/toutiao/app/get_user_info',
     ...options
 });
 
@@ -29011,7 +29011,7 @@ export const getUserInfoApiV1ToutiaoAppGetUserInfoGet = <ThrowOnError extends bo
  */
 export const getUserIdApiV1ToutiaoAppGetUserIdGet = <ThrowOnError extends boolean = false>(options: Options<GetUserIdApiV1ToutiaoAppGetUserIdGetData, ThrowOnError>) => (options.client ?? client).get<GetUserIdApiV1ToutiaoAppGetUserIdGetResponses, GetUserIdApiV1ToutiaoAppGetUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/toutiao/app/get_user_id',
+    url: '/video-hub/api/v1/toutiao/app/get_user_id',
     ...options
 });
 
@@ -29047,7 +29047,7 @@ export const getUserIdApiV1ToutiaoAppGetUserIdGet = <ThrowOnError extends boolea
  */
 export const getImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGet = <ThrowOnError extends boolean = false>(options?: Options<GetImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGetData, ThrowOnError>) => (options?.client ?? client).get<GetImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGetResponses, GetImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_image_note_detail',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_image_note_detail',
     ...options
 });
 
@@ -29079,7 +29079,7 @@ export const getImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGet = <Thr
  */
 export const getVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGet = <ThrowOnError extends boolean = false>(options?: Options<GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetData, ThrowOnError>) => (options?.client ?? client).get<GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetResponses, GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_video_note_detail',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_video_note_detail',
     ...options
 });
 
@@ -29113,7 +29113,7 @@ export const getVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGet = <Thr
  */
 export const getMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGet = <ThrowOnError extends boolean = false>(options?: Options<GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetData, ThrowOnError>) => (options?.client ?? client).get<GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetResponses, GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_mixed_note_detail',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_mixed_note_detail',
     ...options
 });
 
@@ -29164,7 +29164,7 @@ export const getMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGet = <Thr
  */
 export const getNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGet = <ThrowOnError extends boolean = false>(options?: Options<GetNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGetData, ThrowOnError>) => (options?.client ?? client).get<GetNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGetResponses, GetNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_note_comments',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_note_comments',
     ...options
 });
 
@@ -29211,7 +29211,7 @@ export const getNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGet = <ThrowOnEr
  */
 export const getNoteSubCommentsApiV1XiaohongshuAppV2GetNoteSubCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetNoteSubCommentsApiV1XiaohongshuAppV2GetNoteSubCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetNoteSubCommentsApiV1XiaohongshuAppV2GetNoteSubCommentsGetResponses, GetNoteSubCommentsApiV1XiaohongshuAppV2GetNoteSubCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_note_sub_comments',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_note_sub_comments',
     ...options
 });
 
@@ -29243,7 +29243,7 @@ export const getNoteSubCommentsApiV1XiaohongshuAppV2GetNoteSubCommentsGet = <Thr
  */
 export const getUserInfoApiV1XiaohongshuAppV2GetUserInfoGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserInfoApiV1XiaohongshuAppV2GetUserInfoGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserInfoApiV1XiaohongshuAppV2GetUserInfoGetResponses, GetUserInfoApiV1XiaohongshuAppV2GetUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_user_info',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_user_info',
     ...options
 });
 
@@ -29287,7 +29287,7 @@ export const getUserInfoApiV1XiaohongshuAppV2GetUserInfoGet = <ThrowOnError exte
  */
 export const getUserPostedNotesApiV1XiaohongshuAppV2GetUserPostedNotesGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserPostedNotesApiV1XiaohongshuAppV2GetUserPostedNotesGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserPostedNotesApiV1XiaohongshuAppV2GetUserPostedNotesGetResponses, GetUserPostedNotesApiV1XiaohongshuAppV2GetUserPostedNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_user_posted_notes',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_user_posted_notes',
     ...options
 });
 
@@ -29327,7 +29327,7 @@ export const getUserPostedNotesApiV1XiaohongshuAppV2GetUserPostedNotesGet = <Thr
  */
 export const getUserFavedNotesApiV1XiaohongshuAppV2GetUserFavedNotesGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserFavedNotesApiV1XiaohongshuAppV2GetUserFavedNotesGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserFavedNotesApiV1XiaohongshuAppV2GetUserFavedNotesGetResponses, GetUserFavedNotesApiV1XiaohongshuAppV2GetUserFavedNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_user_faved_notes',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_user_faved_notes',
     ...options
 });
 
@@ -29407,7 +29407,7 @@ export const getUserFavedNotesApiV1XiaohongshuAppV2GetUserFavedNotesGet = <Throw
  */
 export const searchNotesApiV1XiaohongshuAppV2SearchNotesGet = <ThrowOnError extends boolean = false>(options: Options<SearchNotesApiV1XiaohongshuAppV2SearchNotesGetData, ThrowOnError>) => (options.client ?? client).get<SearchNotesApiV1XiaohongshuAppV2SearchNotesGetResponses, SearchNotesApiV1XiaohongshuAppV2SearchNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/search_notes',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_notes',
     ...options
 });
 
@@ -29448,7 +29448,7 @@ export const searchNotesApiV1XiaohongshuAppV2SearchNotesGet = <ThrowOnError exte
  */
 export const searchUsersApiV1XiaohongshuAppV2SearchUsersGet = <ThrowOnError extends boolean = false>(options: Options<SearchUsersApiV1XiaohongshuAppV2SearchUsersGetData, ThrowOnError>) => (options.client ?? client).get<SearchUsersApiV1XiaohongshuAppV2SearchUsersGetResponses, SearchUsersApiV1XiaohongshuAppV2SearchUsersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/search_users',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_users',
     ...options
 });
 
@@ -29493,7 +29493,7 @@ export const searchUsersApiV1XiaohongshuAppV2SearchUsersGet = <ThrowOnError exte
  */
 export const searchImagesApiV1XiaohongshuAppV2SearchImagesGet = <ThrowOnError extends boolean = false>(options: Options<SearchImagesApiV1XiaohongshuAppV2SearchImagesGetData, ThrowOnError>) => (options.client ?? client).get<SearchImagesApiV1XiaohongshuAppV2SearchImagesGetResponses, SearchImagesApiV1XiaohongshuAppV2SearchImagesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/search_images',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_images',
     ...options
 });
 
@@ -29534,7 +29534,7 @@ export const searchImagesApiV1XiaohongshuAppV2SearchImagesGet = <ThrowOnError ex
  */
 export const searchProductsApiV1XiaohongshuAppV2SearchProductsGet = <ThrowOnError extends boolean = false>(options: Options<SearchProductsApiV1XiaohongshuAppV2SearchProductsGetData, ThrowOnError>) => (options.client ?? client).get<SearchProductsApiV1XiaohongshuAppV2SearchProductsGetResponses, SearchProductsApiV1XiaohongshuAppV2SearchProductsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/search_products',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_products',
     ...options
 });
 
@@ -29577,7 +29577,7 @@ export const searchProductsApiV1XiaohongshuAppV2SearchProductsGet = <ThrowOnErro
  */
 export const searchGroupsApiV1XiaohongshuAppV2SearchGroupsGet = <ThrowOnError extends boolean = false>(options: Options<SearchGroupsApiV1XiaohongshuAppV2SearchGroupsGetData, ThrowOnError>) => (options.client ?? client).get<SearchGroupsApiV1XiaohongshuAppV2SearchGroupsGetResponses, SearchGroupsApiV1XiaohongshuAppV2SearchGroupsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/search_groups',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/search_groups',
     ...options
 });
 
@@ -29609,7 +29609,7 @@ export const searchGroupsApiV1XiaohongshuAppV2SearchGroupsGet = <ThrowOnError ex
  */
 export const getProductDetailApiV1XiaohongshuAppV2GetProductDetailGet = <ThrowOnError extends boolean = false>(options: Options<GetProductDetailApiV1XiaohongshuAppV2GetProductDetailGetData, ThrowOnError>) => (options.client ?? client).get<GetProductDetailApiV1XiaohongshuAppV2GetProductDetailGetResponses, GetProductDetailApiV1XiaohongshuAppV2GetProductDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_product_detail',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_product_detail',
     ...options
 });
 
@@ -29639,7 +29639,7 @@ export const getProductDetailApiV1XiaohongshuAppV2GetProductDetailGet = <ThrowOn
  */
 export const getProductReviewOverviewApiV1XiaohongshuAppV2GetProductReviewOverviewGet = <ThrowOnError extends boolean = false>(options: Options<GetProductReviewOverviewApiV1XiaohongshuAppV2GetProductReviewOverviewGetData, ThrowOnError>) => (options.client ?? client).get<GetProductReviewOverviewApiV1XiaohongshuAppV2GetProductReviewOverviewGetResponses, GetProductReviewOverviewApiV1XiaohongshuAppV2GetProductReviewOverviewGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_product_review_overview',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_product_review_overview',
     ...options
 });
 
@@ -29684,7 +29684,7 @@ export const getProductReviewOverviewApiV1XiaohongshuAppV2GetProductReviewOvervi
  */
 export const getProductReviewsApiV1XiaohongshuAppV2GetProductReviewsGet = <ThrowOnError extends boolean = false>(options: Options<GetProductReviewsApiV1XiaohongshuAppV2GetProductReviewsGetData, ThrowOnError>) => (options.client ?? client).get<GetProductReviewsApiV1XiaohongshuAppV2GetProductReviewsGetResponses, GetProductReviewsApiV1XiaohongshuAppV2GetProductReviewsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_product_reviews',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_product_reviews',
     ...options
 });
 
@@ -29722,7 +29722,7 @@ export const getProductReviewsApiV1XiaohongshuAppV2GetProductReviewsGet = <Throw
  */
 export const getProductRecommendationsApiV1XiaohongshuAppV2GetProductRecommendationsGet = <ThrowOnError extends boolean = false>(options: Options<GetProductRecommendationsApiV1XiaohongshuAppV2GetProductRecommendationsGetData, ThrowOnError>) => (options.client ?? client).get<GetProductRecommendationsApiV1XiaohongshuAppV2GetProductRecommendationsGetResponses, GetProductRecommendationsApiV1XiaohongshuAppV2GetProductRecommendationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_product_recommendations',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_product_recommendations',
     ...options
 });
 
@@ -29754,7 +29754,7 @@ export const getProductRecommendationsApiV1XiaohongshuAppV2GetProductRecommendat
  */
 export const getTopicInfoApiV1XiaohongshuAppV2GetTopicInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetTopicInfoApiV1XiaohongshuAppV2GetTopicInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetTopicInfoApiV1XiaohongshuAppV2GetTopicInfoGetResponses, GetTopicInfoApiV1XiaohongshuAppV2GetTopicInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_topic_info',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_topic_info',
     ...options
 });
 
@@ -29815,7 +29815,7 @@ export const getTopicInfoApiV1XiaohongshuAppV2GetTopicInfoGet = <ThrowOnError ex
  */
 export const getTopicFeedApiV1XiaohongshuAppV2GetTopicFeedGet = <ThrowOnError extends boolean = false>(options: Options<GetTopicFeedApiV1XiaohongshuAppV2GetTopicFeedGetData, ThrowOnError>) => (options.client ?? client).get<GetTopicFeedApiV1XiaohongshuAppV2GetTopicFeedGetResponses, GetTopicFeedApiV1XiaohongshuAppV2GetTopicFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_topic_feed',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_topic_feed',
     ...options
 });
 
@@ -29853,7 +29853,7 @@ export const getTopicFeedApiV1XiaohongshuAppV2GetTopicFeedGet = <ThrowOnError ex
  */
 export const getCreatorInspirationFeedApiV1XiaohongshuAppV2GetCreatorInspirationFeedGet = <ThrowOnError extends boolean = false>(options?: Options<GetCreatorInspirationFeedApiV1XiaohongshuAppV2GetCreatorInspirationFeedGetData, ThrowOnError>) => (options?.client ?? client).get<GetCreatorInspirationFeedApiV1XiaohongshuAppV2GetCreatorInspirationFeedGetResponses, GetCreatorInspirationFeedApiV1XiaohongshuAppV2GetCreatorInspirationFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_creator_inspiration_feed',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_creator_inspiration_feed',
     ...options
 });
 
@@ -29887,7 +29887,7 @@ export const getCreatorInspirationFeedApiV1XiaohongshuAppV2GetCreatorInspiration
  */
 export const getCreatorHotInspirationFeedApiV1XiaohongshuAppV2GetCreatorHotInspirationFeedGet = <ThrowOnError extends boolean = false>(options?: Options<GetCreatorHotInspirationFeedApiV1XiaohongshuAppV2GetCreatorHotInspirationFeedGetData, ThrowOnError>) => (options?.client ?? client).get<GetCreatorHotInspirationFeedApiV1XiaohongshuAppV2GetCreatorHotInspirationFeedGetResponses, GetCreatorHotInspirationFeedApiV1XiaohongshuAppV2GetCreatorHotInspirationFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app_v2/get_creator_hot_inspiration_feed',
+    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_creator_hot_inspiration_feed',
     ...options
 });
 
@@ -29959,7 +29959,7 @@ export const getCreatorHotInspirationFeedApiV1XiaohongshuAppV2GetCreatorHotInspi
  */
 export const getNoteInfoV1ApiV1XiaohongshuAppGetNoteInfoGet = <ThrowOnError extends boolean = false>(options?: Options<GetNoteInfoV1ApiV1XiaohongshuAppGetNoteInfoGetData, ThrowOnError>) => (options?.client ?? client).get<GetNoteInfoV1ApiV1XiaohongshuAppGetNoteInfoGetResponses, GetNoteInfoV1ApiV1XiaohongshuAppGetNoteInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_note_info',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_note_info',
     ...options
 });
 
@@ -30033,7 +30033,7 @@ export const getNoteInfoV1ApiV1XiaohongshuAppGetNoteInfoGet = <ThrowOnError exte
  */
 export const getNoteInfoV2ApiV1XiaohongshuAppGetNoteInfoV2Get = <ThrowOnError extends boolean = false>(options?: Options<GetNoteInfoV2ApiV1XiaohongshuAppGetNoteInfoV2GetData, ThrowOnError>) => (options?.client ?? client).get<GetNoteInfoV2ApiV1XiaohongshuAppGetNoteInfoV2GetResponses, GetNoteInfoV2ApiV1XiaohongshuAppGetNoteInfoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_note_info_v2',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_note_info_v2',
     ...options
 });
 
@@ -30114,7 +30114,7 @@ export const getNoteInfoV2ApiV1XiaohongshuAppGetNoteInfoV2Get = <ThrowOnError ex
  */
 export const getNoteCommentsApiV1XiaohongshuAppGetNoteCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetNoteCommentsApiV1XiaohongshuAppGetNoteCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetNoteCommentsApiV1XiaohongshuAppGetNoteCommentsGetResponses, GetNoteCommentsApiV1XiaohongshuAppGetNoteCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_note_comments',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_note_comments',
     ...options
 });
 
@@ -30179,7 +30179,7 @@ export const getNoteCommentsApiV1XiaohongshuAppGetNoteCommentsGet = <ThrowOnErro
  */
 export const getSubCommentsApiV1XiaohongshuAppGetSubCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetSubCommentsApiV1XiaohongshuAppGetSubCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetSubCommentsApiV1XiaohongshuAppGetSubCommentsGetResponses, GetSubCommentsApiV1XiaohongshuAppGetSubCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_sub_comments',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_sub_comments',
     ...options
 });
 
@@ -30281,7 +30281,7 @@ export const getSubCommentsApiV1XiaohongshuAppGetSubCommentsGet = <ThrowOnError 
  */
 export const getNotesByTopicApiV1XiaohongshuAppGetNotesByTopicGet = <ThrowOnError extends boolean = false>(options: Options<GetNotesByTopicApiV1XiaohongshuAppGetNotesByTopicGetData, ThrowOnError>) => (options.client ?? client).get<GetNotesByTopicApiV1XiaohongshuAppGetNotesByTopicGetResponses, GetNotesByTopicApiV1XiaohongshuAppGetNotesByTopicGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_notes_by_topic',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_notes_by_topic',
     ...options
 });
 
@@ -30389,7 +30389,7 @@ export const getNotesByTopicApiV1XiaohongshuAppGetNotesByTopicGet = <ThrowOnErro
  */
 export const searchNotesApiV1XiaohongshuAppSearchNotesGet = <ThrowOnError extends boolean = false>(options: Options<SearchNotesApiV1XiaohongshuAppSearchNotesGetData, ThrowOnError>) => (options.client ?? client).get<SearchNotesApiV1XiaohongshuAppSearchNotesGetResponses, SearchNotesApiV1XiaohongshuAppSearchNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/search_notes',
+    url: '/video-hub/api/v1/xiaohongshu/app/search_notes',
     ...options
 });
 
@@ -30455,7 +30455,7 @@ export const searchNotesApiV1XiaohongshuAppSearchNotesGet = <ThrowOnError extend
  */
 export const getUserInfoApiV1XiaohongshuAppGetUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetUserInfoApiV1XiaohongshuAppGetUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetUserInfoApiV1XiaohongshuAppGetUserInfoGetResponses, GetUserInfoApiV1XiaohongshuAppGetUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_user_info',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_user_info',
     ...options
 });
 
@@ -30524,7 +30524,7 @@ export const getUserInfoApiV1XiaohongshuAppGetUserInfoGet = <ThrowOnError extend
  */
 export const getUserNotesApiV1XiaohongshuAppGetUserNotesGet = <ThrowOnError extends boolean = false>(options: Options<GetUserNotesApiV1XiaohongshuAppGetUserNotesGetData, ThrowOnError>) => (options.client ?? client).get<GetUserNotesApiV1XiaohongshuAppGetUserNotesGetResponses, GetUserNotesApiV1XiaohongshuAppGetUserNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_user_notes',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_user_notes',
     ...options
 });
 
@@ -30572,7 +30572,7 @@ export const getUserNotesApiV1XiaohongshuAppGetUserNotesGet = <ThrowOnError exte
  */
 export const extractShareInfoApiV1XiaohongshuAppExtractShareInfoGet = <ThrowOnError extends boolean = false>(options: Options<ExtractShareInfoApiV1XiaohongshuAppExtractShareInfoGetData, ThrowOnError>) => (options.client ?? client).get<ExtractShareInfoApiV1XiaohongshuAppExtractShareInfoGetResponses, ExtractShareInfoApiV1XiaohongshuAppExtractShareInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/extract_share_info',
+    url: '/video-hub/api/v1/xiaohongshu/app/extract_share_info',
     ...options
 });
 
@@ -30613,7 +30613,7 @@ export const extractShareInfoApiV1XiaohongshuAppExtractShareInfoGet = <ThrowOnEr
  */
 export const getUserIdAndXsecTokenApiV1XiaohongshuAppGetUserIdAndXsecTokenGet = <ThrowOnError extends boolean = false>(options: Options<GetUserIdAndXsecTokenApiV1XiaohongshuAppGetUserIdAndXsecTokenGetData, ThrowOnError>) => (options.client ?? client).get<GetUserIdAndXsecTokenApiV1XiaohongshuAppGetUserIdAndXsecTokenGetResponses, GetUserIdAndXsecTokenApiV1XiaohongshuAppGetUserIdAndXsecTokenGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_user_id_and_xsec_token',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_user_id_and_xsec_token',
     ...options
 });
 
@@ -30641,7 +30641,7 @@ export const getUserIdAndXsecTokenApiV1XiaohongshuAppGetUserIdAndXsecTokenGet = 
  */
 export const getProductDetailApiV1XiaohongshuAppGetProductDetailGet = <ThrowOnError extends boolean = false>(options: Options<GetProductDetailApiV1XiaohongshuAppGetProductDetailGetData, ThrowOnError>) => (options.client ?? client).get<GetProductDetailApiV1XiaohongshuAppGetProductDetailGetResponses, GetProductDetailApiV1XiaohongshuAppGetProductDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/get_product_detail',
+    url: '/video-hub/api/v1/xiaohongshu/app/get_product_detail',
     ...options
 });
 
@@ -30719,7 +30719,7 @@ export const getProductDetailApiV1XiaohongshuAppGetProductDetailGet = <ThrowOnEr
  */
 export const searchProductsApiV1XiaohongshuAppSearchProductsGet = <ThrowOnError extends boolean = false>(options: Options<SearchProductsApiV1XiaohongshuAppSearchProductsGetData, ThrowOnError>) => (options.client ?? client).get<SearchProductsApiV1XiaohongshuAppSearchProductsGetResponses, SearchProductsApiV1XiaohongshuAppSearchProductsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/app/search_products',
+    url: '/video-hub/api/v1/xiaohongshu/app/search_products',
     ...options
 });
 
@@ -30753,7 +30753,7 @@ export const searchProductsApiV1XiaohongshuAppSearchProductsGet = <ThrowOnError 
  */
 export const fetchFeedNotesApiV1XiaohongshuWebV2FetchFeedNotesGet = <ThrowOnError extends boolean = false>(options: Options<FetchFeedNotesApiV1XiaohongshuWebV2FetchFeedNotesGetData, ThrowOnError>) => (options.client ?? client).get<FetchFeedNotesApiV1XiaohongshuWebV2FetchFeedNotesGetResponses, FetchFeedNotesApiV1XiaohongshuWebV2FetchFeedNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes',
     ...options
 });
 
@@ -30785,7 +30785,7 @@ export const fetchFeedNotesApiV1XiaohongshuWebV2FetchFeedNotesGet = <ThrowOnErro
  */
 export const fetchFeedNotesV2ApiV1XiaohongshuWebV2FetchFeedNotesV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchFeedNotesV2ApiV1XiaohongshuWebV2FetchFeedNotesV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchFeedNotesV2ApiV1XiaohongshuWebV2FetchFeedNotesV2GetResponses, FetchFeedNotesV2ApiV1XiaohongshuWebV2FetchFeedNotesV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v2',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v2',
     ...options
 });
 
@@ -30813,7 +30813,7 @@ export const fetchFeedNotesV2ApiV1XiaohongshuWebV2FetchFeedNotesV2Get = <ThrowOn
  */
 export const fetchFeedNotesV3ApiV1XiaohongshuWebV2FetchFeedNotesV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchFeedNotesV3ApiV1XiaohongshuWebV2FetchFeedNotesV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchFeedNotesV3ApiV1XiaohongshuWebV2FetchFeedNotesV3GetResponses, FetchFeedNotesV3ApiV1XiaohongshuWebV2FetchFeedNotesV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v3',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v3',
     ...options
 });
 
@@ -30841,7 +30841,7 @@ export const fetchFeedNotesV3ApiV1XiaohongshuWebV2FetchFeedNotesV3Get = <ThrowOn
  */
 export const fetchFeedNotesV4ApiV1XiaohongshuWebV2FetchFeedNotesV4Get = <ThrowOnError extends boolean = false>(options: Options<FetchFeedNotesV4ApiV1XiaohongshuWebV2FetchFeedNotesV4GetData, ThrowOnError>) => (options.client ?? client).get<FetchFeedNotesV4ApiV1XiaohongshuWebV2FetchFeedNotesV4GetResponses, FetchFeedNotesV4ApiV1XiaohongshuWebV2FetchFeedNotesV4GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v4',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v4',
     ...options
 });
 
@@ -30873,7 +30873,7 @@ export const fetchFeedNotesV4ApiV1XiaohongshuWebV2FetchFeedNotesV4Get = <ThrowOn
  */
 export const fetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5Get = <ThrowOnError extends boolean = false>(options: Options<FetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5GetData, ThrowOnError>) => (options.client ?? client).get<FetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5GetResponses, FetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v5',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v5',
     ...options
 });
 
@@ -30901,7 +30901,7 @@ export const fetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5Get = <ThrowOn
  */
 export const fetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGet = <ThrowOnError extends boolean = false>(options: Options<FetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGetData, ThrowOnError>) => (options.client ?? client).get<FetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGetResponses, FetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_note_image',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_note_image',
     ...options
 });
 
@@ -30948,7 +30948,7 @@ export const fetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGet = <ThrowOnErro
  */
 export const fetchSearchNotesApiV1XiaohongshuWebV2FetchSearchNotesGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchNotesGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchNotesGetResponses, FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_search_notes',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_search_notes',
     ...options
 });
 
@@ -30979,7 +30979,7 @@ export const fetchSearchNotesApiV1XiaohongshuWebV2FetchSearchNotesGet = <ThrowOn
  */
 export const fetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGetResponses, FetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_search_users',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_search_users',
     ...options
 });
 
@@ -31010,7 +31010,7 @@ export const fetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGet = <ThrowOn
  */
 export const fetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGet = <ThrowOnError extends boolean = false>(options: Options<FetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGetData, ThrowOnError>) => (options.client ?? client).get<FetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGetResponses, FetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_home_notes',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_home_notes',
     ...options
 });
 
@@ -31040,7 +31040,7 @@ export const fetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGet = <ThrowOnErro
  */
 export const fetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGet = <ThrowOnError extends boolean = false>(options: Options<FetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGetData, ThrowOnError>) => (options.client ?? client).get<FetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGetResponses, FetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_home_notes_app',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_home_notes_app',
     ...options
 });
 
@@ -31071,7 +31071,7 @@ export const fetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGet = <Throw
  */
 export const fetchNoteCommentsApiV1XiaohongshuWebV2FetchNoteCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchNoteCommentsApiV1XiaohongshuWebV2FetchNoteCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchNoteCommentsApiV1XiaohongshuWebV2FetchNoteCommentsGetResponses, FetchNoteCommentsApiV1XiaohongshuWebV2FetchNoteCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_note_comments',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_note_comments',
     ...options
 });
 
@@ -31105,7 +31105,7 @@ export const fetchNoteCommentsApiV1XiaohongshuWebV2FetchNoteCommentsGet = <Throw
  */
 export const fetchSubCommentsApiV1XiaohongshuWebV2FetchSubCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchSubCommentsApiV1XiaohongshuWebV2FetchSubCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchSubCommentsApiV1XiaohongshuWebV2FetchSubCommentsGetResponses, FetchSubCommentsApiV1XiaohongshuWebV2FetchSubCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_sub_comments',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_sub_comments',
     ...options
 });
 
@@ -31133,7 +31133,7 @@ export const fetchSubCommentsApiV1XiaohongshuWebV2FetchSubCommentsGet = <ThrowOn
  */
 export const fetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoGetResponses, FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_user_info',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_user_info',
     ...options
 });
 
@@ -31161,7 +31161,7 @@ export const fetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoGet = <ThrowOnError 
  */
 export const fetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGetResponses, FetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_user_info_app',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_user_info_app',
     ...options
 });
 
@@ -31192,7 +31192,7 @@ export const fetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGet = <ThrowOnErr
  */
 export const fetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGet = <ThrowOnError extends boolean = false>(options: Options<FetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGetData, ThrowOnError>) => (options.client ?? client).get<FetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGetResponses, FetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_follower_list',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_follower_list',
     ...options
 });
 
@@ -31223,7 +31223,7 @@ export const fetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGet = <Throw
  */
 export const fetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGet = <ThrowOnError extends boolean = false>(options: Options<FetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGetData, ThrowOnError>) => (options.client ?? client).get<FetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGetResponses, FetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_following_list',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_following_list',
     ...options
 });
 
@@ -31254,7 +31254,7 @@ export const fetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGet = <Thr
  */
 export const fetchProductListApiV1XiaohongshuWebV2FetchProductListGet = <ThrowOnError extends boolean = false>(options: Options<FetchProductListApiV1XiaohongshuWebV2FetchProductListGetData, ThrowOnError>) => (options.client ?? client).get<FetchProductListApiV1XiaohongshuWebV2FetchProductListGetResponses, FetchProductListApiV1XiaohongshuWebV2FetchProductListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_product_list',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_product_list',
     ...options
 });
 
@@ -31277,7 +31277,7 @@ export const fetchProductListApiV1XiaohongshuWebV2FetchProductListGet = <ThrowOn
  */
 export const fetchHotListApiV1XiaohongshuWebV2FetchHotListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotListApiV1XiaohongshuWebV2FetchHotListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotListApiV1XiaohongshuWebV2FetchHotListGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web_v2/fetch_hot_list',
+    url: '/video-hub/api/v1/xiaohongshu/web_v2/fetch_hot_list',
     ...options
 });
 
@@ -31337,7 +31337,7 @@ export const fetchHotListApiV1XiaohongshuWebV2FetchHotListGet = <ThrowOnError ex
  */
 export const getHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPost = <ThrowOnError extends boolean = false>(options: Options<GetHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPostData, ThrowOnError>) => (options.client ?? client).post<GetHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPostResponses, GetHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_home_recommend',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_home_recommend',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -31373,7 +31373,7 @@ export const getHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPost = <ThrowOnE
  */
 export const getNoteInfoV2ApiV1XiaohongshuWebGetNoteInfoV2Get = <ThrowOnError extends boolean = false>(options?: Options<GetNoteInfoV2ApiV1XiaohongshuWebGetNoteInfoV2GetData, ThrowOnError>) => (options?.client ?? client).get<GetNoteInfoV2ApiV1XiaohongshuWebGetNoteInfoV2GetResponses, GetNoteInfoV2ApiV1XiaohongshuWebGetNoteInfoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_note_info_v2',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_info_v2',
     ...options
 });
 
@@ -31405,7 +31405,7 @@ export const getNoteInfoV2ApiV1XiaohongshuWebGetNoteInfoV2Get = <ThrowOnError ex
  */
 export const getNoteInfoV4ApiV1XiaohongshuWebGetNoteInfoV4Get = <ThrowOnError extends boolean = false>(options?: Options<GetNoteInfoV4ApiV1XiaohongshuWebGetNoteInfoV4GetData, ThrowOnError>) => (options?.client ?? client).get<GetNoteInfoV4ApiV1XiaohongshuWebGetNoteInfoV4GetResponses, GetNoteInfoV4ApiV1XiaohongshuWebGetNoteInfoV4GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_note_info_v4',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_info_v4',
     ...options
 });
 
@@ -31447,7 +31447,7 @@ export const getNoteInfoV4ApiV1XiaohongshuWebGetNoteInfoV4Get = <ThrowOnError ex
  */
 export const getNoteInfoV5ApiV1XiaohongshuWebGetNoteInfoV5Post = <ThrowOnError extends boolean = false>(options: Options<GetNoteInfoV5ApiV1XiaohongshuWebGetNoteInfoV5PostData, ThrowOnError>) => (options.client ?? client).post<GetNoteInfoV5ApiV1XiaohongshuWebGetNoteInfoV5PostResponses, GetNoteInfoV5ApiV1XiaohongshuWebGetNoteInfoV5PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_note_info_v5',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_info_v5',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -31483,7 +31483,7 @@ export const getNoteInfoV5ApiV1XiaohongshuWebGetNoteInfoV5Post = <ThrowOnError e
  */
 export const getNoteInfoV7ApiV1XiaohongshuWebGetNoteInfoV7Get = <ThrowOnError extends boolean = false>(options?: Options<GetNoteInfoV7ApiV1XiaohongshuWebGetNoteInfoV7GetData, ThrowOnError>) => (options?.client ?? client).get<GetNoteInfoV7ApiV1XiaohongshuWebGetNoteInfoV7GetResponses, GetNoteInfoV7ApiV1XiaohongshuWebGetNoteInfoV7GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_note_info_v7',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_info_v7',
     ...options
 });
 
@@ -31514,7 +31514,7 @@ export const getNoteInfoV7ApiV1XiaohongshuWebGetNoteInfoV7Get = <ThrowOnError ex
  */
 export const getNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGetResponses, GetNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_note_comments',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_comments',
     ...options
 });
 
@@ -31548,7 +31548,7 @@ export const getNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGet = <ThrowOnErro
  */
 export const getNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<GetNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<GetNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGetResponses, GetNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_note_comment_replies',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_comment_replies',
     ...options
 });
 
@@ -31576,7 +31576,7 @@ export const getNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGet = 
  */
 export const getUserInfoApiV1XiaohongshuWebGetUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetUserInfoApiV1XiaohongshuWebGetUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetUserInfoApiV1XiaohongshuWebGetUserInfoGetResponses, GetUserInfoApiV1XiaohongshuWebGetUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_user_info',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_user_info',
     ...options
 });
 
@@ -31609,7 +31609,7 @@ export const getUserInfoApiV1XiaohongshuWebGetUserInfoGet = <ThrowOnError extend
  */
 export const getUserInfoV2ApiV1XiaohongshuWebGetUserInfoV2Get = <ThrowOnError extends boolean = false>(options?: Options<GetUserInfoV2ApiV1XiaohongshuWebGetUserInfoV2GetData, ThrowOnError>) => (options?.client ?? client).get<GetUserInfoV2ApiV1XiaohongshuWebGetUserInfoV2GetResponses, GetUserInfoV2ApiV1XiaohongshuWebGetUserInfoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_user_info_v2',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_user_info_v2',
     ...options
 });
 
@@ -31674,7 +31674,7 @@ export const getUserInfoV2ApiV1XiaohongshuWebGetUserInfoV2Get = <ThrowOnError ex
  */
 export const searchNotesApiV1XiaohongshuWebSearchNotesGet = <ThrowOnError extends boolean = false>(options: Options<SearchNotesApiV1XiaohongshuWebSearchNotesGetData, ThrowOnError>) => (options.client ?? client).get<SearchNotesApiV1XiaohongshuWebSearchNotesGetResponses, SearchNotesApiV1XiaohongshuWebSearchNotesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/search_notes',
+    url: '/video-hub/api/v1/xiaohongshu/web/search_notes',
     ...options
 });
 
@@ -31739,7 +31739,7 @@ export const searchNotesApiV1XiaohongshuWebSearchNotesGet = <ThrowOnError extend
  */
 export const searchNotesV3ApiV1XiaohongshuWebSearchNotesV3Get = <ThrowOnError extends boolean = false>(options: Options<SearchNotesV3ApiV1XiaohongshuWebSearchNotesV3GetData, ThrowOnError>) => (options.client ?? client).get<SearchNotesV3ApiV1XiaohongshuWebSearchNotesV3GetResponses, SearchNotesV3ApiV1XiaohongshuWebSearchNotesV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/search_notes_v3',
+    url: '/video-hub/api/v1/xiaohongshu/web/search_notes_v3',
     ...options
 });
 
@@ -31770,7 +31770,7 @@ export const searchNotesV3ApiV1XiaohongshuWebSearchNotesV3Get = <ThrowOnError ex
  */
 export const searchUsersApiV1XiaohongshuWebSearchUsersGet = <ThrowOnError extends boolean = false>(options: Options<SearchUsersApiV1XiaohongshuWebSearchUsersGetData, ThrowOnError>) => (options.client ?? client).get<SearchUsersApiV1XiaohongshuWebSearchUsersGetResponses, SearchUsersApiV1XiaohongshuWebSearchUsersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/search_users',
+    url: '/video-hub/api/v1/xiaohongshu/web/search_users',
     ...options
 });
 
@@ -31805,7 +31805,7 @@ export const searchUsersApiV1XiaohongshuWebSearchUsersGet = <ThrowOnError extend
  */
 export const getUserNotesApiV1XiaohongshuWebGetUserNotesV2Get = <ThrowOnError extends boolean = false>(options: Options<GetUserNotesApiV1XiaohongshuWebGetUserNotesV2GetData, ThrowOnError>) => (options.client ?? client).get<GetUserNotesApiV1XiaohongshuWebGetUserNotesV2GetResponses, GetUserNotesApiV1XiaohongshuWebGetUserNotesV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_user_notes_v2',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_user_notes_v2',
     ...options
 });
 
@@ -31831,7 +31831,7 @@ export const getUserNotesApiV1XiaohongshuWebGetUserNotesV2Get = <ThrowOnError ex
  */
 export const getVisitorCookieApiV1XiaohongshuWebGetVisitorCookieGet = <ThrowOnError extends boolean = false>(options?: Options<GetVisitorCookieApiV1XiaohongshuWebGetVisitorCookieGetData, ThrowOnError>) => (options?.client ?? client).get<GetVisitorCookieApiV1XiaohongshuWebGetVisitorCookieGetResponses, GetVisitorCookieApiV1XiaohongshuWebGetVisitorCookieGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_visitor_cookie',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_visitor_cookie',
     ...options
 });
 
@@ -31890,7 +31890,7 @@ export const getVisitorCookieApiV1XiaohongshuWebGetVisitorCookieGet = <ThrowOnEr
  */
 export const signApiV1XiaohongshuWebSignPost = <ThrowOnError extends boolean = false>(options: Options<SignApiV1XiaohongshuWebSignPostData, ThrowOnError>) => (options.client ?? client).post<SignApiV1XiaohongshuWebSignPostResponses, SignApiV1XiaohongshuWebSignPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/sign',
+    url: '/video-hub/api/v1/xiaohongshu/web/sign',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -31922,7 +31922,7 @@ export const signApiV1XiaohongshuWebSignPost = <ThrowOnError extends boolean = f
  */
 export const getNoteIdAndXsecTokenApiV1XiaohongshuWebGetNoteIdAndXsecTokenGet = <ThrowOnError extends boolean = false>(options: Options<GetNoteIdAndXsecTokenApiV1XiaohongshuWebGetNoteIdAndXsecTokenGetData, ThrowOnError>) => (options.client ?? client).get<GetNoteIdAndXsecTokenApiV1XiaohongshuWebGetNoteIdAndXsecTokenGetResponses, GetNoteIdAndXsecTokenApiV1XiaohongshuWebGetNoteIdAndXsecTokenGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_note_id_and_xsec_token',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_note_id_and_xsec_token',
     ...options
 });
 
@@ -31959,7 +31959,7 @@ export const getNoteIdAndXsecTokenApiV1XiaohongshuWebGetNoteIdAndXsecTokenGet = 
  */
 export const getProductInfoApiV1XiaohongshuWebGetProductInfoGet = <ThrowOnError extends boolean = false>(options?: Options<GetProductInfoApiV1XiaohongshuWebGetProductInfoGetData, ThrowOnError>) => (options?.client ?? client).get<GetProductInfoApiV1XiaohongshuWebGetProductInfoGetResponses, GetProductInfoApiV1XiaohongshuWebGetProductInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/xiaohongshu/web/get_product_info',
+    url: '/video-hub/api/v1/xiaohongshu/web/get_product_info',
     ...options
 });
 
@@ -31987,7 +31987,7 @@ export const getProductInfoApiV1XiaohongshuWebGetProductInfoGet = <ThrowOnError 
  */
 export const handlerUserProfileApiV1Lemon8AppFetchUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<HandlerUserProfileApiV1Lemon8AppFetchUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<HandlerUserProfileApiV1Lemon8AppFetchUserProfileGetResponses, HandlerUserProfileApiV1Lemon8AppFetchUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_user_profile',
+    url: '/video-hub/api/v1/lemon8/app/fetch_user_profile',
     ...options
 });
 
@@ -32015,7 +32015,7 @@ export const handlerUserProfileApiV1Lemon8AppFetchUserProfileGet = <ThrowOnError
  */
 export const fetchPostDetailApiV1Lemon8AppFetchPostDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailApiV1Lemon8AppFetchPostDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailApiV1Lemon8AppFetchPostDetailGetResponses, FetchPostDetailApiV1Lemon8AppFetchPostDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_post_detail',
+    url: '/video-hub/api/v1/lemon8/app/fetch_post_detail',
     ...options
 });
 
@@ -32045,7 +32045,7 @@ export const fetchPostDetailApiV1Lemon8AppFetchPostDetailGet = <ThrowOnError ext
  */
 export const fetchUserFollowerListApiV1Lemon8AppFetchUserFollowerListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowerListApiV1Lemon8AppFetchUserFollowerListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowerListApiV1Lemon8AppFetchUserFollowerListGetResponses, FetchUserFollowerListApiV1Lemon8AppFetchUserFollowerListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_user_follower_list',
+    url: '/video-hub/api/v1/lemon8/app/fetch_user_follower_list',
     ...options
 });
 
@@ -32075,7 +32075,7 @@ export const fetchUserFollowerListApiV1Lemon8AppFetchUserFollowerListGet = <Thro
  */
 export const fetchUserFollowingListApiV1Lemon8AppFetchUserFollowingListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowingListApiV1Lemon8AppFetchUserFollowingListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowingListApiV1Lemon8AppFetchUserFollowingListGetResponses, FetchUserFollowingListApiV1Lemon8AppFetchUserFollowingListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_user_following_list',
+    url: '/video-hub/api/v1/lemon8/app/fetch_user_following_list',
     ...options
 });
 
@@ -32111,7 +32111,7 @@ export const fetchUserFollowingListApiV1Lemon8AppFetchUserFollowingListGet = <Th
  */
 export const fetchPostCommentListApiV1Lemon8AppFetchPostCommentListGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentListApiV1Lemon8AppFetchPostCommentListGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentListApiV1Lemon8AppFetchPostCommentListGetResponses, FetchPostCommentListApiV1Lemon8AppFetchPostCommentListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_post_comment_list',
+    url: '/video-hub/api/v1/lemon8/app/fetch_post_comment_list',
     ...options
 });
 
@@ -32134,7 +32134,7 @@ export const fetchPostCommentListApiV1Lemon8AppFetchPostCommentListGet = <ThrowO
  */
 export const fetchDiscoverBannersApiV1Lemon8AppFetchDiscoverBannersGet = <ThrowOnError extends boolean = false>(options?: Options<FetchDiscoverBannersApiV1Lemon8AppFetchDiscoverBannersGetData, ThrowOnError>) => (options?.client ?? client).get<FetchDiscoverBannersApiV1Lemon8AppFetchDiscoverBannersGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_discover_banners',
+    url: '/video-hub/api/v1/lemon8/app/fetch_discover_banners',
     ...options
 });
 
@@ -32157,7 +32157,7 @@ export const fetchDiscoverBannersApiV1Lemon8AppFetchDiscoverBannersGet = <ThrowO
  */
 export const fetchDiscoverTabApiV1Lemon8AppFetchDiscoverTabGet = <ThrowOnError extends boolean = false>(options?: Options<FetchDiscoverTabApiV1Lemon8AppFetchDiscoverTabGetData, ThrowOnError>) => (options?.client ?? client).get<FetchDiscoverTabApiV1Lemon8AppFetchDiscoverTabGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_discover_tab',
+    url: '/video-hub/api/v1/lemon8/app/fetch_discover_tab',
     ...options
 });
 
@@ -32180,7 +32180,7 @@ export const fetchDiscoverTabApiV1Lemon8AppFetchDiscoverTabGet = <ThrowOnError e
  */
 export const fetchDiscoverTabInformationTabsApiV1Lemon8AppFetchDiscoverTabInformationTabsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchDiscoverTabInformationTabsApiV1Lemon8AppFetchDiscoverTabInformationTabsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchDiscoverTabInformationTabsApiV1Lemon8AppFetchDiscoverTabInformationTabsGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_discover_tab_information_tabs',
+    url: '/video-hub/api/v1/lemon8/app/fetch_discover_tab_information_tabs',
     ...options
 });
 
@@ -32203,7 +32203,7 @@ export const fetchDiscoverTabInformationTabsApiV1Lemon8AppFetchDiscoverTabInform
  */
 export const fetchHotSearchKeywordsApiV1Lemon8AppFetchHotSearchKeywordsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchKeywordsApiV1Lemon8AppFetchHotSearchKeywordsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchKeywordsApiV1Lemon8AppFetchHotSearchKeywordsGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_hot_search_keywords',
+    url: '/video-hub/api/v1/lemon8/app/fetch_hot_search_keywords',
     ...options
 });
 
@@ -32237,7 +32237,7 @@ export const fetchHotSearchKeywordsApiV1Lemon8AppFetchHotSearchKeywordsGet = <Th
  */
 export const fetchTopicInfoApiV1Lemon8AppFetchTopicInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchTopicInfoApiV1Lemon8AppFetchTopicInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchTopicInfoApiV1Lemon8AppFetchTopicInfoGetResponses, FetchTopicInfoApiV1Lemon8AppFetchTopicInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_topic_info',
+    url: '/video-hub/api/v1/lemon8/app/fetch_topic_info',
     ...options
 });
 
@@ -32277,7 +32277,7 @@ export const fetchTopicInfoApiV1Lemon8AppFetchTopicInfoGet = <ThrowOnError exten
  */
 export const fetchTopicPostListApiV1Lemon8AppFetchTopicPostListGet = <ThrowOnError extends boolean = false>(options: Options<FetchTopicPostListApiV1Lemon8AppFetchTopicPostListGetData, ThrowOnError>) => (options.client ?? client).get<FetchTopicPostListApiV1Lemon8AppFetchTopicPostListGetResponses, FetchTopicPostListApiV1Lemon8AppFetchTopicPostListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_topic_post_list',
+    url: '/video-hub/api/v1/lemon8/app/fetch_topic_post_list',
     ...options
 });
 
@@ -32337,7 +32337,7 @@ export const fetchTopicPostListApiV1Lemon8AppFetchTopicPostListGet = <ThrowOnErr
  */
 export const fetchSearchApiV1Lemon8AppFetchSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchApiV1Lemon8AppFetchSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchApiV1Lemon8AppFetchSearchGetResponses, FetchSearchApiV1Lemon8AppFetchSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/fetch_search',
+    url: '/video-hub/api/v1/lemon8/app/fetch_search',
     ...options
 });
 
@@ -32366,7 +32366,7 @@ export const fetchSearchApiV1Lemon8AppFetchSearchGet = <ThrowOnError extends boo
  */
 export const getItemIdApiV1Lemon8AppGetItemIdGet = <ThrowOnError extends boolean = false>(options: Options<GetItemIdApiV1Lemon8AppGetItemIdGetData, ThrowOnError>) => (options.client ?? client).get<GetItemIdApiV1Lemon8AppGetItemIdGetResponses, GetItemIdApiV1Lemon8AppGetItemIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/get_item_id',
+    url: '/video-hub/api/v1/lemon8/app/get_item_id',
     ...options
 });
 
@@ -32395,7 +32395,7 @@ export const getItemIdApiV1Lemon8AppGetItemIdGet = <ThrowOnError extends boolean
  */
 export const getUserIdApiV1Lemon8AppGetUserIdGet = <ThrowOnError extends boolean = false>(options: Options<GetUserIdApiV1Lemon8AppGetUserIdGetData, ThrowOnError>) => (options.client ?? client).get<GetUserIdApiV1Lemon8AppGetUserIdGetResponses, GetUserIdApiV1Lemon8AppGetUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/get_user_id',
+    url: '/video-hub/api/v1/lemon8/app/get_user_id',
     ...options
 });
 
@@ -32426,7 +32426,7 @@ export const getUserIdApiV1Lemon8AppGetUserIdGet = <ThrowOnError extends boolean
  */
 export const getItemIdsApiV1Lemon8AppGetItemIdsPost = <ThrowOnError extends boolean = false>(options: Options<GetItemIdsApiV1Lemon8AppGetItemIdsPostData, ThrowOnError>) => (options.client ?? client).post<GetItemIdsApiV1Lemon8AppGetItemIdsPostResponses, GetItemIdsApiV1Lemon8AppGetItemIdsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/get_item_ids',
+    url: '/video-hub/api/v1/lemon8/app/get_item_ids',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -32461,7 +32461,7 @@ export const getItemIdsApiV1Lemon8AppGetItemIdsPost = <ThrowOnError extends bool
  */
 export const getUserIdsApiV1Lemon8AppGetUserIdsPost = <ThrowOnError extends boolean = false>(options: Options<GetUserIdsApiV1Lemon8AppGetUserIdsPostData, ThrowOnError>) => (options.client ?? client).post<GetUserIdsApiV1Lemon8AppGetUserIdsPostResponses, GetUserIdsApiV1Lemon8AppGetUserIdsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/lemon8/app/get_user_ids',
+    url: '/video-hub/api/v1/lemon8/app/get_user_ids',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -32493,7 +32493,7 @@ export const getUserIdsApiV1Lemon8AppGetUserIdsPost = <ThrowOnError extends bool
  */
 export const fetchOneVideoApiV1KuaishouWebFetchOneVideoGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1KuaishouWebFetchOneVideoGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1KuaishouWebFetchOneVideoGetResponses, FetchOneVideoApiV1KuaishouWebFetchOneVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_one_video',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video',
     ...options
 });
 
@@ -32521,7 +32521,7 @@ export const fetchOneVideoApiV1KuaishouWebFetchOneVideoGet = <ThrowOnError exten
  */
 export const fetchOneVideoV2ApiV1KuaishouWebFetchOneVideoV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV2ApiV1KuaishouWebFetchOneVideoV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV2ApiV1KuaishouWebFetchOneVideoV2GetResponses, FetchOneVideoV2ApiV1KuaishouWebFetchOneVideoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_one_video_v2',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video_v2',
     ...options
 });
 
@@ -32549,7 +32549,7 @@ export const fetchOneVideoV2ApiV1KuaishouWebFetchOneVideoV2Get = <ThrowOnError e
  */
 export const fetchOneVideoByUrlApiV1KuaishouWebFetchOneVideoByUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoByUrlApiV1KuaishouWebFetchOneVideoByUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoByUrlApiV1KuaishouWebFetchOneVideoByUrlGetResponses, FetchOneVideoByUrlApiV1KuaishouWebFetchOneVideoByUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_one_video_by_url',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video_by_url',
     ...options
 });
 
@@ -32580,7 +32580,7 @@ export const fetchOneVideoByUrlApiV1KuaishouWebFetchOneVideoByUrlGet = <ThrowOnE
  */
 export const fetchOneVideoCommentApiV1KuaishouWebFetchOneVideoCommentGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoCommentApiV1KuaishouWebFetchOneVideoCommentGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoCommentApiV1KuaishouWebFetchOneVideoCommentGetResponses, FetchOneVideoCommentApiV1KuaishouWebFetchOneVideoCommentGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_one_video_comment',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video_comment',
     ...options
 });
 
@@ -32614,7 +32614,7 @@ export const fetchOneVideoCommentApiV1KuaishouWebFetchOneVideoCommentGet = <Thro
  */
 export const fetchOneVideoSubCommentApiV1KuaishouWebFetchOneVideoSubCommentGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoSubCommentApiV1KuaishouWebFetchOneVideoSubCommentGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoSubCommentApiV1KuaishouWebFetchOneVideoSubCommentGetResponses, FetchOneVideoSubCommentApiV1KuaishouWebFetchOneVideoSubCommentGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_one_video_sub_comment',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_one_video_sub_comment',
     ...options
 });
 
@@ -32695,7 +32695,7 @@ export const fetchOneVideoSubCommentApiV1KuaishouWebFetchOneVideoSubCommentGet =
  */
 export const generateShareShortUrlApiV1KuaishouWebGenerateShareShortUrlGet = <ThrowOnError extends boolean = false>(options: Options<GenerateShareShortUrlApiV1KuaishouWebGenerateShareShortUrlGetData, ThrowOnError>) => (options.client ?? client).get<GenerateShareShortUrlApiV1KuaishouWebGenerateShareShortUrlGetResponses, GenerateShareShortUrlApiV1KuaishouWebGenerateShareShortUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/generate_share_short_url',
+    url: '/video-hub/api/v1/kuaishou/web/generate_share_short_url',
     ...options
 });
 
@@ -32778,7 +32778,7 @@ export const generateShareShortUrlApiV1KuaishouWebGenerateShareShortUrlGet = <Th
  */
 export const fetchUserInfoApiV1KuaishouWebFetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1KuaishouWebFetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1KuaishouWebFetchUserInfoGetResponses, FetchUserInfoApiV1KuaishouWebFetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_user_info',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_user_info',
     ...options
 });
 
@@ -33041,7 +33041,7 @@ export const fetchUserInfoApiV1KuaishouWebFetchUserInfoGet = <ThrowOnError exten
  */
 export const fetchUserPostApiV1KuaishouWebFetchUserPostGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostApiV1KuaishouWebFetchUserPostGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostApiV1KuaishouWebFetchUserPostGetResponses, FetchUserPostApiV1KuaishouWebFetchUserPostGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_user_post',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_user_post',
     ...options
 });
 
@@ -33082,7 +33082,7 @@ export const fetchUserPostApiV1KuaishouWebFetchUserPostGet = <ThrowOnError exten
  */
 export const fetchUserLiveReplayApiV1KuaishouWebFetchUserLiveReplayGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLiveReplayApiV1KuaishouWebFetchUserLiveReplayGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLiveReplayApiV1KuaishouWebFetchUserLiveReplayGetResponses, FetchUserLiveReplayApiV1KuaishouWebFetchUserLiveReplayGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_user_live_replay',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_user_live_replay',
     ...options
 });
 
@@ -33123,7 +33123,7 @@ export const fetchUserLiveReplayApiV1KuaishouWebFetchUserLiveReplayGet = <ThrowO
  */
 export const fetchUserCollectApiV1KuaishouWebFetchUserCollectGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserCollectApiV1KuaishouWebFetchUserCollectGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserCollectApiV1KuaishouWebFetchUserCollectGetResponses, FetchUserCollectApiV1KuaishouWebFetchUserCollectGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_user_collect',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_user_collect',
     ...options
 });
 
@@ -33155,7 +33155,7 @@ export const fetchUserCollectApiV1KuaishouWebFetchUserCollectGet = <ThrowOnError
  */
 export const fetchKuaishouHotListV1ApiV1KuaishouWebFetchKuaishouHotListV1Get = <ThrowOnError extends boolean = false>(options?: Options<FetchKuaishouHotListV1ApiV1KuaishouWebFetchKuaishouHotListV1GetData, ThrowOnError>) => (options?.client ?? client).get<FetchKuaishouHotListV1ApiV1KuaishouWebFetchKuaishouHotListV1GetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_kuaishou_hot_list_v1',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_kuaishou_hot_list_v1',
     ...options
 });
 
@@ -33199,7 +33199,7 @@ export const fetchKuaishouHotListV1ApiV1KuaishouWebFetchKuaishouHotListV1Get = <
  */
 export const fetchKuaishouHotListV2ApiV1KuaishouWebFetchKuaishouHotListV2Get = <ThrowOnError extends boolean = false>(options?: Options<FetchKuaishouHotListV2ApiV1KuaishouWebFetchKuaishouHotListV2GetData, ThrowOnError>) => (options?.client ?? client).get<FetchKuaishouHotListV2ApiV1KuaishouWebFetchKuaishouHotListV2GetResponses, FetchKuaishouHotListV2ApiV1KuaishouWebFetchKuaishouHotListV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_kuaishou_hot_list_v2',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_kuaishou_hot_list_v2',
     ...options
 });
 
@@ -33235,7 +33235,7 @@ export const fetchKuaishouHotListV2ApiV1KuaishouWebFetchKuaishouHotListV2Get = <
  */
 export const fetchGetUserIdApiV1KuaishouWebFetchGetUserIdGet = <ThrowOnError extends boolean = false>(options: Options<FetchGetUserIdApiV1KuaishouWebFetchGetUserIdGetData, ThrowOnError>) => (options.client ?? client).get<FetchGetUserIdApiV1KuaishouWebFetchGetUserIdGetResponses, FetchGetUserIdApiV1KuaishouWebFetchGetUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/web/fetch_get_user_id',
+    url: '/video-hub/api/v1/kuaishou/web/fetch_get_user_id',
     ...options
 });
 
@@ -33266,7 +33266,7 @@ export const fetchGetUserIdApiV1KuaishouWebFetchGetUserIdGet = <ThrowOnError ext
  */
 export const fetchOneVideoV1ApiV1KuaishouAppFetchOneVideoGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV1ApiV1KuaishouAppFetchOneVideoGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV1ApiV1KuaishouAppFetchOneVideoGetResponses, FetchOneVideoV1ApiV1KuaishouAppFetchOneVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_one_video',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_one_video',
     ...options
 });
 
@@ -33300,7 +33300,7 @@ export const fetchOneVideoV1ApiV1KuaishouAppFetchOneVideoGet = <ThrowOnError ext
  */
 export const fetchVideosBatchApiV1KuaishouAppFetchVideosBatchGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideosBatchApiV1KuaishouAppFetchVideosBatchGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideosBatchApiV1KuaishouAppFetchVideosBatchGetResponses, FetchVideosBatchApiV1KuaishouAppFetchVideosBatchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_videos_batch',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_videos_batch',
     ...options
 });
 
@@ -33328,7 +33328,7 @@ export const fetchVideosBatchApiV1KuaishouAppFetchVideosBatchGet = <ThrowOnError
  */
 export const fetchOneVideoByShareTextApiV1KuaishouAppFetchOneVideoByUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoByShareTextApiV1KuaishouAppFetchOneVideoByUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoByShareTextApiV1KuaishouAppFetchOneVideoByUrlGetResponses, FetchOneVideoByShareTextApiV1KuaishouAppFetchOneVideoByUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_one_video_by_url',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_one_video_by_url',
     ...options
 });
 
@@ -33361,7 +33361,7 @@ export const fetchOneVideoByShareTextApiV1KuaishouAppFetchOneVideoByUrlGet = <Th
  */
 export const fetchVideoCommentApiV1KuaishouAppFetchOneVideoCommentGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoCommentApiV1KuaishouAppFetchOneVideoCommentGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoCommentApiV1KuaishouAppFetchOneVideoCommentGetResponses, FetchVideoCommentApiV1KuaishouAppFetchOneVideoCommentGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_one_video_comment',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_one_video_comment',
     ...options
 });
 
@@ -33397,7 +33397,7 @@ export const fetchVideoCommentApiV1KuaishouAppFetchOneVideoCommentGet = <ThrowOn
  */
 export const fetchOneUserV2ApiV1KuaishouAppFetchOneUserV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneUserV2ApiV1KuaishouAppFetchOneUserV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneUserV2ApiV1KuaishouAppFetchOneUserV2GetResponses, FetchOneUserV2ApiV1KuaishouAppFetchOneUserV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_one_user_v2',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_one_user_v2',
     ...options
 });
 
@@ -33427,7 +33427,7 @@ export const fetchOneUserV2ApiV1KuaishouAppFetchOneUserV2Get = <ThrowOnError ext
  */
 export const fetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGetResponses, FetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_user_live_info',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_user_live_info',
     ...options
 });
 
@@ -33460,7 +33460,7 @@ export const fetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGet = <ThrowOnErr
  */
 export const fetchUserHotPostApiV1KuaishouAppFetchUserHotPostGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserHotPostApiV1KuaishouAppFetchUserHotPostGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserHotPostApiV1KuaishouAppFetchUserHotPostGetResponses, FetchUserHotPostApiV1KuaishouAppFetchUserHotPostGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_user_hot_post',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_user_hot_post',
     ...options
 });
 
@@ -33495,7 +33495,7 @@ export const fetchUserHotPostApiV1KuaishouAppFetchUserHotPostGet = <ThrowOnError
  */
 export const fetchUserPostV2ApiV1KuaishouAppFetchUserPostV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostV2ApiV1KuaishouAppFetchUserPostV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostV2ApiV1KuaishouAppFetchUserPostV2GetResponses, FetchUserPostV2ApiV1KuaishouAppFetchUserPostV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_user_post_v2',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_user_post_v2',
     ...options
 });
 
@@ -33559,7 +33559,7 @@ export const fetchUserPostV2ApiV1KuaishouAppFetchUserPostV2Get = <ThrowOnError e
  */
 export const searchComprehensiveApiV1KuaishouAppSearchComprehensiveGet = <ThrowOnError extends boolean = false>(options: Options<SearchComprehensiveApiV1KuaishouAppSearchComprehensiveGetData, ThrowOnError>) => (options.client ?? client).get<SearchComprehensiveApiV1KuaishouAppSearchComprehensiveGetResponses, SearchComprehensiveApiV1KuaishouAppSearchComprehensiveGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/search_comprehensive',
+    url: '/video-hub/api/v1/kuaishou/app/search_comprehensive',
     ...options
 });
 
@@ -33592,7 +33592,7 @@ export const searchComprehensiveApiV1KuaishouAppSearchComprehensiveGet = <ThrowO
  */
 export const searchVideoV2ApiV1KuaishouAppSearchVideoV2Get = <ThrowOnError extends boolean = false>(options: Options<SearchVideoV2ApiV1KuaishouAppSearchVideoV2GetData, ThrowOnError>) => (options.client ?? client).get<SearchVideoV2ApiV1KuaishouAppSearchVideoV2GetResponses, SearchVideoV2ApiV1KuaishouAppSearchVideoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/search_video_v2',
+    url: '/video-hub/api/v1/kuaishou/app/search_video_v2',
     ...options
 });
 
@@ -33625,7 +33625,7 @@ export const searchVideoV2ApiV1KuaishouAppSearchVideoV2Get = <ThrowOnError exten
  */
 export const searchUserV2ApiV1KuaishouAppSearchUserV2Get = <ThrowOnError extends boolean = false>(options: Options<SearchUserV2ApiV1KuaishouAppSearchUserV2GetData, ThrowOnError>) => (options.client ?? client).get<SearchUserV2ApiV1KuaishouAppSearchUserV2GetResponses, SearchUserV2ApiV1KuaishouAppSearchUserV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/search_user_v2',
+    url: '/video-hub/api/v1/kuaishou/app/search_user_v2',
     ...options
 });
 
@@ -33646,7 +33646,7 @@ export const searchUserV2ApiV1KuaishouAppSearchUserV2Get = <ThrowOnError extends
  */
 export const fetchHotBoardCategoriesApiV1KuaishouAppFetchHotBoardCategoriesGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotBoardCategoriesApiV1KuaishouAppFetchHotBoardCategoriesGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotBoardCategoriesApiV1KuaishouAppFetchHotBoardCategoriesGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_hot_board_categories',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_hot_board_categories',
     ...options
 });
 
@@ -33679,7 +33679,7 @@ export const fetchHotBoardCategoriesApiV1KuaishouAppFetchHotBoardCategoriesGet =
  */
 export const fetchHotBoardDetailApiV1KuaishouAppFetchHotBoardDetailGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotBoardDetailApiV1KuaishouAppFetchHotBoardDetailGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotBoardDetailApiV1KuaishouAppFetchHotBoardDetailGetResponses, FetchHotBoardDetailApiV1KuaishouAppFetchHotBoardDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_hot_board_detail',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_hot_board_detail',
     ...options
 });
 
@@ -33700,7 +33700,7 @@ export const fetchHotBoardDetailApiV1KuaishouAppFetchHotBoardDetailGet = <ThrowO
  */
 export const fetchHotSearchPersonApiV1KuaishouAppFetchHotSearchPersonGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchPersonApiV1KuaishouAppFetchHotSearchPersonGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchPersonApiV1KuaishouAppFetchHotSearchPersonGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_hot_search_person',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_hot_search_person',
     ...options
 });
 
@@ -33799,7 +33799,7 @@ export const fetchHotSearchPersonApiV1KuaishouAppFetchHotSearchPersonGet = <Thro
  */
 export const fetchLiveTopListApiV1KuaishouAppFetchLiveTopListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchLiveTopListApiV1KuaishouAppFetchLiveTopListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchLiveTopListApiV1KuaishouAppFetchLiveTopListGetResponses, FetchLiveTopListApiV1KuaishouAppFetchLiveTopListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_live_top_list',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_live_top_list',
     ...options
 });
 
@@ -33844,7 +33844,7 @@ export const fetchLiveTopListApiV1KuaishouAppFetchLiveTopListGet = <ThrowOnError
  */
 export const fetchShoppingTopListApiV1KuaishouAppFetchShoppingTopListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchShoppingTopListApiV1KuaishouAppFetchShoppingTopListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchShoppingTopListApiV1KuaishouAppFetchShoppingTopListGetResponses, FetchShoppingTopListApiV1KuaishouAppFetchShoppingTopListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_shopping_top_list',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_shopping_top_list',
     ...options
 });
 
@@ -33938,7 +33938,7 @@ export const fetchShoppingTopListApiV1KuaishouAppFetchShoppingTopListGet = <Thro
  */
 export const fetchBrandTopListApiV1KuaishouAppFetchBrandTopListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchBrandTopListApiV1KuaishouAppFetchBrandTopListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchBrandTopListApiV1KuaishouAppFetchBrandTopListGetResponses, FetchBrandTopListApiV1KuaishouAppFetchBrandTopListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_brand_top_list',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_brand_top_list',
     ...options
 });
 
@@ -33966,7 +33966,7 @@ export const fetchBrandTopListApiV1KuaishouAppFetchBrandTopListGet = <ThrowOnErr
  */
 export const generateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkGet = <ThrowOnError extends boolean = false>(options: Options<GenerateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkGetData, ThrowOnError>) => (options.client ?? client).get<GenerateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkGetResponses, GenerateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/generate_kuaishou_share_link',
+    url: '/video-hub/api/v1/kuaishou/app/generate_kuaishou_share_link',
     ...options
 });
 
@@ -33994,7 +33994,7 @@ export const generateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkG
  */
 export const fetchMagicFaceUsageApiV1KuaishouAppFetchMagicFaceUsageGet = <ThrowOnError extends boolean = false>(options: Options<FetchMagicFaceUsageApiV1KuaishouAppFetchMagicFaceUsageGetData, ThrowOnError>) => (options.client ?? client).get<FetchMagicFaceUsageApiV1KuaishouAppFetchMagicFaceUsageGetResponses, FetchMagicFaceUsageApiV1KuaishouAppFetchMagicFaceUsageGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_magic_face_usage',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_magic_face_usage',
     ...options
 });
 
@@ -34028,7 +34028,7 @@ export const fetchMagicFaceUsageApiV1KuaishouAppFetchMagicFaceUsageGet = <ThrowO
  */
 export const fetchMagicFaceHotApiV1KuaishouAppFetchMagicFaceHotGet = <ThrowOnError extends boolean = false>(options: Options<FetchMagicFaceHotApiV1KuaishouAppFetchMagicFaceHotGetData, ThrowOnError>) => (options.client ?? client).get<FetchMagicFaceHotApiV1KuaishouAppFetchMagicFaceHotGetResponses, FetchMagicFaceHotApiV1KuaishouAppFetchMagicFaceHotGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/kuaishou/app/fetch_magic_face_hot',
+    url: '/video-hub/api/v1/kuaishou/app/fetch_magic_face_hot',
     ...options
 });
 
@@ -34062,7 +34062,7 @@ export const fetchMagicFaceHotApiV1KuaishouAppFetchMagicFaceHotGet = <ThrowOnErr
  */
 export const fetchColumnArticlesApiV1ZhihuWebFetchColumnArticlesGet = <ThrowOnError extends boolean = false>(options: Options<FetchColumnArticlesApiV1ZhihuWebFetchColumnArticlesGetData, ThrowOnError>) => (options.client ?? client).get<FetchColumnArticlesApiV1ZhihuWebFetchColumnArticlesGetResponses, FetchColumnArticlesApiV1ZhihuWebFetchColumnArticlesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_column_articles',
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_articles',
     ...options
 });
 
@@ -34090,7 +34090,7 @@ export const fetchColumnArticlesApiV1ZhihuWebFetchColumnArticlesGet = <ThrowOnEr
  */
 export const fetchColumnArticleDetailApiV1ZhihuWebFetchColumnArticleDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchColumnArticleDetailApiV1ZhihuWebFetchColumnArticleDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchColumnArticleDetailApiV1ZhihuWebFetchColumnArticleDetailGetResponses, FetchColumnArticleDetailApiV1ZhihuWebFetchColumnArticleDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_column_article_detail',
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_article_detail',
     ...options
 });
 
@@ -34124,7 +34124,7 @@ export const fetchColumnArticleDetailApiV1ZhihuWebFetchColumnArticleDetailGet = 
  */
 export const fetchColumnRecommendApiV1ZhihuWebFetchColumnRecommendGet = <ThrowOnError extends boolean = false>(options: Options<FetchColumnRecommendApiV1ZhihuWebFetchColumnRecommendGetData, ThrowOnError>) => (options.client ?? client).get<FetchColumnRecommendApiV1ZhihuWebFetchColumnRecommendGetResponses, FetchColumnRecommendApiV1ZhihuWebFetchColumnRecommendGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_column_recommend',
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_recommend',
     ...options
 });
 
@@ -34152,7 +34152,7 @@ export const fetchColumnRecommendApiV1ZhihuWebFetchColumnRecommendGet = <ThrowOn
  */
 export const fetchColumnRelationshipApiV1ZhihuWebFetchColumnRelationshipGet = <ThrowOnError extends boolean = false>(options: Options<FetchColumnRelationshipApiV1ZhihuWebFetchColumnRelationshipGetData, ThrowOnError>) => (options.client ?? client).get<FetchColumnRelationshipApiV1ZhihuWebFetchColumnRelationshipGetResponses, FetchColumnRelationshipApiV1ZhihuWebFetchColumnRelationshipGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_column_relationship',
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_relationship',
     ...options
 });
 
@@ -34180,7 +34180,7 @@ export const fetchColumnRelationshipApiV1ZhihuWebFetchColumnRelationshipGet = <T
  */
 export const fetchColumnCommentConfigApiV1ZhihuWebFetchColumnCommentConfigGet = <ThrowOnError extends boolean = false>(options: Options<FetchColumnCommentConfigApiV1ZhihuWebFetchColumnCommentConfigGetData, ThrowOnError>) => (options.client ?? client).get<FetchColumnCommentConfigApiV1ZhihuWebFetchColumnCommentConfigGetResponses, FetchColumnCommentConfigApiV1ZhihuWebFetchColumnCommentConfigGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_column_comment_config',
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_comment_config',
     ...options
 });
 
@@ -34212,7 +34212,7 @@ export const fetchColumnCommentConfigApiV1ZhihuWebFetchColumnCommentConfigGet = 
  */
 export const fetchHotRecommendApiV1ZhihuWebFetchHotRecommendGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotRecommendApiV1ZhihuWebFetchHotRecommendGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotRecommendApiV1ZhihuWebFetchHotRecommendGetResponses, FetchHotRecommendApiV1ZhihuWebFetchHotRecommendGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_hot_recommend',
+    url: '/video-hub/api/v1/zhihu/web/fetch_hot_recommend',
     ...options
 });
 
@@ -34243,7 +34243,7 @@ export const fetchHotRecommendApiV1ZhihuWebFetchHotRecommendGet = <ThrowOnError 
  */
 export const fetchHotListApiV1ZhihuWebFetchHotListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotListApiV1ZhihuWebFetchHotListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotListApiV1ZhihuWebFetchHotListGetResponses, FetchHotListApiV1ZhihuWebFetchHotListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_hot_list',
+    url: '/video-hub/api/v1/zhihu/web/fetch_hot_list',
     ...options
 });
 
@@ -34274,7 +34274,7 @@ export const fetchHotListApiV1ZhihuWebFetchHotListGet = <ThrowOnError extends bo
  */
 export const fetchVideoListApiV1ZhihuWebFetchVideoListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchVideoListApiV1ZhihuWebFetchVideoListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchVideoListApiV1ZhihuWebFetchVideoListGetResponses, FetchVideoListApiV1ZhihuWebFetchVideoListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_video_list',
+    url: '/video-hub/api/v1/zhihu/web/fetch_video_list',
     ...options
 });
 
@@ -34376,7 +34376,7 @@ export const fetchVideoListApiV1ZhihuWebFetchVideoListGet = <ThrowOnError extend
  */
 export const fetchArticleSearchV3ApiV1ZhihuWebFetchArticleSearchV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchArticleSearchV3ApiV1ZhihuWebFetchArticleSearchV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchArticleSearchV3ApiV1ZhihuWebFetchArticleSearchV3GetResponses, FetchArticleSearchV3ApiV1ZhihuWebFetchArticleSearchV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_article_search_v3',
+    url: '/video-hub/api/v1/zhihu/web/fetch_article_search_v3',
     ...options
 });
 
@@ -34410,7 +34410,7 @@ export const fetchArticleSearchV3ApiV1ZhihuWebFetchArticleSearchV3Get = <ThrowOn
  */
 export const fetchUserSearchV3ApiV1ZhihuWebFetchUserSearchV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchV3ApiV1ZhihuWebFetchUserSearchV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSearchV3ApiV1ZhihuWebFetchUserSearchV3GetResponses, FetchUserSearchV3ApiV1ZhihuWebFetchUserSearchV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_user_search_v3',
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_search_v3',
     ...options
 });
 
@@ -34444,7 +34444,7 @@ export const fetchUserSearchV3ApiV1ZhihuWebFetchUserSearchV3Get = <ThrowOnError 
  */
 export const fetchTopicSearchV3ApiV1ZhihuWebFetchTopicSearchV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchTopicSearchV3ApiV1ZhihuWebFetchTopicSearchV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchTopicSearchV3ApiV1ZhihuWebFetchTopicSearchV3GetResponses, FetchTopicSearchV3ApiV1ZhihuWebFetchTopicSearchV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_topic_search_v3',
+    url: '/video-hub/api/v1/zhihu/web/fetch_topic_search_v3',
     ...options
 });
 
@@ -34480,7 +34480,7 @@ export const fetchTopicSearchV3ApiV1ZhihuWebFetchTopicSearchV3Get = <ThrowOnErro
  */
 export const fetchScholarSearchV3ApiV1ZhihuWebFetchScholarSearchV3Post = <ThrowOnError extends boolean = false>(options: Options<FetchScholarSearchV3ApiV1ZhihuWebFetchScholarSearchV3PostData, ThrowOnError>) => (options.client ?? client).post<FetchScholarSearchV3ApiV1ZhihuWebFetchScholarSearchV3PostResponses, FetchScholarSearchV3ApiV1ZhihuWebFetchScholarSearchV3PostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_scholar_search_v3',
+    url: '/video-hub/api/v1/zhihu/web/fetch_scholar_search_v3',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -34512,7 +34512,7 @@ export const fetchScholarSearchV3ApiV1ZhihuWebFetchScholarSearchV3Post = <ThrowO
  */
 export const fetchAiSearchApiV1ZhihuWebFetchAiSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchAiSearchApiV1ZhihuWebFetchAiSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchAiSearchApiV1ZhihuWebFetchAiSearchGetResponses, FetchAiSearchApiV1ZhihuWebFetchAiSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_ai_search',
+    url: '/video-hub/api/v1/zhihu/web/fetch_ai_search',
     ...options
 });
 
@@ -34540,7 +34540,7 @@ export const fetchAiSearchApiV1ZhihuWebFetchAiSearchGet = <ThrowOnError extends 
  */
 export const fetchAiSearchResultApiV1ZhihuWebFetchAiSearchResultGet = <ThrowOnError extends boolean = false>(options: Options<FetchAiSearchResultApiV1ZhihuWebFetchAiSearchResultGetData, ThrowOnError>) => (options.client ?? client).get<FetchAiSearchResultApiV1ZhihuWebFetchAiSearchResultGetResponses, FetchAiSearchResultApiV1ZhihuWebFetchAiSearchResultGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_ai_search_result',
+    url: '/video-hub/api/v1/zhihu/web/fetch_ai_search_result',
     ...options
 });
 
@@ -34577,7 +34577,7 @@ export const fetchAiSearchResultApiV1ZhihuWebFetchAiSearchResultGet = <ThrowOnEr
  */
 export const fetchVideoSearchV3ApiV1ZhihuWebFetchVideoSearchV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchV3ApiV1ZhihuWebFetchVideoSearchV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoSearchV3ApiV1ZhihuWebFetchVideoSearchV3GetResponses, FetchVideoSearchV3ApiV1ZhihuWebFetchVideoSearchV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_video_search_v3',
+    url: '/video-hub/api/v1/zhihu/web/fetch_video_search_v3',
     ...options
 });
 
@@ -34614,7 +34614,7 @@ export const fetchVideoSearchV3ApiV1ZhihuWebFetchVideoSearchV3Get = <ThrowOnErro
  */
 export const fetchColumnSearchV3ApiV1ZhihuWebFetchColumnSearchV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchColumnSearchV3ApiV1ZhihuWebFetchColumnSearchV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchColumnSearchV3ApiV1ZhihuWebFetchColumnSearchV3GetResponses, FetchColumnSearchV3ApiV1ZhihuWebFetchColumnSearchV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_column_search_v3',
+    url: '/video-hub/api/v1/zhihu/web/fetch_column_search_v3',
     ...options
 });
 
@@ -34651,7 +34651,7 @@ export const fetchColumnSearchV3ApiV1ZhihuWebFetchColumnSearchV3Get = <ThrowOnEr
  */
 export const fetchSaltSearchV3ApiV1ZhihuWebFetchSaltSearchV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchSaltSearchV3ApiV1ZhihuWebFetchSaltSearchV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchSaltSearchV3ApiV1ZhihuWebFetchSaltSearchV3GetResponses, FetchSaltSearchV3ApiV1ZhihuWebFetchSaltSearchV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_salt_search_v3',
+    url: '/video-hub/api/v1/zhihu/web/fetch_salt_search_v3',
     ...options
 });
 
@@ -34688,7 +34688,7 @@ export const fetchSaltSearchV3ApiV1ZhihuWebFetchSaltSearchV3Get = <ThrowOnError 
  */
 export const fetchEbookSearchV3ApiV1ZhihuWebFetchEbookSearchV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchEbookSearchV3ApiV1ZhihuWebFetchEbookSearchV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchEbookSearchV3ApiV1ZhihuWebFetchEbookSearchV3GetResponses, FetchEbookSearchV3ApiV1ZhihuWebFetchEbookSearchV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_ebook_search_v3',
+    url: '/video-hub/api/v1/zhihu/web/fetch_ebook_search_v3',
     ...options
 });
 
@@ -34713,7 +34713,7 @@ export const fetchEbookSearchV3ApiV1ZhihuWebFetchEbookSearchV3Get = <ThrowOnErro
  */
 export const fetchPresetSearchApiV1ZhihuWebFetchPresetSearchGet = <ThrowOnError extends boolean = false>(options?: Options<FetchPresetSearchApiV1ZhihuWebFetchPresetSearchGetData, ThrowOnError>) => (options?.client ?? client).get<FetchPresetSearchApiV1ZhihuWebFetchPresetSearchGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_preset_search',
+    url: '/video-hub/api/v1/zhihu/web/fetch_preset_search',
     ...options
 });
 
@@ -34738,7 +34738,7 @@ export const fetchPresetSearchApiV1ZhihuWebFetchPresetSearchGet = <ThrowOnError 
  */
 export const fetchSearchRecommendApiV1ZhihuWebFetchSearchRecommendGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSearchRecommendApiV1ZhihuWebFetchSearchRecommendGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSearchRecommendApiV1ZhihuWebFetchSearchRecommendGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_search_recommend',
+    url: '/video-hub/api/v1/zhihu/web/fetch_search_recommend',
     ...options
 });
 
@@ -34766,7 +34766,7 @@ export const fetchSearchRecommendApiV1ZhihuWebFetchSearchRecommendGet = <ThrowOn
  */
 export const fetchSearchSuggestApiV1ZhihuWebFetchSearchSuggestGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchSuggestApiV1ZhihuWebFetchSearchSuggestGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchSuggestApiV1ZhihuWebFetchSearchSuggestGetResponses, FetchSearchSuggestApiV1ZhihuWebFetchSearchSuggestGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_search_suggest',
+    url: '/video-hub/api/v1/zhihu/web/fetch_search_suggest',
     ...options
 });
 
@@ -34807,7 +34807,7 @@ export const fetchSearchSuggestApiV1ZhihuWebFetchSearchSuggestGet = <ThrowOnErro
  */
 export const fetchCommentV5ApiV1ZhihuWebFetchCommentV5Get = <ThrowOnError extends boolean = false>(options: Options<FetchCommentV5ApiV1ZhihuWebFetchCommentV5GetData, ThrowOnError>) => (options.client ?? client).get<FetchCommentV5ApiV1ZhihuWebFetchCommentV5GetResponses, FetchCommentV5ApiV1ZhihuWebFetchCommentV5GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_comment_v5',
+    url: '/video-hub/api/v1/zhihu/web/fetch_comment_v5',
     ...options
 });
 
@@ -34848,7 +34848,7 @@ export const fetchCommentV5ApiV1ZhihuWebFetchCommentV5Get = <ThrowOnError extend
  */
 export const fetchSubCommentV5ApiV1ZhihuWebFetchSubCommentV5Get = <ThrowOnError extends boolean = false>(options: Options<FetchSubCommentV5ApiV1ZhihuWebFetchSubCommentV5GetData, ThrowOnError>) => (options.client ?? client).get<FetchSubCommentV5ApiV1ZhihuWebFetchSubCommentV5GetResponses, FetchSubCommentV5ApiV1ZhihuWebFetchSubCommentV5GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_sub_comment_v5',
+    url: '/video-hub/api/v1/zhihu/web/fetch_sub_comment_v5',
     ...options
 });
 
@@ -34876,7 +34876,7 @@ export const fetchSubCommentV5ApiV1ZhihuWebFetchSubCommentV5Get = <ThrowOnError 
  */
 export const fetchUserInfoApiV1ZhihuWebFetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1ZhihuWebFetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1ZhihuWebFetchUserInfoGetResponses, FetchUserInfoApiV1ZhihuWebFetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_user_info',
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_info',
     ...options
 });
 
@@ -34910,7 +34910,7 @@ export const fetchUserInfoApiV1ZhihuWebFetchUserInfoGet = <ThrowOnError extends 
  */
 export const fetchUserFolloweesApiV1ZhihuWebFetchUserFolloweesGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFolloweesApiV1ZhihuWebFetchUserFolloweesGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFolloweesApiV1ZhihuWebFetchUserFolloweesGetResponses, FetchUserFolloweesApiV1ZhihuWebFetchUserFolloweesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_user_followees',
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_followees',
     ...options
 });
 
@@ -34944,7 +34944,7 @@ export const fetchUserFolloweesApiV1ZhihuWebFetchUserFolloweesGet = <ThrowOnErro
  */
 export const fetchUserFollowersApiV1ZhihuWebFetchUserFollowersGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetResponses, FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_user_followers',
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_followers',
     ...options
 });
 
@@ -34978,7 +34978,7 @@ export const fetchUserFollowersApiV1ZhihuWebFetchUserFollowersGet = <ThrowOnErro
  */
 export const fetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGetResponses, FetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_user_follow_columns',
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_follow_columns',
     ...options
 });
 
@@ -35012,7 +35012,7 @@ export const fetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGet = <Thr
  */
 export const fetchUserFollowQuestionsApiV1ZhihuWebFetchUserFollowQuestionsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowQuestionsApiV1ZhihuWebFetchUserFollowQuestionsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowQuestionsApiV1ZhihuWebFetchUserFollowQuestionsGetResponses, FetchUserFollowQuestionsApiV1ZhihuWebFetchUserFollowQuestionsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_user_follow_questions',
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_follow_questions',
     ...options
 });
 
@@ -35046,7 +35046,7 @@ export const fetchUserFollowQuestionsApiV1ZhihuWebFetchUserFollowQuestionsGet = 
  */
 export const fetchUserFollowCollectionsApiV1ZhihuWebFetchUserFollowCollectionsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowCollectionsApiV1ZhihuWebFetchUserFollowCollectionsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowCollectionsApiV1ZhihuWebFetchUserFollowCollectionsGetResponses, FetchUserFollowCollectionsApiV1ZhihuWebFetchUserFollowCollectionsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_user_follow_collections',
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_follow_collections',
     ...options
 });
 
@@ -35080,7 +35080,7 @@ export const fetchUserFollowCollectionsApiV1ZhihuWebFetchUserFollowCollectionsGe
  */
 export const fetchUserFollowTopicsApiV1ZhihuWebFetchUserFollowTopicsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowTopicsApiV1ZhihuWebFetchUserFollowTopicsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowTopicsApiV1ZhihuWebFetchUserFollowTopicsGetResponses, FetchUserFollowTopicsApiV1ZhihuWebFetchUserFollowTopicsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_user_follow_topics',
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_follow_topics',
     ...options
 });
 
@@ -35105,7 +35105,7 @@ export const fetchUserFollowTopicsApiV1ZhihuWebFetchUserFollowTopicsGet = <Throw
  */
 export const fetchRecommendFolloweesApiV1ZhihuWebFetchRecommendFolloweesGet = <ThrowOnError extends boolean = false>(options?: Options<FetchRecommendFolloweesApiV1ZhihuWebFetchRecommendFolloweesGetData, ThrowOnError>) => (options?.client ?? client).get<FetchRecommendFolloweesApiV1ZhihuWebFetchRecommendFolloweesGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_recommend_followees',
+    url: '/video-hub/api/v1/zhihu/web/fetch_recommend_followees',
     ...options
 });
 
@@ -35156,7 +35156,7 @@ export const fetchRecommendFolloweesApiV1ZhihuWebFetchRecommendFolloweesGet = <T
  */
 export const fetchQuestionAnswersApiV1ZhihuWebFetchQuestionAnswersGet = <ThrowOnError extends boolean = false>(options: Options<FetchQuestionAnswersApiV1ZhihuWebFetchQuestionAnswersGetData, ThrowOnError>) => (options.client ?? client).get<FetchQuestionAnswersApiV1ZhihuWebFetchQuestionAnswersGetResponses, FetchQuestionAnswersApiV1ZhihuWebFetchQuestionAnswersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/zhihu/web/fetch_question_answers',
+    url: '/video-hub/api/v1/zhihu/web/fetch_question_answers',
     ...options
 });
 
@@ -35186,7 +35186,7 @@ export const fetchQuestionAnswersApiV1ZhihuWebFetchQuestionAnswersGet = <ThrowOn
  */
 export const fetchPostDetailApiV1PipixiaAppFetchPostDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailApiV1PipixiaAppFetchPostDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailApiV1PipixiaAppFetchPostDetailGetResponses, FetchPostDetailApiV1PipixiaAppFetchPostDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_post_detail',
+    url: '/video-hub/api/v1/pipixia/app/fetch_post_detail',
     ...options
 });
 
@@ -35217,7 +35217,7 @@ export const fetchPostDetailApiV1PipixiaAppFetchPostDetailGet = <ThrowOnError ex
  */
 export const fetchIncreasePostViewCountApiV1PipixiaAppFetchIncreasePostViewCountGet = <ThrowOnError extends boolean = false>(options: Options<FetchIncreasePostViewCountApiV1PipixiaAppFetchIncreasePostViewCountGetData, ThrowOnError>) => (options.client ?? client).get<FetchIncreasePostViewCountApiV1PipixiaAppFetchIncreasePostViewCountGetResponses, FetchIncreasePostViewCountApiV1PipixiaAppFetchIncreasePostViewCountGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_increase_post_view_count',
+    url: '/video-hub/api/v1/pipixia/app/fetch_increase_post_view_count',
     ...options
 });
 
@@ -35245,7 +35245,7 @@ export const fetchIncreasePostViewCountApiV1PipixiaAppFetchIncreasePostViewCount
  */
 export const fetchPostStatisticsApiV1PipixiaAppFetchPostStatisticsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostStatisticsApiV1PipixiaAppFetchPostStatisticsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostStatisticsApiV1PipixiaAppFetchPostStatisticsGetResponses, FetchPostStatisticsApiV1PipixiaAppFetchPostStatisticsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_post_statistics',
+    url: '/video-hub/api/v1/pipixia/app/fetch_post_statistics',
     ...options
 });
 
@@ -35273,7 +35273,7 @@ export const fetchPostStatisticsApiV1PipixiaAppFetchPostStatisticsGet = <ThrowOn
  */
 export const fetchUserInfoApiV1PipixiaAppFetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1PipixiaAppFetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1PipixiaAppFetchUserInfoGetResponses, FetchUserInfoApiV1PipixiaAppFetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_user_info',
+    url: '/video-hub/api/v1/pipixia/app/fetch_user_info',
     ...options
 });
 
@@ -35307,7 +35307,7 @@ export const fetchUserInfoApiV1PipixiaAppFetchUserInfoGet = <ThrowOnError extend
  */
 export const fetchUserPostListApiV1PipixiaAppFetchUserPostListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostListApiV1PipixiaAppFetchUserPostListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostListApiV1PipixiaAppFetchUserPostListGetResponses, FetchUserPostListApiV1PipixiaAppFetchUserPostListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_user_post_list',
+    url: '/video-hub/api/v1/pipixia/app/fetch_user_post_list',
     ...options
 });
 
@@ -35338,7 +35338,7 @@ export const fetchUserPostListApiV1PipixiaAppFetchUserPostListGet = <ThrowOnErro
  */
 export const fetchUserFollowerListApiV1PipixiaAppFetchUserFollowerListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowerListApiV1PipixiaAppFetchUserFollowerListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowerListApiV1PipixiaAppFetchUserFollowerListGetResponses, FetchUserFollowerListApiV1PipixiaAppFetchUserFollowerListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_user_follower_list',
+    url: '/video-hub/api/v1/pipixia/app/fetch_user_follower_list',
     ...options
 });
 
@@ -35369,7 +35369,7 @@ export const fetchUserFollowerListApiV1PipixiaAppFetchUserFollowerListGet = <Thr
  */
 export const fetchUserFollowingListApiV1PipixiaAppFetchUserFollowingListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowingListApiV1PipixiaAppFetchUserFollowingListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowingListApiV1PipixiaAppFetchUserFollowingListGetResponses, FetchUserFollowingListApiV1PipixiaAppFetchUserFollowingListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_user_following_list',
+    url: '/video-hub/api/v1/pipixia/app/fetch_user_following_list',
     ...options
 });
 
@@ -35403,7 +35403,7 @@ export const fetchUserFollowingListApiV1PipixiaAppFetchUserFollowingListGet = <T
  */
 export const fetchPostCommentListApiV1PipixiaAppFetchPostCommentListGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentListApiV1PipixiaAppFetchPostCommentListGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentListApiV1PipixiaAppFetchPostCommentListGetResponses, FetchPostCommentListApiV1PipixiaAppFetchPostCommentListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_post_comment_list',
+    url: '/video-hub/api/v1/pipixia/app/fetch_post_comment_list',
     ...options
 });
 
@@ -35431,7 +35431,7 @@ export const fetchPostCommentListApiV1PipixiaAppFetchPostCommentListGet = <Throw
  */
 export const fetchShortUrlApiV1PipixiaAppFetchShortUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchShortUrlApiV1PipixiaAppFetchShortUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchShortUrlApiV1PipixiaAppFetchShortUrlGetResponses, FetchShortUrlApiV1PipixiaAppFetchShortUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_short_url',
+    url: '/video-hub/api/v1/pipixia/app/fetch_short_url',
     ...options
 });
 
@@ -35459,7 +35459,7 @@ export const fetchShortUrlApiV1PipixiaAppFetchShortUrlGet = <ThrowOnError extend
  */
 export const fetchHomeFeedApiV1PipixiaAppFetchHomeFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHomeFeedApiV1PipixiaAppFetchHomeFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHomeFeedApiV1PipixiaAppFetchHomeFeedGetResponses, FetchHomeFeedApiV1PipixiaAppFetchHomeFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_home_feed',
+    url: '/video-hub/api/v1/pipixia/app/fetch_home_feed',
     ...options
 });
 
@@ -35483,7 +35483,7 @@ export const fetchHomeFeedApiV1PipixiaAppFetchHomeFeedGet = <ThrowOnError extend
  */
 export const fetchHotSearchWordsApiV1PipixiaAppFetchHotSearchWordsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchWordsApiV1PipixiaAppFetchHotSearchWordsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchWordsApiV1PipixiaAppFetchHotSearchWordsGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_hot_search_words',
+    url: '/video-hub/api/v1/pipixia/app/fetch_hot_search_words',
     ...options
 });
 
@@ -35507,7 +35507,7 @@ export const fetchHotSearchWordsApiV1PipixiaAppFetchHotSearchWordsGet = <ThrowOn
  */
 export const fetchHotSearchBoardListApiV1PipixiaAppFetchHotSearchBoardListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchBoardListApiV1PipixiaAppFetchHotSearchBoardListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchBoardListApiV1PipixiaAppFetchHotSearchBoardListGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_hot_search_board_list',
+    url: '/video-hub/api/v1/pipixia/app/fetch_hot_search_board_list',
     ...options
 });
 
@@ -35535,7 +35535,7 @@ export const fetchHotSearchBoardListApiV1PipixiaAppFetchHotSearchBoardListGet = 
  */
 export const fetchHotSearchBoardDetailApiV1PipixiaAppFetchHotSearchBoardDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotSearchBoardDetailApiV1PipixiaAppFetchHotSearchBoardDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotSearchBoardDetailApiV1PipixiaAppFetchHotSearchBoardDetailGetResponses, FetchHotSearchBoardDetailApiV1PipixiaAppFetchHotSearchBoardDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_hot_search_board_detail',
+    url: '/video-hub/api/v1/pipixia/app/fetch_hot_search_board_detail',
     ...options
 });
 
@@ -35583,7 +35583,7 @@ export const fetchHotSearchBoardDetailApiV1PipixiaAppFetchHotSearchBoardDetailGe
  */
 export const fetchSearchApiV1PipixiaAppFetchSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchApiV1PipixiaAppFetchSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchApiV1PipixiaAppFetchSearchGetResponses, FetchSearchApiV1PipixiaAppFetchSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_search',
+    url: '/video-hub/api/v1/pipixia/app/fetch_search',
     ...options
 });
 
@@ -35610,7 +35610,7 @@ export const fetchSearchApiV1PipixiaAppFetchSearchGet = <ThrowOnError extends bo
  */
 export const fetchHashtagDetailApiV1PipixiaAppFetchHashtagDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagDetailApiV1PipixiaAppFetchHashtagDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagDetailApiV1PipixiaAppFetchHashtagDetailGetResponses, FetchHashtagDetailApiV1PipixiaAppFetchHashtagDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_hashtag_detail',
+    url: '/video-hub/api/v1/pipixia/app/fetch_hashtag_detail',
     ...options
 });
 
@@ -35652,7 +35652,7 @@ export const fetchHashtagDetailApiV1PipixiaAppFetchHashtagDetailGet = <ThrowOnEr
  */
 export const fetchHashtagPostListApiV1PipixiaAppFetchHashtagPostListGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagPostListApiV1PipixiaAppFetchHashtagPostListGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagPostListApiV1PipixiaAppFetchHashtagPostListGetResponses, FetchHashtagPostListApiV1PipixiaAppFetchHashtagPostListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_hashtag_post_list',
+    url: '/video-hub/api/v1/pipixia/app/fetch_hashtag_post_list',
     ...options
 });
 
@@ -35680,7 +35680,7 @@ export const fetchHashtagPostListApiV1PipixiaAppFetchHashtagPostListGet = <Throw
  */
 export const fetchHomeShortDramaFeedApiV1PipixiaAppFetchHomeShortDramaFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHomeShortDramaFeedApiV1PipixiaAppFetchHomeShortDramaFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHomeShortDramaFeedApiV1PipixiaAppFetchHomeShortDramaFeedGetResponses, FetchHomeShortDramaFeedApiV1PipixiaAppFetchHomeShortDramaFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/pipixia/app/fetch_home_short_drama_feed',
+    url: '/video-hub/api/v1/pipixia/app/fetch_home_short_drama_feed',
     ...options
 });
 
@@ -35705,7 +35705,7 @@ export const fetchHomeShortDramaFeedApiV1PipixiaAppFetchHomeShortDramaFeedGet = 
  */
 export const fetchConfigListApiV1WeiboWebFetchConfigListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchConfigListApiV1WeiboWebFetchConfigListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchConfigListApiV1WeiboWebFetchConfigListGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_config_list',
+    url: '/video-hub/api/v1/weibo/web/fetch_config_list',
     ...options
 });
 
@@ -35742,7 +35742,7 @@ export const fetchConfigListApiV1WeiboWebFetchConfigListGet = <ThrowOnError exte
  */
 export const fetchTrendTopApiV1WeiboWebFetchTrendTopGet = <ThrowOnError extends boolean = false>(options: Options<FetchTrendTopApiV1WeiboWebFetchTrendTopGetData, ThrowOnError>) => (options.client ?? client).get<FetchTrendTopApiV1WeiboWebFetchTrendTopGetResponses, FetchTrendTopApiV1WeiboWebFetchTrendTopGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_trend_top',
+    url: '/video-hub/api/v1/weibo/web/fetch_trend_top',
     ...options
 });
 
@@ -35781,7 +35781,7 @@ export const fetchTrendTopApiV1WeiboWebFetchTrendTopGet = <ThrowOnError extends 
  */
 export const fetchChannelFeedApiV1WeiboWebFetchChannelFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchChannelFeedApiV1WeiboWebFetchChannelFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchChannelFeedApiV1WeiboWebFetchChannelFeedGetResponses, FetchChannelFeedApiV1WeiboWebFetchChannelFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_channel_feed',
+    url: '/video-hub/api/v1/weibo/web/fetch_channel_feed',
     ...options
 });
 
@@ -35809,7 +35809,7 @@ export const fetchChannelFeedApiV1WeiboWebFetchChannelFeedGet = <ThrowOnError ex
  */
 export const fetchUserInfoApiV1WeiboWebFetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1WeiboWebFetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1WeiboWebFetchUserInfoGetResponses, FetchUserInfoApiV1WeiboWebFetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_user_info',
+    url: '/video-hub/api/v1/weibo/web/fetch_user_info',
     ...options
 });
 
@@ -35842,7 +35842,7 @@ export const fetchUserInfoApiV1WeiboWebFetchUserInfoGet = <ThrowOnError extends 
  */
 export const fetchUserPostsApiV1WeiboWebFetchUserPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostsApiV1WeiboWebFetchUserPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostsApiV1WeiboWebFetchUserPostsGetResponses, FetchUserPostsApiV1WeiboWebFetchUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_user_posts',
+    url: '/video-hub/api/v1/weibo/web/fetch_user_posts',
     ...options
 });
 
@@ -35870,7 +35870,7 @@ export const fetchUserPostsApiV1WeiboWebFetchUserPostsGet = <ThrowOnError extend
  */
 export const fetchPostDetailApiV1WeiboWebFetchPostDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailApiV1WeiboWebFetchPostDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailApiV1WeiboWebFetchPostDetailGetResponses, FetchPostDetailApiV1WeiboWebFetchPostDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_post_detail',
+    url: '/video-hub/api/v1/weibo/web/fetch_post_detail',
     ...options
 });
 
@@ -35905,7 +35905,7 @@ export const fetchPostDetailApiV1WeiboWebFetchPostDetailGet = <ThrowOnError exte
  */
 export const fetchPostCommentsApiV1WeiboWebFetchPostCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentsApiV1WeiboWebFetchPostCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentsApiV1WeiboWebFetchPostCommentsGetResponses, FetchPostCommentsApiV1WeiboWebFetchPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_post_comments',
+    url: '/video-hub/api/v1/weibo/web/fetch_post_comments',
     ...options
 });
 
@@ -35936,7 +35936,7 @@ export const fetchPostCommentsApiV1WeiboWebFetchPostCommentsGet = <ThrowOnError 
  */
 export const fetchCommentRepliesApiV1WeiboWebFetchCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchCommentRepliesApiV1WeiboWebFetchCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchCommentRepliesApiV1WeiboWebFetchCommentRepliesGetResponses, FetchCommentRepliesApiV1WeiboWebFetchCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_comment_replies',
+    url: '/video-hub/api/v1/weibo/web/fetch_comment_replies',
     ...options
 });
 
@@ -36013,7 +36013,7 @@ export const fetchCommentRepliesApiV1WeiboWebFetchCommentRepliesGet = <ThrowOnEr
  */
 export const fetchSearchApiV1WeiboWebFetchSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchApiV1WeiboWebFetchSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchApiV1WeiboWebFetchSearchGetResponses, FetchSearchApiV1WeiboWebFetchSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_search',
+    url: '/video-hub/api/v1/weibo/web/fetch_search',
     ...options
 });
 
@@ -36046,7 +36046,7 @@ export const fetchSearchApiV1WeiboWebFetchSearchGet = <ThrowOnError extends bool
  */
 export const fetchHotSearchApiV1WeiboWebFetchHotSearchGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchApiV1WeiboWebFetchHotSearchGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchApiV1WeiboWebFetchHotSearchGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_hot_search',
+    url: '/video-hub/api/v1/weibo/web/fetch_hot_search',
     ...options
 });
 
@@ -36075,7 +36075,7 @@ export const fetchHotSearchApiV1WeiboWebFetchHotSearchGet = <ThrowOnError extend
  */
 export const fetchSearchTopicsApiV1WeiboWebFetchSearchTopicsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSearchTopicsApiV1WeiboWebFetchSearchTopicsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSearchTopicsApiV1WeiboWebFetchSearchTopicsGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web/fetch_search_topics',
+    url: '/video-hub/api/v1/weibo/web/fetch_search_topics',
     ...options
 });
 
@@ -36107,7 +36107,7 @@ export const fetchSearchTopicsApiV1WeiboWebFetchSearchTopicsGet = <ThrowOnError 
  */
 export const checkAllowCommentWithPicApiV1WeiboWebV2CheckAllowCommentWithPicGet = <ThrowOnError extends boolean = false>(options: Options<CheckAllowCommentWithPicApiV1WeiboWebV2CheckAllowCommentWithPicGetData, ThrowOnError>) => (options.client ?? client).get<CheckAllowCommentWithPicApiV1WeiboWebV2CheckAllowCommentWithPicGetResponses, CheckAllowCommentWithPicApiV1WeiboWebV2CheckAllowCommentWithPicGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/check_allow_comment_with_pic',
+    url: '/video-hub/api/v1/weibo/web_v2/check_allow_comment_with_pic',
     ...options
 });
 
@@ -36138,7 +36138,7 @@ export const checkAllowCommentWithPicApiV1WeiboWebV2CheckAllowCommentWithPicGet 
  */
 export const fetchPostDetailApiV1WeiboWebV2FetchPostDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailApiV1WeiboWebV2FetchPostDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailApiV1WeiboWebV2FetchPostDetailGetResponses, FetchPostDetailApiV1WeiboWebV2FetchPostDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_post_detail',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_post_detail',
     ...options
 });
 
@@ -36178,7 +36178,7 @@ export const fetchPostDetailApiV1WeiboWebV2FetchPostDetailGet = <ThrowOnError ex
  */
 export const fetchUserInfoApiV1WeiboWebV2FetchUserInfoGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserInfoApiV1WeiboWebV2FetchUserInfoGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserInfoApiV1WeiboWebV2FetchUserInfoGetResponses, FetchUserInfoApiV1WeiboWebV2FetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_info',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_info',
     ...options
 });
 
@@ -36212,7 +36212,7 @@ export const fetchUserInfoApiV1WeiboWebV2FetchUserInfoGet = <ThrowOnError extend
  */
 export const fetchUserBasicInfoApiV1WeiboWebV2FetchUserBasicInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserBasicInfoApiV1WeiboWebV2FetchUserBasicInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserBasicInfoApiV1WeiboWebV2FetchUserBasicInfoGetResponses, FetchUserBasicInfoApiV1WeiboWebV2FetchUserBasicInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_basic_info',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_basic_info',
     ...options
 });
 
@@ -36262,7 +36262,7 @@ export const fetchUserBasicInfoApiV1WeiboWebV2FetchUserBasicInfoGet = <ThrowOnEr
  */
 export const fetchUserPostsApiV1WeiboWebV2FetchUserPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostsApiV1WeiboWebV2FetchUserPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostsApiV1WeiboWebV2FetchUserPostsGetResponses, FetchUserPostsApiV1WeiboWebV2FetchUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_posts',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_posts',
     ...options
 });
 
@@ -36302,7 +36302,7 @@ export const fetchUserPostsApiV1WeiboWebV2FetchUserPostsGet = <ThrowOnError exte
  */
 export const fetchUserOriginalPostsApiV1WeiboWebV2FetchUserOriginalPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserOriginalPostsApiV1WeiboWebV2FetchUserOriginalPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserOriginalPostsApiV1WeiboWebV2FetchUserOriginalPostsGetResponses, FetchUserOriginalPostsApiV1WeiboWebV2FetchUserOriginalPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_original_posts',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_original_posts',
     ...options
 });
 
@@ -36342,7 +36342,7 @@ export const fetchUserOriginalPostsApiV1WeiboWebV2FetchUserOriginalPostsGet = <T
  */
 export const fetchPostCommentsApiV1WeiboWebV2FetchPostCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentsApiV1WeiboWebV2FetchPostCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentsApiV1WeiboWebV2FetchPostCommentsGetResponses, FetchPostCommentsApiV1WeiboWebV2FetchPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_post_comments',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_post_comments',
     ...options
 });
 
@@ -36382,7 +36382,7 @@ export const fetchPostCommentsApiV1WeiboWebV2FetchPostCommentsGet = <ThrowOnErro
  */
 export const fetchPostSubCommentsApiV1WeiboWebV2FetchPostSubCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostSubCommentsApiV1WeiboWebV2FetchPostSubCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostSubCommentsApiV1WeiboWebV2FetchPostSubCommentsGetResponses, FetchPostSubCommentsApiV1WeiboWebV2FetchPostSubCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_post_sub_comments',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_post_sub_comments',
     ...options
 });
 
@@ -36438,7 +36438,7 @@ export const fetchPostSubCommentsApiV1WeiboWebV2FetchPostSubCommentsGet = <Throw
  */
 export const searchUserPostsApiV1WeiboWebV2SearchUserPostsGet = <ThrowOnError extends boolean = false>(options: Options<SearchUserPostsApiV1WeiboWebV2SearchUserPostsGetData, ThrowOnError>) => (options.client ?? client).get<SearchUserPostsApiV1WeiboWebV2SearchUserPostsGetResponses, SearchUserPostsApiV1WeiboWebV2SearchUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/search_user_posts',
+    url: '/video-hub/api/v1/weibo/web_v2/search_user_posts',
     ...options
 });
 
@@ -36472,7 +36472,7 @@ export const searchUserPostsApiV1WeiboWebV2SearchUserPostsGet = <ThrowOnError ex
  */
 export const fetchUserVideoCollectionListApiV1WeiboWebV2FetchUserVideoCollectionListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserVideoCollectionListApiV1WeiboWebV2FetchUserVideoCollectionListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserVideoCollectionListApiV1WeiboWebV2FetchUserVideoCollectionListGetResponses, FetchUserVideoCollectionListApiV1WeiboWebV2FetchUserVideoCollectionListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_video_collection_list',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_video_collection_list',
     ...options
 });
 
@@ -36512,7 +36512,7 @@ export const fetchUserVideoCollectionListApiV1WeiboWebV2FetchUserVideoCollection
  */
 export const fetchUserVideoCollectionDetailApiV1WeiboWebV2FetchUserVideoCollectionDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserVideoCollectionDetailApiV1WeiboWebV2FetchUserVideoCollectionDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserVideoCollectionDetailApiV1WeiboWebV2FetchUserVideoCollectionDetailGetResponses, FetchUserVideoCollectionDetailApiV1WeiboWebV2FetchUserVideoCollectionDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_video_collection_detail',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_video_collection_detail',
     ...options
 });
 
@@ -36549,7 +36549,7 @@ export const fetchUserVideoCollectionDetailApiV1WeiboWebV2FetchUserVideoCollecti
  */
 export const fetchUserVideoListApiV1WeiboWebV2FetchUserVideoListGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserVideoListApiV1WeiboWebV2FetchUserVideoListGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserVideoListApiV1WeiboWebV2FetchUserVideoListGetResponses, FetchUserVideoListApiV1WeiboWebV2FetchUserVideoListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_video_list',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_video_list',
     ...options
 });
 
@@ -36588,7 +36588,7 @@ export const fetchUserVideoListApiV1WeiboWebV2FetchUserVideoListGet = <ThrowOnEr
  */
 export const fetchUserFollowingApiV1WeiboWebV2FetchUserFollowingGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowingApiV1WeiboWebV2FetchUserFollowingGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowingApiV1WeiboWebV2FetchUserFollowingGetResponses, FetchUserFollowingApiV1WeiboWebV2FetchUserFollowingGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_following',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_following',
     ...options
 });
 
@@ -36627,7 +36627,7 @@ export const fetchUserFollowingApiV1WeiboWebV2FetchUserFollowingGet = <ThrowOnEr
  */
 export const fetchUserFansApiV1WeiboWebV2FetchUserFansGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFansApiV1WeiboWebV2FetchUserFansGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFansApiV1WeiboWebV2FetchUserFansGetResponses, FetchUserFansApiV1WeiboWebV2FetchUserFansGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_fans',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_fans',
     ...options
 });
 
@@ -36661,7 +36661,7 @@ export const fetchUserFansApiV1WeiboWebV2FetchUserFansGet = <ThrowOnError extend
  */
 export const fetchAllGroupsApiV1WeiboWebV2FetchAllGroupsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchAllGroupsApiV1WeiboWebV2FetchAllGroupsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchAllGroupsApiV1WeiboWebV2FetchAllGroupsGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_all_groups',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_all_groups',
     ...options
 });
 
@@ -36709,7 +36709,7 @@ export const fetchAllGroupsApiV1WeiboWebV2FetchAllGroupsGet = <ThrowOnError exte
  */
 export const fetchUserRecommendTimelineApiV1WeiboWebV2FetchUserRecommendTimelineGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserRecommendTimelineApiV1WeiboWebV2FetchUserRecommendTimelineGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserRecommendTimelineApiV1WeiboWebV2FetchUserRecommendTimelineGetResponses, FetchUserRecommendTimelineApiV1WeiboWebV2FetchUserRecommendTimelineGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_recommend_timeline',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_recommend_timeline',
     ...options
 });
 
@@ -36759,7 +36759,7 @@ export const fetchUserRecommendTimelineApiV1WeiboWebV2FetchUserRecommendTimeline
  */
 export const fetchHotRankingTimelineApiV1WeiboWebV2FetchHotRankingTimelineGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotRankingTimelineApiV1WeiboWebV2FetchHotRankingTimelineGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotRankingTimelineApiV1WeiboWebV2FetchHotRankingTimelineGetResponses, FetchHotRankingTimelineApiV1WeiboWebV2FetchHotRankingTimelineGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_hot_ranking_timeline',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_hot_ranking_timeline',
     ...options
 });
 
@@ -36795,7 +36795,7 @@ export const fetchHotRankingTimelineApiV1WeiboWebV2FetchHotRankingTimelineGet = 
  */
 export const fetchHotSearchIndexApiV1WeiboWebV2FetchHotSearchIndexGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchIndexApiV1WeiboWebV2FetchHotSearchIndexGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchIndexApiV1WeiboWebV2FetchHotSearchIndexGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_hot_search_index',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_hot_search_index',
     ...options
 });
 
@@ -36831,7 +36831,7 @@ export const fetchHotSearchIndexApiV1WeiboWebV2FetchHotSearchIndexGet = <ThrowOn
  */
 export const fetchHotSearchSummaryApiV1WeiboWebV2FetchHotSearchSummaryGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchSummaryApiV1WeiboWebV2FetchHotSearchSummaryGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchSummaryApiV1WeiboWebV2FetchHotSearchSummaryGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_hot_search_summary',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_hot_search_summary',
     ...options
 });
 
@@ -36863,7 +36863,7 @@ export const fetchHotSearchSummaryApiV1WeiboWebV2FetchHotSearchSummaryGet = <Thr
  */
 export const fetchHotSearchApiV1WeiboWebV2FetchHotSearchGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchApiV1WeiboWebV2FetchHotSearchGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchApiV1WeiboWebV2FetchHotSearchGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_hot_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_hot_search',
     ...options
 });
 
@@ -36895,7 +36895,7 @@ export const fetchHotSearchApiV1WeiboWebV2FetchHotSearchGet = <ThrowOnError exte
  */
 export const fetchEntertainmentRankingApiV1WeiboWebV2FetchEntertainmentRankingGet = <ThrowOnError extends boolean = false>(options?: Options<FetchEntertainmentRankingApiV1WeiboWebV2FetchEntertainmentRankingGetData, ThrowOnError>) => (options?.client ?? client).get<FetchEntertainmentRankingApiV1WeiboWebV2FetchEntertainmentRankingGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_entertainment_ranking',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_entertainment_ranking',
     ...options
 });
 
@@ -36927,7 +36927,7 @@ export const fetchEntertainmentRankingApiV1WeiboWebV2FetchEntertainmentRankingGe
  */
 export const fetchLifeRankingApiV1WeiboWebV2FetchLifeRankingGet = <ThrowOnError extends boolean = false>(options?: Options<FetchLifeRankingApiV1WeiboWebV2FetchLifeRankingGetData, ThrowOnError>) => (options?.client ?? client).get<FetchLifeRankingApiV1WeiboWebV2FetchLifeRankingGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_life_ranking',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_life_ranking',
     ...options
 });
 
@@ -36959,7 +36959,7 @@ export const fetchLifeRankingApiV1WeiboWebV2FetchLifeRankingGet = <ThrowOnError 
  */
 export const fetchSocialRankingApiV1WeiboWebV2FetchSocialRankingGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSocialRankingApiV1WeiboWebV2FetchSocialRankingGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSocialRankingApiV1WeiboWebV2FetchSocialRankingGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_social_ranking',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_social_ranking',
     ...options
 });
 
@@ -36991,7 +36991,7 @@ export const fetchSocialRankingApiV1WeiboWebV2FetchSocialRankingGet = <ThrowOnEr
  */
 export const fetchSimilarSearchApiV1WeiboWebV2FetchSimilarSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchSimilarSearchApiV1WeiboWebV2FetchSimilarSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchSimilarSearchApiV1WeiboWebV2FetchSimilarSearchGetResponses, FetchSimilarSearchApiV1WeiboWebV2FetchSimilarSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_similar_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_similar_search',
     ...options
 });
 
@@ -37023,7 +37023,7 @@ export const fetchSimilarSearchApiV1WeiboWebV2FetchSimilarSearchGet = <ThrowOnEr
  */
 export const fetchAiSearchApiV1WeiboWebV2FetchAiSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchAiSearchApiV1WeiboWebV2FetchAiSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchAiSearchApiV1WeiboWebV2FetchAiSearchGetResponses, FetchAiSearchApiV1WeiboWebV2FetchAiSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_ai_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_ai_search',
     ...options
 });
 
@@ -37057,7 +37057,7 @@ export const fetchAiSearchApiV1WeiboWebV2FetchAiSearchGet = <ThrowOnError extend
  */
 export const fetchAiRelatedSearchApiV1WeiboWebV2FetchAiRelatedSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchAiRelatedSearchApiV1WeiboWebV2FetchAiRelatedSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchAiRelatedSearchApiV1WeiboWebV2FetchAiRelatedSearchGetResponses, FetchAiRelatedSearchApiV1WeiboWebV2FetchAiRelatedSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_ai_related_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_ai_related_search',
     ...options
 });
 
@@ -37100,7 +37100,7 @@ export const fetchAiRelatedSearchApiV1WeiboWebV2FetchAiRelatedSearchGet = <Throw
  */
 export const fetchAdvancedSearchApiV1WeiboWebV2FetchAdvancedSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchAdvancedSearchApiV1WeiboWebV2FetchAdvancedSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchAdvancedSearchApiV1WeiboWebV2FetchAdvancedSearchGetResponses, FetchAdvancedSearchApiV1WeiboWebV2FetchAdvancedSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_advanced_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_advanced_search',
     ...options
 });
 
@@ -37132,7 +37132,7 @@ export const fetchAdvancedSearchApiV1WeiboWebV2FetchAdvancedSearchGet = <ThrowOn
  */
 export const fetchCityListApiV1WeiboWebV2FetchCityListGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCityListApiV1WeiboWebV2FetchCityListGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCityListApiV1WeiboWebV2FetchCityListGetResponses, FetchCityListApiV1WeiboWebV2FetchCityListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_city_list',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_city_list',
     ...options
 });
 
@@ -37169,7 +37169,7 @@ export const fetchCityListApiV1WeiboWebV2FetchCityListGet = <ThrowOnError extend
  */
 export const fetchRealtimeSearchApiV1WeiboWebV2FetchRealtimeSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchRealtimeSearchApiV1WeiboWebV2FetchRealtimeSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchRealtimeSearchApiV1WeiboWebV2FetchRealtimeSearchGetResponses, FetchRealtimeSearchApiV1WeiboWebV2FetchRealtimeSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_realtime_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_realtime_search',
     ...options
 });
 
@@ -37220,7 +37220,7 @@ export const fetchRealtimeSearchApiV1WeiboWebV2FetchRealtimeSearchGet = <ThrowOn
  */
 export const fetchUserSearchApiV1WeiboWebV2FetchUserSearchGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserSearchApiV1WeiboWebV2FetchUserSearchGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserSearchApiV1WeiboWebV2FetchUserSearchGetResponses, FetchUserSearchApiV1WeiboWebV2FetchUserSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_user_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_user_search',
     ...options
 });
 
@@ -37258,7 +37258,7 @@ export const fetchUserSearchApiV1WeiboWebV2FetchUserSearchGet = <ThrowOnError ex
  */
 export const fetchVideoSearchApiV1WeiboWebV2FetchVideoSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSearchApiV1WeiboWebV2FetchVideoSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoSearchApiV1WeiboWebV2FetchVideoSearchGetResponses, FetchVideoSearchApiV1WeiboWebV2FetchVideoSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_video_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_video_search',
     ...options
 });
 
@@ -37293,7 +37293,7 @@ export const fetchVideoSearchApiV1WeiboWebV2FetchVideoSearchGet = <ThrowOnError 
  */
 export const fetchPicSearchApiV1WeiboWebV2FetchPicSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchPicSearchApiV1WeiboWebV2FetchPicSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchPicSearchApiV1WeiboWebV2FetchPicSearchGetResponses, FetchPicSearchApiV1WeiboWebV2FetchPicSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_pic_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_pic_search',
     ...options
 });
 
@@ -37328,7 +37328,7 @@ export const fetchPicSearchApiV1WeiboWebV2FetchPicSearchGet = <ThrowOnError exte
  */
 export const fetchTopicSearchApiV1WeiboWebV2FetchTopicSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchTopicSearchApiV1WeiboWebV2FetchTopicSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchTopicSearchApiV1WeiboWebV2FetchTopicSearchGetResponses, FetchTopicSearchApiV1WeiboWebV2FetchTopicSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/web_v2/fetch_topic_search',
+    url: '/video-hub/api/v1/weibo/web_v2/fetch_topic_search',
     ...options
 });
 
@@ -37360,7 +37360,7 @@ export const fetchTopicSearchApiV1WeiboWebV2FetchTopicSearchGet = <ThrowOnError 
  */
 export const fetchUserInfoApiV1WeiboAppFetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1WeiboAppFetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1WeiboAppFetchUserInfoGetResponses, FetchUserInfoApiV1WeiboAppFetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_info',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_info',
     ...options
 });
 
@@ -37392,7 +37392,7 @@ export const fetchUserInfoApiV1WeiboAppFetchUserInfoGet = <ThrowOnError extends 
  */
 export const fetchUserInfoDetailApiV1WeiboAppFetchUserInfoDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoDetailApiV1WeiboAppFetchUserInfoDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoDetailApiV1WeiboAppFetchUserInfoDetailGetResponses, FetchUserInfoDetailApiV1WeiboAppFetchUserInfoDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_info_detail',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_info_detail',
     ...options
 });
 
@@ -37452,7 +37452,7 @@ export const fetchUserInfoDetailApiV1WeiboAppFetchUserInfoDetailGet = <ThrowOnEr
  */
 export const fetchUserTimelineApiV1WeiboAppFetchUserTimelineGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserTimelineApiV1WeiboAppFetchUserTimelineGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserTimelineApiV1WeiboAppFetchUserTimelineGetResponses, FetchUserTimelineApiV1WeiboAppFetchUserTimelineGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_timeline',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_timeline',
     ...options
 });
 
@@ -37495,7 +37495,7 @@ export const fetchUserTimelineApiV1WeiboAppFetchUserTimelineGet = <ThrowOnError 
  */
 export const fetchUserVideosApiV1WeiboAppFetchUserVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserVideosApiV1WeiboAppFetchUserVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserVideosApiV1WeiboAppFetchUserVideosGetResponses, FetchUserVideosApiV1WeiboAppFetchUserVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_videos',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_videos',
     ...options
 });
 
@@ -37530,7 +37530,7 @@ export const fetchUserVideosApiV1WeiboAppFetchUserVideosGet = <ThrowOnError exte
  */
 export const fetchUserSuperTopicsApiV1WeiboAppFetchUserSuperTopicsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserSuperTopicsApiV1WeiboAppFetchUserSuperTopicsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSuperTopicsApiV1WeiboAppFetchUserSuperTopicsGetResponses, FetchUserSuperTopicsApiV1WeiboAppFetchUserSuperTopicsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_super_topics',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_super_topics',
     ...options
 });
 
@@ -37568,7 +37568,7 @@ export const fetchUserSuperTopicsApiV1WeiboAppFetchUserSuperTopicsGet = <ThrowOn
  */
 export const fetchUserAlbumApiV1WeiboAppFetchUserAlbumGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserAlbumApiV1WeiboAppFetchUserAlbumGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserAlbumApiV1WeiboAppFetchUserAlbumGetResponses, FetchUserAlbumApiV1WeiboAppFetchUserAlbumGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_album',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_album',
     ...options
 });
 
@@ -37605,7 +37605,7 @@ export const fetchUserAlbumApiV1WeiboAppFetchUserAlbumGet = <ThrowOnError extend
  */
 export const fetchUserArticlesApiV1WeiboAppFetchUserArticlesGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserArticlesApiV1WeiboAppFetchUserArticlesGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserArticlesApiV1WeiboAppFetchUserArticlesGetResponses, FetchUserArticlesApiV1WeiboAppFetchUserArticlesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_articles',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_articles',
     ...options
 });
 
@@ -37642,7 +37642,7 @@ export const fetchUserArticlesApiV1WeiboAppFetchUserArticlesGet = <ThrowOnError 
  */
 export const fetchUserAudiosApiV1WeiboAppFetchUserAudiosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserAudiosApiV1WeiboAppFetchUserAudiosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserAudiosApiV1WeiboAppFetchUserAudiosGetResponses, FetchUserAudiosApiV1WeiboAppFetchUserAudiosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_audios',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_audios',
     ...options
 });
 
@@ -37680,7 +37680,7 @@ export const fetchUserAudiosApiV1WeiboAppFetchUserAudiosGet = <ThrowOnError exte
  */
 export const fetchUserProfileFeedApiV1WeiboAppFetchUserProfileFeedGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserProfileFeedApiV1WeiboAppFetchUserProfileFeedGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserProfileFeedApiV1WeiboAppFetchUserProfileFeedGetResponses, FetchUserProfileFeedApiV1WeiboAppFetchUserProfileFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_user_profile_feed',
+    url: '/video-hub/api/v1/weibo/app/fetch_user_profile_feed',
     ...options
 });
 
@@ -37712,7 +37712,7 @@ export const fetchUserProfileFeedApiV1WeiboAppFetchUserProfileFeedGet = <ThrowOn
  */
 export const fetchStatusDetailApiV1WeiboAppFetchStatusDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchStatusDetailApiV1WeiboAppFetchStatusDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchStatusDetailApiV1WeiboAppFetchStatusDetailGetResponses, FetchStatusDetailApiV1WeiboAppFetchStatusDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_status_detail',
+    url: '/video-hub/api/v1/weibo/app/fetch_status_detail',
     ...options
 });
 
@@ -37758,7 +37758,7 @@ export const fetchStatusDetailApiV1WeiboAppFetchStatusDetailGet = <ThrowOnError 
  */
 export const fetchStatusCommentsApiV1WeiboAppFetchStatusCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchStatusCommentsApiV1WeiboAppFetchStatusCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchStatusCommentsApiV1WeiboAppFetchStatusCommentsGetResponses, FetchStatusCommentsApiV1WeiboAppFetchStatusCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_status_comments',
+    url: '/video-hub/api/v1/weibo/app/fetch_status_comments',
     ...options
 });
 
@@ -37797,7 +37797,7 @@ export const fetchStatusCommentsApiV1WeiboAppFetchStatusCommentsGet = <ThrowOnEr
  */
 export const fetchStatusRepostsApiV1WeiboAppFetchStatusRepostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchStatusRepostsApiV1WeiboAppFetchStatusRepostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchStatusRepostsApiV1WeiboAppFetchStatusRepostsGetResponses, FetchStatusRepostsApiV1WeiboAppFetchStatusRepostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_status_reposts',
+    url: '/video-hub/api/v1/weibo/app/fetch_status_reposts',
     ...options
 });
 
@@ -37848,7 +37848,7 @@ export const fetchStatusRepostsApiV1WeiboAppFetchStatusRepostsGet = <ThrowOnErro
  */
 export const fetchStatusLikesApiV1WeiboAppFetchStatusLikesGet = <ThrowOnError extends boolean = false>(options: Options<FetchStatusLikesApiV1WeiboAppFetchStatusLikesGetData, ThrowOnError>) => (options.client ?? client).get<FetchStatusLikesApiV1WeiboAppFetchStatusLikesGetResponses, FetchStatusLikesApiV1WeiboAppFetchStatusLikesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_status_likes',
+    url: '/video-hub/api/v1/weibo/app/fetch_status_likes',
     ...options
 });
 
@@ -37888,7 +37888,7 @@ export const fetchStatusLikesApiV1WeiboAppFetchStatusLikesGet = <ThrowOnError ex
  */
 export const fetchVideoDetailApiV1WeiboAppFetchVideoDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoDetailApiV1WeiboAppFetchVideoDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoDetailApiV1WeiboAppFetchVideoDetailGetResponses, FetchVideoDetailApiV1WeiboAppFetchVideoDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_video_detail',
+    url: '/video-hub/api/v1/weibo/app/fetch_video_detail',
     ...options
 });
 
@@ -37921,7 +37921,7 @@ export const fetchVideoDetailApiV1WeiboAppFetchVideoDetailGet = <ThrowOnError ex
  */
 export const fetchVideoFeaturedFeedApiV1WeiboAppFetchVideoFeaturedFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchVideoFeaturedFeedApiV1WeiboAppFetchVideoFeaturedFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchVideoFeaturedFeedApiV1WeiboAppFetchVideoFeaturedFeedGetResponses, FetchVideoFeaturedFeedApiV1WeiboAppFetchVideoFeaturedFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_video_featured_feed',
+    url: '/video-hub/api/v1/weibo/app/fetch_video_featured_feed',
     ...options
 });
 
@@ -37987,7 +37987,7 @@ export const fetchVideoFeaturedFeedApiV1WeiboAppFetchVideoFeaturedFeedGet = <Thr
  */
 export const fetchSearchAllApiV1WeiboAppFetchSearchAllGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchAllApiV1WeiboAppFetchSearchAllGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchAllApiV1WeiboAppFetchSearchAllGetResponses, FetchSearchAllApiV1WeiboAppFetchSearchAllGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_search_all',
+    url: '/video-hub/api/v1/weibo/app/fetch_search_all',
     ...options
 });
 
@@ -38022,7 +38022,7 @@ export const fetchSearchAllApiV1WeiboAppFetchSearchAllGet = <ThrowOnError extend
  */
 export const fetchAiSmartSearchApiV1WeiboAppFetchAiSmartSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchAiSmartSearchApiV1WeiboAppFetchAiSmartSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchAiSmartSearchApiV1WeiboAppFetchAiSmartSearchGetResponses, FetchAiSmartSearchApiV1WeiboAppFetchAiSmartSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_ai_smart_search',
+    url: '/video-hub/api/v1/weibo/app/fetch_ai_smart_search',
     ...options
 });
 
@@ -38057,7 +38057,7 @@ export const fetchAiSmartSearchApiV1WeiboAppFetchAiSmartSearchGet = <ThrowOnErro
  */
 export const fetchHomeRecommendFeedApiV1WeiboAppFetchHomeRecommendFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHomeRecommendFeedApiV1WeiboAppFetchHomeRecommendFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHomeRecommendFeedApiV1WeiboAppFetchHomeRecommendFeedGetResponses, FetchHomeRecommendFeedApiV1WeiboAppFetchHomeRecommendFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_home_recommend_feed',
+    url: '/video-hub/api/v1/weibo/app/fetch_home_recommend_feed',
     ...options
 });
 
@@ -38115,7 +38115,7 @@ export const fetchHomeRecommendFeedApiV1WeiboAppFetchHomeRecommendFeedGet = <Thr
  */
 export const fetchHotSearchApiV1WeiboAppFetchHotSearchGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchApiV1WeiboAppFetchHotSearchGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchApiV1WeiboAppFetchHotSearchGetResponses, FetchHotSearchApiV1WeiboAppFetchHotSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_hot_search',
+    url: '/video-hub/api/v1/weibo/app/fetch_hot_search',
     ...options
 });
 
@@ -38147,7 +38147,7 @@ export const fetchHotSearchApiV1WeiboAppFetchHotSearchGet = <ThrowOnError extend
  */
 export const fetchHotSearchCategoriesApiV1WeiboAppFetchHotSearchCategoriesGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotSearchCategoriesApiV1WeiboAppFetchHotSearchCategoriesGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotSearchCategoriesApiV1WeiboAppFetchHotSearchCategoriesGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/weibo/app/fetch_hot_search_categories',
+    url: '/video-hub/api/v1/weibo/app/fetch_hot_search_categories',
     ...options
 });
 
@@ -38179,7 +38179,7 @@ export const fetchHotSearchCategoriesApiV1WeiboAppFetchHotSearchCategoriesGet = 
  */
 export const fetchMpArticleDetailJsonApiV1WechatMpWebFetchMpArticleDetailJsonGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleDetailJsonApiV1WechatMpWebFetchMpArticleDetailJsonGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleDetailJsonApiV1WechatMpWebFetchMpArticleDetailJsonGetResponses, FetchMpArticleDetailJsonApiV1WechatMpWebFetchMpArticleDetailJsonGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_detail_json',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_detail_json',
     ...options
 });
 
@@ -38209,7 +38209,7 @@ export const fetchMpArticleDetailJsonApiV1WechatMpWebFetchMpArticleDetailJsonGet
  */
 export const fetchMpArticleDetailHtmlApiV1WechatMpWebFetchMpArticleDetailHtmlGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleDetailHtmlApiV1WechatMpWebFetchMpArticleDetailHtmlGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleDetailHtmlApiV1WechatMpWebFetchMpArticleDetailHtmlGetResponses, FetchMpArticleDetailHtmlApiV1WechatMpWebFetchMpArticleDetailHtmlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_detail_html',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_detail_html',
     ...options
 });
 
@@ -38240,7 +38240,7 @@ export const fetchMpArticleDetailHtmlApiV1WechatMpWebFetchMpArticleDetailHtmlGet
  */
 export const fetchMpArticleListApiV1WechatMpWebFetchMpArticleListGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleListApiV1WechatMpWebFetchMpArticleListGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleListApiV1WechatMpWebFetchMpArticleListGetResponses, FetchMpArticleListApiV1WechatMpWebFetchMpArticleListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_list',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_list',
     ...options
 });
 
@@ -38271,7 +38271,7 @@ export const fetchMpArticleListApiV1WechatMpWebFetchMpArticleListGet = <ThrowOnE
  */
 export const fetchMpArticleReadCountApiV1WechatMpWebFetchMpArticleReadCountGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleReadCountApiV1WechatMpWebFetchMpArticleReadCountGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleReadCountApiV1WechatMpWebFetchMpArticleReadCountGetResponses, FetchMpArticleReadCountApiV1WechatMpWebFetchMpArticleReadCountGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_read_count',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_read_count',
     ...options
 });
 
@@ -38299,7 +38299,7 @@ export const fetchMpArticleReadCountApiV1WechatMpWebFetchMpArticleReadCountGet =
  */
 export const fetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGetResponses, FetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_url',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_url',
     ...options
 });
 
@@ -38333,7 +38333,7 @@ export const fetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGet = <ThrowOnErr
  */
 export const fetchMpArticleCommentListApiV1WechatMpWebFetchMpArticleCommentListGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleCommentListApiV1WechatMpWebFetchMpArticleCommentListGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleCommentListApiV1WechatMpWebFetchMpArticleCommentListGetResponses, FetchMpArticleCommentListApiV1WechatMpWebFetchMpArticleCommentListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_comment_list',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_comment_list',
     ...options
 });
 
@@ -38370,7 +38370,7 @@ export const fetchMpArticleCommentListApiV1WechatMpWebFetchMpArticleCommentListG
  */
 export const fetchMpArticleCommentReplyListApiV1WechatMpWebFetchMpArticleCommentReplyListGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleCommentReplyListApiV1WechatMpWebFetchMpArticleCommentReplyListGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleCommentReplyListApiV1WechatMpWebFetchMpArticleCommentReplyListGetResponses, FetchMpArticleCommentReplyListApiV1WechatMpWebFetchMpArticleCommentReplyListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_comment_reply_list',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_comment_reply_list',
     ...options
 });
 
@@ -38398,7 +38398,7 @@ export const fetchMpArticleCommentReplyListApiV1WechatMpWebFetchMpArticleComment
  */
 export const fetchMpArticleAdApiV1WechatMpWebFetchMpArticleAdGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleAdApiV1WechatMpWebFetchMpArticleAdGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleAdApiV1WechatMpWebFetchMpArticleAdGetResponses, FetchMpArticleAdApiV1WechatMpWebFetchMpArticleAdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_ad',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_ad',
     ...options
 });
 
@@ -38426,7 +38426,7 @@ export const fetchMpArticleAdApiV1WechatMpWebFetchMpArticleAdGet = <ThrowOnError
  */
 export const fetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConversionGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConversionGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConversionGetResponses, FetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConversionGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_article_url_conversion',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_url_conversion',
     ...options
 });
 
@@ -38454,7 +38454,7 @@ export const fetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConvers
  */
 export const fetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGet = <ThrowOnError extends boolean = false>(options: Options<FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetData, ThrowOnError>) => (options.client ?? client).get<FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetResponses, FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_mp/web/fetch_mp_related_articles',
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_mp_related_articles',
     ...options
 });
 
@@ -38521,7 +38521,7 @@ export const fetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGet = <
  */
 export const fetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPost = <ThrowOnError extends boolean = false>(options: Options<FetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPostData, ThrowOnError>) => (options.client ?? client).post<FetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPostResponses, FetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_default_search',
+    url: '/video-hub/api/v1/wechat_channels/fetch_default_search',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -38583,7 +38583,7 @@ export const fetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPost = <Thro
  */
 export const fetchSearchLatestApiV1WechatChannelsFetchSearchLatestGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchLatestApiV1WechatChannelsFetchSearchLatestGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchLatestApiV1WechatChannelsFetchSearchLatestGetResponses, FetchSearchLatestApiV1WechatChannelsFetchSearchLatestGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_search_latest',
+    url: '/video-hub/api/v1/wechat_channels/fetch_search_latest',
     ...options
 });
 
@@ -38641,7 +38641,7 @@ export const fetchSearchLatestApiV1WechatChannelsFetchSearchLatestGet = <ThrowOn
  */
 export const fetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGetResponses, FetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_search_ordinary',
+    url: '/video-hub/api/v1/wechat_channels/fetch_search_ordinary',
     ...options
 });
 
@@ -38672,7 +38672,7 @@ export const fetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGet = <Thr
  */
 export const fetchUserSearchApiV1WechatChannelsFetchUserSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserSearchApiV1WechatChannelsFetchUserSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserSearchApiV1WechatChannelsFetchUserSearchGetResponses, FetchUserSearchApiV1WechatChannelsFetchUserSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_user_search',
+    url: '/video-hub/api/v1/wechat_channels/fetch_user_search',
     ...options
 });
 
@@ -38730,7 +38730,7 @@ export const fetchUserSearchApiV1WechatChannelsFetchUserSearchGet = <ThrowOnErro
  */
 export const fetchVideoDetailApiV1WechatChannelsFetchVideoDetailGet = <ThrowOnError extends boolean = false>(options?: Options<FetchVideoDetailApiV1WechatChannelsFetchVideoDetailGetData, ThrowOnError>) => (options?.client ?? client).get<FetchVideoDetailApiV1WechatChannelsFetchVideoDetailGetResponses, FetchVideoDetailApiV1WechatChannelsFetchVideoDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_video_detail',
+    url: '/video-hub/api/v1/wechat_channels/fetch_video_detail',
     ...options
 });
 
@@ -38799,7 +38799,7 @@ export const fetchVideoDetailApiV1WechatChannelsFetchVideoDetailGet = <ThrowOnEr
  */
 export const fetchHomePageApiV1WechatChannelsFetchHomePagePost = <ThrowOnError extends boolean = false>(options: Options<FetchHomePageApiV1WechatChannelsFetchHomePagePostData, ThrowOnError>) => (options.client ?? client).post<FetchHomePageApiV1WechatChannelsFetchHomePagePostResponses, FetchHomePageApiV1WechatChannelsFetchHomePagePostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_home_page',
+    url: '/video-hub/api/v1/wechat_channels/fetch_home_page',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -38836,7 +38836,7 @@ export const fetchHomePageApiV1WechatChannelsFetchHomePagePost = <ThrowOnError e
  */
 export const fetchCommentsApiV1WechatChannelsFetchCommentsPost = <ThrowOnError extends boolean = false>(options: Options<FetchCommentsApiV1WechatChannelsFetchCommentsPostData, ThrowOnError>) => (options.client ?? client).post<FetchCommentsApiV1WechatChannelsFetchCommentsPostResponses, FetchCommentsApiV1WechatChannelsFetchCommentsPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_comments',
+    url: '/video-hub/api/v1/wechat_channels/fetch_comments',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -38896,7 +38896,7 @@ export const fetchCommentsApiV1WechatChannelsFetchCommentsPost = <ThrowOnError e
  */
 export const fetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGet = <ThrowOnError extends boolean = false>(options: Options<FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetData, ThrowOnError>) => (options.client ?? client).get<FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetResponses, FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_live_history',
+    url: '/video-hub/api/v1/wechat_channels/fetch_live_history',
     ...options
 });
 
@@ -38925,7 +38925,7 @@ export const fetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGet = <ThrowOnEr
  */
 export const fetchHotWordsApiV1WechatChannelsFetchHotWordsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHotWordsApiV1WechatChannelsFetchHotWordsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHotWordsApiV1WechatChannelsFetchHotWordsGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/wechat_channels/fetch_hot_words',
+    url: '/video-hub/api/v1/wechat_channels/fetch_hot_words',
     ...options
 });
 
@@ -38963,7 +38963,7 @@ export const fetchHotWordsApiV1WechatChannelsFetchHotWordsGet = <ThrowOnError ex
  */
 export const shortcodeToMediaIdApiV1InstagramV1ShortcodeToMediaIdGet = <ThrowOnError extends boolean = false>(options: Options<ShortcodeToMediaIdApiV1InstagramV1ShortcodeToMediaIdGetData, ThrowOnError>) => (options.client ?? client).get<ShortcodeToMediaIdApiV1InstagramV1ShortcodeToMediaIdGetResponses, ShortcodeToMediaIdApiV1InstagramV1ShortcodeToMediaIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/shortcode_to_media_id',
+    url: '/video-hub/api/v1/instagram/v1/shortcode_to_media_id',
     ...options
 });
 
@@ -39001,7 +39001,7 @@ export const shortcodeToMediaIdApiV1InstagramV1ShortcodeToMediaIdGet = <ThrowOnE
  */
 export const mediaIdToShortcodeApiV1InstagramV1MediaIdToShortcodeGet = <ThrowOnError extends boolean = false>(options: Options<MediaIdToShortcodeApiV1InstagramV1MediaIdToShortcodeGetData, ThrowOnError>) => (options.client ?? client).get<MediaIdToShortcodeApiV1InstagramV1MediaIdToShortcodeGetResponses, MediaIdToShortcodeApiV1InstagramV1MediaIdToShortcodeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/media_id_to_shortcode',
+    url: '/video-hub/api/v1/instagram/v1/media_id_to_shortcode',
     ...options
 });
 
@@ -39053,7 +39053,7 @@ export const mediaIdToShortcodeApiV1InstagramV1MediaIdToShortcodeGet = <ThrowOnE
  */
 export const userIdToUsernameApiV1InstagramV1UserIdToUsernameGet = <ThrowOnError extends boolean = false>(options: Options<UserIdToUsernameApiV1InstagramV1UserIdToUsernameGetData, ThrowOnError>) => (options.client ?? client).get<UserIdToUsernameApiV1InstagramV1UserIdToUsernameGetResponses, UserIdToUsernameApiV1InstagramV1UserIdToUsernameGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/user_id_to_username',
+    url: '/video-hub/api/v1/instagram/v1/user_id_to_username',
     ...options
 });
 
@@ -39117,7 +39117,7 @@ export const userIdToUsernameApiV1InstagramV1UserIdToUsernameGet = <ThrowOnError
  */
 export const fetchUserInfoByUsernameApiV1InstagramV1FetchUserInfoByUsernameGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoByUsernameApiV1InstagramV1FetchUserInfoByUsernameGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoByUsernameApiV1InstagramV1FetchUserInfoByUsernameGetResponses, FetchUserInfoByUsernameApiV1InstagramV1FetchUserInfoByUsernameGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_info_by_username',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_username',
     ...options
 });
 
@@ -39185,7 +39185,7 @@ export const fetchUserInfoByUsernameApiV1InstagramV1FetchUserInfoByUsernameGet =
  */
 export const fetchUserInfoByUsernameV2ApiV1InstagramV1FetchUserInfoByUsernameV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoByUsernameV2ApiV1InstagramV1FetchUserInfoByUsernameV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoByUsernameV2ApiV1InstagramV1FetchUserInfoByUsernameV2GetResponses, FetchUserInfoByUsernameV2ApiV1InstagramV1FetchUserInfoByUsernameV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_info_by_username_v2',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_username_v2',
     ...options
 });
 
@@ -39241,7 +39241,7 @@ export const fetchUserInfoByUsernameV2ApiV1InstagramV1FetchUserInfoByUsernameV2G
  */
 export const fetchUserInfoByUsernameV3ApiV1InstagramV1FetchUserInfoByUsernameV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoByUsernameV3ApiV1InstagramV1FetchUserInfoByUsernameV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoByUsernameV3ApiV1InstagramV1FetchUserInfoByUsernameV3GetResponses, FetchUserInfoByUsernameV3ApiV1InstagramV1FetchUserInfoByUsernameV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_info_by_username_v3',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_username_v3',
     ...options
 });
 
@@ -39273,7 +39273,7 @@ export const fetchUserInfoByUsernameV3ApiV1InstagramV1FetchUserInfoByUsernameV3G
  */
 export const fetchUserInfoByIdApiV1InstagramV1FetchUserInfoByIdGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoByIdApiV1InstagramV1FetchUserInfoByIdGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoByIdApiV1InstagramV1FetchUserInfoByIdGetResponses, FetchUserInfoByIdApiV1InstagramV1FetchUserInfoByIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_info_by_id',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_id',
     ...options
 });
 
@@ -39305,7 +39305,7 @@ export const fetchUserInfoByIdApiV1InstagramV1FetchUserInfoByIdGet = <ThrowOnErr
  */
 export const fetchUserInfoByIdV2ApiV1InstagramV1FetchUserInfoByIdV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoByIdV2ApiV1InstagramV1FetchUserInfoByIdV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoByIdV2ApiV1InstagramV1FetchUserInfoByIdV2GetResponses, FetchUserInfoByIdV2ApiV1InstagramV1FetchUserInfoByIdV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_info_by_id_v2',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_info_by_id_v2',
     ...options
 });
 
@@ -39353,7 +39353,7 @@ export const fetchUserInfoByIdV2ApiV1InstagramV1FetchUserInfoByIdV2Get = <ThrowO
  */
 export const fetchUserAboutInfoApiV1InstagramV1FetchUserAboutInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserAboutInfoApiV1InstagramV1FetchUserAboutInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserAboutInfoApiV1InstagramV1FetchUserAboutInfoGetResponses, FetchUserAboutInfoApiV1InstagramV1FetchUserAboutInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_about_info',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_about_info',
     ...options
 });
 
@@ -39393,7 +39393,7 @@ export const fetchUserAboutInfoApiV1InstagramV1FetchUserAboutInfoGet = <ThrowOnE
  */
 export const fetchUserPostsApiV1InstagramV1FetchUserPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostsApiV1InstagramV1FetchUserPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostsApiV1InstagramV1FetchUserPostsGetResponses, FetchUserPostsApiV1InstagramV1FetchUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_posts',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_posts',
     ...options
 });
 
@@ -39429,7 +39429,7 @@ export const fetchUserPostsApiV1InstagramV1FetchUserPostsGet = <ThrowOnError ext
  */
 export const fetchUserPostsV2ApiV1InstagramV1FetchUserPostsV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostsV2ApiV1InstagramV1FetchUserPostsV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostsV2ApiV1InstagramV1FetchUserPostsV2GetResponses, FetchUserPostsV2ApiV1InstagramV1FetchUserPostsV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_posts_v2',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_posts_v2',
     ...options
 });
 
@@ -39467,7 +39467,7 @@ export const fetchUserPostsV2ApiV1InstagramV1FetchUserPostsV2Get = <ThrowOnError
  */
 export const fetchUserReelsApiV1InstagramV1FetchUserReelsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserReelsApiV1InstagramV1FetchUserReelsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserReelsApiV1InstagramV1FetchUserReelsGetResponses, FetchUserReelsApiV1InstagramV1FetchUserReelsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_reels',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_reels',
     ...options
 });
 
@@ -39505,7 +39505,7 @@ export const fetchUserReelsApiV1InstagramV1FetchUserReelsGet = <ThrowOnError ext
  */
 export const fetchUserRepostsApiV1InstagramV1FetchUserRepostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserRepostsApiV1InstagramV1FetchUserRepostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserRepostsApiV1InstagramV1FetchUserRepostsGetResponses, FetchUserRepostsApiV1InstagramV1FetchUserRepostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_reposts',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_reposts',
     ...options
 });
 
@@ -39541,7 +39541,7 @@ export const fetchUserRepostsApiV1InstagramV1FetchUserRepostsGet = <ThrowOnError
  */
 export const fetchUserTaggedPostsApiV1InstagramV1FetchUserTaggedPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserTaggedPostsApiV1InstagramV1FetchUserTaggedPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserTaggedPostsApiV1InstagramV1FetchUserTaggedPostsGetResponses, FetchUserTaggedPostsApiV1InstagramV1FetchUserTaggedPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_user_tagged_posts',
+    url: '/video-hub/api/v1/instagram/v1/fetch_user_tagged_posts',
     ...options
 });
 
@@ -39573,7 +39573,7 @@ export const fetchUserTaggedPostsApiV1InstagramV1FetchUserTaggedPostsGet = <Thro
  */
 export const fetchRelatedProfilesApiV1InstagramV1FetchRelatedProfilesGet = <ThrowOnError extends boolean = false>(options: Options<FetchRelatedProfilesApiV1InstagramV1FetchRelatedProfilesGetData, ThrowOnError>) => (options.client ?? client).get<FetchRelatedProfilesApiV1InstagramV1FetchRelatedProfilesGetResponses, FetchRelatedProfilesApiV1InstagramV1FetchRelatedProfilesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_related_profiles',
+    url: '/video-hub/api/v1/instagram/v1/fetch_related_profiles',
     ...options
 });
 
@@ -39620,7 +39620,7 @@ export const fetchRelatedProfilesApiV1InstagramV1FetchRelatedProfilesGet = <Thro
  */
 export const fetchSearchApiV1InstagramV1FetchSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchApiV1InstagramV1FetchSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchApiV1InstagramV1FetchSearchGetResponses, FetchSearchApiV1InstagramV1FetchSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_search',
+    url: '/video-hub/api/v1/instagram/v1/fetch_search',
     ...options
 });
 
@@ -39652,7 +39652,7 @@ export const fetchSearchApiV1InstagramV1FetchSearchGet = <ThrowOnError extends b
  */
 export const fetchPostByUrlApiV1InstagramV1FetchPostByUrlGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostByUrlApiV1InstagramV1FetchPostByUrlGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostByUrlApiV1InstagramV1FetchPostByUrlGetResponses, FetchPostByUrlApiV1InstagramV1FetchPostByUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_post_by_url',
+    url: '/video-hub/api/v1/instagram/v1/fetch_post_by_url',
     ...options
 });
 
@@ -39684,7 +39684,7 @@ export const fetchPostByUrlApiV1InstagramV1FetchPostByUrlGet = <ThrowOnError ext
  */
 export const fetchPostByUrlV2ApiV1InstagramV1FetchPostByUrlV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchPostByUrlV2ApiV1InstagramV1FetchPostByUrlV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchPostByUrlV2ApiV1InstagramV1FetchPostByUrlV2GetResponses, FetchPostByUrlV2ApiV1InstagramV1FetchPostByUrlV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_post_by_url_v2',
+    url: '/video-hub/api/v1/instagram/v1/fetch_post_by_url_v2',
     ...options
 });
 
@@ -39716,7 +39716,7 @@ export const fetchPostByUrlV2ApiV1InstagramV1FetchPostByUrlV2Get = <ThrowOnError
  */
 export const fetchPostByIdApiV1InstagramV1FetchPostByIdGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostByIdApiV1InstagramV1FetchPostByIdGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostByIdApiV1InstagramV1FetchPostByIdGetResponses, FetchPostByIdApiV1InstagramV1FetchPostByIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_post_by_id',
+    url: '/video-hub/api/v1/instagram/v1/fetch_post_by_id',
     ...options
 });
 
@@ -39781,7 +39781,7 @@ export const fetchPostByIdApiV1InstagramV1FetchPostByIdGet = <ThrowOnError exten
  */
 export const fetchPostCommentsV2ApiV1InstagramV1FetchPostCommentsV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentsV2ApiV1InstagramV1FetchPostCommentsV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentsV2ApiV1InstagramV1FetchPostCommentsV2GetResponses, FetchPostCommentsV2ApiV1InstagramV1FetchPostCommentsV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_post_comments_v2',
+    url: '/video-hub/api/v1/instagram/v1/fetch_post_comments_v2',
     ...options
 });
 
@@ -39841,7 +39841,7 @@ export const fetchPostCommentsV2ApiV1InstagramV1FetchPostCommentsV2Get = <ThrowO
  */
 export const fetchCommentRepliesApiV1InstagramV1FetchCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchCommentRepliesApiV1InstagramV1FetchCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchCommentRepliesApiV1InstagramV1FetchCommentRepliesGetResponses, FetchCommentRepliesApiV1InstagramV1FetchCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_comment_replies',
+    url: '/video-hub/api/v1/instagram/v1/fetch_comment_replies',
     ...options
 });
 
@@ -39881,7 +39881,7 @@ export const fetchCommentRepliesApiV1InstagramV1FetchCommentRepliesGet = <ThrowO
  */
 export const fetchMusicPostsApiV1InstagramV1FetchMusicPostsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchMusicPostsApiV1InstagramV1FetchMusicPostsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchMusicPostsApiV1InstagramV1FetchMusicPostsGetResponses, FetchMusicPostsApiV1InstagramV1FetchMusicPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_music_posts',
+    url: '/video-hub/api/v1/instagram/v1/fetch_music_posts',
     ...options
 });
 
@@ -39915,7 +39915,7 @@ export const fetchMusicPostsApiV1InstagramV1FetchMusicPostsGet = <ThrowOnError e
  */
 export const fetchHashtagPostsApiV1InstagramV1FetchHashtagPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagPostsApiV1InstagramV1FetchHashtagPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagPostsApiV1InstagramV1FetchHashtagPostsGetResponses, FetchHashtagPostsApiV1InstagramV1FetchHashtagPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_hashtag_posts',
+    url: '/video-hub/api/v1/instagram/v1/fetch_hashtag_posts',
     ...options
 });
 
@@ -39947,7 +39947,7 @@ export const fetchHashtagPostsApiV1InstagramV1FetchHashtagPostsGet = <ThrowOnErr
  */
 export const fetchLocationInfoApiV1InstagramV1FetchLocationInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchLocationInfoApiV1InstagramV1FetchLocationInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchLocationInfoApiV1InstagramV1FetchLocationInfoGetResponses, FetchLocationInfoApiV1InstagramV1FetchLocationInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_location_info',
+    url: '/video-hub/api/v1/instagram/v1/fetch_location_info',
     ...options
 });
 
@@ -39985,7 +39985,7 @@ export const fetchLocationInfoApiV1InstagramV1FetchLocationInfoGet = <ThrowOnErr
  */
 export const fetchLocationPostsApiV1InstagramV1FetchLocationPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchLocationPostsApiV1InstagramV1FetchLocationPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchLocationPostsApiV1InstagramV1FetchLocationPostsGetResponses, FetchLocationPostsApiV1InstagramV1FetchLocationPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_location_posts',
+    url: '/video-hub/api/v1/instagram/v1/fetch_location_posts',
     ...options
 });
 
@@ -40023,7 +40023,7 @@ export const fetchLocationPostsApiV1InstagramV1FetchLocationPostsGet = <ThrowOnE
  */
 export const fetchCitiesApiV1InstagramV1FetchCitiesGet = <ThrowOnError extends boolean = false>(options: Options<FetchCitiesApiV1InstagramV1FetchCitiesGetData, ThrowOnError>) => (options.client ?? client).get<FetchCitiesApiV1InstagramV1FetchCitiesGetResponses, FetchCitiesApiV1InstagramV1FetchCitiesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_cities',
+    url: '/video-hub/api/v1/instagram/v1/fetch_cities',
     ...options
 });
 
@@ -40063,7 +40063,7 @@ export const fetchCitiesApiV1InstagramV1FetchCitiesGet = <ThrowOnError extends b
  */
 export const fetchLocationsApiV1InstagramV1FetchLocationsGet = <ThrowOnError extends boolean = false>(options: Options<FetchLocationsApiV1InstagramV1FetchLocationsGetData, ThrowOnError>) => (options.client ?? client).get<FetchLocationsApiV1InstagramV1FetchLocationsGetResponses, FetchLocationsApiV1InstagramV1FetchLocationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_locations',
+    url: '/video-hub/api/v1/instagram/v1/fetch_locations',
     ...options
 });
 
@@ -40088,7 +40088,7 @@ export const fetchLocationsApiV1InstagramV1FetchLocationsGet = <ThrowOnError ext
  */
 export const fetchExploreSectionsApiV1InstagramV1FetchExploreSectionsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchExploreSectionsApiV1InstagramV1FetchExploreSectionsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchExploreSectionsApiV1InstagramV1FetchExploreSectionsGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_explore_sections',
+    url: '/video-hub/api/v1/instagram/v1/fetch_explore_sections',
     ...options
 });
 
@@ -40132,7 +40132,7 @@ export const fetchExploreSectionsApiV1InstagramV1FetchExploreSectionsGet = <Thro
  */
 export const fetchSectionPostsApiV1InstagramV1FetchSectionPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchSectionPostsApiV1InstagramV1FetchSectionPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchSectionPostsApiV1InstagramV1FetchSectionPostsGetResponses, FetchSectionPostsApiV1InstagramV1FetchSectionPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v1/fetch_section_posts',
+    url: '/video-hub/api/v1/instagram/v1/fetch_section_posts',
     ...options
 });
 
@@ -40170,7 +40170,7 @@ export const fetchSectionPostsApiV1InstagramV1FetchSectionPostsGet = <ThrowOnErr
  */
 export const shortcodeToMediaIdApiV1InstagramV2ShortcodeToMediaIdGet = <ThrowOnError extends boolean = false>(options: Options<ShortcodeToMediaIdApiV1InstagramV2ShortcodeToMediaIdGetData, ThrowOnError>) => (options.client ?? client).get<ShortcodeToMediaIdApiV1InstagramV2ShortcodeToMediaIdGetResponses, ShortcodeToMediaIdApiV1InstagramV2ShortcodeToMediaIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/shortcode_to_media_id',
+    url: '/video-hub/api/v1/instagram/v2/shortcode_to_media_id',
     ...options
 });
 
@@ -40208,7 +40208,7 @@ export const shortcodeToMediaIdApiV1InstagramV2ShortcodeToMediaIdGet = <ThrowOnE
  */
 export const mediaIdToShortcodeApiV1InstagramV2MediaIdToShortcodeGet = <ThrowOnError extends boolean = false>(options: Options<MediaIdToShortcodeApiV1InstagramV2MediaIdToShortcodeGetData, ThrowOnError>) => (options.client ?? client).get<MediaIdToShortcodeApiV1InstagramV2MediaIdToShortcodeGetResponses, MediaIdToShortcodeApiV1InstagramV2MediaIdToShortcodeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/media_id_to_shortcode',
+    url: '/video-hub/api/v1/instagram/v2/media_id_to_shortcode',
     ...options
 });
 
@@ -40260,7 +40260,7 @@ export const mediaIdToShortcodeApiV1InstagramV2MediaIdToShortcodeGet = <ThrowOnE
  */
 export const userIdToUsernameApiV1InstagramV2UserIdToUsernameGet = <ThrowOnError extends boolean = false>(options: Options<UserIdToUsernameApiV1InstagramV2UserIdToUsernameGetData, ThrowOnError>) => (options.client ?? client).get<UserIdToUsernameApiV1InstagramV2UserIdToUsernameGetResponses, UserIdToUsernameApiV1InstagramV2UserIdToUsernameGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/user_id_to_username',
+    url: '/video-hub/api/v1/instagram/v2/user_id_to_username',
     ...options
 });
 
@@ -40298,7 +40298,7 @@ export const userIdToUsernameApiV1InstagramV2UserIdToUsernameGet = <ThrowOnError
  */
 export const fetchUserInfoApiV1InstagramV2FetchUserInfoGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserInfoApiV1InstagramV2FetchUserInfoGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserInfoApiV1InstagramV2FetchUserInfoGetResponses, FetchUserInfoApiV1InstagramV2FetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_user_info',
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_info',
     ...options
 });
 
@@ -40338,7 +40338,7 @@ export const fetchUserInfoApiV1InstagramV2FetchUserInfoGet = <ThrowOnError exten
  */
 export const fetchUserPostsApiV1InstagramV2FetchUserPostsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserPostsApiV1InstagramV2FetchUserPostsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserPostsApiV1InstagramV2FetchUserPostsGetResponses, FetchUserPostsApiV1InstagramV2FetchUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_user_posts',
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_posts',
     ...options
 });
 
@@ -40378,7 +40378,7 @@ export const fetchUserPostsApiV1InstagramV2FetchUserPostsGet = <ThrowOnError ext
  */
 export const fetchUserReelsApiV1InstagramV2FetchUserReelsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserReelsApiV1InstagramV2FetchUserReelsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserReelsApiV1InstagramV2FetchUserReelsGetResponses, FetchUserReelsApiV1InstagramV2FetchUserReelsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_user_reels',
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_reels',
     ...options
 });
 
@@ -40418,7 +40418,7 @@ export const fetchUserReelsApiV1InstagramV2FetchUserReelsGet = <ThrowOnError ext
  */
 export const fetchUserFollowersApiV1InstagramV2FetchUserFollowersGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserFollowersApiV1InstagramV2FetchUserFollowersGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserFollowersApiV1InstagramV2FetchUserFollowersGetResponses, FetchUserFollowersApiV1InstagramV2FetchUserFollowersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_user_followers',
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_followers',
     ...options
 });
 
@@ -40458,7 +40458,7 @@ export const fetchUserFollowersApiV1InstagramV2FetchUserFollowersGet = <ThrowOnE
  */
 export const fetchUserFollowingApiV1InstagramV2FetchUserFollowingGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserFollowingApiV1InstagramV2FetchUserFollowingGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserFollowingApiV1InstagramV2FetchUserFollowingGetResponses, FetchUserFollowingApiV1InstagramV2FetchUserFollowingGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_user_following',
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_following',
     ...options
 });
 
@@ -40494,7 +40494,7 @@ export const fetchUserFollowingApiV1InstagramV2FetchUserFollowingGet = <ThrowOnE
  */
 export const fetchUserStoriesApiV1InstagramV2FetchUserStoriesGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserStoriesApiV1InstagramV2FetchUserStoriesGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserStoriesApiV1InstagramV2FetchUserStoriesGetResponses, FetchUserStoriesApiV1InstagramV2FetchUserStoriesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_user_stories',
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_stories',
     ...options
 });
 
@@ -40530,7 +40530,7 @@ export const fetchUserStoriesApiV1InstagramV2FetchUserStoriesGet = <ThrowOnError
  */
 export const fetchUserHighlightsApiV1InstagramV2FetchUserHighlightsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserHighlightsApiV1InstagramV2FetchUserHighlightsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserHighlightsApiV1InstagramV2FetchUserHighlightsGetResponses, FetchUserHighlightsApiV1InstagramV2FetchUserHighlightsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_user_highlights',
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_highlights',
     ...options
 });
 
@@ -40564,7 +40564,7 @@ export const fetchUserHighlightsApiV1InstagramV2FetchUserHighlightsGet = <ThrowO
  */
 export const fetchHighlightStoriesApiV1InstagramV2FetchHighlightStoriesGet = <ThrowOnError extends boolean = false>(options: Options<FetchHighlightStoriesApiV1InstagramV2FetchHighlightStoriesGetData, ThrowOnError>) => (options.client ?? client).get<FetchHighlightStoriesApiV1InstagramV2FetchHighlightStoriesGetResponses, FetchHighlightStoriesApiV1InstagramV2FetchHighlightStoriesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_highlight_stories',
+    url: '/video-hub/api/v1/instagram/v2/fetch_highlight_stories',
     ...options
 });
 
@@ -40604,7 +40604,7 @@ export const fetchHighlightStoriesApiV1InstagramV2FetchHighlightStoriesGet = <Th
  */
 export const fetchUserTaggedPostsApiV1InstagramV2FetchUserTaggedPostsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserTaggedPostsApiV1InstagramV2FetchUserTaggedPostsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserTaggedPostsApiV1InstagramV2FetchUserTaggedPostsGetResponses, FetchUserTaggedPostsApiV1InstagramV2FetchUserTaggedPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_user_tagged_posts',
+    url: '/video-hub/api/v1/instagram/v2/fetch_user_tagged_posts',
     ...options
 });
 
@@ -40640,7 +40640,7 @@ export const fetchUserTaggedPostsApiV1InstagramV2FetchUserTaggedPostsGet = <Thro
  */
 export const fetchSimilarUsersApiV1InstagramV2FetchSimilarUsersGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSimilarUsersApiV1InstagramV2FetchSimilarUsersGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSimilarUsersApiV1InstagramV2FetchSimilarUsersGetResponses, FetchSimilarUsersApiV1InstagramV2FetchSimilarUsersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_similar_users',
+    url: '/video-hub/api/v1/instagram/v2/fetch_similar_users',
     ...options
 });
 
@@ -40672,7 +40672,7 @@ export const fetchSimilarUsersApiV1InstagramV2FetchSimilarUsersGet = <ThrowOnErr
  */
 export const searchUsersApiV1InstagramV2SearchUsersGet = <ThrowOnError extends boolean = false>(options: Options<SearchUsersApiV1InstagramV2SearchUsersGetData, ThrowOnError>) => (options.client ?? client).get<SearchUsersApiV1InstagramV2SearchUsersGetResponses, SearchUsersApiV1InstagramV2SearchUsersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/search_users',
+    url: '/video-hub/api/v1/instagram/v2/search_users',
     ...options
 });
 
@@ -40710,7 +40710,7 @@ export const searchUsersApiV1InstagramV2SearchUsersGet = <ThrowOnError extends b
  */
 export const generalSearchApiV1InstagramV2GeneralSearchGet = <ThrowOnError extends boolean = false>(options: Options<GeneralSearchApiV1InstagramV2GeneralSearchGetData, ThrowOnError>) => (options.client ?? client).get<GeneralSearchApiV1InstagramV2GeneralSearchGetResponses, GeneralSearchApiV1InstagramV2GeneralSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/general_search',
+    url: '/video-hub/api/v1/instagram/v2/general_search',
     ...options
 });
 
@@ -40748,7 +40748,7 @@ export const generalSearchApiV1InstagramV2GeneralSearchGet = <ThrowOnError exten
  */
 export const searchReelsApiV1InstagramV2SearchReelsGet = <ThrowOnError extends boolean = false>(options: Options<SearchReelsApiV1InstagramV2SearchReelsGetData, ThrowOnError>) => (options.client ?? client).get<SearchReelsApiV1InstagramV2SearchReelsGetResponses, SearchReelsApiV1InstagramV2SearchReelsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/search_reels',
+    url: '/video-hub/api/v1/instagram/v2/search_reels',
     ...options
 });
 
@@ -40780,7 +40780,7 @@ export const searchReelsApiV1InstagramV2SearchReelsGet = <ThrowOnError extends b
  */
 export const searchMusicApiV1InstagramV2SearchMusicGet = <ThrowOnError extends boolean = false>(options: Options<SearchMusicApiV1InstagramV2SearchMusicGetData, ThrowOnError>) => (options.client ?? client).get<SearchMusicApiV1InstagramV2SearchMusicGetResponses, SearchMusicApiV1InstagramV2SearchMusicGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/search_music',
+    url: '/video-hub/api/v1/instagram/v2/search_music',
     ...options
 });
 
@@ -40812,7 +40812,7 @@ export const searchMusicApiV1InstagramV2SearchMusicGet = <ThrowOnError extends b
  */
 export const searchHashtagsApiV1InstagramV2SearchHashtagsGet = <ThrowOnError extends boolean = false>(options: Options<SearchHashtagsApiV1InstagramV2SearchHashtagsGetData, ThrowOnError>) => (options.client ?? client).get<SearchHashtagsApiV1InstagramV2SearchHashtagsGetResponses, SearchHashtagsApiV1InstagramV2SearchHashtagsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/search_hashtags',
+    url: '/video-hub/api/v1/instagram/v2/search_hashtags',
     ...options
 });
 
@@ -40844,7 +40844,7 @@ export const searchHashtagsApiV1InstagramV2SearchHashtagsGet = <ThrowOnError ext
  */
 export const searchLocationsApiV1InstagramV2SearchLocationsGet = <ThrowOnError extends boolean = false>(options: Options<SearchLocationsApiV1InstagramV2SearchLocationsGetData, ThrowOnError>) => (options.client ?? client).get<SearchLocationsApiV1InstagramV2SearchLocationsGetResponses, SearchLocationsApiV1InstagramV2SearchLocationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/search_locations',
+    url: '/video-hub/api/v1/instagram/v2/search_locations',
     ...options
 });
 
@@ -40879,7 +40879,7 @@ export const searchLocationsApiV1InstagramV2SearchLocationsGet = <ThrowOnError e
  */
 export const searchByCoordinatesApiV1InstagramV2SearchByCoordinatesGet = <ThrowOnError extends boolean = false>(options: Options<SearchByCoordinatesApiV1InstagramV2SearchByCoordinatesGetData, ThrowOnError>) => (options.client ?? client).get<SearchByCoordinatesApiV1InstagramV2SearchByCoordinatesGetResponses, SearchByCoordinatesApiV1InstagramV2SearchByCoordinatesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/search_by_coordinates',
+    url: '/video-hub/api/v1/instagram/v2/search_by_coordinates',
     ...options
 });
 
@@ -40913,7 +40913,7 @@ export const searchByCoordinatesApiV1InstagramV2SearchByCoordinatesGet = <ThrowO
  */
 export const fetchPostInfoApiV1InstagramV2FetchPostInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostInfoApiV1InstagramV2FetchPostInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostInfoApiV1InstagramV2FetchPostInfoGetResponses, FetchPostInfoApiV1InstagramV2FetchPostInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_post_info',
+    url: '/video-hub/api/v1/instagram/v2/fetch_post_info',
     ...options
 });
 
@@ -40951,7 +40951,7 @@ export const fetchPostInfoApiV1InstagramV2FetchPostInfoGet = <ThrowOnError exten
  */
 export const fetchPostLikesApiV1InstagramV2FetchPostLikesGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostLikesApiV1InstagramV2FetchPostLikesGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostLikesApiV1InstagramV2FetchPostLikesGetResponses, FetchPostLikesApiV1InstagramV2FetchPostLikesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_post_likes',
+    url: '/video-hub/api/v1/instagram/v2/fetch_post_likes',
     ...options
 });
 
@@ -40993,7 +40993,7 @@ export const fetchPostLikesApiV1InstagramV2FetchPostLikesGet = <ThrowOnError ext
  */
 export const fetchPostCommentsApiV1InstagramV2FetchPostCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentsApiV1InstagramV2FetchPostCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentsApiV1InstagramV2FetchPostCommentsGetResponses, FetchPostCommentsApiV1InstagramV2FetchPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_post_comments',
+    url: '/video-hub/api/v1/instagram/v2/fetch_post_comments',
     ...options
 });
 
@@ -41036,7 +41036,7 @@ export const fetchPostCommentsApiV1InstagramV2FetchPostCommentsGet = <ThrowOnErr
  */
 export const fetchCommentRepliesApiV1InstagramV2FetchCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchCommentRepliesApiV1InstagramV2FetchCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchCommentRepliesApiV1InstagramV2FetchCommentRepliesGetResponses, FetchCommentRepliesApiV1InstagramV2FetchCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_comment_replies',
+    url: '/video-hub/api/v1/instagram/v2/fetch_comment_replies',
     ...options
 });
 
@@ -41076,7 +41076,7 @@ export const fetchCommentRepliesApiV1InstagramV2FetchCommentRepliesGet = <ThrowO
  */
 export const fetchMusicPostsApiV1InstagramV2FetchMusicPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchMusicPostsApiV1InstagramV2FetchMusicPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchMusicPostsApiV1InstagramV2FetchMusicPostsGetResponses, FetchMusicPostsApiV1InstagramV2FetchMusicPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_music_posts',
+    url: '/video-hub/api/v1/instagram/v2/fetch_music_posts',
     ...options
 });
 
@@ -41116,7 +41116,7 @@ export const fetchMusicPostsApiV1InstagramV2FetchMusicPostsGet = <ThrowOnError e
  */
 export const fetchLocationPostsApiV1InstagramV2FetchLocationPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchLocationPostsApiV1InstagramV2FetchLocationPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchLocationPostsApiV1InstagramV2FetchLocationPostsGetResponses, FetchLocationPostsApiV1InstagramV2FetchLocationPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_location_posts',
+    url: '/video-hub/api/v1/instagram/v2/fetch_location_posts',
     ...options
 });
 
@@ -41159,7 +41159,7 @@ export const fetchLocationPostsApiV1InstagramV2FetchLocationPostsGet = <ThrowOnE
  */
 export const fetchHashtagPostsApiV1InstagramV2FetchHashtagPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchHashtagPostsApiV1InstagramV2FetchHashtagPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchHashtagPostsApiV1InstagramV2FetchHashtagPostsGetResponses, FetchHashtagPostsApiV1InstagramV2FetchHashtagPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v2/fetch_hashtag_posts',
+    url: '/video-hub/api/v1/instagram/v2/fetch_hashtag_posts',
     ...options
 });
 
@@ -41199,7 +41199,7 @@ export const fetchHashtagPostsApiV1InstagramV2FetchHashtagPostsGet = <ThrowOnErr
  */
 export const searchUsersApiV1InstagramV3SearchUsersGet = <ThrowOnError extends boolean = false>(options: Options<SearchUsersApiV1InstagramV3SearchUsersGetData, ThrowOnError>) => (options.client ?? client).get<SearchUsersApiV1InstagramV3SearchUsersGetResponses, SearchUsersApiV1InstagramV3SearchUsersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/search_users',
+    url: '/video-hub/api/v1/instagram/v3/search_users',
     ...options
 });
 
@@ -41239,7 +41239,7 @@ export const searchUsersApiV1InstagramV3SearchUsersGet = <ThrowOnError extends b
  */
 export const searchHashtagsApiV1InstagramV3SearchHashtagsGet = <ThrowOnError extends boolean = false>(options: Options<SearchHashtagsApiV1InstagramV3SearchHashtagsGetData, ThrowOnError>) => (options.client ?? client).get<SearchHashtagsApiV1InstagramV3SearchHashtagsGetResponses, SearchHashtagsApiV1InstagramV3SearchHashtagsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/search_hashtags',
+    url: '/video-hub/api/v1/instagram/v3/search_hashtags',
     ...options
 });
 
@@ -41279,7 +41279,7 @@ export const searchHashtagsApiV1InstagramV3SearchHashtagsGet = <ThrowOnError ext
  */
 export const searchPlacesApiV1InstagramV3SearchPlacesGet = <ThrowOnError extends boolean = false>(options: Options<SearchPlacesApiV1InstagramV3SearchPlacesGetData, ThrowOnError>) => (options.client ?? client).get<SearchPlacesApiV1InstagramV3SearchPlacesGetResponses, SearchPlacesApiV1InstagramV3SearchPlacesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/search_places',
+    url: '/video-hub/api/v1/instagram/v3/search_places',
     ...options
 });
 
@@ -41355,7 +41355,7 @@ export const searchPlacesApiV1InstagramV3SearchPlacesGet = <ThrowOnError extends
  */
 export const generalSearchApiV1InstagramV3GeneralSearchGet = <ThrowOnError extends boolean = false>(options: Options<GeneralSearchApiV1InstagramV3GeneralSearchGetData, ThrowOnError>) => (options.client ?? client).get<GeneralSearchApiV1InstagramV3GeneralSearchGetResponses, GeneralSearchApiV1InstagramV3GeneralSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/general_search',
+    url: '/video-hub/api/v1/instagram/v3/general_search',
     ...options
 });
 
@@ -41415,7 +41415,7 @@ export const generalSearchApiV1InstagramV3GeneralSearchGet = <ThrowOnError exten
  */
 export const getUserProfileApiV1InstagramV3GetUserProfileGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserProfileApiV1InstagramV3GetUserProfileGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserProfileApiV1InstagramV3GetUserProfileGetResponses, GetUserProfileApiV1InstagramV3GetUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_profile',
+    url: '/video-hub/api/v1/instagram/v3/get_user_profile',
     ...options
 });
 
@@ -41472,7 +41472,7 @@ export const getUserProfileApiV1InstagramV3GetUserProfileGet = <ThrowOnError ext
  */
 export const getUserBriefApiV1InstagramV3GetUserBriefGet = <ThrowOnError extends boolean = false>(options: Options<GetUserBriefApiV1InstagramV3GetUserBriefGetData, ThrowOnError>) => (options.client ?? client).get<GetUserBriefApiV1InstagramV3GetUserBriefGetResponses, GetUserBriefApiV1InstagramV3GetUserBriefGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_brief',
+    url: '/video-hub/api/v1/instagram/v3/get_user_brief',
     ...options
 });
 
@@ -41552,7 +41552,7 @@ export const getUserBriefApiV1InstagramV3GetUserBriefGet = <ThrowOnError extends
  */
 export const getUserPostsApiV1InstagramV3GetUserPostsGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserPostsApiV1InstagramV3GetUserPostsGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserPostsApiV1InstagramV3GetUserPostsGetResponses, GetUserPostsApiV1InstagramV3GetUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_posts',
+    url: '/video-hub/api/v1/instagram/v3/get_user_posts',
     ...options
 });
 
@@ -41628,7 +41628,7 @@ export const getUserPostsApiV1InstagramV3GetUserPostsGet = <ThrowOnError extends
  */
 export const getUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGetResponses, GetUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_tagged_posts',
+    url: '/video-hub/api/v1/instagram/v3/get_user_tagged_posts',
     ...options
 });
 
@@ -41706,7 +41706,7 @@ export const getUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGet = <ThrowOnE
  */
 export const getUserReelsApiV1InstagramV3GetUserReelsGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserReelsApiV1InstagramV3GetUserReelsGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserReelsApiV1InstagramV3GetUserReelsGetResponses, GetUserReelsApiV1InstagramV3GetUserReelsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_reels',
+    url: '/video-hub/api/v1/instagram/v3/get_user_reels',
     ...options
 });
 
@@ -41776,7 +41776,7 @@ export const getUserReelsApiV1InstagramV3GetUserReelsGet = <ThrowOnError extends
  */
 export const getUserHighlightsApiV1InstagramV3GetUserHighlightsGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserHighlightsApiV1InstagramV3GetUserHighlightsGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserHighlightsApiV1InstagramV3GetUserHighlightsGetResponses, GetUserHighlightsApiV1InstagramV3GetUserHighlightsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_highlights',
+    url: '/video-hub/api/v1/instagram/v3/get_user_highlights',
     ...options
 });
 
@@ -41839,7 +41839,7 @@ export const getUserHighlightsApiV1InstagramV3GetUserHighlightsGet = <ThrowOnErr
  */
 export const getHighlightStoriesApiV1InstagramV3GetHighlightStoriesGet = <ThrowOnError extends boolean = false>(options: Options<GetHighlightStoriesApiV1InstagramV3GetHighlightStoriesGetData, ThrowOnError>) => (options.client ?? client).get<GetHighlightStoriesApiV1InstagramV3GetHighlightStoriesGetResponses, GetHighlightStoriesApiV1InstagramV3GetHighlightStoriesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_highlight_stories',
+    url: '/video-hub/api/v1/instagram/v3/get_highlight_stories',
     ...options
 });
 
@@ -41881,7 +41881,7 @@ export const getHighlightStoriesApiV1InstagramV3GetHighlightStoriesGet = <ThrowO
  */
 export const getUserAboutApiV1InstagramV3GetUserAboutGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserAboutApiV1InstagramV3GetUserAboutGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserAboutApiV1InstagramV3GetUserAboutGetResponses, GetUserAboutApiV1InstagramV3GetUserAboutGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_about',
+    url: '/video-hub/api/v1/instagram/v3/get_user_about',
     ...options
 });
 
@@ -41919,7 +41919,7 @@ export const getUserAboutApiV1InstagramV3GetUserAboutGet = <ThrowOnError extends
  */
 export const getUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGetResponses, GetUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_former_usernames',
+    url: '/video-hub/api/v1/instagram/v3/get_user_former_usernames',
     ...options
 });
 
@@ -42001,7 +42001,7 @@ export const getUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGet = <
  */
 export const getUserStoriesApiV1InstagramV3GetUserStoriesGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserStoriesApiV1InstagramV3GetUserStoriesGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserStoriesApiV1InstagramV3GetUserStoriesGetResponses, GetUserStoriesApiV1InstagramV3GetUserStoriesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_stories',
+    url: '/video-hub/api/v1/instagram/v3/get_user_stories',
     ...options
 });
 
@@ -42073,7 +42073,7 @@ export const getUserStoriesApiV1InstagramV3GetUserStoriesGet = <ThrowOnError ext
  */
 export const getRecommendedReelsApiV1InstagramV3GetRecommendedReelsGet = <ThrowOnError extends boolean = false>(options?: Options<GetRecommendedReelsApiV1InstagramV3GetRecommendedReelsGetData, ThrowOnError>) => (options?.client ?? client).get<GetRecommendedReelsApiV1InstagramV3GetRecommendedReelsGetResponses, GetRecommendedReelsApiV1InstagramV3GetRecommendedReelsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_recommended_reels',
+    url: '/video-hub/api/v1/instagram/v3/get_recommended_reels',
     ...options
 });
 
@@ -42137,7 +42137,7 @@ export const getRecommendedReelsApiV1InstagramV3GetRecommendedReelsGet = <ThrowO
  */
 export const getPostInfoApiV1InstagramV3GetPostInfoGet = <ThrowOnError extends boolean = false>(options?: Options<GetPostInfoApiV1InstagramV3GetPostInfoGetData, ThrowOnError>) => (options?.client ?? client).get<GetPostInfoApiV1InstagramV3GetPostInfoGetResponses, GetPostInfoApiV1InstagramV3GetPostInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_post_info',
+    url: '/video-hub/api/v1/instagram/v3/get_post_info',
     ...options
 });
 
@@ -42196,7 +42196,7 @@ export const getPostInfoApiV1InstagramV3GetPostInfoGet = <ThrowOnError extends b
  */
 export const getPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGet = <ThrowOnError extends boolean = false>(options?: Options<GetPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGetData, ThrowOnError>) => (options?.client ?? client).get<GetPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGetResponses, GetPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_post_info_by_code',
+    url: '/video-hub/api/v1/instagram/v3/get_post_info_by_code',
     ...options
 });
 
@@ -42274,7 +42274,7 @@ export const getPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGet = <ThrowOnErr
  */
 export const getPostCommentsApiV1InstagramV3GetPostCommentsGet = <ThrowOnError extends boolean = false>(options?: Options<GetPostCommentsApiV1InstagramV3GetPostCommentsGetData, ThrowOnError>) => (options?.client ?? client).get<GetPostCommentsApiV1InstagramV3GetPostCommentsGetResponses, GetPostCommentsApiV1InstagramV3GetPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_post_comments',
+    url: '/video-hub/api/v1/instagram/v3/get_post_comments',
     ...options
 });
 
@@ -42351,7 +42351,7 @@ export const getPostCommentsApiV1InstagramV3GetPostCommentsGet = <ThrowOnError e
  */
 export const getCommentRepliesApiV1InstagramV3GetCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<GetCommentRepliesApiV1InstagramV3GetCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<GetCommentRepliesApiV1InstagramV3GetCommentRepliesGetResponses, GetCommentRepliesApiV1InstagramV3GetCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_comment_replies',
+    url: '/video-hub/api/v1/instagram/v3/get_comment_replies',
     ...options
 });
 
@@ -42417,7 +42417,7 @@ export const getCommentRepliesApiV1InstagramV3GetCommentRepliesGet = <ThrowOnErr
  */
 export const getPostOembedApiV1InstagramV3GetPostOembedGet = <ThrowOnError extends boolean = false>(options: Options<GetPostOembedApiV1InstagramV3GetPostOembedGetData, ThrowOnError>) => (options.client ?? client).get<GetPostOembedApiV1InstagramV3GetPostOembedGetResponses, GetPostOembedApiV1InstagramV3GetPostOembedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_post_oembed',
+    url: '/video-hub/api/v1/instagram/v3/get_post_oembed',
     ...options
 });
 
@@ -42459,7 +42459,7 @@ export const getPostOembedApiV1InstagramV3GetPostOembedGet = <ThrowOnError exten
  */
 export const translateCommentApiV1InstagramV3TranslateCommentGet = <ThrowOnError extends boolean = false>(options: Options<TranslateCommentApiV1InstagramV3TranslateCommentGetData, ThrowOnError>) => (options.client ?? client).get<TranslateCommentApiV1InstagramV3TranslateCommentGetResponses, TranslateCommentApiV1InstagramV3TranslateCommentGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/translate_comment',
+    url: '/video-hub/api/v1/instagram/v3/translate_comment',
     ...options
 });
 
@@ -42510,7 +42510,7 @@ export const translateCommentApiV1InstagramV3TranslateCommentGet = <ThrowOnError
  */
 export const bulkTranslateCommentsApiV1InstagramV3BulkTranslateCommentsGet = <ThrowOnError extends boolean = false>(options: Options<BulkTranslateCommentsApiV1InstagramV3BulkTranslateCommentsGetData, ThrowOnError>) => (options.client ?? client).get<BulkTranslateCommentsApiV1InstagramV3BulkTranslateCommentsGetResponses, BulkTranslateCommentsApiV1InstagramV3BulkTranslateCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/bulk_translate_comments',
+    url: '/video-hub/api/v1/instagram/v3/bulk_translate_comments',
     ...options
 });
 
@@ -42584,7 +42584,7 @@ export const bulkTranslateCommentsApiV1InstagramV3BulkTranslateCommentsGet = <Th
  */
 export const getExploreApiV1InstagramV3GetExploreGet = <ThrowOnError extends boolean = false>(options?: Options<GetExploreApiV1InstagramV3GetExploreGetData, ThrowOnError>) => (options?.client ?? client).get<GetExploreApiV1InstagramV3GetExploreGetResponses, GetExploreApiV1InstagramV3GetExploreGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_explore',
+    url: '/video-hub/api/v1/instagram/v3/get_explore',
     ...options
 });
 
@@ -42658,7 +42658,7 @@ export const getExploreApiV1InstagramV3GetExploreGet = <ThrowOnError extends boo
  */
 export const getUserFollowingApiV1InstagramV3GetUserFollowingGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserFollowingApiV1InstagramV3GetUserFollowingGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserFollowingApiV1InstagramV3GetUserFollowingGetResponses, GetUserFollowingApiV1InstagramV3GetUserFollowingGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_following',
+    url: '/video-hub/api/v1/instagram/v3/get_user_following',
     ...options
 });
 
@@ -42732,7 +42732,7 @@ export const getUserFollowingApiV1InstagramV3GetUserFollowingGet = <ThrowOnError
  */
 export const getUserFollowersApiV1InstagramV3GetUserFollowersGet = <ThrowOnError extends boolean = false>(options?: Options<GetUserFollowersApiV1InstagramV3GetUserFollowersGetData, ThrowOnError>) => (options?.client ?? client).get<GetUserFollowersApiV1InstagramV3GetUserFollowersGetResponses, GetUserFollowersApiV1InstagramV3GetUserFollowersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_user_followers',
+    url: '/video-hub/api/v1/instagram/v3/get_user_followers',
     ...options
 });
 
@@ -42794,7 +42794,7 @@ export const getUserFollowersApiV1InstagramV3GetUserFollowersGet = <ThrowOnError
  */
 export const getLocationInfoApiV1InstagramV3GetLocationInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetLocationInfoApiV1InstagramV3GetLocationInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetLocationInfoApiV1InstagramV3GetLocationInfoGetResponses, GetLocationInfoApiV1InstagramV3GetLocationInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_location_info',
+    url: '/video-hub/api/v1/instagram/v3/get_location_info',
     ...options
 });
 
@@ -42861,7 +42861,7 @@ export const getLocationInfoApiV1InstagramV3GetLocationInfoGet = <ThrowOnError e
  */
 export const getLocationPostsApiV1InstagramV3GetLocationPostsGet = <ThrowOnError extends boolean = false>(options: Options<GetLocationPostsApiV1InstagramV3GetLocationPostsGetData, ThrowOnError>) => (options.client ?? client).get<GetLocationPostsApiV1InstagramV3GetLocationPostsGetResponses, GetLocationPostsApiV1InstagramV3GetLocationPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/instagram/v3/get_location_posts',
+    url: '/video-hub/api/v1/instagram/v3/get_location_posts',
     ...options
 });
 
@@ -42916,7 +42916,7 @@ export const getLocationPostsApiV1InstagramV3GetLocationPostsGet = <ThrowOnError
  */
 export const getVideoInfoApiV1YoutubeWebGetVideoInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetVideoInfoApiV1YoutubeWebGetVideoInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetVideoInfoApiV1YoutubeWebGetVideoInfoGetResponses, GetVideoInfoApiV1YoutubeWebGetVideoInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_video_info',
+    url: '/video-hub/api/v1/youtube/web/get_video_info',
     ...options
 });
 
@@ -42946,7 +42946,7 @@ export const getVideoInfoApiV1YoutubeWebGetVideoInfoGet = <ThrowOnError extends 
  */
 export const getVideoInfoV2ApiV1YoutubeWebGetVideoInfoV2Get = <ThrowOnError extends boolean = false>(options: Options<GetVideoInfoV2ApiV1YoutubeWebGetVideoInfoV2GetData, ThrowOnError>) => (options.client ?? client).get<GetVideoInfoV2ApiV1YoutubeWebGetVideoInfoV2GetResponses, GetVideoInfoV2ApiV1YoutubeWebGetVideoInfoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_video_info_v2',
+    url: '/video-hub/api/v1/youtube/web/get_video_info_v2',
     ...options
 });
 
@@ -43084,7 +43084,7 @@ export const getVideoInfoV2ApiV1YoutubeWebGetVideoInfoV2Get = <ThrowOnError exte
  */
 export const getVideoInfoV3ApiV1YoutubeWebGetVideoInfoV3Get = <ThrowOnError extends boolean = false>(options: Options<GetVideoInfoV3ApiV1YoutubeWebGetVideoInfoV3GetData, ThrowOnError>) => (options.client ?? client).get<GetVideoInfoV3ApiV1YoutubeWebGetVideoInfoV3GetResponses, GetVideoInfoV3ApiV1YoutubeWebGetVideoInfoV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_video_info_v3',
+    url: '/video-hub/api/v1/youtube/web/get_video_info_v3',
     ...options
 });
 
@@ -43115,7 +43115,7 @@ export const getVideoInfoV3ApiV1YoutubeWebGetVideoInfoV3Get = <ThrowOnError exte
  */
 export const apiGetVideoSubtitlesApiV1YoutubeWebGetVideoSubtitlesGet = <ThrowOnError extends boolean = false>(options: Options<ApiGetVideoSubtitlesApiV1YoutubeWebGetVideoSubtitlesGetData, ThrowOnError>) => (options.client ?? client).get<ApiGetVideoSubtitlesApiV1YoutubeWebGetVideoSubtitlesGetResponses, ApiGetVideoSubtitlesApiV1YoutubeWebGetVideoSubtitlesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_video_subtitles',
+    url: '/video-hub/api/v1/youtube/web/get_video_subtitles',
     ...options
 });
 
@@ -43331,7 +43331,7 @@ export const apiGetVideoSubtitlesApiV1YoutubeWebGetVideoSubtitlesGet = <ThrowOnE
  */
 export const getVideoCommentsApiV1YoutubeWebGetVideoCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetVideoCommentsApiV1YoutubeWebGetVideoCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetVideoCommentsApiV1YoutubeWebGetVideoCommentsGetResponses, GetVideoCommentsApiV1YoutubeWebGetVideoCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_video_comments',
+    url: '/video-hub/api/v1/youtube/web/get_video_comments',
     ...options
 });
 
@@ -43422,7 +43422,7 @@ export const getVideoCommentsApiV1YoutubeWebGetVideoCommentsGet = <ThrowOnError 
  */
 export const getVideoCommentRepliesApiV1YoutubeWebGetVideoCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<GetVideoCommentRepliesApiV1YoutubeWebGetVideoCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<GetVideoCommentRepliesApiV1YoutubeWebGetVideoCommentRepliesGetResponses, GetVideoCommentRepliesApiV1YoutubeWebGetVideoCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_video_comment_replies',
+    url: '/video-hub/api/v1/youtube/web/get_video_comment_replies',
     ...options
 });
 
@@ -43661,7 +43661,7 @@ export const getVideoCommentRepliesApiV1YoutubeWebGetVideoCommentRepliesGet = <T
  */
 export const getChannelDescriptionApiV1YoutubeWebGetChannelDescriptionGet = <ThrowOnError extends boolean = false>(options?: Options<GetChannelDescriptionApiV1YoutubeWebGetChannelDescriptionGetData, ThrowOnError>) => (options?.client ?? client).get<GetChannelDescriptionApiV1YoutubeWebGetChannelDescriptionGetResponses, GetChannelDescriptionApiV1YoutubeWebGetChannelDescriptionGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_description',
+    url: '/video-hub/api/v1/youtube/web/get_channel_description',
     ...options
 });
 
@@ -43691,7 +43691,7 @@ export const getChannelDescriptionApiV1YoutubeWebGetChannelDescriptionGet = <Thr
  */
 export const getRelateVideoApiV1YoutubeWebGetRelateVideoGet = <ThrowOnError extends boolean = false>(options: Options<GetRelateVideoApiV1YoutubeWebGetRelateVideoGetData, ThrowOnError>) => (options.client ?? client).get<GetRelateVideoApiV1YoutubeWebGetRelateVideoGetResponses, GetRelateVideoApiV1YoutubeWebGetRelateVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_relate_video',
+    url: '/video-hub/api/v1/youtube/web/get_relate_video',
     ...options
 });
 
@@ -43727,7 +43727,7 @@ export const getRelateVideoApiV1YoutubeWebGetRelateVideoGet = <ThrowOnError exte
  */
 export const searchVideoApiV1YoutubeWebSearchVideoGet = <ThrowOnError extends boolean = false>(options: Options<SearchVideoApiV1YoutubeWebSearchVideoGetData, ThrowOnError>) => (options.client ?? client).get<SearchVideoApiV1YoutubeWebSearchVideoGetResponses, SearchVideoApiV1YoutubeWebSearchVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/search_video',
+    url: '/video-hub/api/v1/youtube/web/search_video',
     ...options
 });
 
@@ -43853,7 +43853,7 @@ export const searchVideoApiV1YoutubeWebSearchVideoGet = <ThrowOnError extends bo
  */
 export const getGeneralSearchApiV1YoutubeWebGetGeneralSearchGet = <ThrowOnError extends boolean = false>(options: Options<GetGeneralSearchApiV1YoutubeWebGetGeneralSearchGetData, ThrowOnError>) => (options.client ?? client).get<GetGeneralSearchApiV1YoutubeWebGetGeneralSearchGetResponses, GetGeneralSearchApiV1YoutubeWebGetGeneralSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_general_search',
+    url: '/video-hub/api/v1/youtube/web/get_general_search',
     ...options
 });
 
@@ -44186,7 +44186,7 @@ export const getGeneralSearchApiV1YoutubeWebGetGeneralSearchGet = <ThrowOnError 
  */
 export const getShortsSearchApiV1YoutubeWebGetShortsSearchGet = <ThrowOnError extends boolean = false>(options: Options<GetShortsSearchApiV1YoutubeWebGetShortsSearchGetData, ThrowOnError>) => (options.client ?? client).get<GetShortsSearchApiV1YoutubeWebGetShortsSearchGetResponses, GetShortsSearchApiV1YoutubeWebGetShortsSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_shorts_search',
+    url: '/video-hub/api/v1/youtube/web/get_shorts_search',
     ...options
 });
 
@@ -44214,7 +44214,7 @@ export const getShortsSearchApiV1YoutubeWebGetShortsSearchGet = <ThrowOnError ex
  */
 export const getChannelIdApiV1YoutubeWebGetChannelIdGet = <ThrowOnError extends boolean = false>(options: Options<GetChannelIdApiV1YoutubeWebGetChannelIdGetData, ThrowOnError>) => (options.client ?? client).get<GetChannelIdApiV1YoutubeWebGetChannelIdGetResponses, GetChannelIdApiV1YoutubeWebGetChannelIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_id',
+    url: '/video-hub/api/v1/youtube/web/get_channel_id',
     ...options
 });
 
@@ -44248,7 +44248,7 @@ export const getChannelIdApiV1YoutubeWebGetChannelIdGet = <ThrowOnError extends 
  */
 export const getChannelIdV2ApiV1YoutubeWebGetChannelIdV2Get = <ThrowOnError extends boolean = false>(options: Options<GetChannelIdV2ApiV1YoutubeWebGetChannelIdV2GetData, ThrowOnError>) => (options.client ?? client).get<GetChannelIdV2ApiV1YoutubeWebGetChannelIdV2GetResponses, GetChannelIdV2ApiV1YoutubeWebGetChannelIdV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_id_v2',
+    url: '/video-hub/api/v1/youtube/web/get_channel_id_v2',
     ...options
 });
 
@@ -44298,7 +44298,7 @@ export const getChannelIdV2ApiV1YoutubeWebGetChannelIdV2Get = <ThrowOnError exte
  */
 export const getChannelUrlApiV1YoutubeWebGetChannelUrlGet = <ThrowOnError extends boolean = false>(options: Options<GetChannelUrlApiV1YoutubeWebGetChannelUrlGetData, ThrowOnError>) => (options.client ?? client).get<GetChannelUrlApiV1YoutubeWebGetChannelUrlGetResponses, GetChannelUrlApiV1YoutubeWebGetChannelUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_url',
+    url: '/video-hub/api/v1/youtube/web/get_channel_url',
     ...options
 });
 
@@ -44326,7 +44326,7 @@ export const getChannelUrlApiV1YoutubeWebGetChannelUrlGet = <ThrowOnError extend
  */
 export const getChannelInfoApiV1YoutubeWebGetChannelInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetChannelInfoApiV1YoutubeWebGetChannelInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetChannelInfoApiV1YoutubeWebGetChannelInfoGetResponses, GetChannelInfoApiV1YoutubeWebGetChannelInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_info',
+    url: '/video-hub/api/v1/youtube/web/get_channel_info',
     ...options
 });
 
@@ -44358,7 +44358,7 @@ export const getChannelInfoApiV1YoutubeWebGetChannelInfoGet = <ThrowOnError exte
  */
 export const getChannelVideosApiV1YoutubeWebGetChannelVideosGet = <ThrowOnError extends boolean = false>(options: Options<GetChannelVideosApiV1YoutubeWebGetChannelVideosGetData, ThrowOnError>) => (options.client ?? client).get<GetChannelVideosApiV1YoutubeWebGetChannelVideosGetResponses, GetChannelVideosApiV1YoutubeWebGetChannelVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_videos',
+    url: '/video-hub/api/v1/youtube/web/get_channel_videos',
     ...options
 });
 
@@ -44419,7 +44419,7 @@ export const getChannelVideosApiV1YoutubeWebGetChannelVideosGet = <ThrowOnError 
  */
 export const getChannelVideosV2ApiV1YoutubeWebGetChannelVideosV2Get = <ThrowOnError extends boolean = false>(options: Options<GetChannelVideosV2ApiV1YoutubeWebGetChannelVideosV2GetData, ThrowOnError>) => (options.client ?? client).get<GetChannelVideosV2ApiV1YoutubeWebGetChannelVideosV2GetResponses, GetChannelVideosV2ApiV1YoutubeWebGetChannelVideosV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_videos_v2',
+    url: '/video-hub/api/v1/youtube/web/get_channel_videos_v2',
     ...options
 });
 
@@ -44610,7 +44610,7 @@ export const getChannelVideosV2ApiV1YoutubeWebGetChannelVideosV2Get = <ThrowOnEr
  */
 export const getChannelVideosV3ApiV1YoutubeWebGetChannelVideosV3Get = <ThrowOnError extends boolean = false>(options: Options<GetChannelVideosV3ApiV1YoutubeWebGetChannelVideosV3GetData, ThrowOnError>) => (options.client ?? client).get<GetChannelVideosV3ApiV1YoutubeWebGetChannelVideosV3GetResponses, GetChannelVideosV3ApiV1YoutubeWebGetChannelVideosV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_videos_v3',
+    url: '/video-hub/api/v1/youtube/web/get_channel_videos_v3',
     ...options
 });
 
@@ -44640,7 +44640,7 @@ export const getChannelVideosV3ApiV1YoutubeWebGetChannelVideosV3Get = <ThrowOnEr
  */
 export const getChannelShortVideosApiV1YoutubeWebGetChannelShortVideosGet = <ThrowOnError extends boolean = false>(options: Options<GetChannelShortVideosApiV1YoutubeWebGetChannelShortVideosGetData, ThrowOnError>) => (options.client ?? client).get<GetChannelShortVideosApiV1YoutubeWebGetChannelShortVideosGetResponses, GetChannelShortVideosApiV1YoutubeWebGetChannelShortVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_channel_short_videos',
+    url: '/video-hub/api/v1/youtube/web/get_channel_short_videos',
     ...options
 });
 
@@ -44675,7 +44675,7 @@ export const getChannelShortVideosApiV1YoutubeWebGetChannelShortVideosGet = <Thr
  */
 export const searchChannelApiV1YoutubeWebSearchChannelGet = <ThrowOnError extends boolean = false>(options: Options<SearchChannelApiV1YoutubeWebSearchChannelGetData, ThrowOnError>) => (options.client ?? client).get<SearchChannelApiV1YoutubeWebSearchChannelGetResponses, SearchChannelApiV1YoutubeWebSearchChannelGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/search_channel',
+    url: '/video-hub/api/v1/youtube/web/search_channel',
     ...options
 });
 
@@ -44706,7 +44706,7 @@ export const searchChannelApiV1YoutubeWebSearchChannelGet = <ThrowOnError extend
  */
 export const getTrendingVideosApiV1YoutubeWebGetTrendingVideosGet = <ThrowOnError extends boolean = false>(options?: Options<GetTrendingVideosApiV1YoutubeWebGetTrendingVideosGetData, ThrowOnError>) => (options?.client ?? client).get<GetTrendingVideosApiV1YoutubeWebGetTrendingVideosGetResponses, GetTrendingVideosApiV1YoutubeWebGetTrendingVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web/get_trending_videos',
+    url: '/video-hub/api/v1/youtube/web/get_trending_videos',
     ...options
 });
 
@@ -44842,7 +44842,7 @@ export const getTrendingVideosApiV1YoutubeWebGetTrendingVideosGet = <ThrowOnErro
  */
 export const getVideoInfoApiV1YoutubeWebV2GetVideoInfoGet = <ThrowOnError extends boolean = false>(options: Options<GetVideoInfoApiV1YoutubeWebV2GetVideoInfoGetData, ThrowOnError>) => (options.client ?? client).get<GetVideoInfoApiV1YoutubeWebV2GetVideoInfoGetResponses, GetVideoInfoApiV1YoutubeWebV2GetVideoInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_video_info',
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_info',
     ...options
 });
 
@@ -45056,7 +45056,7 @@ export const getVideoInfoApiV1YoutubeWebV2GetVideoInfoGet = <ThrowOnError extend
  */
 export const getVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGetResponses, GetVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_video_comments',
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_comments',
     ...options
 });
 
@@ -45145,7 +45145,7 @@ export const getVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGet = <ThrowOnErro
  */
 export const getVideoCommentRepliesApiV1YoutubeWebV2GetVideoCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<GetVideoCommentRepliesApiV1YoutubeWebV2GetVideoCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<GetVideoCommentRepliesApiV1YoutubeWebV2GetVideoCommentRepliesGetResponses, GetVideoCommentRepliesApiV1YoutubeWebV2GetVideoCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_video_comment_replies',
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_comment_replies',
     ...options
 });
 
@@ -45382,7 +45382,7 @@ export const getVideoCommentRepliesApiV1YoutubeWebV2GetVideoCommentRepliesGet = 
  */
 export const getChannelDescriptionApiV1YoutubeWebV2GetChannelDescriptionGet = <ThrowOnError extends boolean = false>(options?: Options<GetChannelDescriptionApiV1YoutubeWebV2GetChannelDescriptionGetData, ThrowOnError>) => (options?.client ?? client).get<GetChannelDescriptionApiV1YoutubeWebV2GetChannelDescriptionGetResponses, GetChannelDescriptionApiV1YoutubeWebV2GetChannelDescriptionGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_channel_description',
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_description',
     ...options
 });
 
@@ -45506,7 +45506,7 @@ export const getChannelDescriptionApiV1YoutubeWebV2GetChannelDescriptionGet = <T
  */
 export const getGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGet = <ThrowOnError extends boolean = false>(options: Options<GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetData, ThrowOnError>) => (options.client ?? client).get<GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetResponses, GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_general_search',
+    url: '/video-hub/api/v1/youtube/web_v2/get_general_search',
     ...options
 });
 
@@ -45837,7 +45837,7 @@ export const getGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGet = <ThrowOnErro
  */
 export const getShortsSearchApiV1YoutubeWebV2GetShortsSearchGet = <ThrowOnError extends boolean = false>(options: Options<GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetData, ThrowOnError>) => (options.client ?? client).get<GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetResponses, GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_shorts_search',
+    url: '/video-hub/api/v1/youtube/web_v2/get_shorts_search',
     ...options
 });
 
@@ -45871,7 +45871,7 @@ export const getShortsSearchApiV1YoutubeWebV2GetShortsSearchGet = <ThrowOnError 
  */
 export const getChannelIdApiV1YoutubeWebV2GetChannelIdGet = <ThrowOnError extends boolean = false>(options: Options<GetChannelIdApiV1YoutubeWebV2GetChannelIdGetData, ThrowOnError>) => (options.client ?? client).get<GetChannelIdApiV1YoutubeWebV2GetChannelIdGetResponses, GetChannelIdApiV1YoutubeWebV2GetChannelIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_channel_id',
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_id',
     ...options
 });
 
@@ -45921,7 +45921,7 @@ export const getChannelIdApiV1YoutubeWebV2GetChannelIdGet = <ThrowOnError extend
  */
 export const getChannelUrlApiV1YoutubeWebV2GetChannelUrlGet = <ThrowOnError extends boolean = false>(options: Options<GetChannelUrlApiV1YoutubeWebV2GetChannelUrlGetData, ThrowOnError>) => (options.client ?? client).get<GetChannelUrlApiV1YoutubeWebV2GetChannelUrlGetResponses, GetChannelUrlApiV1YoutubeWebV2GetChannelUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_channel_url',
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_url',
     ...options
 });
 
@@ -46110,7 +46110,7 @@ export const getChannelUrlApiV1YoutubeWebV2GetChannelUrlGet = <ThrowOnError exte
  */
 export const getChannelVideosApiV1YoutubeWebV2GetChannelVideosGet = <ThrowOnError extends boolean = false>(options: Options<GetChannelVideosApiV1YoutubeWebV2GetChannelVideosGetData, ThrowOnError>) => (options.client ?? client).get<GetChannelVideosApiV1YoutubeWebV2GetChannelVideosGetResponses, GetChannelVideosApiV1YoutubeWebV2GetChannelVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_channel_videos',
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_videos',
     ...options
 });
 
@@ -46199,7 +46199,7 @@ export const getChannelVideosApiV1YoutubeWebV2GetChannelVideosGet = <ThrowOnErro
  */
 export const getVideoStreamsApiV1YoutubeWebV2GetVideoStreamsGet = <ThrowOnError extends boolean = false>(options?: Options<GetVideoStreamsApiV1YoutubeWebV2GetVideoStreamsGetData, ThrowOnError>) => (options?.client ?? client).get<GetVideoStreamsApiV1YoutubeWebV2GetVideoStreamsGetResponses, GetVideoStreamsApiV1YoutubeWebV2GetVideoStreamsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_video_streams',
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_streams',
     ...options
 });
 
@@ -46289,7 +46289,7 @@ export const getVideoStreamsApiV1YoutubeWebV2GetVideoStreamsGet = <ThrowOnError 
  */
 export const getVideoStreamsV2ApiV1YoutubeWebV2GetVideoStreamsV2Get = <ThrowOnError extends boolean = false>(options?: Options<GetVideoStreamsV2ApiV1YoutubeWebV2GetVideoStreamsV2GetData, ThrowOnError>) => (options?.client ?? client).get<GetVideoStreamsV2ApiV1YoutubeWebV2GetVideoStreamsV2GetResponses, GetVideoStreamsV2ApiV1YoutubeWebV2GetVideoStreamsV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_video_streams_v2',
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_streams_v2',
     ...options
 });
 
@@ -46342,7 +46342,7 @@ export const getVideoStreamsV2ApiV1YoutubeWebV2GetVideoStreamsV2Get = <ThrowOnEr
  */
 export const getSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGet = <ThrowOnError extends boolean = false>(options: Options<GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetData, ThrowOnError>) => (options.client ?? client).get<GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetResponses, GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_signed_stream_url',
+    url: '/video-hub/api/v1/youtube/web_v2/get_signed_stream_url',
     ...options
 });
 
@@ -46450,7 +46450,7 @@ export const getSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGet = <ThrowOn
  */
 export const getRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGet = <ThrowOnError extends boolean = false>(options?: Options<GetRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGetData, ThrowOnError>) => (options?.client ?? client).get<GetRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGetResponses, GetRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_related_videos',
+    url: '/video-hub/api/v1/youtube/web_v2/get_related_videos',
     ...options
 });
 
@@ -46556,7 +46556,7 @@ export const getRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGet = <ThrowOnErro
  */
 export const getChannelShortsApiV1YoutubeWebV2GetChannelShortsGet = <ThrowOnError extends boolean = false>(options?: Options<GetChannelShortsApiV1YoutubeWebV2GetChannelShortsGetData, ThrowOnError>) => (options?.client ?? client).get<GetChannelShortsApiV1YoutubeWebV2GetChannelShortsGetResponses, GetChannelShortsApiV1YoutubeWebV2GetChannelShortsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_channel_shorts',
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_shorts',
     ...options
 });
 
@@ -46632,7 +46632,7 @@ export const getChannelShortsApiV1YoutubeWebV2GetChannelShortsGet = <ThrowOnErro
  */
 export const getSearchSuggestionsApiV1YoutubeWebV2GetSearchSuggestionsGet = <ThrowOnError extends boolean = false>(options: Options<GetSearchSuggestionsApiV1YoutubeWebV2GetSearchSuggestionsGetData, ThrowOnError>) => (options.client ?? client).get<GetSearchSuggestionsApiV1YoutubeWebV2GetSearchSuggestionsGetResponses, GetSearchSuggestionsApiV1YoutubeWebV2GetSearchSuggestionsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/get_search_suggestions',
+    url: '/video-hub/api/v1/youtube/web_v2/get_search_suggestions',
     ...options
 });
 
@@ -46746,7 +46746,7 @@ export const getSearchSuggestionsApiV1YoutubeWebV2GetSearchSuggestionsGet = <Thr
  */
 export const searchChannelsApiV1YoutubeWebV2SearchChannelsGet = <ThrowOnError extends boolean = false>(options?: Options<SearchChannelsApiV1YoutubeWebV2SearchChannelsGetData, ThrowOnError>) => (options?.client ?? client).get<SearchChannelsApiV1YoutubeWebV2SearchChannelsGetResponses, SearchChannelsApiV1YoutubeWebV2SearchChannelsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/youtube/web_v2/search_channels',
+    url: '/video-hub/api/v1/youtube/web_v2/search_channels',
     ...options
 });
 
@@ -46824,7 +46824,7 @@ export const searchChannelsApiV1YoutubeWebV2SearchChannelsGet = <ThrowOnError ex
  */
 export const getUserProfileApiV1LinkedinWebGetUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<GetUserProfileApiV1LinkedinWebGetUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<GetUserProfileApiV1LinkedinWebGetUserProfileGetResponses, GetUserProfileApiV1LinkedinWebGetUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_profile',
+    url: '/video-hub/api/v1/linkedin/web/get_user_profile',
     ...options
 });
 
@@ -46861,7 +46861,7 @@ export const getUserProfileApiV1LinkedinWebGetUserProfileGet = <ThrowOnError ext
  */
 export const getUserPostsApiV1LinkedinWebGetUserPostsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserPostsApiV1LinkedinWebGetUserPostsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserPostsApiV1LinkedinWebGetUserPostsGetResponses, GetUserPostsApiV1LinkedinWebGetUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_posts',
+    url: '/video-hub/api/v1/linkedin/web/get_user_posts',
     ...options
 });
 
@@ -46898,7 +46898,7 @@ export const getUserPostsApiV1LinkedinWebGetUserPostsGet = <ThrowOnError extends
  */
 export const getUserCommentsApiV1LinkedinWebGetUserCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserCommentsApiV1LinkedinWebGetUserCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserCommentsApiV1LinkedinWebGetUserCommentsGetResponses, GetUserCommentsApiV1LinkedinWebGetUserCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_comments',
+    url: '/video-hub/api/v1/linkedin/web/get_user_comments',
     ...options
 });
 
@@ -46930,7 +46930,7 @@ export const getUserCommentsApiV1LinkedinWebGetUserCommentsGet = <ThrowOnError e
  */
 export const getUserContactApiV1LinkedinWebGetUserContactGet = <ThrowOnError extends boolean = false>(options: Options<GetUserContactApiV1LinkedinWebGetUserContactGetData, ThrowOnError>) => (options.client ?? client).get<GetUserContactApiV1LinkedinWebGetUserContactGetResponses, GetUserContactApiV1LinkedinWebGetUserContactGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_contact',
+    url: '/video-hub/api/v1/linkedin/web/get_user_contact',
     ...options
 });
 
@@ -46974,7 +46974,7 @@ export const getUserContactApiV1LinkedinWebGetUserContactGet = <ThrowOnError ext
  */
 export const getUserRecommendationsApiV1LinkedinWebGetUserRecommendationsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserRecommendationsApiV1LinkedinWebGetUserRecommendationsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserRecommendationsApiV1LinkedinWebGetUserRecommendationsGetResponses, GetUserRecommendationsApiV1LinkedinWebGetUserRecommendationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_recommendations',
+    url: '/video-hub/api/v1/linkedin/web/get_user_recommendations',
     ...options
 });
 
@@ -47011,7 +47011,7 @@ export const getUserRecommendationsApiV1LinkedinWebGetUserRecommendationsGet = <
  */
 export const getUserVideosApiV1LinkedinWebGetUserVideosGet = <ThrowOnError extends boolean = false>(options: Options<GetUserVideosApiV1LinkedinWebGetUserVideosGetData, ThrowOnError>) => (options.client ?? client).get<GetUserVideosApiV1LinkedinWebGetUserVideosGetResponses, GetUserVideosApiV1LinkedinWebGetUserVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_videos',
+    url: '/video-hub/api/v1/linkedin/web/get_user_videos',
     ...options
 });
 
@@ -47048,7 +47048,7 @@ export const getUserVideosApiV1LinkedinWebGetUserVideosGet = <ThrowOnError exten
  */
 export const getUserImagesApiV1LinkedinWebGetUserImagesGet = <ThrowOnError extends boolean = false>(options: Options<GetUserImagesApiV1LinkedinWebGetUserImagesGetData, ThrowOnError>) => (options.client ?? client).get<GetUserImagesApiV1LinkedinWebGetUserImagesGetResponses, GetUserImagesApiV1LinkedinWebGetUserImagesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_images',
+    url: '/video-hub/api/v1/linkedin/web/get_user_images',
     ...options
 });
 
@@ -47088,7 +47088,7 @@ export const getUserImagesApiV1LinkedinWebGetUserImagesGet = <ThrowOnError exten
  */
 export const getCompanyProfileApiV1LinkedinWebGetCompanyProfileGet = <ThrowOnError extends boolean = false>(options?: Options<GetCompanyProfileApiV1LinkedinWebGetCompanyProfileGetData, ThrowOnError>) => (options?.client ?? client).get<GetCompanyProfileApiV1LinkedinWebGetCompanyProfileGetResponses, GetCompanyProfileApiV1LinkedinWebGetCompanyProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_company_profile',
+    url: '/video-hub/api/v1/linkedin/web/get_company_profile',
     ...options
 });
 
@@ -47123,7 +47123,7 @@ export const getCompanyProfileApiV1LinkedinWebGetCompanyProfileGet = <ThrowOnErr
  */
 export const getCompanyPeopleApiV1LinkedinWebGetCompanyPeopleGet = <ThrowOnError extends boolean = false>(options: Options<GetCompanyPeopleApiV1LinkedinWebGetCompanyPeopleGetData, ThrowOnError>) => (options.client ?? client).get<GetCompanyPeopleApiV1LinkedinWebGetCompanyPeopleGetResponses, GetCompanyPeopleApiV1LinkedinWebGetCompanyPeopleGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_company_people',
+    url: '/video-hub/api/v1/linkedin/web/get_company_people',
     ...options
 });
 
@@ -47165,7 +47165,7 @@ export const getCompanyPeopleApiV1LinkedinWebGetCompanyPeopleGet = <ThrowOnError
  */
 export const getCompanyPostsApiV1LinkedinWebGetCompanyPostsGet = <ThrowOnError extends boolean = false>(options: Options<GetCompanyPostsApiV1LinkedinWebGetCompanyPostsGetData, ThrowOnError>) => (options.client ?? client).get<GetCompanyPostsApiV1LinkedinWebGetCompanyPostsGetResponses, GetCompanyPostsApiV1LinkedinWebGetCompanyPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_company_posts',
+    url: '/video-hub/api/v1/linkedin/web/get_company_posts',
     ...options
 });
 
@@ -47216,7 +47216,7 @@ export const getCompanyPostsApiV1LinkedinWebGetCompanyPostsGet = <ThrowOnError e
  */
 export const getCompanyJobsApiV1LinkedinWebGetCompanyJobsGet = <ThrowOnError extends boolean = false>(options: Options<GetCompanyJobsApiV1LinkedinWebGetCompanyJobsGetData, ThrowOnError>) => (options.client ?? client).get<GetCompanyJobsApiV1LinkedinWebGetCompanyJobsGetResponses, GetCompanyJobsApiV1LinkedinWebGetCompanyJobsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_company_jobs',
+    url: '/video-hub/api/v1/linkedin/web/get_company_jobs',
     ...options
 });
 
@@ -47248,7 +47248,7 @@ export const getCompanyJobsApiV1LinkedinWebGetCompanyJobsGet = <ThrowOnError ext
  */
 export const getCompanyJobCountApiV1LinkedinWebGetCompanyJobCountGet = <ThrowOnError extends boolean = false>(options: Options<GetCompanyJobCountApiV1LinkedinWebGetCompanyJobCountGetData, ThrowOnError>) => (options.client ?? client).get<GetCompanyJobCountApiV1LinkedinWebGetCompanyJobCountGetResponses, GetCompanyJobCountApiV1LinkedinWebGetCompanyJobCountGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_company_job_count',
+    url: '/video-hub/api/v1/linkedin/web/get_company_job_count',
     ...options
 });
 
@@ -47280,7 +47280,7 @@ export const getCompanyJobCountApiV1LinkedinWebGetCompanyJobCountGet = <ThrowOnE
  */
 export const getUserAboutApiV1LinkedinWebGetUserAboutGet = <ThrowOnError extends boolean = false>(options: Options<GetUserAboutApiV1LinkedinWebGetUserAboutGetData, ThrowOnError>) => (options.client ?? client).get<GetUserAboutApiV1LinkedinWebGetUserAboutGetResponses, GetUserAboutApiV1LinkedinWebGetUserAboutGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_about',
+    url: '/video-hub/api/v1/linkedin/web/get_user_about',
     ...options
 });
 
@@ -47312,7 +47312,7 @@ export const getUserAboutApiV1LinkedinWebGetUserAboutGet = <ThrowOnError extends
  */
 export const getUserFollowerAndConnectionApiV1LinkedinWebGetUserFollowerAndConnectionGet = <ThrowOnError extends boolean = false>(options: Options<GetUserFollowerAndConnectionApiV1LinkedinWebGetUserFollowerAndConnectionGetData, ThrowOnError>) => (options.client ?? client).get<GetUserFollowerAndConnectionApiV1LinkedinWebGetUserFollowerAndConnectionGetResponses, GetUserFollowerAndConnectionApiV1LinkedinWebGetUserFollowerAndConnectionGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_follower_and_connection',
+    url: '/video-hub/api/v1/linkedin/web/get_user_follower_and_connection',
     ...options
 });
 
@@ -47347,7 +47347,7 @@ export const getUserFollowerAndConnectionApiV1LinkedinWebGetUserFollowerAndConne
  */
 export const getUserExperienceApiV1LinkedinWebGetUserExperienceGet = <ThrowOnError extends boolean = false>(options: Options<GetUserExperienceApiV1LinkedinWebGetUserExperienceGetData, ThrowOnError>) => (options.client ?? client).get<GetUserExperienceApiV1LinkedinWebGetUserExperienceGetResponses, GetUserExperienceApiV1LinkedinWebGetUserExperienceGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_experience',
+    url: '/video-hub/api/v1/linkedin/web/get_user_experience',
     ...options
 });
 
@@ -47382,7 +47382,7 @@ export const getUserExperienceApiV1LinkedinWebGetUserExperienceGet = <ThrowOnErr
  */
 export const getUserSkillsApiV1LinkedinWebGetUserSkillsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserSkillsApiV1LinkedinWebGetUserSkillsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserSkillsApiV1LinkedinWebGetUserSkillsGetResponses, GetUserSkillsApiV1LinkedinWebGetUserSkillsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_skills',
+    url: '/video-hub/api/v1/linkedin/web/get_user_skills',
     ...options
 });
 
@@ -47417,7 +47417,7 @@ export const getUserSkillsApiV1LinkedinWebGetUserSkillsGet = <ThrowOnError exten
  */
 export const getUserEducationsApiV1LinkedinWebGetUserEducationsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserEducationsApiV1LinkedinWebGetUserEducationsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserEducationsApiV1LinkedinWebGetUserEducationsGetResponses, GetUserEducationsApiV1LinkedinWebGetUserEducationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_educations',
+    url: '/video-hub/api/v1/linkedin/web/get_user_educations',
     ...options
 });
 
@@ -47452,7 +47452,7 @@ export const getUserEducationsApiV1LinkedinWebGetUserEducationsGet = <ThrowOnErr
  */
 export const getUserPublicationsApiV1LinkedinWebGetUserPublicationsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserPublicationsApiV1LinkedinWebGetUserPublicationsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserPublicationsApiV1LinkedinWebGetUserPublicationsGetResponses, GetUserPublicationsApiV1LinkedinWebGetUserPublicationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_publications',
+    url: '/video-hub/api/v1/linkedin/web/get_user_publications',
     ...options
 });
 
@@ -47487,7 +47487,7 @@ export const getUserPublicationsApiV1LinkedinWebGetUserPublicationsGet = <ThrowO
  */
 export const getUserCertificationsApiV1LinkedinWebGetUserCertificationsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserCertificationsApiV1LinkedinWebGetUserCertificationsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserCertificationsApiV1LinkedinWebGetUserCertificationsGetResponses, GetUserCertificationsApiV1LinkedinWebGetUserCertificationsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_certifications',
+    url: '/video-hub/api/v1/linkedin/web/get_user_certifications',
     ...options
 });
 
@@ -47522,7 +47522,7 @@ export const getUserCertificationsApiV1LinkedinWebGetUserCertificationsGet = <Th
  */
 export const getUserHonorsApiV1LinkedinWebGetUserHonorsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserHonorsApiV1LinkedinWebGetUserHonorsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserHonorsApiV1LinkedinWebGetUserHonorsGetResponses, GetUserHonorsApiV1LinkedinWebGetUserHonorsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_honors',
+    url: '/video-hub/api/v1/linkedin/web/get_user_honors',
     ...options
 });
 
@@ -47557,7 +47557,7 @@ export const getUserHonorsApiV1LinkedinWebGetUserHonorsGet = <ThrowOnError exten
  */
 export const getUserInterestsGroupsApiV1LinkedinWebGetUserInterestsGroupsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserInterestsGroupsApiV1LinkedinWebGetUserInterestsGroupsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserInterestsGroupsApiV1LinkedinWebGetUserInterestsGroupsGetResponses, GetUserInterestsGroupsApiV1LinkedinWebGetUserInterestsGroupsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_interests_groups',
+    url: '/video-hub/api/v1/linkedin/web/get_user_interests_groups',
     ...options
 });
 
@@ -47592,7 +47592,7 @@ export const getUserInterestsGroupsApiV1LinkedinWebGetUserInterestsGroupsGet = <
  */
 export const getUserInterestsCompaniesApiV1LinkedinWebGetUserInterestsCompaniesGet = <ThrowOnError extends boolean = false>(options: Options<GetUserInterestsCompaniesApiV1LinkedinWebGetUserInterestsCompaniesGetData, ThrowOnError>) => (options.client ?? client).get<GetUserInterestsCompaniesApiV1LinkedinWebGetUserInterestsCompaniesGetResponses, GetUserInterestsCompaniesApiV1LinkedinWebGetUserInterestsCompaniesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_user_interests_companies',
+    url: '/video-hub/api/v1/linkedin/web/get_user_interests_companies',
     ...options
 });
 
@@ -47626,7 +47626,7 @@ export const getUserInterestsCompaniesApiV1LinkedinWebGetUserInterestsCompaniesG
  */
 export const getJobDetailApiV1LinkedinWebGetJobDetailGet = <ThrowOnError extends boolean = false>(options: Options<GetJobDetailApiV1LinkedinWebGetJobDetailGetData, ThrowOnError>) => (options.client ?? client).get<GetJobDetailApiV1LinkedinWebGetJobDetailGetResponses, GetJobDetailApiV1LinkedinWebGetJobDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/get_job_detail',
+    url: '/video-hub/api/v1/linkedin/web/get_job_detail',
     ...options
 });
 
@@ -47683,7 +47683,7 @@ export const getJobDetailApiV1LinkedinWebGetJobDetailGet = <ThrowOnError extends
  */
 export const searchJobsApiV1LinkedinWebSearchJobsGet = <ThrowOnError extends boolean = false>(options: Options<SearchJobsApiV1LinkedinWebSearchJobsGetData, ThrowOnError>) => (options.client ?? client).get<SearchJobsApiV1LinkedinWebSearchJobsGetResponses, SearchJobsApiV1LinkedinWebSearchJobsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/search_jobs',
+    url: '/video-hub/api/v1/linkedin/web/search_jobs',
     ...options
 });
 
@@ -47741,7 +47741,7 @@ export const searchJobsApiV1LinkedinWebSearchJobsGet = <ThrowOnError extends boo
  */
 export const searchPeopleApiV1LinkedinWebSearchPeopleGet = <ThrowOnError extends boolean = false>(options?: Options<SearchPeopleApiV1LinkedinWebSearchPeopleGetData, ThrowOnError>) => (options?.client ?? client).get<SearchPeopleApiV1LinkedinWebSearchPeopleGetResponses, SearchPeopleApiV1LinkedinWebSearchPeopleGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/linkedin/web/search_people',
+    url: '/video-hub/api/v1/linkedin/web/search_people',
     ...options
 });
 
@@ -47769,7 +47769,7 @@ export const searchPeopleApiV1LinkedinWebSearchPeopleGet = <ThrowOnError extends
  */
 export const fetchOneVideoApiV1BilibiliWebFetchOneVideoGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1BilibiliWebFetchOneVideoGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1BilibiliWebFetchOneVideoGetResponses, FetchOneVideoApiV1BilibiliWebFetchOneVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_one_video',
+    url: '/video-hub/api/v1/bilibili/web/fetch_one_video',
     ...options
 });
 
@@ -47800,7 +47800,7 @@ export const fetchOneVideoApiV1BilibiliWebFetchOneVideoGet = <ThrowOnError exten
  */
 export const fetchOneVideoV2ApiV1BilibiliWebFetchOneVideoV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV2ApiV1BilibiliWebFetchOneVideoV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV2ApiV1BilibiliWebFetchOneVideoV2GetResponses, FetchOneVideoV2ApiV1BilibiliWebFetchOneVideoV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_one_video_v2',
+    url: '/video-hub/api/v1/bilibili/web/fetch_one_video_v2',
     ...options
 });
 
@@ -47828,7 +47828,7 @@ export const fetchOneVideoV2ApiV1BilibiliWebFetchOneVideoV2Get = <ThrowOnError e
  */
 export const fetchOneVideoV3ApiV1BilibiliWebFetchOneVideoV3Get = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoV3ApiV1BilibiliWebFetchOneVideoV3GetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoV3ApiV1BilibiliWebFetchOneVideoV3GetResponses, FetchOneVideoV3ApiV1BilibiliWebFetchOneVideoV3GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_one_video_v3',
+    url: '/video-hub/api/v1/bilibili/web/fetch_one_video_v3',
     ...options
 });
 
@@ -47856,7 +47856,7 @@ export const fetchOneVideoV3ApiV1BilibiliWebFetchOneVideoV3Get = <ThrowOnError e
  */
 export const fetchVideoDetailApiV1BilibiliWebFetchVideoDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoDetailApiV1BilibiliWebFetchVideoDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoDetailApiV1BilibiliWebFetchVideoDetailGetResponses, FetchVideoDetailApiV1BilibiliWebFetchVideoDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_video_detail',
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_detail',
     ...options
 });
 
@@ -47884,7 +47884,7 @@ export const fetchVideoDetailApiV1BilibiliWebFetchVideoDetailGet = <ThrowOnError
  */
 export const fetchVideoPlayInfoApiV1BilibiliWebFetchVideoPlayInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoPlayInfoApiV1BilibiliWebFetchVideoPlayInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoPlayInfoApiV1BilibiliWebFetchVideoPlayInfoGetResponses, FetchVideoPlayInfoApiV1BilibiliWebFetchVideoPlayInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_video_play_info',
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_play_info',
     ...options
 });
 
@@ -47915,7 +47915,7 @@ export const fetchVideoPlayInfoApiV1BilibiliWebFetchVideoPlayInfoGet = <ThrowOnE
  */
 export const fetchVideoSubtitleApiV1BilibiliWebFetchVideoSubtitleGet = <ThrowOnError extends boolean = false>(options: Options<FetchVideoSubtitleApiV1BilibiliWebFetchVideoSubtitleGetData, ThrowOnError>) => (options.client ?? client).get<FetchVideoSubtitleApiV1BilibiliWebFetchVideoSubtitleGetResponses, FetchVideoSubtitleApiV1BilibiliWebFetchVideoSubtitleGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_video_subtitle',
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_subtitle',
     ...options
 });
 
@@ -47947,7 +47947,7 @@ export const fetchVideoSubtitleApiV1BilibiliWebFetchVideoSubtitleGet = <ThrowOnE
  */
 export const fetchHotSearchApiV1BilibiliWebFetchHotSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchHotSearchApiV1BilibiliWebFetchHotSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchHotSearchApiV1BilibiliWebFetchHotSearchGetResponses, FetchHotSearchApiV1BilibiliWebFetchHotSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_hot_search',
+    url: '/video-hub/api/v1/bilibili/web/fetch_hot_search',
     ...options
 });
 
@@ -48013,7 +48013,7 @@ export const fetchHotSearchApiV1BilibiliWebFetchHotSearchGet = <ThrowOnError ext
  */
 export const fetchGeneralSearchApiV1BilibiliWebFetchGeneralSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchGeneralSearchApiV1BilibiliWebFetchGeneralSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchGeneralSearchApiV1BilibiliWebFetchGeneralSearchGetResponses, FetchGeneralSearchApiV1BilibiliWebFetchGeneralSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_general_search',
+    url: '/video-hub/api/v1/bilibili/web/fetch_general_search',
     ...options
 });
 
@@ -48044,7 +48044,7 @@ export const fetchGeneralSearchApiV1BilibiliWebFetchGeneralSearchGet = <ThrowOnE
  */
 export const fetchOneVideoApiV1BilibiliWebFetchVideoPlayurlGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1BilibiliWebFetchVideoPlayurlGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1BilibiliWebFetchVideoPlayurlGetResponses, FetchOneVideoApiV1BilibiliWebFetchVideoPlayurlGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_video_playurl',
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_playurl',
     ...options
 });
 
@@ -48078,7 +48078,7 @@ export const fetchOneVideoApiV1BilibiliWebFetchVideoPlayurlGet = <ThrowOnError e
  */
 export const fetchVipVideoPlayurlApiV1BilibiliWebFetchVipVideoPlayurlPost = <ThrowOnError extends boolean = false>(options: Options<FetchVipVideoPlayurlApiV1BilibiliWebFetchVipVideoPlayurlPostData, ThrowOnError>) => (options.client ?? client).post<FetchVipVideoPlayurlApiV1BilibiliWebFetchVipVideoPlayurlPostResponses, FetchVipVideoPlayurlApiV1BilibiliWebFetchVipVideoPlayurlPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_vip_video_playurl',
+    url: '/video-hub/api/v1/bilibili/web/fetch_vip_video_playurl',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -48122,7 +48122,7 @@ export const fetchVipVideoPlayurlApiV1BilibiliWebFetchVipVideoPlayurlPost = <Thr
  */
 export const fetchUserPostVideosApiV1BilibiliWebFetchUserPostVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostVideosApiV1BilibiliWebFetchUserPostVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostVideosApiV1BilibiliWebFetchUserPostVideosGetResponses, FetchUserPostVideosApiV1BilibiliWebFetchUserPostVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_user_post_videos',
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_post_videos',
     ...options
 });
 
@@ -48150,7 +48150,7 @@ export const fetchUserPostVideosApiV1BilibiliWebFetchUserPostVideosGet = <ThrowO
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchCollectFoldersGet = <ThrowOnError extends boolean = false>(options: Options<FetchCollectFoldersApiV1BilibiliWebFetchCollectFoldersGetData, ThrowOnError>) => (options.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchCollectFoldersGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchCollectFoldersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_collect_folders',
+    url: '/video-hub/api/v1/bilibili/web/fetch_collect_folders',
     ...options
 });
 
@@ -48181,7 +48181,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchCollectFoldersGet = <ThrowO
  */
 export const fetchUserCollectionVideosApiV1BilibiliWebFetchUserCollectionVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserCollectionVideosApiV1BilibiliWebFetchUserCollectionVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserCollectionVideosApiV1BilibiliWebFetchUserCollectionVideosGetResponses, FetchUserCollectionVideosApiV1BilibiliWebFetchUserCollectionVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_user_collection_videos',
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_collection_videos',
     ...options
 });
 
@@ -48209,7 +48209,7 @@ export const fetchUserCollectionVideosApiV1BilibiliWebFetchUserCollectionVideosG
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<FetchCollectFoldersApiV1BilibiliWebFetchUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchUserProfileGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_user_profile',
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_profile',
     ...options
 });
 
@@ -48243,7 +48243,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchUserProfileGet = <ThrowOnEr
  */
 export const fetchUserUpStatApiV1BilibiliWebFetchUserUpStatGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserUpStatApiV1BilibiliWebFetchUserUpStatGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserUpStatApiV1BilibiliWebFetchUserUpStatGetResponses, FetchUserUpStatApiV1BilibiliWebFetchUserUpStatGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_user_up_stat',
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_up_stat',
     ...options
 });
 
@@ -48275,7 +48275,7 @@ export const fetchUserUpStatApiV1BilibiliWebFetchUserUpStatGet = <ThrowOnError e
  */
 export const fetchUserRelationStatApiV1BilibiliWebFetchUserRelationStatGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserRelationStatApiV1BilibiliWebFetchUserRelationStatGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserRelationStatApiV1BilibiliWebFetchUserRelationStatGetResponses, FetchUserRelationStatApiV1BilibiliWebFetchUserRelationStatGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_user_relation_stat',
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_relation_stat',
     ...options
 });
 
@@ -48303,7 +48303,7 @@ export const fetchUserRelationStatApiV1BilibiliWebFetchUserRelationStatGet = <Th
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchComPopularGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCollectFoldersApiV1BilibiliWebFetchComPopularGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchComPopularGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchComPopularGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_com_popular',
+    url: '/video-hub/api/v1/bilibili/web/fetch_com_popular',
     ...options
 });
 
@@ -48334,7 +48334,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchComPopularGet = <ThrowOnErr
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchVideoCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchCollectFoldersApiV1BilibiliWebFetchVideoCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchVideoCommentsGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchVideoCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_video_comments',
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_comments',
     ...options
 });
 
@@ -48368,7 +48368,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchVideoCommentsGet = <ThrowOn
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchCommentReplyGet = <ThrowOnError extends boolean = false>(options: Options<FetchCollectFoldersApiV1BilibiliWebFetchCommentReplyGetData, ThrowOnError>) => (options.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchCommentReplyGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchCommentReplyGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_comment_reply',
+    url: '/video-hub/api/v1/bilibili/web/fetch_comment_reply',
     ...options
 });
 
@@ -48399,7 +48399,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchCommentReplyGet = <ThrowOnE
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchUserDynamicGet = <ThrowOnError extends boolean = false>(options: Options<FetchCollectFoldersApiV1BilibiliWebFetchUserDynamicGetData, ThrowOnError>) => (options.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchUserDynamicGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchUserDynamicGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_user_dynamic',
+    url: '/video-hub/api/v1/bilibili/web/fetch_user_dynamic',
     ...options
 });
 
@@ -48427,7 +48427,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchUserDynamicGet = <ThrowOnEr
  */
 export const fetchDynamicDetailApiV1BilibiliWebFetchDynamicDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchDynamicDetailApiV1BilibiliWebFetchDynamicDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchDynamicDetailApiV1BilibiliWebFetchDynamicDetailGetResponses, FetchDynamicDetailApiV1BilibiliWebFetchDynamicDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_dynamic_detail',
+    url: '/video-hub/api/v1/bilibili/web/fetch_dynamic_detail',
     ...options
 });
 
@@ -48455,7 +48455,7 @@ export const fetchDynamicDetailApiV1BilibiliWebFetchDynamicDetailGet = <ThrowOnE
  */
 export const fetchDynamicDetailV2ApiV1BilibiliWebFetchDynamicDetailV2Get = <ThrowOnError extends boolean = false>(options: Options<FetchDynamicDetailV2ApiV1BilibiliWebFetchDynamicDetailV2GetData, ThrowOnError>) => (options.client ?? client).get<FetchDynamicDetailV2ApiV1BilibiliWebFetchDynamicDetailV2GetResponses, FetchDynamicDetailV2ApiV1BilibiliWebFetchDynamicDetailV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_dynamic_detail_v2',
+    url: '/video-hub/api/v1/bilibili/web/fetch_dynamic_detail_v2',
     ...options
 });
 
@@ -48483,7 +48483,7 @@ export const fetchDynamicDetailV2ApiV1BilibiliWebFetchDynamicDetailV2Get = <Thro
  */
 export const fetchOneVideoApiV1BilibiliWebFetchVideoDanmakuGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1BilibiliWebFetchVideoDanmakuGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1BilibiliWebFetchVideoDanmakuGetResponses, FetchOneVideoApiV1BilibiliWebFetchVideoDanmakuGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_video_danmaku',
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_danmaku',
     ...options
 });
 
@@ -48511,7 +48511,7 @@ export const fetchOneVideoApiV1BilibiliWebFetchVideoDanmakuGet = <ThrowOnError e
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchLiveRoomDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchCollectFoldersApiV1BilibiliWebFetchLiveRoomDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchLiveRoomDetailGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchLiveRoomDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_live_room_detail',
+    url: '/video-hub/api/v1/bilibili/web/fetch_live_room_detail',
     ...options
 });
 
@@ -48539,7 +48539,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchLiveRoomDetailGet = <ThrowO
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchLiveVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchCollectFoldersApiV1BilibiliWebFetchLiveVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchLiveVideosGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchLiveVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_live_videos',
+    url: '/video-hub/api/v1/bilibili/web/fetch_live_videos',
     ...options
 });
 
@@ -48570,7 +48570,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchLiveVideosGet = <ThrowOnErr
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchLiveStreamersGet = <ThrowOnError extends boolean = false>(options: Options<FetchCollectFoldersApiV1BilibiliWebFetchLiveStreamersGetData, ThrowOnError>) => (options.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchLiveStreamersGetResponses, FetchCollectFoldersApiV1BilibiliWebFetchLiveStreamersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_live_streamers',
+    url: '/video-hub/api/v1/bilibili/web/fetch_live_streamers',
     ...options
 });
 
@@ -48595,7 +48595,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchLiveStreamersGet = <ThrowOn
  */
 export const fetchCollectFoldersApiV1BilibiliWebFetchAllLiveAreasGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCollectFoldersApiV1BilibiliWebFetchAllLiveAreasGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCollectFoldersApiV1BilibiliWebFetchAllLiveAreasGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_all_live_areas',
+    url: '/video-hub/api/v1/bilibili/web/fetch_all_live_areas',
     ...options
 });
 
@@ -48623,7 +48623,7 @@ export const fetchCollectFoldersApiV1BilibiliWebFetchAllLiveAreasGet = <ThrowOnE
  */
 export const fetchOneVideoApiV1BilibiliWebBvToAidGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1BilibiliWebBvToAidGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1BilibiliWebBvToAidGetResponses, FetchOneVideoApiV1BilibiliWebBvToAidGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/bv_to_aid',
+    url: '/video-hub/api/v1/bilibili/web/bv_to_aid',
     ...options
 });
 
@@ -48651,7 +48651,7 @@ export const fetchOneVideoApiV1BilibiliWebBvToAidGet = <ThrowOnError extends boo
  */
 export const fetchOneVideoApiV1BilibiliWebFetchVideoPartsGet = <ThrowOnError extends boolean = false>(options: Options<FetchOneVideoApiV1BilibiliWebFetchVideoPartsGetData, ThrowOnError>) => (options.client ?? client).get<FetchOneVideoApiV1BilibiliWebFetchVideoPartsGetResponses, FetchOneVideoApiV1BilibiliWebFetchVideoPartsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_video_parts',
+    url: '/video-hub/api/v1/bilibili/web/fetch_video_parts',
     ...options
 });
 
@@ -48676,7 +48676,7 @@ export const fetchOneVideoApiV1BilibiliWebFetchVideoPartsGet = <ThrowOnError ext
  */
 export const fetchGetUserIdApiV1BilibiliWebFetchGetUserIdGet = <ThrowOnError extends boolean = false>(options: Options<FetchGetUserIdApiV1BilibiliWebFetchGetUserIdGetData, ThrowOnError>) => (options.client ?? client).get<FetchGetUserIdApiV1BilibiliWebFetchGetUserIdGetResponses, FetchGetUserIdApiV1BilibiliWebFetchGetUserIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/web/fetch_get_user_id',
+    url: '/video-hub/api/v1/bilibili/web/fetch_get_user_id',
     ...options
 });
 
@@ -48707,7 +48707,7 @@ export const fetchGetUserIdApiV1BilibiliWebFetchGetUserIdGet = <ThrowOnError ext
  */
 export const fetchOneVideoApiV1BilibiliAppFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<FetchOneVideoApiV1BilibiliAppFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<FetchOneVideoApiV1BilibiliAppFetchOneVideoGetResponses, FetchOneVideoApiV1BilibiliAppFetchOneVideoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_one_video',
+    url: '/video-hub/api/v1/bilibili/app/fetch_one_video',
     ...options
 });
 
@@ -48743,7 +48743,7 @@ export const fetchOneVideoApiV1BilibiliAppFetchOneVideoGet = <ThrowOnError exten
  */
 export const fetchVideoCommentsApiV1BilibiliAppFetchVideoCommentsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchVideoCommentsApiV1BilibiliAppFetchVideoCommentsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchVideoCommentsApiV1BilibiliAppFetchVideoCommentsGetResponses, FetchVideoCommentsApiV1BilibiliAppFetchVideoCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_video_comments',
+    url: '/video-hub/api/v1/bilibili/app/fetch_video_comments',
     ...options
 });
 
@@ -48780,7 +48780,7 @@ export const fetchVideoCommentsApiV1BilibiliAppFetchVideoCommentsGet = <ThrowOnE
  */
 export const fetchReplyDetailApiV1BilibiliAppFetchReplyDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchReplyDetailApiV1BilibiliAppFetchReplyDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchReplyDetailApiV1BilibiliAppFetchReplyDetailGetResponses, FetchReplyDetailApiV1BilibiliAppFetchReplyDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_reply_detail',
+    url: '/video-hub/api/v1/bilibili/app/fetch_reply_detail',
     ...options
 });
 
@@ -48815,7 +48815,7 @@ export const fetchReplyDetailApiV1BilibiliAppFetchReplyDetailGet = <ThrowOnError
  */
 export const fetchUserVideosApiV1BilibiliAppFetchUserVideosGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserVideosApiV1BilibiliAppFetchUserVideosGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserVideosApiV1BilibiliAppFetchUserVideosGetResponses, FetchUserVideosApiV1BilibiliAppFetchUserVideosGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_user_videos',
+    url: '/video-hub/api/v1/bilibili/app/fetch_user_videos',
     ...options
 });
 
@@ -48843,7 +48843,7 @@ export const fetchUserVideosApiV1BilibiliAppFetchUserVideosGet = <ThrowOnError e
  */
 export const fetchUserInfoApiV1BilibiliAppFetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1BilibiliAppFetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1BilibiliAppFetchUserInfoGetResponses, FetchUserInfoApiV1BilibiliAppFetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_user_info',
+    url: '/video-hub/api/v1/bilibili/app/fetch_user_info',
     ...options
 });
 
@@ -48872,7 +48872,7 @@ export const fetchUserInfoApiV1BilibiliAppFetchUserInfoGet = <ThrowOnError exten
  */
 export const fetchHomeFeedApiV1BilibiliAppFetchHomeFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHomeFeedApiV1BilibiliAppFetchHomeFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHomeFeedApiV1BilibiliAppFetchHomeFeedGetResponses, FetchHomeFeedApiV1BilibiliAppFetchHomeFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_home_feed',
+    url: '/video-hub/api/v1/bilibili/app/fetch_home_feed',
     ...options
 });
 
@@ -48902,7 +48902,7 @@ export const fetchHomeFeedApiV1BilibiliAppFetchHomeFeedGet = <ThrowOnError exten
  */
 export const fetchPopularFeedApiV1BilibiliAppFetchPopularFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchPopularFeedApiV1BilibiliAppFetchPopularFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchPopularFeedApiV1BilibiliAppFetchPopularFeedGetResponses, FetchPopularFeedApiV1BilibiliAppFetchPopularFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_popular_feed',
+    url: '/video-hub/api/v1/bilibili/app/fetch_popular_feed',
     ...options
 });
 
@@ -48938,7 +48938,7 @@ export const fetchPopularFeedApiV1BilibiliAppFetchPopularFeedGet = <ThrowOnError
  */
 export const fetchSearchAllApiV1BilibiliAppFetchSearchAllGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchAllApiV1BilibiliAppFetchSearchAllGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchAllApiV1BilibiliAppFetchSearchAllGetResponses, FetchSearchAllApiV1BilibiliAppFetchSearchAllGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_search_all',
+    url: '/video-hub/api/v1/bilibili/app/fetch_search_all',
     ...options
 });
 
@@ -48995,7 +48995,7 @@ export const fetchSearchAllApiV1BilibiliAppFetchSearchAllGet = <ThrowOnError ext
  */
 export const fetchSearchByTypeApiV1BilibiliAppFetchSearchByTypeGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchByTypeApiV1BilibiliAppFetchSearchByTypeGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchByTypeApiV1BilibiliAppFetchSearchByTypeGetResponses, FetchSearchByTypeApiV1BilibiliAppFetchSearchByTypeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_search_by_type',
+    url: '/video-hub/api/v1/bilibili/app/fetch_search_by_type',
     ...options
 });
 
@@ -49016,7 +49016,7 @@ export const fetchSearchByTypeApiV1BilibiliAppFetchSearchByTypeGet = <ThrowOnErr
  */
 export const fetchCinemaTabApiV1BilibiliAppFetchCinemaTabGet = <ThrowOnError extends boolean = false>(options?: Options<FetchCinemaTabApiV1BilibiliAppFetchCinemaTabGetData, ThrowOnError>) => (options?.client ?? client).get<FetchCinemaTabApiV1BilibiliAppFetchCinemaTabGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_cinema_tab',
+    url: '/video-hub/api/v1/bilibili/app/fetch_cinema_tab',
     ...options
 });
 
@@ -49037,7 +49037,7 @@ export const fetchCinemaTabApiV1BilibiliAppFetchCinemaTabGet = <ThrowOnError ext
  */
 export const fetchBangumiTabApiV1BilibiliAppFetchBangumiTabGet = <ThrowOnError extends boolean = false>(options?: Options<FetchBangumiTabApiV1BilibiliAppFetchBangumiTabGetData, ThrowOnError>) => (options?.client ?? client).get<FetchBangumiTabApiV1BilibiliAppFetchBangumiTabGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/bilibili/app/fetch_bangumi_tab',
+    url: '/video-hub/api/v1/bilibili/app/fetch_bangumi_tab',
     ...options
 });
 
@@ -49131,7 +49131,7 @@ export const fetchBangumiTabApiV1BilibiliAppFetchBangumiTabGet = <ThrowOnError e
  */
 export const getPostDetailApiV1Sora2GetPostDetailGet = <ThrowOnError extends boolean = false>(options?: Options<GetPostDetailApiV1Sora2GetPostDetailGetData, ThrowOnError>) => (options?.client ?? client).get<GetPostDetailApiV1Sora2GetPostDetailGetResponses, GetPostDetailApiV1Sora2GetPostDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_post_detail',
+    url: '/video-hub/api/v1/sora2/get_post_detail',
     ...options
 });
 
@@ -49207,7 +49207,7 @@ export const getPostDetailApiV1Sora2GetPostDetailGet = <ThrowOnError extends boo
  */
 export const getPostRemixListApiV1Sora2GetPostRemixListGet = <ThrowOnError extends boolean = false>(options?: Options<GetPostRemixListApiV1Sora2GetPostRemixListGetData, ThrowOnError>) => (options?.client ?? client).get<GetPostRemixListApiV1Sora2GetPostRemixListGetResponses, GetPostRemixListApiV1Sora2GetPostRemixListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_post_remix_list',
+    url: '/video-hub/api/v1/sora2/get_post_remix_list',
     ...options
 });
 
@@ -49312,7 +49312,7 @@ export const getPostRemixListApiV1Sora2GetPostRemixListGet = <ThrowOnError exten
  */
 export const getVideoDownloadInfoApiV1Sora2GetVideoDownloadInfoGet = <ThrowOnError extends boolean = false>(options?: Options<GetVideoDownloadInfoApiV1Sora2GetVideoDownloadInfoGetData, ThrowOnError>) => (options?.client ?? client).get<GetVideoDownloadInfoApiV1Sora2GetVideoDownloadInfoGetResponses, GetVideoDownloadInfoApiV1Sora2GetVideoDownloadInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_video_download_info',
+    url: '/video-hub/api/v1/sora2/get_video_download_info',
     ...options
 });
 
@@ -49392,7 +49392,7 @@ export const getVideoDownloadInfoApiV1Sora2GetVideoDownloadInfoGet = <ThrowOnErr
  */
 export const getPostCommentsApiV1Sora2GetPostCommentsGet = <ThrowOnError extends boolean = false>(options: Options<GetPostCommentsApiV1Sora2GetPostCommentsGetData, ThrowOnError>) => (options.client ?? client).get<GetPostCommentsApiV1Sora2GetPostCommentsGetResponses, GetPostCommentsApiV1Sora2GetPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_post_comments',
+    url: '/video-hub/api/v1/sora2/get_post_comments',
     ...options
 });
 
@@ -49470,7 +49470,7 @@ export const getPostCommentsApiV1Sora2GetPostCommentsGet = <ThrowOnError extends
  */
 export const getCommentRepliesApiV1Sora2GetCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<GetCommentRepliesApiV1Sora2GetCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<GetCommentRepliesApiV1Sora2GetCommentRepliesGetResponses, GetCommentRepliesApiV1Sora2GetCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_comment_replies',
+    url: '/video-hub/api/v1/sora2/get_comment_replies',
     ...options
 });
 
@@ -49555,7 +49555,7 @@ export const getCommentRepliesApiV1Sora2GetCommentRepliesGet = <ThrowOnError ext
  */
 export const getUserProfileApiV1Sora2GetUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<GetUserProfileApiV1Sora2GetUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<GetUserProfileApiV1Sora2GetUserProfileGetResponses, GetUserProfileApiV1Sora2GetUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_user_profile',
+    url: '/video-hub/api/v1/sora2/get_user_profile',
     ...options
 });
 
@@ -49630,7 +49630,7 @@ export const getUserProfileApiV1Sora2GetUserProfileGet = <ThrowOnError extends b
  */
 export const getUserPostsApiV1Sora2GetUserPostsGet = <ThrowOnError extends boolean = false>(options: Options<GetUserPostsApiV1Sora2GetUserPostsGetData, ThrowOnError>) => (options.client ?? client).get<GetUserPostsApiV1Sora2GetUserPostsGetResponses, GetUserPostsApiV1Sora2GetUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_user_posts',
+    url: '/video-hub/api/v1/sora2/get_user_posts',
     ...options
 });
 
@@ -49697,7 +49697,7 @@ export const getUserPostsApiV1Sora2GetUserPostsGet = <ThrowOnError extends boole
  */
 export const getCameoLeaderboardApiV1Sora2GetCameoLeaderboardGet = <ThrowOnError extends boolean = false>(options?: Options<GetCameoLeaderboardApiV1Sora2GetCameoLeaderboardGetData, ThrowOnError>) => (options?.client ?? client).get<GetCameoLeaderboardApiV1Sora2GetCameoLeaderboardGetResponses, GetCameoLeaderboardApiV1Sora2GetCameoLeaderboardGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_cameo_leaderboard',
+    url: '/video-hub/api/v1/sora2/get_cameo_leaderboard',
     ...options
 });
 
@@ -49773,7 +49773,7 @@ export const getCameoLeaderboardApiV1Sora2GetCameoLeaderboardGet = <ThrowOnError
  */
 export const getUserCameoAppearancesApiV1Sora2GetUserCameoAppearancesGet = <ThrowOnError extends boolean = false>(options: Options<GetUserCameoAppearancesApiV1Sora2GetUserCameoAppearancesGetData, ThrowOnError>) => (options.client ?? client).get<GetUserCameoAppearancesApiV1Sora2GetUserCameoAppearancesGetResponses, GetUserCameoAppearancesApiV1Sora2GetUserCameoAppearancesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_user_cameo_appearances',
+    url: '/video-hub/api/v1/sora2/get_user_cameo_appearances',
     ...options
 });
 
@@ -49846,7 +49846,7 @@ export const getUserCameoAppearancesApiV1Sora2GetUserCameoAppearancesGet = <Thro
  */
 export const getUserFollowersApiV1Sora2GetUserFollowersGet = <ThrowOnError extends boolean = false>(options: Options<GetUserFollowersApiV1Sora2GetUserFollowersGetData, ThrowOnError>) => (options.client ?? client).get<GetUserFollowersApiV1Sora2GetUserFollowersGetResponses, GetUserFollowersApiV1Sora2GetUserFollowersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_user_followers',
+    url: '/video-hub/api/v1/sora2/get_user_followers',
     ...options
 });
 
@@ -49919,7 +49919,7 @@ export const getUserFollowersApiV1Sora2GetUserFollowersGet = <ThrowOnError exten
  */
 export const getUserFollowingApiV1Sora2GetUserFollowingGet = <ThrowOnError extends boolean = false>(options: Options<GetUserFollowingApiV1Sora2GetUserFollowingGetData, ThrowOnError>) => (options.client ?? client).get<GetUserFollowingApiV1Sora2GetUserFollowingGetResponses, GetUserFollowingApiV1Sora2GetUserFollowingGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_user_following',
+    url: '/video-hub/api/v1/sora2/get_user_following',
     ...options
 });
 
@@ -50005,7 +50005,7 @@ export const getUserFollowingApiV1Sora2GetUserFollowingGet = <ThrowOnError exten
  */
 export const getFeedApiV1Sora2GetFeedGet = <ThrowOnError extends boolean = false>(options?: Options<GetFeedApiV1Sora2GetFeedGetData, ThrowOnError>) => (options?.client ?? client).get<GetFeedApiV1Sora2GetFeedGetResponses, GetFeedApiV1Sora2GetFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_feed',
+    url: '/video-hub/api/v1/sora2/get_feed',
     ...options
 });
 
@@ -50102,7 +50102,7 @@ export const getFeedApiV1Sora2GetFeedGet = <ThrowOnError extends boolean = false
  */
 export const searchUsersApiV1Sora2SearchUsersGet = <ThrowOnError extends boolean = false>(options: Options<SearchUsersApiV1Sora2SearchUsersGetData, ThrowOnError>) => (options.client ?? client).get<SearchUsersApiV1Sora2SearchUsersGetResponses, SearchUsersApiV1Sora2SearchUsersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/search_users',
+    url: '/video-hub/api/v1/sora2/search_users',
     ...options
 });
 
@@ -50195,7 +50195,7 @@ export const searchUsersApiV1Sora2SearchUsersGet = <ThrowOnError extends boolean
 export const uploadImageApiV1Sora2UploadImagePost = <ThrowOnError extends boolean = false>(options: Options<UploadImageApiV1Sora2UploadImagePostData, ThrowOnError>) => (options.client ?? client).post<UploadImageApiV1Sora2UploadImagePostResponses, UploadImageApiV1Sora2UploadImagePostErrors, ThrowOnError>({
     ...formDataBodySerializer,
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/upload_image',
+    url: '/video-hub/api/v1/sora2/upload_image',
     ...options,
     headers: {
         'Content-Type': null,
@@ -50333,7 +50333,7 @@ export const uploadImageApiV1Sora2UploadImagePost = <ThrowOnError extends boolea
  */
 export const createVideoApiV1Sora2CreateVideoPost = <ThrowOnError extends boolean = false>(options: Options<CreateVideoApiV1Sora2CreateVideoPostData, ThrowOnError>) => (options.client ?? client).post<CreateVideoApiV1Sora2CreateVideoPostResponses, CreateVideoApiV1Sora2CreateVideoPostErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/create_video',
+    url: '/video-hub/api/v1/sora2/create_video',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -50486,7 +50486,7 @@ export const createVideoApiV1Sora2CreateVideoPost = <ThrowOnError extends boolea
  */
 export const getTaskStatusApiV1Sora2GetTaskStatusGet = <ThrowOnError extends boolean = false>(options: Options<GetTaskStatusApiV1Sora2GetTaskStatusGetData, ThrowOnError>) => (options.client ?? client).get<GetTaskStatusApiV1Sora2GetTaskStatusGetResponses, GetTaskStatusApiV1Sora2GetTaskStatusGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_task_status',
+    url: '/video-hub/api/v1/sora2/get_task_status',
     ...options
 });
 
@@ -50684,7 +50684,7 @@ export const getTaskStatusApiV1Sora2GetTaskStatusGet = <ThrowOnError extends boo
  */
 export const getTaskDetailApiV1Sora2GetTaskDetailGet = <ThrowOnError extends boolean = false>(options?: Options<GetTaskDetailApiV1Sora2GetTaskDetailGetData, ThrowOnError>) => (options?.client ?? client).get<GetTaskDetailApiV1Sora2GetTaskDetailGetResponses, GetTaskDetailApiV1Sora2GetTaskDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/sora2/get_task_detail',
+    url: '/video-hub/api/v1/sora2/get_task_detail',
     ...options
 });
 
@@ -50723,7 +50723,7 @@ export const getTaskDetailApiV1Sora2GetTaskDetailGet = <ThrowOnError extends boo
  */
 export const getTempEmailApiV1TempMailV1GetTempEmailAddressGet = <ThrowOnError extends boolean = false>(options?: Options<GetTempEmailApiV1TempMailV1GetTempEmailAddressGetData, ThrowOnError>) => (options?.client ?? client).get<GetTempEmailApiV1TempMailV1GetTempEmailAddressGetResponses, unknown, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/temp_mail/v1/get_temp_email_address',
+    url: '/video-hub/api/v1/temp_mail/v1/get_temp_email_address',
     ...options
 });
 
@@ -50748,7 +50748,7 @@ export const getTempEmailApiV1TempMailV1GetTempEmailAddressGet = <ThrowOnError e
  */
 export const getEmailsApiV1TempMailV1GetEmailsInboxGet = <ThrowOnError extends boolean = false>(options: Options<GetEmailsApiV1TempMailV1GetEmailsInboxGetData, ThrowOnError>) => (options.client ?? client).get<GetEmailsApiV1TempMailV1GetEmailsInboxGetResponses, GetEmailsApiV1TempMailV1GetEmailsInboxGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/temp_mail/v1/get_emails_inbox',
+    url: '/video-hub/api/v1/temp_mail/v1/get_emails_inbox',
     ...options
 });
 
@@ -50775,7 +50775,7 @@ export const getEmailsApiV1TempMailV1GetEmailsInboxGet = <ThrowOnError extends b
  */
 export const getEmailByIdApiV1TempMailV1GetEmailByIdGet = <ThrowOnError extends boolean = false>(options: Options<GetEmailByIdApiV1TempMailV1GetEmailByIdGetData, ThrowOnError>) => (options.client ?? client).get<GetEmailByIdApiV1TempMailV1GetEmailByIdGetResponses, GetEmailByIdApiV1TempMailV1GetEmailByIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/temp_mail/v1/get_email_by_id',
+    url: '/video-hub/api/v1/temp_mail/v1/get_email_by_id',
     ...options
 });
 
@@ -50803,7 +50803,7 @@ export const getEmailByIdApiV1TempMailV1GetEmailByIdGet = <ThrowOnError extends 
  */
 export const fetchTweetDetailApiV1TwitterWebFetchTweetDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchTweetDetailApiV1TwitterWebFetchTweetDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchTweetDetailApiV1TwitterWebFetchTweetDetailGetResponses, FetchTweetDetailApiV1TwitterWebFetchTweetDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_tweet_detail',
+    url: '/video-hub/api/v1/twitter/web/fetch_tweet_detail',
     ...options
 });
 
@@ -50833,7 +50833,7 @@ export const fetchTweetDetailApiV1TwitterWebFetchTweetDetailGet = <ThrowOnError 
  */
 export const fetchUserProfileApiV1TwitterWebFetchUserProfileGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserProfileApiV1TwitterWebFetchUserProfileGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserProfileApiV1TwitterWebFetchUserProfileGetResponses, FetchUserProfileApiV1TwitterWebFetchUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_user_profile',
+    url: '/video-hub/api/v1/twitter/web/fetch_user_profile',
     ...options
 });
 
@@ -50865,7 +50865,7 @@ export const fetchUserProfileApiV1TwitterWebFetchUserProfileGet = <ThrowOnError 
  */
 export const fetchUserPostTweetApiV1TwitterWebFetchUserPostTweetGet = <ThrowOnError extends boolean = false>(options?: Options<FetchUserPostTweetApiV1TwitterWebFetchUserPostTweetGetData, ThrowOnError>) => (options?.client ?? client).get<FetchUserPostTweetApiV1TwitterWebFetchUserPostTweetGetResponses, FetchUserPostTweetApiV1TwitterWebFetchUserPostTweetGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_user_post_tweet',
+    url: '/video-hub/api/v1/twitter/web/fetch_user_post_tweet',
     ...options
 });
 
@@ -50899,7 +50899,7 @@ export const fetchUserPostTweetApiV1TwitterWebFetchUserPostTweetGet = <ThrowOnEr
  */
 export const fetchSearchTimelineApiV1TwitterWebFetchSearchTimelineGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchTimelineApiV1TwitterWebFetchSearchTimelineGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchTimelineApiV1TwitterWebFetchSearchTimelineGetResponses, FetchSearchTimelineApiV1TwitterWebFetchSearchTimelineGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_search_timeline',
+    url: '/video-hub/api/v1/twitter/web/fetch_search_timeline',
     ...options
 });
 
@@ -50930,7 +50930,7 @@ export const fetchSearchTimelineApiV1TwitterWebFetchSearchTimelineGet = <ThrowOn
  */
 export const fetchPostCommentsApiV1TwitterWebFetchPostCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentsApiV1TwitterWebFetchPostCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentsApiV1TwitterWebFetchPostCommentsGetResponses, FetchPostCommentsApiV1TwitterWebFetchPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_post_comments',
+    url: '/video-hub/api/v1/twitter/web/fetch_post_comments',
     ...options
 });
 
@@ -50961,7 +50961,7 @@ export const fetchPostCommentsApiV1TwitterWebFetchPostCommentsGet = <ThrowOnErro
  */
 export const fetchLatestPostCommentsApiV1TwitterWebFetchLatestPostCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchLatestPostCommentsApiV1TwitterWebFetchLatestPostCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchLatestPostCommentsApiV1TwitterWebFetchLatestPostCommentsGetResponses, FetchLatestPostCommentsApiV1TwitterWebFetchLatestPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_latest_post_comments',
+    url: '/video-hub/api/v1/twitter/web/fetch_latest_post_comments',
     ...options
 });
 
@@ -50992,7 +50992,7 @@ export const fetchLatestPostCommentsApiV1TwitterWebFetchLatestPostCommentsGet = 
  */
 export const fetchUserTweetRepliesApiV1TwitterWebFetchUserTweetRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserTweetRepliesApiV1TwitterWebFetchUserTweetRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserTweetRepliesApiV1TwitterWebFetchUserTweetRepliesGetResponses, FetchUserTweetRepliesApiV1TwitterWebFetchUserTweetRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_user_tweet_replies',
+    url: '/video-hub/api/v1/twitter/web/fetch_user_tweet_replies',
     ...options
 });
 
@@ -51030,7 +51030,7 @@ export const fetchUserTweetRepliesApiV1TwitterWebFetchUserTweetRepliesGet = <Thr
  */
 export const fetchUserHighlightsTweetsApiV1TwitterWebFetchUserHighlightsTweetsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserHighlightsTweetsApiV1TwitterWebFetchUserHighlightsTweetsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserHighlightsTweetsApiV1TwitterWebFetchUserHighlightsTweetsGetResponses, FetchUserHighlightsTweetsApiV1TwitterWebFetchUserHighlightsTweetsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_user_highlights_tweets',
+    url: '/video-hub/api/v1/twitter/web/fetch_user_highlights_tweets',
     ...options
 });
 
@@ -51063,7 +51063,7 @@ export const fetchUserHighlightsTweetsApiV1TwitterWebFetchUserHighlightsTweetsGe
  */
 export const fetchUserMediaApiV1TwitterWebFetchUserMediaGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserMediaApiV1TwitterWebFetchUserMediaGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserMediaApiV1TwitterWebFetchUserMediaGetResponses, FetchUserMediaApiV1TwitterWebFetchUserMediaGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_user_media',
+    url: '/video-hub/api/v1/twitter/web/fetch_user_media',
     ...options
 });
 
@@ -51094,7 +51094,7 @@ export const fetchUserMediaApiV1TwitterWebFetchUserMediaGet = <ThrowOnError exte
  */
 export const fetchRetweetUserListApiV1TwitterWebFetchRetweetUserListGet = <ThrowOnError extends boolean = false>(options: Options<FetchRetweetUserListApiV1TwitterWebFetchRetweetUserListGetData, ThrowOnError>) => (options.client ?? client).get<FetchRetweetUserListApiV1TwitterWebFetchRetweetUserListGetResponses, FetchRetweetUserListApiV1TwitterWebFetchRetweetUserListGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_retweet_user_list',
+    url: '/video-hub/api/v1/twitter/web/fetch_retweet_user_list',
     ...options
 });
 
@@ -51223,7 +51223,7 @@ export const fetchRetweetUserListApiV1TwitterWebFetchRetweetUserListGet = <Throw
  */
 export const fetchTrendingApiV1TwitterWebFetchTrendingGet = <ThrowOnError extends boolean = false>(options?: Options<FetchTrendingApiV1TwitterWebFetchTrendingGetData, ThrowOnError>) => (options?.client ?? client).get<FetchTrendingApiV1TwitterWebFetchTrendingGetResponses, FetchTrendingApiV1TwitterWebFetchTrendingGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_trending',
+    url: '/video-hub/api/v1/twitter/web/fetch_trending',
     ...options
 });
 
@@ -51253,7 +51253,7 @@ export const fetchTrendingApiV1TwitterWebFetchTrendingGet = <ThrowOnError extend
  */
 export const fetchUserFollowingsApiV1TwitterWebFetchUserFollowingsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowingsApiV1TwitterWebFetchUserFollowingsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowingsApiV1TwitterWebFetchUserFollowingsGetResponses, FetchUserFollowingsApiV1TwitterWebFetchUserFollowingsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_user_followings',
+    url: '/video-hub/api/v1/twitter/web/fetch_user_followings',
     ...options
 });
 
@@ -51283,7 +51283,7 @@ export const fetchUserFollowingsApiV1TwitterWebFetchUserFollowingsGet = <ThrowOn
  */
 export const fetchUserFollowersApiV1TwitterWebFetchUserFollowersGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserFollowersApiV1TwitterWebFetchUserFollowersGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserFollowersApiV1TwitterWebFetchUserFollowersGetResponses, FetchUserFollowersApiV1TwitterWebFetchUserFollowersGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/twitter/web/fetch_user_followers',
+    url: '/video-hub/api/v1/twitter/web/fetch_user_followers',
     ...options
 });
 
@@ -51329,7 +51329,7 @@ export const fetchUserFollowersApiV1TwitterWebFetchUserFollowersGet = <ThrowOnEr
  */
 export const fetchUserInfoApiV1ThreadsWebFetchUserInfoGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoApiV1ThreadsWebFetchUserInfoGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoApiV1ThreadsWebFetchUserInfoGetResponses, FetchUserInfoApiV1ThreadsWebFetchUserInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/fetch_user_info',
+    url: '/video-hub/api/v1/threads/web/fetch_user_info',
     ...options
 });
 
@@ -51375,7 +51375,7 @@ export const fetchUserInfoApiV1ThreadsWebFetchUserInfoGet = <ThrowOnError extend
  */
 export const fetchUserInfoByIdApiV1ThreadsWebFetchUserInfoByIdGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserInfoByIdApiV1ThreadsWebFetchUserInfoByIdGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserInfoByIdApiV1ThreadsWebFetchUserInfoByIdGetResponses, FetchUserInfoByIdApiV1ThreadsWebFetchUserInfoByIdGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/fetch_user_info_by_id',
+    url: '/video-hub/api/v1/threads/web/fetch_user_info_by_id',
     ...options
 });
 
@@ -51432,7 +51432,7 @@ export const fetchUserInfoByIdApiV1ThreadsWebFetchUserInfoByIdGet = <ThrowOnErro
  */
 export const fetchUserPostsApiV1ThreadsWebFetchUserPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostsApiV1ThreadsWebFetchUserPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostsApiV1ThreadsWebFetchUserPostsGetResponses, FetchUserPostsApiV1ThreadsWebFetchUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/fetch_user_posts',
+    url: '/video-hub/api/v1/threads/web/fetch_user_posts',
     ...options
 });
 
@@ -51471,7 +51471,7 @@ export const fetchUserPostsApiV1ThreadsWebFetchUserPostsGet = <ThrowOnError exte
  */
 export const fetchUserRepostsApiV1ThreadsWebFetchUserRepostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserRepostsApiV1ThreadsWebFetchUserRepostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserRepostsApiV1ThreadsWebFetchUserRepostsGetResponses, FetchUserRepostsApiV1ThreadsWebFetchUserRepostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/fetch_user_reposts',
+    url: '/video-hub/api/v1/threads/web/fetch_user_reposts',
     ...options
 });
 
@@ -51510,7 +51510,7 @@ export const fetchUserRepostsApiV1ThreadsWebFetchUserRepostsGet = <ThrowOnError 
  */
 export const fetchUserRepliesApiV1ThreadsWebFetchUserRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserRepliesApiV1ThreadsWebFetchUserRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserRepliesApiV1ThreadsWebFetchUserRepliesGetResponses, FetchUserRepliesApiV1ThreadsWebFetchUserRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/fetch_user_replies',
+    url: '/video-hub/api/v1/threads/web/fetch_user_replies',
     ...options
 });
 
@@ -51556,7 +51556,7 @@ export const fetchUserRepliesApiV1ThreadsWebFetchUserRepliesGet = <ThrowOnError 
  */
 export const fetchPostDetailApiV1ThreadsWebFetchPostDetailGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailApiV1ThreadsWebFetchPostDetailGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailApiV1ThreadsWebFetchPostDetailGetResponses, FetchPostDetailApiV1ThreadsWebFetchPostDetailGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/fetch_post_detail',
+    url: '/video-hub/api/v1/threads/web/fetch_post_detail',
     ...options
 });
 
@@ -51610,7 +51610,7 @@ export const fetchPostDetailApiV1ThreadsWebFetchPostDetailGet = <ThrowOnError ex
  */
 export const fetchPostDetailV2ApiV1ThreadsWebFetchPostDetailV2Get = <ThrowOnError extends boolean = false>(options?: Options<FetchPostDetailV2ApiV1ThreadsWebFetchPostDetailV2GetData, ThrowOnError>) => (options?.client ?? client).get<FetchPostDetailV2ApiV1ThreadsWebFetchPostDetailV2GetResponses, FetchPostDetailV2ApiV1ThreadsWebFetchPostDetailV2GetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/fetch_post_detail_v2',
+    url: '/video-hub/api/v1/threads/web/fetch_post_detail_v2',
     ...options
 });
 
@@ -51649,7 +51649,7 @@ export const fetchPostDetailV2ApiV1ThreadsWebFetchPostDetailV2Get = <ThrowOnErro
  */
 export const fetchPostCommentsApiV1ThreadsWebFetchPostCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentsApiV1ThreadsWebFetchPostCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentsApiV1ThreadsWebFetchPostCommentsGetResponses, FetchPostCommentsApiV1ThreadsWebFetchPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/fetch_post_comments',
+    url: '/video-hub/api/v1/threads/web/fetch_post_comments',
     ...options
 });
 
@@ -51688,7 +51688,7 @@ export const fetchPostCommentsApiV1ThreadsWebFetchPostCommentsGet = <ThrowOnErro
  */
 export const searchTopApiV1ThreadsWebSearchTopGet = <ThrowOnError extends boolean = false>(options: Options<SearchTopApiV1ThreadsWebSearchTopGetData, ThrowOnError>) => (options.client ?? client).get<SearchTopApiV1ThreadsWebSearchTopGetResponses, SearchTopApiV1ThreadsWebSearchTopGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/search_top',
+    url: '/video-hub/api/v1/threads/web/search_top',
     ...options
 });
 
@@ -51727,7 +51727,7 @@ export const searchTopApiV1ThreadsWebSearchTopGet = <ThrowOnError extends boolea
  */
 export const searchRecentApiV1ThreadsWebSearchRecentGet = <ThrowOnError extends boolean = false>(options: Options<SearchRecentApiV1ThreadsWebSearchRecentGetData, ThrowOnError>) => (options.client ?? client).get<SearchRecentApiV1ThreadsWebSearchRecentGetResponses, SearchRecentApiV1ThreadsWebSearchRecentGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/search_recent',
+    url: '/video-hub/api/v1/threads/web/search_recent',
     ...options
 });
 
@@ -51775,7 +51775,7 @@ export const searchRecentApiV1ThreadsWebSearchRecentGet = <ThrowOnError extends 
  */
 export const searchProfilesApiV1ThreadsWebSearchProfilesGet = <ThrowOnError extends boolean = false>(options: Options<SearchProfilesApiV1ThreadsWebSearchProfilesGetData, ThrowOnError>) => (options.client ?? client).get<SearchProfilesApiV1ThreadsWebSearchProfilesGetResponses, SearchProfilesApiV1ThreadsWebSearchProfilesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/threads/web/search_profiles',
+    url: '/video-hub/api/v1/threads/web/search_profiles',
     ...options
 });
 
@@ -51811,7 +51811,7 @@ export const searchProfilesApiV1ThreadsWebSearchProfilesGet = <ThrowOnError exte
  */
 export const fetchHomeFeedApiV1RedditAppFetchHomeFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchHomeFeedApiV1RedditAppFetchHomeFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchHomeFeedApiV1RedditAppFetchHomeFeedGetResponses, FetchHomeFeedApiV1RedditAppFetchHomeFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_home_feed',
+    url: '/video-hub/api/v1/reddit/app/fetch_home_feed',
     ...options
 });
 
@@ -51854,7 +51854,7 @@ export const fetchHomeFeedApiV1RedditAppFetchHomeFeedGet = <ThrowOnError extends
  */
 export const fetchPopularFeedApiV1RedditAppFetchPopularFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchPopularFeedApiV1RedditAppFetchPopularFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchPopularFeedApiV1RedditAppFetchPopularFeedGetResponses, FetchPopularFeedApiV1RedditAppFetchPopularFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_popular_feed',
+    url: '/video-hub/api/v1/reddit/app/fetch_popular_feed',
     ...options
 });
 
@@ -51894,7 +51894,7 @@ export const fetchPopularFeedApiV1RedditAppFetchPopularFeedGet = <ThrowOnError e
  */
 export const fetchGamesFeedApiV1RedditAppFetchGamesFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchGamesFeedApiV1RedditAppFetchGamesFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchGamesFeedApiV1RedditAppFetchGamesFeedGetResponses, FetchGamesFeedApiV1RedditAppFetchGamesFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_games_feed',
+    url: '/video-hub/api/v1/reddit/app/fetch_games_feed',
     ...options
 });
 
@@ -51933,7 +51933,7 @@ export const fetchGamesFeedApiV1RedditAppFetchGamesFeedGet = <ThrowOnError exten
  */
 export const fetchNewsFeedApiV1RedditAppFetchNewsFeedGet = <ThrowOnError extends boolean = false>(options?: Options<FetchNewsFeedApiV1RedditAppFetchNewsFeedGetData, ThrowOnError>) => (options?.client ?? client).get<FetchNewsFeedApiV1RedditAppFetchNewsFeedGetResponses, FetchNewsFeedApiV1RedditAppFetchNewsFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_news_feed',
+    url: '/video-hub/api/v1/reddit/app/fetch_news_feed',
     ...options
 });
 
@@ -51995,7 +51995,7 @@ export const fetchNewsFeedApiV1RedditAppFetchNewsFeedGet = <ThrowOnError extends
  */
 export const fetchPostDetailsApiV1RedditAppFetchPostDetailsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailsApiV1RedditAppFetchPostDetailsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailsApiV1RedditAppFetchPostDetailsGetResponses, FetchPostDetailsApiV1RedditAppFetchPostDetailsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_post_details',
+    url: '/video-hub/api/v1/reddit/app/fetch_post_details',
     ...options
 });
 
@@ -52063,7 +52063,7 @@ export const fetchPostDetailsApiV1RedditAppFetchPostDetailsGet = <ThrowOnError e
  */
 export const fetchPostDetailsBatchApiV1RedditAppFetchPostDetailsBatchGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailsBatchApiV1RedditAppFetchPostDetailsBatchGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailsBatchApiV1RedditAppFetchPostDetailsBatchGetResponses, FetchPostDetailsBatchApiV1RedditAppFetchPostDetailsBatchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_post_details_batch',
+    url: '/video-hub/api/v1/reddit/app/fetch_post_details_batch',
     ...options
 });
 
@@ -52133,7 +52133,7 @@ export const fetchPostDetailsBatchApiV1RedditAppFetchPostDetailsBatchGet = <Thro
  */
 export const fetchPostDetailsBatchLargeApiV1RedditAppFetchPostDetailsBatchLargeGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostDetailsBatchLargeApiV1RedditAppFetchPostDetailsBatchLargeGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostDetailsBatchLargeApiV1RedditAppFetchPostDetailsBatchLargeGetResponses, FetchPostDetailsBatchLargeApiV1RedditAppFetchPostDetailsBatchLargeGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_post_details_batch_large',
+    url: '/video-hub/api/v1/reddit/app/fetch_post_details_batch_large',
     ...options
 });
 
@@ -52173,7 +52173,7 @@ export const fetchPostDetailsBatchLargeApiV1RedditAppFetchPostDetailsBatchLargeG
  */
 export const fetchPostCommentsApiV1RedditAppFetchPostCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchPostCommentsApiV1RedditAppFetchPostCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchPostCommentsApiV1RedditAppFetchPostCommentsGetResponses, FetchPostCommentsApiV1RedditAppFetchPostCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_post_comments',
+    url: '/video-hub/api/v1/reddit/app/fetch_post_comments',
     ...options
 });
 
@@ -52233,7 +52233,7 @@ export const fetchPostCommentsApiV1RedditAppFetchPostCommentsGet = <ThrowOnError
  */
 export const fetchCommentRepliesApiV1RedditAppFetchCommentRepliesGet = <ThrowOnError extends boolean = false>(options: Options<FetchCommentRepliesApiV1RedditAppFetchCommentRepliesGetData, ThrowOnError>) => (options.client ?? client).get<FetchCommentRepliesApiV1RedditAppFetchCommentRepliesGetResponses, FetchCommentRepliesApiV1RedditAppFetchCommentRepliesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_comment_replies',
+    url: '/video-hub/api/v1/reddit/app/fetch_comment_replies',
     ...options
 });
 
@@ -52261,7 +52261,7 @@ export const fetchCommentRepliesApiV1RedditAppFetchCommentRepliesGet = <ThrowOnE
  */
 export const fetchSubredditStyleApiV1RedditAppFetchSubredditStyleGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSubredditStyleApiV1RedditAppFetchSubredditStyleGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSubredditStyleApiV1RedditAppFetchSubredditStyleGetResponses, FetchSubredditStyleApiV1RedditAppFetchSubredditStyleGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_subreddit_style',
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_style',
     ...options
 });
 
@@ -52293,7 +52293,7 @@ export const fetchSubredditStyleApiV1RedditAppFetchSubredditStyleGet = <ThrowOnE
  */
 export const fetchSubredditPostChannelsApiV1RedditAppFetchSubredditPostChannelsGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSubredditPostChannelsApiV1RedditAppFetchSubredditPostChannelsGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSubredditPostChannelsApiV1RedditAppFetchSubredditPostChannelsGetResponses, FetchSubredditPostChannelsApiV1RedditAppFetchSubredditPostChannelsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_subreddit_post_channels',
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_post_channels',
     ...options
 });
 
@@ -52320,7 +52320,7 @@ export const fetchSubredditPostChannelsApiV1RedditAppFetchSubredditPostChannelsG
  */
 export const fetchSubredditInfoApiV1RedditAppFetchSubredditInfoGet = <ThrowOnError extends boolean = false>(options?: Options<FetchSubredditInfoApiV1RedditAppFetchSubredditInfoGetData, ThrowOnError>) => (options?.client ?? client).get<FetchSubredditInfoApiV1RedditAppFetchSubredditInfoGetResponses, FetchSubredditInfoApiV1RedditAppFetchSubredditInfoGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_subreddit_info',
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_info',
     ...options
 });
 
@@ -52378,7 +52378,7 @@ export const fetchSubredditInfoApiV1RedditAppFetchSubredditInfoGet = <ThrowOnErr
  */
 export const fetchSubredditSettingsApiV1RedditAppFetchSubredditSettingsGet = <ThrowOnError extends boolean = false>(options: Options<FetchSubredditSettingsApiV1RedditAppFetchSubredditSettingsGetData, ThrowOnError>) => (options.client ?? client).get<FetchSubredditSettingsApiV1RedditAppFetchSubredditSettingsGetResponses, FetchSubredditSettingsApiV1RedditAppFetchSubredditSettingsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_subreddit_settings',
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_settings',
     ...options
 });
 
@@ -52420,7 +52420,7 @@ export const fetchSubredditSettingsApiV1RedditAppFetchSubredditSettingsGet = <Th
  */
 export const fetchSearchTypeaheadApiV1RedditAppFetchSearchTypeaheadGet = <ThrowOnError extends boolean = false>(options: Options<FetchSearchTypeaheadApiV1RedditAppFetchSearchTypeaheadGetData, ThrowOnError>) => (options.client ?? client).get<FetchSearchTypeaheadApiV1RedditAppFetchSearchTypeaheadGetResponses, FetchSearchTypeaheadApiV1RedditAppFetchSearchTypeaheadGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_search_typeahead',
+    url: '/video-hub/api/v1/reddit/app/fetch_search_typeahead',
     ...options
 });
 
@@ -52510,7 +52510,7 @@ export const fetchSearchTypeaheadApiV1RedditAppFetchSearchTypeaheadGet = <ThrowO
  */
 export const fetchDynamicSearchApiV1RedditAppFetchDynamicSearchGet = <ThrowOnError extends boolean = false>(options: Options<FetchDynamicSearchApiV1RedditAppFetchDynamicSearchGetData, ThrowOnError>) => (options.client ?? client).get<FetchDynamicSearchApiV1RedditAppFetchDynamicSearchGetResponses, FetchDynamicSearchApiV1RedditAppFetchDynamicSearchGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_dynamic_search',
+    url: '/video-hub/api/v1/reddit/app/fetch_dynamic_search',
     ...options
 });
 
@@ -52552,7 +52552,7 @@ export const fetchDynamicSearchApiV1RedditAppFetchDynamicSearchGet = <ThrowOnErr
  */
 export const fetchCommunityHighlightsApiV1RedditAppFetchCommunityHighlightsGet = <ThrowOnError extends boolean = false>(options: Options<FetchCommunityHighlightsApiV1RedditAppFetchCommunityHighlightsGetData, ThrowOnError>) => (options.client ?? client).get<FetchCommunityHighlightsApiV1RedditAppFetchCommunityHighlightsGetResponses, FetchCommunityHighlightsApiV1RedditAppFetchCommunityHighlightsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_community_highlights',
+    url: '/video-hub/api/v1/reddit/app/fetch_community_highlights',
     ...options
 });
 
@@ -52588,7 +52588,7 @@ export const fetchCommunityHighlightsApiV1RedditAppFetchCommunityHighlightsGet =
  */
 export const fetchTrendingSearchesApiV1RedditAppFetchTrendingSearchesGet = <ThrowOnError extends boolean = false>(options?: Options<FetchTrendingSearchesApiV1RedditAppFetchTrendingSearchesGetData, ThrowOnError>) => (options?.client ?? client).get<FetchTrendingSearchesApiV1RedditAppFetchTrendingSearchesGetResponses, FetchTrendingSearchesApiV1RedditAppFetchTrendingSearchesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_trending_searches',
+    url: '/video-hub/api/v1/reddit/app/fetch_trending_searches',
     ...options
 });
 
@@ -52632,7 +52632,7 @@ export const fetchTrendingSearchesApiV1RedditAppFetchTrendingSearchesGet = <Thro
  */
 export const fetchUserProfileApiV1RedditAppFetchUserProfileGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserProfileApiV1RedditAppFetchUserProfileGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserProfileApiV1RedditAppFetchUserProfileGetResponses, FetchUserProfileApiV1RedditAppFetchUserProfileGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_user_profile',
+    url: '/video-hub/api/v1/reddit/app/fetch_user_profile',
     ...options
 });
 
@@ -52666,7 +52666,7 @@ export const fetchUserProfileApiV1RedditAppFetchUserProfileGet = <ThrowOnError e
  */
 export const fetchUserActiveSubredditsApiV1RedditAppFetchUserActiveSubredditsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserActiveSubredditsApiV1RedditAppFetchUserActiveSubredditsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserActiveSubredditsApiV1RedditAppFetchUserActiveSubredditsGetResponses, FetchUserActiveSubredditsApiV1RedditAppFetchUserActiveSubredditsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_user_active_subreddits',
+    url: '/video-hub/api/v1/reddit/app/fetch_user_active_subreddits',
     ...options
 });
 
@@ -52715,7 +52715,7 @@ export const fetchUserActiveSubredditsApiV1RedditAppFetchUserActiveSubredditsGet
  */
 export const fetchUserCommentsApiV1RedditAppFetchUserCommentsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserCommentsApiV1RedditAppFetchUserCommentsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserCommentsApiV1RedditAppFetchUserCommentsGetResponses, FetchUserCommentsApiV1RedditAppFetchUserCommentsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_user_comments',
+    url: '/video-hub/api/v1/reddit/app/fetch_user_comments',
     ...options
 });
 
@@ -52763,7 +52763,7 @@ export const fetchUserCommentsApiV1RedditAppFetchUserCommentsGet = <ThrowOnError
  */
 export const fetchUserPostsApiV1RedditAppFetchUserPostsGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserPostsApiV1RedditAppFetchUserPostsGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserPostsApiV1RedditAppFetchUserPostsGetResponses, FetchUserPostsApiV1RedditAppFetchUserPostsGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_user_posts',
+    url: '/video-hub/api/v1/reddit/app/fetch_user_posts',
     ...options
 });
 
@@ -52808,7 +52808,7 @@ export const fetchUserPostsApiV1RedditAppFetchUserPostsGet = <ThrowOnError exten
  */
 export const fetchSubredditFeedApiV1RedditAppFetchSubredditFeedGet = <ThrowOnError extends boolean = false>(options: Options<FetchSubredditFeedApiV1RedditAppFetchSubredditFeedGetData, ThrowOnError>) => (options.client ?? client).get<FetchSubredditFeedApiV1RedditAppFetchSubredditFeedGetResponses, FetchSubredditFeedApiV1RedditAppFetchSubredditFeedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_subreddit_feed',
+    url: '/video-hub/api/v1/reddit/app/fetch_subreddit_feed',
     ...options
 });
 
@@ -52846,7 +52846,7 @@ export const fetchSubredditFeedApiV1RedditAppFetchSubredditFeedGet = <ThrowOnErr
  */
 export const checkSubredditMutedApiV1RedditAppCheckSubredditMutedGet = <ThrowOnError extends boolean = false>(options: Options<CheckSubredditMutedApiV1RedditAppCheckSubredditMutedGetData, ThrowOnError>) => (options.client ?? client).get<CheckSubredditMutedApiV1RedditAppCheckSubredditMutedGetResponses, CheckSubredditMutedApiV1RedditAppCheckSubredditMutedGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/check_subreddit_muted',
+    url: '/video-hub/api/v1/reddit/app/check_subreddit_muted',
     ...options
 });
 
@@ -52888,7 +52888,7 @@ export const checkSubredditMutedApiV1RedditAppCheckSubredditMutedGet = <ThrowOnE
  */
 export const fetchUserTrophiesApiV1RedditAppFetchUserTrophiesGet = <ThrowOnError extends boolean = false>(options: Options<FetchUserTrophiesApiV1RedditAppFetchUserTrophiesGetData, ThrowOnError>) => (options.client ?? client).get<FetchUserTrophiesApiV1RedditAppFetchUserTrophiesGetResponses, FetchUserTrophiesApiV1RedditAppFetchUserTrophiesGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/reddit/app/fetch_user_trophies',
+    url: '/video-hub/api/v1/reddit/app/fetch_user_trophies',
     ...options
 });
 
@@ -52916,14 +52916,14 @@ export const fetchUserTrophiesApiV1RedditAppFetchUserTrophiesGet = <ThrowOnError
  */
 export const hybridParsingSingleVideoApiV1HybridVideoDataGet = <ThrowOnError extends boolean = false>(options: Options<HybridParsingSingleVideoApiV1HybridVideoDataGetData, ThrowOnError>) => (options.client ?? client).get<HybridParsingSingleVideoApiV1HybridVideoDataGetResponses, HybridParsingSingleVideoApiV1HybridVideoDataGetErrors, ThrowOnError>({
     security: [{ scheme: 'bearer', type: 'http' }],
-    url: '/api/v1/hybrid/video_data',
+    url: '/video-hub/api/v1/hybrid/video_data',
     ...options
 });
 
 /**
  * 用于iOS快捷指令的版本更新信息/Version update information for iOS shortcuts
  */
-export const getShortcutApiV1IosShortcutShortcutGet = <ThrowOnError extends boolean = false>(options?: Options<GetShortcutApiV1IosShortcutShortcutGetData, ThrowOnError>) => (options?.client ?? client).get<GetShortcutApiV1IosShortcutShortcutGetResponses, unknown, ThrowOnError>({ url: '/api/v1/ios_shortcut/shortcut', ...options });
+export const getShortcutApiV1IosShortcutShortcutGet = <ThrowOnError extends boolean = false>(options?: Options<GetShortcutApiV1IosShortcutShortcutGetData, ThrowOnError>) => (options?.client ?? client).get<GetShortcutApiV1IosShortcutShortcutGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/ios_shortcut/shortcut', ...options });
 
 /**
  * 查看Demo缓存状态/View Demo Cache Status
@@ -52940,7 +52940,7 @@ export const getShortcutApiV1IosShortcutShortcutGet = <ThrowOnError extends bool
  * - View current cached Demo data
  * - Check cache expiration times
  */
-export const viewCacheStatusApiV1DemoDemoCacheStatusGet = <ThrowOnError extends boolean = false>(options?: Options<ViewCacheStatusApiV1DemoDemoCacheStatusGetData, ThrowOnError>) => (options?.client ?? client).get<ViewCacheStatusApiV1DemoDemoCacheStatusGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/demo/cache_status', ...options });
+export const viewCacheStatusApiV1DemoDemoCacheStatusGet = <ThrowOnError extends boolean = false>(options?: Options<ViewCacheStatusApiV1DemoDemoCacheStatusGetData, ThrowOnError>) => (options?.client ?? client).get<ViewCacheStatusApiV1DemoDemoCacheStatusGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/demo/cache_status', ...options });
 
 /**
  * 【Demo】抖音Web获取固定作品数据（1小时缓存）/[Demo] Fetch Douyin Web Fixed Video Data with Cache
@@ -52998,7 +52998,7 @@ export const viewCacheStatusApiV1DemoDemoCacheStatusGet = <ThrowOnError extends 
  * GET /api/v1/douyin/web/fetch_one_video
  * ```
  */
-export const douyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<DouyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<DouyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/douyin/web/fetch_one_video', ...options });
+export const douyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<DouyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<DouyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/douyin/web/fetch_one_video', ...options });
 
 /**
  * 【Demo】抖音APP获取固定作品数据（1小时缓存）/[Demo] Fetch Douyin APP Fixed Video Data with Cache
@@ -53056,7 +53056,7 @@ export const douyinWebFetchoneVideoDemoApiV1DemoDouyinWebFetchOneVideoGet = <Thr
  * GET /api/v1/douyin/app/fetch_one_video
  * ```
  */
-export const douyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<DouyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<DouyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/douyin/app/fetch_one_video', ...options });
+export const douyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<DouyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<DouyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/douyin/app/fetch_one_video', ...options });
 
 /**
  * 【Demo】抖音搜索综合搜索（1小时缓存）/[Demo] Douyin General Search with Cache
@@ -53094,7 +53094,7 @@ export const douyinAppFetchOneVideoApiV1DemoDouyinAppFetchOneVideoGet = <ThrowOn
  * GET /api/v1/douyin_search/app/general_search
  * ```
  */
-export const douyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGet = <ThrowOnError extends boolean = false>(options?: Options<DouyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGetData, ThrowOnError>) => (options?.client ?? client).get<DouyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/douyin_search/app/general_search', ...options });
+export const douyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGet = <ThrowOnError extends boolean = false>(options?: Options<DouyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGetData, ThrowOnError>) => (options?.client ?? client).get<DouyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/douyin_search/app/general_search', ...options });
 
 /**
  * 【Demo】快手获取固定视频信息（1小时缓存）/[Demo] Kuaishou Fixed Video with Cache
@@ -53130,7 +53130,7 @@ export const douyinSearchGeneralDemoApiV1DemoDouyinSearchAppGeneralSearchGet = <
  * GET /api/v1/kuaishou/web/fetch_one_video
  * ```
  */
-export const kuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<KuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<KuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/kuaishou/web/fetch_one_video', ...options });
+export const kuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<KuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<KuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/kuaishou/web/fetch_one_video', ...options });
 
 /**
  * 【Demo】TikTok固定用户信息（1小时缓存）/[Demo] TikTok Fixed User Profile with Cache
@@ -53166,7 +53166,7 @@ export const kuaishouWebFetchOneVideoApiV1DemoKuaishouWebFetchOneVideoGet = <Thr
  * GET /api/v1/tiktok/web/fetch_user_profile
  * ```
  */
-export const tiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGet = <ThrowOnError extends boolean = false>(options?: Options<TiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGetData, ThrowOnError>) => (options?.client ?? client).get<TiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/tiktok/web/fetch_user_profile', ...options });
+export const tiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGet = <ThrowOnError extends boolean = false>(options?: Options<TiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGetData, ThrowOnError>) => (options?.client ?? client).get<TiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/tiktok/web/fetch_user_profile', ...options });
 
 /**
  * 【Demo】TikTok APP获取固定视频详情（1小时缓存）/[Demo] TikTok APP Fixed Video Detail with Cache
@@ -53202,7 +53202,7 @@ export const tiktokWebFetchUserProfileApiV1DemoTiktokWebFetchUserProfileGet = <T
  * GET /api/v1/tiktok/app/fetch_one_video
  * ```
  */
-export const tiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<TiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<TiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/tiktok/app/fetch_one_video', ...options });
+export const tiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGet = <ThrowOnError extends boolean = false>(options?: Options<TiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGetData, ThrowOnError>) => (options?.client ?? client).get<TiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/tiktok/app/fetch_one_video', ...options });
 
 /**
  * 【Demo】Instagram获取固定用户信息（1小时缓存）/[Demo] Instagram Fixed User Profile with Cache
@@ -53238,7 +53238,7 @@ export const tiktokAppFetchOneVideoApiV1DemoTiktokAppFetchOneVideoGet = <ThrowOn
  * GET /api/v1/instagram/web/fetch_user_info
  * ```
  */
-export const instagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGet = <ThrowOnError extends boolean = false>(options?: Options<InstagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGetData, ThrowOnError>) => (options?.client ?? client).get<InstagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/instagram/web/fetch_user_info', ...options });
+export const instagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGet = <ThrowOnError extends boolean = false>(options?: Options<InstagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGetData, ThrowOnError>) => (options?.client ?? client).get<InstagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/instagram/web/fetch_user_info', ...options });
 
 /**
  * 【Demo】微信公众号文章提取（1小时缓存）/[Demo] WeChat Article Extract with Cache
@@ -53294,7 +53294,7 @@ export const instagramWebFetchUserInfoApiV1DemoInstagramWebFetchUserInfoGet = <T
  * GET /api/v1/wechat/article_extract
  * ```
  */
-export const wechatArticleExtractApiV1DemoWechatArticleExtractGet = <ThrowOnError extends boolean = false>(options?: Options<WechatArticleExtractApiV1DemoWechatArticleExtractGetData, ThrowOnError>) => (options?.client ?? client).get<WechatArticleExtractApiV1DemoWechatArticleExtractGetResponses, unknown, ThrowOnError>({ url: '/api/v1/demo/wechat/article_extract', ...options });
+export const wechatArticleExtractApiV1DemoWechatArticleExtractGet = <ThrowOnError extends boolean = false>(options?: Options<WechatArticleExtractApiV1DemoWechatArticleExtractGetData, ThrowOnError>) => (options?.client ?? client).get<WechatArticleExtractApiV1DemoWechatArticleExtractGetResponses, unknown, ThrowOnError>({ url: '/video-hub/api/v1/demo/wechat/article_extract', ...options });
 
 /**
  * GET /fdb-hub/get_facebook_page_id
