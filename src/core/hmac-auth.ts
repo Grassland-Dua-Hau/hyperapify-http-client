@@ -41,7 +41,7 @@ function buildAuthorizationHeader(keyId: string, signature: string): string {
  * Compute SHA-256 digest of a request body for the Digest header.
  * Required only when a request body is present.
  */
-export function computeBodyDigest(body: string): string {
+function computeBodyDigest(body: string): string {
   const hash = createHash('sha256').update(body, 'utf-8').digest('base64')
   return `SHA-256=${hash}`
 }

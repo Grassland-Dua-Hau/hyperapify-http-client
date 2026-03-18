@@ -1,11 +1,3 @@
-/**
- * Application entry point
- *
- * This file serves as a usage example for the boilerplate.
- * In actual projects, implement your application-specific logic here.
- */
-
-console.log('Hello from TypeScript boilerplate!')
-
-// Add your project-specific implementation here
-export {}
+export { HyperapifyClient, type HyperapifyClientOptions } from './client.js'
+export type { LogEntry, Logger } from './core/logger.js'
+export type { HyperapifyConfig } from './core/types.js'
