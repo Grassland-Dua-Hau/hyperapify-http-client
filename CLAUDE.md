@@ -79,6 +79,13 @@ Obtain user confirmation before implementation in these situations:
 - Breaking changes (existing APIs, data structures)
 - Multiple implementation approaches with unclear superiority
 
+## Model Selection Policy
+
+- **Sonnet**: Use for code generation, bug fixing, and implementation tasks (Edit/Write/MultiEdit)
+- **Opus**: Use for research, analysis, planning, design, review, and all other non-coding tasks
+
+When spawning subagents for implementation work, set `model: "sonnet"`. Keep Opus for orchestration and research agents.
+
 ## Working File Management
 
 Create temporary work files in `./tmp/` directory (under project root). Delete upon completion.
