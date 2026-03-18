@@ -1,8 +1,8 @@
-import { defineConfig, defaultPlugins } from "@hey-api/openapi-ts";
+import { defaultPlugins, defineConfig } from "@hey-api/openapi-ts";
 
 const swaggerUrl = [
   { url: "https://gate.hyperapify.com/docs/video-hub/json", pathPrefix: "/video-hub" },
-  { url: "https://gate.hyperapify.com/docs/fdb-hub/json" },
+  { url: "https://gate.hyperapify.com/docs/fdb-hub/json", pathPrefix: "/fdb-hub" },
 ];
 
 function prefixPaths(

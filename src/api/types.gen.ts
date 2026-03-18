@@ -40973,7 +40973,7 @@ export type GetFacebookPageIdData = {
          */
         link: string;
     };
-    url: '/get_facebook_page_id';
+    url: '/fdb-hub/get_facebook_page_id';
 };
 
 export type GetFacebookPageIdErrors = {
@@ -41035,7 +41035,7 @@ export type GetFacebookPageDetailsData = {
          */
         page_section?: 'default' | 'about';
     };
-    url: '/get_facebook_pages_details_from_link';
+    url: '/fdb-hub/get_facebook_pages_details_from_link';
 };
 
 export type GetFacebookPageDetailsErrors = {
@@ -41097,7 +41097,7 @@ export type GetFacebookPagesPostsData = {
          */
         fields?: string;
     };
-    url: '/get_facebook_page_posts_details_from_id';
+    url: '/fdb-hub/get_facebook_page_posts_details_from_id';
 };
 
 export type GetFacebookPagesPostsErrors = {
@@ -41147,7 +41147,7 @@ export type GetPageVideosData = {
          */
         end_cursor?: string;
     };
-    url: '/get_facebook_page_videos_details';
+    url: '/fdb-hub/get_facebook_page_videos_details';
 };
 
 export type GetPageVideosErrors = {
@@ -41197,7 +41197,7 @@ export type GetPageReelsData = {
          */
         end_cursor?: string;
     };
-    url: '/get_facebook_reels_details';
+    url: '/fdb-hub/get_facebook_reels_details';
 };
 
 export type GetPageReelsErrors = {
@@ -41239,7 +41239,7 @@ export type GetFacebookGroupIdData = {
          */
         link: string;
     };
-    url: '/get_facebook_group_id';
+    url: '/fdb-hub/get_facebook_group_id';
 };
 
 export type GetFacebookGroupIdErrors = {
@@ -41285,7 +41285,7 @@ export type GetFacebookGroupMetadataDetailsData = {
          */
         group_id?: string;
     };
-    url: '/get_facebook_group_metadata_details';
+    url: '/fdb-hub/get_facebook_group_metadata_details';
 };
 
 export type GetFacebookGroupMetadataDetailsErrors = {
@@ -41327,7 +41327,7 @@ export type GetFacebookGroupDetailsData = {
          */
         group_id: string;
     };
-    url: '/get_facebook_group_details_from_id';
+    url: '/fdb-hub/get_facebook_group_details_from_id';
 };
 
 export type GetFacebookGroupDetailsErrors = {
@@ -41373,7 +41373,7 @@ export type GetFacebookGroupsPostsData = {
          */
         end_cursor?: string;
     };
-    url: '/get_facebook_group_posts_details_from_id';
+    url: '/fdb-hub/get_facebook_group_posts_details_from_id';
 };
 
 export type GetFacebookGroupsPostsErrors = {
@@ -41419,7 +41419,7 @@ export type GetGroupVideosData = {
          */
         end_cursor?: string;
     };
-    url: '/get_facebook_group_videos_details_from_id';
+    url: '/fdb-hub/get_facebook_group_videos_details_from_id';
 };
 
 export type GetGroupVideosErrors = {
@@ -41461,7 +41461,7 @@ export type GetFacebookPostIdData = {
          */
         link: string;
     };
-    url: '/get_facebook_post_id';
+    url: '/fdb-hub/get_facebook_post_id';
 };
 
 export type GetFacebookPostIdErrors = {
@@ -41503,7 +41503,7 @@ export type GetFacebookPostDetailsData = {
          */
         link?: string;
     };
-    url: '/get_facebook_post_details';
+    url: '/fdb-hub/get_facebook_post_details';
 };
 
 export type GetFacebookPostDetailsErrors = {
@@ -41557,7 +41557,7 @@ export type GetFacebookPostsCommentsData = {
          */
         end_cursor?: string;
     };
-    url: '/get_facebook_post_comments_details';
+    url: '/fdb-hub/get_facebook_post_comments_details';
 };
 
 export type GetFacebookPostsCommentsErrors = {
@@ -41603,7 +41603,7 @@ export type GetFacebookPostsCommentRepliesData = {
          */
         expansion_token: string;
     };
-    url: '/get_facebook_post_comment_replies';
+    url: '/fdb-hub/get_facebook_post_comment_replies';
 };
 
 export type GetFacebookPostsCommentRepliesErrors = {
@@ -41645,7 +41645,7 @@ export type GetFacebookPostAttachmentDetailsData = {
          */
         post_id?: string;
     };
-    url: '/get_facebook_post_attachement_details';
+    url: '/fdb-hub/get_facebook_post_attachement_details';
 };
 
 export type GetFacebookPostAttachmentDetailsErrors = {
@@ -41687,7 +41687,7 @@ export type GetFacebookVideoPostDetailsData = {
          */
         video_id?: number;
     };
-    url: '/get_facebook_video_post_details';
+    url: '/fdb-hub/get_facebook_video_post_details';
 };
 
 export type GetFacebookVideoPostDetailsErrors = {
@@ -41737,7 +41737,7 @@ export type FetchSearchPagesData = {
          */
         end_cursor?: string;
     };
-    url: '/fetch_search_pages';
+    url: '/fdb-hub/fetch_search_pages';
 };
 
 export type FetchSearchPagesErrors = {
@@ -41787,7 +41787,7 @@ export type FetchSearchPeopleData = {
          */
         end_cursor?: string;
     };
-    url: '/fetch_search_people';
+    url: '/fdb-hub/fetch_search_people';
 };
 
 export type FetchSearchPeopleErrors = {
@@ -41829,7 +41829,7 @@ export type FetchSearchLocationsData = {
          */
         query: string;
     };
-    url: '/fetch_search_locations';
+    url: '/fdb-hub/fetch_search_locations';
 };
 
 export type FetchSearchLocationsErrors = {
@@ -41891,7 +41891,7 @@ export type FetchSearchPostsData = {
          */
         end_cursor?: string;
     };
-    url: '/fetch_search_posts';
+    url: '/fdb-hub/fetch_search_posts';
 };
 
 export type FetchSearchPostsErrors = {
@@ -41949,7 +41949,7 @@ export type FetchSearchVideosData = {
          */
         end_cursor?: string;
     };
-    url: '/search_facebook_watch_videos';
+    url: '/fdb-hub/search_facebook_watch_videos';
 };
 
 export type FetchSearchVideosErrors = {
@@ -41986,7 +41986,7 @@ export type GetSupportedCountriesData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/get_supported_countries';
+    url: '/fdb-hub/get_supported_countries';
 };
 
 export type GetSupportedCountriesErrors = {
@@ -42056,7 +42056,7 @@ export type FetchSearchAdsPagesGetData = {
          */
         end_cursor?: string;
     };
-    url: '/fetch_search_ads_pages';
+    url: '/fdb-hub/fetch_search_ads_pages';
 };
 
 export type FetchSearchAdsPagesGetErrors = {
@@ -42102,7 +42102,7 @@ export type FetchSearchAdsPagesPostData = {
     };
     path?: never;
     query?: never;
-    url: '/fetch_search_ads_pages';
+    url: '/fdb-hub/fetch_search_ads_pages';
 };
 
 export type FetchSearchAdsPagesPostErrors = {
@@ -42144,7 +42144,7 @@ export type FetchPageAdDetailsData = {
          */
         page_id: string;
     };
-    url: '/fetch_page_ad_details';
+    url: '/fdb-hub/fetch_page_ad_details';
 };
 
 export type FetchPageAdDetailsErrors = {
@@ -42202,7 +42202,7 @@ export type FetchArchiveAdDetailsData = {
          */
         is_ad_not_aaa_eligible?: boolean;
     };
-    url: '/fetch_archive_ad_details';
+    url: '/fdb-hub/fetch_archive_ad_details';
 };
 
 export type FetchArchiveAdDetailsErrors = {
@@ -42248,7 +42248,7 @@ export type FetchSearchAdsKeywordsData = {
          */
         country?: string;
     };
-    url: '/fetch_search_ads_keywords';
+    url: '/fdb-hub/fetch_search_ads_keywords';
 };
 
 export type FetchSearchAdsKeywordsErrors = {
@@ -42354,7 +42354,7 @@ export type GetMarketplaceSearchResultsData = {
          */
         fields?: string;
     };
-    url: '/get_facebook_marketplace_items_listing';
+    url: '/fdb-hub/get_facebook_marketplace_items_listing';
 };
 
 export type GetMarketplaceSearchResultsErrors = {
@@ -42396,7 +42396,7 @@ export type GetMarketplaceListingItemDetailsData = {
          */
         listing_id: string;
     };
-    url: '/get_listing_item_details';
+    url: '/fdb-hub/get_listing_item_details';
 };
 
 export type GetMarketplaceListingItemDetailsErrors = {
@@ -42438,7 +42438,7 @@ export type GetSellerDetailsData = {
          */
         seller_id: string;
     };
-    url: '/get_seller_details';
+    url: '/fdb-hub/get_seller_details';
 };
 
 export type GetSellerDetailsErrors = {
@@ -42475,7 +42475,7 @@ export type GetMarketplaceCategoriesData = {
     body?: never;
     path?: never;
     query?: never;
-    url: '/get_marketplace_categories';
+    url: '/fdb-hub/get_marketplace_categories';
 };
 
 export type GetMarketplaceCategoriesErrors = {
@@ -42525,7 +42525,7 @@ export type GetMarketplaceCityCoordinatesData = {
          */
         exactly_one?: boolean;
     };
-    url: '/find_city_coordinates';
+    url: '/fdb-hub/find_city_coordinates';
 };
 
 export type GetMarketplaceCityCoordinatesErrors = {
@@ -42611,7 +42611,7 @@ export type GetMarketplaceVehiclesSearchResultsData = {
          */
         end_cursor?: string;
     };
-    url: '/facebook_marketplace_vehicles_listings';
+    url: '/fdb-hub/facebook_marketplace_vehicles_listings';
 };
 
 export type GetMarketplaceVehiclesSearchResultsErrors = {
@@ -42697,7 +42697,7 @@ export type GetMarketplaceRentalPropertySearchResultsData = {
          */
         end_cursor?: string;
     };
-    url: '/facebook_marketplace_rentals_listings';
+    url: '/fdb-hub/facebook_marketplace_rentals_listings';
 };
 
 export type GetMarketplaceRentalPropertySearchResultsErrors = {
@@ -42739,7 +42739,7 @@ export type DownloadMediaData = {
          */
         url: string;
     };
-    url: '/download_media';
+    url: '/fdb-hub/download_media';
 };
 
 export type DownloadMediaErrors = {
