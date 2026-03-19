@@ -10,9 +10,7 @@ export class HyperapifyClient {
     serviceMap;
     constructor(options) {
         this.logger = createLogger();
-        if (options.baseUrl) {
-            apiClient.setConfig({ baseUrl: options.baseUrl });
-        }
+        apiClient.setConfig({ baseUrl: options.baseUrl ?? 'https://gate.hyperapify.com' });
         const config = {
             keyId: options.keyId,
             secretKey: options.secretKey,
