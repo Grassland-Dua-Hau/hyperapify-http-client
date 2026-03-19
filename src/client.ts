@@ -21,9 +21,7 @@ export class HyperapifyClient {
   private constructor(options: HyperapifyClientOptions) {
     this.logger = createLogger()
 
-    if (options.baseUrl) {
-      apiClient.setConfig({ baseUrl: options.baseUrl })
-    }
+    apiClient.setConfig({ baseUrl: options.baseUrl ?? 'https://gate.hyperapify.com' })
 
     const config: HyperapifyConfig = {
       keyId: options.keyId,

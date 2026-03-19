@@ -61,11 +61,8 @@ async function callWithLogging(
  */
 function extractDomain(_fnName: string, url: string): string {
   if (url.startsWith('/fdb-hub')) return 'fdbHub'
-  if (url.startsWith('/sora2')) return 'sora2'
-  if (url.startsWith('/hybrid')) return 'hybrid'
-  if (url.startsWith('/ios_shortcut')) return 'iosShortcut'
 
-  const match = /^\/api\/v1\/([^/]+)/.exec(url)
+  const match = /^\/video-hub\/api\/v1\/([^/]+)/.exec(url)
   if (match?.[1]) {
     return match[1].replace(/_([a-z])/g, (_, c: string) => c.toUpperCase())
   }
