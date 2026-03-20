@@ -112,5 +112,5 @@ console.log(
 // Step 4: Format generated files with Biome
 // Using execFileSync (not exec) — no shell injection risk, all args are hardcoded paths
 const biomeBin = resolve('node_modules/.bin', process.platform === 'win32' ? 'biome.cmd' : 'biome')
-execFileSync(biomeBin, ['format', '--write', urlMapPath, registryPath], { stdio: 'inherit' })
+execFileSync(biomeBin, ['format', '--write', urlMapPath, registryPath], { stdio: 'inherit', shell: true })
 console.log('Formatted generated files')
