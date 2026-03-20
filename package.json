@@ -25,7 +25,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shinpr/ai-coding-project-boilerplate.git"
+    "url": "https://github.com/vitechgroup-npm/hyperapify-http-client-prod.git"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -46,7 +46,7 @@
     "dist"
   ],
   "scripts": {
-    "openapi-ts": "openapi-ts && cp tsconfig.api.json src/api/tsconfig.json && node scripts/generate-url-map.js && biome format --write src/services/url-map.ts",
+    "openapi-ts": "openapi-ts && node scripts/post-generate.js",
     "build": "tsc -b && tsc-alias",
     "build:backend": "tsc && tsc-alias",
     "dev": "tsx src/index.ts",

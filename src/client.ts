@@ -4,6 +4,7 @@ import { registerHmacInterceptor } from './core/interceptor.js'
 import { createLogger, type Logger } from './core/logger.js'
 import type { HyperapifyConfig } from './core/types.js'
 import { buildServiceMap, type ServiceMap } from './services/registry.js'
+import type { DomainName, DomainServiceMap } from './services/service-registry.gen.js'
 import { SDK_URL_MAP } from './services/url-map.js'
 
 export interface HyperapifyClientOptions {
@@ -72,18 +73,18 @@ export class HyperapifyClient {
    * const tiktok = client.service('tiktok')
    * await tiktok.fetchPostDetail({ query: { aweme_id: '123' } })
    */
-  service(domain: string): Record<string, (...args: never[]) => unknown> {
+  service<K extends DomainName>(domain: K): DomainServiceMap[K] {
     const services = this.getServices()
-    const domainService = services[domain]
+    const domainService = services[domain as string]
     if (!domainService) {
       throw new Error(
         `Unknown service domain: "${domain}". Available: ${Object.keys(services).join(', ')}`
       )
     }
-    return domainService
+    return domainService as DomainServiceMap[K]
   }
 
-  get domains(): string[] {
-    return Object.keys(this.getServices())
+  get domains(): DomainName[] {
+    return Object.keys(this.getServices()) as DomainName[]
   }
 }
