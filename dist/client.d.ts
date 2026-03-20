@@ -1,3 +1,4 @@
+import type { DomainName, DomainServiceMap } from './services/service-registry.gen.js';
 export interface HyperapifyClientOptions {
     readonly keyId: string;
     readonly secretKey: string;
@@ -21,7 +22,7 @@ export declare class HyperapifyClient {
      * const tiktok = client.service('tiktok')
      * await tiktok.fetchPostDetail({ query: { aweme_id: '123' } })
      */
-    service(domain: string): Record<string, (...args: never[]) => unknown>;
-    get domains(): string[];
+    service<K extends DomainName>(domain: K): DomainServiceMap[K];
+    get domains(): DomainName[];
 }
 //# sourceMappingURL=client.d.ts.map
