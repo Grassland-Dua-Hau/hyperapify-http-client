@@ -40,6 +40,8 @@ Thumbs.db
 *.tmp
 *.temp
 tmp/
+.omx
+.omc
 
 # Work plans (excluded from commits)
 docs/plans/*

@@ -1063,6 +1063,12 @@ export type FetchMultiVideoHighQualityPlayUrlRequest = {
      * 作品id列表，用逗号分隔，最多50个/Video id list, separated by commas, up to 50
      */
     aweme_ids?: string;
+    /**
+     * Region
+     *
+     * 可选，请求出口地区(ISO 国家代码，如 CN/US/HK)。抖音根据请求 IP 返回对应区域 CDN，国内用户传 'CN' 可获得国内 CDN 链接以加快下载速度 / Optional, ISO country code (e.g. CN). Pass 'CN' for users in mainland China to get China-region CDN URLs for faster download.
+     */
+    region?: string | null;
 };
 
 /**
@@ -1201,60 +1207,6 @@ export type GeneralSearchV1Request = {
  * GeneralSearchV2Request
  */
 export type GeneralSearchV2Request = {
-    /**
-     * Keyword
-     *
-     * 关键词 / Keyword
-     */
-    keyword?: string;
-    /**
-     * Cursor
-     *
-     * 偏移游标，用于翻页，从上一次请求返回的响应中获取 / Offset cursor for pagination, obtained from the last response
-     */
-    cursor?: number;
-    /**
-     * Sort Type
-     *
-     * 排序方式：0=综合排序 1=最多点赞 2=最新发布 / Sort type: 0=Comprehensive, 1=Most Likes, 2=Latest
-     */
-    sort_type?: string;
-    /**
-     * Publish Time
-     *
-     * 发布时间筛选：0=不限 1=最近一天 7=最近一周 180=最近半年 / Publish time filter: 0=Unlimited, 1=Last day, 7=Last week, 180=Last half year
-     */
-    publish_time?: string;
-    /**
-     * Filter Duration
-     *
-     * 视频时长过滤：0=不限 0-1=一分钟以内 1-5=一到五分钟 5-10000=五分钟以上 / Video duration filter: 0=Unlimited, 0-1=Within 1 minute, 1-5=1 to 5 minutes, 5-10000=More than 5 minutes
-     */
-    filter_duration?: string;
-    /**
-     * Content Type
-     *
-     * 内容类型：0=不限 1=视频 2=图片 3=文章 / Content type: 0=All, 1=Video, 2=Picture, 3=Article
-     */
-    content_type?: string;
-    /**
-     * Search Id
-     *
-     * 搜索ID，用于翻页，从上一次请求返回的响应中获取 / Search ID for pagination, obtained from the last response
-     */
-    search_id?: string;
-    /**
-     * Backtrace
-     *
-     * 翻页回溯标识，用于翻页，从上一次请求返回的响应中获取 / Backtrace for pagination, obtained from the last response
-     */
-    backtrace?: string;
-};
-
-/**
- * GeneralSearchV3Request
- */
-export type GeneralSearchV3Request = {
     /**
      * Keyword
      *
@@ -3221,27 +3173,15 @@ export type XGnarlyAndXBogusModel = {
 };
 
 /**
- * XGnarlyModel
+ * XMssdkInfoModel
  */
-export type XGnarlyModel = {
-    /**
-     * Url
-     *
-     * 请求的API URL，不需要进行URL编码 | The requested API URL, no need to URL encode
-     */
-    url: string;
+export type XmssdkInfoModel = {
     /**
      * User Agent
      *
-     * 请求API时的User-Agent | User-Agent when requesting the API
+     * 可选的用户代理字符串，目前不支持自定义，默认为固定的值 | Optional User-Agent string, currently not supported for customization, defaults to a fixed value
      */
-    user_agent: string;
-    /**
-     * Body
-     *
-     * 请求的API参数，适用于POST请求 | The API parameters of the request, applicable for POST requests
-     */
-    body?: string | null;
+    user_agent?: string | null;
 };
 
 /**
@@ -4702,7 +4642,7 @@ export type GenerateXbogusApiV1TiktokWebGenerateXbogusPostResponses = {
 export type GenerateXbogusApiV1TiktokWebGenerateXbogusPostResponse = GenerateXbogusApiV1TiktokWebGenerateXbogusPostResponses[keyof GenerateXbogusApiV1TiktokWebGenerateXbogusPostResponses];
 
 export type GenerateXgnarlyApiV1TiktokWebGenerateXgnarlyPostData = {
-    body: XGnarlyModel;
+    body: XGnarlyAndXBogusModel;
     path?: never;
     query?: never;
     url: '/video-hub/api/v1/tiktok/web/generate_xgnarly';
@@ -4750,6 +4690,31 @@ export type GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostRe
 };
 
 export type GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostResponse = GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostResponses[keyof GenerateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPostResponses];
+
+export type GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostData = {
+    body: XmssdkInfoModel;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/tiktok/web/generate_x_mssdk_info';
+};
+
+export type GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostError = GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostErrors[keyof GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostErrors];
+
+export type GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostResponse = GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostResponses[keyof GenerateXmssdkInfoApiV1TiktokWebGenerateXmssdkInfoPostResponses];
 
 export type GetUserIdApiV1TiktokWebGetUserIdGetData = {
     body?: never;
@@ -5022,7 +4987,13 @@ export type FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetData = {
          *
          * 用户唯一ID/User unique ID
          */
-        user_unique_id: string;
+        user_unique_id?: string;
+        /**
+         * Resp Content Type
+         *
+         * 响应格式: protobuf 或 json / Response format: protobuf or json
+         */
+        resp_content_type?: string;
     };
     url: '/video-hub/api/v1/tiktok/web/fetch_live_im_fetch';
 };
@@ -5044,6 +5015,38 @@ export type FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetResponses = {
 };
 
 export type FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetResponse = FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetResponses[keyof FetchLiveImFetchApiV1TiktokWebFetchLiveImFetchGetResponses];
+
+export type GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * User Agent
+         *
+         * 用户浏览器代理（可选）/User browser agent (optional)
+         */
+        user_agent?: string;
+    };
+    url: '/video-hub/api/v1/tiktok/web/generate_wss_xb_signature';
+};
+
+export type GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetError = GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetErrors[keyof GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetErrors];
+
+export type GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetResponse = GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetResponses[keyof GenerateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGetResponses];
 
 export type GetLiveRoomIdApiV1TiktokWebGetLiveRoomIdGetData = {
     body?: never;
@@ -11299,9 +11302,9 @@ export type FetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV3
         /**
          * Sort By
          *
-         * 排序方式/Sort by: RELEVANCE, PRICE_ASC, PRICE_DESC, BEST_SELLERS
+         * 排序方式/Sort by
          */
-        sort_by?: string;
+        sort_by?: 'RELEVANCE' | 'PRICE_ASC' | 'PRICE_DESC' | 'BEST_SELLERS';
         /**
          * Filters Data
          *
@@ -11746,6 +11749,12 @@ export type FetchVideoHighQualityPlayUrlApiV1DouyinWebFetchVideoHighQualityPlayU
          * 可选，分享链接/Optional, share link
          */
         share_url?: string;
+        /**
+         * Region
+         *
+         * 可选，请求出口地区(ISO 国家代码，如 CN/US/HK)，国内用户传 CN 可拿到国内 CDN 域名以加快下载速度 / Optional, ISO country code (e.g. CN/US/HK). Pass CN to get China-region CDN URLs for faster download in mainland China.
+         */
+        region?: string;
     };
     url: '/video-hub/api/v1/douyin/web/fetch_video_high_quality_play_url';
 };
@@ -14716,6 +14725,12 @@ export type FetchVideoHighQualityPlayUrlApiV1DouyinAppV3FetchVideoHighQualityPla
          * 可选，分享链接/Optional, share link
          */
         share_url?: string;
+        /**
+         * Region
+         *
+         * 可选，请求出口地区(ISO 国家代码，如 CN/US/HK)，国内用户传 CN 可拿到国内 CDN 域名以加快下载速度 / Optional, ISO country code (e.g. CN/US/HK). Pass CN to get China-region CDN URLs for faster download in mainland China.
+         */
+        region?: string;
     };
     url: '/video-hub/api/v1/douyin/app/v3/fetch_video_high_quality_play_url';
 };
@@ -16413,6 +16428,56 @@ export type FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMat
 
 export type FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGetResponse = FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGetResponses[keyof FetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGetResponses];
 
+export type FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Query Id
+         *
+         * 查询ID/Query ID (话题ID/热点ID，从其他榜单接口获取)
+         */
+        query_id: string;
+        /**
+         * Billboard Type
+         *
+         * 榜单类型/Billboard type (2=热点, 3=话题, 4=道具, 5=音乐)
+         */
+        billboard_type?: number;
+        /**
+         * Limit
+         *
+         * 每页数量/Items per page
+         */
+        limit?: number;
+        /**
+         * Offset
+         *
+         * 偏移量/Offset
+         */
+        offset?: number;
+    };
+    url: '/video-hub/api/v1/douyin/creator/fetch_creator_material_center_related';
+};
+
+export type FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetError = FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetErrors[keyof FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetErrors];
+
+export type FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetResponse = FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetResponses[keyof FetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGetResponses];
+
 export type FetchCreatorHotSpotBillboardApiV1DouyinCreatorFetchCreatorHotSpotBillboardGetData = {
     body?: never;
     path?: never;
@@ -17317,6 +17382,1654 @@ export type FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostResp
 
 export type FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostResponse = FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostResponses[keyof FetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPostResponses];
 
+export type FetchAllValidDateApiV1DouyinIndexFetchAllValidDateGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_all_valid_date';
+};
+
+export type FetchAllValidDateApiV1DouyinIndexFetchAllValidDateGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchAllValidDateApiV1DouyinIndexFetchAllValidDateGetResponse = FetchAllValidDateApiV1DouyinIndexFetchAllValidDateGetResponses[keyof FetchAllValidDateApiV1DouyinIndexFetchAllValidDateGetResponses];
+
+export type FetchValidDateForRelationApiV1DouyinIndexFetchValidDateForRelationGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_valid_date_for_relation';
+};
+
+export type FetchValidDateForRelationApiV1DouyinIndexFetchValidDateForRelationGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchValidDateForRelationApiV1DouyinIndexFetchValidDateForRelationGetResponse = FetchValidDateForRelationApiV1DouyinIndexFetchValidDateForRelationGetResponses[keyof FetchValidDateForRelationApiV1DouyinIndexFetchValidDateForRelationGetResponses];
+
+export type FetchAllAreaApiV1DouyinIndexFetchAllAreaGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_all_area';
+};
+
+export type FetchAllAreaApiV1DouyinIndexFetchAllAreaGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchAllAreaApiV1DouyinIndexFetchAllAreaGetResponse = FetchAllAreaApiV1DouyinIndexFetchAllAreaGetResponses[keyof FetchAllAreaApiV1DouyinIndexFetchAllAreaGetResponses];
+
+export type FetchCurrentHotTopicApiV1DouyinIndexFetchCurrentHotTopicGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_current_hot_topic';
+};
+
+export type FetchCurrentHotTopicApiV1DouyinIndexFetchCurrentHotTopicGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchCurrentHotTopicApiV1DouyinIndexFetchCurrentHotTopicGetResponse = FetchCurrentHotTopicApiV1DouyinIndexFetchCurrentHotTopicGetResponses[keyof FetchCurrentHotTopicApiV1DouyinIndexFetchCurrentHotTopicGetResponses];
+
+export type FetchHotWordsApiV1DouyinIndexFetchHotWordsGetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_hot_words';
+};
+
+export type FetchHotWordsApiV1DouyinIndexFetchHotWordsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchHotWordsApiV1DouyinIndexFetchHotWordsGetError = FetchHotWordsApiV1DouyinIndexFetchHotWordsGetErrors[keyof FetchHotWordsApiV1DouyinIndexFetchHotWordsGetErrors];
+
+export type FetchHotWordsApiV1DouyinIndexFetchHotWordsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchHotWordsApiV1DouyinIndexFetchHotWordsGetResponse = FetchHotWordsApiV1DouyinIndexFetchHotWordsGetResponses[keyof FetchHotWordsApiV1DouyinIndexFetchHotWordsGetResponses];
+
+export type FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword List
+         *
+         * 关键词列表，逗号分隔/Keyword list, comma separated
+         */
+        keyword_list: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_keyword_valid_date';
+};
+
+export type FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostError = FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostErrors[keyof FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostErrors];
+
+export type FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostResponse = FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostResponses[keyof FetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePostResponses];
+
+export type FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword List
+         *
+         * 关键词列表，逗号分隔/Keyword list, comma separated
+         */
+        keyword_list: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date, YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date, YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+        /**
+         * Region
+         *
+         * 地区列表，逗号分隔/Region list, comma separated
+         */
+        region?: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_multi_keyword_hot_trend';
+};
+
+export type FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostError = FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostErrors[keyof FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostErrors];
+
+export type FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostResponse = FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostResponses[keyof FetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPostResponses];
+
+export type FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword List
+         *
+         * 关键词列表，逗号分隔/Keyword list, comma separated
+         */
+        keyword_list: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date, YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date, YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+        /**
+         * Region
+         *
+         * 地区列表，逗号分隔/Region list, comma separated
+         */
+        region?: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_multi_keyword_interpretation';
+};
+
+export type FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostError = FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostErrors[keyof FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostErrors];
+
+export type FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostResponse = FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostResponses[keyof FetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPostResponses];
+
+export type FetchRelationWordApiV1DouyinIndexFetchRelationWordPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 关键词/Keyword
+         */
+        keyword: string;
+        /**
+         * Start Date
+         *
+         * 开始日期（周一）/Start date (Monday) YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期（必须为周日）/End date (must be Sunday) YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_relation_word';
+};
+
+export type FetchRelationWordApiV1DouyinIndexFetchRelationWordPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchRelationWordApiV1DouyinIndexFetchRelationWordPostError = FetchRelationWordApiV1DouyinIndexFetchRelationWordPostErrors[keyof FetchRelationWordApiV1DouyinIndexFetchRelationWordPostErrors];
+
+export type FetchRelationWordApiV1DouyinIndexFetchRelationWordPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchRelationWordApiV1DouyinIndexFetchRelationWordPostResponse = FetchRelationWordApiV1DouyinIndexFetchRelationWordPostResponses[keyof FetchRelationWordApiV1DouyinIndexFetchRelationWordPostResponses];
+
+export type FetchPortraitApiV1DouyinIndexFetchPortraitPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 关键词/Keyword
+         */
+        keyword: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_portrait';
+};
+
+export type FetchPortraitApiV1DouyinIndexFetchPortraitPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchPortraitApiV1DouyinIndexFetchPortraitPostError = FetchPortraitApiV1DouyinIndexFetchPortraitPostErrors[keyof FetchPortraitApiV1DouyinIndexFetchPortraitPostErrors];
+
+export type FetchPortraitApiV1DouyinIndexFetchPortraitPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchPortraitApiV1DouyinIndexFetchPortraitPostResponse = FetchPortraitApiV1DouyinIndexFetchPortraitPostResponses[keyof FetchPortraitApiV1DouyinIndexFetchPortraitPostResponses];
+
+export type FetchGetUserSubWordApiV1DouyinIndexFetchGetUserSubWordPostData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_get_user_sub_word';
+};
+
+export type FetchGetUserSubWordApiV1DouyinIndexFetchGetUserSubWordPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchGetUserSubWordApiV1DouyinIndexFetchGetUserSubWordPostResponse = FetchGetUserSubWordApiV1DouyinIndexFetchGetUserSubWordPostResponses[keyof FetchGetUserSubWordApiV1DouyinIndexFetchGetUserSubWordPostResponses];
+
+export type FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Uid
+         *
+         * 抖音 uid (纯数字) / Douyin uid (numeric). Example: 3100268042915212
+         */
+        uid: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_encrypt_user_id';
+};
+
+export type FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetError = FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetErrors[keyof FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetErrors];
+
+export type FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetResponse = FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetResponses[keyof FetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGetResponses];
+
+export type FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 搜索关键词/Search keyword
+         */
+        keyword: string;
+        /**
+         * Total
+         *
+         * 返回数量/Return count
+         */
+        total?: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_daren_sug_great_user_list';
+};
+
+export type FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostError = FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostErrors[keyof FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostErrors];
+
+export type FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostResponse = FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostResponses[keyof FetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPostResponses];
+
+export type FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User List
+         *
+         * 达人抖音 uid 列表，逗号分隔，最多5个 / Daren uid list, comma separated, max 5
+         */
+        user_list: string;
+        /**
+         * Days
+         *
+         * 天数/Days: 7 or 30
+         */
+        days?: '7' | '30';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_daren_compare_users_stable';
+};
+
+export type FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostError = FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostErrors[keyof FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostErrors];
+
+export type FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostResponse = FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostResponses[keyof FetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePostResponses];
+
+export type FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User Id
+         *
+         * 达人抖音 uid (纯数字) / Douyin uid (numeric). Example: 3100268042915212
+         */
+        user_id: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_daren_similar_users';
+};
+
+export type FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostError = FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostErrors[keyof FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostErrors];
+
+export type FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostResponse = FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostResponses[keyof FetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPostResponses];
+
+export type FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User Id
+         *
+         * 达人抖音 uid (纯数字) / Douyin uid (numeric). Example: 3100268042915212
+         */
+        user_id: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_daren_great_user_top_video';
+};
+
+export type FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostError = FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostErrors[keyof FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostErrors];
+
+export type FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostResponse = FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostResponses[keyof FetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPostResponses];
+
+export type FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User Id
+         *
+         * 达人抖音 uid (纯数字) / Douyin uid (numeric). Example: 3100268042915212
+         */
+        user_id: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_daren_great_item_mile_info';
+};
+
+export type FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostError = FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostErrors[keyof FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostErrors];
+
+export type FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostResponse = FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostResponses[keyof FetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPostResponses];
+
+export type FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User Id
+         *
+         * 达人抖音 uid (纯数字) / Douyin uid (numeric). Example: 3100268042915212
+         */
+        user_id: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_daren_great_user_fans_info';
+};
+
+export type FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostError = FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostErrors[keyof FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostErrors];
+
+export type FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostResponse = FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostResponses[keyof FetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPostResponses];
+
+export type FetchItemFilterOptionsApiV1DouyinIndexFetchItemFilterOptionsGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_item_filter_options';
+};
+
+export type FetchItemFilterOptionsApiV1DouyinIndexFetchItemFilterOptionsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchItemFilterOptionsApiV1DouyinIndexFetchItemFilterOptionsGetResponse = FetchItemFilterOptionsApiV1DouyinIndexFetchItemFilterOptionsGetResponses[keyof FetchItemFilterOptionsApiV1DouyinIndexFetchItemFilterOptionsGetResponses];
+
+export type FetchItemSugApiV1DouyinIndexFetchItemSugPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Query
+         *
+         * 搜索关键词/Search keyword
+         */
+        query: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_item_sug';
+};
+
+export type FetchItemSugApiV1DouyinIndexFetchItemSugPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchItemSugApiV1DouyinIndexFetchItemSugPostError = FetchItemSugApiV1DouyinIndexFetchItemSugPostErrors[keyof FetchItemSugApiV1DouyinIndexFetchItemSugPostErrors];
+
+export type FetchItemSugApiV1DouyinIndexFetchItemSugPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchItemSugApiV1DouyinIndexFetchItemSugPostResponse = FetchItemSugApiV1DouyinIndexFetchItemSugPostResponses[keyof FetchItemSugApiV1DouyinIndexFetchItemSugPostResponses];
+
+export type FetchItemQueryApiV1DouyinIndexFetchItemQueryPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Query
+         *
+         * 搜索关键词/Search keyword
+         */
+        query: string;
+        /**
+         * Category Id
+         *
+         * 垂类ID（可通过 fetch_item_filter_options 获取）/Category ID (get from fetch_item_filter_options), 0=全部/all
+         */
+        category_id?: string;
+        /**
+         * Date Type
+         *
+         * 发布时间类型（可通过 fetch_item_filter_options 获取）/Date type (get from fetch_item_filter_options), 0=不限/unlimited
+         */
+        date_type?: number;
+        /**
+         * Label Type
+         *
+         * 视频类型（可通过 fetch_item_filter_options 获取）/Label type (get from fetch_item_filter_options), 0=不限/unlimited
+         */
+        label_type?: number;
+        /**
+         * Duration Type
+         *
+         * 时长类型（可通过 fetch_item_filter_options 获取）/Duration type (get from fetch_item_filter_options), 0=不限/unlimited
+         */
+        duration_type?: number;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_item_query';
+};
+
+export type FetchItemQueryApiV1DouyinIndexFetchItemQueryPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchItemQueryApiV1DouyinIndexFetchItemQueryPostError = FetchItemQueryApiV1DouyinIndexFetchItemQueryPostErrors[keyof FetchItemQueryApiV1DouyinIndexFetchItemQueryPostErrors];
+
+export type FetchItemQueryApiV1DouyinIndexFetchItemQueryPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchItemQueryApiV1DouyinIndexFetchItemQueryPostResponse = FetchItemQueryApiV1DouyinIndexFetchItemQueryPostResponses[keyof FetchItemQueryApiV1DouyinIndexFetchItemQueryPostResponses];
+
+export type FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 品牌名称关键词/Brand keyword
+         */
+        keyword: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_brand_suggest';
+};
+
+export type FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostError = FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostErrors[keyof FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostErrors];
+
+export type FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostResponse = FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostResponses[keyof FetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPostResponses];
+
+export type FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword List
+         *
+         * 品牌名称列表逗号分隔/Brand list comma separated
+         */
+        keyword_list: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_brand_valid_info';
+};
+
+export type FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostError = FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostErrors[keyof FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostErrors];
+
+export type FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostResponse = FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostResponses[keyof FetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPostResponses];
+
+export type FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Brand Name
+         *
+         * 品牌名称/Brand name
+         */
+        brand_name: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_brand_radar_chart';
+};
+
+export type FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostError = FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostErrors[keyof FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostErrors];
+
+export type FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostResponse = FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostResponses[keyof FetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPostResponses];
+
+export type FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Brand Name
+         *
+         * 品牌名称/Brand name
+         */
+        brand_name: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_brand_lines';
+};
+
+export type FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostError = FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostErrors[keyof FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostErrors];
+
+export type FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostResponse = FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostResponses[keyof FetchBrandLinesApiV1DouyinIndexFetchBrandLinesPostResponses];
+
+export type FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Brand Name
+         *
+         * 品牌名称/Brand name
+         */
+        brand_name: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_brand_cycles';
+};
+
+export type FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostError = FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostErrors[keyof FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostErrors];
+
+export type FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostResponse = FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostResponses[keyof FetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPostResponses];
+
+export type FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Brand Name
+         *
+         * 品牌名称/Brand name
+         */
+        brand_name: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_brand_initiative_rank_weekly';
+};
+
+export type FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostError = FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostErrors[keyof FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostErrors];
+
+export type FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostResponse = FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostResponses[keyof FetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPostResponses];
+
+export type FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 话题关键词/Topic keyword
+         */
+        keyword: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_topic_suggest';
+};
+
+export type FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostError = FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostErrors[keyof FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostErrors];
+
+export type FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostResponse = FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostResponses[keyof FetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPostResponses];
+
+export type FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 话题关键词/Topic keyword
+         */
+        keyword: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+        /**
+         * App Name
+         *
+         * 平台/Platform: aweme(抖音), toutiao(头条)
+         */
+        app_name?: 'aweme' | 'toutiao';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_topic_query';
+};
+
+export type FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostError = FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostErrors[keyof FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostErrors];
+
+export type FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostResponse = FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostResponses[keyof FetchTopicQueryApiV1DouyinIndexFetchTopicQueryPostResponses];
+
+export type FetchContentValidDateApiV1DouyinIndexFetchContentValidDateGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_content_valid_date';
+};
+
+export type FetchContentValidDateApiV1DouyinIndexFetchContentValidDateGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentValidDateApiV1DouyinIndexFetchContentValidDateGetResponse = FetchContentValidDateApiV1DouyinIndexFetchContentValidDateGetResponses[keyof FetchContentValidDateApiV1DouyinIndexFetchContentValidDateGetResponses];
+
+export type FetchBrandHotVideosTimeScopeApiV1DouyinIndexFetchBrandHotVideosTimeScopePostData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_brand_hot_videos_time_scope';
+};
+
+export type FetchBrandHotVideosTimeScopeApiV1DouyinIndexFetchBrandHotVideosTimeScopePostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchBrandHotVideosTimeScopeApiV1DouyinIndexFetchBrandHotVideosTimeScopePostResponse = FetchBrandHotVideosTimeScopeApiV1DouyinIndexFetchBrandHotVideosTimeScopePostResponses[keyof FetchBrandHotVideosTimeScopeApiV1DouyinIndexFetchBrandHotVideosTimeScopePostResponses];
+
+export type FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部**（同 fetch_item_query 的 category_id 但不接受 0）/Category ID, **required, does NOT support 0=all**. Get full list via fetch_item_filter_options (excluding id=0)
+         */
+        tag_id: string;
+        /**
+         * Period
+         *
+         * 时间周期/Period: 1=近1天, 3=近3天, 7=近7天
+         */
+        period?: '1' | '3' | '7';
+        /**
+         * End Date
+         *
+         * 结束日期 YYYYMMDD（**仅当 period=7 时必须为周日**，period=1/3 时可为任意日期）/End date YYYYMMDD (**must be a Sunday only when period=7**; any day for period=1/3)
+         */
+        end_date: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_creative_keywords';
+};
+
+export type FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostError = FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostErrors[keyof FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostErrors];
+
+export type FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostResponse = FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostResponses[keyof FetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPostResponses];
+
+export type FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部** / Category ID, **required, does NOT support 0=all**
+         */
+        tag_id: string;
+        /**
+         * Period
+         *
+         * 时间周期/Period: 1, 3, 7
+         */
+        period?: '1' | '3' | '7';
+        /**
+         * End Date
+         *
+         * 结束日期 YYYYMMDD（**仅当 period=7 时必须为周日**，period=1/3 时可为任意日期）/End date YYYYMMDD (**must be a Sunday only when period=7**; any day for period=1/3)
+         */
+        end_date: string;
+        /**
+         * Keyword
+         *
+         * 关键词（从 fetch_content_creative_keywords 获取）/Keyword (get from fetch_content_creative_keywords)
+         */
+        keyword: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_creative_keyword_items';
+};
+
+export type FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostError = FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostErrors[keyof FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostErrors];
+
+export type FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostResponse = FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostResponses[keyof FetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPostResponses];
+
+export type FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部** / Category ID, **required, does NOT support 0=all**
+         */
+        tag_id: string;
+        /**
+         * Period
+         *
+         * 时间周期/Period: 1, 3, 7
+         */
+        period?: '1' | '3' | '7';
+        /**
+         * End Date
+         *
+         * 结束日期 YYYYMMDD（**仅当 period=7 时必须为周日**，period=1/3 时可为任意日期）/End date YYYYMMDD (**must be a Sunday only when period=7**; any day for period=1/3)
+         */
+        end_date: string;
+        /**
+         * Rank Type
+         *
+         * 排序类型/Rank type: index=指数排序, rise=飙升排序
+         */
+        rank_type?: 'index' | 'rise';
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_creative_topic';
+};
+
+export type FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostError = FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostErrors[keyof FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostErrors];
+
+export type FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostResponse = FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostResponses[keyof FetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPostResponses];
+
+export type FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部**（同 fetch_item_query 的 category_id 但不接受 0）/Category ID, **required, does NOT support 0=all**. Get full list via fetch_item_filter_options (excluding id=0)
+         */
+        tag_id: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_publish_trend';
+};
+
+export type FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetError = FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetErrors[keyof FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetErrors];
+
+export type FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetResponse = FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetResponses[keyof FetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGetResponses];
+
+export type FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部**（同 fetch_item_query 的 category_id 但不接受 0）/Category ID, **required, does NOT support 0=all**. Get full list via fetch_item_filter_options (excluding id=0)
+         */
+        tag_id: string;
+        /**
+         * Period
+         *
+         * 时间粒度/Period: week=周, month=月
+         */
+        period?: 'week' | 'month';
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_creative_duration';
+};
+
+export type FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostError = FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostErrors[keyof FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostErrors];
+
+export type FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostResponse = FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostResponses[keyof FetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPostResponses];
+
+export type FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部**（同 fetch_item_query 的 category_id 但不接受 0）/Category ID, **required, does NOT support 0=all**. Get full list via fetch_item_filter_options (excluding id=0)
+         */
+        tag_id: string;
+        /**
+         * Period
+         *
+         * 时间粒度/Period: week or month
+         */
+        period?: 'week' | 'month';
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_author_portrait';
+};
+
+export type FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostError = FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostErrors[keyof FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostErrors];
+
+export type FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostResponse = FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostResponses[keyof FetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPostResponses];
+
+export type FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部**（同 fetch_item_query 的 category_id 但不接受 0）/Category ID, **required, does NOT support 0=all**. Get full list via fetch_item_filter_options (excluding id=0)
+         */
+        tag_id: string;
+        /**
+         * Period
+         *
+         * 时间粒度/Period: week or month
+         */
+        period?: 'week' | 'month';
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_consumer_portrait';
+};
+
+export type FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostError = FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostErrors[keyof FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostErrors];
+
+export type FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostResponse = FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostResponses[keyof FetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPostResponses];
+
+export type FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部**（同 fetch_item_query 的 category_id 但不接受 0）/Category ID, **required, does NOT support 0=all**. Get full list via fetch_item_filter_options (excluding id=0)
+         */
+        tag_id: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_interact_trend';
+};
+
+export type FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostError = FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostErrors[keyof FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostErrors];
+
+export type FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostResponse = FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostResponses[keyof FetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPostResponses];
+
+export type FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Tag Id
+         *
+         * 垂类ID，**必填，不支持 0=全部**（同 fetch_item_query 的 category_id 但不接受 0）/Category ID, **required, does NOT support 0=all**. Get full list via fetch_item_filter_options (excluding id=0)
+         */
+        tag_id: string;
+        /**
+         * Start Date
+         *
+         * 开始日期/Start date YYYYMMDD
+         */
+        start_date: string;
+        /**
+         * End Date
+         *
+         * 结束日期/End date YYYYMMDD
+         */
+        end_date: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_content_consume_trend';
+};
+
+export type FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostError = FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostErrors[keyof FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostErrors];
+
+export type FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostResponse = FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostResponses[keyof FetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPostResponses];
+
+export type FetchInsightRecommendApiV1DouyinIndexFetchInsightRecommendGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/douyin/index/fetch_insight_recommend';
+};
+
+export type FetchInsightRecommendApiV1DouyinIndexFetchInsightRecommendGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchInsightRecommendApiV1DouyinIndexFetchInsightRecommendGetResponse = FetchInsightRecommendApiV1DouyinIndexFetchInsightRecommendGetResponses[keyof FetchInsightRecommendApiV1DouyinIndexFetchInsightRecommendGetResponses];
+
+export type FetchReportSearchApiV1DouyinIndexFetchReportSearchPostData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Current Page
+         *
+         * 页码/Page number
+         */
+        current_page?: string;
+        /**
+         * Page Size
+         *
+         * 每页数量/Page size
+         */
+        page_size?: string;
+        /**
+         * Type
+         *
+         * 报告类型/Report type: 空=全部, 行业洞察=Industry, 产品洞察=Product, 用户洞察=User, 趋势洞察=Trend
+         */
+        type?: '' | '行业洞察' | '产品洞察' | '用户洞察' | '趋势洞察';
+        /**
+         * Business
+         *
+         * 所属产品列表，逗号分隔/Business list, comma separated. Options: 巨量引擎, 今日头条, 抖音, 西瓜视频, 抖音电商, 仕小禄, 其他
+         */
+        business?: string;
+        /**
+         * Report Time
+         *
+         * 发布年份列表，逗号分隔/Year list, comma separated. e.g. 2024,2023
+         */
+        report_time?: string;
+        /**
+         * Search
+         *
+         * 报告关键词搜索/Search keyword
+         */
+        search?: string;
+        /**
+         * Category
+         *
+         * 顶层分类ID（默认 6 表示抖音指数趋势报告）/Top category ID (default 6 = Douyin Index trend reports)
+         */
+        category?: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_report_search';
+};
+
+export type FetchReportSearchApiV1DouyinIndexFetchReportSearchPostErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchReportSearchApiV1DouyinIndexFetchReportSearchPostError = FetchReportSearchApiV1DouyinIndexFetchReportSearchPostErrors[keyof FetchReportSearchApiV1DouyinIndexFetchReportSearchPostErrors];
+
+export type FetchReportSearchApiV1DouyinIndexFetchReportSearchPostResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchReportSearchApiV1DouyinIndexFetchReportSearchPostResponse = FetchReportSearchApiV1DouyinIndexFetchReportSearchPostResponses[keyof FetchReportSearchApiV1DouyinIndexFetchReportSearchPostResponses];
+
+export type FetchReportDetailApiV1DouyinIndexFetchReportDetailGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Report Id
+         *
+         * 报告ID/Report ID. Example: 1081
+         */
+        report_id: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_report_detail';
+};
+
+export type FetchReportDetailApiV1DouyinIndexFetchReportDetailGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchReportDetailApiV1DouyinIndexFetchReportDetailGetError = FetchReportDetailApiV1DouyinIndexFetchReportDetailGetErrors[keyof FetchReportDetailApiV1DouyinIndexFetchReportDetailGetErrors];
+
+export type FetchReportDetailApiV1DouyinIndexFetchReportDetailGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchReportDetailApiV1DouyinIndexFetchReportDetailGetResponse = FetchReportDetailApiV1DouyinIndexFetchReportDetailGetResponses[keyof FetchReportDetailApiV1DouyinIndexFetchReportDetailGetResponses];
+
+export type FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Report Id
+         *
+         * 报告ID/Report ID
+         */
+        report_id: string;
+    };
+    url: '/video-hub/api/v1/douyin/index/fetch_insight_get_rec';
+};
+
+export type FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetError = FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetErrors[keyof FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetErrors];
+
+export type FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetResponse = FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetResponses[keyof FetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGetResponses];
+
 export type FetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1PostData = {
     body: GeneralSearchV1Request;
     path?: never;
@@ -17366,31 +19079,6 @@ export type FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostRespons
 };
 
 export type FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostResponse = FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostResponses[keyof FetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2PostResponses];
-
-export type FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostData = {
-    body: GeneralSearchV3Request;
-    path?: never;
-    query?: never;
-    url: '/video-hub/api/v1/douyin/search/fetch_general_search_v3';
-};
-
-export type FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostErrors = {
-    /**
-     * Validation Error
-     */
-    422: HttpValidationError;
-};
-
-export type FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostError = FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostErrors[keyof FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostErrors];
-
-export type FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostResponses = {
-    /**
-     * Successful Response
-     */
-    200: ResponseModel;
-};
-
-export type FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostResponse = FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostResponses[keyof FetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3PostResponses];
 
 export type FetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPostData = {
     body: SearchSuggestRequest;
@@ -21025,6 +22713,422 @@ export type GetUserIdApiV1ToutiaoAppGetUserIdGetResponses = {
 
 export type GetUserIdApiV1ToutiaoAppGetUserIdGetResponse = GetUserIdApiV1ToutiaoAppGetUserIdGetResponses[keyof GetUserIdApiV1ToutiaoAppGetUserIdGetResponses];
 
+export type FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Note Id
+         *
+         * 笔记ID/Note ID
+         */
+        note_id: string;
+        /**
+         * Xsec Token
+         *
+         * 安全令牌，可以从小红书的分享链接中获取/Security token, can be obtained from the sharing link of Xiaohongshu
+         */
+        xsec_token: string;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_note_detail';
+};
+
+export type FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetError = FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetErrors[keyof FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetErrors];
+
+export type FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetResponse = FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetResponses[keyof FetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGetResponses];
+
+export type FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Note Id
+         *
+         * 笔记ID/Note ID
+         */
+        note_id: string;
+        /**
+         * Cursor
+         *
+         * 游标/Cursor
+         */
+        cursor?: string;
+        /**
+         * Xsec Token
+         *
+         * 安全令牌，可以从小红书的分享链接中获取/Security token, can be obtained from the sharing link of Xiaohongshu
+         */
+        xsec_token: string;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_note_comments';
+};
+
+export type FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetError = FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetErrors[keyof FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetErrors];
+
+export type FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetResponse = FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetResponses[keyof FetchNoteCommentsApiV1XiaohongshuWebV3FetchNoteCommentsGetResponses];
+
+export type FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Note Id
+         *
+         * 笔记ID/Note ID
+         */
+        note_id: string;
+        /**
+         * Root Comment Id
+         *
+         * 父评论ID/Root comment ID
+         */
+        root_comment_id: string;
+        /**
+         * Num
+         *
+         * 数量/Number
+         */
+        num?: number;
+        /**
+         * Cursor
+         *
+         * 游标/Cursor
+         */
+        cursor?: string;
+        /**
+         * Xsec Token
+         *
+         * 安全令牌，可以从小红书的分享链接中获取/Security token, can be obtained from the sharing link of Xiaohongshu
+         */
+        xsec_token: string;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_sub_comments';
+};
+
+export type FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetError = FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetErrors[keyof FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetErrors];
+
+export type FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetResponse = FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetResponses[keyof FetchSubCommentsApiV1XiaohongshuWebV3FetchSubCommentsGetResponses];
+
+export type FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 搜索关键词/Search keywords
+         */
+        keyword: string;
+        /**
+         * Page
+         *
+         * 页码/Page number
+         */
+        page?: number;
+        /**
+         * Sort
+         *
+         * 排序方式/Sort type
+         */
+        sort?: string;
+        /**
+         * Note Type
+         *
+         * 笔记类型/Note type
+         */
+        note_type?: number;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_search_notes';
+};
+
+export type FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetError = FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetErrors[keyof FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetErrors];
+
+export type FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetResponse = FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetResponses[keyof FetchSearchNotesApiV1XiaohongshuWebV3FetchSearchNotesGetResponses];
+
+export type FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 搜索关键词/Search keywords
+         */
+        keyword: string;
+        /**
+         * Page
+         *
+         * 页码/Page number
+         */
+        page?: number;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_search_users';
+};
+
+export type FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetError = FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetErrors[keyof FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetErrors];
+
+export type FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetResponse = FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetResponses[keyof FetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGetResponses];
+
+export type FetchTrendingApiV1XiaohongshuWebV3FetchTrendingGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_trending';
+};
+
+export type FetchTrendingApiV1XiaohongshuWebV3FetchTrendingGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchTrendingApiV1XiaohongshuWebV3FetchTrendingGetResponse = FetchTrendingApiV1XiaohongshuWebV3FetchTrendingGetResponses[keyof FetchTrendingApiV1XiaohongshuWebV3FetchTrendingGetResponses];
+
+export type FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Keyword
+         *
+         * 关键词 (可为空)/Keyword (optional)
+         */
+        keyword?: string;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_search_suggest';
+};
+
+export type FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetError = FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetErrors[keyof FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetErrors];
+
+export type FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetResponse = FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetResponses[keyof FetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGetResponses];
+
+export type FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Num
+         *
+         * 返回数量，最大40/Number of results, max 40
+         */
+        num?: number;
+        /**
+         * Cursor Score
+         *
+         * 翻页游标/Pagination cursor
+         */
+        cursor_score?: string;
+        /**
+         * Category
+         *
+         * 分类频道ID/Category channel ID
+         */
+        category?: string;
+        /**
+         * Need Filter Image
+         *
+         * 仅图文/Image notes only
+         */
+        need_filter_image?: boolean;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_homefeed';
+};
+
+export type FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetError = FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetErrors[keyof FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetErrors];
+
+export type FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetResponse = FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetResponses[keyof FetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGetResponses];
+
+export type FetchHomefeedCategoriesApiV1XiaohongshuWebV3FetchHomefeedCategoriesGetData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_homefeed_categories';
+};
+
+export type FetchHomefeedCategoriesApiV1XiaohongshuWebV3FetchHomefeedCategoriesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchHomefeedCategoriesApiV1XiaohongshuWebV3FetchHomefeedCategoriesGetResponse = FetchHomefeedCategoriesApiV1XiaohongshuWebV3FetchHomefeedCategoriesGetResponses[keyof FetchHomefeedCategoriesApiV1XiaohongshuWebV3FetchHomefeedCategoriesGetResponses];
+
+export type FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User Id
+         *
+         * 用户ID/User ID
+         */
+        user_id: string;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_user_info';
+};
+
+export type FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetError = FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetErrors[keyof FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetErrors];
+
+export type FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetResponse = FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetResponses[keyof FetchUserInfoApiV1XiaohongshuWebV3FetchUserInfoGetResponses];
+
+export type FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User Id
+         *
+         * 用户ID/User ID
+         */
+        user_id: string;
+        /**
+         * Cursor
+         *
+         * 游标/Cursor
+         */
+        cursor?: string;
+        /**
+         * Num
+         *
+         * 数量/Number
+         */
+        num?: number;
+    };
+    url: '/video-hub/api/v1/xiaohongshu/web_v3/fetch_user_notes';
+};
+
+export type FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetError = FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetErrors[keyof FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetErrors];
+
+export type FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetResponse = FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetResponses[keyof FetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGetResponses];
+
 export type GetImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGetData = {
     body?: never;
     path?: never;
@@ -21101,44 +23205,6 @@ export type GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetResponse
 
 export type GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetResponse = GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetResponses[keyof GetVideoNoteDetailApiV1XiaohongshuAppV2GetVideoNoteDetailGetResponses];
 
-export type GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetData = {
-    body?: never;
-    path?: never;
-    query?: {
-        /**
-         * Note Id
-         *
-         * 笔记ID/Note ID
-         */
-        note_id?: string;
-        /**
-         * Share Text
-         *
-         * 分享链接/Share link
-         */
-        share_text?: string;
-    };
-    url: '/video-hub/api/v1/xiaohongshu/app_v2/get_mixed_note_detail';
-};
-
-export type GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetErrors = {
-    /**
-     * Validation Error
-     */
-    422: HttpValidationError;
-};
-
-export type GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetError = GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetErrors[keyof GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetErrors];
-
-export type GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetResponses = {
-    /**
-     * Successful Response
-     */
-    200: ResponseModel;
-};
-
-export type GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetResponse = GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetResponses[keyof GetMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGetResponses];
-
 export type GetNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGetData = {
     body?: never;
     path?: never;
@@ -21167,6 +23233,12 @@ export type GetNoteCommentsApiV1XiaohongshuAppV2GetNoteCommentsGetData = {
          * 评论索引，首次请求传0/Comment index, pass 0 for first request
          */
         index?: number;
+        /**
+         * Pagearea
+         *
+         * 折叠状态: UNFOLDED(默认-展开), FOLDED(折叠)
+         */
+        pageArea?: string;
         /**
          * Sort Strategy
          *
@@ -26517,6 +28589,100 @@ export type FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetResponses = {
 
 export type FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetResponse = FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetResponses[keyof FetchUserFollowersApiV1ZhihuWebFetchUserFollowersGetResponses];
 
+export type FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User Url Token
+         *
+         * 用户ID/User ID
+         */
+        user_url_token: string;
+        /**
+         * Offset
+         *
+         * 偏移量/Offset
+         */
+        offset?: string;
+        /**
+         * Limit
+         *
+         * 每页文章数量/Number of articles per page
+         */
+        limit?: string;
+        /**
+         * Sort Type
+         *
+         * 排序类型/Sort Type
+         */
+        sort_type?: 'created' | 'voteups';
+    };
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_articles';
+};
+
+export type FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetError = FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetErrors[keyof FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetErrors];
+
+export type FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetResponse = FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetResponses[keyof FetchUserArticlesApiV1ZhihuWebFetchUserArticlesGetResponses];
+
+export type FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * User Url Token
+         *
+         * 用户ID/User ID
+         */
+        user_url_token: string;
+        /**
+         * Offset
+         *
+         * 偏移量/Offset
+         */
+        offset?: string;
+        /**
+         * Limit
+         *
+         * 每页文章数量/Number of articles per page
+         */
+        limit?: string;
+    };
+    url: '/video-hub/api/v1/zhihu/web/fetch_user_included_articles';
+};
+
+export type FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetError = FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetErrors[keyof FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetErrors];
+
+export type FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetResponse = FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetResponses[keyof FetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGetResponses];
+
 export type FetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGetData = {
     body?: never;
     path?: never;
@@ -28074,7 +30240,7 @@ export type SearchUserPostsApiV1WeiboWebV2SearchUserPostsGetData = {
          *
          * 搜索关键词/Search keyword
          */
-        q: string;
+        q?: string;
         /**
          * Page
          *
@@ -28086,13 +30252,13 @@ export type SearchUserPostsApiV1WeiboWebV2SearchUserPostsGetData = {
          *
          * 开始时间戳/Start timestamp
          */
-        starttime: number | null;
+        starttime?: number | null;
         /**
          * Endtime
          *
          * 结束时间戳/End timestamp
          */
-        endtime: number | null;
+        endtime?: number | null;
         /**
          * Hasori
          *
@@ -30099,6 +32265,94 @@ export type FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetRespo
 
 export type FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetResponse = FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetResponses[keyof FetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGetResponses];
 
+export type FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 搜索关键词/Search keyword
+         */
+        keyword: string;
+        /**
+         * Offset
+         *
+         * 偏移量，从0开始，每页+20/Offset, starts with 0, plus 20 every page
+         */
+        offset?: number;
+        /**
+         * Sort Type
+         *
+         * 排序方式: _0默认 / _2最新 / _4最热 (Sort: _0 default / _2 newest / _4 hottest)
+         */
+        sort_type?: string;
+    };
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_search_official_account';
+};
+
+export type FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetError = FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetErrors[keyof FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetErrors];
+
+export type FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetResponse = FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetResponses[keyof FetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGetResponses];
+
+export type FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 搜索关键词/Search keyword
+         */
+        keyword: string;
+        /**
+         * Offset
+         *
+         * 偏移量，从0开始，每页+20/Offset, starts with 0, plus 20 every page
+         */
+        offset?: number;
+        /**
+         * Sort Type
+         *
+         * 排序方式: _0默认 / _2最新 / _4最热 (Sort: _0 default / _2 newest / _4 hottest)
+         */
+        sort_type?: string;
+    };
+    url: '/video-hub/api/v1/wechat_mp/web/fetch_search_article';
+};
+
+export type FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetError = FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetErrors[keyof FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetErrors];
+
+export type FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetResponse = FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetResponses[keyof FetchSearchArticleApiV1WechatMpWebFetchSearchArticleGetResponses];
+
 export type FetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPostData = {
     body: FetchDefaultSearchRequest;
     path?: never;
@@ -30226,6 +32480,44 @@ export type FetchUserSearchApiV1WechatChannelsFetchUserSearchGetResponses = {
 
 export type FetchUserSearchApiV1WechatChannelsFetchUserSearchGetResponse = FetchUserSearchApiV1WechatChannelsFetchUserSearchGetResponses[keyof FetchUserSearchApiV1WechatChannelsFetchUserSearchGetResponses];
 
+export type FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Keywords
+         *
+         * 搜索关键词/Search keywords
+         */
+        keywords?: string;
+        /**
+         * Page
+         *
+         * 页码/Page number
+         */
+        page?: number;
+    };
+    url: '/video-hub/api/v1/wechat_channels/fetch_user_search_v2';
+};
+
+export type FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetError = FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetErrors[keyof FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetErrors];
+
+export type FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetResponse = FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetResponses[keyof FetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2GetResponses];
+
 export type FetchVideoDetailApiV1WechatChannelsFetchVideoDetailGetData = {
     body?: never;
     path?: never;
@@ -30345,6 +32637,50 @@ export type FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetResponses = {
 };
 
 export type FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetResponse = FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetResponses[keyof FetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGetResponses];
+
+export type FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keyword
+         *
+         * 搜索关键词/Search keyword
+         */
+        keyword: string;
+        /**
+         * Offset
+         *
+         * 偏移量，从0开始，每页+20/Offset, starts with 0, plus 20 every page
+         */
+        offset?: number;
+        /**
+         * Sort Type
+         *
+         * 排序方式: _0默认 / _2最新 / _4最热 (Sort: _0 default / _2 newest / _4 hottest)
+         */
+        sort_type?: string;
+    };
+    url: '/video-hub/api/v1/wechat_channels/fetch_search_channels';
+};
+
+export type FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetError = FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetErrors[keyof FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetErrors];
+
+export type FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetResponse = FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetResponses[keyof FetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGetResponses];
 
 export type FetchHotWordsApiV1WechatChannelsFetchHotWordsGetData = {
     body?: never;
@@ -32442,6 +34778,12 @@ export type SearchUsersApiV1InstagramV3SearchUsersGetData = {
          * 搜索关键词/Search keyword
          */
         query: string;
+        /**
+         * Rank Token
+         *
+         * 上一次搜索返回的rank_token，用于翻页/Rank token from previous search response for pagination
+         */
+        rank_token?: string;
     };
     url: '/video-hub/api/v1/instagram/v3/search_users';
 };
@@ -32474,6 +34816,12 @@ export type SearchHashtagsApiV1InstagramV3SearchHashtagsGetData = {
          * 搜索关键词/Search keyword
          */
         query: string;
+        /**
+         * Rank Token
+         *
+         * 上一次搜索返回的rank_token，用于翻页/Rank token from previous search response for pagination
+         */
+        rank_token?: string;
     };
     url: '/video-hub/api/v1/instagram/v3/search_hashtags';
 };
@@ -32506,6 +34854,12 @@ export type SearchPlacesApiV1InstagramV3SearchPlacesGetData = {
          * 搜索关键词/Search keyword
          */
         query: string;
+        /**
+         * Rank Token
+         *
+         * 上一次搜索返回的rank_token，用于翻页/Rank token from previous search response for pagination
+         */
+        rank_token?: string;
     };
     url: '/video-hub/api/v1/instagram/v3/search_places';
 };
@@ -32578,6 +34932,38 @@ export type GeneralSearchApiV1InstagramV3GeneralSearchGetResponses = {
 
 export type GeneralSearchApiV1InstagramV3GeneralSearchGetResponse = GeneralSearchApiV1InstagramV3GeneralSearchGetResponses[keyof GeneralSearchApiV1InstagramV3GeneralSearchGetResponses];
 
+export type GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * 用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/instagram/v3/get_user_id_by_username';
+};
+
+export type GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetError = GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetErrors[keyof GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetErrors];
+
+export type GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetResponse = GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetResponses[keyof GetUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGetResponses];
+
 export type GetUserProfileApiV1InstagramV3GetUserProfileGetData = {
     body?: never;
     path?: never;
@@ -32591,7 +34977,7 @@ export type GetUserProfileApiV1InstagramV3GetUserProfileGetData = {
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
     };
@@ -32657,31 +35043,43 @@ export type GetUserBriefApiV1InstagramV3GetUserBriefGetResponse = GetUserBriefAp
 export type GetUserPostsApiV1InstagramV3GetUserPostsGetData = {
     body?: never;
     path?: never;
-    query?: {
+    query: {
         /**
          * Username
          *
-         * 用户名/Username
+         * Instagram 用户名（不含 @）/Instagram username (without @)
          */
-        username?: string;
-        /**
-         * User Id
-         *
-         * 用户ID/User ID
-         */
-        user_id?: string;
+        username: string;
         /**
          * First
          *
-         * 获取帖子数量/Number of posts to fetch
+         * 向后翻页时每页数量/Number of posts per page (forward)
          */
         first?: number;
         /**
          * After
          *
-         * 分页游标（从上次响应的page_info.end_cursor获取）/Pagination cursor (from previous response page_info.end_cursor)
+         * 向后翻页游标（end_cursor）/Forward pagination cursor (end_cursor)
          */
         after?: string;
+        /**
+         * Before
+         *
+         * 向前翻页游标（start_cursor）/Backward pagination cursor (start_cursor)
+         */
+        before?: string;
+        /**
+         * Last
+         *
+         * 向前翻页时每页数量/Number of posts per page (backward)
+         */
+        last?: number;
+        /**
+         * Count
+         *
+         * 首次请求数量/Number of posts for first request
+         */
+        count?: number;
     };
     url: '/video-hub/api/v1/instagram/v3/get_user_posts';
 };
@@ -32717,21 +35115,39 @@ export type GetUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGetData = {
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
         /**
          * First
          *
-         * 获取帖子数量/Number of posts to fetch
+         * 向后翻页时每页数量/Number of posts per page (forward)
          */
         first?: number;
         /**
          * After
          *
-         * 分页游标（从上次响应的page_info.end_cursor获取）/Pagination cursor (from previous response page_info.end_cursor)
+         * 向后翻页游标（end_cursor）/Forward pagination cursor (end_cursor)
          */
         after?: string;
+        /**
+         * Before
+         *
+         * 向前翻页游标（start_cursor）/Backward pagination cursor (start_cursor)
+         */
+        before?: string;
+        /**
+         * Last
+         *
+         * 向前翻页时每页数量/Number of posts per page (backward)
+         */
+        last?: number;
+        /**
+         * Count
+         *
+         * 首次请求数量/Number of posts for first request
+         */
+        count?: number;
     };
     url: '/video-hub/api/v1/instagram/v3/get_user_tagged_posts';
 };
@@ -32767,21 +35183,39 @@ export type GetUserReelsApiV1InstagramV3GetUserReelsGetData = {
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
         /**
          * First
          *
-         * 获取数量/Number of reels to fetch
+         * 向后翻页时每页数量/Number of reels per page (forward)
          */
         first?: number;
         /**
          * After
          *
-         * 分页游标（从上次响应的page_info.end_cursor获取）/Pagination cursor (from previous response page_info.end_cursor)
+         * 向后翻页游标（end_cursor）/Forward pagination cursor (end_cursor)
          */
         after?: string;
+        /**
+         * Before
+         *
+         * 向前翻页游标（start_cursor）/Backward pagination cursor (start_cursor)
+         */
+        before?: string;
+        /**
+         * Last
+         *
+         * 向前翻页时每页数量/Number of reels per page (backward)
+         */
+        last?: number;
+        /**
+         * Page Size
+         *
+         * 每页视频数量/Videos per page
+         */
+        page_size?: number;
     };
     url: '/video-hub/api/v1/instagram/v3/get_user_reels';
 };
@@ -32817,21 +35251,33 @@ export type GetUserHighlightsApiV1InstagramV3GetUserHighlightsGetData = {
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
         /**
          * First
          *
-         * 获取数量/Number of highlights to fetch
+         * 每页数量/Number of highlights per page
          */
         first?: number;
         /**
          * After
          *
-         * 分页游标（从上次响应的page_info.end_cursor获取）/Pagination cursor (from previous response page_info.end_cursor)
+         * 向后翻页游标/Forward pagination cursor
          */
         after?: string;
+        /**
+         * Before
+         *
+         * 向前翻页游标/Backward pagination cursor
+         */
+        before?: string;
+        /**
+         * Last
+         *
+         * 向前翻页时每页数量/Number of highlights per page (backward)
+         */
+        last?: number;
     };
     url: '/video-hub/api/v1/instagram/v3/get_user_highlights';
 };
@@ -32870,6 +35316,18 @@ export type GetHighlightStoriesApiV1InstagramV3GetHighlightStoriesGetData = {
          * 精选ID列表，逗号分隔，如不提供则仅查询highlight_id/Highlight ID list, comma separated, if not provided only query highlight_id
          */
         reel_ids?: string;
+        /**
+         * First
+         *
+         * 每页数量/Items per page
+         */
+        first?: number;
+        /**
+         * Last
+         *
+         * 获取最后N条/Get last N items
+         */
+        last?: number;
     };
     url: '/video-hub/api/v1/instagram/v3/get_highlight_stories';
 };
@@ -32905,7 +35363,7 @@ export type GetUserAboutApiV1InstagramV3GetUserAboutGetData = {
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
     };
@@ -32943,7 +35401,7 @@ export type GetUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGetData 
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
     };
@@ -32981,15 +35439,9 @@ export type GetUserStoriesApiV1InstagramV3GetUserStoriesGetData = {
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
-        /**
-         * Reel Ids
-         *
-         * 用户ID列表，逗号分隔，可同时获取多个用户的Stories（如不提供则仅查询user_id）/User ID list, comma separated, fetch multiple users' stories at once (if not provided, only queries user_id)
-         */
-        reel_ids?: string;
     };
     url: '/video-hub/api/v1/instagram/v3/get_user_stories';
 };
@@ -33053,19 +35505,13 @@ export type GetRecommendedReelsApiV1InstagramV3GetRecommendedReelsGetResponse = 
 export type GetPostInfoApiV1InstagramV3GetPostInfoGetData = {
     body?: never;
     path?: never;
-    query?: {
+    query: {
         /**
          * Media Id
          *
          * 帖子媒体ID/Post media ID
          */
-        media_id?: string;
-        /**
-         * Url
-         *
-         * 帖子URL/Post URL
-         */
-        url?: string;
+        media_id: string;
     };
     url: '/video-hub/api/v1/instagram/v3/get_post_info';
 };
@@ -33091,19 +35537,13 @@ export type GetPostInfoApiV1InstagramV3GetPostInfoGetResponse = GetPostInfoApiV1
 export type GetPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGetData = {
     body?: never;
     path?: never;
-    query?: {
+    query: {
         /**
          * Code
          *
          * 帖子短代码/Post shortcode
          */
-        code?: string;
-        /**
-         * Url
-         *
-         * 帖子URL（自动提取短代码）/Post URL (auto extract shortcode)
-         */
-        url?: string;
+        code: string;
     };
     url: '/video-hub/api/v1/instagram/v3/get_post_info_by_code';
 };
@@ -33129,25 +35569,13 @@ export type GetPostInfoByCodeApiV1InstagramV3GetPostInfoByCodeGetResponse = GetP
 export type GetPostCommentsApiV1InstagramV3GetPostCommentsGetData = {
     body?: never;
     path?: never;
-    query?: {
-        /**
-         * Media Id
-         *
-         * 帖子媒体ID/Post media ID
-         */
-        media_id?: string;
+    query: {
         /**
          * Code
          *
          * 帖子短代码/Post shortcode (e.g., DUajw4YkorV)
          */
-        code?: string;
-        /**
-         * Url
-         *
-         * 帖子URL/Post URL
-         */
-        url?: string;
+        code: string;
         /**
          * Min Id
          *
@@ -33157,9 +35585,9 @@ export type GetPostCommentsApiV1InstagramV3GetPostCommentsGetData = {
         /**
          * Sort Order
          *
-         * 排序方式: popular(热门), newest(最新)/Sort order: popular, newest
+         * 排序方式/Sort order. 可选值/Options: popular(热门), newest(最新). Example: popular
          */
-        sort_order?: string;
+        sort_order?: 'popular' | 'newest';
     };
     url: '/video-hub/api/v1/instagram/v3/get_post_comments';
 };
@@ -33191,19 +35619,7 @@ export type GetCommentRepliesApiV1InstagramV3GetCommentRepliesGetData = {
          *
          * 帖子媒体ID/Post media ID
          */
-        media_id?: string;
-        /**
-         * Code
-         *
-         * 帖子短代码/Post shortcode
-         */
-        code?: string;
-        /**
-         * Url
-         *
-         * 帖子URL/Post URL
-         */
-        url?: string;
+        media_id: string;
         /**
          * Comment Id
          *
@@ -33289,7 +35705,7 @@ export type TranslateCommentApiV1InstagramV3TranslateCommentGetData = {
         /**
          * Comment Id
          *
-         * 帖子媒体ID/Post media ID
+         * 评论ID或帖子caption的media_id/Comment ID or caption media ID
          */
         comment_id: string;
     };
@@ -33391,7 +35807,7 @@ export type GetUserFollowingApiV1InstagramV3GetUserFollowingGetData = {
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
         /**
@@ -33441,7 +35857,7 @@ export type GetUserFollowersApiV1InstagramV3GetUserFollowersGetData = {
         /**
          * Username
          *
-         * 用户名/Username
+         * 用户名（与user_id二选一）/Username (alternative to user_id)
          */
         username?: string;
         /**
@@ -33529,9 +35945,21 @@ export type GetLocationPostsApiV1InstagramV3GetLocationPostsGetData = {
         /**
          * Tab
          *
-         * 帖子类型: ranked(热门), recent(最新)/Post type: ranked(top), recent(latest)
+         * 帖子类型/Post type. 可选值/Options: ranked(热门/top), recent(最新/latest). Example: ranked
          */
-        tab?: string;
+        tab?: 'ranked' | 'recent';
+        /**
+         * First
+         *
+         * 翻页时每页数量/Posts per page
+         */
+        first?: number;
+        /**
+         * After
+         *
+         * 翻页游标，从上一次响应的end_cursor获取/Pagination cursor from previous response end_cursor
+         */
+        after?: string;
         /**
          * Page Size Override
          *
@@ -33559,6 +35987,134 @@ export type GetLocationPostsApiV1InstagramV3GetLocationPostsGetResponses = {
 };
 
 export type GetLocationPostsApiV1InstagramV3GetLocationPostsGetResponse = GetLocationPostsApiV1InstagramV3GetLocationPostsGetResponses[keyof GetLocationPostsApiV1InstagramV3GetLocationPostsGetResponses];
+
+export type GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Location Id
+         *
+         * 地点ID（数字）/Location ID (numeric)
+         */
+        location_id: string;
+    };
+    url: '/video-hub/api/v1/instagram/v3/get_location_nearby';
+};
+
+export type GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetError = GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetErrors[keyof GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetErrors];
+
+export type GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetResponse = GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetResponses[keyof GetLocationNearbyApiV1InstagramV3GetLocationNearbyGetResponses];
+
+export type ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Shortcode
+         *
+         * 帖子短码/Post shortcode
+         */
+        shortcode: string;
+    };
+    url: '/video-hub/api/v1/instagram/v3/shortcode_to_media_id';
+};
+
+export type ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetError = ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetErrors[keyof ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetErrors];
+
+export type ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetResponse = ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetResponses[keyof ShortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGetResponses];
+
+export type MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Media Id
+         *
+         * 帖子媒体ID/Post media ID
+         */
+        media_id: string;
+    };
+    url: '/video-hub/api/v1/instagram/v3/media_id_to_shortcode';
+};
+
+export type MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetError = MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetErrors[keyof MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetErrors];
+
+export type MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetResponse = MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetResponses[keyof MediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGetResponses];
+
+export type ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Url
+         *
+         * Instagram帖子完整URL/Full Instagram post URL
+         */
+        url: string;
+    };
+    url: '/video-hub/api/v1/instagram/v3/extract_shortcode';
+};
+
+export type ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetError = ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetErrors[keyof ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetErrors];
+
+export type ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetResponse = ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetResponses[keyof ExtractShortcodeApiV1InstagramV3ExtractShortcodeGetResponses];
 
 export type GetVideoInfoApiV1YoutubeWebGetVideoInfoGetData = {
     body?: never;
@@ -34872,6 +37428,74 @@ export type GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetResponses = {
 
 export type GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetResponse = GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetResponses[keyof GetGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGetResponses];
 
+export type GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Keyword
+         *
+         * 搜索关键词（首次请求必填）/Search keyword (required for first request)
+         */
+        keyword?: string | null;
+        /**
+         * Continuation Token
+         *
+         * 分页token，用于获取下一页/Continuation token for next page
+         */
+        continuation_token?: string | null;
+        /**
+         * Upload Date
+         *
+         * 上传时间过滤/Upload date filter
+         */
+        upload_date?: 'last_hour' | 'today' | 'this_week' | 'this_month' | 'this_year' | null;
+        /**
+         * Type
+         *
+         * 类型过滤/Type filter
+         */
+        type?: 'video' | 'channel' | 'playlist' | 'movie' | null;
+        /**
+         * Duration
+         *
+         * 时长过滤/Duration filter: short (<4min), medium (4-20min), long (>20min)
+         */
+        duration?: 'short' | 'medium' | 'long' | null;
+        /**
+         * Features
+         *
+         * 特性过滤（逗号分隔）/Feature filter (comma separated): live, 4k, hd, subtitles, creative_commons, 360, vr180, 3d, hdr
+         */
+        features?: string | null;
+        /**
+         * Sort By
+         *
+         * 排序方式/Sort by
+         */
+        sort_by?: 'relevance' | 'upload_date' | 'view_count' | 'rating' | null;
+    };
+    url: '/video-hub/api/v1/youtube/web_v2/get_general_search_v2';
+};
+
+export type GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetError = GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetErrors[keyof GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetErrors];
+
+export type GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetResponse = GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetResponses[keyof GetGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2GetResponses];
+
 export type GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetData = {
     body?: never;
     path?: never;
@@ -34945,6 +37569,56 @@ export type GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetResponses = {
 };
 
 export type GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetResponse = GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetResponses[keyof GetShortsSearchApiV1YoutubeWebV2GetShortsSearchGetResponses];
+
+export type GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Keyword
+         *
+         * 搜索关键词（首次请求必填）/Search keyword (required for first request)
+         */
+        keyword?: string | null;
+        /**
+         * Continuation Token
+         *
+         * 分页token，用于获取下一页/Continuation token for next page
+         */
+        continuation_token?: string | null;
+        /**
+         * Upload Date
+         *
+         * 上传时间过滤/Upload date filter
+         */
+        upload_date?: 'last_hour' | 'today' | 'this_week' | 'this_month' | 'this_year' | null;
+        /**
+         * Sort By
+         *
+         * 排序方式/Sort by
+         */
+        sort_by?: 'relevance' | 'upload_date' | 'view_count' | 'rating' | null;
+    };
+    url: '/video-hub/api/v1/youtube/web_v2/get_shorts_search_v2';
+};
+
+export type GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetError = GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetErrors[keyof GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetErrors];
+
+export type GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetResponse = GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetResponses[keyof GetShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2GetResponses];
 
 export type GetChannelIdApiV1YoutubeWebV2GetChannelIdGetData = {
     body?: never;
@@ -35186,6 +37860,56 @@ export type GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetResponses = 
 
 export type GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetResponse = GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetResponses[keyof GetSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGetResponses];
 
+export type GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Video Id
+         *
+         * 视频ID/Video ID
+         */
+        video_id?: string;
+        /**
+         * Video Url
+         *
+         * 视频URL/Video URL
+         */
+        video_url?: string;
+        /**
+         * Language Code
+         *
+         * 语言代码，为空时返回可用字幕列表/Language code, returns available caption list if empty
+         */
+        language_code?: string;
+        /**
+         * Format
+         *
+         * 字幕格式/Caption format
+         */
+        format?: 'srt' | 'xml' | 'json3' | 'txt';
+    };
+    url: '/video-hub/api/v1/youtube/web_v2/get_video_captions';
+};
+
+export type GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetError = GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetErrors[keyof GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetErrors];
+
+export type GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetResponse = GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetResponses[keyof GetVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGetResponses];
+
 export type GetRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGetData = {
     body?: never;
     path?: never;
@@ -35333,7 +38057,7 @@ export type SearchChannelsApiV1YoutubeWebV2SearchChannelsGetData = {
          *
          * 搜索关键词/Search keyword
          */
-        keyword?: string;
+        keyword?: string | null;
         /**
          * Continuation Token
          *
@@ -35367,6 +38091,218 @@ export type SearchChannelsApiV1YoutubeWebV2SearchChannelsGetResponses = {
 };
 
 export type SearchChannelsApiV1YoutubeWebV2SearchChannelsGetResponse = SearchChannelsApiV1YoutubeWebV2SearchChannelsGetResponses[keyof SearchChannelsApiV1YoutubeWebV2SearchChannelsGetResponses];
+
+export type GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Channel Id
+         *
+         * 频道ID/Channel ID
+         */
+        channel_id: string;
+        /**
+         * Language Code
+         *
+         * 语言代码（如zh-CN, en-US等）/Language code
+         */
+        language_code?: string;
+        /**
+         * Country Code
+         *
+         * 国家代码（如US, JP等）/Country code
+         */
+        country_code?: string;
+        /**
+         * Continuation Token
+         *
+         * 分页token，用于获取下一页/Pagination token for next page
+         */
+        continuation_token?: string;
+        /**
+         * Need Format
+         *
+         * 是否需要清洗数据，提取关键内容，移除冗余数据/Whether to clean and format the data
+         */
+        need_format?: boolean;
+    };
+    url: '/video-hub/api/v1/youtube/web_v2/get_channel_community_posts';
+};
+
+export type GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetError = GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetErrors[keyof GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetErrors];
+
+export type GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetResponse = GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetResponses[keyof GetChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGetResponses];
+
+export type GetPostDetailApiV1YoutubeWebV2GetPostDetailGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Post Id
+         *
+         * 帖子ID/Post ID
+         */
+        post_id: string;
+        /**
+         * Language Code
+         *
+         * 语言代码（如zh-CN, en-US等）/Language code
+         */
+        language_code?: string;
+        /**
+         * Country Code
+         *
+         * 国家代码（如US, JP等）/Country code
+         */
+        country_code?: string;
+        /**
+         * Need Format
+         *
+         * 是否需要清洗数据，提取关键内容，移除冗余数据/Whether to clean and format the data
+         */
+        need_format?: boolean;
+    };
+    url: '/video-hub/api/v1/youtube/web_v2/get_post_detail';
+};
+
+export type GetPostDetailApiV1YoutubeWebV2GetPostDetailGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetPostDetailApiV1YoutubeWebV2GetPostDetailGetError = GetPostDetailApiV1YoutubeWebV2GetPostDetailGetErrors[keyof GetPostDetailApiV1YoutubeWebV2GetPostDetailGetErrors];
+
+export type GetPostDetailApiV1YoutubeWebV2GetPostDetailGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetPostDetailApiV1YoutubeWebV2GetPostDetailGetResponse = GetPostDetailApiV1YoutubeWebV2GetPostDetailGetResponses[keyof GetPostDetailApiV1YoutubeWebV2GetPostDetailGetResponses];
+
+export type GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Post Id
+         *
+         * 帖子ID（首次请求时必填）/Post ID (required for first request)
+         */
+        post_id?: string;
+        /**
+         * Continuation Token
+         *
+         * 分页token（分页时必填，也可用 get_post_detail 返回的 comments_continuation_token）/Pagination token
+         */
+        continuation_token?: string;
+        /**
+         * Language Code
+         *
+         * 语言代码（如zh-CN, en-US等）/Language code
+         */
+        language_code?: string;
+        /**
+         * Country Code
+         *
+         * 国家代码（如US, JP等）/Country code
+         */
+        country_code?: string;
+        /**
+         * Need Format
+         *
+         * 是否需要清洗数据，提取关键内容，移除冗余数据/Whether to clean and format the data
+         */
+        need_format?: boolean;
+    };
+    url: '/video-hub/api/v1/youtube/web_v2/get_post_comments';
+};
+
+export type GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetError = GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetErrors[keyof GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetErrors];
+
+export type GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetResponse = GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetResponses[keyof GetPostCommentsApiV1YoutubeWebV2GetPostCommentsGetResponses];
+
+export type GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Continuation Token
+         *
+         * 回复的continuation token（从帖子评论的 reply_continuation_token 字段获取）/Reply continuation token from post comment
+         */
+        continuation_token: string;
+        /**
+         * Language Code
+         *
+         * 语言代码（如zh-CN, en-US等）/Language code
+         */
+        language_code?: string;
+        /**
+         * Country Code
+         *
+         * 国家代码（如US, JP等）/Country code
+         */
+        country_code?: string;
+        /**
+         * Need Format
+         *
+         * 是否需要清洗数据，提取关键内容，移除冗余数据/Whether to clean and format the data
+         */
+        need_format?: boolean;
+    };
+    url: '/video-hub/api/v1/youtube/web_v2/get_post_comment_replies';
+};
+
+export type GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetError = GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetErrors[keyof GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetErrors];
+
+export type GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetResponse = GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetResponses[keyof GetPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGetResponses];
 
 export type GetUserProfileApiV1LinkedinWebGetUserProfileGetData = {
     body?: never;
@@ -36563,6 +39499,1644 @@ export type SearchPeopleApiV1LinkedinWebSearchPeopleGetResponses = {
 };
 
 export type SearchPeopleApiV1LinkedinWebSearchPeopleGetResponse = SearchPeopleApiV1LinkedinWebSearchPeopleGetResponses[keyof SearchPeopleApiV1LinkedinWebSearchPeopleGetResponses];
+
+export type GetUserProfileApiV1LinkedinWebV2GetUserProfileGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/LinkedIn username
+         */
+        username: string;
+        /**
+         * Include Follower And Connection
+         *
+         * 附带粉丝/连接数 (+1 request)/Include follower & connection count
+         */
+        include_follower_and_connection?: boolean | null;
+        /**
+         * Include Experiences
+         *
+         * 附带工作经历/Include work experiences
+         */
+        include_experiences?: boolean | null;
+        /**
+         * Include Skills
+         *
+         * 附带技能/Include skills
+         */
+        include_skills?: boolean | null;
+        /**
+         * Include Certifications
+         *
+         * 附带认证/Include certifications
+         */
+        include_certifications?: boolean | null;
+        /**
+         * Include Publications
+         *
+         * 附带出版物/Include publications
+         */
+        include_publications?: boolean | null;
+        /**
+         * Include Educations
+         *
+         * 附带教育背景/Include educations
+         */
+        include_educations?: boolean | null;
+        /**
+         * Include Volunteers
+         *
+         * 附带志愿者经历/Include volunteer exp
+         */
+        include_volunteers?: boolean | null;
+        /**
+         * Include Honors
+         *
+         * 附带荣誉奖项/Include honors
+         */
+        include_honors?: boolean | null;
+        /**
+         * Include Interests
+         *
+         * 附带感兴趣的公司+群组/Include interests
+         */
+        include_interests?: boolean | null;
+        /**
+         * Include Bio
+         *
+         * 附带简介/Include bio
+         */
+        include_bio?: boolean | null;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_profile';
+};
+
+export type GetUserProfileApiV1LinkedinWebV2GetUserProfileGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserProfileApiV1LinkedinWebV2GetUserProfileGetError = GetUserProfileApiV1LinkedinWebV2GetUserProfileGetErrors[keyof GetUserProfileApiV1LinkedinWebV2GetUserProfileGetErrors];
+
+export type GetUserProfileApiV1LinkedinWebV2GetUserProfileGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserProfileApiV1LinkedinWebV2GetUserProfileGetResponse = GetUserProfileApiV1LinkedinWebV2GetUserProfileGetResponses[keyof GetUserProfileApiV1LinkedinWebV2GetUserProfileGetResponses];
+
+export type GetUserPostsApiV1LinkedinWebV2GetUserPostsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+        /**
+         * Start
+         *
+         * 分页起始偏移/Start offset
+         */
+        start?: number;
+        /**
+         * Count
+         *
+         * 每页数量（最大50）/Page size (max 50)
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_posts';
+};
+
+export type GetUserPostsApiV1LinkedinWebV2GetUserPostsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserPostsApiV1LinkedinWebV2GetUserPostsGetError = GetUserPostsApiV1LinkedinWebV2GetUserPostsGetErrors[keyof GetUserPostsApiV1LinkedinWebV2GetUserPostsGetErrors];
+
+export type GetUserPostsApiV1LinkedinWebV2GetUserPostsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserPostsApiV1LinkedinWebV2GetUserPostsGetResponse = GetUserPostsApiV1LinkedinWebV2GetUserPostsGetResponses[keyof GetUserPostsApiV1LinkedinWebV2GetUserPostsGetResponses];
+
+export type GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_comments';
+};
+
+export type GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetError = GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetErrors[keyof GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetErrors];
+
+export type GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetResponse = GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetResponses[keyof GetUserCommentsApiV1LinkedinWebV2GetUserCommentsGetResponses];
+
+export type GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_contact_info';
+};
+
+export type GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetError = GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetErrors[keyof GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetErrors];
+
+export type GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetResponse = GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetResponses[keyof GetUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGetResponses];
+
+export type GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+        /**
+         * Direction
+         *
+         * received(收到的) / given(写出的)
+         */
+        direction?: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_recommendations';
+};
+
+export type GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetError = GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetErrors[keyof GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetErrors];
+
+export type GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetResponse = GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetResponses[keyof GetUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGetResponses];
+
+export type GetUserVideosApiV1LinkedinWebV2GetUserVideosGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_videos';
+};
+
+export type GetUserVideosApiV1LinkedinWebV2GetUserVideosGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserVideosApiV1LinkedinWebV2GetUserVideosGetError = GetUserVideosApiV1LinkedinWebV2GetUserVideosGetErrors[keyof GetUserVideosApiV1LinkedinWebV2GetUserVideosGetErrors];
+
+export type GetUserVideosApiV1LinkedinWebV2GetUserVideosGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserVideosApiV1LinkedinWebV2GetUserVideosGetResponse = GetUserVideosApiV1LinkedinWebV2GetUserVideosGetResponses[keyof GetUserVideosApiV1LinkedinWebV2GetUserVideosGetResponses];
+
+export type GetUserImagesApiV1LinkedinWebV2GetUserImagesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_images';
+};
+
+export type GetUserImagesApiV1LinkedinWebV2GetUserImagesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserImagesApiV1LinkedinWebV2GetUserImagesGetError = GetUserImagesApiV1LinkedinWebV2GetUserImagesGetErrors[keyof GetUserImagesApiV1LinkedinWebV2GetUserImagesGetErrors];
+
+export type GetUserImagesApiV1LinkedinWebV2GetUserImagesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserImagesApiV1LinkedinWebV2GetUserImagesGetResponse = GetUserImagesApiV1LinkedinWebV2GetUserImagesGetResponses[keyof GetUserImagesApiV1LinkedinWebV2GetUserImagesGetResponses];
+
+export type GetUserBioApiV1LinkedinWebV2GetUserBioGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_bio';
+};
+
+export type GetUserBioApiV1LinkedinWebV2GetUserBioGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserBioApiV1LinkedinWebV2GetUserBioGetError = GetUserBioApiV1LinkedinWebV2GetUserBioGetErrors[keyof GetUserBioApiV1LinkedinWebV2GetUserBioGetErrors];
+
+export type GetUserBioApiV1LinkedinWebV2GetUserBioGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserBioApiV1LinkedinWebV2GetUserBioGetResponse = GetUserBioApiV1LinkedinWebV2GetUserBioGetResponses[keyof GetUserBioApiV1LinkedinWebV2GetUserBioGetResponses];
+
+export type GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_follower_and_connection_count';
+};
+
+export type GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetError = GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetErrors[keyof GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetErrors];
+
+export type GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetResponse = GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetResponses[keyof GetUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGetResponses];
+
+export type GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_profile_cards';
+};
+
+export type GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetError = GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetErrors[keyof GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetErrors];
+
+export type GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetResponse = GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetResponses[keyof GetUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGetResponses];
+
+export type GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_experiences';
+};
+
+export type GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetError = GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetErrors[keyof GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetErrors];
+
+export type GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetResponse = GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetResponses[keyof GetUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGetResponses];
+
+export type GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_skills';
+};
+
+export type GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetError = GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetErrors[keyof GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetErrors];
+
+export type GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetResponse = GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetResponses[keyof GetUserSkillsApiV1LinkedinWebV2GetUserSkillsGetResponses];
+
+export type GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_educations';
+};
+
+export type GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetError = GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetErrors[keyof GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetErrors];
+
+export type GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetResponse = GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetResponses[keyof GetUserEducationsApiV1LinkedinWebV2GetUserEducationsGetResponses];
+
+export type GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_publications';
+};
+
+export type GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetError = GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetErrors[keyof GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetErrors];
+
+export type GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetResponse = GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetResponses[keyof GetUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGetResponses];
+
+export type GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_certifications';
+};
+
+export type GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetError = GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetErrors[keyof GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetErrors];
+
+export type GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetResponse = GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetResponses[keyof GetUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGetResponses];
+
+export type GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_honors';
+};
+
+export type GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetError = GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetErrors[keyof GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetErrors];
+
+export type GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetResponse = GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetResponses[keyof GetUserHonorsApiV1LinkedinWebV2GetUserHonorsGetResponses];
+
+export type GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_interested_groups';
+};
+
+export type GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetError = GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetErrors[keyof GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetErrors];
+
+export type GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetResponse = GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetResponses[keyof GetUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGetResponses];
+
+export type GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_interested_companies';
+};
+
+export type GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetError = GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetErrors[keyof GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetErrors];
+
+export type GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetResponse = GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetResponses[keyof GetUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGetResponses];
+
+export type GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_top_card';
+};
+
+export type GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetError = GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetErrors[keyof GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetErrors];
+
+export type GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetResponse = GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetResponses[keyof GetUserTopCardApiV1LinkedinWebV2GetUserTopCardGetResponses];
+
+export type GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_top_card_supplementary';
+};
+
+export type GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetError = GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetErrors[keyof GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetErrors];
+
+export type GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetResponse = GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetResponses[keyof GetUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGetResponses];
+
+export type GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_user_recent_activity';
+};
+
+export type GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetError = GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetErrors[keyof GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetErrors];
+
+export type GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetResponse = GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetResponses[keyof GetUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGetResponses];
+
+export type GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company URL slug
+         */
+        universal_name: string;
+        /**
+         * Count
+         */
+        count?: number;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Pagination Token
+         *
+         * 保留兼容字段（当前不分页）/Reserved for future use
+         */
+        pagination_token?: string | null;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_discovery_relevant_to_company';
+};
+
+export type GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetError = GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetErrors[keyof GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetErrors];
+
+export type GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetResponse = GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetResponses[keyof GetDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGetResponses];
+
+export type GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Username
+         *
+         * LinkedIn用户名/Username
+         */
+        username: string;
+        /**
+         * Count
+         */
+        count?: number;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Pagination Token
+         *
+         * 保留兼容字段（当前不分页）/Reserved for future use
+         */
+        pagination_token?: string | null;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_discovery_relevant_to_user';
+};
+
+export type GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetError = GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetErrors[keyof GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetErrors];
+
+export type GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetResponse = GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetResponses[keyof GetDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGetResponses];
+
+export type GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_profile';
+};
+
+export type GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetError = GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetErrors[keyof GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetErrors];
+
+export type GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetResponse = GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetResponses[keyof GetCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGetResponses];
+
+export type GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_employees';
+};
+
+export type GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetError = GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetErrors[keyof GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetErrors];
+
+export type GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetResponse = GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetResponses[keyof GetCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGetResponses];
+
+export type GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_posts';
+};
+
+export type GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetError = GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetErrors[keyof GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetErrors];
+
+export type GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetResponse = GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetResponses[keyof GetCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGetResponses];
+
+export type GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_jobs';
+};
+
+export type GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetError = GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetErrors[keyof GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetErrors];
+
+export type GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetResponse = GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetResponses[keyof GetCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGetResponses];
+
+export type GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_job_count';
+};
+
+export type GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetError = GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetErrors[keyof GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetErrors];
+
+export type GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetResponse = GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetResponses[keyof GetCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGetResponses];
+
+export type GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_similar_companies';
+};
+
+export type GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetError = GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetErrors[keyof GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetErrors];
+
+export type GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetResponse = GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetResponses[keyof GetCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGetResponses];
+
+export type GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_competitors';
+};
+
+export type GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetError = GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetErrors[keyof GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetErrors];
+
+export type GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetResponse = GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetResponses[keyof GetCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGetResponses];
+
+export type GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug（必须上市）/Public company slug
+         */
+        universal_name: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_stock_quote';
+};
+
+export type GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetError = GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetErrors[keyof GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetErrors];
+
+export type GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetResponse = GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetResponses[keyof GetCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGetResponses];
+
+export type GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_call_to_actions';
+};
+
+export type GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetError = GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetErrors[keyof GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetErrors];
+
+export type GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetResponse = GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetResponses[keyof GetCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGetResponses];
+
+export type GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_employee_count_ranges';
+};
+
+export type GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetError = GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetErrors[keyof GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetErrors];
+
+export type GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetResponse = GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetResponses[keyof GetCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGetResponses];
+
+export type GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Universal Name
+         *
+         * 公司URL slug/Company slug
+         */
+        universal_name: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_company_grouped_locations';
+};
+
+export type GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetError = GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetErrors[keyof GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetErrors];
+
+export type GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetResponse = GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetResponses[keyof GetCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGetResponses];
+
+export type GetPostDetailApiV1LinkedinWebV2GetPostDetailGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Post Urn
+         *
+         * 帖子URN或数字ID/Post URN or numeric ID
+         */
+        post_urn: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_post_detail';
+};
+
+export type GetPostDetailApiV1LinkedinWebV2GetPostDetailGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetPostDetailApiV1LinkedinWebV2GetPostDetailGetError = GetPostDetailApiV1LinkedinWebV2GetPostDetailGetErrors[keyof GetPostDetailApiV1LinkedinWebV2GetPostDetailGetErrors];
+
+export type GetPostDetailApiV1LinkedinWebV2GetPostDetailGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetPostDetailApiV1LinkedinWebV2GetPostDetailGetResponse = GetPostDetailApiV1LinkedinWebV2GetPostDetailGetResponses[keyof GetPostDetailApiV1LinkedinWebV2GetPostDetailGetResponses];
+
+export type GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Slug
+         *
+         * 帖子URL slug尾段/Post URL slug suffix
+         */
+        slug: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_post_detail_by_slug';
+};
+
+export type GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetError = GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetErrors[keyof GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetErrors];
+
+export type GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetResponse = GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetResponses[keyof GetPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGetResponses];
+
+export type GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Post Urn
+         *
+         * 帖子URN/Post URN
+         */
+        post_urn: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+        /**
+         * Sort Order
+         *
+         * 评论排序：RELEVANCE / CHRON / REVERSE_CHRON / MEMBER_SETTING
+         */
+        sort_order?: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_post_comments';
+};
+
+export type GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetError = GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetErrors[keyof GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetErrors];
+
+export type GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetResponse = GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetResponses[keyof GetPostCommentsApiV1LinkedinWebV2GetPostCommentsGetResponses];
+
+export type GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Comment Urn
+         *
+         * 父评论URN/Parent comment URN
+         */
+        comment_urn: string;
+        /**
+         * Post Urn
+         *
+         * 帖子URN（仅当 comment_urn 不完整时必填）/Post URN (required if comment_urn lacks activity)
+         */
+        post_urn?: string | null;
+        /**
+         * Count
+         */
+        count?: number;
+        /**
+         * Pagination Token
+         *
+         * 上一页响应里的 paginationToken
+         */
+        pagination_token?: string | null;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_comment_replies';
+};
+
+export type GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetError = GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetErrors[keyof GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetErrors];
+
+export type GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetResponse = GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetResponses[keyof GetCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGetResponses];
+
+export type GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Post Urn
+         *
+         * 帖子URN/Post URN
+         */
+        post_urn: string;
+        /**
+         * Reaction Type
+         *
+         * 反应类型：LIKE / PRAISE / EMPATHY / INTEREST / APPRECIATION / MAYBE / ENTERTAINMENT，留空默认 LIKE
+         */
+        reaction_type?: string | null;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_post_reactions';
+};
+
+export type GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetError = GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetErrors[keyof GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetErrors];
+
+export type GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetResponse = GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetResponses[keyof GetPostReactionsApiV1LinkedinWebV2GetPostReactionsGetResponses];
+
+export type GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Hashtag
+         *
+         * 话题文本，不带#/Hashtag text without #
+         */
+        hashtag: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_hashtag_feed';
+};
+
+export type GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetError = GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetErrors[keyof GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetErrors];
+
+export type GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetResponse = GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetResponses[keyof GetHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGetResponses];
+
+export type GetJobDetailApiV1LinkedinWebV2GetJobDetailGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Job Id
+         *
+         * LinkedIn职位数字ID/LinkedIn job numeric ID
+         */
+        job_id: string;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/get_job_detail';
+};
+
+export type GetJobDetailApiV1LinkedinWebV2GetJobDetailGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type GetJobDetailApiV1LinkedinWebV2GetJobDetailGetError = GetJobDetailApiV1LinkedinWebV2GetJobDetailGetErrors[keyof GetJobDetailApiV1LinkedinWebV2GetJobDetailGetErrors];
+
+export type GetJobDetailApiV1LinkedinWebV2GetJobDetailGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type GetJobDetailApiV1LinkedinWebV2GetJobDetailGetResponse = GetJobDetailApiV1LinkedinWebV2GetJobDetailGetResponses[keyof GetJobDetailApiV1LinkedinWebV2GetJobDetailGetResponses];
+
+export type SearchUsersApiV1LinkedinWebV2SearchUsersGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keywords
+         *
+         * 搜索关键词/Search keyword
+         */
+        keywords: string;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+        /**
+         * Geo Urn
+         *
+         * 地理位置URN/Geo URN
+         */
+        geo_urn?: string | null;
+        /**
+         * Industry Urn
+         *
+         * 行业URN/Industry URN
+         */
+        industry_urn?: string | null;
+        /**
+         * Current Company Urn
+         *
+         * 当前公司URN/Current company URN
+         */
+        current_company_urn?: string | null;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/search_users';
+};
+
+export type SearchUsersApiV1LinkedinWebV2SearchUsersGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type SearchUsersApiV1LinkedinWebV2SearchUsersGetError = SearchUsersApiV1LinkedinWebV2SearchUsersGetErrors[keyof SearchUsersApiV1LinkedinWebV2SearchUsersGetErrors];
+
+export type SearchUsersApiV1LinkedinWebV2SearchUsersGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type SearchUsersApiV1LinkedinWebV2SearchUsersGetResponse = SearchUsersApiV1LinkedinWebV2SearchUsersGetResponses[keyof SearchUsersApiV1LinkedinWebV2SearchUsersGetResponses];
+
+export type SearchJobsApiV1LinkedinWebV2SearchJobsGetData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Keywords
+         *
+         * 搜索关键词/Search keyword
+         */
+        keywords: string;
+        /**
+         * Location
+         *
+         * 地点（自由文本）/Location (free text)
+         */
+        location?: string | null;
+        /**
+         * Start
+         */
+        start?: number;
+        /**
+         * Count
+         */
+        count?: number;
+    };
+    url: '/video-hub/api/v1/linkedin/web_v2/search_jobs';
+};
+
+export type SearchJobsApiV1LinkedinWebV2SearchJobsGetErrors = {
+    /**
+     * Validation Error
+     */
+    422: HttpValidationError;
+};
+
+export type SearchJobsApiV1LinkedinWebV2SearchJobsGetError = SearchJobsApiV1LinkedinWebV2SearchJobsGetErrors[keyof SearchJobsApiV1LinkedinWebV2SearchJobsGetErrors];
+
+export type SearchJobsApiV1LinkedinWebV2SearchJobsGetResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResponseModel;
+};
+
+export type SearchJobsApiV1LinkedinWebV2SearchJobsGetResponse = SearchJobsApiV1LinkedinWebV2SearchJobsGetResponses[keyof SearchJobsApiV1LinkedinWebV2SearchJobsGetResponses];
 
 export type FetchOneVideoApiV1BilibiliWebFetchOneVideoGetData = {
     body?: never;

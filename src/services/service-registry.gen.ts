@@ -50,16 +50,35 @@ export interface DomainServiceMap {
     readonly authorHotCommentTokensV1: typeof sdk.authorHotCommentTokensV1ApiV1DouyinXingtuAuthorHotCommentTokensV1Get
     readonly douyinLiveRoom: typeof sdk.douyinLiveRoomApiV1DouyinWebDouyinLiveRoomGet
     readonly encryptUidToSecUserId: typeof sdk.encryptUidToSecUserIdApiV1DouyinWebEncryptUidToSecUserIdGet
+    readonly fetchAllArea: typeof sdk.fetchAllAreaApiV1DouyinIndexFetchAllAreaGet
+    readonly fetchAllValidDate: typeof sdk.fetchAllValidDateApiV1DouyinIndexFetchAllValidDateGet
     readonly fetchAuthorDiagnosis: typeof sdk.fetchAuthorDiagnosisApiV1DouyinCreatorV2FetchAuthorDiagnosisPost
     readonly fetchBatchUserProfileV1: typeof sdk.fetchBatchUserProfileV1ApiV1DouyinWebFetchBatchUserProfileV1Get
     readonly fetchBatchUserProfileV2: typeof sdk.fetchBatchUserProfileV2ApiV1DouyinWebFetchBatchUserProfileV2Get
+    readonly fetchBrandCycles: typeof sdk.fetchBrandCyclesApiV1DouyinIndexFetchBrandCyclesPost
+    readonly fetchBrandHotVideosTimeScope: typeof sdk.fetchBrandHotVideosTimeScopeApiV1DouyinIndexFetchBrandHotVideosTimeScopePost
+    readonly fetchBrandInitiativeRankWeekly: typeof sdk.fetchBrandInitiativeRankWeeklyApiV1DouyinIndexFetchBrandInitiativeRankWeeklyPost
+    readonly fetchBrandLines: typeof sdk.fetchBrandLinesApiV1DouyinIndexFetchBrandLinesPost
+    readonly fetchBrandRadarChart: typeof sdk.fetchBrandRadarChartApiV1DouyinIndexFetchBrandRadarChartPost
+    readonly fetchBrandSuggest: typeof sdk.fetchBrandSuggestApiV1DouyinIndexFetchBrandSuggestPost
+    readonly fetchBrandValidInfo: typeof sdk.fetchBrandValidInfoApiV1DouyinIndexFetchBrandValidInfoPost
     readonly fetchCartoonAweme: typeof sdk.fetchCartoonAwemeApiV1DouyinWebFetchFoodAwemeGet
     readonly fetchChallengePosts: typeof sdk.fetchChallengePostsApiV1DouyinWebFetchChallengePostsPost
     readonly fetchChallengeSearchV1: typeof sdk.fetchChallengeSearchV1ApiV1DouyinSearchFetchChallengeSearchV1Post
     readonly fetchChallengeSearchV2: typeof sdk.fetchChallengeSearchV2ApiV1DouyinSearchFetchChallengeSearchV2Post
     readonly fetchChallengeSuggest: typeof sdk.fetchChallengeSuggestApiV1DouyinSearchFetchChallengeSuggestPost
     readonly fetchCityList: typeof sdk.fetchCityListApiV1DouyinBillboardFetchCityListGet
+    readonly fetchContentAuthorPortrait: typeof sdk.fetchContentAuthorPortraitApiV1DouyinIndexFetchContentAuthorPortraitPost
+    readonly fetchContentConsumerPortrait: typeof sdk.fetchContentConsumerPortraitApiV1DouyinIndexFetchContentConsumerPortraitPost
+    readonly fetchContentConsumeTrend: typeof sdk.fetchContentConsumeTrendApiV1DouyinIndexFetchContentConsumeTrendPost
+    readonly fetchContentCreativeDuration: typeof sdk.fetchContentCreativeDurationApiV1DouyinIndexFetchContentCreativeDurationPost
+    readonly fetchContentCreativeKeywordItems: typeof sdk.fetchContentCreativeKeywordItemsApiV1DouyinIndexFetchContentCreativeKeywordItemsPost
+    readonly fetchContentCreativeKeywords: typeof sdk.fetchContentCreativeKeywordsApiV1DouyinIndexFetchContentCreativeKeywordsPost
+    readonly fetchContentCreativeTopic: typeof sdk.fetchContentCreativeTopicApiV1DouyinIndexFetchContentCreativeTopicPost
+    readonly fetchContentInteractTrend: typeof sdk.fetchContentInteractTrendApiV1DouyinIndexFetchContentInteractTrendPost
+    readonly fetchContentPublishTrend: typeof sdk.fetchContentPublishTrendApiV1DouyinIndexFetchContentPublishTrendGet
     readonly fetchContentTag: typeof sdk.fetchContentTagApiV1DouyinBillboardFetchContentTagGet
+    readonly fetchContentValidDate: typeof sdk.fetchContentValidDateApiV1DouyinIndexFetchContentValidDateGet
     readonly fetchCreatorActivityDetail: typeof sdk.fetchCreatorActivityDetailApiV1DouyinCreatorFetchCreatorActivityDetailGet
     readonly fetchCreatorActivityList: typeof sdk.fetchCreatorActivityListApiV1DouyinCreatorFetchCreatorActivityListGet
     readonly fetchCreatorContentCategory: typeof sdk.fetchCreatorContentCategoryApiV1DouyinCreatorFetchCreatorContentCategoryGet
@@ -72,14 +91,23 @@ export interface DomainServiceMap {
     readonly fetchCreatorHotTopicBillboard: typeof sdk.fetchCreatorHotTopicBillboardApiV1DouyinCreatorFetchCreatorHotTopicBillboardGet
     readonly fetchCreatorMaterialCenterBillboard: typeof sdk.fetchCreatorMaterialCenterBillboardApiV1DouyinCreatorFetchCreatorMaterialCenterBillboardGet
     readonly fetchCreatorMaterialCenterConfig: typeof sdk.fetchCreatorMaterialCenterConfigApiV1DouyinCreatorFetchCreatorMaterialCenterConfigGet
+    readonly fetchCreatorMaterialCenterRelated: typeof sdk.fetchCreatorMaterialCenterRelatedApiV1DouyinCreatorFetchCreatorMaterialCenterRelatedGet
+    readonly fetchCurrentHotTopic: typeof sdk.fetchCurrentHotTopicApiV1DouyinIndexFetchCurrentHotTopicGet
+    readonly fetchDarenCompareUsersStable: typeof sdk.fetchDarenCompareUsersStableApiV1DouyinIndexFetchDarenCompareUsersStablePost
+    readonly fetchDarenGreatItemMileInfo: typeof sdk.fetchDarenGreatItemMileInfoApiV1DouyinIndexFetchDarenGreatItemMileInfoPost
+    readonly fetchDarenGreatUserFansInfo: typeof sdk.fetchDarenGreatUserFansInfoApiV1DouyinIndexFetchDarenGreatUserFansInfoPost
+    readonly fetchDarenGreatUserTopVideo: typeof sdk.fetchDarenGreatUserTopVideoApiV1DouyinIndexFetchDarenGreatUserTopVideoPost
+    readonly fetchDarenSimilarUsers: typeof sdk.fetchDarenSimilarUsersApiV1DouyinIndexFetchDarenSimilarUsersPost
+    readonly fetchDarenSugGreatUserList: typeof sdk.fetchDarenSugGreatUserListApiV1DouyinIndexFetchDarenSugGreatUserListPost
     readonly fetchDiscussSearch: typeof sdk.fetchDiscussSearchApiV1DouyinSearchFetchDiscussSearchPost
     readonly fetchDouyinWebGuestCookie: typeof sdk.fetchDouyinWebGuestCookieApiV1DouyinWebFetchDouyinWebGuestCookieGet
+    readonly fetchEncryptUserId: typeof sdk.fetchEncryptUserIdApiV1DouyinIndexFetchEncryptUserIdGet
     readonly fetchExperienceSearch: typeof sdk.fetchExperienceSearchApiV1DouyinSearchFetchExperienceSearchPost
     readonly fetchGameAweme: typeof sdk.fetchGameAwemeApiV1DouyinWebFetchGameAwemeGet
     readonly fetchGeneralSearchResult: typeof sdk.fetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGet
     readonly fetchGeneralSearchV1: typeof sdk.fetchGeneralSearchV1ApiV1DouyinSearchFetchGeneralSearchV1Post
     readonly fetchGeneralSearchV2: typeof sdk.fetchGeneralSearchV2ApiV1DouyinSearchFetchGeneralSearchV2Post
-    readonly fetchGeneralSearchV3: typeof sdk.fetchGeneralSearchV3ApiV1DouyinSearchFetchGeneralSearchV3Post
+    readonly fetchGetUserSubWord: typeof sdk.fetchGetUserSubWordApiV1DouyinIndexFetchGetUserSubWordPost
     readonly fetchHashtagDetail: typeof sdk.fetchHashtagDetailApiV1DouyinAppV3FetchHashtagDetailGet
     readonly fetchHashtagSearchResult: typeof sdk.fetchHashtagSearchResultApiV1DouyinAppV3FetchHashtagSearchResultGet
     readonly fetchHashtagVideoList: typeof sdk.fetchHashtagVideoListApiV1DouyinAppV3FetchHashtagVideoListGet
@@ -117,21 +145,28 @@ export interface DomainServiceMap {
     readonly fetchHotTotalTopicList: typeof sdk.fetchHotTotalTopicListApiV1DouyinBillboardFetchHotTotalTopicListPost
     readonly fetchHotTotalVideoList: typeof sdk.fetchHotTotalVideoListApiV1DouyinBillboardFetchHotTotalVideoListPost
     readonly fetchHotUserPortraitList: typeof sdk.fetchHotUserPortraitListApiV1DouyinBillboardFetchHotUserPortraitListGet
+    readonly fetchHotWords: typeof sdk.fetchHotWordsApiV1DouyinIndexFetchHotWordsGet
     readonly fetchImageSearch: typeof sdk.fetchImageSearchApiV1DouyinSearchFetchImageSearchPost
     readonly fetchImageSearchV3: typeof sdk.fetchImageSearchV3ApiV1DouyinSearchFetchImageSearchV3Post
     readonly fetchIndustryCategoryConfig: typeof sdk.fetchIndustryCategoryConfigApiV1DouyinCreatorFetchIndustryCategoryConfigGet
+    readonly fetchInsightGetRec: typeof sdk.fetchInsightGetRecApiV1DouyinIndexFetchInsightGetRecGet
+    readonly fetchInsightRecommend: typeof sdk.fetchInsightRecommendApiV1DouyinIndexFetchInsightRecommendGet
     readonly fetchItemAnalysisInvolvedVertical: typeof sdk.fetchItemAnalysisInvolvedVerticalApiV1DouyinCreatorV2FetchItemAnalysisInvolvedVerticalPost
     readonly fetchItemAnalysisItemPerformance: typeof sdk.fetchItemAnalysisItemPerformanceApiV1DouyinCreatorV2FetchItemAnalysisItemPerformancePost
     readonly fetchItemAnalysisOverview: typeof sdk.fetchItemAnalysisOverviewApiV1DouyinCreatorV2FetchItemAnalysisOverviewPost
     readonly fetchItemAudienceOthers: typeof sdk.fetchItemAudienceOthersApiV1DouyinCreatorV2FetchItemAudienceOthersPost
     readonly fetchItemAudiencePortrait: typeof sdk.fetchItemAudiencePortraitApiV1DouyinCreatorV2FetchItemAudiencePortraitPost
     readonly fetchItemDanmakuAnalysis: typeof sdk.fetchItemDanmakuAnalysisApiV1DouyinCreatorV2FetchItemDanmakuAnalysisPost
+    readonly fetchItemFilterOptions: typeof sdk.fetchItemFilterOptionsApiV1DouyinIndexFetchItemFilterOptionsGet
     readonly fetchItemList: typeof sdk.fetchItemListApiV1DouyinCreatorV2FetchItemListPost
     readonly fetchItemListDownload: typeof sdk.fetchItemListDownloadApiV1DouyinCreatorV2FetchItemListDownloadPost
     readonly fetchItemOverviewData: typeof sdk.fetchItemOverviewDataApiV1DouyinCreatorV2FetchItemOverviewDataPost
     readonly fetchItemPlaySource: typeof sdk.fetchItemPlaySourceApiV1DouyinCreatorV2FetchItemPlaySourcePost
+    readonly fetchItemQuery: typeof sdk.fetchItemQueryApiV1DouyinIndexFetchItemQueryPost
     readonly fetchItemSearchKeyword: typeof sdk.fetchItemSearchKeywordApiV1DouyinCreatorV2FetchItemSearchKeywordPost
+    readonly fetchItemSug: typeof sdk.fetchItemSugApiV1DouyinIndexFetchItemSugPost
     readonly fetchItemWatchTrend: typeof sdk.fetchItemWatchTrendApiV1DouyinCreatorV2FetchItemWatchTrendPost
+    readonly fetchKeywordValidDate: typeof sdk.fetchKeywordValidDateApiV1DouyinIndexFetchKeywordValidDatePost
     readonly fetchKnowledgeAweme: typeof sdk.fetchKnowledgeAwemeApiV1DouyinWebFetchKnowledgeAwemeGet
     readonly fetchLiveGiftRanking: typeof sdk.fetchLiveGiftRankingApiV1DouyinWebFetchLiveGiftRankingGet
     readonly fetchLiveHotSearchList: typeof sdk.fetchLiveHotSearchListApiV1DouyinAppV3FetchLiveHotSearchListGet
@@ -141,6 +176,8 @@ export interface DomainServiceMap {
     readonly fetchLiveSearchResult: typeof sdk.fetchLiveSearchResultApiV1DouyinAppV3FetchLiveSearchResultGet
     readonly fetchLiveSearchV1: typeof sdk.fetchLiveSearchV1ApiV1DouyinSearchFetchLiveSearchV1Post
     readonly fetchMissionTaskList: typeof sdk.fetchMissionTaskListApiV1DouyinCreatorFetchMissionTaskListGet
+    readonly fetchMultiKeywordHotTrend: typeof sdk.fetchMultiKeywordHotTrendApiV1DouyinIndexFetchMultiKeywordHotTrendPost
+    readonly fetchMultiKeywordInterpretation: typeof sdk.fetchMultiKeywordInterpretationApiV1DouyinIndexFetchMultiKeywordInterpretationPost
     readonly fetchMultiSearch: typeof sdk.fetchMultiSearchApiV1DouyinSearchFetchMultiSearchPost
     readonly fetchMultiVideo: typeof sdk.fetchMultiVideoApiV1DouyinAppV3FetchMultiVideoPost
     readonly fetchMultiVideoHighQualityPlayUrl: typeof sdk.fetchMultiVideoHighQualityPlayUrlApiV1DouyinAppV3FetchMultiVideoHighQualityPlayUrlPost
@@ -156,6 +193,7 @@ export interface DomainServiceMap {
     readonly fetchOneVideoDanmaku: typeof sdk.fetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGet
     readonly fetchOneVideoV2: typeof sdk.fetchOneVideoV2ApiV1DouyinAppV3FetchOneVideoV2Get
     readonly fetchOneVideoV3: typeof sdk.fetchOneVideoV3ApiV1DouyinAppV3FetchOneVideoV3Get
+    readonly fetchPortrait: typeof sdk.fetchPortraitApiV1DouyinIndexFetchPortraitPost
     readonly fetchProductCoupon: typeof sdk.fetchProductCouponApiV1DouyinWebFetchProductCouponGet
     readonly fetchProductDetail: typeof sdk.fetchProductDetailApiV1DouyinWebFetchProductDetailGet
     readonly fetchProductReviewList: typeof sdk.fetchProductReviewListApiV1DouyinWebFetchProductReviewListGet
@@ -163,12 +201,17 @@ export interface DomainServiceMap {
     readonly fetchProductSkuList: typeof sdk.fetchProductSkuListApiV1DouyinWebFetchProductSkuListGet
     readonly fetchQueryUser: typeof sdk.fetchQueryUserApiV1DouyinWebFetchQueryUserPost
     readonly fetchRelatedPosts: typeof sdk.fetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGet
+    readonly fetchRelationWord: typeof sdk.fetchRelationWordApiV1DouyinIndexFetchRelationWordPost
+    readonly fetchReportDetail: typeof sdk.fetchReportDetailApiV1DouyinIndexFetchReportDetailGet
+    readonly fetchReportSearch: typeof sdk.fetchReportSearchApiV1DouyinIndexFetchReportSearchPost
     readonly fetchSchoolSearch: typeof sdk.fetchSchoolSearchApiV1DouyinSearchFetchSchoolSearchPost
     readonly fetchSearchChallenge: typeof sdk.fetchSearchChallengeApiV1DouyinWebFetchSearchChallengePost
     readonly fetchSearchSuggest: typeof sdk.fetchSearchSuggestApiV1DouyinSearchFetchSearchSuggestPost
     readonly fetchSeriesAweme: typeof sdk.fetchSeriesAwemeApiV1DouyinWebFetchSeriesAwemeGet
     readonly fetchSeriesDetail: typeof sdk.fetchSeriesDetailApiV1DouyinAppV3FetchSeriesDetailGet
     readonly fetchSeriesVideoList: typeof sdk.fetchSeriesVideoListApiV1DouyinAppV3FetchSeriesVideoListGet
+    readonly fetchTopicQuery: typeof sdk.fetchTopicQueryApiV1DouyinIndexFetchTopicQueryPost
+    readonly fetchTopicSuggest: typeof sdk.fetchTopicSuggestApiV1DouyinIndexFetchTopicSuggestPost
     readonly fetchUserCollectionVideos: typeof sdk.fetchUserCollectionVideosApiV1DouyinWebFetchUserCollectionVideosPost
     readonly fetchUserCollects: typeof sdk.fetchUserCollectsApiV1DouyinWebFetchUserCollectsPost
     readonly fetchUserCollectsVideos: typeof sdk.fetchUserCollectsVideosApiV1DouyinWebFetchUserCollectsVideosGet
@@ -190,6 +233,7 @@ export interface DomainServiceMap {
     readonly fetchUserSearchResultV3: typeof sdk.fetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3Get
     readonly fetchUserSearchV2: typeof sdk.fetchUserSearchV2ApiV1DouyinSearchFetchUserSearchV2Post
     readonly fetchUserSeriesList: typeof sdk.fetchUserSeriesListApiV1DouyinAppV3FetchUserSeriesListGet
+    readonly fetchValidDateForRelation: typeof sdk.fetchValidDateForRelationApiV1DouyinIndexFetchValidDateForRelationGet
     readonly fetchVideoChannelResult: typeof sdk.fetchVideoChannelResultApiV1DouyinWebFetchVideoChannelResultGet
     readonly fetchVideoComments: typeof sdk.fetchVideoCommentsApiV1DouyinAppV3FetchVideoCommentsGet
     readonly fetchVideoCommentsReply: typeof sdk.fetchVideoCommentsReplyApiV1DouyinAppV3FetchVideoCommentRepliesGet
@@ -315,6 +359,7 @@ export interface DomainServiceMap {
   }
   readonly instagram: {
     readonly bulkTranslateComments: typeof sdk.bulkTranslateCommentsApiV1InstagramV3BulkTranslateCommentsGet
+    readonly extractShortcode: typeof sdk.extractShortcodeApiV1InstagramV3ExtractShortcodeGet
     readonly fetchCities: typeof sdk.fetchCitiesApiV1InstagramV1FetchCitiesGet
     readonly fetchCommentReplies: typeof sdk.fetchCommentRepliesApiV1InstagramV2FetchCommentRepliesGet
     readonly fetchExploreSections: typeof sdk.fetchExploreSectionsApiV1InstagramV1FetchExploreSectionsGet
@@ -356,6 +401,7 @@ export interface DomainServiceMap {
     readonly getExplore: typeof sdk.getExploreApiV1InstagramV3GetExploreGet
     readonly getHighlightStories: typeof sdk.getHighlightStoriesApiV1InstagramV3GetHighlightStoriesGet
     readonly getLocationInfo: typeof sdk.getLocationInfoApiV1InstagramV3GetLocationInfoGet
+    readonly getLocationNearby: typeof sdk.getLocationNearbyApiV1InstagramV3GetLocationNearbyGet
     readonly getLocationPosts: typeof sdk.getLocationPostsApiV1InstagramV3GetLocationPostsGet
     readonly getPostComments: typeof sdk.getPostCommentsApiV1InstagramV3GetPostCommentsGet
     readonly getPostInfo: typeof sdk.getPostInfoApiV1InstagramV3GetPostInfoGet
@@ -368,12 +414,13 @@ export interface DomainServiceMap {
     readonly getUserFollowing: typeof sdk.getUserFollowingApiV1InstagramV3GetUserFollowingGet
     readonly getUserFormerUsernames: typeof sdk.getUserFormerUsernamesApiV1InstagramV3GetUserFormerUsernamesGet
     readonly getUserHighlights: typeof sdk.getUserHighlightsApiV1InstagramV3GetUserHighlightsGet
+    readonly getUserIdByUsername: typeof sdk.getUserIdByUsernameApiV1InstagramV3GetUserIdByUsernameGet
     readonly getUserPosts: typeof sdk.getUserPostsApiV1InstagramV3GetUserPostsGet
     readonly getUserProfile: typeof sdk.getUserProfileApiV1InstagramV3GetUserProfileGet
     readonly getUserReels: typeof sdk.getUserReelsApiV1InstagramV3GetUserReelsGet
     readonly getUserStories: typeof sdk.getUserStoriesApiV1InstagramV3GetUserStoriesGet
     readonly getUserTaggedPosts: typeof sdk.getUserTaggedPostsApiV1InstagramV3GetUserTaggedPostsGet
-    readonly mediaIdToShortcode: typeof sdk.mediaIdToShortcodeApiV1InstagramV2MediaIdToShortcodeGet
+    readonly mediaIdToShortcode: typeof sdk.mediaIdToShortcodeApiV1InstagramV3MediaIdToShortcodeGet
     readonly searchByCoordinates: typeof sdk.searchByCoordinatesApiV1InstagramV2SearchByCoordinatesGet
     readonly searchHashtags: typeof sdk.searchHashtagsApiV1InstagramV3SearchHashtagsGet
     readonly searchLocations: typeof sdk.searchLocationsApiV1InstagramV2SearchLocationsGet
@@ -381,7 +428,7 @@ export interface DomainServiceMap {
     readonly searchPlaces: typeof sdk.searchPlacesApiV1InstagramV3SearchPlacesGet
     readonly searchReels: typeof sdk.searchReelsApiV1InstagramV2SearchReelsGet
     readonly searchUsers: typeof sdk.searchUsersApiV1InstagramV3SearchUsersGet
-    readonly shortcodeToMediaId: typeof sdk.shortcodeToMediaIdApiV1InstagramV2ShortcodeToMediaIdGet
+    readonly shortcodeToMediaId: typeof sdk.shortcodeToMediaIdApiV1InstagramV3ShortcodeToMediaIdGet
     readonly translateComment: typeof sdk.translateCommentApiV1InstagramV3TranslateCommentGet
     readonly userIdToUsername: typeof sdk.userIdToUsernameApiV1InstagramV2UserIdToUsernameGet
   }
@@ -442,31 +489,57 @@ export interface DomainServiceMap {
     readonly handlerUserProfile: typeof sdk.handlerUserProfileApiV1Lemon8AppFetchUserProfileGet
   }
   readonly linkedin: {
-    readonly getCompanyJobCount: typeof sdk.getCompanyJobCountApiV1LinkedinWebGetCompanyJobCountGet
-    readonly getCompanyJobs: typeof sdk.getCompanyJobsApiV1LinkedinWebGetCompanyJobsGet
+    readonly getCommentReplies: typeof sdk.getCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGet
+    readonly getCompanyCallToActions: typeof sdk.getCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGet
+    readonly getCompanyCompetitors: typeof sdk.getCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGet
+    readonly getCompanyEmployeeCountRanges: typeof sdk.getCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGet
+    readonly getCompanyEmployees: typeof sdk.getCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGet
+    readonly getCompanyGroupedLocations: typeof sdk.getCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGet
+    readonly getCompanyJobCount: typeof sdk.getCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGet
+    readonly getCompanyJobs: typeof sdk.getCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGet
     readonly getCompanyPeople: typeof sdk.getCompanyPeopleApiV1LinkedinWebGetCompanyPeopleGet
-    readonly getCompanyPosts: typeof sdk.getCompanyPostsApiV1LinkedinWebGetCompanyPostsGet
-    readonly getCompanyProfile: typeof sdk.getCompanyProfileApiV1LinkedinWebGetCompanyProfileGet
-    readonly getJobDetail: typeof sdk.getJobDetailApiV1LinkedinWebGetJobDetailGet
+    readonly getCompanyPosts: typeof sdk.getCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGet
+    readonly getCompanyProfile: typeof sdk.getCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGet
+    readonly getCompanySimilarCompanies: typeof sdk.getCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGet
+    readonly getCompanyStockQuote: typeof sdk.getCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGet
+    readonly getDiscoveryRelevantToCompany: typeof sdk.getDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGet
+    readonly getDiscoveryRelevantToUser: typeof sdk.getDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGet
+    readonly getHashtagFeed: typeof sdk.getHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGet
+    readonly getJobDetail: typeof sdk.getJobDetailApiV1LinkedinWebV2GetJobDetailGet
+    readonly getPostComments: typeof sdk.getPostCommentsApiV1LinkedinWebV2GetPostCommentsGet
+    readonly getPostDetail: typeof sdk.getPostDetailApiV1LinkedinWebV2GetPostDetailGet
+    readonly getPostDetailBySlug: typeof sdk.getPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGet
+    readonly getPostReactions: typeof sdk.getPostReactionsApiV1LinkedinWebV2GetPostReactionsGet
     readonly getUserAbout: typeof sdk.getUserAboutApiV1LinkedinWebGetUserAboutGet
-    readonly getUserCertifications: typeof sdk.getUserCertificationsApiV1LinkedinWebGetUserCertificationsGet
-    readonly getUserComments: typeof sdk.getUserCommentsApiV1LinkedinWebGetUserCommentsGet
+    readonly getUserBio: typeof sdk.getUserBioApiV1LinkedinWebV2GetUserBioGet
+    readonly getUserCertifications: typeof sdk.getUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGet
+    readonly getUserComments: typeof sdk.getUserCommentsApiV1LinkedinWebV2GetUserCommentsGet
     readonly getUserContact: typeof sdk.getUserContactApiV1LinkedinWebGetUserContactGet
-    readonly getUserEducations: typeof sdk.getUserEducationsApiV1LinkedinWebGetUserEducationsGet
+    readonly getUserContactInfo: typeof sdk.getUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGet
+    readonly getUserEducations: typeof sdk.getUserEducationsApiV1LinkedinWebV2GetUserEducationsGet
     readonly getUserExperience: typeof sdk.getUserExperienceApiV1LinkedinWebGetUserExperienceGet
+    readonly getUserExperiences: typeof sdk.getUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGet
     readonly getUserFollowerAndConnection: typeof sdk.getUserFollowerAndConnectionApiV1LinkedinWebGetUserFollowerAndConnectionGet
-    readonly getUserHonors: typeof sdk.getUserHonorsApiV1LinkedinWebGetUserHonorsGet
-    readonly getUserImages: typeof sdk.getUserImagesApiV1LinkedinWebGetUserImagesGet
+    readonly getUserFollowerAndConnectionCount: typeof sdk.getUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGet
+    readonly getUserHonors: typeof sdk.getUserHonorsApiV1LinkedinWebV2GetUserHonorsGet
+    readonly getUserImages: typeof sdk.getUserImagesApiV1LinkedinWebV2GetUserImagesGet
+    readonly getUserInterestedCompanies: typeof sdk.getUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGet
+    readonly getUserInterestedGroups: typeof sdk.getUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGet
     readonly getUserInterestsCompanies: typeof sdk.getUserInterestsCompaniesApiV1LinkedinWebGetUserInterestsCompaniesGet
     readonly getUserInterestsGroups: typeof sdk.getUserInterestsGroupsApiV1LinkedinWebGetUserInterestsGroupsGet
-    readonly getUserPosts: typeof sdk.getUserPostsApiV1LinkedinWebGetUserPostsGet
-    readonly getUserProfile: typeof sdk.getUserProfileApiV1LinkedinWebGetUserProfileGet
-    readonly getUserPublications: typeof sdk.getUserPublicationsApiV1LinkedinWebGetUserPublicationsGet
-    readonly getUserRecommendations: typeof sdk.getUserRecommendationsApiV1LinkedinWebGetUserRecommendationsGet
-    readonly getUserSkills: typeof sdk.getUserSkillsApiV1LinkedinWebGetUserSkillsGet
-    readonly getUserVideos: typeof sdk.getUserVideosApiV1LinkedinWebGetUserVideosGet
-    readonly searchJobs: typeof sdk.searchJobsApiV1LinkedinWebSearchJobsGet
+    readonly getUserPosts: typeof sdk.getUserPostsApiV1LinkedinWebV2GetUserPostsGet
+    readonly getUserProfile: typeof sdk.getUserProfileApiV1LinkedinWebV2GetUserProfileGet
+    readonly getUserProfileCards: typeof sdk.getUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGet
+    readonly getUserPublications: typeof sdk.getUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGet
+    readonly getUserRecentActivity: typeof sdk.getUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGet
+    readonly getUserRecommendations: typeof sdk.getUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGet
+    readonly getUserSkills: typeof sdk.getUserSkillsApiV1LinkedinWebV2GetUserSkillsGet
+    readonly getUserTopCard: typeof sdk.getUserTopCardApiV1LinkedinWebV2GetUserTopCardGet
+    readonly getUserTopCardSupplementary: typeof sdk.getUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGet
+    readonly getUserVideos: typeof sdk.getUserVideosApiV1LinkedinWebV2GetUserVideosGet
+    readonly searchJobs: typeof sdk.searchJobsApiV1LinkedinWebV2SearchJobsGet
     readonly searchPeople: typeof sdk.searchPeopleApiV1LinkedinWebSearchPeopleGet
+    readonly searchUsers: typeof sdk.searchUsersApiV1LinkedinWebV2SearchUsersGet
   }
   readonly pipixia: {
     readonly fetchHashtagDetail: typeof sdk.fetchHashtagDetailApiV1PipixiaAppFetchHashtagDetailGet
@@ -681,9 +754,11 @@ export interface DomainServiceMap {
     readonly generateRealMsToken: typeof sdk.generateRealMsTokenApiV1TiktokWebGenerateRealMsTokenGet
     readonly generateTtwid: typeof sdk.generateTtwidApiV1TiktokWebGenerateTtwidGet
     readonly generateWebid: typeof sdk.generateWebidApiV1TiktokWebGenerateWebidGet
+    readonly generateWssXbSignature: typeof sdk.generateWssXbSignatureApiV1TiktokWebGenerateWssXbSignatureGet
     readonly generateXbogus: typeof sdk.generateXbogusApiV1TiktokWebGenerateXbogusPost
     readonly generateXgnarly: typeof sdk.generateXgnarlyApiV1TiktokWebGenerateXgnarlyPost
     readonly generateXgnarlyAndXbogus: typeof sdk.generateXgnarlyAndXbogusApiV1TiktokWebGenerateXgnarlyAndXbogusPost
+    readonly generateXMssdkInfo: typeof sdk.generateXMssdkInfoApiV1TiktokWebGenerateXMssdkInfoPost
     readonly getAccountHealthStatus: typeof sdk.getAccountHealthStatusApiV1TiktokCreatorGetAccountHealthStatusPost
     readonly getAccountInsightsOverview: typeof sdk.getAccountInsightsOverviewApiV1TiktokCreatorGetAccountInsightsOverviewPost
     readonly getAccountViolationList: typeof sdk.getAccountViolationListApiV1TiktokCreatorGetAccountViolationListPost
@@ -779,9 +854,11 @@ export interface DomainServiceMap {
     readonly fetchHomePage: typeof sdk.fetchHomePageApiV1WechatChannelsFetchHomePagePost
     readonly fetchHotWords: typeof sdk.fetchHotWordsApiV1WechatChannelsFetchHotWordsGet
     readonly fetchLiveHistory: typeof sdk.fetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGet
+    readonly fetchSearchChannels: typeof sdk.fetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGet
     readonly fetchSearchLatest: typeof sdk.fetchSearchLatestApiV1WechatChannelsFetchSearchLatestGet
     readonly fetchSearchOrdinary: typeof sdk.fetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGet
     readonly fetchUserSearch: typeof sdk.fetchUserSearchApiV1WechatChannelsFetchUserSearchGet
+    readonly fetchUserSearchV2: typeof sdk.fetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2Get
     readonly fetchVideoDetail: typeof sdk.fetchVideoDetailApiV1WechatChannelsFetchVideoDetailGet
   }
   readonly wechatMp: {
@@ -795,6 +872,8 @@ export interface DomainServiceMap {
     readonly fetchMpArticleUrl: typeof sdk.fetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGet
     readonly fetchMpArticleUrlConversion: typeof sdk.fetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConversionGet
     readonly fetchMpRelatedArticles: typeof sdk.fetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGet
+    readonly fetchSearchArticle: typeof sdk.fetchSearchArticleApiV1WechatMpWebFetchSearchArticleGet
+    readonly fetchSearchOfficialAccount: typeof sdk.fetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGet
   }
   readonly weibo: {
     readonly checkAllowCommentWithPic: typeof sdk.checkAllowCommentWithPicApiV1WeiboWebV2CheckAllowCommentWithPicGet
@@ -864,20 +943,26 @@ export interface DomainServiceMap {
     readonly fetchFeedNotesV5: typeof sdk.fetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5Get
     readonly fetchFollowerList: typeof sdk.fetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGet
     readonly fetchFollowingList: typeof sdk.fetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGet
+    readonly fetchHomefeed: typeof sdk.fetchHomefeedApiV1XiaohongshuWebV3FetchHomefeedGet
+    readonly fetchHomefeedCategories: typeof sdk.fetchHomefeedCategoriesApiV1XiaohongshuWebV3FetchHomefeedCategoriesGet
     readonly fetchHomeNotes: typeof sdk.fetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGet
     readonly fetchHomeNotesApp: typeof sdk.fetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGet
     readonly fetchHotList: typeof sdk.fetchHotListApiV1XiaohongshuWebV2FetchHotListGet
     readonly fetchNoteComments: typeof sdk.fetchNoteCommentsApiV1XiaohongshuWebV2FetchNoteCommentsGet
+    readonly fetchNoteDetail: typeof sdk.fetchNoteDetailApiV1XiaohongshuWebV3FetchNoteDetailGet
     readonly fetchNoteImage: typeof sdk.fetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGet
     readonly fetchProductList: typeof sdk.fetchProductListApiV1XiaohongshuWebV2FetchProductListGet
     readonly fetchSearchNotes: typeof sdk.fetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGet
+    readonly fetchSearchSuggest: typeof sdk.fetchSearchSuggestApiV1XiaohongshuWebV3FetchSearchSuggestGet
+    readonly fetchSearchUsers: typeof sdk.fetchSearchUsersApiV1XiaohongshuWebV3FetchSearchUsersGet
     readonly fetchSubComments: typeof sdk.fetchSubCommentsApiV1XiaohongshuWebV2FetchSubCommentsGet
+    readonly fetchTrending: typeof sdk.fetchTrendingApiV1XiaohongshuWebV3FetchTrendingGet
     readonly fetchUserInfo: typeof sdk.fetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGet
+    readonly fetchUserNotes: typeof sdk.fetchUserNotesApiV1XiaohongshuWebV3FetchUserNotesGet
     readonly getCreatorHotInspirationFeed: typeof sdk.getCreatorHotInspirationFeedApiV1XiaohongshuAppV2GetCreatorHotInspirationFeedGet
     readonly getCreatorInspirationFeed: typeof sdk.getCreatorInspirationFeedApiV1XiaohongshuAppV2GetCreatorInspirationFeedGet
     readonly getHomeRecommend: typeof sdk.getHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPost
     readonly getImageNoteDetail: typeof sdk.getImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGet
-    readonly getMixedNoteDetail: typeof sdk.getMixedNoteDetailApiV1XiaohongshuAppV2GetMixedNoteDetailGet
     readonly getNoteCommentReplies: typeof sdk.getNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGet
     readonly getNoteComments: typeof sdk.getNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGet
     readonly getNoteIdAndXsecToken: typeof sdk.getNoteIdAndXsecTokenApiV1XiaohongshuWebGetNoteIdAndXsecTokenGet
@@ -923,6 +1008,7 @@ export interface DomainServiceMap {
   }
   readonly youtube: {
     readonly apiGetVideoSubtitles: typeof sdk.apiGetVideoSubtitlesApiV1YoutubeWebGetVideoSubtitlesGet
+    readonly getChannelCommunityPosts: typeof sdk.getChannelCommunityPostsApiV1YoutubeWebV2GetChannelCommunityPostsGet
     readonly getChannelDescription: typeof sdk.getChannelDescriptionApiV1YoutubeWebV2GetChannelDescriptionGet
     readonly getChannelId: typeof sdk.getChannelIdApiV1YoutubeWebV2GetChannelIdGet
     readonly getChannelIdV2: typeof sdk.getChannelIdV2ApiV1YoutubeWebGetChannelIdV2Get
@@ -934,12 +1020,18 @@ export interface DomainServiceMap {
     readonly getChannelVideosV2: typeof sdk.getChannelVideosV2ApiV1YoutubeWebGetChannelVideosV2Get
     readonly getChannelVideosV3: typeof sdk.getChannelVideosV3ApiV1YoutubeWebGetChannelVideosV3Get
     readonly getGeneralSearch: typeof sdk.getGeneralSearchApiV1YoutubeWebV2GetGeneralSearchGet
+    readonly getGeneralSearchV2: typeof sdk.getGeneralSearchV2ApiV1YoutubeWebV2GetGeneralSearchV2Get
+    readonly getPostCommentReplies: typeof sdk.getPostCommentRepliesApiV1YoutubeWebV2GetPostCommentRepliesGet
+    readonly getPostComments: typeof sdk.getPostCommentsApiV1YoutubeWebV2GetPostCommentsGet
+    readonly getPostDetail: typeof sdk.getPostDetailApiV1YoutubeWebV2GetPostDetailGet
     readonly getRelatedVideos: typeof sdk.getRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGet
     readonly getRelateVideo: typeof sdk.getRelateVideoApiV1YoutubeWebGetRelateVideoGet
     readonly getSearchSuggestions: typeof sdk.getSearchSuggestionsApiV1YoutubeWebV2GetSearchSuggestionsGet
     readonly getShortsSearch: typeof sdk.getShortsSearchApiV1YoutubeWebV2GetShortsSearchGet
+    readonly getShortsSearchV2: typeof sdk.getShortsSearchV2ApiV1YoutubeWebV2GetShortsSearchV2Get
     readonly getSignedStreamUrl: typeof sdk.getSignedStreamUrlApiV1YoutubeWebV2GetSignedStreamUrlGet
     readonly getTrendingVideos: typeof sdk.getTrendingVideosApiV1YoutubeWebGetTrendingVideosGet
+    readonly getVideoCaptions: typeof sdk.getVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGet
     readonly getVideoCommentReplies: typeof sdk.getVideoCommentRepliesApiV1YoutubeWebV2GetVideoCommentRepliesGet
     readonly getVideoComments: typeof sdk.getVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGet
     readonly getVideoInfo: typeof sdk.getVideoInfoApiV1YoutubeWebV2GetVideoInfoGet
@@ -974,12 +1066,14 @@ export interface DomainServiceMap {
     readonly fetchSearchSuggest: typeof sdk.fetchSearchSuggestApiV1ZhihuWebFetchSearchSuggestGet
     readonly fetchSubCommentV5: typeof sdk.fetchSubCommentV5ApiV1ZhihuWebFetchSubCommentV5Get
     readonly fetchTopicSearchV3: typeof sdk.fetchTopicSearchV3ApiV1ZhihuWebFetchTopicSearchV3Get
+    readonly fetchUserArticles: typeof sdk.fetchUserArticlesApiV1ZhihuWebFetchUserArticlesGet
     readonly fetchUserFollowCollections: typeof sdk.fetchUserFollowCollectionsApiV1ZhihuWebFetchUserFollowCollectionsGet
     readonly fetchUserFollowColumns: typeof sdk.fetchUserFollowColumnsApiV1ZhihuWebFetchUserFollowColumnsGet
     readonly fetchUserFollowees: typeof sdk.fetchUserFolloweesApiV1ZhihuWebFetchUserFolloweesGet
     readonly fetchUserFollowers: typeof sdk.fetchUserFollowersApiV1ZhihuWebFetchUserFollowersGet
     readonly fetchUserFollowQuestions: typeof sdk.fetchUserFollowQuestionsApiV1ZhihuWebFetchUserFollowQuestionsGet
     readonly fetchUserFollowTopics: typeof sdk.fetchUserFollowTopicsApiV1ZhihuWebFetchUserFollowTopicsGet
+    readonly fetchUserIncludedArticles: typeof sdk.fetchUserIncludedArticlesApiV1ZhihuWebFetchUserIncludedArticlesGet
     readonly fetchUserInfo: typeof sdk.fetchUserInfoApiV1ZhihuWebFetchUserInfoGet
     readonly fetchUserSearchV3: typeof sdk.fetchUserSearchV3ApiV1ZhihuWebFetchUserSearchV3Get
     readonly fetchVideoList: typeof sdk.fetchVideoListApiV1ZhihuWebFetchVideoListGet
