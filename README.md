@@ -9,7 +9,7 @@ A TypeScript HTTP client library for the [Hyperapify API](https://gate.hyperapif
 ## Installation
 
 ```bash
-npm install hyperapify-http-client
+npm install https://github.com/vitechgroup-npm/hyperapify-http-client-prod.git
 ```
 
 ## Quick Start
