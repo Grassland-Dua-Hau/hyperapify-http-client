@@ -157,6 +157,10 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/tiktok/web/fetch_live_recommend',
   ],
   [
+    'fetchLiveRecommendTabsApiV1TiktokWebFetchLiveRecommendTabsGet',
+    '/video-hub/api/v1/tiktok/web/fetch_live_recommend_tabs',
+  ],
+  [
     'fetchLiveGiftListApiV1TiktokWebFetchLiveGiftListGet',
     '/video-hub/api/v1/tiktok/web/fetch_live_gift_list',
   ],
@@ -674,6 +678,22 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/tiktok/ads/get_popular_trends',
   ],
   [
+    'getConfigureSafetyApiV1TiktokAdsGetConfigureSafetyGet',
+    '/video-hub/api/v1/tiktok/ads/get_configure_safety',
+  ],
+  [
+    'getLocationListApiV1TiktokAdsGetLocationListGet',
+    '/video-hub/api/v1/tiktok/ads/get_location_list',
+  ],
+  [
+    'getTrendsHashtagListApiV1TiktokAdsGetTrendsHashtagListGet',
+    '/video-hub/api/v1/tiktok/ads/get_trends_hashtag_list',
+  ],
+  [
+    'getTrendsHashtagDetailApiV1TiktokAdsGetTrendsHashtagDetailGet',
+    '/video-hub/api/v1/tiktok/ads/get_trends_hashtag_detail',
+  ],
+  [
     'fetchProductDetailApiV1TiktokShopWebFetchProductDetailGet',
     '/video-hub/api/v1/tiktok/shop/web/fetch_product_detail',
   ],
@@ -684,10 +704,6 @@ export const SDK_URL_MAP = new Map<string, string>([
   [
     'fetchProductDetailV3ApiV1TiktokShopWebFetchProductDetailV3Get',
     '/video-hub/api/v1/tiktok/shop/web/fetch_product_detail_v3',
-  ],
-  [
-    'fetchProductReviewsV1ApiV1TiktokShopWebFetchProductReviewsV1Get',
-    '/video-hub/api/v1/tiktok/shop/web/fetch_product_reviews_v1',
   ],
   [
     'fetchProductReviewsV2ApiV1TiktokShopWebFetchProductReviewsV2Get',
@@ -718,10 +734,6 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/tiktok/shop/web/fetch_search_products_list_v2',
   ],
   [
-    'fetchSearchProductsListV3ApiV1TiktokShopWebFetchSearchProductsListV3Get',
-    '/video-hub/api/v1/tiktok/shop/web/fetch_search_products_list_v3',
-  ],
-  [
     'fetchProductsCategoryListApiV1TiktokShopWebFetchProductsCategoryListGet',
     '/video-hub/api/v1/tiktok/shop/web/fetch_products_category_list',
   ],
@@ -733,19 +745,6 @@ export const SDK_URL_MAP = new Map<string, string>([
     'fetchHotSellingProductsListApiV1TiktokShopWebFetchHotSellingProductsListGet',
     '/video-hub/api/v1/tiktok/shop/web/fetch_hot_selling_products_list',
   ],
-  ['applyForScopeApiV1TiktokInteractionApplyGet', '/video-hub/api/v1/tiktok/interaction/apply'],
-  [
-    'postCommentApiV1TiktokInteractionPostCommentPost',
-    '/video-hub/api/v1/tiktok/interaction/post_comment',
-  ],
-  [
-    'replyCommentApiV1TiktokInteractionReplyCommentPost',
-    '/video-hub/api/v1/tiktok/interaction/reply_comment',
-  ],
-  ['likeApiV1TiktokInteractionLikePost', '/video-hub/api/v1/tiktok/interaction/like'],
-  ['followApiV1TiktokInteractionFollowPost', '/video-hub/api/v1/tiktok/interaction/follow'],
-  ['collectApiV1TiktokInteractionCollectPost', '/video-hub/api/v1/tiktok/interaction/collect'],
-  ['forwardApiV1TiktokInteractionForwardPost', '/video-hub/api/v1/tiktok/interaction/forward'],
   ['fetchOneVideoApiV1DouyinWebFetchOneVideoGet', '/video-hub/api/v1/douyin/web/fetch_one_video'],
   [
     'fetchOneVideoApiV1DouyinWebFetchOneVideoV2Get',
@@ -771,7 +770,7 @@ export const SDK_URL_MAP = new Map<string, string>([
     'fetchOneVideoDanmakuApiV1DouyinWebFetchOneVideoDanmakuGet',
     '/video-hub/api/v1/douyin/web/fetch_one_video_danmaku',
   ],
-  ['fetchHomeFeedApiV1DouyinWebFetchHomeFeedGet', '/video-hub/api/v1/douyin/web/fetch_home_feed'],
+  ['fetchHomeFeedApiV1DouyinWebFetchHomeFeedPost', '/video-hub/api/v1/douyin/web/fetch_home_feed'],
   [
     'fetchRelatedPostsApiV1DouyinWebFetchRelatedPostsGet',
     '/video-hub/api/v1/douyin/web/fetch_related_posts',
@@ -823,10 +822,6 @@ export const SDK_URL_MAP = new Map<string, string>([
   [
     'fetchLiveRoomProductResultApiV1DouyinWebFetchLiveRoomProductResultGet',
     '/video-hub/api/v1/douyin/web/fetch_live_room_product_result',
-  ],
-  [
-    'fetchProductDetailApiV1DouyinWebFetchProductDetailGet',
-    '/video-hub/api/v1/douyin/web/fetch_product_detail',
   ],
   [
     'fetchProductSkuListApiV1DouyinWebFetchProductSkuListGet',
@@ -905,36 +900,8 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/douyin/web/fetch_video_comment_replies',
   ],
   [
-    'fetchGeneralSearchResultApiV1DouyinWebFetchGeneralSearchResultGet',
-    '/video-hub/api/v1/douyin/web/fetch_general_search_result',
-  ],
-  [
-    'fetchVideoSearchResultApiV1DouyinWebFetchVideoSearchResultGet',
-    '/video-hub/api/v1/douyin/web/fetch_video_search_result',
-  ],
-  [
-    'fetchVideoSearchResultV2ApiV1DouyinWebFetchVideoSearchResultV2Get',
-    '/video-hub/api/v1/douyin/web/fetch_video_search_result_v2',
-  ],
-  [
-    'fetchUserSearchResultApiV1DouyinWebFetchUserSearchResultGet',
-    '/video-hub/api/v1/douyin/web/fetch_user_search_result',
-  ],
-  [
-    'fetchUserSearchResultV2ApiV1DouyinWebFetchUserSearchResultV2Get',
-    '/video-hub/api/v1/douyin/web/fetch_user_search_result_v2',
-  ],
-  [
     'fetchUserSearchResultV3ApiV1DouyinWebFetchUserSearchResultV3Get',
     '/video-hub/api/v1/douyin/web/fetch_user_search_result_v3',
-  ],
-  [
-    'fetchLiveSearchResultApiV1DouyinWebFetchLiveSearchResultGet',
-    '/video-hub/api/v1/douyin/web/fetch_live_search_result',
-  ],
-  [
-    'fetchSearchChallengeApiV1DouyinWebFetchSearchChallengePost',
-    '/video-hub/api/v1/douyin/web/fetch_search_challenge',
   ],
   [
     'fetchChallengePostsApiV1DouyinWebFetchChallengePostsPost',
@@ -1126,16 +1093,8 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/douyin/app/v3/fetch_series_detail',
   ],
   [
-    'fetchGeneralSearchResultApiV1DouyinAppV3FetchGeneralSearchResultGet',
-    '/video-hub/api/v1/douyin/app/v3/fetch_general_search_result',
-  ],
-  [
     'fetchVideoSearchResultApiV1DouyinAppV3FetchVideoSearchResultGet',
     '/video-hub/api/v1/douyin/app/v3/fetch_video_search_result',
-  ],
-  [
-    'fetchVideoSearchResultV2ApiV1DouyinAppV3FetchVideoSearchResultV2Get',
-    '/video-hub/api/v1/douyin/app/v3/fetch_video_search_result_v2',
   ],
   [
     'fetchUserSearchResultApiV1DouyinAppV3FetchUserSearchResultGet',
@@ -1875,6 +1834,64 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/douyin/xingtu_v2/get_demander_mcn_list',
   ],
   [
+    'fetchPromotableItemListApiV1DouyinDouplusFetchPromotableItemListPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_promotable_item_list',
+  ],
+  ['searchUserApiV1DouyinDouplusSearchUserPost', '/video-hub/api/v1/douyin/douplus/search_user'],
+  [
+    'searchUserV2ApiV1DouyinDouplusSearchUserV2Post',
+    '/video-hub/api/v1/douyin/douplus/search_user_v2',
+  ],
+  [
+    'fetchVideoRankingApiV1DouyinDouplusFetchVideoRankingPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_video_ranking',
+  ],
+  [
+    'fetchSecTokenApiV1DouyinDouplusFetchSecTokenPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_sec_token',
+  ],
+  [
+    'calculateCostApiV1DouyinDouplusCalculateCostPost',
+    '/video-hub/api/v1/douyin/douplus/calculate_cost',
+  ],
+  [
+    'fetchPromotedAccountsApiV1DouyinDouplusFetchPromotedAccountsPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_promoted_accounts',
+  ],
+  [
+    'fetchAnalyseOverviewApiV1DouyinDouplusFetchAnalyseOverviewPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_analyse_overview',
+  ],
+  [
+    'fetchAnalyseGraphApiV1DouyinDouplusFetchAnalyseGraphPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_analyse_graph',
+  ],
+  [
+    'fetchAnalyseDetailApiV1DouyinDouplusFetchAnalyseDetailPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_analyse_detail',
+  ],
+  [
+    'fetchTalentCategoriesApiV1DouyinDouplusFetchTalentCategoriesPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_talent_categories',
+  ],
+  [
+    'fetchTalentsByCategoryApiV1DouyinDouplusFetchTalentsByCategoryPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_talents_by_category',
+  ],
+  [
+    'fetchUserPostsApiV1DouyinDouplusFetchUserPostsPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_user_posts',
+  ],
+  ['searchVideoApiV1DouyinDouplusSearchVideoPost', '/video-hub/api/v1/douyin/douplus/search_video'],
+  [
+    'fetchVideoDetailApiV1DouyinDouplusFetchVideoDetailPost',
+    '/video-hub/api/v1/douyin/douplus/fetch_video_detail',
+  ],
+  [
+    'searchLiveRoomApiV1DouyinDouplusSearchLiveRoomPost',
+    '/video-hub/api/v1/douyin/douplus/search_live_room',
+  ],
+  [
     'fetchOneVideoApiV1XiguaAppV2FetchOneVideoGet',
     '/video-hub/api/v1/xigua/app/v2/fetch_one_video',
   ],
@@ -1957,6 +1974,10 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/xiaohongshu/web_v3/fetch_user_notes',
   ],
   [
+    'fetchHotListApiV1XiaohongshuWebV3FetchHotListGet',
+    '/video-hub/api/v1/xiaohongshu/web_v3/fetch_hot_list',
+  ],
+  [
     'getImageNoteDetailApiV1XiaohongshuAppV2GetImageNoteDetailGet',
     '/video-hub/api/v1/xiaohongshu/app_v2/get_image_note_detail',
   ],
@@ -2037,6 +2058,46 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/xiaohongshu/app_v2/get_creator_hot_inspiration_feed',
   ],
   [
+    'getNoteDetailApiV1XiaohongshuPgyGetNoteDetailPost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_note_detail',
+  ],
+  [
+    'getBloggerDetailApiV1XiaohongshuPgyGetBloggerDetailPost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_detail',
+  ],
+  [
+    'getBloggerNotesApiV1XiaohongshuPgyGetBloggerNotesPost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_notes',
+  ],
+  [
+    'getBloggerNotesRateApiV1XiaohongshuPgyGetBloggerNotesRatePost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_notes_rate',
+  ],
+  [
+    'getBloggerCoreDataApiV1XiaohongshuPgyGetBloggerCoreDataPost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_core_data',
+  ],
+  [
+    'getBloggerDataSummaryApiV1XiaohongshuPgyGetBloggerDataSummaryPost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_data_summary',
+  ],
+  [
+    'getBloggerFansSummaryApiV1XiaohongshuPgyGetBloggerFansSummaryPost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_fans_summary',
+  ],
+  [
+    'getBloggerFansProfileApiV1XiaohongshuPgyGetBloggerFansProfilePost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_fans_profile',
+  ],
+  [
+    'getBloggerFansHistoryApiV1XiaohongshuPgyGetBloggerFansHistoryPost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_fans_history',
+  ],
+  [
+    'getBloggerListApiV1XiaohongshuPgyGetBloggerListPost',
+    '/video-hub/api/v1/xiaohongshu/pgy/get_blogger_list',
+  ],
+  [
     'getNoteInfoV1ApiV1XiaohongshuAppGetNoteInfoGet',
     '/video-hub/api/v1/xiaohongshu/app/get_note_info',
   ],
@@ -2051,6 +2112,10 @@ export const SDK_URL_MAP = new Map<string, string>([
   [
     'getSubCommentsApiV1XiaohongshuAppGetSubCommentsGet',
     '/video-hub/api/v1/xiaohongshu/app/get_sub_comments',
+  ],
+  [
+    'getTopicNotesApiV1XiaohongshuAppGetTopicNotesGet',
+    '/video-hub/api/v1/xiaohongshu/app/get_topic_notes',
   ],
   [
     'getNotesByTopicApiV1XiaohongshuAppGetNotesByTopicGet',
@@ -2093,34 +2158,6 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v2',
   ],
   [
-    'fetchFeedNotesV3ApiV1XiaohongshuWebV2FetchFeedNotesV3Get',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v3',
-  ],
-  [
-    'fetchFeedNotesV4ApiV1XiaohongshuWebV2FetchFeedNotesV4Get',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v4',
-  ],
-  [
-    'fetchFeedNotesV5ApiV1XiaohongshuWebV2FetchFeedNotesV5Get',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_feed_notes_v5',
-  ],
-  [
-    'fetchNoteImageApiV1XiaohongshuWebV2FetchNoteImageGet',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_note_image',
-  ],
-  [
-    'fetchSearchNotesApiV1XiaohongshuWebV2FetchSearchNotesGet',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_search_notes',
-  ],
-  [
-    'fetchSearchNotesApiV1XiaohongshuWebV2FetchSearchUsersGet',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_search_users',
-  ],
-  [
-    'fetchHomeNotesApiV1XiaohongshuWebV2FetchHomeNotesGet',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_home_notes',
-  ],
-  [
     'fetchHomeNotesAppApiV1XiaohongshuWebV2FetchHomeNotesAppGet',
     '/video-hub/api/v1/xiaohongshu/web_v2/fetch_home_notes_app',
   ],
@@ -2133,24 +2170,8 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/xiaohongshu/web_v2/fetch_sub_comments',
   ],
   [
-    'fetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoGet',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_user_info',
-  ],
-  [
     'fetchUserInfoApiV1XiaohongshuWebV2FetchUserInfoAppGet',
     '/video-hub/api/v1/xiaohongshu/web_v2/fetch_user_info_app',
-  ],
-  [
-    'fetchFollowerListApiV1XiaohongshuWebV2FetchFollowerListGet',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_follower_list',
-  ],
-  [
-    'fetchFollowingListApiV1XiaohongshuWebV2FetchFollowingListGet',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_following_list',
-  ],
-  [
-    'fetchProductListApiV1XiaohongshuWebV2FetchProductListGet',
-    '/video-hub/api/v1/xiaohongshu/web_v2/fetch_product_list',
   ],
   [
     'fetchHotListApiV1XiaohongshuWebV2FetchHotListGet',
@@ -2159,10 +2180,6 @@ export const SDK_URL_MAP = new Map<string, string>([
   [
     'getHomeRecommendApiV1XiaohongshuWebGetHomeRecommendPost',
     '/video-hub/api/v1/xiaohongshu/web/get_home_recommend',
-  ],
-  [
-    'getNoteInfoV2ApiV1XiaohongshuWebGetNoteInfoV2Get',
-    '/video-hub/api/v1/xiaohongshu/web/get_note_info_v2',
   ],
   [
     'getNoteInfoV4ApiV1XiaohongshuWebGetNoteInfoV4Get',
@@ -2177,36 +2194,8 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/xiaohongshu/web/get_note_info_v7',
   ],
   [
-    'getNoteCommentsApiV1XiaohongshuWebGetNoteCommentsGet',
-    '/video-hub/api/v1/xiaohongshu/web/get_note_comments',
-  ],
-  [
-    'getNoteCommentRepliesApiV1XiaohongshuWebGetNoteCommentRepliesGet',
-    '/video-hub/api/v1/xiaohongshu/web/get_note_comment_replies',
-  ],
-  [
     'getUserInfoApiV1XiaohongshuWebGetUserInfoGet',
     '/video-hub/api/v1/xiaohongshu/web/get_user_info',
-  ],
-  [
-    'getUserInfoV2ApiV1XiaohongshuWebGetUserInfoV2Get',
-    '/video-hub/api/v1/xiaohongshu/web/get_user_info_v2',
-  ],
-  [
-    'searchNotesApiV1XiaohongshuWebSearchNotesGet',
-    '/video-hub/api/v1/xiaohongshu/web/search_notes',
-  ],
-  [
-    'searchNotesV3ApiV1XiaohongshuWebSearchNotesV3Get',
-    '/video-hub/api/v1/xiaohongshu/web/search_notes_v3',
-  ],
-  [
-    'searchUsersApiV1XiaohongshuWebSearchUsersGet',
-    '/video-hub/api/v1/xiaohongshu/web/search_users',
-  ],
-  [
-    'getUserNotesApiV1XiaohongshuWebGetUserNotesV2Get',
-    '/video-hub/api/v1/xiaohongshu/web/get_user_notes_v2',
   ],
   [
     'getVisitorCookieApiV1XiaohongshuWebGetVisitorCookieGet',
@@ -2299,10 +2288,6 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/kuaishou/web/fetch_user_info',
   ],
   [
-    'fetchUserPostApiV1KuaishouWebFetchUserPostGet',
-    '/video-hub/api/v1/kuaishou/web/fetch_user_post',
-  ],
-  [
     'fetchUserLiveReplayApiV1KuaishouWebFetchUserLiveReplayGet',
     '/video-hub/api/v1/kuaishou/web/fetch_user_live_replay',
   ],
@@ -2335,24 +2320,36 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/kuaishou/app/fetch_one_video_by_url',
   ],
   [
-    'fetchVideoCommentApiV1KuaishouAppFetchOneVideoCommentGet',
-    '/video-hub/api/v1/kuaishou/app/fetch_one_video_comment',
+    'fetchSelectionFeedApiV1KuaishouAppFetchSelectionFeedGet',
+    '/video-hub/api/v1/kuaishou/app/fetch_selection_feed',
+  ],
+  [
+    'generateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkGet',
+    '/video-hub/api/v1/kuaishou/app/generate_kuaishou_share_link',
+  ],
+  [
+    'fetchVideoCommentApiV1KuaishouAppFetchVideoCommentGet',
+    '/video-hub/api/v1/kuaishou/app/fetch_video_comment',
+  ],
+  [
+    'fetchVideoSubCommentsApiV1KuaishouAppFetchVideoSubCommentsGet',
+    '/video-hub/api/v1/kuaishou/app/fetch_video_sub_comments',
   ],
   [
     'fetchOneUserV2ApiV1KuaishouAppFetchOneUserV2Get',
     '/video-hub/api/v1/kuaishou/app/fetch_one_user_v2',
   ],
   [
-    'fetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGet',
-    '/video-hub/api/v1/kuaishou/app/fetch_user_live_info',
+    'fetchUserPostV2ApiV1KuaishouAppFetchUserPostV2Get',
+    '/video-hub/api/v1/kuaishou/app/fetch_user_post_v2',
   ],
   [
     'fetchUserHotPostApiV1KuaishouAppFetchUserHotPostGet',
     '/video-hub/api/v1/kuaishou/app/fetch_user_hot_post',
   ],
   [
-    'fetchUserPostV2ApiV1KuaishouAppFetchUserPostV2Get',
-    '/video-hub/api/v1/kuaishou/app/fetch_user_post_v2',
+    'fetchUserLiveInfoApiV1KuaishouAppFetchUserLiveInfoGet',
+    '/video-hub/api/v1/kuaishou/app/fetch_user_live_info',
   ],
   [
     'searchComprehensiveApiV1KuaishouAppSearchComprehensiveGet',
@@ -2363,6 +2360,15 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/kuaishou/app/search_video_v2',
   ],
   ['searchUserV2ApiV1KuaishouAppSearchUserV2Get', '/video-hub/api/v1/kuaishou/app/search_user_v2'],
+  ['searchImageApiV1KuaishouAppSearchImageGet', '/video-hub/api/v1/kuaishou/app/search_image'],
+  ['searchLiveApiV1KuaishouAppSearchLiveGet', '/video-hub/api/v1/kuaishou/app/search_live'],
+  ['searchMusicApiV1KuaishouAppSearchMusicGet', '/video-hub/api/v1/kuaishou/app/search_music'],
+  ['searchTagApiV1KuaishouAppSearchTagGet', '/video-hub/api/v1/kuaishou/app/search_tag'],
+  ['fetchTagFeedApiV1KuaishouAppFetchTagFeedGet', '/video-hub/api/v1/kuaishou/app/fetch_tag_feed'],
+  [
+    'fetchLiveTopListApiV1KuaishouAppFetchLiveTopListGet',
+    '/video-hub/api/v1/kuaishou/app/fetch_live_top_list',
+  ],
   [
     'fetchHotBoardCategoriesApiV1KuaishouAppFetchHotBoardCategoriesGet',
     '/video-hub/api/v1/kuaishou/app/fetch_hot_board_categories',
@@ -2376,10 +2382,6 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/kuaishou/app/fetch_hot_search_person',
   ],
   [
-    'fetchLiveTopListApiV1KuaishouAppFetchLiveTopListGet',
-    '/video-hub/api/v1/kuaishou/app/fetch_live_top_list',
-  ],
-  [
     'fetchShoppingTopListApiV1KuaishouAppFetchShoppingTopListGet',
     '/video-hub/api/v1/kuaishou/app/fetch_shopping_top_list',
   ],
@@ -2388,16 +2390,8 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/kuaishou/app/fetch_brand_top_list',
   ],
   [
-    'generateKuaishouShareLinkApiV1KuaishouAppGenerateKuaishouShareLinkGet',
-    '/video-hub/api/v1/kuaishou/app/generate_kuaishou_share_link',
-  ],
-  [
-    'fetchMagicFaceUsageApiV1KuaishouAppFetchMagicFaceUsageGet',
-    '/video-hub/api/v1/kuaishou/app/fetch_magic_face_usage',
-  ],
-  [
-    'fetchMagicFaceHotApiV1KuaishouAppFetchMagicFaceHotGet',
-    '/video-hub/api/v1/kuaishou/app/fetch_magic_face_hot',
+    'fetchMusicRankingApiV1KuaishouAppFetchMusicRankingGet',
+    '/video-hub/api/v1/kuaishou/app/fetch_music_ranking',
   ],
   [
     'fetchColumnArticlesApiV1ZhihuWebFetchColumnArticlesGet',
@@ -2806,96 +2800,96 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/weibo/app/fetch_hot_search_categories',
   ],
   [
-    'fetchMpArticleDetailJsonApiV1WechatMpWebFetchMpArticleDetailJsonGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_detail_json',
+    'fetchChannelInfoApiV1WechatChannelsV2FetchChannelInfoPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_channel_info',
   ],
   [
-    'fetchMpArticleDetailHtmlApiV1WechatMpWebFetchMpArticleDetailHtmlGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_detail_html',
+    'fetchChannelIdToUsernameApiV1WechatChannelsV2FetchChannelIdToUsernamePost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_channel_id_to_username',
   ],
   [
-    'fetchMpArticleListApiV1WechatMpWebFetchMpArticleListGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_list',
+    'fetchUserVideosApiV1WechatChannelsV2FetchUserVideosPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_user_videos',
   ],
   [
-    'fetchMpArticleReadCountApiV1WechatMpWebFetchMpArticleReadCountGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_read_count',
+    'fetchVideoDetailApiV1WechatChannelsV2FetchVideoDetailPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_video_detail',
   ],
   [
-    'fetchMpArticleUrlApiV1WechatMpWebFetchMpArticleUrlGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_url',
+    'fetchVideoCommentsApiV1WechatChannelsV2FetchVideoCommentsPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_video_comments',
   ],
   [
-    'fetchMpArticleCommentListApiV1WechatMpWebFetchMpArticleCommentListGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_comment_list',
+    'fetchVideoShareUrlApiV1WechatChannelsV2FetchVideoShareUrlPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_video_share_url',
   ],
   [
-    'fetchMpArticleCommentReplyListApiV1WechatMpWebFetchMpArticleCommentReplyListGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_comment_reply_list',
+    'fetchUserProfileApiV1WechatChannelsV2FetchUserProfilePost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_user_profile',
   ],
   [
-    'fetchMpArticleAdApiV1WechatMpWebFetchMpArticleAdGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_ad',
+    'fetchUserCollectionsApiV1WechatChannelsV2FetchUserCollectionsPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_user_collections',
   ],
   [
-    'fetchMpArticleUrlConversionApiV1WechatMpWebFetchMpArticleUrlConversionGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_article_url_conversion',
+    'fetchCollectionVideosApiV1WechatChannelsV2FetchCollectionVideosPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_collection_videos',
   ],
   [
-    'fetchMpRelatedArticlesApiV1WechatMpWebFetchMpRelatedArticlesGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_mp_related_articles',
+    'fetchLiveHistoryApiV1WechatChannelsV2FetchLiveHistoryPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_live_history',
   ],
   [
-    'fetchSearchOfficialAccountApiV1WechatMpWebFetchSearchOfficialAccountGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_search_official_account',
+    'fetchLiveDetailApiV1WechatChannelsV2FetchLiveDetailPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_live_detail',
   ],
   [
-    'fetchSearchArticleApiV1WechatMpWebFetchSearchArticleGet',
-    '/video-hub/api/v1/wechat_mp/web/fetch_search_article',
+    'fetchSearchChannelVideosApiV1WechatChannelsV2FetchSearchChannelVideosPost',
+    '/video-hub/api/v1/wechat_channels/v2/fetch_search_channel_videos',
   ],
   [
-    'fetchDefaultSearchApiV1WechatChannelsFetchDefaultSearchPost',
-    '/video-hub/api/v1/wechat_channels/fetch_default_search',
+    'fetchArticleDetailApiV1WechatMpV2FetchArticleDetailPost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_article_detail',
   ],
   [
-    'fetchSearchLatestApiV1WechatChannelsFetchSearchLatestGet',
-    '/video-hub/api/v1/wechat_channels/fetch_search_latest',
+    'fetchArticleStatsApiV1WechatMpV2FetchArticleStatsPost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_article_stats',
   ],
   [
-    'fetchSearchOrdinaryApiV1WechatChannelsFetchSearchOrdinaryGet',
-    '/video-hub/api/v1/wechat_channels/fetch_search_ordinary',
+    'fetchArticleCommentsApiV1WechatMpV2FetchArticleCommentsPost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_article_comments',
   ],
   [
-    'fetchUserSearchApiV1WechatChannelsFetchUserSearchGet',
-    '/video-hub/api/v1/wechat_channels/fetch_user_search',
+    'fetchCommentRepliesApiV1WechatMpV2FetchCommentRepliesPost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_comment_replies',
   ],
   [
-    'fetchUserSearchV2ApiV1WechatChannelsFetchUserSearchV2Get',
-    '/video-hub/api/v1/wechat_channels/fetch_user_search_v2',
+    'fetchRelatedArticlesApiV1WechatMpV2FetchRelatedArticlesPost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_related_articles',
   ],
   [
-    'fetchVideoDetailApiV1WechatChannelsFetchVideoDetailGet',
-    '/video-hub/api/v1/wechat_channels/fetch_video_detail',
+    'fetchArticleAdApiV1WechatMpV2FetchArticleAdPost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_article_ad',
   ],
   [
-    'fetchHomePageApiV1WechatChannelsFetchHomePagePost',
-    '/video-hub/api/v1/wechat_channels/fetch_home_page',
+    'fetchAccountProfileApiV1WechatMpV2FetchAccountProfilePost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_account_profile',
   ],
   [
-    'fetchCommentsApiV1WechatChannelsFetchCommentsPost',
-    '/video-hub/api/v1/wechat_channels/fetch_comments',
+    'fetchAccountArticlesApiV1WechatMpV2FetchAccountArticlesPost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_account_articles',
   ],
   [
-    'fetchLiveHistoryApiV1WechatChannelsFetchLiveHistoryGet',
-    '/video-hub/api/v1/wechat_channels/fetch_live_history',
+    'fetchAccountServicesApiV1WechatMpV2FetchAccountServicesPost',
+    '/video-hub/api/v1/wechat_mp/v2/fetch_account_services',
   ],
   [
-    'fetchSearchChannelsApiV1WechatChannelsFetchSearchChannelsGet',
-    '/video-hub/api/v1/wechat_channels/fetch_search_channels',
+    'fetchSearchApiV1WechatSearchV2FetchSearchPost',
+    '/video-hub/api/v1/wechat_search/v2/fetch_search',
   ],
   [
-    'fetchHotWordsApiV1WechatChannelsFetchHotWordsGet',
-    '/video-hub/api/v1/wechat_channels/fetch_hot_words',
+    'fetchSearchVideosApiV1WechatSearchV2FetchSearchVideosPost',
+    '/video-hub/api/v1/wechat_search/v2/fetch_search_videos',
   ],
   [
     'shortcodeToMediaIdApiV1InstagramV1ShortcodeToMediaIdGet',
@@ -3284,6 +3278,10 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/youtube/web_v2/get_video_info',
   ],
   [
+    'getVideoInfoV2ApiV1YoutubeWebV2GetVideoInfoV2Get',
+    '/video-hub/api/v1/youtube/web_v2/get_video_info_v2',
+  ],
+  [
     'getVideoCommentsApiV1YoutubeWebV2GetVideoCommentsGet',
     '/video-hub/api/v1/youtube/web_v2/get_video_comments',
   ],
@@ -3338,6 +3336,10 @@ export const SDK_URL_MAP = new Map<string, string>([
   [
     'getVideoCaptionsApiV1YoutubeWebV2GetVideoCaptionsGet',
     '/video-hub/api/v1/youtube/web_v2/get_video_captions',
+  ],
+  [
+    'getVideoCaptionsV2ApiV1YoutubeWebV2GetVideoCaptionsV2Get',
+    '/video-hub/api/v1/youtube/web_v2/get_video_captions_v2',
   ],
   [
     'getRelatedVideosApiV1YoutubeWebV2GetRelatedVideosGet',
@@ -3457,6 +3459,62 @@ export const SDK_URL_MAP = new Map<string, string>([
   ['searchJobsApiV1LinkedinWebSearchJobsGet', '/video-hub/api/v1/linkedin/web/search_jobs'],
   ['searchPeopleApiV1LinkedinWebSearchPeopleGet', '/video-hub/api/v1/linkedin/web/search_people'],
   [
+    'getUserReactionsApiV1LinkedinWebGetUserReactionsGet',
+    '/video-hub/api/v1/linkedin/web/get_user_reactions',
+  ],
+  [
+    'getUserVolunteersApiV1LinkedinWebGetUserVolunteersGet',
+    '/video-hub/api/v1/linkedin/web/get_user_volunteers',
+  ],
+  [
+    'getCompanyAffiliatedPagesApiV1LinkedinWebGetCompanyAffiliatedPagesGet',
+    '/video-hub/api/v1/linkedin/web/get_company_affiliated_pages',
+  ],
+  [
+    'getCompanyAssociatedMemberInsightsApiV1LinkedinWebGetCompanyAssociatedMemberInsightsGet',
+    '/video-hub/api/v1/linkedin/web/get_company_associated_member_insights',
+  ],
+  [
+    'getPostDetailApiV1LinkedinWebGetPostDetailGet',
+    '/video-hub/api/v1/linkedin/web/get_post_detail',
+  ],
+  [
+    'getPostCommentsApiV1LinkedinWebGetPostCommentsGet',
+    '/video-hub/api/v1/linkedin/web/get_post_comments',
+  ],
+  [
+    'getPostReactionsApiV1LinkedinWebGetPostReactionsGet',
+    '/video-hub/api/v1/linkedin/web/get_post_reactions',
+  ],
+  [
+    'getPostRepostsApiV1LinkedinWebGetPostRepostsGet',
+    '/video-hub/api/v1/linkedin/web/get_post_reposts',
+  ],
+  [
+    'getCommentsRepliesApiV1LinkedinWebGetCommentsRepliesGet',
+    '/video-hub/api/v1/linkedin/web/get_comments_replies',
+  ],
+  ['searchPostsApiV1LinkedinWebSearchPostsGet', '/video-hub/api/v1/linkedin/web/search_posts'],
+  [
+    'searchLocationApiV1LinkedinWebSearchLocationGet',
+    '/video-hub/api/v1/linkedin/web/search_location',
+  ],
+  [
+    'searchSchoolsApiV1LinkedinWebSearchSchoolsGet',
+    '/video-hub/api/v1/linkedin/web/search_schools',
+  ],
+  [
+    'searchSuggestionIndustryApiV1LinkedinWebSearchSuggestionIndustryGet',
+    '/video-hub/api/v1/linkedin/web/search_suggestion_industry',
+  ],
+  ['getGroupInfoApiV1LinkedinWebGetGroupInfoGet', '/video-hub/api/v1/linkedin/web/get_group_info'],
+  [
+    'getGroupPostsApiV1LinkedinWebGetGroupPostsGet',
+    '/video-hub/api/v1/linkedin/web/get_group_posts',
+  ],
+  ['searchAdsApiV1LinkedinWebSearchAdsGet', '/video-hub/api/v1/linkedin/web/search_ads'],
+  ['getAdDetailApiV1LinkedinWebGetAdDetailGet', '/video-hub/api/v1/linkedin/web/get_ad_detail'],
+  [
     'getUserProfileApiV1LinkedinWebV2GetUserProfileGet',
     '/video-hub/api/v1/linkedin/web_v2/get_user_profile',
   ],
@@ -3465,160 +3523,26 @@ export const SDK_URL_MAP = new Map<string, string>([
     '/video-hub/api/v1/linkedin/web_v2/get_user_posts',
   ],
   [
-    'getUserCommentsApiV1LinkedinWebV2GetUserCommentsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_comments',
-  ],
-  [
-    'getUserContactInfoApiV1LinkedinWebV2GetUserContactInfoGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_contact_info',
-  ],
-  [
-    'getUserRecommendationsApiV1LinkedinWebV2GetUserRecommendationsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_recommendations',
-  ],
-  [
-    'getUserVideosApiV1LinkedinWebV2GetUserVideosGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_videos',
-  ],
-  [
-    'getUserImagesApiV1LinkedinWebV2GetUserImagesGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_images',
-  ],
-  ['getUserBioApiV1LinkedinWebV2GetUserBioGet', '/video-hub/api/v1/linkedin/web_v2/get_user_bio'],
-  [
-    'getUserFollowerAndConnectionCountApiV1LinkedinWebV2GetUserFollowerAndConnectionCountGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_follower_and_connection_count',
-  ],
-  [
-    'getUserProfileCardsApiV1LinkedinWebV2GetUserProfileCardsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_profile_cards',
-  ],
-  [
-    'getUserExperiencesApiV1LinkedinWebV2GetUserExperiencesGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_experiences',
-  ],
-  [
-    'getUserSkillsApiV1LinkedinWebV2GetUserSkillsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_skills',
-  ],
-  [
-    'getUserEducationsApiV1LinkedinWebV2GetUserEducationsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_educations',
-  ],
-  [
-    'getUserPublicationsApiV1LinkedinWebV2GetUserPublicationsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_publications',
-  ],
-  [
-    'getUserCertificationsApiV1LinkedinWebV2GetUserCertificationsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_certifications',
-  ],
-  [
-    'getUserHonorsApiV1LinkedinWebV2GetUserHonorsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_honors',
-  ],
-  [
-    'getUserInterestedGroupsApiV1LinkedinWebV2GetUserInterestedGroupsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_interested_groups',
-  ],
-  [
-    'getUserInterestedCompaniesApiV1LinkedinWebV2GetUserInterestedCompaniesGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_interested_companies',
-  ],
-  [
-    'getUserTopCardApiV1LinkedinWebV2GetUserTopCardGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_top_card',
-  ],
-  [
-    'getUserTopCardSupplementaryApiV1LinkedinWebV2GetUserTopCardSupplementaryGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_top_card_supplementary',
-  ],
-  [
-    'getUserRecentActivityApiV1LinkedinWebV2GetUserRecentActivityGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_user_recent_activity',
-  ],
-  [
-    'getDiscoveryRelevantToCompanyApiV1LinkedinWebV2GetDiscoveryRelevantToCompanyGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_discovery_relevant_to_company',
-  ],
-  [
-    'getDiscoveryRelevantToUserApiV1LinkedinWebV2GetDiscoveryRelevantToUserGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_discovery_relevant_to_user',
-  ],
-  [
     'getCompanyProfileApiV1LinkedinWebV2GetCompanyProfileGet',
     '/video-hub/api/v1/linkedin/web_v2/get_company_profile',
-  ],
-  [
-    'getCompanyEmployeesApiV1LinkedinWebV2GetCompanyEmployeesGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_employees',
   ],
   [
     'getCompanyPostsApiV1LinkedinWebV2GetCompanyPostsGet',
     '/video-hub/api/v1/linkedin/web_v2/get_company_posts',
   ],
   [
-    'getCompanyJobsApiV1LinkedinWebV2GetCompanyJobsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_jobs',
-  ],
-  [
-    'getCompanyJobCountApiV1LinkedinWebV2GetCompanyJobCountGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_job_count',
-  ],
-  [
-    'getCompanySimilarCompaniesApiV1LinkedinWebV2GetCompanySimilarCompaniesGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_similar_companies',
-  ],
-  [
-    'getCompanyCompetitorsApiV1LinkedinWebV2GetCompanyCompetitorsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_competitors',
-  ],
-  [
-    'getCompanyStockQuoteApiV1LinkedinWebV2GetCompanyStockQuoteGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_stock_quote',
-  ],
-  [
-    'getCompanyCallToActionsApiV1LinkedinWebV2GetCompanyCallToActionsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_call_to_actions',
-  ],
-  [
-    'getCompanyEmployeeCountRangesApiV1LinkedinWebV2GetCompanyEmployeeCountRangesGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_employee_count_ranges',
-  ],
-  [
-    'getCompanyGroupedLocationsApiV1LinkedinWebV2GetCompanyGroupedLocationsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_company_grouped_locations',
-  ],
-  [
     'getPostDetailApiV1LinkedinWebV2GetPostDetailGet',
     '/video-hub/api/v1/linkedin/web_v2/get_post_detail',
-  ],
-  [
-    'getPostDetailBySlugApiV1LinkedinWebV2GetPostDetailBySlugGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_post_detail_by_slug',
-  ],
-  [
-    'getPostCommentsApiV1LinkedinWebV2GetPostCommentsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_post_comments',
-  ],
-  [
-    'getCommentRepliesApiV1LinkedinWebV2GetCommentRepliesGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_comment_replies',
-  ],
-  [
-    'getPostReactionsApiV1LinkedinWebV2GetPostReactionsGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_post_reactions',
-  ],
-  [
-    'getHashtagFeedApiV1LinkedinWebV2GetHashtagFeedGet',
-    '/video-hub/api/v1/linkedin/web_v2/get_hashtag_feed',
   ],
   [
     'getJobDetailApiV1LinkedinWebV2GetJobDetailGet',
     '/video-hub/api/v1/linkedin/web_v2/get_job_detail',
   ],
-  ['searchUsersApiV1LinkedinWebV2SearchUsersGet', '/video-hub/api/v1/linkedin/web_v2/search_users'],
   ['searchJobsApiV1LinkedinWebV2SearchJobsGet', '/video-hub/api/v1/linkedin/web_v2/search_jobs'],
+  [
+    'searchJobsByUrlApiV1LinkedinWebV2SearchJobsByUrlGet',
+    '/video-hub/api/v1/linkedin/web_v2/search_jobs_by_url',
+  ],
   [
     'fetchOneVideoApiV1BilibiliWebFetchOneVideoGet',
     '/video-hub/api/v1/bilibili/web/fetch_one_video',
@@ -3780,35 +3704,6 @@ export const SDK_URL_MAP = new Map<string, string>([
     'fetchBangumiTabApiV1BilibiliAppFetchBangumiTabGet',
     '/video-hub/api/v1/bilibili/app/fetch_bangumi_tab',
   ],
-  ['getPostDetailApiV1Sora2GetPostDetailGet', '/video-hub/api/v1/sora2/get_post_detail'],
-  ['getPostRemixListApiV1Sora2GetPostRemixListGet', '/video-hub/api/v1/sora2/get_post_remix_list'],
-  [
-    'getVideoDownloadInfoApiV1Sora2GetVideoDownloadInfoGet',
-    '/video-hub/api/v1/sora2/get_video_download_info',
-  ],
-  ['getPostCommentsApiV1Sora2GetPostCommentsGet', '/video-hub/api/v1/sora2/get_post_comments'],
-  [
-    'getCommentRepliesApiV1Sora2GetCommentRepliesGet',
-    '/video-hub/api/v1/sora2/get_comment_replies',
-  ],
-  ['getUserProfileApiV1Sora2GetUserProfileGet', '/video-hub/api/v1/sora2/get_user_profile'],
-  ['getUserPostsApiV1Sora2GetUserPostsGet', '/video-hub/api/v1/sora2/get_user_posts'],
-  [
-    'getCameoLeaderboardApiV1Sora2GetCameoLeaderboardGet',
-    '/video-hub/api/v1/sora2/get_cameo_leaderboard',
-  ],
-  [
-    'getUserCameoAppearancesApiV1Sora2GetUserCameoAppearancesGet',
-    '/video-hub/api/v1/sora2/get_user_cameo_appearances',
-  ],
-  ['getUserFollowersApiV1Sora2GetUserFollowersGet', '/video-hub/api/v1/sora2/get_user_followers'],
-  ['getUserFollowingApiV1Sora2GetUserFollowingGet', '/video-hub/api/v1/sora2/get_user_following'],
-  ['getFeedApiV1Sora2GetFeedGet', '/video-hub/api/v1/sora2/get_feed'],
-  ['searchUsersApiV1Sora2SearchUsersGet', '/video-hub/api/v1/sora2/search_users'],
-  ['uploadImageApiV1Sora2UploadImagePost', '/video-hub/api/v1/sora2/upload_image'],
-  ['createVideoApiV1Sora2CreateVideoPost', '/video-hub/api/v1/sora2/create_video'],
-  ['getTaskStatusApiV1Sora2GetTaskStatusGet', '/video-hub/api/v1/sora2/get_task_status'],
-  ['getTaskDetailApiV1Sora2GetTaskDetailGet', '/video-hub/api/v1/sora2/get_task_detail'],
   [
     'getTempEmailApiV1TempMailV1GetTempEmailAddressGet',
     '/video-hub/api/v1/temp_mail/v1/get_temp_email_address',
@@ -3910,6 +3805,14 @@ export const SDK_URL_MAP = new Map<string, string>([
   ],
   ['fetchNewsFeedApiV1RedditAppFetchNewsFeedGet', '/video-hub/api/v1/reddit/app/fetch_news_feed'],
   [
+    'fetchExploreFeedApiV1RedditAppFetchExploreFeedGet',
+    '/video-hub/api/v1/reddit/app/fetch_explore_feed',
+  ],
+  [
+    'fetchTopicFeedApiV1RedditAppFetchTopicFeedGet',
+    '/video-hub/api/v1/reddit/app/fetch_topic_feed',
+  ],
+  [
     'fetchPostDetailsApiV1RedditAppFetchPostDetailsGet',
     '/video-hub/api/v1/reddit/app/fetch_post_details',
   ],
@@ -3960,6 +3863,14 @@ export const SDK_URL_MAP = new Map<string, string>([
   [
     'fetchTrendingSearchesApiV1RedditAppFetchTrendingSearchesGet',
     '/video-hub/api/v1/reddit/app/fetch_trending_searches',
+  ],
+  [
+    'fetchGeneratedPostsApiV1RedditAppFetchGeneratedPostsGet',
+    '/video-hub/api/v1/reddit/app/fetch_generated_posts',
+  ],
+  [
+    'fetchGeneratedCommentsApiV1RedditAppFetchGeneratedCommentsGet',
+    '/video-hub/api/v1/reddit/app/fetch_generated_comments',
   ],
   [
     'fetchUserProfileApiV1RedditAppFetchUserProfileGet',
